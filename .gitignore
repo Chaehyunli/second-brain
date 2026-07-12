@@ -1,0 +1,8 @@
+# Per-device Obsidian UI state
+.obsidian/workspace*.json
+.obsidian/cache/
+
+# Local trash and OS metadata
+.trash/
+.DS_Store
+Thumbs.db
