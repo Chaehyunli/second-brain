@@ -295,7 +295,7 @@ source_url: {record['url']}
     ]), encoding="utf-8")
 
     notes = [path for path in STAGING.rglob("*.md") if path.name != "index.md"]
-    assert len(notes) == 297, len(notes)
+    assert len(notes) == len(records), (len(notes), len(records))
     assert not any(re.search(r"^\d+-", path.name) for path in notes), "numeric filename prefix remains"
     assert all("## 원문\n\nhttps://ch010104.tistory.com/" in path.read_text(encoding="utf-8") for path in notes)
     assert all("[0.0102" not in path.read_text(encoding="utf-8") for path in notes)
