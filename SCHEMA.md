@@ -2,7 +2,7 @@
 
 ## Domain
 
-임채현의 백엔드 개발자 포트폴리오, 프로젝트, 실무 경험, 학습·수상 이력, 그리고 향후 검증된 기술 지식. 개인 자료의 사실관계와 포트폴리오 서사를 장기적으로 축적한다.
+임채현의 백엔드 개발자 포트폴리오, 프로젝트, 실무 경험, 학습·수상 이력, 기술 블로그 글, 그리고 향후 검증된 기술 지식. 개인 자료의 사실관계와 포트폴리오 서사를 장기적으로 축적한다.
 
 ## Privacy and evidence policy
 
@@ -14,8 +14,8 @@
 
 ## Conventions
 
-- File names: lowercase kebab-case; project pages are under `entities/projects/`.
-- Every agent-owned page has frontmatter: `title`, `created`, `updated`, `type`, `tags`, `sources`.
+- File names: lowercase kebab-case; project pages are under `entities/projects/`; 기술 블로그 글은 `blog/`에 둔다.
+- Every agent-owned page has frontmatter: `title`, `created`, `updated`, `type`, `tags`, `sources` 또는 `source_url`.
 - Every entity/concept page links to at least two other wiki pages with `[[wikilinks]]`.
 - New or changed pages must be listed in `index.md` and logged in `log.md`.
 - New tags must be added below before use.
@@ -23,14 +23,16 @@
 ## Tag taxonomy
 
 - Profile: `profile`, `career`, `education`, `award`, `credential`
-- Engineering: `backend`, `java`, `python`, `spring-boot`, `webflux`, `r2dbc`, `fastapi`, `sse`, `redis`, `postgresql`, `database`, `sql`, `security`, `testing`, `infrastructure`, `search`, `reliability`
+- Engineering: `backend`, `java`, `python`, `spring-boot`, `webflux`, `r2dbc`, `fastapi`, `sse`, `redis`, `postgresql`, `database`, `sql`, `security`, `testing`, `infrastructure`, `search`, `reliability`, `performance`
 - AI/Data: `ai`, `ai-agent`, `machine-learning`, `rag`, `data-engineering`
-- Work: `project`, `experience`, `architecture`, `performance`, `quality`
+- Work: `project`, `experience`, `architecture`, `quality`
+- Writing: `blog`, `technical-writing`
 
 ## Page thresholds
 
 - Create a project/experience page when it is central to one verified source.
-- Add technical knowledge only when it is demonstrated in code, a project source, a credential, or a user-confirmed learning record.
+- Archive each public technical blog article as a standalone `type: blog-post` page with canonical URL and publication metadata.
+- Add technical knowledge only when it is demonstrated in code, a project source, a credential, a user-confirmed learning record, or a published blog post.
 - Split pages over 200 lines; do not create pages for passing mentions.
 
 ## Update policy
@@ -38,3 +40,4 @@
 1. Prefer dated, detailed source records over older summary material.
 2. If sources conflict, preserve both claims and mark the page `contested: true`.
 3. Never silently upgrade an inferred responsibility or outcome into a fact.
+4. Re-archive blog posts by canonical URL; do not duplicate an article solely because its title changes.

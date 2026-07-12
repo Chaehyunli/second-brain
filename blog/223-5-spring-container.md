@@ -1,0 +1,19 @@
+---
+title: "[스프링 핵심 원리 - 기본편] 5. Spring Container"
+created: 2026-07-12
+updated: 2026-07-12
+type: blog-post
+tags: [blog, technical-writing]
+category: "INFLEARN"
+published: 2026-03-13
+source_url: https://ch010104.tistory.com/223
+archive_method: Tistory sitemap + HTML content extraction
+---
+
+# [스프링 핵심 원리 - 기본편] 5. Spring Container
+
+> 원문: https://ch010104.tistory.com/223
+
+## 본문
+
+1. 스프링 컨테이너 생성   // Spring Container 생성 ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);   ApplicationContext를 스프링 컨테이너라고 하며, 이는 인터페이스임. AnnotationConfigApplicationContext는 이 인터페이스의 구현체 중 하나로, 자바 설정 클래스(AppConfig.class)를 기반으로 컨테이너를 생성합니다. 즉, 선언할 때, public class AnnotationConfigApplicationContext implements ApplicationContext 임 컨테이너가 생성될 때 내부에는 비어있는 스프링 빈 저장소가 만들어짐   2. 스프링 빈 등록   스프링 컨테이너는 파라미터로 넘어온 구성 정보(AppConfig.class)를 확인하여 객체를 생성하고 빈 저장소에 등록  빈 이름: 기본적으로 메서드 이름을 사용합니다. (예: memberService, orderService) 직접 부여: @Bean(name="memberService2")와 같이 이름을 직접 지정할 수도 있습니다. → 비추 주의 사항: 빈 이름은 항상 고유해야 함. 이름이 중복되면 다른 빈이 무시되거나 기존 빈을 덮어버리는 오류가 발생할 수 있음(실무에서는 이러한 위험은 무조건 피해야함)   3. 스프링 빈 의존관계 설정 (준비 및 완료)    빈 생성 단계가 끝나면, 스프링 컨테이너는 설정 정보를 참고하여 의존관계 주입(DI)을 수행.  준비 단계: 어떤 빈이 어떤 객체를 필요로 하는지 파악. 완료 단계: 실제 객체의 참조 값을 연결.  예: memberService 빈이 memberRepository를 의존한다면, 컨테이너가 관리하는 MemoryMemberRepository의 참조 값을 memberService에 넣어줌.     💡 참고 (생성자 주입의 특징) 자바 코드로 스프링 빈을 등록하면, 메서드를 호출하는 과정에서 객체 생성과 의존관계 주입이 동시에 발생. (생성자를 호출할 때 파라미터로 의존 객체가 들어가기 때문.)  하지만 개념적으로는 '빈 생성'과 '의존관계 주입' 단계가 나누어져 있음을 이해하는 것이 중요  4. 컨테이너의 모든 빈 조회 package com.example.spring_study.spring_study.beanfind; import com.example.spring_study.spring_study.AppConfig; import org.junit.jupiter.api.DisplayName; import org.junit.jupiter.api.Test; import org.springframework.beans.factory.config.BeanDefinition; import org.springframework.context.annotation.AnnotationConfigApplicationContext; class ApplicationContextInfoTest { AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class); @Test @DisplayName("모든 빈 출력하기") void findAllBeans() { // Spring Container에서 등록된 Bean의 이름을 꺼냄 String[] beanDefinitionNames = ac.getBeanDefinitionNames(); for (String beanDefinitionName : beanDefinitionNames) { Object bean = ac.getBean(beanDefinitionName); // Key = , Value의 형태로 Spring Container에 저장되어 있음 System.out.println("name = " + beanDefinitionName + ", object = " + bean); } } @Test @DisplayName("애플리케이션 빈 출력하기") void findApplicationBeans() { // Spring Container에서 등록된 Bean의 이름을 꺼냄 String[] beanDefinitionNames = ac.getBeanDefinitionNames(); for (String beanDefinitionName : beanDefinitionNames) { BeanDefinition beanDefinition = ac.getBeanDefinition(beanDefinitionName); // ROLE_APPLICATION -> 직접 등록한 애플리케이션에서의 Bean(appConfig, memberService, memberRepository, orderService, discountPolicay 등) // ROLE_INFRASTRUCTURE -> 스프링이 내부에서 사용하는 Bean(springframwork..) if(beanDefinition.getRole() == BeanDefinition.ROLE_APPLICATION) { Object bean = ac.getBean(beanDefinitionName); // Key = , Value의 형태로 Spring Container에 저장되어 있음 System.out.println("name = " + beanDefinitionName + ", object = " + bean); } } } }   getBeanDefinitionNames() : 등록된 Bean의 이름을 가져옴 getBeanDefinition(): 등록된 Bean의 메타데이를을 가져옴(BeanClassName, ROLE 등이 포함)  // ROLE_APPLICATION 으로 했을 때의 결과 name = appConfig, object = com.example.spring_study.spring_study.AppConfig$$SpringCGLIB$$0@7965a51c name = memberService, object = com.example.spring_study.spring_study.member.MemberServiceImpl@234a8f27 name = memberRepository, object = com.example.spring_study.spring_study.member.MemoryMemberRepository@5b4d25e7 name = orderService, object = com.example.spring_study.spring_study.order.OrderServiceImpl@31c2affc name = discountPolicy, object = com.example.spring_study.spring_study.discount.RateDiscountPolicy@1dc2de84

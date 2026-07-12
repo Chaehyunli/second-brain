@@ -1,37 +1,60 @@
 ---
 title: 노소공
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-12
 type: entity
-tags:
-  [
-    project,
-    backend,
-    python,
-    fastapi,
-    machine-learning,
-    data-engineering,
-    database,
-    architecture,
-  ]
-sources: [raw/sources/employment-zip-2026-07-10.md]
+tags: [project, backend, python, fastapi, machine-learning, data-engineering, database, architecture, security]
+sources: [raw/sources/nosogong-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
 confidence: high
 ---
 
-# 노소공 — Interactive pet growth service
+# 노소공 — 인터랙티브 펫 육성 서비스
 
-## Overview
+## 한눈에 보기
 
-2025-03~2025-10 진행한 인터랙티브 펫 육성 팀 프로젝트. FastAPI 기반 백엔드와 XGBoost 감정 변화 예측 모델링을 담당했다.
+- **기간:** 2025-03~2025-10
+- **구성:** 3명 팀 프로젝트(백엔드 2명, 프런트엔드 1명)
+- **기술:** FastAPI, PostgreSQL, Redis, Flyway, React Native + Expo, Scikit-learn/XGBoost
+- **역할:** 핵심 도메인 ERD·API, 미니게임 보상 처리, 합성 데이터 기반 감정 변화 예측 모델과 서버 연동
 
-## Key decisions and implementation
+## 서비스가 풀어야 했던 문제
 
-- 사용자·펫·재화·보상 도메인의 ERD와 FastAPI API를 설계·구현했다.
-- Pygame 코드를 React 런타임에 그대로 이식할 수 없다는 호환성 문제를 조기에 식별했다. 코드는 설계도로만 활용하고, 프런트엔드가 웹 환경에 맞게 재구현하도록 협업 방향을 전환했다.
-- 클라이언트 미니게임 결과 조작 가능성을 고려해 서버 검증 후 보상을 지급하는 처리 흐름을 설계했다.
-- 실제 플레이 로그가 없는 콜드 스타트 상황에서 행동·선호도·방치일·현재 감정 상태를 반영한 규칙 기반 생성 함수로 10,000건의 합성 데이터를 만들었다.
-- 범주형 전처리 후 XGBoost Regressor를 학습해 테스트셋 R² 0.9964, RMSE 0.22를 기록했고 서버 기능에 연동했다.
+사용자의 돌봄·방치·선호 행동에 따라 펫 감정이 달라지는 서비스를 만들려면, 단순 난수 반응보다 일관된 상태 변화가 필요했다. 동시에 신규 서비스라 실제 플레이 로그가 없어 ML 학습 데이터가 없는 콜드 스타트 상태였다. 미니게임은 Pygame 참고 구현을 React 환경에 통합해야 했지만, Python 런타임 코드를 브라우저 JavaScript 런타임에서 직접 실행할 수 없는 기술적 제약도 있었다.
 
-## Portfolio role
+## 핵심 판단과 구현
 
-[[entities/lim-chae-hyun]]이 ML을 단순 모델 학습이 아니라 서비스 요구·데이터 생성·API 통합까지 연결했음을 보여준다. [[concepts/backend-portfolio-narrative]]에서는 콜드 스타트 해결과 런타임 호환성 판단을 핵심 사례로 다룬다.
+### 1. 런타임 호환성 문제를 조기에 전환
+
+Pygame 코드를 그대로 이식하는 계획은 React 환경과 호환되지 않음을 확인했다. 이를 늦게 발견해 억지로 변환하지 않고 팀에 즉시 공유한 뒤, Pygame 코드를 **게임 규칙·충돌 감지·점수 계산의 설계도**로만 활용하고 프런트엔드가 웹 환경에서 재구현하는 방향으로 전환했다.
+
+### 2. 서버 검증 후 보상 지급
+
+미니게임 점수 같은 클라이언트 결과는 조작될 수 있으므로, 백엔드가 결과를 검증한 뒤 재화를 지급하도록 처리 흐름과 연동 규칙을 설계했다. 유저·펫·재화·아이템 구매·케어·미니게임 보상·성장/진화로 이어지는 핵심 도메인 API를 FastAPI로 구현했다.
+
+### 3. 콜드 스타트를 합성 데이터로 해결
+
+실사용 로그가 없으므로 무작위 데이터를 쓰지 않고, 기획 의도를 반영한 감정 변화량 생성 함수를 먼저 정의했다.
+
+- 동물·행동별 기본 선호도
+- 현재 감정 상태 보정
+- 사용자 편애도와 행동 반복 보정
+- 방치 일수 보정
+
+위 규칙으로 10,000개의 입력 조합과 논리적 정답값을 생성하고, 범주형 전처리 후 XGBoost Regressor를 학습했다. 초기에는 규칙 기반 지식을 모델이 모사하게 하고, 실제 데이터가 쌓이면 재학습으로 확장하는 계획이다.
+
+## 검증된 결과
+
+| 항목 | 결과 |
+| --- | --- |
+| 학습 데이터 | 도메인 규칙 기반 합성 데이터 10,000건 |
+| 모델 | XGBoost Regressor |
+| 테스트셋 | R² 0.9964, RMSE 0.22 |
+| 서비스 통합 | 사용자 상호작용이 감정 변화에 반영되는 API 흐름 구성 |
+
+> 이 평가는 합성 데이터가 만든 규칙 패턴에 대한 결과다. 실제 사용자 행동 예측의 일반화 성능으로 과장하지 않고, 실사용 로그 축적 후 재검증이 필요한 수치로 관리한다.
+
+## 관련 노트
+
+- [[entities/lim-chae-hyun]] — ML을 서비스 데이터·API와 연결한 근거
+- [[entities/projects/searchive]] — AI/데이터 기능을 신뢰성·성능과 함께 설계한 사례
+- [[concepts/backend-portfolio-narrative]] — 호환성 판단과 콜드 스타트 해결 사례

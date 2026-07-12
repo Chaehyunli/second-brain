@@ -1,46 +1,65 @@
 ---
 title: Searchive
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-12
 type: entity
-tags:
-  [
-    project,
-    backend,
-    python,
-    fastapi,
-    search,
-    rag,
-    ai,
-    database,
-    infrastructure,
-    performance,
-  ]
-sources: [raw/sources/employment-zip-2026-07-10.md]
+tags: [project, backend, python, fastapi, search, rag, ai, database, infrastructure, performance, reliability]
+sources: [raw/sources/searchive-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
 confidence: high
 ---
 
-# Searchive — AI document knowledge platform
+# Searchive — AI 문서 지식 플랫폼
 
-## Overview
+## 한눈에 보기
 
-2025-10~2025-12에 1인으로 기획·개발한 개인 문서 관리 플랫폼. 업로드 문서의 AI 분석·자동 태깅, 하이브리드 검색, 요약, RAG 기반 문서 대화를 목표로 했다.
+- **기간:** 2025-10~2025-12
+- **형태:** 1인 기획·개발 개인 프로젝트
+- **목표:** 업로드된 개인 문서를 단순 보관소가 아닌 자동 분석·태깅, 하이브리드 검색, 요약, RAG 대화가 가능한 지식 베이스로 전환
+- **핵심 성과:** 키워드 5개 예시에서 검색 왕복 5회→1회, 약 250ms→10ms; 배치 검색 기준 쿼리 시간 90% 이상 단축
 
-## Architecture and role
+## 아키텍처와 구현 범위
 
-- Frontend: React, TypeScript, Vite, Zustand, axios.
-- Backend: FastAPI를 인증·문서·태그·AI 도메인으로 분리.
-- Infra/data: PostgreSQL + pgvector, MinIO, Elasticsearch, Redis, Ollama를 Docker Compose로 통합.
-- 문제 정의와 ERD/API 설계부터 구현까지 전 과정을 담당했다.
+| 층 | 구성 |
+| --- | --- |
+| Frontend | React, TypeScript, Vite, Zustand, axios; 로그인·대시보드·문서 상세·AI 요약·채팅 UI |
+| Backend | FastAPI; 인증·문서·태그·AI 도메인 분리 |
+| 데이터·인프라 | PostgreSQL + pgvector, MinIO, Elasticsearch, Redis, Ollama를 Docker Compose로 통합 |
+| 본인 역할 | 문제 정의, ERD·API·아키텍처, 전체 구현과 성능 개선 |
 
-## Problem → decision → result
+## 핵심 문제 해결
 
-1. 새 키워드 `M`개와 기존 태그 `N`개를 전수 비교하던 O(N×M) 중복 판별 병목을 발견했다.
-2. 태그 임베딩과 pgvector 유사도 검색을 도입해 의미적으로 가까운 기존 태그를 재사용하도록 정규화했다.
-3. 다중 키워드가 순차 요청을 발생시키는 후속 병목을 확인하고 Elasticsearch `_msearch`로 배치 처리했다.
-4. 키워드 추출 직후와 저장 직전의 이중 필터(한·영 불용어, 길이·숫자·다중 단어 조건)를 구현했다.
-5. 키워드 5개 처리 예시에서 네트워크 왕복을 5회→1회, 검색 지연을 약 250ms→10ms로 줄였다.
+### 태그 품질: 의미 중복과 불용어를 분리해 해결
 
-## Portfolio evidence
+자동 키워드 추출 결과를 그대로 저장하면 동의어·표현 차이로 같은 의미의 태그가 늘어나고, 한·영 불용어도 유입된다. 이를 하나의 문제로 뭉개지 않고 다음 두 층으로 나눴다.
 
-이 프로젝트는 [[concepts/backend-portfolio-narrative]]의 대표 성능 개선 사례다. [[entities/lim-chae-hyun]]의 검색·RAG·성능 설계 역량을 가장 직접적으로 보여준다.
+1. **정규화:** 새 키워드와 기존 태그의 의미 유사도를 비교해 가까운 기존 태그를 재사용한다.
+2. **방어적 필터링:** 추출 직후와 저장 직전 두 지점에서 한·영 불용어, 길이·숫자·다중 단어 조건을 적용한다.
+
+이 구조는 외부 추출기의 결과를 맹신하지 않고, 데이터가 누적될수록 태그 체계가 무너지는 문제를 방어한다.
+
+### 성능: O(N×M) 비교를 검색 계층으로 이전
+
+초기 방식은 새 키워드 `M`개를 기존 태그 `N`개와 전수 비교하는 O(N×M) 구조였다. 태그 임베딩을 저장하고 pgvector 유사도 검색으로 비교를 DB 레벨로 옮겨 애플리케이션의 전수 비교를 제거했다.
+
+그러나 pgvector 적용 뒤에도 `M`개 키워드를 순차 요청하면 네트워크 왕복이 누적됐다. 이미 구성한 Elasticsearch의 `_msearch`를 재사용해 다중 키워드를 한 번의 배치 호출로 처리했다. 새 인프라를 추가하지 않고 기존 검색 계층을 활용한 선택이다.
+
+## 검증된 결과와 해석
+
+| 측정 | 결과 | 의미 |
+| --- | --- | --- |
+| 배치 처리 | 쿼리 시간 90% 이상 단축 | 계산 복잡도뿐 아니라 통신 방식이 병목임을 확인 |
+| 키워드 5개 예시 | 5회→1회 왕복 | 순차 호출을 배치 API로 전환 |
+| 검색 지연 | 약 250ms→10ms | 약 96% 감소 |
+| 데이터 품질 | 이중 필터링으로 불용어 유입 방어 | 자동화 결과의 후처리·검증 책임을 서비스가 가짐 |
+
+> 수치는 원본의 키워드 5개 처리 예시 및 배치 검색 비교 기준이다. 데이터 규모·동시성 조건이 다른 일반 성능 수치로 확장 해석하지 않는다.
+
+## 포트폴리오 서사
+
+**“벡터 검색을 넣었다”가 아니라, 태그 품질 저하와 O(N×M) 병목을 분해하고, pgvector로 비교 책임을 옮긴 뒤, 남은 네트워크 병목을 `_msearch` 배치로 다시 제거한 경험**으로 설명한다.
+
+## 관련 노트
+
+- [[entities/lim-chae-hyun]] — 검색·RAG·성능 설계 역량
+- [[concepts/backend-portfolio-narrative]] — 대표 성능 개선 증거
+- [[entities/projects/masil]] — AI 기능을 상태·신뢰성과 함께 다루는 다른 사례
