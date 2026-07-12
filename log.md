@@ -39,3 +39,10 @@
 
 - Archived `https://ch010104.tistory.com/` posts as one Markdown note per post under `blog/`.
 - Each note preserves source URL, category, publication date when available, and extracted body; `blog/index.md` groups them by category.
+
+## [2026-07-12] correction | Technical blog archive quality and graph structure
+
+- Rebuilt all 297 posts as concise `핵심 요약` notes; removed raw continuous body extraction and formula/noise fragments.
+- Kept every original Tistory URL in a visible `원문` section and in `source_url` frontmatter.
+- Moved notes into 25 category folders, replaced numeric filenames with title-based filenames, and made the top-level blog index point only to category indexes.
+- Added tag/category-based related-post links (up to three per post) instead of one all-post hub node.

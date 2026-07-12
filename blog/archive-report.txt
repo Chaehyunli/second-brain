@@ -1,3 +1,0 @@
-sitemap_articles=297
-archived=297
-failures=0

@@ -1,0 +1,28 @@
+---
+title: "[기계학습] Python Pandas 란?? ( 3 )"
+created: 2026-07-12
+updated: 2026-07-12
+type: blog-post
+tags: ["blog", "technical-writing", "AI", "CS", "Python"]
+category: "AI(ML & DL)"
+published: 2025-04-04
+source_url: https://ch010104.tistory.com/43
+---
+
+# [기계학습] Python Pandas 란?? ( 3 )
+
+## 원문
+
+https://ch010104.tistory.com/43
+
+## 핵심 요약
+
+- **2. 리인덱싱 (Reindexing)** — 새로운 index 'e' 를 만들 경우, 해당 인덱스에 대한 value 값은 결측치인 NaN으로 설정됨
+- **3. 결측치 채우기** — 결측치는 인덱스가 오름 또는 내림차순으로 정렬되어 있을 경우에만 사용 가능함
+
+## 관련 글
+
+- [[blog/AI(ML & DL)/index|AI(ML & DL)]]
+- [[blog/AI(ML & DL)/기계학습- Python Pandas 란 -- ( 2 )|[기계학습] Python Pandas 란 ?? ( 2 )]]
+- [[blog/AI(ML & DL)/기계학습- 선형 회귀 실습 (1인당 GDP와 삶의 만족도 예측) ( 1 )|[기계학습] 선형 회귀 실습 (1인당 GDP와 삶의 만족도 예측) ( 1 )]]
+- [[blog/AI(ML & DL)/기계학습- 선형 회귀 실습 (1인당 GDP와 삶의 만족도 예측) ( 2 )|[기계학습] 선형 회귀 실습 (1인당 GDP와 삶의 만족도 예측) ( 2 )]]
