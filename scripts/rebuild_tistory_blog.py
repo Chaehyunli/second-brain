@@ -300,6 +300,8 @@ source_url: {record['url']}
     assert all("## 원문\n\nhttps://ch010104.tistory.com/" in path.read_text(encoding="utf-8") for path in notes)
     assert all("[0.0102" not in path.read_text(encoding="utf-8") for path in notes)
     assert all("## 핵심 요약\n\n- " in path.read_text(encoding="utf-8") for path in notes)
+    # ponytail: blocks legacy NumPy-style [[1, 2], [3, 4]] data from becoming Obsidian graph nodes.
+    assert not any(re.search(r"\[\[[0-9][0-9, .\[\]-]*\]\]", path.read_text(encoding="utf-8")) for path in notes)
     assert len(list(STAGING.iterdir())) == len(by_category) + 1
 
     backup = Path("/tmp/wiki-blog-previous")
