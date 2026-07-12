@@ -26,7 +26,7 @@ source_url: https://ch010104.tistory.com/
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]] — 18개
 - [[blog/DOCKER/index|DOCKER]] — 10개
 - [[blog/GCP/index|GCP]] — 8개
-- [[blog/INFLEARN/index|INFLEARN]] — 56개
+- [[blog/INFLEARN/index|INFLEARN]] — 57개
 - [[blog/JAVA/index|JAVA]] — 6개
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]] — 20개
 - [[blog/NETWORK/index|NETWORK]] — 21개
