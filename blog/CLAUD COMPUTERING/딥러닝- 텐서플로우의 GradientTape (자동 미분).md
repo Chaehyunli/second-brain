@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 텐서플로우의 GradientTape (자동 미분)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "DL"]
 category: "CLAUD COMPUTERING"

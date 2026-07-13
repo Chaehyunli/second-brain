@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 4. Spring AI & Hibernate 6"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "카테고리 없음"

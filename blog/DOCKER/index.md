@@ -1,7 +1,7 @@
 ---
 title: "DOCKER"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-category
 tags: [blog, technical-writing]
 ---

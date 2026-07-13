@@ -1,7 +1,7 @@
 ---
 title: "[스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술] 8. 스프링 MVC - 웹 페이지 만들기"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "inflearn", "mvc", "spring-boot"]
 category: "INFLEARN"

@@ -1,7 +1,7 @@
 ---
 title: "[모바일 프로그램밍] 코틀린(Kotlin)이란? ( 2 )"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Android", "Kotlin"]
 category: "MOBILE PROGRAMING"

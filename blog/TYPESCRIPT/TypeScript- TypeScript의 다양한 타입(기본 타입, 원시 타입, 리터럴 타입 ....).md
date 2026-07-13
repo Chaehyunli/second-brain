@@ -1,7 +1,7 @@
 ---
 title: "[TypeScript] TypeScript의 다양한 타입(기본 타입, 원시 타입, 리터럴 타입 ....)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "frontend", "TypeScript"]
 category: "TYPESCRIPT"

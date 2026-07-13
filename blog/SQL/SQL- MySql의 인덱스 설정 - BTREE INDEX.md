@@ -1,7 +1,7 @@
 ---
 title: "[SQL] MySql의 인덱스 설정 - BTREE INDEX"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Database", "springboot"]
 category: "SQL"

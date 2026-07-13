@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] BFS, DFS와 최소 신장 트리(MST)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Algorithm", "BFS", "dfs", "mst"]
 category: "ALGORITHM"

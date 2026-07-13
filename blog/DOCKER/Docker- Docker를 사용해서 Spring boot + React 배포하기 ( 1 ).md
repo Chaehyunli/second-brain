@@ -1,7 +1,7 @@
 ---
 title: "[Docker] Docker를 사용해서 Spring boot + React 배포하기 ( 1 )"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "backend", "docker", "frontend", "GCP", "react", "springboot", "배포"]
 category: "DOCKER"

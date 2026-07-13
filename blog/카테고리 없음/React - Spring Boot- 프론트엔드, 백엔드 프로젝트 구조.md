@@ -1,7 +1,7 @@
 ---
 title: "[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "backend", "frontend", "java", "react", "spring boot"]
 category: "카테고리 없음"

@@ -1,7 +1,7 @@
 ---
 title: "[데이터베이스 설계] 데이터베이스의 정규화(Normalization)란? ( 1 )"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Database", "Design"]
 category: "DATABASE DESIGN"

@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 이진 탐색 트리(Binary Search Tree)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "이진 검색 트리", "자료구조", "트리 순회"]
 category: "ALGORITHM"

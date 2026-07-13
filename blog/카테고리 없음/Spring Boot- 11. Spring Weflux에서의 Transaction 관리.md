@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 11. Spring Weflux에서의 Transaction 관리"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "카테고리 없음"

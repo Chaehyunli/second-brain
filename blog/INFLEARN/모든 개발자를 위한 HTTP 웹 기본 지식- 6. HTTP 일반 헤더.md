@@ -1,7 +1,7 @@
 ---
 title: "[모든 개발자를 위한 HTTP 웹 기본 지식] 6. HTTP 일반 헤더"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "http", "inflearn"]
 category: "INFLEARN"

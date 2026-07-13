@@ -1,7 +1,7 @@
 ---
 title: "[모바일 프로그래밍] Activity와 Intent(양방향)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Android", "Kotlin"]
 category: "MOBILE PROGRAMING"

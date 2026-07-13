@@ -1,7 +1,7 @@
 ---
 title: "[Python] Searchive 프로젝트( 2 ) - KeyBert, ElasticSearch 고도화"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "ElasticSearch", "fastapi", "KeyBert", "Minio", "PostgreSQL", "Python", "searchive"]
 category: "PYTHON"

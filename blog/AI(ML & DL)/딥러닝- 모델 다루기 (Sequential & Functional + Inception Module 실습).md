@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 모델 다루기 (Sequential & Functional + Inception Module 실습)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "DL", "Python"]
 category: "AI(ML & DL)"

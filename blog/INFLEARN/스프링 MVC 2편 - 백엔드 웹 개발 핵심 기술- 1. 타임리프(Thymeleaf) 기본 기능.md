@@ -1,7 +1,7 @@
 ---
 title: "[스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술] 1. 타임리프(Thymeleaf) 기본 기능"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "inflearn", "springboot", "thymeleaf"]
 category: "INFLEARN"

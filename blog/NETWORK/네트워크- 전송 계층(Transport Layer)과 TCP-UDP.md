@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] 전송 계층(Transport Layer)과 TCP/UDP"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Network"]
 category: "NETWORK"

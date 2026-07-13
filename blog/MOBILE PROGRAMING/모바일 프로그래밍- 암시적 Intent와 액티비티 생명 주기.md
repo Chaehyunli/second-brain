@@ -1,7 +1,7 @@
 ---
 title: "[모바일 프로그래밍] 암시적 Intent와 액티비티 생명 주기"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Android", "Kotlin"]
 category: "MOBILE PROGRAMING"

@@ -1,7 +1,7 @@
 ---
 title: "[그래프 신경망과 빅데이터] GAE 모델을 활용한 소셜 네트워크 링크 예측 및 이상치 탐지"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "GAE", "GNN"]
 category: "AI(GNN)"

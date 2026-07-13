@@ -1,7 +1,7 @@
 ---
 title: "[기계학습] 선형 회귀 실습 (1인당 GDP와 삶의 만족도 예측) ( 2 )"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "CS", "Python"]
 category: "AI(ML & DL)"

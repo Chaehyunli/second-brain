@@ -1,7 +1,7 @@
 ---
 title: "[AI AGENT] AI Agent 성능 평가"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "ai agent", "spring boot"]
 category: "AI(MCP)"

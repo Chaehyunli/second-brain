@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 딥러닝 - MINST 손글씨 인식"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "AI(ML & DL)"

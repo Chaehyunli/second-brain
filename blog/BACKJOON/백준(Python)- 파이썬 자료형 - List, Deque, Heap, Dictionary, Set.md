@@ -1,7 +1,7 @@
 ---
 title: "[백준(Python)] 파이썬 자료형 - List, Deque, Heap, Dictionary, Set"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "BACKJOON"

@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 2. Flyway 마이그래이션 규칙"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "java", "spring boot"]
 category: "SPRING BOOT"

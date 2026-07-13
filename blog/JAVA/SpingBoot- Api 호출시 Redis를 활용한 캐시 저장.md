@@ -1,7 +1,7 @@
 ---
 title: "[SpingBoot] Api 호출시 Redis를 활용한 캐시 저장"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "cache", "java", "springboot"]
 category: "JAVA"

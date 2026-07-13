@@ -1,7 +1,7 @@
 ---
 title: "[기계학습] ML(Machine Learning)의 주요 과제(데이터, 알고리즘 문제)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "CS"]
 category: "AI(ML & DL)"

@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 머신러닝: 학습(Learning)과 모델(Model)"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "ml"]
 category: "AI(ML & DL)"

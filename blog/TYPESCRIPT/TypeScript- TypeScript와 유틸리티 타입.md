@@ -1,7 +1,7 @@
 ---
 title: "[TypeScript] TypeScript와 유틸리티 타입"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "frontend", "TypeScript"]
 category: "TYPESCRIPT"

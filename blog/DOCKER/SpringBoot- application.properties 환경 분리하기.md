@@ -1,7 +1,7 @@
 ---
 title: "[SpringBoot] application.properties 환경 분리하기"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "backend", "GCP", "springboot", "배포"]
 category: "DOCKER"

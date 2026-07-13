@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 10. Redis Pub/Sub 기반 실시간 알림 시스템"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "java", "spring boot"]
 category: "SPRING BOOT"

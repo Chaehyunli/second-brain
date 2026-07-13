@@ -1,7 +1,7 @@
 ---
 title: "[아키텍처] 제어 유니트(Control Unit) 란?"
-created: 2026-07-12
-updated: 2026-07-12
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "architecture", "CS"]
 category: "ARCHITECTURE"
