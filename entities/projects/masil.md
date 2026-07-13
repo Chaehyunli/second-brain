@@ -1,10 +1,10 @@
 ---
 title: Masil
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 type: entity
 tags: [project, backend, java, spring-boot, webflux, r2dbc, python, fastapi, ai-agent, sse, redis, postgresql, testing, reliability, infrastructure]
-sources: [raw/sources/masil-github-2026-07-10.md, raw/sources/user-confirmed-masil-award-2026-07-10.md]
+sources: [raw/sources/masil-github-2026-07-10.md, raw/sources/user-confirmed-masil-award-2026-07-10.md, raw/sources/project-ui-evidence-2026-07-13.md]
 confidence: high
 ---
 
@@ -31,6 +31,10 @@ FastAPI AI API는 SSE로 응답하고 `chat`, `itinerary`, `change`, `reservatio
 ### 외부 모델 API 실패를 사용자 흐름에서 격리
 
 `app/services/agents/_base.py`에 Token Bucket 요청 조절과 429 감지, exponential backoff+jitter 재시도를 구현·테스트했다. 이는 “AI가 답하면 성공”이 아니라, 제한 응답에도 일정·예약 상태를 무너뜨리지 않는 서비스 계약을 다룬 사례다.
+
+## 제품 흐름 UI 근거 (2026-07-13)
+
+사용자 제공 모바일 앱 패널을 기능별로 분리한 UI 기록을 확인했다. 홈의 AI 여행 플래너 진입 → 자연어 대화에서 일정·항공·숙소 후보 제안 → 예약 상태 조회 → Day별 일정 편집 → 여행 당일 진행률·길 안내 흐름으로 연결된다. 실제 Android/iOS 기기에 직접 접근하지 못한 환경이므로, 이 기록은 웹 화면을 임의 재현한 결과가 아니라 원본 모바일 UI 패널을 근거로 한다.
 
 ## 코드 근거
 

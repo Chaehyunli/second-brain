@@ -46,3 +46,8 @@
 - Kept every original Tistory URL in a visible `원문` section and in `source_url` frontmatter.
 - Moved notes into 25 category folders, replaced numeric filenames with title-based filenames, and made the top-level blog index point only to category indexes.
 - Added tag/category-based related-post links (up to three per post) instead of one all-post hub node.
+
+## [2026-07-13] update | Project code and UI evidence
+
+- Reviewed Searchive backend `main` commits for embedding model initialization locking, KeyBERT latency reduction, and document-summary fallback context for AI responses; linked the implementation evidence to the Searchive project note.
+- Added traceable UI-flow evidence to Masil, PETNER, 동아리모아, and 노소공 notes. Each entry records whether it is an original mobile panel, local fixture rendering, or mock-only UI verification so interface evidence is not presented as production backend validation.

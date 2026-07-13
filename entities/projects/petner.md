@@ -1,10 +1,10 @@
 ---
 title: PETNER
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 type: entity
 tags: [project, backend, java, spring-boot, database, search, security, testing, infrastructure, award, redis]
-sources: [raw/sources/petner-vibe-coding-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
+sources: [raw/sources/petner-vibe-coding-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md, raw/sources/project-ui-evidence-2026-07-13.md]
 confidence: high
 contested: false
 ---
@@ -48,6 +48,10 @@ OpenSearch와 Elasticsearch를 비교해 Apache 2.0 라이선스, 재배포·운
 - JUnit 5·Mockito 단위 테스트와 Spring Boot 통합 테스트로 서비스 로직·엔드포인트를 검증했다.
 - STOMP는 REST 도구만으로 흐름 검증이 어려워, 단일 HTML 테스트 페이지로 연결·구독·발행·수신 전 과정을 확인했다.
 - 유기견 목록 API의 N+1 문제를 Fetch Join으로 개선해 쿼리 횟수를 `1 + 2N`에서 1회로 줄였다.
+
+## 제품 흐름 UI 근거 (2026-07-13)
+
+로컬 프론트엔드와 API fixture로 유기견 사진·보호소·회원·게시글·채팅 데이터를 렌더링한 화면 기록을 확인했다. 사용자 흐름은 프로필 완성 → 조건 검색·상세 → 보호소 상담/분양 신청 → 신청자·등록자의 대기 확인 → 승인·거절 → 유기견 `입양 절차 중` 상태 반영으로 이어진다. 실제 backend·DB·배포 환경에는 연결하지 않은 UI 검증 범위임을 함께 기록한다.
 
 ## 수상
 

@@ -1,10 +1,10 @@
 ---
 title: 동아리모아
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 type: entity
 tags: [project, backend, java, spring-boot, database, security, architecture, redis]
-sources: [raw/sources/clubmoa-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
+sources: [raw/sources/clubmoa-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md, raw/sources/project-ui-evidence-2026-07-13.md]
 confidence: high
 ---
 
@@ -41,6 +41,10 @@ JWT의 무상태 확장성은 장점이지만, 이 서비스에는 로그아웃�
 - Spring Security의 메서드 단위 인가와 표현식 기반 검증을 결합했다.
 - 요청한 동아리에 대해 현재 사용자가 회장인지 확인하는 커스텀 인가를 만들어, 회장만 임원 권한을 위임하게 했다.
 - 전역 `ADMIN` 같은 단순 권한이 아니라, **어느 동아리에서 어떤 역할인가**를 기준으로 접근을 결정했다.
+
+## 제품 흐름 UI 근거 (2026-07-13)
+
+로컬 React 프론트엔드에 가상 동아리·회원·지원자 데이터를 넣어 계정 진입 → 동아리 탐색 → 지원서 작성 → 운영자의 합격/불합격 처리 → 멤버 역할 관리 → 1:1 채팅 화면을 확인했다. 이는 지원·운영의 화면 흐름을 설명하는 근거이며, 저장·승인 반영·권한 변경 API와 실제 WebSocket 메시지 전달까지 검증한 결과는 아니다.
 
 ## 결과와 배운 점
 

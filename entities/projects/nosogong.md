@@ -1,10 +1,10 @@
 ---
 title: 노소공
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 type: entity
 tags: [project, backend, python, fastapi, machine-learning, data-engineering, database, architecture, security]
-sources: [raw/sources/nosogong-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
+sources: [raw/sources/nosogong-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md, raw/sources/project-ui-evidence-2026-07-13.md]
 confidence: high
 ---
 
@@ -52,6 +52,10 @@ Pygame 코드를 그대로 이식하는 계획은 React 환경과 호환되지 �
 | 서비스 통합 | 사용자 상호작용이 감정 변화에 반영되는 API 흐름 구성 |
 
 > 이 평가는 합성 데이터가 만든 규칙 패턴에 대한 결과다. 실제 사용자 행동 예측의 일반화 성능으로 과장하지 않고, 실사용 로그 축적 후 재검증이 필요한 수치로 관리한다.
+
+## 제품 흐름 UI 근거 (2026-07-13)
+
+사용자 제공 포트폴리오 PDF의 실제 모바일 앱 화면에서 감정·편애도·재화 게이지, 게임·출석 진입, 놀기·밥 주기·선물하기 케어 흐름을 확인했다. 놀기 상점에서는 아이템 비용을 확인한 뒤 케어 행동을 요청하며, `POST /api/v1/cares/action`의 감정 변화 결과를 표정·게이지·재화에 반영하는 구조다. 이 항목은 앱 원본 화면과 구현 연결을 근거로 한 사용자 흐름 기록이다.
 
 ## 관련 노트
 

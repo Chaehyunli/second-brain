@@ -1,10 +1,10 @@
 ---
 title: Searchive
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 type: entity
 tags: [project, backend, python, fastapi, search, rag, ai, database, infrastructure, performance, reliability]
-sources: [raw/sources/searchive-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md]
+sources: [raw/sources/searchive-detail-2026-03-08.md, raw/sources/career-description-2026-03-24.md, raw/sources/searchive-code-update-2026-07-13.md]
 confidence: high
 ---
 
@@ -53,6 +53,14 @@ confidence: high
 | 데이터 품질 | 이중 필터링으로 불용어 유입 방어 | 자동화 결과의 후처리·검증 책임을 서비스가 가짐 |
 
 > 수치는 원본의 키워드 5개 처리 예시 및 배치 검색 비교 기준이다. 데이터 규모·동시성 조건이 다른 일반 성능 수치로 확장 해석하지 않는다.
+
+## 최근 코드 개선 (2026-07-13)
+
+- **동시 초기화 보호:** 여러 요청이 처음 임베딩을 만들 때 SentenceTransformer를 중복 초기화하지 않도록 lazy loading 구간에 lock과 이중 확인을 추가했다. 태그를 병렬 임베딩하는 흐름에서 발생할 수 있는 모델 초기화 경쟁을 줄이는 변경이다.
+- **키워드 추출 지연 제거:** KeyBERT의 MaxSum 후보 조합을 끄고 기본 ranking을 사용하도록 바꿨다. 짧은 TXT fixture에서 70초 이상 걸리던 관찰 사례를 1초 미만으로 줄이는 것을 목표로 한 선택이며, 커밋 설명 기준 후보 키워드 품질은 유지한다.
+- **문서 기반 답변 fallback:** 벡터 검색이 비어도 연결 문서의 저장 요약을 context로 제공한다. 따라서 `주제가 뭐야?`처럼 키워드가 약한 질문에도 이미 생성된 문서 요약을 근거로 답할 수 있다. 답변 온도와 응답 지침도 조정해 결론 우선·근거 부재 명시를 강화했다.
+
+> 위 최근 변경은 현재 `main` 커밋 diff 검토 기준이다. 동시성·추론 지연·RAG fallback의 end-to-end 재현 시험은 이 Wiki 반영 과정에서 별도로 수행하지 않았다.
 
 ## 포트폴리오 서사
 
