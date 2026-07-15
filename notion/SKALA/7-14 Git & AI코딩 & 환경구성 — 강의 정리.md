@@ -43,4 +43,4 @@ git push -u origin main
 
 ## 관련 노트
 
-- [[39d1d84bf68e81e8b8abce8fb3b6c428|SKALA 개발환경 설치 스크립트 — 원문·주석·동작 해설]]
+- [[SKALA 개발환경 설치 스크립트 — 원문·주석·동작 해설]]

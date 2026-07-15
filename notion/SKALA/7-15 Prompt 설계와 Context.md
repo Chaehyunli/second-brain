@@ -8,4 +8,4 @@ synced_at: "2026-07-15T05:42:58Z"
 
 # [7/15] Prompt 설계와 Context
 
-- 강의 정리: [[39e1d84bf68e8182849cff358cde88a9|Prompt 설계 및 Context Engineering]]
+- 강의 정리: [[Prompt 설계 및 Context Engineering]]
