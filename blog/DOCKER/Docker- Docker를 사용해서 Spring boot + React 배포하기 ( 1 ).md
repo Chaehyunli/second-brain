@@ -224,5 +224,5 @@ GCP에서 artifact registry를 사용하기 위해서는 결제 수단 등록이
 
 - [[blog/DOCKER/index|DOCKER]]
 - [[blog/DOCKER/SpringBoot- application.properties 환경 분리하기|[SpringBoot] application.properties 환경 분리하기]]
-- [[blog/카테고리 없음/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
 - [[blog/GCP/GCP- GCP로 프로젝트 배포하기 - ( 5 ) GCP VPC 란|[GCP] GCP로 프로젝트 배포하기 - ( 5 ) GCP VPC 란?]]

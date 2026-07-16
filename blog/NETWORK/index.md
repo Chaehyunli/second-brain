@@ -8,7 +8,7 @@ tags: [blog, technical-writing]
 
 # NETWORK
 
-> 글 21개 · 카테고리 기반 탐색
+> 글 22개 · 카테고리 기반 탐색
 
 ## 글
 
@@ -21,6 +21,7 @@ tags: [blog, technical-writing]
 - [[blog/NETWORK/네트워크- DHCP와 NAT|[네트워크] DHCP와 NAT]] — 2026-05-06
 - [[blog/NETWORK/네트워크- 네트워크와 서브넷|[네트워크] 네트워크와 서브넷]] — 2026-05-04
 - [[blog/NETWORK/네트워크- 버퍼 관리, 스케줄링 및 정책|[네트워크] 버퍼 관리, 스케줄링 및 정책]] — 2026-04-29
+- [[blog/NETWORK/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]] — 2026-04-27
 - [[blog/NETWORK/네트워크- TCP 혼잡 제어 및 전송|[네트워크] TCP 혼잡 제어 및 전송]] — 2026-04-20
 - [[blog/NETWORK/네트워크- TCP 연결과 3-Way Handshake|[네트워크] TCP 연결과 3-Way Handshake]] — 2026-04-15
 - [[blog/NETWORK/네트워크- rdt 3.0 과 TCP|[네트워크] rdt 3.0 과 TCP]] — 2026-04-13

@@ -4,7 +4,7 @@ created: 2026-07-13
 updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "backend", "frontend", "java", "react", "spring boot"]
-category: "카테고리 없음"
+category: "SPRING BOOT"
 published: 2025-02-20
 source_url: https://ch010104.tistory.com/3
 ---
@@ -440,7 +440,7 @@ AuthServiceImpl는 AuthService을 상속 받음.
 
 ## 관련 글
 
-- [[blog/카테고리 없음/index|카테고리 없음]]
+- [[blog/SPRING BOOT/index|SPRING BOOT]]
 - [[blog/JAVA/Spring Boot- 빈(Bean)이란- Autowired 란|[Spring Boot] 빈(Bean)이란? Autowired 란?]]
 - [[blog/DOCKER/Docker- Docker를 사용해서 Spring boot + React 배포하기 ( 1 )|[Docker] Docker를 사용해서 Spring boot + React 배포하기 ( 1 )]]
 - [[blog/SPRING BOOT/Spring Boot- 1. Spring Boot의 FeignClient 설정(python 포함)|[Spring Boot] 1. Spring Boot의 FeignClient 설정(python 포함)]]

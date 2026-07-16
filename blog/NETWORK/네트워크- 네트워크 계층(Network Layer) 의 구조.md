@@ -4,7 +4,7 @@ created: 2026-07-13
 updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Network"]
-category: "카테고리 없음"
+category: "NETWORK"
 published: 2026-04-27
 source_url: https://ch010104.tistory.com/266
 ---
@@ -107,7 +107,7 @@ Buffering: 패브릭에서 쏟아지는 데이터가 링크 전송 속도($R$)�
 
 ## 관련 글
 
-- [[blog/카테고리 없음/index|카테고리 없음]]
+- [[blog/NETWORK/index|NETWORK]]
 - [[blog/NETWORK/네트워크- TCP 혼잡 제어 및 전송|[네트워크] TCP 혼잡 제어 및 전송]]
 - [[blog/NETWORK/네트워크- 버퍼 관리, 스케줄링 및 정책|[네트워크] 버퍼 관리, 스케줄링 및 정책]]
 - [[blog/NETWORK/네트워크- TCP 연결과 3-Way Handshake|[네트워크] TCP 연결과 3-Way Handshake]]

@@ -134,4 +134,4 @@ export default Dashboard;
 - [[blog/REACT/index|REACT]]
 - [[blog/REACT/React- state 문법이란-, useEffect 문법이란|[React] state 문법이란?, useEffect 문법이란?]]
 - [[blog/REACT/React- CLERK을 이용한 토큰 로그인|[React] CLERK을 이용한 토큰 로그인]]
-- [[blog/카테고리 없음/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]

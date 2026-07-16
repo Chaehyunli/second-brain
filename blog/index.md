@@ -29,13 +29,12 @@ source_url: https://ch010104.tistory.com/
 - [[blog/INFLEARN/index|INFLEARN]] — 58개
 - [[blog/JAVA/index|JAVA]] — 6개
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]] — 20개
-- [[blog/NETWORK/index|NETWORK]] — 21개
+- [[blog/NETWORK/index|NETWORK]] — 22개
 - [[blog/OS/index|OS]] — 24개
 - [[blog/PYTHON/index|PYTHON]] — 3개
 - [[blog/REACT/index|REACT]] — 3개
-- [[blog/SPRING BOOT/index|SPRING BOOT]] — 10개
+- [[blog/SPRING BOOT/index|SPRING BOOT]] — 13개
 - [[blog/SQL/index|SQL]] — 2개
 - [[blog/TYPESCRIPT/index|TYPESCRIPT]] — 10개
 - [[blog/기타/index|기타]] — 1개
 - [[blog/취업/index|취업]] — 1개
-- [[blog/카테고리 없음/index|카테고리 없음]] — 4개

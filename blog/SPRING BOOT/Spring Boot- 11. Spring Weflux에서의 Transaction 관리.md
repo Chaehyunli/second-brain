@@ -4,7 +4,7 @@ created: 2026-07-13
 updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
-category: "카테고리 없음"
+category: "SPRING BOOT"
 published: 2026-04-27
 source_url: https://ch010104.tistory.com/267
 ---
@@ -134,7 +134,7 @@ public class ItineraryServiceImpl implements ItineraryService {
 
 ## 관련 글
 
-- [[blog/카테고리 없음/index|카테고리 없음]]
-- [[blog/카테고리 없음/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]]
-- [[blog/카테고리 없음/Spring Boot- 4. Spring AI & Hibernate 6|[Spring Boot] 4. Spring AI & Hibernate 6]]
-- [[blog/카테고리 없음/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/index|SPRING BOOT]]
+- [[blog/NETWORK/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]]
+- [[blog/SPRING BOOT/Spring Boot- 4. Spring AI & Hibernate 6|[Spring Boot] 4. Spring AI & Hibernate 6]]
+- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]

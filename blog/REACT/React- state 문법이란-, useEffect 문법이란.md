@@ -212,4 +212,4 @@ useEffect 내부에서는 직접 async를 사용할 수 없기 때문에, useEff
 - [[blog/REACT/index|REACT]]
 - [[blog/REACT/React- param, outlet 문법|[React] param, outlet 문법]]
 - [[blog/REACT/React- CLERK을 이용한 토큰 로그인|[React] CLERK을 이용한 토큰 로그인]]
-- [[blog/카테고리 없음/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
