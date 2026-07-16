@@ -37,6 +37,10 @@
 
 - [[blog/index]] — `ch010104.tistory.com`의 기술 블로그 글을 원문 링크·발행일·카테고리와 함께 글 단위로 아카이브.
 
+## Research & signals
+
+- [[notion/Information/index|Information 리서치 아카이브]] — 최근 이슈·제품·기술 조사 보고서의 탐색 허브.
+
 ## Source manifests
 
 - `raw/sources/` — 원본 파일은 Vault 외부 보존소에 두고, 이곳에는 원본 경로·해시·수집 범위만 기록한다.
