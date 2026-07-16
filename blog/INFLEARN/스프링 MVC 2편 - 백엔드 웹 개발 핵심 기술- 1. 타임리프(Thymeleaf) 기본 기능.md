@@ -15,12 +15,810 @@ source_url: https://ch010104.tistory.com/269
 
 https://ch010104.tistory.com/269
 
-## 핵심 요약
+## 노트 유형
 
-- **핵심 개념** — 서버 사이드 HTML 렌더링 (SSR): 백엔드 서버에서 HTML을 동적으로 생성하여 클라이언트에 전달합니다.
-- **타임리프 사용 선언** — HTML 파일 상단 <html> 태그에 아래 속성을 추가해야 합니다.
-- **개념 설명** — Escape: HTML에서 사용하는 특수 문자(<, >)를 HTML 엔티티(&lt;, &gt;)로 변경하는 것.
-- **소스코드** — [파일 경로: src/main/java/hello/thymeleaf/basic/BasicController.java]
+`tutorial`
+
+## 학습 목표 및 맥락
+
+서버 사이드 HTML 렌더링 (SSR): 백엔드 서버에서 HTML을 동적으로 생성하여 클라이언트에 전달합니다.
+
+네츄럴 템플릿 (Natural Templates): 타임리프 파일은 순수 HTML 구조를 유지하므로, 서버 없이 브라우저에서 직접 열어도 화면이 깨지지 않고 마크업 확인이 가능합니다.
+
+## 원문 기반 학습 정리
+
+### 1. 타임리프 소개
+
+### 핵심 개념
+
+서버 사이드 HTML 렌더링 (SSR): 백엔드 서버에서 HTML을 동적으로 생성하여 클라이언트에 전달합니다.
+
+네츄럴 템플릿 (Natural Templates): 타임리프 파일은 순수 HTML 구조를 유지하므로, 서버 없이 브라우저에서 직접 열어도 화면이 깨지지 않고 마크업 확인이 가능합니다.
+
+스프링 통합 지원: 스프링의 다양한 기능을 편리하게 사용할 수 있도록 강력하게 통합되어 있습니다.
+
+### 타임리프 사용 선언
+
+HTML 파일 상단 <html> 태그에 아래 속성을 추가해야 합니다.
+
+```text
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+```
+
+### 2. 텍스트 - text, utext
+
+### 개념 설명
+
+Escape: HTML에서 사용하는 특수 문자(<, >)를 HTML 엔티티(&lt;, &gt;)로 변경하는 것. 웹 브라우저는 이를 태그가 아닌 문자로 인식합니다.
+
+th:text: 기본 출력 방식으로, 데이터를 자동으로 Escape 처리합니다.
+
+th:utext: Unescape 텍스트 출력으로, HTML 태그를 해석하여 출력합니다.
+
+콘텐츠 직접 출력: \[\[...\]\]는 이스케이프를 사용하며, [(...)]는 이스케이프를 사용하지 않습니다.
+
+### 소스코드
+
+[파일 경로: src/main/java/hello/thymeleaf/basic/BasicController.java]
+
+```java
+package hello.thymeleaf.basic;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/basic")
+public class BasicController {
+
+    @GetMapping("/text-basic")
+    public String textBasic(Model model) {
+        model.addAttribute("data", "Hello Spring!");
+        return "basic/text-basic";
+    }
+
+    @GetMapping("/text-unescaped")
+    public String textUnescaped(Model model) {
+        model.addAttribute("data", "Hello <b>Spring!</b>");
+        return "basic/text-unescaped";
+    }
+}
+```
+
+[파일 경로: src/main/resources/templates/basic/text-basic.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>컨텐츠에 데이터 출력하기</h1>
+<ul>
+    <li>th:text 사용 <span th:text="${data}"></span></li>
+    <li>컨텐츠 안에서 직접 출력하기 = [[${data}]]</li>
+</ul>
+</body>
+</html>
+```
+
+[파일 경로: src/main/resources/templates/basic/text-unescaped.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>text vs utext</h1>
+<ul>
+    <li>th:text = <span th:text="${data}"></span></li>
+    <li>th:utext = <span th:utext="${data}"></span></li>
+</ul>
+<h1><span th:inline="none"> [[...]] vs [(...)]</span></h1>
+<ul>
+    <li><span th:inline="none">[[...]] = </span> [[${data}]]</li>
+    <li><span th:inline="none">[(...)] = </span> [(${data})]</li>
+</ul>
+</body>
+</html>
+```
+
+### 3. 변수 - SpringEL
+
+### 개념 설명
+
+변수 표현식 ${...}에는 스프링이 제공하는 표현식인 SpringEL을 사용할 수 있습니다.
+
+객체: user.username (프로퍼티 접근 방식 -> user.getUsername() 호출)
+
+리스트: users[0].username
+
+맵: userMap['userA'].username
+
+th:with: 지역 변수를 선언합니다. 해당 태그 내부에서만 유효합니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/variable")
+    public String variable(Model model) {
+        User userA = new User("userA", 10);
+        User userB = new User("userB", 20);
+
+        List<User> list = new ArrayList<>();
+        list.add(userA);
+        list.add(userB);
+
+        Map<String, User> map = new HashMap<>();
+        map.put("userA", userA);
+        map.put("userB", userB);
+
+        model.addAttribute("user", userA);
+        model.addAttribute("users", list);
+        model.addAttribute("userMap", map);
+
+        return "basic/variable";
+    }
+
+    @lombok.Data
+    public static class User {
+        private String username;
+        private int age;
+        public User(String username, int age) {
+            this.username = username;
+            this.age = age;
+        }
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/variable.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>SpringEL 표현식</h1>
+<ul>Object
+    <li>${user.username} = <span th:text="${user.username}"></span></li>
+    <li>${user['username']} = <span th:text="${user['username']}"></span></li>
+    <li>${user.getUsername()} = <span th:text="${user.getUsername()}"></span></li>
+</ul>
+<ul>List
+    <li>${users[0].username} = <span th:text="${users[0].username}"></span></li>
+    <li>${users[0]['username']} = <span th:text="${users[0]['username']}"></span></li>
+    <li>${users[0].getUsername()} = <span th:text="${users[0].getUsername()}"></span></li>
+</ul>
+<ul>Map
+    <li>${userMap['userA'].username} = <span th:text="${userMap['userA'].username}"></span></li>
+    <li>${userMap['userA']['username']} = <span th:text="${userMap['userA']['username']}"></span></li>
+    <li>${userMap['userA'].getUsername()} = <span th:text="${userMap['userA'].getUsername()}"></span></li>
+</ul>
+
+<h1>지역 변수 (th:with)</h1>
+<div th:with="first=${users[0]}">
+    <p>처음 사람의 이름은 <span th:text="${first.username}"></span></p>
+</div>
+</body>
+</html>
+```
+
+### 4. 기본 객체들
+
+### 개념 설명
+
+스프링 부트 3.0 주의: #request, #response, #session, #servletContext를 더 이상 기본으로 지원하지 않습니다.
+
+해결책: 직접 model에 해당 객체를 추가해서 사용하거나, 타임리프가 제공하는 편의 객체(param, session, @bean)를 활용합니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/basic-objects")
+    public String basicObjects(Model model, jakarta.servlet.http.HttpServletRequest request,
+                               jakarta.servlet.http.HttpServletResponse response, jakarta.servlet.http.HttpSession session) {
+        session.setAttribute("sessionData", "Hello Session");
+        model.addAttribute("request", request);
+        model.addAttribute("response", response);
+        model.addAttribute("servletContext", request.getServletContext());
+        return "basic/basic-objects";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/basic-objects.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>식 기본 객체 (Expression Basic Objects)</h1>
+<ul>
+    <li>request = <span th:text="${request}"></span></li>
+    <li>response = <span th:text="${response}"></span></li>
+    <li>session = <span th:text="${session}"></span></li>
+    <li>servletContext = <span th:text="${servletContext}"></span></li>
+    <li>locale = <span th:text="${#locale}"></span></li>
+</ul>
+<h1>편의 객체</h1>
+<ul>
+    <li>Request Parameter = <span th:text="${param.paramData}"></span></li>
+    <li>session = <span th:text="${session.sessionData}"></span></li>
+    <li>spring bean = <span th:text="${@helloBean.hello('Spring!')}"></span></li>
+</ul>
+</body>
+</html>
+```
+
+### 5. 유틸리티 객체와 날짜
+
+### 개념 설명
+
+타임리프는 문자, 숫자, 날짜, URI 등을 편리하게 다루는 유틸리티 객체들을 제공합니다.
+
+#message, #uris, #dates, #calendars, #temporals(자바8 날짜), #numbers, #strings, #objects, #bools, #arrays, #lists, #sets, #maps, #ids
+
+자바8 날짜: LocalDate, LocalDateTime, Instant를 다룰 때 #temporals를 사용합니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/date")
+    public String date(Model model) {
+        model.addAttribute("localDateTime", java.time.LocalDateTime.now());
+        return "basic/date";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/date.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>LocalDateTime</h1>
+<ul>
+    <li>default = <span th:text="${localDateTime}"></span></li>
+    <li>yyyy-MM-dd HH:mm:ss = <span th:text="${#temporals.format(localDateTime, 'yyyy-MM-dd HH:mm:ss')}"></span></li>
+</ul>
+<h1>LocalDateTime Utils</h1>
+<ul>
+    <li>day = <span th:text="${#temporals.day(localDateTime)}"></span></li>
+    <li>month = <span th:text="${#temporals.month(localDateTime)}"></span></li>
+    <li>year = <span th:text="${#temporals.year(localDateTime)}"></span></li>
+</ul>
+</body>
+</html>
+```
+
+### 6. URL 링크
+
+### 개념 설명
+
+URL 링크 (@{...}): 쿼리 파라미터 ()와 경로 변수 {}를 처리합니다.
+
+상대/절대 경로: /hello는 절대 경로, hello는 상대 경로로 처리됩니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/link")
+    public String link(Model model) {
+        model.addAttribute("param1", "data1");
+        model.addAttribute("param2", "data2");
+        return "basic/link";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/link.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>URL 링크</h1>
+<ul>
+    <li><a th:href="@{/hello}">basic url</a></li>
+    <li><a th:href="@{/hello(param1=${param1}, param2=${param2})}">query param</a></li>
+    <li><a th:href="@{/hello/{param1}/{param2}(param1=${param1}, param2=${param2})}">path variable</a></li>
+</ul>
+</body>
+</html>
+```
+
+### 7. 리터럴
+
+### 개념 설명
+
+리터럴(Literals): 소스코드 상에 고정된 값.
+
+문자 리터럴: 항상 '로 감싸야 하지만, 공백이 없는 경우 생략 가능합니다.
+
+리터럴 대체 (|...|): 템플릿처럼 문자와 변수를 편리하게 합쳐줍니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/literal")
+    public String literal(Model model) {
+        model.addAttribute("data", "Spring!");
+        return "basic/literal";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/literal.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>리터럴</h1>
+<ul>
+    <li>'hello' + ' world!' = <span th:text="'hello' + ' world!'"></span></li>
+    <li>'hello world!' = <span th:text="'hello world!'"></span></li>
+    <li>리터럴 대체 |hello ${data}| = <span th:text="|hello ${data}|"></span></li>
+</ul>
+</body>
+</html>
+```
+
+### 8. 연산
+
+### 개념 설명
+
+산술 연산: +, , , /, %
+
+비교 연산: gt(>), lt(<), ge(>=), le(<=), not(!), eq(==), neq(!=)
+
+Elvis 연산자: ${data}?: '기본값' (데이터가 없으면 기본값 출력)
+
+No-Operation: _ 사용 시 타임리프가 실행되지 않는 것처럼 동작하여 HTML 내용을 유지합니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/operation")
+    public String operation(Model model) {
+        model.addAttribute("nullData", null);
+        model.addAttribute("data", "Spring!");
+        return "basic/operation";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/operation.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<ul>
+    <li>산술 연산: <span th:text="10 + 2"></span></li>
+    <li>비교 연산: <span th:text="1 &gt; 10"></span></li>
+    <li>조건식: <span th:text="(10 % 2 == 0)? '짝수': '홀수'"></span></li>
+    <li>Elvis 연산자: <span th:text="${nullData}?: '데이터가 없습니다.'"></span></li>
+    <li>No-Operation: <span th:text="${nullData}?: _">데이터가 없습니다.</span></li>
+</ul>
+</body>
+</html>
+```
+
+### 9. 속성 값 설정
+
+### 개념 설명
+
+속성 설정: th:* 속성을 사용하면 기존 속성을 대체하거나 새로 만듭니다.
+
+속성 추가: th:attrappend, th:attrprepend, th:classappend 등을 통해 기존 속성값에 내용을 추가합니다.
+
+checked 처리: th:checked 값이 false이면 속성 자체를 제거하여 체크를 해제합니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/attribute")
+    public String attribute() {
+        return "basic/attribute";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/attribute.html]
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>속성 설정</h1>
+<input type="text" name="mock" th:name="userA" />
+<h1>속성 추가</h1>
+<input type="text" class="text" th:classappend="large" />
+<h1>checked 처리</h1>
+checked o <input type="checkbox" name="active" th:checked="true" /><br/>
+checked x <input type="checkbox" name="active" th:checked="false" /><br/>
+</body>
+</html>
+```
+
+### 10. 반복
+
+### 개념 설명
+
+th:each: 컬렉션을 순회하며 태그를 반복 실행합니다.
+
+반복 상태 유지 (Stat): 두 번째 파라미터(예: userStat)를 통해 index, count, size, even, odd, first, last, current 등을 확인할 수 있습니다. 생략 시 변수명Stat이 기본값입니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/each")
+    public String each(Model model) {
+        addUsers(model);
+        return "basic/each";
+    }
+
+    private void addUsers(Model model) {
+        List<User> list = new ArrayList<>();
+        list.add(new User("userA", 10));
+        list.add(new User("userB", 20));
+        list.add(new User("userC", 30));
+        model.addAttribute("users", list);
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/each.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>반복 상태 유지</h1>
+<table border="1">
+    <tr>
+        <th>count</th>
+        <th>username</th>
+        <th>age</th>
+        <th>etc</th>
+    </tr>
+    <tr th:each="user, userStat : ${users}">
+        <td th:text="${userStat.count}">1</td>
+        <td th:text="${user.username}">username</td>
+        <td th:text="${user.age}">0</td>
+        <td>
+            index = <span th:text="${userStat.index}"></span>
+            even? = <span th:text="${userStat.even}"></span>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+```
+
+### 11. 조건부 평가
+
+### 개념 설명
+
+if, unless: 조건이 맞지 않으면 태그 자체를 렌더링하지 않고 제거합니다. unless는 if의 반대 조건입니다.
+
+switch: 다중 분기 처리를 지원하며, th:case="*"는 만족하는 조건이 없을 때의 디폴트값입니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/condition")
+    public String condition(Model model) {
+        addUsers(model);
+        return "basic/condition";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/condition.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>if, unless</h1>
+<table border="1">
+    <tr th:each="user, userStat : ${users}">
+        <td th:text="${userStat.count}">1</td>
+        <td th:text="${user.username}">username</td>
+        <td>
+            <span th:text="'미성년자'" th:if="${user.age lt 20}"></span>
+            <span th:text="'미성년자'" th:unless="${user.age ge 20}"></span>
+        </td>
+    </tr>
+</table>
+<h1>switch</h1>
+<table border="1">
+    <tr th:each="user, userStat : ${users}">
+        <td th:text="${user.username}">username</td>
+        <td th:switch="${user.age}">
+            <span th:case="10">10살</span>
+            <span th:case="20">20살</span>
+            <span th:case="*">기타</span>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+```
+
+### 12. 주석
+
+### 개념 설명
+
+표준 HTML 주석: <!-- ... --> 타임리프가 렌더링하지 않고 그대로 남겨둡니다.
+
+타임리프 파서 주석: <!--/* ... */--> 타임리프의 진짜 주석으로, 렌더링 시 제거됩니다.
+
+타임리프 프로토타입 주석: <!--/*/ ... /*/--> 브라우저에서 직접 열면 주석이지만, 타임리프 렌더링 시에는 정상 렌더링됩니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/comments")
+    public String comments(Model model) {
+        model.addAttribute("data", "Spring!");
+        return "basic/comments";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/comments.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<h1>예시</h1>
+<span th:text="${data}">html data</span>
+<h1>1. 표준 HTML 주석</h1>
+<!-- <span th:text="${data}">html data</span> -->
+<h1>2. 타임리프 파서 주석</h1>
+<!--/* <span th:text="${data}">html data</span> */-->
+<h1>3. 타임리프 프로토타입 주석</h1>
+<!--/*/ <span th:text="${data}">html data</span> /*/-->
+</body>
+</html>
+```
+
+### 13. 블록
+
+### 개념 설명
+
+th:block: 타임리프의 유일한 자체 태그입니다. HTML 태그 속성으로 정의하기 애매한 경우(예: 반복문으로 여러 태그를 묶고 싶을 때) 사용하며, 렌더링 시 제거됩니다.
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/block")
+    public String block(Model model) {
+        addUsers(model);
+        return "basic/block";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/block.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<th:block th:each="user : ${users}">
+    <div>
+        사용자 이름 <span th:text="${user.username}"></span>
+        사용자 나이 <span th:text="${user.age}"></span>
+    </div>
+    <div>
+        요약 <span th:text="${user.username} + ' / ' + ${user.age}"></span>
+    </div>
+</th:block>
+</body>
+</html>
+```
+
+### 14. 자바스크립트 인라인
+
+### 개념 설명
+
+th:inline="javascript": 자바스크립트 내에서 타임리프 변수를 안전하게 사용합니다.
+
+텍스트 렌더링: 문자열에 자동으로 "를 붙여주고 이스케이프 처리합니다.
+
+내추럴 템플릿: 주석을 통해 브라우저 열기 시와 서버 렌더링 시의 값을 분리합니다.
+
+객체 JSON 변환: 객체를 자동으로 JSON으로 변환해줍니다. (User 클래스가 public이어야 함)
+
+### 소스코드
+
+[컨트롤러 추가: BasicController.java]
+
+```text
+@GetMapping("/javascript")
+    public String javascript(Model model) {
+        model.addAttribute("user", new User("userA", 10));
+        addUsers(model);
+        return "basic/javascript";
+    }
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+[파일 경로: src/main/resources/templates/basic/javascript.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<script th:inline="javascript">
+    var username = [[${user.username}]];
+    var age = [[${user.age}]];
+    var username2 = /*[[${user.username}]]*/ "test username";
+    var user = [[${user}]];
+</script>
+<script th:inline="javascript">
+    [# th:each="user, stat : ${users}"]
+    var user[[${stat.count}]] = [[${user}]];
+    [/]
+</script>
+</body>
+</html>
+```
+
+### 15. 템플릿 조각
+
+### 개념 설명
+
+th:fragment: 공통 영역(푸터 등)을 조각으로 정의합니다.
+
+th:insert / th:replace: 정의된 조각을 현재 태그 내부에 삽입하거나 태그 자체를 조각으로 대체합니다.
+
+파라미터 사용: 조각 호출 시 파라미터를 전달하여 동적으로 렌더링할 수 있습니다.
+
+### 소스코드
+
+[파일 경로: src/main/resources/templates/template/fragment/footer.html]
+
+```text
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<body>
+<footer th:fragment="copy">
+    푸터 자리 입니다.
+</footer>
+<footer th:fragment="copyParam (param1, param2)">
+    <p>파라미터 자리 입니다.</p>
+    <p th:text="${param1}"></p>
+    <p th:text="${param2}"></p>
+</footer>
+</body>
+</html>
+```
+
+### 16. 템플릿 레이아웃 1
+
+### 개념 설명
+
+개념: 공통 정보(CSS, JS)가 있는 레이아웃에 페이지마다 다른 정보(title, 추가 link 등)를 파라미터로 넘겨서 사용합니다.
+
+### 소스코드
+
+[파일 경로: src/main/resources/templates/template/layout/base.html]
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head th:fragment="common_header(title, links)">
+    <title th:replace="${title}">레이아웃 타이틀</title>
+    <!-- 공통 리소스 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common.css}">
+    <!-- 추가 리소스 -->
+    <th:block th:replace="${links}" />
+</head>
+</html>
+```
+
+### 17. 템플릿 레이아웃 2
+
+### 개념 설명
+
+레이아웃 확장: <head>뿐만 아니라 <html> 전체를 레이아웃 조각으로 대체하여 전체 페이지 틀을 관리합니다.
+
+### 소스코드
+
+[파일 경로: src/main/resources/templates/template/layoutExtend/layoutFile.html]
+
+```text
+<!DOCTYPE html>
+<html th:fragment="layout (title, content)" xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <title th:replace="${title}">레이아웃 타이틀</title>
+</head>
+<body>
+<h1>레이아웃 헤더</h1>
+<div th:replace="${content}">내용 공간</div>
+<footer>레이아웃 푸터</footer>
+</body>
+</html>
+```
+
+### 레이아웃 헤더
+
+[파일 경로: src/main/resources/templates/template/layoutExtend/layoutExtendMain.html]
+
+```text
+<!DOCTYPE html>
+<html th:replace="~{template/layoutExtend/layoutFile :: layout(~{::title}, ~{::section})}"
+      xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org)">
+<head>
+    <title>메인 페이지 타이틀</title>
+</head>
+<body>
+<section>
+    <p>메인 페이지 컨텐츠입니다.</p>
+</section>
+</body>
+</html>
+```
 
 ## 관련 글
 

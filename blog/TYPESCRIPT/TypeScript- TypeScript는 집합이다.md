@@ -15,12 +15,596 @@ source_url: https://ch010104.tistory.com/105
 
 https://ch010104.tistory.com/105
 
-## 핵심 요약
+## 노트 유형
 
-- 타입스크립트는 문법만 배워서는 사용하기 힘들기 때문에, 타입스크립트에 대한 이해가 필요함
-- **1. 타입은 집합이다** — 등 모든 숫자를 포함하는 집합이며, string 타입은 모든 문자열을 포함하는 집합
-- **🧱 2. 타입 계층도: 슈퍼타입과 서브타입** — number는 10, 20 등 리터럴 타입들의 슈퍼타입
-- **🎯 3. 객체 타입의 호환성** — 즉, 타입 이름보다 **구성(구조)**이 중요!!
+`concept`
+
+## 핵심 개념과 선택 맥락
+
+타입스크립트는 문법만 배워서는 사용하기 힘들기 때문에, 타입스크립트에 대한 이해가 필요함
+
+타입스크립트 공식 문서에서는 주요 문법들만 모아둔 치트시트를 무료로 제공하긴 함
+
+## 원문 기반 개념 정리
+
+타입스크립트는 문법만 배워서는 사용하기 힘들기 때문에, 타입스크립트에 대한 이해가 필요함
+
+타입스크립트 공식 문서에서는 주요 문법들만 모아둔 치트시트를 무료로 제공하긴 함
+
+https://www.typescriptlang.org/cheatsheets/
+
+Cheat Sheets
+
+To read later or print
+
+www.typescriptlang.org
+
+### 1. 타입은 집합이다
+
+타입스크립트에서 말하는 '타입'은 집합
+
+즉, number 타입은 1, 2, 3, 4, 5, ... 등 모든 숫자를 포함하는 집합이며, string 타입은 모든 문자열을 포함하는 집합
+
+```text
+let a: number;
+a = 1;    // ✅
+a = 999;  // ✅
+a = -42;  // ✅
+```
+
+하지만 20이라는 숫자 하나만을 포함하는 타입도 만들 수 있음
+
+이것이 Number Literal 타입!!
+
+```text
+let b: 20;
+b = 20;   // ✅
+b = 21;   // ❌
+```
+
+여기서 20은 number의 부분 집합이 됨
+
+그래서 다음처럼 큰 타입(number)로는 대입이 가능하지만, 반대로는 불가능!!
+
+```text
+let num1: number = 10;
+let num2: 10 = 10;
+
+num1 = num2; // ✅ 업캐스팅
+num2 = num1; // ❌ 다운캐스팅
+```
+
+### 🧱 2. 타입 계층도: 슈퍼타입과 서브타입
+
+타입 간에는 포함 관계가 있음.
+
+number는 10, 20 등 리터럴 타입들의 슈퍼타입
+
+unknown은 모든 타입의 슈퍼타입
+
+never는 모든 타입의 서브타입
+
+1) 업캐스팅 vs 다운캐스팅
+
+```typescript
+// unknown 타입 -> 타입계층도에서 가장 위에 위치
+function unknownExam(){
+    let a: unknown = 1; // unknown 타입에 number 타입을 업캐스팅
+    let b: unknown = "hello";
+    let c: unknown = true;
+    let d: unknown = null;
+    let e: unknown = undefined;
+
+    let unknownVar: unknown;
+
+    // let num: number = unknownVar; number 타입에 known 타입을 다운캐스팅 -> 에러!!!
+    // let str: string = unknownVar;
+    // let bool: boolean = unknownVar;
+}
+
+// never 타입 -> 타입계층도에서 가장 아래에 위치 (집합으로 보면 공지합)
+function neverExam() {
+    function neverFunc(): never {
+        while (true) {}
+    }
+
+    let num: number = neverFunc(); // number 타입에 never 타입을 업캐스팅
+    let str: string = neverFunc();
+    let bool: boolean = neverFunc();
+
+    // let never1: never = 10; // never 타입에 number 타입을 다운캐스팅 -> 에러!!
+    // let never2: never = "string";
+    // let never3: never = true;
+}
+
+// void 타입 -> 반환값이 없는 함수
+function voidExam() {
+  function voidFunc(): void {
+    console.log("hi");
+  }
+
+  let voidVar: void = undefined; // void 타입에 undefined 타입을 업캐스팅
+}
+
+// any 타입 -> 모든 타입의 슈퍼 타입이기도 하고, 모든 타입의 서브 타입이기도함.(치트키)
+function anyExam() {
+  let unknownVar: unknown;
+  let anyVar: any;
+  let undefinedVar: undefined;
+  let neverVar: never;
+
+  anyVar = unknownVar; // any 타입에 unknown 타입을 다운캐스팅!!
+  // 에러가 나야할 것처럼 보이지만 any타입은 허용
+
+  undefinedVar = anyVar; // undefined 타입에 any 타입을 다운캐스팅!!
+  // 에러가 나야할 것처럼 보이지만 any타입은 허용
+
+  // neverVar = anyVar;
+  // 하지만, 이러한 치트키인 any 타입도 never에는 불가능!!
+
+  // 이렇듯 any 타입은 타입계층도를 무시하는 위험한 타입이기 때문에 최대한 사용 x
+}
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+### 🎯 3. 객체 타입의 호환성
+
+타입스크립트는 구조적 타입 시스템을 따름.
+
+즉, 타입 이름보다 **구성(구조)**이 중요!!
+
+```text
+// 기본 타입간의 호환성
+let num1: number = 10;
+let num2: 10 = 10;
+
+num1 = num2; // number 타입에 number 리터널 타입을 업캐스팅
+
+// 객체 타입간의 호환성 -> 어떤 객체타입을 다른 객체타입으로 취급해도 괜찮은가?
+type Animal = { // 슈퍼 타입 -> name과 color 속성이 있으면 Animal 타입이다!!라고 보는 것
+  name: string;
+  color: string;
+};
+
+type Dog = { // 서브 타입 -> name, color, bread 속성이 모두 있어야 Dog 타입이다!! 라고 보는 것
+  name: string;
+  color: string;
+  breed: string;
+};
+
+// 따라서 객체 타입에서는 속성(property)의 수가 적은 것이 더 큰 개념!!
+
+let animal: Animal = {
+  name: "기린",
+  color: "yellow",
+};
+
+let dog: Dog = {
+  name: "돌돌이",
+  color: "brown",
+  breed: "진도",
+};
+
+animal = dog; // animal 타입에 dog 타입을 업캐스팅!!
+// dog = animal; // 다운캐스팅이기 떄문에 오류!!
+
+type Book = { // 슈퍼 타입
+  name: string;
+  price: number;
+};
+
+type ProgrammingBook = { // 서브 타입
+  name: string;
+  price: number;
+  skill: string;
+};
+
+let book: Book;
+let programmingBook: ProgrammingBook = {
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  skill: "reactjs",
+};
+
+book = programmingBook; // book 타입에 programingBook 타입을 업캐스팅!!
+// programmingBook = book; // programingBook 타입에 book 타입을 다운캐스팅 하는 건 불가!! -> 에러!!
+
+console.log(book); // book 객체 안에 실제로는 skill이 있음
+// {
+//  name: "한 입 크기로 잘라먹는 리액트",
+//  price: 33000,
+//  skill: "reactjs" // 여전히 존재!
+// }
+
+book.name
+book.price
+// book.skill // 하지만, 이렇게는 접근 불가!!
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+### ❗ 4. 초과 프로퍼티 검사
+
+객체 리터럴로 변수를 초기화할 때, 정의되지 않은 프로퍼티가 있으면 오류 발생
+
+```typescript
+// 초과 프로퍼티 검사 -> 아래 같은 형식으로 객체를 생성할 때 하는 검사
+let book2: Book = {
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  // skill: "reactjs", // book = programmingBook 랑 같은 역할 아닌가??
+  // 에러!! 객체를 초기화하면서 생성할 때에는 객체 타입 Book에 있는 속성만 정의해야함.
+};
+
+let book3: Book = programmingBook; // 이렇게 선언하면 초과 프로러티 검사를 피할 수 있음
+
+function func(book: Book) {}
+
+func({ // 매개변수로 객체 리터럴을 직접 넘길 때는 객체의 속성과 타입이 일치해야함.
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  // skill: "reactjs",
+});
+
+func(programmingBook); // 이 경우에는 programmingBook 타입이 book 타입으로 업캐스팅!!
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+하지만 미리 정의된 객체를 대입하면 오류 없음:
+
+### 🔀 5. 대수 타입 (Algebraic Types)
+
+1) 유니온 타입 (합집합)
+
+```text
+// 대수 타입 -> 여러개의 타입을 합성해서 새롭게 만들어낸 타입
+// 합집합 타입과 교집합 타입으로 나뉨
+
+// 합집합 타입 - Union 타입
+let a: string | number | boolean; // string 타입과 number의 합집합
+a = 1;
+a = "hello";
+a = true;
+
+let arr: (number | string | boolean)[] = [1, "hello", true];
+
+type Dog = {
+    name: string;
+    color: string;
+};
+
+type Person = {
+    name: string;
+    language: string;
+};
+
+type Union1 = Dog | Person;
+
+let union1: Union1 = {
+    name: "",
+    color: "",
+};
+
+let union2: Union1 = {
+    name: "",
+    language: "",
+};
+
+let union3: Union1 = {
+    name: "",
+    language: "",
+    color: "",
+};
+
+// let union4: Union1 = {
+//    name: "",
+// }
+```
+
+2) 인터섹션 타입 (교집합)
+
+```text
+// 교집합 타입 - Intersection 타입
+
+let variable: number & string; // variable에 마우스 커서를 올려보면 never 타입이라 나옴.
+
+type Intersection = Dog & Person;
+
+let intersection1: Intersection = { // 아래의 객체 속성 중 하나라도 빠지면 에러가 발생!!
+  name: "",
+  color: "",
+  language: "",
+};
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+### 🧠 6. 타입 추론
+
+타입스크립트는 타입을 자동 추론
+
+추론을 하기 위한 단서가 필요함!!
+
+```typescript
+// 타입 추론 -> 함수에서의 매개변수는 타입 추론이 잘 안되기 때문에, 명시가 필요
+let a = 10; // number 라고 추론
+let b = "hello";
+let c = {
+  id: 1,
+  name: "이정환",
+  profile: {
+    nickname: "winterlood",
+  },
+  urls: ["https://winterlood.com"],
+};
+
+let { id, name, profile } = c;
+
+let [one, two, three] = [1, "hello", true];
+
+function func(message = "hello") { // return 결과와 매개변수의 기본값을 가지고 타입을 추론
+  return "hello";
+}
+
+let d; // any 타입으로 추론 -> 아무런 추론 정보가 없을 때에는 any로 추론을 함
+
+d = 10; // 이 줄 이후에는 d를 number 타입으로 추론!!
+d.toFixed(); // d는 number 타입!!
+
+d = "hello";
+d.toUpperCase(); // 여기에서는 d를 string 타입으로 추론
+// d.toFixed();
+
+const num = 10; // const로 선언할 경우, number가 아니라 10이라는 수의 number 리터럴 타입으로 추론됨
+const str = "hello"; // const로 선언할 경우, string이 아니라 "hello"의 string 리터럴 타입으로 추론됨
+
+let arr = [1, "string"]; // string와 number의 합집합 타입의 배열로 추론 (string | number)[]
+```
+
+### 🛡️ 7. 타입 단언
+
+특정 값을 특정 타입이라고 강제로 단언하는 문법
+
+```typescript
+// 타입 단언
+type Person = {
+  name: string;
+  age: number;
+};
+
+let person = {} as Person; // Person 타입의 빈 객체를 만들고, 이후에 속성을 지정하고 싶을 때
+person.name = "이정환";
+person.age = 27;
+
+type Dog = {
+  name: string;
+  color: string;
+};
+
+// 이 경우에는, 초과 프로러티 검사에 의해 bread 속성에서 에러가 발생!!
+// let dog = {
+//  name: "돌돌이",
+//  color: "brown",
+//  breed: "진도",
+//};
+
+let dog = {
+  name: "돌돌이",
+  color: "brown",
+  breed: "진도",
+} as Dog; // as Dog를 통해 Dog 타입으로 단언함.
+
+// 타입 단언의 규칙
+// 값 as 단언 <- 단언식
+// A as B
+// A가 B의 슈퍼타입이거나
+// A가 B의 서브타입이어야 함
+
+let num1 = 10 as never; // num1 은 never 타입으로 단언 -> number 타입이 never 타입의 슈퍼 타입이기에 가능
+let num2 = 10 as unknown; // num2 은 unknown으로 단언 -> number 타입이 unknown 타입의 서브 타입이기에 가능
+
+// let num3 = 10 as string; // 오류 발생!! -> number 타입이 string 타입의 슈퍼 타입도 아니고 서브 타입도 아니기 때문에 타입 단언이 불가!!
+let num3 = 10 as unknown as string; // 이런 식(중간에 unknown을 끼고 단언)으로 가능은 하지만, 좋은 방법은 아님
+
+// const 단언
+let num4 = 10 as const; // const num4 = 10과 같은 효과
+
+let cat = {
+  name: "야옹이",
+  color: "yellow",
+} as const; // cat의 모든 속성 값이 readOnly가 되어 변경이 불가하게 됨
+
+// cat.name = ''
+
+// Non Null 단언 -> 이 값이 Null 또는 undefined가 아니라고 단언하는 것
+type Post = {
+  title: string;
+  author?: string;
+};
+
+let post: Post = {
+  title: "게시글1",
+  author: "임채현"
+};
+
+// const len: (number | undefined) = post.author?.length; // author이 있으면 정상적으로 number가 되지만, 없을 경우, post.author?.length가 undefined가 됨
+// const len: number = post.author?.length; -> 이렇게 사용하면 post.author?.length의 값이 number 혹은 undefined 로 반환되는데, 이는 number로 선언한 len에 맞지 않음
+
+const len: number = post.author!.length; // -> author! 을 사용하여 author 값은 Null 또는 undefined가 아니라고 단언해서 오류가 사라짐
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+### 🔎 8. 타입 가드와 좁히기
+
+typeof 타입 가드
+
+```typescript
+// 타입 좁히기
+// 조건문 등을 이용해 넓은타입에서 좁은타입으로
+// 타입을 상황에 따라 좁히는 방법을 이야기
+
+type Person = {
+  name: string;
+  age: number;
+};
+
+// value => number : toFixed // value의 값이 number 일 경우에는 toFixed 메서드 적용
+// value => string : toUpperCase // value의 값이 string 일 경우에는 toUpperCase 메서드 적용
+// value => Date : getTime // value의 값이 Date 일 경우에는 getTime 메서드 적용
+// value => Person : name은 age살 입니다. // value의 값이 Person 일 경우에는 name은 age살 입니다.적용
+
+function func(value: number | string | Date | null | Person) { // Date는 Node.js 가 기본적으로 제공하는 내장 객체임(클래스)
+
+    value; // 여기에서는 value를 string | number | Date | Person | null 로 추론
+    // 때문에 아래와 같은 연산은 불가하기 때문에 타입 좁히기가 필요함
+    // value.toFixed()                                      // 에러!!
+    // value.toUpperCase()                                  // 에러!!
+    // value.getTime()                                      // 에러!!
+    // console.log(`${value.name}은 ${value.age}살 입니다`)   // 에러!!
+
+    if (typeof value === "number") {
+        console.log(value.toFixed()); // 여기에서는 value를 number 타입으로 추론
+    } else if (typeof value === "string") {
+        console.log(value.toUpperCase()); // 여기에서는 value를 string 타입으로 추론
+    } else if (value instanceof Date) { // A instanceof B 는 A가 B의의 instance일 경우 true를 반환 (B에는 항상 클래스가 들어와야함. type은 불가)
+        console.log(value.getTime());
+        // typeof는 Date를 반환하지 않기에, typeof value === "Date" 는 항상 false!!
+        // Date의 타입은 onject 임. 하지만, typeof value === "object"를 할 경우, null 또한, object로 판단되어 value를 (Date | Person | null) 로 추론하기 때문에 getTime() 사용 불가능!!
+    } else if (value && "age" in value) { // value instanceof Person은 사용 불가
+        // "age" in value을 통해, value를 Person으로 추론 가능(age 속성을 가지고 있는 것은 Person 뿐!!)
+        // 하지만, "age" in value 만 할 경우, value가 null일 수도 있기 때문에, value && 를 추가
+        console.log(`${value.name}은 ${value.age}살 입니다`);
+    }
+}
+```
+
+### 9. 🧩 서로소 유니온 타입
+
+```typescript
+// 서로소 유니온 타입
+// 교집합이 없는 타입들로만 만든 유니온 타입을 말함
+type Admin = {
+  tag: "ADMIN"; // string 리터럴 타입으로 선언! -> 리터럴 타입이 속성으로 있기 때문에 각 type들은 모두 서로소가 됨.
+  name: string;
+  kickCount: number;
+};
+
+type Member = {
+  tag: "MEMBER";
+  name: string;
+  point: number;
+};
+
+type Guest = {
+  tag: "GUEST";
+  name: string;
+  visitCount: number;
+};
+
+type User = Admin | Member | Guest;
+// 리터럴 타입인 tag 속성은 Admin, Member, Guest 모두 다르기 때문에, 교집합이 없다.
+// Admin의 Member의 교집합에는 어떤 특성을 가진 객체가 들어갈까? 생각해 보면, 그 조건을 만족하는 tag 값이 존재할 수 없다!!
+
+function login(user: User) {
+  switch (user.tag) {
+    case "ADMIN": {
+      console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다.`);
+      break;
+    }
+    case "MEMBER": {
+      console.log(`${user.name}님 현재까지 ${user.point}모았습니다`);
+      break;
+    }
+    case "GUEST": {
+      console.log(
+        `${user.name}님 현재까지 ${user.visitCount}번 방문하셨습니다`
+      );
+      break;
+    }
+  }
+}
+
+// 비동기 작업의 결과를 처리하는 객체
+
+// 1번 방식
+type LoadingTask = {
+  state: "LOADING"; // string 리터럴 타입으로 선언
+};
+
+type FailedTask = {
+  state: "FAILED";
+  error: {
+    message: string;
+  };
+};
+
+type SuccessTask = {
+  state: "SUCCESS";
+  response: {
+    data: string;
+  };
+};
+type AsyncTask = LoadingTask | FailedTask | SuccessTask;
+
+// 2 번 방식
+//type AsyncTask = {
+//    state: "LOADING" | "FAILED" | "SUCCESS";
+//    error?:{
+//        message: string;
+//    };
+//    response?: {
+//        data: string;
+//    };
+//}
+
+function processResult(task: AsyncTask) {
+  switch (task.state) {
+    case "LOADING": {
+      console.log("로딩 중");
+      break;
+    }
+    case "FAILED": {
+        // 2번 방식으로 할 경우, state의 값의 내용에 따라 타입 좁히기가 일어나지 않아. task가 AsyncTask 타입임(error가 null일 수도 있어서 에러 발생!!)
+      console.log(`에러 발생 : ${task.error.message}`); // error? 나 error!을 사용해서 에러를 없앨 수는 있지만, 이 방식은 위험함.
+      // 따라서 1번과 같은 방식으로 하면, 타입 좁히기가 정상적으로 이루어짐. task의 타입이 FailedTask로 정상적으로 추론
+      break;
+    }
+    case "SUCCESS": {
+      console.log(`성공 : ${task.response.data}`); // 1번 방식의 경우, task의 타입이 SuccessTask로 정상적으로 추론
+      break;
+    }
+  }
+}
+
+const loading: AsyncTask = {
+  state: "LOADING",
+};
+
+const failed: AsyncTask = {
+  state: "FAILED",
+  error: {
+    message: "오류 발생 원인은 ~~",
+  },
+};
+
+const success: AsyncTask = {
+  state: "SUCCESS",
+  response: {
+    data: "데이터 ~~",
+  },
+};
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+tag라는 공통 필드를 활용하여 타입을 좁히는 태그드 유니온 기법은 가독성, 유지보수 측면에서 매우 유용
+
+### 10. 깃허브 코드 내용
+
+https://github.com/Chaehyunli/typescript_study/tree/main/section3
 
 ## 관련 글
 

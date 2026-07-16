@@ -15,12 +15,180 @@ source_url: https://ch010104.tistory.com/246
 
 https://ch010104.tistory.com/246
 
-## 핵심 요약
+## 노트 유형
 
-- **📂 1. 프로젝트 폴더 구조** — 프로젝트는 관심사 분리(Separation of Concerns) 원칙에 따라 다음과 같이 구성되어 있습니다.
-- **Step 1: 앱 시작 및 전역 설정 (app/_layout.tsx)** — ClerkProvider가 앱 전체를 감싸며, 이 순간부터 모든 화면에서 Clerk 훅을 사용할 수 있습니다.
-- **Step 2: 인증 가드 (app/(tabs)/_layout.tsx)** — 로그인이 필요한 경로에 접근할 때마다 로그인 여부를 확인하여 미인증 사용자를 차단합니다.
-- **Step 3: 구글 OAuth 로그인 (app/(auth)/sign-in.tsx)** — useOAuth 훅을 사용하여 구글 인증 과정을 수행하고 세션을 활성화합니다.
+`guide`
+
+## 적용 목적과 전제조건
+
+프로젝트는 관심사 분리(Separation of Concerns) 원칙에 따라 다음과 같이 구성되어 있습니다.
+
+ClerkProvider가 앱 전체를 감싸며, 이 순간부터 모든 화면에서 Clerk 훅을 사용할 수 있습니다.
+
+## 구현 절차·검증·주의점
+
+### 📂 1. 프로젝트 폴더 구조
+
+프로젝트는 관심사 분리(Separation of Concerns) 원칙에 따라 다음과 같이 구성되어 있습니다.
+
+```text
+app/
+├── _layout.tsx           # 전역 레이아웃 (ClerkProvider 설정)
+├── (auth)/               # 인증 관련 그룹
+│   ├── _layout.tsx       # 인증 화면 Stack 레이아웃
+│   └── sign-in.tsx       # 구글 OAuth 로그인 화면
+└── (tabs)/               # 메인 앱 기능 그룹 (로그인 필수)
+    ├── _layout.tsx       # 인증 체크 Guard + 탭 네비게이션
+    ├── index.tsx         # 홈 화면 (백엔드 등록 로직 포함)
+    └── explore.tsx       # 탐색 화면
+
+utils/
+└── tokenCache.ts         # SecureStore를 이용한 Clerk 토큰 저장소
+
+api/
+├── client.ts             # Axios 인스턴스 기본 설정 (Base URL 등)
+├── auth.ts               # 인증/회원가입 관련 API 함수
+└── user.ts               # 사용자 프로필 등 일반 API 함수
+
+hooks/
+└── useApi.ts             # Clerk JWT 토큰 자동 주입 및 API 실행 커스텀 훅
+```
+
+### 🔐 2. 로그인 및 인증 상세 흐름
+
+### Step 1: 앱 시작 및 전역 설정 (app/_layout.tsx)
+
+ClerkProvider가 앱 전체를 감싸며, 이 순간부터 모든 화면에서 Clerk 훅을 사용할 수 있습니다.
+
+```text
+<ClerkProvider tokenCache={tokenCache} publishableKey={publishableKey}>
+  <ClerkLoaded>
+    <Stack> ... </Stack>
+  </ClerkLoaded>
+</ClerkProvider>
+```
+
+### Step 2: 인증 가드 (app/(tabs)/_layout.tsx)
+
+로그인이 필요한 경로에 접근할 때마다 로그인 여부를 확인하여 미인증 사용자를 차단합니다.
+
+```typescript
+const { isLoaded, isSignedIn } = useAuth();
+
+if (!isSignedIn) {
+  return <Redirect href="/(auth)/sign-in" />;  // 미로그인 → 로그인 화면으로 강제 이동
+}
+
+return <Tabs> ... </Tabs>;  // 로그인 상태 → 탭 화면 표시
+```
+
+### Step 3: 구글 OAuth 로그인 (app/(auth)/sign-in.tsx)
+
+useOAuth 훅을 사용하여 구글 인증 과정을 수행하고 세션을 활성화합니다.
+
+```typescript
+const { startOAuthFlow } = useOAuth({ strategy: 'oauth_google' });
+
+const handleGoogleSignIn = async () => {
+  // 1. 디바이스 브라우저에서 구글 로그인 페이지 오픈
+  const { createdSessionId, setActive } = await startOAuthFlow();
+
+  if (createdSessionId) {
+    // 2. 구글 인증 완료 → Clerk가 세션 생성
+    // 3. 세션 활성화 → Clerk가 JWT 발급 → tokenCache(SecureStore)에 자동 저장
+    await setActive!({ session: createdSessionId });
+    router.replace('/(tabs)'); // 4. 홈으로 이동
+  }
+};
+```
+
+### Step 4: 토큰 보안 저장 (utils/tokenCache.ts)
+
+Clerk가 내부적으로 이 객체를 호출하여 토큰을 안전하게 관리합니다. 개발자가 직접 저장 코드를 작성할 필요가 없습니다.
+
+```typescript
+export const tokenCache = {
+  async getToken(key: string) {
+    return await SecureStore.getItemAsync(key); // iOS Keychain / Android Keystore에서 호출
+  },
+  async saveToken(key: string, token: string) {
+    await SecureStore.setItemAsync(key, token); // 암호화하여 기기에 저장
+  },
+};
+```
+
+### Step 5: 백엔드 연동 (app/(tabs)/index.tsx)
+
+홈 진입 시 필요한 API를 호출합니다. 이때 토큰을 직접 넘기지 않는 것이 핵심입니다.
+
+```typescript
+const { authRequest } = useApi();
+
+useEffect(() => {
+  authRequest(registerUser); // authRequest가 내부에서 토큰을 알아서 주입함
+}, []);
+```
+
+### 📡 3. API 통신 및 토큰 자동 주입 구조
+
+useApi 훅은 토큰 관리 로직을 API 호출부와 완전히 분리합니다.
+
+### 6단계 — 토큰 자동 주입 내부 로직 (hooks/useApi.ts + api/auth.ts)
+
+```typescript
+// hooks/useApi.ts
+const authRequest = async (fn) => {
+  const token = await getToken();   // Clerk 세션에서 최신 JWT 꺼내기
+  const response = await fn(token); // 요청 함수에 토큰 주입하여 실행
+  return response.data;
+};
+
+// api/auth.ts
+export const registerUser = (token: string) =>
+  apiClient.post("/api/users/signup", {}, {
+    headers: { Authorization: `Bearer ${token}` } // 주입받은 토큰 사용
+  });
+```
+
+### 🚀 4. 새로운 인증 API 추가 방법 (Pattern)
+
+### 1단계: API 정의 (api/user.ts)
+
+```typescript
+import { apiClient } from "./client";
+
+export const getUserProfile = (token: string) =>
+  apiClient.get("/api/users/profile", {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+export const updateUserProfile = (token: string, data: { nickname: string }) =>
+  apiClient.put("/api/users/profile", data, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+```
+
+### 2단계: 화면에서 호출
+
+```typescript
+const { authRequest } = useApi();
+
+// 인자가 없는 경우: 함수명만 전달
+const profile = await authRequest(getUserProfile);
+
+// 추가 인자가 있는 경우: 화살표 함수로 래핑하여 토큰 전달 자리 확보
+const result = await authRequest(
+  (token) => updateUserProfile(token, { nickname: "홍길동" })
+);
+```
+
+### ✨ 요약 및 장점
+
+보안: 토큰은 오직 SecureStore에만 머물며 UI 컴포넌트에는 노출되지 않습니다.
+
+간결성: authRequest 패턴을 통해 비즈니스 로직에서 토큰 처리 코드가 사라집니다.
+
+자동화: Clerk 세션이 만료되거나 갱신될 때 getToken()이 항상 최신 토큰을 보장합니다.
 
 ## 관련 글
 

@@ -15,11 +15,205 @@ source_url: https://ch010104.tistory.com/130
 
 https://ch010104.tistory.com/130
 
-## 핵심 요약
+## 노트 유형
 
-- **실습 1: 온도 변환기 - 고차 함수 활용** — Celsius, Fahrenheit, Kelvin 3가지 온도 체계 간 변환 프로그램을 작성
-- **실습 2: 경매 시스템 - 널 안전성** — 경매에서 입찰자가 있을 경우 입찰가로, 입찰자가 없을 경우 최소 가격으로 상품 가격을 결정하는 시스템
-- **실습 3: 폴더블 폰 - 상속과 메서드 오버라이딩** — 일반 휴대전화와 달리 폴더블 휴대전화는 접힌 상태에서 전원 버튼을 눌러도 화면이 켜지지 않음
+`tutorial`
+
+## 학습 목표 및 맥락
+
+Celsius, Fahrenheit, Kelvin 3가지 온도 체계 간 변환 프로그램을 작성
+
+Celsius to Fahrenheit: F = 9/5(°C) + 32
+
+## 원문 기반 학습 정리
+
+### 실습 1: 온도 변환기 - 고차 함수 활용
+
+📋 요구사항
+
+Celsius, Fahrenheit, Kelvin 3가지 온도 체계 간 변환 프로그램을 작성
+
+고차 함수를 사용하여 변환 로직을 매개변수로 전달
+
+🧮 변환 공식
+
+Celsius to Fahrenheit: F = 9/5(°C) + 32
+
+Kelvin to Celsius: °C = K - 273.15
+
+Fahrenheit to Kelvin: K = 5/9(°F - 32) + 273.15
+
+💻 구현 코드
+
+```text
+fun main() {
+    // 섭씨(Celsius) 27도를 화씨(Fahrenheit)로 변환
+    printFinalTemperature(27.0, "Celsius", "Fahrenheit") { celsius ->
+        (9.0 / 5.0 * celsius) + 32
+    }
+
+    // 켈빈(Kelvin) 350도를 섭씨(Celsius)로 변환
+    printFinalTemperature(350.0, "Kelvin", "Celsius") { kelvin ->
+        kelvin - 273.15
+    }
+
+    // 화씨(Fahrenheit) 10도를 켈빈(Kelvin)으로 변환
+    printFinalTemperature(10.0, "Fahrenheit", "Kelvin") { fahrenheit ->
+        (5.0 / 9.0 * (fahrenheit - 32)) + 273.15
+    }
+}
+
+fun printFinalTemperature(
+    initialMeasurement: Double, // 입력 온도값
+    initialUnit: String, // 입력 온도 체계
+    finalUnit: String, // 변환할 온도 체계
+    conversionFormula: (Double) -> Double // 온도 변환식
+) {
+    val finalMeasurement = String.format("%.2f", conversionFormula(initialMeasurement))
+    println("$initialMeasurement degrees $initialUnit is $finalMeasurement degrees $finalUnit.")
+}
+```
+
+📤 출력 결과
+
+```text
+27.0 degrees Celsius is 80.60 degrees Fahrenheit.
+350.0 degrees Kelvin is 76.85 degrees Celsius.
+10.0 degrees Fahrenheit is 260.93 degrees Kelvin.
+```
+
+🔍 핵심 개념
+
+고차 함수: conversionFormula: (Double) -> Double 파라미터로 함수를 받음
+
+람다 표현식: { celsius -> (9.0 / 5.0 * celsius) + 32 } 형태로 변환 로직 전달
+
+String.format(): 소수점 둘째 자리까지 형식화
+
+### 실습 2: 경매 시스템 - 널 안전성
+
+📋 요구사항
+
+경매에서 입찰자가 있을 경우 입찰가로, 입찰자가 없을 경우 최소 가격으로 상품 가격을 결정하는 시스템
+
+💻 구현 코드
+
+```text
+fun main() {
+    val winningBid = Bid(5000, "Private Collector")
+    println("Item A is sold at ${auctionPrice(winningBid, 2000)}.")
+    println("Item B is sold at ${auctionPrice(null, 3000)}.")
+}
+
+class Bid(val amount: Int, val bidder: String)
+
+fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
+    // bid가 null이 아니면 bid.amount를 반환하고, null이면 minimumPrice를 반환
+    return bid?.amount ?: minimumPrice
+}
+```
+
+📤 출력 결과
+
+```text
+Item A is sold at 5000.
+Item B is sold at 3000.
+```
+
+🔍 핵심 개념
+
+널 안전성: Bid? 타입으로 null 가능성 명시
+
+안전 호출 연산자: bid?.amount로 null 체크 후 접근
+
+엘비스 연산자: ?: 연산자로 null일 때 기본값 제공
+
+### 실습 3: 폴더블 폰 - 상속과 메서드 오버라이딩
+
+📋 요구사항
+
+일반 휴대전화와 달리 폴더블 휴대전화는 접힌 상태에서 전원 버튼을 눌러도 화면이 켜지지 않음
+
+Phone 클래스를 상속받아 FoldablePhone 클래스를 구현
+
+💻 구현 코드
+
+```text
+// 주어진 Phone 클래스 코드
+open class Phone(var isScreenLightOn: Boolean = false) {
+    // open 키워드를 추가하여 자식 클래스에서 오버라이딩 할 수 있도록 허용
+    open fun switchOn() {
+        isScreenLightOn = true
+    }
+
+    fun switchOff() {
+        isScreenLightOn = false
+    }
+}
+
+// 요구사항에 맞게 작성된 FoldablePhone 클래스
+class FoldablePhone(var isFolded: Boolean = true) : Phone() {
+    // 1. Phone 클래스의 switchOn() 메서드를 오버라이딩
+    override fun switchOn() {
+        // 2. 휴대전화가 접혀있지 않을 때만 부모 클래스의 switchOn()을 호출
+        if (!isFolded) {
+            super.switchOn() // super는 부모 클래스를 의미
+        }
+    }
+
+    // 3. 폴더블 휴대전화의 접기/펴기 상태를 변경하는 메서드
+    fun fold() {
+        isFolded = true
+        // 접었을 때 화면이 꺼지도록 switchOff() 호출
+        switchOff()
+    }
+
+    fun unfold() {
+        isFolded = false
+    }
+}
+
+// § Phone 클래스의 확장 함수로 checkPhoneScreenLight()를 변경하여 사용
+fun Phone.checkPhoneScreenLight() {
+    val phoneScreenLight = if (this.isScreenLightOn) "on" else "off"
+    println("The phone screen's light is $phoneScreenLight.")
+}
+
+// § 테스트를 위한 main() 함수 코드
+fun main() {
+    val newFoldablePhone = FoldablePhone()
+
+    // 1. 접힌 상태에서 전원을 켜려고 시도 -> 화면 안 켜짐
+    newFoldablePhone.switchOn()
+    newFoldablePhone.checkPhoneScreenLight() // 결과: off
+
+    // 2. 휴대전화를 펼침
+    newFoldablePhone.unfold()
+
+    // 3. 펼친 상태에서 전원을 켜려고 시도 -> 화면 켜짐
+    newFoldablePhone.switchOn()
+    newFoldablePhone.checkPhoneScreenLight() // 결과: on
+}
+```
+
+📤 출력 결과
+
+```text
+The phone screen's light is off.
+The phone screen's light is on.
+```
+
+🔍 핵심 개념
+
+상속: class FoldablePhone : Phone() 형태로 부모 클래스 상속
+
+open 키워드: 부모 클래스에서 오버라이딩을 허용하기 위해 필요
+
+메서드 오버라이딩: override fun switchOn() 으로 부모 메서드 재정의
+
+super 키워드: super.switchOn() 으로 부모 클래스 메서드 호출
+
+확장 함수: fun Phone.checkPhoneScreenLight() 로 기존 클래스에 새 기능 추가
 
 ## 관련 글
 

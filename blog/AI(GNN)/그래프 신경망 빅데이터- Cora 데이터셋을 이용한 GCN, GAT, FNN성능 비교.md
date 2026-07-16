@@ -15,9 +15,319 @@ source_url: https://ch010104.tistory.com/143
 
 https://ch010104.tistory.com/143
 
-## 핵심 요약
+## 노트 유형
 
-- - 이 코드에서는 논문 인용 네트워크인 Cora 데이터셋을 사용
+`concept`
+
+## 핵심 개념과 선택 맥락
+
+- 이 코드에서는 논문 인용 네트워크인 Cora 데이터셋을 사용
+
+특징(Feature): 1,433개의 차원으로, 각 논문이 특정 단어를 포함하는지 여부 (Bag-of-Words)
+
+## 원문 기반 개념 정리
+
+데이터셋 및 공통 설정
+
+- 이 코드에서는 논문 인용 네트워크인 Cora 데이터셋을 사용
+
+노드(Node): 2,708개의 논문
+
+엣지(Edge): 10,556개의 인용 관계
+
+특징(Feature): 1,433개의 차원으로, 각 논문이 특정 단어를 포함하는지 여부 (Bag-of-Words)
+
+클래스(Class): 7개의 학문 분야
+
+```python
+import os
+import torch
+!pip install torch-geometric
+from torch_geometric.data import Data
+import torch.nn.functional as F
+from torch_geometric.nn import GCNConv, GATConv, GraphNorm
+from torch.utils.data import TensorDataset, DataLoader
+from torch_geometric.utils import to_networkx
+import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
+from torch.nn import Linear
+import torch_geometric.transforms as T
+from torch_geometric.datasets import Planetoid
+#----------------------------------------------------------
+dataset = Planetoid(root='/tmp/Cora', name='Cora')
+graph = dataset[0]
+print(f'Number of nodes: {graph.num_nodes}')
+print(f'Number of edges: {graph.num_edges}')
+print(f'graph.x')
+print(graph.edge_index)
+print(f'graph.y')
+graph.num_classes = 7
+print(f'Number of classes: {graph.num_classes}')
+#----------------------------------------------------------
+def convert_to_networkx(graph):
+    g = to_networkx(graph, node_attrs=["x"])
+    y = graph.y.numpy()
+    return g, y
+
+def plot_graph(g, y):
+    plt.figure(figsize=(9, 7))
+    nx.draw_spring(g, node_size=30, arrows=False, node_color=y)
+    plt.show()
+
+g, y = convert_to_networkx(graph)
+plot_graph(g, y)
+#----------------------------------------------------------
+split = T.RandomNodeSplit(num_val=0.1, num_test=0.2) # train은 학습을 위한 문제, val은 모의고사, test는 실제 수능
+graph = split(graph)
+graph
+# Data(x=[2708, 1433], edge_index=[2, 10556], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708], num_classes=7)
+```
+
+하이퍼파라미터 및 공통 설정
+
+- 모든 모델은 학습을 위해 다음과 같은 하이퍼파라미터와 설정을 공유
+
+코드
+
+hid_dim: 은닉층의 차원 크기
+
+epochs: 전체 데이터셋을 반복 학습하는 횟수
+
+learning_rate: 학습률
+
+heads: GAT 모델에서 사용할 어텐션 헤드의 수
+
+dropout: 과적합을 방지하기 위해 노드의 일부를 비활성화하는 비율
+
+weight_decay: L2 정규화(Regularization)를 위한 가중치 감소 값
+
+```text
+hid_dim = 32
+epochs = 5000
+learning_rate = 0.005
+heads = 8
+dropout = 0.6
+weight_decay = 5e-4
+```
+
+Optimizer (최적화 함수): torch.optim.Adam
+
+Adam은 효율적이고 일반적으로 좋은 성능을 내는 최적화 알고리즘으로, learning_rate와 weight_decay를 적용하여 모델의 가중치를 업데이트
+
+Loss Function (손실 함수): torch.nn.CrossEntropyLoss
+
+다중 클래스 분류 문제에 표준적으로 사용되는 손실 함수
+
+모델의 예측 값과 실제 레이블 간의 차이를 계산하여 손실(loss)을 측정
+
+1. FNN (Feedforward Neural Network) - 기본 모델
+
+그래프의 연결 구조(인용 관계)는 무시
+
+오직 각 논문이 가진 특징(단어 정보)만을 이용해 분야를 분류하는 기본 신경망
+
+성능 비교를 위한 베이스라인 모델 역할
+
+```python
+class FNN(torch.nn.Module):
+    def __init__(self, graph, hid_dim):
+        super(FNN, self).__init__()
+        self.lin0 = torch.nn.Linear(graph.num_node_features, hid_dim)
+        self.lin1 = torch.nn.Linear(hid_dim, graph.num_classes)
+
+    def forward(self, graph):
+        x = self.lin0(graph.x)
+        x = F.relu(x)
+        x = F.dropout(x, p=dropout, training=self.training)
+        x = self.lin1(x)
+        return x
+
+modelFNN = FNN(graph, hid_dim)
+print(modelFNN)
+optimizerFNN = torch.optim.Adam(modelFNN.parameters(), lr=learning_rate, weight_decay=weight_decay)
+loss_function = torch.nn.CrossEntropyLoss()
+```
+
+```text
+# loss 함수는 뭘 쓸건지, optimizer는 뭐를 쓸건지
+# FNN
+modelFNN.train()
+losses = []
+for epoch in range(epochs):
+    optimizerFNN.zero_grad()
+    out = modelFNN(graph)
+    loss = loss_function(out[graph.train_mask], graph.y[graph.train_mask])
+    loss.backward()
+    optimizerFNN.step()
+    losses.append(loss.item())
+
+plt.figure(figsize=(12,8))
+plt.title('FNN')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+losses_np = np.array(losses)
+epoch_range = np.arange(1, epochs+1)
+plt.plot(epoch_range, losses_np, color='blue', label='loss')
+plt.legend()
+plt.show()
+```
+
+```text
+modelFNN.eval()
+with torch.no_grad():
+    out = modelFNN(graph)
+    pred = out.argmax(dim=1)
+    test_correct = pred[graph.test_mask] == graph.y[graph.test_mask]
+    test_acc = int(test_correct.sum()) / int(graph.test_mask.sum())
+    print(f'Accuracy(FNN): {test_acc:.4f}')
+
+# Accuracy(FNN): 0.7768
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+2. GCN (Graph Convolutional Network) - 그래프 구조 활용
+
+그래프 구조를 활용하는 대표적인 모델
+
+각 노드의 정보를 업데이트할 때, 해당 노드의 이웃 노드들의 특징을 평균내어 집계
+
+이를 통해 노드 간의 관계성을 학습에 반영
+
+```python
+# G => GCN => relu -> dropout -> GCN -> relu -> Softmax
+class MyGCN(torch.nn.Module):
+    def __init__(self, graph, hid_dim):
+        super(MyGCN, self).__init__()
+        self.conv1 = GCNConv(graph.num_node_features, hid_dim)
+        self.conv2 = GCNConv(hid_dim, hid_dim)
+        self.out = Linear(hid_dim, graph.num_classes)
+
+    def forward(self, graph):
+        x, edge_index = graph.x, graph.edge_index
+        x = self.conv1(x, edge_index)
+        x = F.relu(x)
+        x = F.dropout(x, p=dropout, training=self.training)
+        x = self.conv2(x, edge_index)
+        x = F.relu(x)
+        x = F.dropout(x, p=dropout, training=self.training)
+        # x = F.softmax(self.out(x), dim=1)
+        return x
+
+modelGCN = MyGCN(graph, hid_dim)
+print(modelGCN)
+optimizerGCN = torch.optim.Adam(modelGCN.parameters(), lr=learning_rate, weight_decay=weight_decay)
+loss_function = torch.nn.CrossEntropyLoss()
+```
+
+```text
+# loss 함수는 뭘 쓸건지, optimizer는 뭐를 쓸건지
+# GCN
+modelGCN.train()
+losses = []
+for epoch in range(epochs):
+    optimizerGCN.zero_grad()
+    out = modelGCN(graph)
+    loss = loss_function(out[graph.train_mask], graph.y[graph.train_mask])
+    loss.backward()
+    optimizerGCN.step()
+    losses.append(loss.item())
+
+plt.figure(figsize=(12,8))
+plt.title('GCN')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+losses_np = np.array(losses)
+epoch_range = np.arange(1, epochs+1)
+plt.plot(epoch_range, losses_np, color='blue', label='loss')
+plt.legend()
+plt.show()
+```
+
+```text
+modelGCN.eval()
+with torch.no_grad():
+    out = modelGCN(graph)
+    pred = out.argmax(dim=1)
+    test_correct = pred[graph.test_mask] == graph.y[graph.test_mask]
+    test_acc = int(test_correct.sum()) / int(graph.test_mask.sum())
+    print(f'Accuracy(GCN): {test_acc:.4f}')
+
+# Accuracy(GCN): 0.8708
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
+
+3. GAT (Graph Attention Network) - 중요한 이웃에 집중
+
+GAT는 GCN을 개선한 모델로, 어텐션(Attention) 메커니즘을 도입
+
+GAT는 각 이웃 노드에 서로 다른 가중치(중요도)를 부여하여 더 중요한 이웃의 정보에 집중
+
+Multi-head Attention을 통해 여러 관점에서 관계성을 학습할 수 있음
+
+```python
+class MyGAT(torch.nn.Module):
+    def __init__(self, graph, hid_dim, heads):
+        super(MyGAT, self).__init__()
+        self.conv1 = GATConv(graph.num_node_features, hid_dim, heads)
+        self.norm = GraphNorm(hid_dim*heads)
+        self.conv2 = GATConv(hid_dim*heads, graph.num_classes, heads=1)
+
+    def forward(self, graph):
+        x, edge_index = graph.x, graph.edge_index
+        x = F.dropout(x, p=dropout, training=self.training)
+        x = self.conv1(x, edge_index)
+        x = self.norm(x)
+        x = F.elu(x)
+        x = F.dropout(x, p=dropout, training=self.training)
+        x = self.conv2(x, edge_index)
+        return x
+
+modelGAT = MyGAT(graph, hid_dim, heads)
+print(modelGAT)
+optimizerGAT = torch.optim.Adam(modelGAT.parameters(), lr=learning_rate, weight_decay=weight_decay)
+loss_function = torch.nn.CrossEntropyLoss()
+```
+
+```text
+# loss 함수는 뭘 쓸건지, optimizer는 뭐를 쓸건지
+# GAT
+modelGAT.train()
+losses = []
+for epoch in range(epochs):
+    optimizerGAT.zero_grad()
+    out = modelGAT(graph)
+    loss = loss_function(out[graph.train_mask], graph.y[graph.train_mask])
+    loss.backward()
+    optimizerGAT.step()
+    losses.append(loss.item())
+
+plt.figure(figsize=(12,8))
+plt.title('GAT')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+losses_np = np.array(losses)
+epoch_range = np.arange(1, epochs+1)
+plt.plot(epoch_range, losses_np, color='blue', label='loss')
+plt.legend()
+plt.show()
+```
+
+```text
+modelGAT.eval()
+with torch.no_grad():
+    out = modelGAT(graph)
+    pred = out.argmax(dim=1)
+    test_correct = pred[graph.test_mask] == graph.y[graph.test_mask]
+    test_acc = int(test_correct.sum()) / int(graph.test_mask.sum())
+    print(f'Accuracy(GAT): {test_acc:.4f}')
+
+ # Accuracy(GAT): 0.8616
+```
+
+> 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
 ## 관련 글
 
