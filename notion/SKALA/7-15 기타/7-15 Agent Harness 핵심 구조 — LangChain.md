@@ -6,6 +6,13 @@ source_url: "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness"
 type: "manual-learning-note"
 ---
 
+# [7/15] Agent Harness 핵심 구조 — LangChain
+
+## 연결
+- 상위 개념: [[7-15 Prompt 설계 및 Context Engineering]]
+- 관점 확장: [[7-15 AI 에이전틱 패턴의 진화 — Prompt·Context·Harness]]
+- 구현 사례: [[7-15 OpenCode로 보는 코딩 에이전트 내부 구조]]
+
 ## 원문
 [The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness)
 

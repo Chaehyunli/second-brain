@@ -1,12 +1,19 @@
 ---
-title: "Prompt 설계 및 Context Engineering"
+title: "[7/15] Prompt 설계 및 Context Engineering"
 notion_page_id: "39e1d84b-f68e-8182-849c-ff358cde88a9"
 content_sha256: "238b241538bd45fbdd9972cb69b8f379f71511126088a966d6ecaa31bf8d050a"
 source_url: "https://app.notion.com/p/39e1d84bf68e8182849cff358cde88a9"
 synced_at: "2026-07-15T05:42:58Z"
 ---
 
-# Prompt 설계 및 Context Engineering
+# [7/15] Prompt 설계 및 Context Engineering
+
+## 관련 학습 노트
+- [[7-15 Prompt 설계와 Context/7-15 실습 과제 — 시장 분석 프롬프트 개선|실습 과제 — 시장 분석 프롬프트 개선]]: Role·Context·Constraints·Format을 결합해 시장 분석 보고서를 개선한 사례
+- [[7-15 Prompt 설계와 Context/7-15 추가 사항 — 임원용 1페이지 보고 프롬프트|추가 사항 — 임원용 1페이지 보고 프롬프트]]: 결론·핵심 포인트·리스크·액션 중심의 임원 보고 형식
+- [[7-15 기타/7-15 Agent Harness 핵심 구조 — LangChain|Agent Harness 핵심 구조]]: 모델 밖 도구·상태·검증 루프의 역할
+- [[7-15 기타/7-15 AI 에이전틱 패턴의 진화 — Prompt·Context·Harness|AI 에이전틱 패턴의 진화]]: Prompt→Context→Harness로 확장되는 설계 관점
+- [[7-15 기타/7-15 OpenCode로 보는 코딩 에이전트 내부 구조|OpenCode 코딩 에이전트 내부 구조]]: 도구 호출 루프와 권한·세션·실행 구조
 
 ## 학습 목표
 

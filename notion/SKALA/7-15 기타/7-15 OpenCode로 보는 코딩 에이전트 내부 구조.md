@@ -6,6 +6,13 @@ source_url: "https://cefboud.com/posts/coding-agents-internals-opencode-deepdive
 type: "manual-learning-note"
 ---
 
+# [7/15] OpenCode로 보는 코딩 에이전트 내부 구조
+
+## 연결
+- 상위 개념: [[7-15 Prompt 설계 및 Context Engineering]]
+- Harness 원리: [[7-15 Agent Harness 핵심 구조 — LangChain]]
+- 설계 흐름: [[7-15 AI 에이전틱 패턴의 진화 — Prompt·Context·Harness]]
+
 ## 원문
 [How Coding Agents Actually Work: Inside OpenCode](https://cefboud.com/posts/coding-agents-internals-opencode-deepdive/)
 

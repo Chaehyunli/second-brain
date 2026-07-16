@@ -6,6 +6,13 @@ source_url: "https://bits-bytes-nn.github.io/insights/agentic-ai/2026/04/05/evol
 type: "manual-learning-note"
 ---
 
+# [7/15] AI 에이전틱 패턴의 진화 — Prompt·Context·Harness
+
+## 연결
+- 상위 개념: [[7-15 Prompt 설계 및 Context Engineering]]
+- Harness 구조: [[7-15 Agent Harness 핵심 구조 — LangChain]]
+- 코딩 에이전트 사례: [[7-15 OpenCode로 보는 코딩 에이전트 내부 구조]]
+
 ## 원문
 [프롬프트에서 하네스까지 — AI 에이전틱 패턴 4년의 기록](https://bits-bytes-nn.github.io/insights/agentic-ai/2026/04/05/evolution-of-ai-agentic-patterns.html)
 
