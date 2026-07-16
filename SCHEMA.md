@@ -16,7 +16,7 @@
 
 - File names: lowercase kebab-case; project pages are under `entities/projects/`; 기술 블로그 글은 `blog/`에 둔다.
 - Every agent-owned page has frontmatter: `title`, `created`, `updated`, `type`, `tags`, `sources` 또는 `source_url`.
-- Every entity/concept page links to at least two other wiki pages with `[[wikilinks]]`.
+- Every entity/concept page links to at least two other wiki pages with wiki links.
 - New or changed pages must be listed in `index.md` and logged in `log.md`.
 - New tags must be added below before use.
 
