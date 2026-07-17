@@ -1,7 +1,7 @@
 ---
 title: "[모바일프로그래밍] Safe Args (Fragment 간 데이터 전달)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Kotlin"]
 category: "MOBILE PROGRAMING"

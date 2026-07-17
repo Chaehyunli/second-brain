@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 6. Java 21 가상 스레드 VS 기존 스레드"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "java", "spring boot"]
 category: "SPRING BOOT"

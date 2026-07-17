@@ -1,7 +1,7 @@
 ---
 title: "[React] param, outlet 문법"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "JavaScript", "react"]
 category: "REACT"

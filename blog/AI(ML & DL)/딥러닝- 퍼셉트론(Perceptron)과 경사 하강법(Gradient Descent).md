@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 퍼셉트론(Perceptron)과 경사 하강법(Gradient Descent)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "DL"]
 category: "AI(ML & DL)"

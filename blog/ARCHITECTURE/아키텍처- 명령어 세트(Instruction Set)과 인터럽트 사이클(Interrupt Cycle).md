@@ -1,7 +1,7 @@
 ---
 title: "[아키텍처] 명령어 세트(Instruction Set)과 인터럽트 사이클(Interrupt Cycle)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "architecture", "CS"]
 category: "ARCHITECTURE"

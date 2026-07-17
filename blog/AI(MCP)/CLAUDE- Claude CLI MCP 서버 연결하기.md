@@ -1,7 +1,7 @@
 ---
 title: "[CLAUDE] Claude CLI MCP 서버 연결하기"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "Claude", "LLM", "mcp"]
 category: "AI(MCP)"

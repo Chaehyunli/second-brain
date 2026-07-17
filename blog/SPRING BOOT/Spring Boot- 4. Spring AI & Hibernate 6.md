@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 4. Spring AI & Hibernate 6"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "SPRING BOOT"
@@ -109,6 +109,6 @@ public interface TravelPlanRepository extends JpaRepository<TravelPlanEntity, Lo
 ## 관련 글
 
 - [[blog/SPRING BOOT/index|SPRING BOOT]]
-- [[blog/NETWORK/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]]
-- [[blog/SPRING BOOT/Spring Boot- 11. Spring Weflux에서의 Transaction 관리|[Spring Boot] 11. Spring Weflux에서의 Transaction 관리]]
-- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/Spring Boot- 3. 로컬 파일 업로드 권한 문제 → supabase|[Spring Boot] 3. 로컬 파일 업로드 권한 문제 → supabase]]
+- [[blog/SPRING BOOT/Spring Boot- 5. mock 테스트 코드 작성|[Spring Boot] 5. mock 테스트 코드 작성]]
+- [[blog/SPRING BOOT/Spring Boot- 2. Flyway 마이그래이션 규칙|[Spring Boot] 2. Flyway 마이그래이션 규칙]]

@@ -1,7 +1,7 @@
 ---
 title: "[운영체제] 프로세스의 상태(Process State) 란?"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "CS", "OS"]
 category: "OS"

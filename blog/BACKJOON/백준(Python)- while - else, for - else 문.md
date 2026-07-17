@@ -1,7 +1,7 @@
 ---
 title: "[백준(Python)] while - else, for - else 문"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Python"]
 category: "BACKJOON"

@@ -1,7 +1,7 @@
 ---
 title: "DATABASE DESIGN"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-category
 tags: [blog, technical-writing]
 ---

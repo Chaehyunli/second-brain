@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 1. Spring Boot의 FeignClient 설정(python 포함)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "java", "spring boot"]
 category: "SPRING BOOT"

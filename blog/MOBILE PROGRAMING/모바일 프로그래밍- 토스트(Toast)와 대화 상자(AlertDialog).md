@@ -1,7 +1,7 @@
 ---
 title: "[모바일 프로그래밍] 토스트(Toast)와 대화 상자(AlertDialog)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Android", "Kotlin"]
 category: "MOBILE PROGRAMING"

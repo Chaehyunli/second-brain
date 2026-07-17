@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] TCP 연결과 3-Way Handshake"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Network"]
 category: "NETWORK"
@@ -140,4 +140,4 @@ TIME_WAIT: 종료 후 유실 패킷 처리를 위한 대기 시간.
 - [[blog/NETWORK/index|NETWORK]]
 - [[blog/NETWORK/네트워크- rdt 3.0 과 TCP|[네트워크] rdt 3.0 과 TCP]]
 - [[blog/NETWORK/네트워크- TCP 혼잡 제어 및 전송|[네트워크] TCP 혼잡 제어 및 전송]]
-- [[blog/NETWORK/네트워크- RDT (Reliable Data Transfer) 프로토콜|[네트워크] RDT (Reliable Data Transfer) 프로토콜]]
+- [[blog/NETWORK/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]]

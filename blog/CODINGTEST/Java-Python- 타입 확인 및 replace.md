@@ -1,7 +1,7 @@
 ---
 title: "[Java/Python] 타입 확인 및 replace"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "codingtest", "java", "Python"]
 category: "CODINGTEST"

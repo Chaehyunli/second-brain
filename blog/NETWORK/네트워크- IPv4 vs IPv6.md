@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] IPv4 vs IPv6"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Network"]
 category: "NETWORK"

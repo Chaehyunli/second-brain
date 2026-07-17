@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] TCP 혼잡 제어 및 전송"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "CS", "Network"]
 category: "NETWORK"

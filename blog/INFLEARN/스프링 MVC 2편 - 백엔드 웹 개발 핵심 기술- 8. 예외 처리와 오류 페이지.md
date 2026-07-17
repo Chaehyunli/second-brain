@@ -1,7 +1,7 @@
 ---
 title: "[스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술] 8. 예외 처리와 오류 페이지"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "inflearn", "java", "spring boot"]
 category: "INFLEARN"

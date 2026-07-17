@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] RDT (Reliable Data Transfer) 프로토콜"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "CS", "Network"]
 category: "NETWORK"

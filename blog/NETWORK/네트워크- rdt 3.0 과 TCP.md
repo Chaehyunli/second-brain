@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] rdt 3.0 과 TCP"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "CSS", "Network"]
 category: "NETWORK"

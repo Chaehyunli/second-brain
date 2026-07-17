@@ -1,7 +1,7 @@
 ---
 title: "[TypeScript] TypeScript의 함수와 타입"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "frontend", "TypeScript"]
 category: "TYPESCRIPT"

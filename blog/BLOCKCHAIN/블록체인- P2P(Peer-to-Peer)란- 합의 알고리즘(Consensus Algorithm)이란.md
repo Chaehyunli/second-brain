@@ -1,7 +1,7 @@
 ---
 title: "[블록체인] P2P(Peer-to-Peer)란? 합의 알고리즘(Consensus Algorithm)이란??"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "blockchain", "CS"]
 category: "BLOCKCHAIN"

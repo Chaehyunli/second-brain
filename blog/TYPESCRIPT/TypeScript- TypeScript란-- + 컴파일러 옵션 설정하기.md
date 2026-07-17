@@ -1,7 +1,7 @@
 ---
 title: "[TypeScript] TypeScript란?? + 컴파일러 옵션 설정하기"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "frontend", "TypeScript"]
 category: "TYPESCRIPT"

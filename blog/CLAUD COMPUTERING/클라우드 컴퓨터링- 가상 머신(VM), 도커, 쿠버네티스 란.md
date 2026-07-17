@@ -1,7 +1,7 @@
 ---
 title: "[클라우드 컴퓨터링] 가상 머신(VM), 도커, 쿠버네티스 란?"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "claud", "docker", "k8s"]
 category: "CLAUD COMPUTERING"

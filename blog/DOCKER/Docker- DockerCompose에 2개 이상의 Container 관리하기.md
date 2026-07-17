@@ -1,7 +1,7 @@
 ---
 title: "[Docker] DockerCompose에 2개 이상의 Container 관리하기"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "docker"]
 category: "DOCKER"

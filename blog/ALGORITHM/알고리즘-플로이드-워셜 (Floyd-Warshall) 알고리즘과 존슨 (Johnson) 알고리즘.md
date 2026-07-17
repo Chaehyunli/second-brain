@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘]플로이드-워셜 (Floyd-Warshall) 알고리즘과 존슨 (Johnson) 알고리즘"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "ALGORITHM"

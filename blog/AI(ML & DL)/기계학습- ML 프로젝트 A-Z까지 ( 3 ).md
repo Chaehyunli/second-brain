@@ -1,7 +1,7 @@
 ---
 title: "[기계학습] ML 프로젝트 A-Z까지 ( 3 )"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "CS"]
 category: "AI(ML & DL)"

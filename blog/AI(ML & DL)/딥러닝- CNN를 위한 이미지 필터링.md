@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] CNN를 위한 이미지 필터링"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "CNN", "DL"]
 category: "AI(ML & DL)"

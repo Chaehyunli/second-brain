@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] 11. Spring Weflux에서의 Transaction 관리"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "SPRING BOOT"
@@ -135,6 +135,6 @@ public class ItineraryServiceImpl implements ItineraryService {
 ## 관련 글
 
 - [[blog/SPRING BOOT/index|SPRING BOOT]]
-- [[blog/NETWORK/네트워크- 네트워크 계층(Network Layer) 의 구조|[네트워크] 네트워크 계층(Network Layer) 의 구조]]
-- [[blog/SPRING BOOT/Spring Boot- 4. Spring AI & Hibernate 6|[Spring Boot] 4. Spring AI & Hibernate 6]]
-- [[blog/SPRING BOOT/React - Spring Boot- 프론트엔드, 백엔드 프로젝트 구조|[React / Spring Boot] 프론트엔드, 백엔드 프로젝트 구조]]
+- [[blog/SPRING BOOT/Spring Boot- 11. Cluster DB|[Spring Boot] 11. Cluster DB]]
+- [[blog/SPRING BOOT/Spring Boot- 10. Redis Pub-Sub 기반 실시간 알림 시스템|[Spring Boot] 10. Redis Pub/Sub 기반 실시간 알림 시스템]]
+- [[blog/SPRING BOOT/Spring Boot- 9. 동기 Postgres의 스케줄러 분리|[Spring Boot] 9. 동기 Postgres의 스케줄러 분리]]

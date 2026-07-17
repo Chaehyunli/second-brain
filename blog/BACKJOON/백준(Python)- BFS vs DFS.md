@@ -1,7 +1,7 @@
 ---
 title: "[백준(Python)] BFS vs DFS"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "BFS", "dfs", "Pthon"]
 category: "BACKJOON"

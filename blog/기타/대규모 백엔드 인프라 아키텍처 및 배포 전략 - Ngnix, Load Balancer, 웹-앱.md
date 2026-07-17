@@ -1,7 +1,7 @@
 ---
 title: "대규모 백엔드 인프라 아키텍처 및 배포 전략 - Ngnix, Load Balancer, 웹/앱"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "load balancer", "ngnix", "배포"]
 category: "기타"

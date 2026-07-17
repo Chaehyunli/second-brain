@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] A* (A-Star) 알고리즘과 Greedy (탐욕) 알고리즘"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Algorithm"]
 category: "ALGORITHM"

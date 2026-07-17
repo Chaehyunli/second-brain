@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 백트래킹을 이용한 순열/조합 및 알고리즘 성능 분석(Big-O, Omega, Theta)"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "Algorithm", "BIG-O", "omega", "Theta"]
 category: "ALGORITHM"

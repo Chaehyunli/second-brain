@@ -1,7 +1,7 @@
 ---
 title: "[운영체제] 저장장치(Storage) 란? 캐싱(Cashng) 이란? 인터럽트(Interrupt) 란?"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "CS", "interrupt", "OS"]
 category: "OS"

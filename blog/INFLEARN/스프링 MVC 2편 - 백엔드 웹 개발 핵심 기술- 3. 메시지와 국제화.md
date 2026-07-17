@@ -1,7 +1,7 @@
 ---
 title: "[스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술] 3. 메시지와 국제화"
-created: 2026-07-13
-updated: 2026-07-13
+created: 2026-07-17
+updated: 2026-07-17
 type: blog-post
 tags: ["blog", "technical-writing", "inflearn", "spring boot"]
 category: "INFLEARN"
