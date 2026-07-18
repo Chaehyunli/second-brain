@@ -1,7 +1,7 @@
 ---
 title: "[데이터베이스 설계] E-R 모델(관계 표현과 스키마 변환)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Database", "Design"]
 category: "DATABASE DESIGN"

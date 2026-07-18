@@ -1,7 +1,7 @@
 ---
 title: "[데이터베이스 설계] 쿼리 처리(Query Processiong) - 정렬(Sorting)과 조인(Join)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Database", "Design", "join", "Sort"]
 category: "DATABASE DESIGN"

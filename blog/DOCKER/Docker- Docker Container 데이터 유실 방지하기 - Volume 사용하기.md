@@ -1,7 +1,7 @@
 ---
 title: "[Docker] Docker Container 데이터 유실 방지하기 - Volume 사용하기"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "docker"]
 category: "DOCKER"

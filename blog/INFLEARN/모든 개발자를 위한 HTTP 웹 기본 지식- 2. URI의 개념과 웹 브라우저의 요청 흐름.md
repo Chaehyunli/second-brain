@@ -1,7 +1,7 @@
 ---
 title: "[모든 개발자를 위한 HTTP 웹 기본 지식] 2. URI의 개념과 웹 브라우저의 요청 흐름"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "http", "inflearn"]
 category: "INFLEARN"

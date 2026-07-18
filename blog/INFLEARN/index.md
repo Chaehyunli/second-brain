@@ -1,6 +1,6 @@
 ---
 title: "INFLEARN"
-created: 2026-07-17
+created: 2026-07-13
 updated: 2026-07-17
 type: blog-category
 tags: [blog, technical-writing]
@@ -8,10 +8,11 @@ tags: [blog, technical-writing]
 
 # INFLEARN
 
-> 글 59개 · 카테고리 기반 탐색
+> 글 60개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/INFLEARN/스프링 DB 2편 - 데이터 접근 활용 기술- 4. 데이터 접근 기술 - MyBatis|[스프링 DB 2편 - 데이터 접근 활용 기술] 4. 데이터 접근 기술 - MyBatis]] — 2026-07-17
 - [[blog/INFLEARN/스프링 DB 2편 - 데이터 접근 활용 기술- 3. 데이터 접근 기술 - 테스트|[스프링 DB 2편 - 데이터 접근 활용 기술] 3. 데이터 접근 기술 - 테스트]] — 2026-07-17
 - [[blog/INFLEARN/스프링 DB 2편 - 데이터 접근 활용 기술- 2. 데이터 접근 기술 - 스프링 JdbcTemplate|[스프링 DB 2편 - 데이터 접근 활용 기술] 2. 데이터 접근 기술 - 스프링 JdbcTemplate]] — 2026-07-13
 - [[blog/INFLEARN/스프링 DB 2편 - 데이터 접근 활용 기술- 1. 데이터 접근 기술 - 시작|[스프링 DB 2편 - 데이터 접근 활용 기술] 1. 데이터 접근 기술 - 시작]] — 2026-07-12

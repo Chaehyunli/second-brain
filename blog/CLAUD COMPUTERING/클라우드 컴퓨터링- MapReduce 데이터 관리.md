@@ -1,7 +1,7 @@
 ---
 title: "[클라우드 컴퓨터링] MapReduce 데이터 관리"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "cloud", "hadoop", "mapreduce"]
 category: "CLAUD COMPUTERING"

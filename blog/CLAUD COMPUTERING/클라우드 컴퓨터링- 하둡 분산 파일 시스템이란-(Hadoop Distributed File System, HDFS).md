@@ -1,7 +1,7 @@
 ---
 title: "[클라우드 컴퓨터링] 하둡 분산 파일 시스템이란?(Hadoop Distributed File System, HDFS)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "CLAUD COMPUTERING"

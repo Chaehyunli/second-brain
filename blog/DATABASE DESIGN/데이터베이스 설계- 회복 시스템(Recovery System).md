@@ -1,7 +1,7 @@
 ---
 title: "[데이터베이스 설계] 회복 시스템(Recovery System)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "DATABASE DESIGN"

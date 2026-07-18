@@ -1,7 +1,7 @@
 ---
 title: "[딥러닝] 검증된 AI 모델 활용(Keras Applications)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "DL", "Python"]
 category: "AI(ML & DL)"

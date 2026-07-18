@@ -1,7 +1,7 @@
 ---
 title: "[그래프 신경망 빅데이터] Cora 데이터셋을 이용한 GCN, GAT, FNN성능 비교"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "AI", "FNN", "gat", "GCN"]
 category: "AI(GNN)"

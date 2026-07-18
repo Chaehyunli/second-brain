@@ -1,7 +1,7 @@
 ---
 title: "[GCP] GCP로 프로젝트 배포하기 - ( 3 ) GCP Service 계정 & 키 생성"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "GCP"]
 category: "GCP"

@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 정렬 알고리즘이란?(Merge Sort, Heap Sort, Quick Sort)"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Algorithm", "Sort"]
 category: "ALGORITHM"

@@ -1,7 +1,7 @@
 ---
 title: "[Python] Elasticsearch 클라이언트 분석 및 검색 개념 정리 - Searchive 프로젝트"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "ElasticSearch", "Python"]
 category: "PYTHON"

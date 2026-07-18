@@ -1,7 +1,7 @@
 ---
 title: "[모바일 프로그래밍] 안드로이드(Android) 소프트웨어 Stack"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Android", "Kotlin"]
 category: "MOBILE PROGRAMING"

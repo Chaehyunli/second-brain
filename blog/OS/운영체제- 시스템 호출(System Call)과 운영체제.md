@@ -1,7 +1,7 @@
 ---
 title: "[운영체제] 시스템 호출(System Call)과 운영체제"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "CS", "OS"]
 category: "OS"

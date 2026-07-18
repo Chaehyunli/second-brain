@@ -1,7 +1,7 @@
 ---
 title: "[Spring Boot] Websocket + STOMP를 이용한 세션 기반 채팅"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "java", "springboot", "STOMP", "Websocket"]
 category: "JAVA"

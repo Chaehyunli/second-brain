@@ -1,7 +1,7 @@
 ---
 title: "[스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술] 2. 타임리프 - 스프링 통합과 폼"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "inflearn", "mvc", "spring boot"]
 category: "INFLEARN"

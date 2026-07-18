@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] TCP 연결과 3-Way Handshake"
-created: 2026-07-17
-updated: 2026-07-17
+created: 2026-07-13
+updated: 2026-07-13
 type: blog-post
 tags: ["blog", "technical-writing", "Network"]
 category: "NETWORK"
