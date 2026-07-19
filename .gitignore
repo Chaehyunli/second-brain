@@ -1,3 +1,7 @@
+# Python runtime cache (never block the Vault safety guard)
+__pycache__/
+*.py[cod]
+
 # Per-device Obsidian UI state
 .obsidian/workspace*.json
 .obsidian/cache/
