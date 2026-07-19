@@ -1,7 +1,7 @@
 ---
 title: 기술 블로그
 created: 2026-07-13
-updated: 2026-07-17
+updated: 2026-07-19
 type: index
 tags: [blog, technical-writing]
 source_url: https://ch010104.tistory.com/
@@ -26,7 +26,7 @@ source_url: https://ch010104.tistory.com/
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]] — 18개
 - [[blog/DOCKER/index|DOCKER]] — 10개
 - [[blog/GCP/index|GCP]] — 8개
-- [[blog/INFLEARN/index|INFLEARN]] — 60개
+- [[blog/INFLEARN/index|INFLEARN]] — 62개
 - [[blog/JAVA/index|JAVA]] — 6개
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]] — 20개
 - [[blog/NETWORK/index|NETWORK]] — 22개
