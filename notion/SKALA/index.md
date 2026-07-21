@@ -32,3 +32,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 7/21 — LLM과 Transformer 아키텍처 Day1
 - [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 참고 — Positional Encoding]]
+- [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 참고 — Multi-Head Attention]]
