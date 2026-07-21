@@ -29,3 +29,6 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 - [[notion/SKALA/7-20 데이터 분석 개요 및 기초통계 2/7-20 데이터 분석 개요 및 기초통계_Day2]]
 - [[notion/SKALA/7-20 데이터 분석 개요 및 기초통계 2/7-20 기업 신용평가 모형]]
 - [[notion/SKALA/7-20 데이터 분석 개요 및 기초통계 2/7-20 데이터 분석 - 회귀 실습]]
+
+## 7/21 — LLM과 Transformer 아키텍처 Day1
+- [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 참고 — Positional Encoding]]
