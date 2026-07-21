@@ -116,3 +116,7 @@ Self-Attention은 토큰을 병렬로 보기 때문에 순서를 자체적으로
 2. BoW/TF-IDF의 순서·의미 한계를 Word2Vec과 contextual embedding은 각각 어떻게 보완하는가?
 3. `QKᵀ` 점수에 왜 `√d_k`로 나누고 Softmax를 적용하는가?
 4. Self-Attention이 순서를 모르는 문제를 Positional Encoding과 causal mask는 각각 어떻게 해결하는가?
+
+## 공개 게시물
+
+- [[blog/STUDYING/STUDYING- 5. Transformer- Self-Attention부터 생성 구조까지|공개 블로그 글]]

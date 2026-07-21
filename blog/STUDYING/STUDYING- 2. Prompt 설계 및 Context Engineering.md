@@ -210,3 +210,7 @@ AI 산출물 제출 전 점검 목록입니다.
 ## 관련 글
 
 - [[blog/STUDYING/index|STUDYING]]
+
+## 학습 기준본
+
+- [[notion/SKALA/7-15 Prompt 설계와 Context/7-15 Prompt 설계 및 Context Engineering|SKALA 상세 학습 노트]]

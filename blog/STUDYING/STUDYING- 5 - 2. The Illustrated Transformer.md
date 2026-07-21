@@ -93,3 +93,7 @@ Decoder의 autoregressive 생성과 mask 흐름 — 출처: Jay Alammar
 ## 관련 글
 
 - [[blog/STUDYING/index|STUDYING]]
+
+## 학습 기준본
+
+- [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 참고 — The Illustrated Transformer|SKALA 상세 학습 노트]]

@@ -153,3 +153,7 @@ Decoder는 encoder의 K·V를 참고하는 encoder–decoder attention을 가진
 - [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 참고 — Multi-Head Attention]]
 - [Notion Day1 핵심 정리](https://app.notion.com/p/3a41d84bf68e8163bfa0d4f8af36e3d5)
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+
+## 공개 게시물
+
+- [[blog/STUDYING/STUDYING- 5 - 2. The Illustrated Transformer|공개 블로그 글]]

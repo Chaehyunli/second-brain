@@ -167,3 +167,7 @@ AI 코딩은 자연어 요청 한 번으로 끝내는 과정이 아니다.
 ## 연결 노트
 - [[notion/SKALA/7-14 Git 이해 및 활용/SKALA 개발환경 설치 스크립트 — 원문·주석·동작 해설]]
 - [[notion/SKALA/7-15 Prompt 설계와 Context/7-15 Prompt 설계 및 Context Engineering]]
+
+## 공개 게시물
+
+- [[blog/STUDYING/STUDYING- 1. Git 협업 흐름과 AI 코딩 환경|공개 블로그 글]]

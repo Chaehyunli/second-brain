@@ -129,3 +129,7 @@ p-value는 H0가 참이라고 가정할 때 현재 결과와 같거나 더 극�
 ## 관련 글
 
 - [[blog/STUDYING/index|STUDYING]]
+
+## 학습 기준본
+
+- [[notion/SKALA/7-16 데이터 분석 개요 및 기초통계 1/7-16 데이터 분석 개요 및 기초통계_Day1|SKALA 상세 학습 노트]]

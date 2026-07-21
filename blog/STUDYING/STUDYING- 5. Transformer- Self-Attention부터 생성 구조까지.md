@@ -67,3 +67,7 @@ LLM의 출력은 확률적 생성이다. 따라서 검색·도구 호출·출력
 ## 관련 글
 
 - [[blog/STUDYING/index|STUDYING]]
+
+## 학습 기준본
+
+- [[notion/SKALA/7-21 LLM과 Transformer 아키텍처_Day1/7-21 LLM과 Transformer 아키텍처 — Day1 핵심 정리|SKALA 상세 학습 노트]]

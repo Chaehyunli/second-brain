@@ -230,3 +230,7 @@ Git 협업의 단위는 명령 한 줄이 아니라 의도가 분명하고, 범�
 ## 관련 글
 
 - [[blog/STUDYING/index|STUDYING]]
+
+## 학습 기준본
+
+- [[notion/SKALA/7-14 Git 이해 및 활용/7-14 Git & AI코딩 & 환경구성 — 강의 정리|SKALA 상세 학습 노트]]

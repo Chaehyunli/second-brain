@@ -9,6 +9,7 @@ from pathlib import Path
 
 from enrich_tistory_blog_bodies import body_blocks, classify_post, fetch, render_note
 from rebuild_tistory_blog import category_of, meta, quote, safe_name, tags_of
+from link_skala_blog_derivations import link_blog_from_source
 
 ROOT = Path("/root/wiki")
 BLOG = ROOT / "blog"
@@ -56,6 +57,10 @@ def make_post(url: str) -> tuple[str, Path]:
     ])
     old_body = f"## 관련 글\n\n- [[blog/{safe_name(category)}/index|{category}]]\n"
     path.write_text(render_note(front, old_body, title, note_type, blocks), encoding="utf-8")
+    # A public post links to its SKALA source only when the author has put an
+    # explicit "학습 원본" / "SKALA 원문" Notion URL in the post body. This avoids
+    # unsafe title/semantic matching across two independently authored sources.
+    link_blog_from_source(path, source, ROOT)
     return category, path
 
 
