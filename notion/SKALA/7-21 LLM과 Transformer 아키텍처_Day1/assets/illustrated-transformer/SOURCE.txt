@@ -1,0 +1,19 @@
+# 원문 도식 보관 메타데이터 — The Illustrated Transformer
+
+- 원문: <https://jalammar.github.io/illustrated-transformer/>
+- 원문 제목: *The Illustrated Transformer*
+- 저작자: Jay Alammar
+- 이미지 라이선스: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- 보관 목적: SKALA `[7/21] LLM과 Transformer 아키텍처_Day1`의 개인 학습용 상세 참고 노트에 필요한 원문 도식을 캡처·보관한다.
+- 사용 조건: 각 도식이 쓰이는 Markdown에서 저작자·원문·라이선스를 명시한다. 이 자산은 독립적 재배포·상업적 이용 목적으로 사용하지 않는다.
+
+| 파일 | 원문 이미지 URL | SHA-256 |
+| --- | --- | --- |
+| `01-encoder-decoder.png` | <https://jalammar.github.io/images/t/The_transformer_encoders_decoders.png> | `dc659655cf7305f7ee4993944d1c78524504fe36ea8fad1f3a0eed202dacee95` |
+| `02-encoder-block.png` | <https://jalammar.github.io/images/t/Transformer_encoder.png> | `c6d3360f8c0a4701b73348186ef0ac01e635a297a99cec1c59451b4f7cdce691` |
+| `03-self-attention.png` | <https://jalammar.github.io/images/t/transformer_self-attention_visualization.png> | `5f85f00a27e48125cd9445f562943b2ca8e7a73d61e9de381fc106a21463e5c4` |
+| `04-attention-output.png` | <https://jalammar.github.io/images/t/self-attention-output.png> | `0818b251e33eee8d20ff69235d87bab54588e4abbcab2d7a12eb2d05d3f83709` |
+| `05-multi-head-attention.png` | <https://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png> | `735985b936126abbe79796f3a9b1fbbc4f6a64c5ffe4efa603fb95e88337a413` |
+| `06-positional-encoding.png` | <https://jalammar.github.io/images/t/transformer_positional_encoding_vectors.png> | `1447f2a6561e5aef3ca9ab3792490d744b81c34c873d19b1396ed770ca19b669` |
+| `07-residual-layernorm.png` | <https://jalammar.github.io/images/t/transformer_resideual_layer_norm.png> | `de836d51001ee2e2af98e3d2ad5c9c5b8eedd343cede56a4f765fa8512be26af` |
+| `08-decoder-masked-attention.png` | <https://jalammar.github.io/images/t/transformer_decoding_1.gif> (첫 프레임 캡처) | `3e46088ac2b84909f3bea24f7379a52cecae5b5ff4e2b388b7b59e8a0d9f0bd0` |
