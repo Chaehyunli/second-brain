@@ -57,6 +57,8 @@ https://ch010104.tistory.com/180
 
 ### 프래그먼트 라이프사이클 (Fragment Lifecycle)
 
+![프래그먼트 라이프사이클 (Fragment Lifecycle)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/01-프래그먼트-라이프사이클-Fragment-Lifecycle.webp)
+
 유사성: 프래그먼트 라이프사이클은 액티비티의 라이프사이클과 유사함
 
 주요 단계 (한글): 초기화(initialized), 생성(created), 시작(started), 재개(resumed), 소멸(destroyed) 단계로 구분됨
@@ -110,6 +112,8 @@ transaction.add() 등을 통해 프래그먼트 추가
 저장된 키로 데이터를 읽어옴 (예: val rxColor: String = rxData?.getString("COLOR") ?: "none")
 
 ### 실습 내용 (Practical Exercise)
+
+![실습 내용 (Practical Exercise)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/02-실습-내용-Practical-Exercise.webp)
 
 목표: MainActivity의 FragmentContainerView 영역에 프래그먼트를 표시하고, 버튼 클릭에 따라 다른 배경색의 프래그먼트로 영역을 갱신
 
@@ -662,12 +666,6 @@ MyColorFragement : onResume : white
 'Red' 프래그먼트로 교체: 'white' 프래그먼트의 View만 파괴되고 ('onDestroyView' 호출) 'red' 프래그먼트가 새로 생성
 
 '뒤로 가기' 버튼: replace 트랜잭션이 "취소(undo)"됩니다. 'red'는 파괴되고 'white'는 View부터 다시 생성
-
-## 핵심 이미지
-
-![프래그먼트 라이프사이클 (Fragment Lifecycle)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/01-프래그먼트-라이프사이클-Fragment-Lifecycle.webp)
-
-![실습 내용 (Practical Exercise)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/02-실습-내용-Practical-Exercise.webp)
 
 ## 관련 글
 

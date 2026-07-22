@@ -81,6 +81,8 @@ https://ch010104.tistory.com/13
 
 ### 2. 메모리(Memory) 란?
 
+![2. 메모리(Memory) 란?](assets/운영체제--프로세서-Processor-의-모드--메모리-Memory-란/01-2.-메모리-Memory-란.webp)
+
 데이터를 저장하는 공간으로 크게 휘발성 메모리와 비휘발성 메모리로 나뉨
 
 ### 1) 휘발성 메모리
@@ -186,10 +188,6 @@ https://ch010104.tistory.com/13
 - EPROM보다 빠르고 편리.
 
 - 자주 변경되는 펌웨어, 설정 데이터 저장용.
-
-## 핵심 이미지
-
-![2. 메모리(Memory) 란?](assets/운영체제--프로세서-Processor-의-모드--메모리-Memory-란/01-2.-메모리-Memory-란.webp)
 
 ## 관련 글
 

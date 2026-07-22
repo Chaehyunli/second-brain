@@ -33,6 +33,8 @@ ML의 분류 모델을 평가할 때는 정밀도(Precision)와 재현율(Recall
 
 ### 1. F1 Score란?
 
+![1. F1 Score란?](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/01-1.-F1-Score란.webp)
+
 F1 Score는 **정밀도(Precision)**와 **재현율(Recall)**의 **조화평균(Harmonic Mean)**으로 계산
 
 1) F1 Score의 특징
@@ -76,6 +78,8 @@ Precision과 Recall이 모두 높을 때 높은 점수를 가짐
 ➡ Recall이 더 중요
 
 ### 3. 정밀도와 재현율의 Trade-off
+
+![3. 정밀도와 재현율의 Trade-off](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/02-3.-정밀도와-재현율의-Trade-off.webp)
 
 둘 다 모두 높은 것이 좋겠지만, 정밀도와 재현율은 서로 반비례 관계(정밀도와 재현율이 모두 높은 것은 사실상 불가능)
 
@@ -135,12 +139,6 @@ precisions: 각 threshold에서의 정밀도
 recalls: 각 threshold에서의 재현율
 
 이 데이터를 기반으로 최적의 threshold를 선택할 수 있습니다. (예: 특정 Precision 또는 Recall 기준을 만족하는 threshold 탐색)
-
-## 핵심 이미지
-
-![1. F1 Score란?](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/01-1.-F1-Score란.webp)
-
-![3. 정밀도와 재현율의 Trade-off](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/02-3.-정밀도와-재현율의-Trade-off.webp)
 
 ## 관련 글
 

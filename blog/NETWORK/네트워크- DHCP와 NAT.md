@@ -29,6 +29,8 @@ DHCP는 호스트가 네트워크에 접속할 때 자동으로 통신에 필요
 
 ### 1. DHCP (Dynamic Host Configuration Protocol)
 
+![1. DHCP (Dynamic Host Configuration Protocol)](assets/네트워크--DHCP와-NAT/01-1.-DHCP-Dynamic-Host-Configuration-Protocol.webp)
+
 DHCP는 호스트가 네트워크에 접속할 때 자동으로 통신에 필요한 설정 정보를 할당받는 프로토콜입니다.
 
 ### 1.1 할당되는 주요 정보
@@ -55,6 +57,8 @@ ACK (서버 → 클라이언트): 최종 승인 및 설정 완료.
 
 ### 2. IP 주소 체계와 서브네팅 (Subnetting)
 
+![2. IP 주소 체계와 서브네팅 (Subnetting)](assets/네트워크--DHCP와-NAT/02-2.-IP-주소-체계와-서브네팅-Subnetting.webp)
+
 IP 주소는 유한한 자원이며, 이를 효율적으로 나누어 쓰는 것이 중요합니다.
 
 ### 2.1 CIDR (Classless Inter-Domain Routing)
@@ -62,6 +66,8 @@ IP 주소는 유한한 자원이며, 이를 효율적으로 나누어 쓰는 것
 클래스 기반 주소 할당의 비효율성을 극복하기 위해 /n (Prefix) 형태의 유연한 주소 할당 방식을 사용합니다.
 
 ### 2.2 서브네팅과 비트 계산 (2^n)
+
+![2.2 서브네팅과 비트 계산 (2^n)](assets/네트워크--DHCP와-NAT/03-2.2-서브네팅과-비트-계산-2-n.webp)
 
 상위 블록에서 하위 블록으로 나눌 때, 나누려는 그룹의 수에 따라 추가 비트가 결정됩니다.
 
@@ -104,14 +110,6 @@ Outgoing: (사설 IP, 포트) → (공인 IP, 신규 포트)로 변환 후 테�
 Incoming: 외부 응답의 포트 번호를 테이블에서 조회하여 다시 원래의 사설 주소로 복구.
 
 핵심: 포트 번호를 식별자로 사용하여 여러 사설 IP를 하나의 공인 IP에 매핑합니다
-
-## 핵심 이미지
-
-![1. DHCP (Dynamic Host Configuration Protocol)](assets/네트워크--DHCP와-NAT/01-1.-DHCP-Dynamic-Host-Configuration-Protocol.webp)
-
-![2. IP 주소 체계와 서브네팅 (Subnetting)](assets/네트워크--DHCP와-NAT/02-2.-IP-주소-체계와-서브네팅-Subnetting.webp)
-
-![2.2 서브네팅과 비트 계산 (2^n)](assets/네트워크--DHCP와-NAT/03-2.2-서브네팅과-비트-계산-2-n.webp)
 
 ## 관련 글
 

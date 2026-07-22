@@ -29,6 +29,8 @@ CPU가 현재 프로세스의 상태(CPU 레지스터 값 등)를 PCB에 저장�
 
 ### 1️⃣ 문맥 교환 (Context Switch)
 
+![1️⃣ 문맥 교환 (Context Switch)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/01-1-문맥-교환-Context-Switch.webp)
+
 CPU가 현재 프로세스의 상태(CPU 레지스터 값 등)를 PCB에 저장하고, 다른 프로세스의 PCB 정보를 불러와 레지스터에 적재하는 과정
 
 문맥 = 프로세스 상태 / 문맥 교환 = 상태 교환
@@ -51,6 +53,8 @@ P0가 실행되는 도중, 시스템 콜이나 인터럽트를 받으면 P0의 �
 
 ### 3️⃣ 스케줄링 큐 (Scheduling Queue)
 
+![3️⃣ 스케줄링 큐 (Scheduling Queue)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/02-3-스케줄링-큐-Scheduling-Queue.webp)
+
 운영체제는 스케줄링을 위해 PCB를 큐(Queue)로 관리함.
 
 📌 준비 큐 (Ready Queue)
@@ -70,6 +74,8 @@ I/O 요청 중인 프로세스들이 대기
 I/O 완료 시 인터럽트 발생 → Ready Queue로 이동
 
 ### 4️⃣ 프로세스 상태와 큐 이동
+
+![4️⃣ 프로세스 상태와 큐 이동](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/03-4-프로세스-상태와-큐-이동.webp)
 
 새 프로세스 → Ready Queue로 - 프로세스가 생성되면 Ready 상태가 되어 ready queue에 들어감.
 
@@ -136,14 +142,6 @@ fork()는 시스템 호출이기 때문에, OS에서 이를 처리함. OS에 저
 위의 C코드에서 pid = fork()를 하면, 저 코드와 똑같은 자식이 생김. fork()의 리턴 값인 pid는 fork() 실패 시엔 -1, 성공 시엔 자식의 PID(양수)를 반환, 자식 프로세스의 경우 0을 가지고 있음.
 
 때문에 fork()된 서로 같은 두 자식과 부모 코드여도 자식은 if(pid == 0)의 코드를 실행 후에 부모에게 종료 시그널을 보내고, 부모닌 else문으로 들어가서 자식의 종료 시그널을 기다려(wait()) 프로세스를 종료함(exit 0).
-
-## 핵심 이미지
-
-![1️⃣ 문맥 교환 (Context Switch)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/01-1-문맥-교환-Context-Switch.webp)
-
-![3️⃣ 스케줄링 큐 (Scheduling Queue)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/02-3-스케줄링-큐-Scheduling-Queue.webp)
-
-![4️⃣ 프로세스 상태와 큐 이동](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/03-4-프로세스-상태와-큐-이동.webp)
 
 ## 관련 글
 

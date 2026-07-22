@@ -59,6 +59,10 @@ https://ch010104.tistory.com/280
 
 ### 1) 아키텍처 흐름도
 
+![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/01-1-아키텍처-흐름도.webp)
+
+![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/02-1-아키텍처-흐름도.webp)
+
 성공 흐름: GET /add (상품 등록 폼) → 사용자 입력 → POST /add (컨트롤러에서 검증 성공) → 상품 저장 → Redirect /items/{id} → GET /items/{id} (상품 상세 뷰)
 
 실패 흐름: GET /add (상품 등록 폼) → 잘못된 사용자 입력 → POST /add (컨트롤러에서 검증 실패) → 오류 결과 수집 → Model에 errors 맵을 담고 addForm.html로 Forward (입력 데이터가 그대로 유지됨)
@@ -158,6 +162,8 @@ public class ValidationItemControllerV1 {
 ```
 
 ### 3) Thymeleaf 뷰 템플릿 구현
+
+![3) Thymeleaf 뷰 템플릿 구현](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/03-3-Thymeleaf-뷰-템플릿-구현.webp)
 
 사용자가 무엇을 잘못 입력했는지 빨간색 글씨와 테두리로 강조하여 친절하게 안내합니다.
 
@@ -1093,14 +1099,6 @@ public class ItemServiceApplication implements WebMvcConfigurer {
 javax.validation.@Valid: 자바 표준 스펙(JSR-303 / Jakarta)에 정의된 표준 검증 애노테이션입니다. 이를 활성화해 사용하려면 build.gradle에 implementation 'org.springframework.boot:spring-boot-starter-validation' 의존성 라이브러리를 직접 장착해야 정상 동작합니다.
 
 org.springframework.validation.annotation.@Validated: 스프링 프레임워크 전용 검증 유틸 애노테이션으로, 자바 표준 검증 기능에 스프링 특화 편리성(그룹 검증 기능 등)을 한층 업그레이드하여 기본 탑재한 버전입니다.
-
-## 핵심 이미지
-
-![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/01-1-아키텍처-흐름도.webp)
-
-![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/02-1-아키텍처-흐름도.webp)
-
-![3) Thymeleaf 뷰 템플릿 구현](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/03-3-Thymeleaf-뷰-템플릿-구현.webp)
 
 ## 관련 글
 

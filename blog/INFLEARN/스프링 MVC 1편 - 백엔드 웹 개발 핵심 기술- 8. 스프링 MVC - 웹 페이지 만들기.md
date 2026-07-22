@@ -108,6 +108,8 @@ test {
 
 ### 2. 요구사항 분석
 
+![2. 요구사항 분석](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/01-2.-요구사항-분석.webp)
+
 상품을 관리할 수 있는 서비스를 개발한다.
 
 ### 상품 도메인 모델
@@ -863,9 +865,13 @@ public String edit(@PathVariable Long itemId, @ModelAttribute Item item) {
 
 ### 10. PRG (Post/Redirect/Get)
 
+![10. PRG (Post/Redirect/Get)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/02-10.-PRG-Post-Redirect-Get.webp)
+
 기존의 addItemV1 ~ V4 방식은 상품 등록 완료 후 웹 브라우저를 새로고침하면 마지막 요청인 POST /add가 다시 서버로 전송되어 중복 등록되는 심각한 문제가 있다.
 
 ### 해결 방안
+
+![해결 방안](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/03-해결-방안.webp)
 
 상품 저장 후 상세 화면으로 리다이렉트(Redirect)를 호출한다. 그러면 마지막 명령이 GET /items/{id}로 바뀌어 새로고침 시 조회가 반복될 뿐, 중복 저장은 발생하지 않는다.
 
@@ -908,14 +914,6 @@ RedirectAttributes는 URL 인코딩을 지원하고, {itemId}처럼 경로 변�
 th:if: 조건이 참일 때만 실행한다.
 
 ${param.status}: 타임리프에서 쿼리 파라미터를 편리하게 조회하는 기능이다.
-
-## 핵심 이미지
-
-![2. 요구사항 분석](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/01-2.-요구사항-분석.webp)
-
-![10. PRG (Post/Redirect/Get)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/02-10.-PRG-Post-Redirect-Get.webp)
-
-![해결 방안](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--8.-스프링-MVC---웹-페이지-만들기/03-해결-방안.webp)
 
 ## 관련 글
 

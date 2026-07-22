@@ -29,6 +29,10 @@ Activity Result API를 이용하여 액티비티 간 양방향 데이터 전달�
 
 ### 1. 액티비티 간 양방향 데이터 전달 (Activity Result API)
 
+![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/01-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
+
+![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/02-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
+
 Activity Result API를 이용하여 액티비티 간 양방향 데이터 전달을 구현함.
 
 실행 흐름은 크게 Part 1 (SecondActivity 실행)과 Part 2 (데이터 회신)로 구성됨.
@@ -94,6 +98,8 @@ setResult(<result-code>, txIntent) 메소드를 호출하여 결과 코드(예: 
 콜백 메소드는 <result-code>와 데이터를 포함한 ActivityResult 객체를 파라미터로 받음.
 
 ### 2. 실습 : 양방향 데이터 전달 (덧셈 + 뺄셈)
+
+![2. 실습 : 양방향 데이터 전달 (덧셈 + 뺄셈)](assets/모바일-프로그래밍--Activity와-Intent-양방향/03-2.-실습-양방향-데이터-전달-덧셈-뺄셈.webp)
 
 Activity Result API를 이용해 MainActivity와 AddActivity로 구성된 양방향 데이터 전달 앱 구현.
 
@@ -388,14 +394,6 @@ class SubActivity : AppCompatActivity() {
 
 </LinearLayout>
 ```
-
-## 핵심 이미지
-
-![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/01-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
-
-![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/02-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
-
-![2. 실습 : 양방향 데이터 전달 (덧셈 + 뺄셈)](assets/모바일-프로그래밍--Activity와-Intent-양방향/03-2.-실습-양방향-데이터-전달-덧셈-뺄셈.webp)
 
 ## 관련 글
 

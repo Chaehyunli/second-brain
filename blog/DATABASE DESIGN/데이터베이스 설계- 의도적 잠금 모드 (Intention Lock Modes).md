@@ -72,6 +72,8 @@ Lock-S(DB)
 
 ### 4. 다중 입도 잠금 규약 (Rules)
 
+![4. 다중 입도 잠금 규약 (Rules)](assets/데이터베이스-설계--의도적-잠금-모드-Intention-Lock-Modes/01-4.-다중-입도-잠금-규약-Rules.webp)
+
 호환성 행렬을 반드시 준수해야 함
 
 트리의 루트(Root)부터 먼저 잠금
@@ -91,6 +93,8 @@ Lock-S(DB)
 잠금 해제: Leaf → Root 순서 (아래서 위로)
 
 ### 5. 스냅샷 격리 (Snapshot Isolation)
+
+![5. 스냅샷 격리 (Snapshot Isolation)](assets/데이터베이스-설계--의도적-잠금-모드-Intention-Lock-Modes/02-5.-스냅샷-격리-Snapshot-Isolation.webp)
 
 개념:
 
@@ -149,12 +153,6 @@ PostgreSQL 9.1 이상에서 구현됨
 Oracle, PostgreSQL, SQL Server 등에서 지원
 
 주의: Oracle은 격리 수준을 'Serializable'로 설정하더라도 실제로는 스냅샷 격리(Snapshot Isolation)로 동작하며 진정한 직렬성을 보장하지 않음 (초기 PostgreSQL도 동일)
-
-## 핵심 이미지
-
-![4. 다중 입도 잠금 규약 (Rules)](assets/데이터베이스-설계--의도적-잠금-모드-Intention-Lock-Modes/01-4.-다중-입도-잠금-규약-Rules.webp)
-
-![5. 스냅샷 격리 (Snapshot Isolation)](assets/데이터베이스-설계--의도적-잠금-모드-Intention-Lock-Modes/02-5.-스냅샷-격리-Snapshot-Isolation.webp)
 
 ## 관련 글
 

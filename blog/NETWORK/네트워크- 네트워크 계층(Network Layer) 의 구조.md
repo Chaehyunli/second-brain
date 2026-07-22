@@ -37,6 +37,8 @@ https://ch010104.tistory.com/266
 
 ### 2. 서비스 모델 및 QoS (Quality of Service)
 
+![2. 서비스 모델 및 QoS (Quality of Service)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/01-2.-서비스-모델-및-QoS-Quality-of-Service.webp)
+
 네트워크 아키텍처별로 품질을 보장하는 방식이 다릅니다.
 
 ### 상세 설명:
@@ -63,6 +65,8 @@ UBR (Unspecified Bit Rate): 보장 없이 남는 공간만 사용.
 
 ### 4. 입력 포트 및 포워딩 기술
 
+![4. 입력 포트 및 포워딩 기술](assets/네트워크--네트워크-계층-Network-Layer-의-구조/02-4.-입력-포트-및-포워딩-기술.webp)
+
 ### ① 분산 스위칭 (Decentralized Switching)
 
 중앙 CPU의 개입 없이 각 포트가 독립적으로 포워딩을 결정합니다. "Match plus Action" 원칙에 따라 헤더 정보를 보고 행동을 결정합니다.
@@ -72,6 +76,8 @@ Destination-based: 오직 목적지 IP 주소만 보고 전달 (전통적).
 Generalized: IP, 포트 번호 등 다양한 헤더 필드 조합을 보고 전달 (SDN/현대적).
 
 ### ② 최장 일치 접두어 매칭 (Longest Prefix Matching)
+
+![② 최장 일치 접두어 매칭 (Longest Prefix Matching)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/03-최장-일치-접두어-매칭-Longest-Prefix-Matching.webp)
 
 목적지 IP 주소와 가장 길게 일치하는 테이블 항목을 선택합니다.
 
@@ -104,14 +110,6 @@ Buffering: 패브릭에서 쏟아지는 데이터가 링크 전송 속도($R$)�
 삭제 정책 (Drop Policy): 버퍼가 꽉 차면 패킷을 버립니다(Tail drop 등).
 
 스케줄링 (Scheduling): 우선순위를 따져 누구를 먼저 보낼지 결정합니다. 이것이 QoS와 망 중립성 논쟁의 핵심 지점입니다.
-
-## 핵심 이미지
-
-![2. 서비스 모델 및 QoS (Quality of Service)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/01-2.-서비스-모델-및-QoS-Quality-of-Service.webp)
-
-![4. 입력 포트 및 포워딩 기술](assets/네트워크--네트워크-계층-Network-Layer-의-구조/02-4.-입력-포트-및-포워딩-기술.webp)
-
-![② 최장 일치 접두어 매칭 (Longest Prefix Matching)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/03-최장-일치-접두어-매칭-Longest-Prefix-Matching.webp)
 
 ## 관련 글
 

@@ -61,6 +61,8 @@ PoS(PoW가 아닌 경우)에서 블록을 생성하고 트랜잭션을 검증하
 
 ### 2. 합의 알고리즘 (Consensus Algorithm) 이란?
 
+![2. 합의 알고리즘 (Consensus Algorithm) 이란?](assets/블록체인--P2P-Peer-to-Peer-란--합의-알고리즘-Consensus-Algorithm-이란/01-2.-합의-알고리즘-Consensus-Algorithm-이란.webp)
+
 블록체인 네트워크에서 노드들이 거래를 검증하고 새로운 블록을 추가하는 과정에서 "합의(Consensus)" 를 이루는 방식
 
 1) 합의 알고리즘 (Consensus Algorithm) 개념
@@ -94,10 +96,6 @@ PoS(PoW가 아닌 경우)에서 블록을 생성하고 트랜잭션을 검증하
 트랜잭션을 즉시 처리할 수 없기 때문에 대기 공간 필요
 
 네트워크 트래픽이 많을 경우 높은 수수료를 지불한 트랜잭션이 우선 처리됨(mempool은 들어오는 순서대로 나가는 것이 아님!!)
-
-## 핵심 이미지
-
-![2. 합의 알고리즘 (Consensus Algorithm) 이란?](assets/블록체인--P2P-Peer-to-Peer-란--합의-알고리즘-Consensus-Algorithm-이란/01-2.-합의-알고리즘-Consensus-Algorithm-이란.webp)
 
 ## 관련 글
 

@@ -33,6 +33,10 @@ https://ch010104.tistory.com/18
 
 ### 1. 시스템 호출(System Call) 이란?
 
+![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/01-1.-시스템-호출-System-Call-이란.webp)
+
+![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/02-1.-시스템-호출-System-Call-이란.webp)
+
 운영체제가 응용 프로그램에게 제공하는 함수
 
 여기서 응용 프로그램이란, 사용자 모드에서 작업을 하는 C프로그램을 예로 들 수 있음.
@@ -78,12 +82,6 @@ https://ch010104.tistory.com/18
 4) 메모리 관리
 
 기억장치 할당 및 해제: 프로세스 실행을 위해 메모리 할당 및 해제.
-
-## 핵심 이미지
-
-![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/01-1.-시스템-호출-System-Call-이란.webp)
-
-![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/02-1.-시스템-호출-System-Call-이란.webp)
 
 ## 관련 글
 

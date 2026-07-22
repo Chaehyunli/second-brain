@@ -29,6 +29,8 @@ https://ch010104.tistory.com/163
 
 ### MapReduce 데이터 지역성 최적화 (Data Locality Optimization)
 
+![MapReduce 데이터 지역성 최적화 (Data Locality Optimization)](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/01-MapReduce-데이터-지역성-최적화-Data-Locality-Optimization.webp)
+
 개념: 대용량 데이터를 계산이 필요한 곳으로 옮기는 대신, 계산 프로그램(코드)을 데이터가 저장된 곳으로 보내 처리하는 방식.
 
 목표: 상대적으로 부족한 자원인 네트워크 대역폭 사용을 최소화.
@@ -42,6 +44,8 @@ https://ch010104.tistory.com/163
 3순위 (Off-Rack): 1, 2순위가 모두 불가능하면, 데이터 블록과 다른 랙에 있는 노드에서 Task를 실행.
 
 ### Hadoop 1.x 실행 구조 및 흐름
+
+![Hadoop 1.x 실행 구조 및 흐름](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/02-Hadoop-1.x-실행-구조-및-흐름.webp)
 
 구성 요소:
 
@@ -88,12 +92,6 @@ Reduce Task:
 출력 데이터: 최종 결과물은 영구적으로 보존되어야 하므로 안정성을 위해 HDFS에 저장됨.
 
 개수 결정: Map Task의 개수는 입력 데이터의 크기에 따라 자동 결정되지만, Reduce Task의 개수는 사용자가 직접 지정함.
-
-## 핵심 이미지
-
-![MapReduce 데이터 지역성 최적화 (Data Locality Optimization)](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/01-MapReduce-데이터-지역성-최적화-Data-Locality-Optimization.webp)
-
-![Hadoop 1.x 실행 구조 및 흐름](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/02-Hadoop-1.x-실행-구조-및-흐름.webp)
 
 ## 관련 글
 

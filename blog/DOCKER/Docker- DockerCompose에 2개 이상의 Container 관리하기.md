@@ -77,6 +77,12 @@ $ docker compose down
 
 ### 2. Spring Boot + MySQL 연동 컨테이너 구성
 
+![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/01-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
+
+![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/02-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
+
+![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/03-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
+
 1) Spring Boot 프로젝트 생성
 
 https://start.spring.io 에서 아래와 같이 설정 후 프로젝트를 생성
@@ -303,14 +309,6 @@ $ docker ps
 ```
 
 브라우저에서 http://localhost:8080 접속하면 Redis에 abc=def 값이 저장되고 "Hello, World!" 응답이 반환!!
-
-## 핵심 이미지
-
-![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/01-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
-
-![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/02-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
-
-![2. Spring Boot + MySQL 연동 컨테이너 구성](assets/Docker--DockerCompose에-2개-이상의-Container-관리하기/03-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp)
 
 ## 관련 글
 

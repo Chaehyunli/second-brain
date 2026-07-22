@@ -77,6 +77,8 @@ UDP (User Datagram Protocol): 비신뢰적이고 순서가 보장되지 않는 �
 
 ### 기본 개념
 
+![기본 개념](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/01-기본-개념.webp)
+
 다중화(Multiplexing, 송신측): 여러 소켓에서 나오는 데이터를 모아, 각 데이터에 헤더 정보를 추가하여 하위 계층으로 보내는 과정입니다.
 
 역다중화(Demultiplexing, 수신측): 전송 계층 헤더 정보를 확인하여 받은 세그먼트를 올바른 소켓으로 전달하는 과정입니다.
@@ -84,6 +86,8 @@ UDP (User Datagram Protocol): 비신뢰적이고 순서가 보장되지 않는 �
 소켓(Socket): 애플리케이션 프로세스와 전송 계층 사이의 문(Door) 역할을 하며, 각 소켓은 고유한 식별자를 가집니다.
 
 ### 역다중화의 작동 방식
+
+![역다중화의 작동 방식](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/02-역다중화의-작동-방식.webp)
 
 호스트가 IP 데이터그램을 받으면, 그 안에는 소스 포트 번호(Source Port)와 목적지 포트 번호(Destination Port)가 포함된 전송 계층 세그먼트가 들어 있습니다.
 
@@ -112,12 +116,6 @@ Destination port number
 핵심 차이점: 목적지 IP와 포트 번호가 같더라도, 출발지 IP나 포트 번호 중 하나라도 다르면 서로 다른 TCP 소켓으로 안내됩니다.
 
 웹 서버(예: Apache)는 각 연결된 클라이언트마다 별도의 소켓을 생성하여 관리합니다.
-
-## 핵심 이미지
-
-![기본 개념](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/01-기본-개념.webp)
-
-![역다중화의 작동 방식](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/02-역다중화의-작동-방식.webp)
 
 ## 관련 글
 

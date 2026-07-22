@@ -29,6 +29,8 @@ https://ch010104.tistory.com/239
 
 ### 사용자/서버 상태 유지: 쿠키 (Cookies)
 
+![사용자/서버 상태 유지: 쿠키 (Cookies)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/01-사용자-서버-상태-유지-쿠키-Cookies.webp)
+
 상태 유지의 필요성
 
 기본적으로 HTTP는 '비상태(Stateless)' 프로토콜
@@ -73,6 +75,10 @@ HTTP 요청 메시지의 쿠키 헤더 라인: 클라이언트가 서버에 요�
 
 ### 웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)
 
+![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/02-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
+
+![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/03-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
+
 웹캐시의 개념 및 목표
 
 목표: 기점 서버(Origin Server)를 거치지 않고 클라이언트의 요청을 충족시키는 것입니다.
@@ -102,14 +108,6 @@ HTTP 요청 메시지의 쿠키 헤더 라인: 클라이언트가 서버에 요�
 해결책 2 (웹 캐시 설치): 캐시 적중률(Hit rate)이 0.4(40%)라고 가정하면, 요청의 40%는 즉시 처리되고 60%만 외부 링크를 사용합니다.
 
 이 경우 링크 이용률은 58%로 떨어지고, 평균 종단간 지연 시간은 약 1.2초로 개선됩니다. 이는 고가 링크를 사는 것보다 훨씬 저렴하면서 효율적인 방법입니다.
-
-## 핵심 이미지
-
-![사용자/서버 상태 유지: 쿠키 (Cookies)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/01-사용자-서버-상태-유지-쿠키-Cookies.webp)
-
-![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/02-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
-
-![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/03-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
 
 ## 관련 글
 

@@ -29,7 +29,11 @@ https://ch010104.tistory.com/262
 
 ### 1. TCP 연결 설정 (Connection Establishment)
 
+![1. TCP 연결 설정 (Connection Establishment)](assets/네트워크--TCP-연결과-3-Way-Handshake/01-1.-TCP-연결-설정-Connection-Establishment.webp)
+
 ### 1.1 2-Way Handshake의 한계
+
+![1.1 2-Way Handshake의 한계](assets/네트워크--TCP-연결과-3-Way-Handshake/02-1.1-2-Way-Handshake의-한계.webp)
 
 개념: 클라이언트의 요청(req_conn)에 서버가 응답(acc_conn)하면 즉시 연결되는 방식.
 
@@ -40,6 +44,8 @@ https://ch010104.tistory.com/262
 서버는 이를 새로운 요청으로 오해하여 자원을 할당하지만, 클라이언트는 응답하지 않음 -> 자원 낭비(Half-Open Connection) 발생.
 
 ### 1.2 3-Way Handshake (표준 방식)
+
+![1.2 3-Way Handshake (표준 방식)](assets/네트워크--TCP-연결과-3-Way-Handshake/03-1.2-3-Way-Handshake-표준-방식.webp)
 
 목적: 양방향 신뢰성 확보 및 초기 순서 번호(Seq #) 동기화.
 
@@ -134,14 +140,6 @@ LISTEN: 서버가 요청 대기 중.
 ESTABLISHED: 연결 완료, 데이터 전송 중.
 
 TIME_WAIT: 종료 후 유실 패킷 처리를 위한 대기 시간.
-
-## 핵심 이미지
-
-![1. TCP 연결 설정 (Connection Establishment)](assets/네트워크--TCP-연결과-3-Way-Handshake/01-1.-TCP-연결-설정-Connection-Establishment.webp)
-
-![1.1 2-Way Handshake의 한계](assets/네트워크--TCP-연결과-3-Way-Handshake/02-1.1-2-Way-Handshake의-한계.webp)
-
-![1.2 3-Way Handshake (표준 방식)](assets/네트워크--TCP-연결과-3-Way-Handshake/03-1.2-3-Way-Handshake-표준-방식.webp)
 
 ## 관련 글
 

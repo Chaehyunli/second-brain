@@ -271,6 +271,10 @@ http://localhost:8080/api/members/bad 호출 시 IllegalArgumentException이 던
 
 ### 예외 처리 동작 흐름 비교
 
+![예외 처리 동작 흐름 비교](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--9.-API-예외-처리/01-예외-처리-동작-흐름-비교.webp)
+
+![예외 처리 동작 흐름 비교](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--9.-API-예외-처리/02-예외-처리-동작-흐름-비교.webp)
+
 [1] ExceptionResolver 적용 전
 
 예외가 WAS까지 고스란히 도달하여 WAS가 다시 500 오류를 생성하거나 내부 /error 재요청을 보냅니다. (이때 인터셉터의 postHandle()은 호출되지 않습니다.)
@@ -841,12 +845,6 @@ ExceptionResolver의 가치: 컨트롤러 밖으로 유출된 예외를 WAS에 �
 기본 리졸버 3종: 스프링은 상황별 에러 매핑을 위해 기본적으로 @ExceptionHandler용, @ResponseStatus용, 내부 프레임워크 예외(DefaultHandlerExceptionResolver)용 리졸버 체인을 제공합니다.
 
 혁신적인 해결책: @ExceptionHandler 방식을 사용하여 컨트롤러 내에서 처리하고 싶은 예외를 자유롭게 지정해 우아하게 응답할 수 있으며, 더 나아가 @ControllerAdvice를 활용하면 예외 로직을 글로벌 공통 클래스로 완전히 독립시켜 코드 응집도와 설계 품질을 극대화할 수 있습니다.
-
-## 핵심 이미지
-
-![예외 처리 동작 흐름 비교](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--9.-API-예외-처리/01-예외-처리-동작-흐름-비교.webp)
-
-![예외 처리 동작 흐름 비교](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--9.-API-예외-처리/02-예외-처리-동작-흐름-비교.webp)
 
 ## 관련 글
 

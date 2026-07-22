@@ -29,6 +29,8 @@ LeNet-5 (1998): 얀 르쿤(LeCun) 등이 문서 인식(document recognition)에 
 
 ### CNN의 역사
 
+![CNN의 역사](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/01-CNN의-역사.webp)
+
 초기 모델과 발전
 
 LeNet-5 (1998): 얀 르쿤(LeCun) 등이 문서 인식(document recognition)에 경사 하강법 기반 학습(gradient-based learning)을 적용
@@ -72,6 +74,10 @@ CNN의 광범위한 활용
 이미지 캡셔닝 (Image Captioning)
 
 ### Dropout과 Batch Normalization
+
+![Dropout과 Batch Normalization](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/02-Dropout과-Batch-Normalization.webp)
+
+![Dropout과 Batch Normalization](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/03-Dropout과-Batch-Normalization.webp)
 
 Dropout
 
@@ -138,14 +144,6 @@ Conv + BN + Dropout 순서
 일반적으로 Batch Normalization와 Dropout을 같이 사용할 경우, 성능이 떨어지는 경향
 
 Batch Normalization를 사용하면 Dropout을 사용하지 않는 것이 일반적인 표준
-
-## 핵심 이미지
-
-![CNN의 역사](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/01-CNN의-역사.webp)
-
-![Dropout과 Batch Normalization](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/02-Dropout과-Batch-Normalization.webp)
-
-![Dropout과 Batch Normalization](assets/딥러닝--CNN의-역사-Dropout과-Batch-Normalization/03-Dropout과-Batch-Normalization.webp)
 
 ## 관련 글
 

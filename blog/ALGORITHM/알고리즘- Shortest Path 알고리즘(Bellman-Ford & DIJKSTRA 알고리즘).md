@@ -57,6 +57,8 @@ $u$에서 $v$로 가는 경로가 있으면 $min\{w(p): u \leadsto v\}$
 
 ### 2. 최단 경로의 속성
 
+![2. 최단 경로의 속성](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/01-2.-최단-경로의-속성.webp)
+
 최적 부분 구조 (Optimal Substructure)
 
 정의 (Lemma 22.1): 최단 경로의 부분 경로(subpath) 역시 최단 경로
@@ -169,6 +171,8 @@ Relaxation 이후에는 항상 $v.d = \delta(s,v)$가 됨
 
 ### 4. 벨만-포드 (Bellman-Ford) 알고리즘
 
+![4. 벨만-포드 (Bellman-Ford) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/02-4.-벨만-포드-Bellman-Ford-알고리즘.webp)
+
 - 음수 가중치 간선이 있어도 작동하며 58, 음수 가중치 사이클을 탐지할 수 있음
 
 알고리즘
@@ -244,6 +248,8 @@ Relaxation 루프 (Line 2-4): $|V|-1$번 반복 * 모든 간선 $|E|$번 확인 
 총 수행 시간: $O(VE)$
 
 ### 5. 다익스트라 (Dijkstra) 알고리즘
+
+![5. 다익스트라 (Dijkstra) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/03-5.-다익스트라-Dijkstra-알고리즘.webp)
 
 - 조건: 음수 가중치 간선이 없는(non-negative) 가중 그래프에서만 사용 가능
 
@@ -355,14 +361,6 @@ EXTRACT-MIN 연산: $|V|$번 * $O(\lg V)$ = $O(V \lg V)$
 DECREASE-KEY 연산: 최대 $|E|$번 * $O(\lg V)$ = $O(E \lg V)$
 
 총 수행 시간: $O((V+E) \lg V)$ (연결 그래프의 경우 $O(E \lg V)$와 같음)
-
-## 핵심 이미지
-
-![2. 최단 경로의 속성](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/01-2.-최단-경로의-속성.webp)
-
-![4. 벨만-포드 (Bellman-Ford) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/02-4.-벨만-포드-Bellman-Ford-알고리즘.webp)
-
-![5. 다익스트라 (Dijkstra) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/03-5.-다익스트라-Dijkstra-알고리즘.webp)
 
 ## 관련 글
 

@@ -93,6 +93,8 @@ fun showToast() {
 
 ### 2. 대화상자 (AlertDialog)
 
+![2. 대화상자 (AlertDialog)](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/01-2.-대화상자-AlertDialog.webp)
+
 - 대화상자의 기본은 AlertDialog이며, 제목, 내용, 버튼 영역으로 구분됨.
 
 AlertDialog 생성
@@ -163,6 +165,10 @@ AlertDialog.Builder(this).run {
 ```
 
 ### 3. 목록 형태의 대화상자
+
+![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/02-3.-목록-형태의-대화상자.webp)
+
+![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/03-3.-목록-형태의-대화상자.webp)
 
 - 목록을 제공하고 사용자의 선택을 받는 대화상자를 만들 수 있음.
 
@@ -413,14 +419,6 @@ class MainActivity : AppCompatActivity() {
 
 </LinearLayout>
 ```
-
-## 핵심 이미지
-
-![2. 대화상자 (AlertDialog)](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/01-2.-대화상자-AlertDialog.webp)
-
-![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/02-3.-목록-형태의-대화상자.webp)
-
-![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/03-3.-목록-형태의-대화상자.webp)
 
 ## 관련 글
 

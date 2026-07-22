@@ -41,17 +41,23 @@ ssthresh (Slow Start Threshold): 지수적 증가(Slow Start)에서 선형적 �
 
 ### 전송 속도 공식
 
+![전송 속도 공식](assets/네트워크--TCP-혼잡-제어-및-전송/01-전송-속도-공식.webp)
+
 TCP는 매 왕복 시간(RTT)마다 cwnd만큼의 데이터를 네트워크 파이프에 채우려 노력합니다.
 
 ### 2. 혼잡 제어의 단계별 동작
 
 ### ① Slow Start (슬로우 스타트)
 
+![① Slow Start (슬로우 스타트)](assets/네트워크--TCP-혼잡-제어-및-전송/02-Slow-Start-슬로우-스타트.webp)
+
 동작: cwnd = 1 MSS에서 시작하여 매 RTT마다 cwnd를 2배씩 증가시킵니다 (지수적 증가).
 
 목적: 네트워크가 감당 가능한 대역폭을 빠르게 찾아내기 위함입니다.
 
 ### ② Congestion Avoidance (혼잡 회피 - AIMD)
+
+![② Congestion Avoidance (혼잡 회피 - AIMD)](assets/네트워크--TCP-혼잡-제어-및-전송/03-Congestion-Avoidance-혼잡-회피---AIMD.webp)
 
 조건: cwnd >= ssthresh 일 때 진입.
 
@@ -122,14 +128,6 @@ HOLB (Head-of-Line Blocking): 패킷 하나가 막히면 뒤의 모든 데이터
 스트림 멀티플렉싱: 데이터를 여러 스트림으로 쪼개어 패킷 하나가 사라져도 다른 데이터는 전송되는 구조로 HOLB를 해결했습니다.
 
 Connection ID: IP 주소가 바뀌어도(Wi-Fi ↔ LTE) 연결이 끊기지 않는 이동성을 제공합니다.
-
-## 핵심 이미지
-
-![전송 속도 공식](assets/네트워크--TCP-혼잡-제어-및-전송/01-전송-속도-공식.webp)
-
-![① Slow Start (슬로우 스타트)](assets/네트워크--TCP-혼잡-제어-및-전송/02-Slow-Start-슬로우-스타트.webp)
-
-![② Congestion Avoidance (혼잡 회피 - AIMD)](assets/네트워크--TCP-혼잡-제어-및-전송/03-Congestion-Avoidance-혼잡-회피---AIMD.webp)
 
 ## 관련 글
 

@@ -91,6 +91,8 @@ ex) ("the", [1,1,1]) → ("the", 3)
 
 ### 4. 예시 – WordCount
 
+![4. 예시 – WordCount](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/01-4.-예시-WordCount.webp)
+
 가장 대표적인 MapReduce 프로그램
 
 Map: 입력 문장 → (단어, 1) 쌍 출력
@@ -112,6 +114,8 @@ Map 개수: 입력 데이터 크기에 비례 → 자동 결정
 Key → Reduce 매핑은 hash(key) % R 공식 사용 - 해쉬 함수
 
 ### 5. 실행 구조 (Execution Architecture)
+
+![5. 실행 구조 (Execution Architecture)](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/02-5.-실행-구조-Execution-Architecture.webp)
 
 전체 구성: Master + 여러 Worker
 
@@ -201,6 +205,8 @@ Reduce 실패 시:
 
 ### 9. Shuffle & Sort
 
+![9. Shuffle & Sort](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/03-9.-Shuffle-Sort.webp)
+
 Map 결과(key/value 쌍)는 reduce 전 단계에서 key 기준으로 정렬
 
 같은 key를 가진 데이터는 하나의 reduce로 전달
@@ -216,14 +222,6 @@ MapReduce의 핵심 병목이지만 자동 처리됨
 나머지: 입력 분할, 데이터 이동, 네트워크 통신, 복제, 장애 복구, 로드 밸런싱 등은 프레임워크가 자동 처리
 
 대규모 분산 환경에서도 단일 프로그램처럼 동작
-
-## 핵심 이미지
-
-![4. 예시 – WordCount](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/01-4.-예시-WordCount.webp)
-
-![5. 실행 구조 (Execution Architecture)](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/02-5.-실행-구조-Execution-Architecture.webp)
-
-![9. Shuffle & Sort](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/03-9.-Shuffle-Sort.webp)
 
 ## 관련 글
 

@@ -91,6 +91,8 @@ Seq2Seq 모델은 입력과 출력의 길이에 제약이 없기 때문에 다�
 
 ### 3. Seq2Seq 딥러닝 접근 방식
 
+![3. Seq2Seq 딥러닝 접근 방식](assets/딥러닝-Sequence-to-Sequence/01-3.-Seq2Seq-딥러닝-접근-방식.webp)
+
 시퀀스 모델링 (Sequence Modeling): S2S를 딥러닝으로 접근하기 위해서는 시퀀스를 모델링
 
 기억 (Memory)의 필요성:
@@ -102,6 +104,8 @@ Seq2Seq 모델은 입력과 출력의 길이에 제약이 없기 때문에 다�
 '행위의 이유'가 '행위'를 만들고, 그 '행위'가 다시 '다음 시간의 행위의 이유'가 되어 현재에 영향을 미치는 순환적 개념(기억)
 
 ### 4. 순환 신경망 (RNN)
+
+![4. 순환 신경망 (RNN)](assets/딥러닝-Sequence-to-Sequence/02-4.-순환-신경망-RNN.webp)
 
 RNN (Recurrent Neural Network): '순서가 있는 데이터(Sequential Data)' 처리에 특화된 신경망
 
@@ -118,6 +122,8 @@ RNN의 문제점:
 RNN은 구조적으로 바로 전의 것에만 영향을 받기 쉬워 장기 의존성(Long-Dependency) 반영이 어려움
 
 ### 5. LSTM (Long Short-Term Memory)
+
+![5. LSTM (Long Short-Term Memory)](assets/딥러닝-Sequence-to-Sequence/03-5.-LSTM-Long-Short-Term-Memory.webp)
 
 목적: RNN의 짧은 기억력 문제를 해결하기 위해 등장
 
@@ -142,14 +148,6 @@ RNN의 기억: RNN Layer는 입력이 순차적으로 들어올 때, 최종 출�
 "서울역", "근처", "스타벅스", "로", "가자" 라는 입력이 순서대로 RNN Layer에 들어감
 
 각 단어가 입력될 때마다 RNN의 은닉 상태(다이어그램 안의 막대 그래프)가 업데이트되며 정보가 누적
-
-## 핵심 이미지
-
-![3. Seq2Seq 딥러닝 접근 방식](assets/딥러닝-Sequence-to-Sequence/01-3.-Seq2Seq-딥러닝-접근-방식.webp)
-
-![4. 순환 신경망 (RNN)](assets/딥러닝-Sequence-to-Sequence/02-4.-순환-신경망-RNN.webp)
-
-![5. LSTM (Long Short-Term Memory)](assets/딥러닝-Sequence-to-Sequence/03-5.-LSTM-Long-Short-Term-Memory.webp)
 
 ## 관련 글
 

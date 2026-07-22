@@ -55,6 +55,12 @@ https://ch010104.tistory.com/165
 
 ### 관계 표현식 변환 (Transformation of Relational Expressions)
 
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/01-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/02-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/03-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
 효율적인 계획을 찾기 위해 **동등 규칙(Equivalence Rules)**을 사용하여 쿼리 표현식을 변환
 
 동등한 표현식: 모든 합법적인 데이터베이스 인스턴스에 대해 동일한 튜플 집합을 생성하는 두 표현식13.
@@ -142,14 +148,6 @@ $(\sigma_{dept\_name= \text{“Music”}}(\text{instructor}))$ $\bowtie$ $\text{
 Dynamic Programming: 하위 쿼리(subset)의 최적 계획을 한 번만 계산하고 그 비용과 계획을 저장(memorization)한 뒤, 더 큰 쿼리 계획 시 재사용하여 시간 단축
 
 공통 하위 표현식 공유: 동일한 하위 표현식(subtree)을 포인터로 공유하여 메모리 공간 절약
-
-## 핵심 이미지
-
-![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/01-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
-
-![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/02-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
-
-![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/03-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
 
 ## 관련 글
 

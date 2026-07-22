@@ -33,6 +33,10 @@ FrontController → DispatcherServlet
 
 ### 1.1 직접 만든 프레임워크 vs 스프링 MVC 비교
 
+![1.1 직접 만든 프레임워크 vs 스프링 MVC 비교](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--6.-스프링-MVC---구조-이해/01-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp)
+
+![1.1 직접 만든 프레임워크 vs 스프링 MVC 비교](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--6.-스프링-MVC---구조-이해/02-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp)
+
 FrontController → DispatcherServlet
 
 handlerMapping Map → HandlerMapping (인터페이스)
@@ -362,12 +366,6 @@ public class SpringMemberControllerV3 {
 DispatcherServlet이 핵심이며, 유연한 확장을 위해 인터페이스(Mapping, Adapter, ViewResolver)를 제공합니다.
 
 실무에서는 99.9% RequestMappingHandlerMapping/Adapter를 사용하는 V3 방식을 택합니다.
-
-## 핵심 이미지
-
-![1.1 직접 만든 프레임워크 vs 스프링 MVC 비교](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--6.-스프링-MVC---구조-이해/01-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp)
-
-![1.1 직접 만든 프레임워크 vs 스프링 MVC 비교](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--6.-스프링-MVC---구조-이해/02-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp)
 
 ## 관련 글
 

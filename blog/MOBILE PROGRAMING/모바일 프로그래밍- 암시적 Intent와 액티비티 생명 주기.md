@@ -192,6 +192,10 @@ startActivity(intent)
 
 ### 2. 액티비티 생명주기 (Activity Lifecycle)
 
+![2. 액티비티 생명주기 (Activity Lifecycle)](assets/모바일-프로그래밍--암시적-Intent와-액티비티-생명-주기/01-2.-액티비티-생명주기-Activity-Lifecycle.webp)
+
+![2. 액티비티 생명주기 (Activity Lifecycle)](assets/모바일-프로그래밍--암시적-Intent와-액티비티-생명-주기/02-2.-액티비티-생명주기-Activity-Lifecycle.webp)
+
 액티비티가 생성되어 소멸되기까지의 주기. 안드로이드에서는 한 번에 하나의 액티비티만 활성화 상태(화면 맨 앞)가 될 수 있음.
 
 1.생명주기 상태와 콜백
@@ -490,12 +494,6 @@ class SecondActivity : AppCompatActivity() {
 ```
 
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
-
-## 핵심 이미지
-
-![2. 액티비티 생명주기 (Activity Lifecycle)](assets/모바일-프로그래밍--암시적-Intent와-액티비티-생명-주기/01-2.-액티비티-생명주기-Activity-Lifecycle.webp)
-
-![2. 액티비티 생명주기 (Activity Lifecycle)](assets/모바일-프로그래밍--암시적-Intent와-액티비티-생명-주기/02-2.-액티비티-생명주기-Activity-Lifecycle.webp)
 
 ## 관련 글
 

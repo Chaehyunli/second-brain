@@ -95,6 +95,10 @@ public class HelloServlet extends HttpServlet {
 
 ### 1.3 HTTP 요청 메시지 로그 확인
 
+![1.3 HTTP 요청 메시지 로그 확인](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/01-1.3-HTTP-요청-메시지-로그-확인.webp)
+
+![1.3 HTTP 요청 메시지 로그 확인](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/02-1.3-HTTP-요청-메시지-로그-확인.webp)
+
 개발 단계에서 서버가 받은 HTTP 요청 메시지 전체를 로그로 확인하려면 application.properties에 설정을 추가합니다. (운영 서버에서는 성능 저하 우려로 주의가 필요합니다.)
 
 ```text
@@ -235,6 +239,8 @@ public class RequestHeaderServlet extends HttpServlet {
 ```
 
 ### 3. HTTP 요청 데이터 전달 방식
+
+![3. HTTP 요청 데이터 전달 방식](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/03-3.-HTTP-요청-데이터-전달-방식.webp)
 
 데이터를 서버로 전달하는 방식은 크게 3가지입니다.
 
@@ -537,14 +543,6 @@ public class ResponseJsonServlet extends HttpServlet {
     }
 }
 ```
-
-## 핵심 이미지
-
-![1.3 HTTP 요청 메시지 로그 확인](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/01-1.3-HTTP-요청-메시지-로그-확인.webp)
-
-![1.3 HTTP 요청 메시지 로그 확인](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/02-1.3-HTTP-요청-메시지-로그-확인.webp)
-
-![3. HTTP 요청 데이터 전달 방식](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--3.-Servlet/03-3.-HTTP-요청-데이터-전달-방식.webp)
 
 ## 관련 글
 

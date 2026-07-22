@@ -29,6 +29,8 @@ UDP는 복잡한 제어 없이 데이터를 빠르게 던지는 "비연결형" �
 
 ### 1. UDP (User Datagram Protocol): 최소한의 전송 서비스
 
+![1. UDP (User Datagram Protocol): 최소한의 전송 서비스](assets/네트워크--UDP-프로토콜과-RDT/01-1.-UDP-User-Datagram-Protocol-최소한의-전송-서비스.webp)
+
 UDP는 복잡한 제어 없이 데이터를 빠르게 던지는 "비연결형" 프로토콜입니다.
 
 ### - 주요 특징
@@ -53,6 +55,8 @@ HTTP/3: 속도를 위해 UDP(QUIC)를 쓰되, 필요한 신뢰성은 앱 계층�
 
 ### 2. 에러 검출의 핵심: 인터넷 체크섬 (Checksum)
 
+![2. 에러 검출의 핵심: 인터넷 체크섬 (Checksum)](assets/네트워크--UDP-프로토콜과-RDT/02-2.-에러-검출의-핵심-인터넷-체크섬-Checksum.webp)
+
 데이터가 전송 중 변형(Bit flip)되었는지 확인하는 수학적 장치입니다.
 
 ### - 계산 단계 (송신측)
@@ -72,6 +76,8 @@ Wraparound 처리: 덧셈 중 왼쪽 끝(MSB)에서 넘친 '1(Carry)'을 버리�
 결과가 모든 비트가 1 (1111 1111 1111 1111)이면 정상. 하나라도 0이면 에러로 판단.
 
 ### 3. RDT (Reliable Data Transfer)의 인터페이스
+
+![3. RDT (Reliable Data Transfer)의 인터페이스](assets/네트워크--UDP-프로토콜과-RDT/03-3.-RDT-Reliable-Data-Transfer-의-인터페이스.webp)
 
 애플리케이션과 네트워크 사이에서 신뢰성을 확보하기 위한 약속된 명령어들입니다.
 
@@ -112,14 +118,6 @@ NAK: 에러 발생, 재전송 요청.
 수신자는 번호를 보고 이미 받은 거라면 데이터는 버리고 ACK만 다시 전송함.
 
 ### 5. 에러 수정 철학 비교
-
-## 핵심 이미지
-
-![1. UDP (User Datagram Protocol): 최소한의 전송 서비스](assets/네트워크--UDP-프로토콜과-RDT/01-1.-UDP-User-Datagram-Protocol-최소한의-전송-서비스.webp)
-
-![2. 에러 검출의 핵심: 인터넷 체크섬 (Checksum)](assets/네트워크--UDP-프로토콜과-RDT/02-2.-에러-검출의-핵심-인터넷-체크섬-Checksum.webp)
-
-![3. RDT (Reliable Data Transfer)의 인터페이스](assets/네트워크--UDP-프로토콜과-RDT/03-3.-RDT-Reliable-Data-Transfer-의-인터페이스.webp)
 
 ## 관련 글
 

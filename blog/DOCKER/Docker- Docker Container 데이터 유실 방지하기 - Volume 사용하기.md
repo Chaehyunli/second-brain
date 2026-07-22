@@ -39,6 +39,12 @@ Docker를 활용하면 특정 프로그램을 컨테이너로 띄워서 간편�
 
 ### 📌 1. Docker Volume(도커 볼륨) 이란?
 
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/01-1.-Docker-Volume-도커-볼륨-이란.webp)
+
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/02-1.-Docker-Volume-도커-볼륨-이란.webp)
+
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/03-1.-Docker-Volume-도커-볼륨-이란.webp)
+
 Docker Volume은 도커 컨테이너에서 데이터를 영속적으로 저장하기 위한 방법
 
 컨테이너 자체의 저장 공간을 사용하는 것이 아니라, 호스트 머신의 저장 공간을 공유하여 데이터를 유지
@@ -231,14 +237,6 @@ $ docker exec -it <ID> bash
 ```text
 $ mongosh
 ```
-
-## 핵심 이미지
-
-![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/01-1.-Docker-Volume-도커-볼륨-이란.webp)
-
-![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/02-1.-Docker-Volume-도커-볼륨-이란.webp)
-
-![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/03-1.-Docker-Volume-도커-볼륨-이란.webp)
 
 ## 관련 글
 

@@ -65,6 +65,8 @@ I_i = \text{write}(Q)$, $I_j = \text{write}(Q)
 
 ### 3. Conflict Serializability (충돌 직렬 가능성)
 
+![3. Conflict Serializability (충돌 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/01-3.-Conflict-Serializability-충돌-직렬-가능성.webp)
+
 충돌 동등(Conflict Equivalent): 스케줄 S가 충돌하지 않는 명령어들의 일련의 교환(swaps)을 통해 스케줄 S'로 변환될 수 있을 때
 
 충돌 직렬 가능(Conflict Serializable): 스케줄 S가 직렬 스케줄과 충돌 동등할 때
@@ -74,6 +76,8 @@ I_i = \text{write}(Q)$, $I_j = \text{write}(Q)
 충돌 직렬 가능하지 않은 예시: T_3의 \text{read}(Q)와 T_4의 \text{write}(Q)가 충돌하고, 이어서 T_3의 \text{write}(Q)와 T_4의 \text{write}(Q)가 충돌 관계이므로, T_3 \to T_4 또는 T_4 \to T_3 직렬 스케줄로 명령어 순서를 바꿀 수 없음
 
 ### 4. View Serializability (뷰 직렬 가능성)
+
+![4. View Serializability (뷰 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/02-4.-View-Serializability-뷰-직렬-가능성.webp)
 
 뷰 동등(View Equivalent): 두 스케줄 S와 S'가 다음 세 가지 조건을 만족할 때:
 
@@ -90,6 +94,8 @@ S에서 Q에 대한 최종 \text{write}(Q) 연산을 수행한 트랜잭션이 S
 특징: 충돌 직렬 가능하지 않으면서 뷰 직렬 가능한 모든 스케줄은 블라인드 쓰기(blind writes)를 포함함.
 
 ### 5. Testing for Serializability (직렬 가능성 테스트)
+
+![5. Testing for Serializability (직렬 가능성 테스트)](assets/데이터베이스-설계--트랜젝션과-Serializability/03-5.-Testing-for-Serializability-직렬-가능성-테스트.webp)
 
 선행 그래프(Precedence Graph):
 
@@ -216,14 +222,6 @@ connection.setAutoCommit(false)와 같은 지시어로 암시적 커밋을 끌 �
 트랜잭션 시작 시 변경 가능함
 
 예시: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE.
-
-## 핵심 이미지
-
-![3. Conflict Serializability (충돌 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/01-3.-Conflict-Serializability-충돌-직렬-가능성.webp)
-
-![4. View Serializability (뷰 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/02-4.-View-Serializability-뷰-직렬-가능성.webp)
-
-![5. Testing for Serializability (직렬 가능성 테스트)](assets/데이터베이스-설계--트랜젝션과-Serializability/03-5.-Testing-for-Serializability-직렬-가능성-테스트.webp)
 
 ## 관련 글
 

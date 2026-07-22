@@ -1,5 +1,6 @@
 source_page: https://app.notion.com/p/39c1d84bf68e81cdaf48eca613b04c86
 source_context: 영상 대표 화면
+placement_context: 원문·출처
 source_video: https://www.youtube.com/watch?v=Y9t_H1T5WTU
 source_image_path: https://i.ytimg.com/vi/Y9t_H1T5WTU/maxresdefault.jpg
 source_sha256: d3c5555b9718a6eeb7bb50dbca29e98646751b893939f4c4db49fed36a78650a

@@ -59,6 +59,8 @@ FCFS(First-Come-First-Served) 스케줄링: 서버는 요청받은 순서대로 
 
 ### HTTP/2 (2015년 도입)
 
+![HTTP/2 (2015년 도입)](assets/네트워크--HTTP와-DNS/01-HTTP-2-2015년-도입.webp)
+
 목적: 다중 객체 요청 시 지연 시간 최소화.
 
 프레임 분할 및 인터리빙(Interleaving): 각 객체를 작은 '프레임' 단위로 쪼개어 여러 요청의 프레임을 섞어서 전송합니다. 이를 통해 큰 객체 전송 중에도 작은 객체가 틈틈이 전송되어 HOL 블로킹을 해결합니다.
@@ -67,6 +69,8 @@ FCFS(First-Come-First-Served) 스케줄링: 서버는 요청받은 순서대로 
 
 ### HTTP/3
 
+![HTTP/3](assets/네트워크--HTTP와-DNS/02-HTTP-3.webp)
+
 UDP 기반 QUIC 프로토콜: TCP 위에서 작동하는 HTTP/2는 패킷 하나만 손실되어도 전체 전송이 멈추는 한계가 있습니다. HTTP/3는 UDP 기반의 QUIC을 사용하여 각 객체별로 독립적인 오류 제어를 수행하며 보안(TLS)을 내장합니다.
 
 ### 3. DNS: Domain Name System
@@ -74,6 +78,8 @@ UDP 기반 QUIC 프로토콜: TCP 위에서 작동하는 HTTP/2는 패킷 하나
 DNS는 사람이 읽기 쉬운 호스트 네임(예: www.amazon.com)을 컴퓨터가 이해하는 IP 주소로 변환하는 서비스입니다.
 
 ### 계층적 데이터베이스 구조
+
+![계층적 데이터베이스 구조](assets/네트워크--HTTP와-DNS/03-계층적-데이터베이스-구조.webp)
 
 중앙 집중화의 위험(단일 장애점, 트래픽 폭주 등)을 피하기 위해 분산 구조를 가집니다.
 
@@ -122,14 +128,6 @@ DNS 포이즈닝(Poisoning): 가짜 IP 정보를 DNS 캐시에 주입하여 사�
 DNS 서버의 이름 및 주소
 
 서브넷 마스크 (Subnet Mask)
-
-## 핵심 이미지
-
-![HTTP/2 (2015년 도입)](assets/네트워크--HTTP와-DNS/01-HTTP-2-2015년-도입.webp)
-
-![HTTP/3](assets/네트워크--HTTP와-DNS/02-HTTP-3.webp)
-
-![계층적 데이터베이스 구조](assets/네트워크--HTTP와-DNS/03-계층적-데이터베이스-구조.webp)
 
 ## 관련 글
 

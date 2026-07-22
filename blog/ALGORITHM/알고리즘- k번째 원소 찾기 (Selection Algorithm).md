@@ -39,6 +39,10 @@ https://ch010104.tistory.com/132
 
 ### 1. 무작위 분할을 이용한 선택 (Randomized-Select)
 
+![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/01-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
+
+![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/02-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
+
 퀵 정렬(Quick Sort)과 유사한 아이디어를 사용하지만, 더 효율적으로 동작
 
 퀵 정렬이 배열을 분할한 뒤 양쪽 모두를 재귀적으로 정렬하는 반면, 우리가 찾는 원소가 있는 한쪽 부분만 탐색
@@ -100,12 +104,6 @@ Randomized-Select: 구현이 비교적 간단하고 실제 환경에서 평균�
 Deterministic-Select (Median of Medians): 최악의 경우에도 O(n) 성능을 보장하여 안정성이 필요한 경우에 사용될 수 있는 이론적으로 매우 중요한 알고리즘
 
 데이터 정렬이라는 $O(n \log n)$의 과정을 거치지 않고도 선형 시간 복잡도로 원하는 값을 찾아낼 수 있다는 점에서 선택 알고리즘은 매우 큰 의미를 가짐
-
-## 핵심 이미지
-
-![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/01-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
-
-![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/02-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
 
 ## 관련 글
 

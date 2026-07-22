@@ -29,6 +29,12 @@ https://ch010104.tistory.com/50
 
 ### 1. 인터럽트 사이클 (Interrupt Cycle)
 
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/01-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/02-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/03-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
 1) 인터럽트란?
 
 **인터럽트(interrupt)**는 프로그램 실행 중에 CPU가 현재 명령어의 흐름을 중단하고, 외부 장치나 내부 요청에 의해 다른 작업을 처리하도록 하는 메커니즘
@@ -109,14 +115,6 @@ CPU의 처리 속도를 높이기 위한 대표적인 기술
 명령어 A가 인출될 때 명령어 B는 해석, 명령어 C는 실행 중 → 동시 처리
 
 3) 특징 및 장점
-
-## 핵심 이미지
-
-![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/01-1.-인터럽트-사이클-Interrupt-Cycle.webp)
-
-![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/02-1.-인터럽트-사이클-Interrupt-Cycle.webp)
-
-![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/03-1.-인터럽트-사이클-Interrupt-Cycle.webp)
 
 ## 관련 글
 

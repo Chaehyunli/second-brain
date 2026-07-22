@@ -29,6 +29,12 @@ https://ch010104.tistory.com/118
 
 ### 1. 병합 정렬 (Merge Sort)
 
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/01-1.-병합-정렬-Merge-Sort.webp)
+
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/02-1.-병합-정렬-Merge-Sort.webp)
+
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/03-1.-병합-정렬-Merge-Sort.webp)
+
 병합 정렬은 말 그대로 "나누고 합치는" 과정을 통해 전체를 정렬하는 방식
 
 아무리 복잡한 문제라도 작게 나누면 해결하기 쉽다는 '분할 정복(Divide and Conquer)' 철학에 가장 충실한 알고리즘
@@ -181,14 +187,6 @@ n-1개의 원소를 추출하고 재정렬하는 데 $O(n \log n)$이 걸림
 최악 시간 복잡도: - 만약 피벗으로 계속해서 가장 작거나 큰 값이 선택될 경우 - O(n2)이라는 비효율적인 성능을 보이게 됨 - 이미 정렬된 배열에서 항상 맨 오른쪽 원소를 피벗으로 삼는 경우, 파티션은 n-1개와 0개로 나뉘게 됨.
 
 해결책: - 최악의 경우를 피하기 위해 피벗을 무작위로 선택하거나(Randomized Quicksort) - 배열의 처음/중간/끝 세 값 중 중간값을 피벗으로 사용하는 등의 개선 방법
-
-## 핵심 이미지
-
-![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/01-1.-병합-정렬-Merge-Sort.webp)
-
-![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/02-1.-병합-정렬-Merge-Sort.webp)
-
-![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/03-1.-병합-정렬-Merge-Sort.webp)
 
 ## 관련 글
 

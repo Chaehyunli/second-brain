@@ -29,6 +29,8 @@ I/O 때문에 하나의 작업이 대기할 때 → 다른 작업이 CPU 사용 
 
 ### 1. 다중 프로그래밍 (Multiprogramming)
 
+![1. 다중 프로그래밍 (Multiprogramming)](assets/운영체제--프로세스의-상태-Process-State-란/01-1.-다중-프로그래밍-Multiprogramming.webp)
+
 정의: 여러 작업을 메모리에 동시에 올려두고, CPU가 놀지 않도록 다른 작업을 실행하는 기법 - 예를 들어, CPU가 입출력 장치 작업(프린터기 복사)을 하고 있다고 하면, 이는 매우 오래 걸리는 작업이기 때문에 해당 프로세스를 Waiting 상태로 돌림(이후, CPU가 입출력 완료 인터럽트를 받게 되면 다시 Ready 상태로 전환). - 프로세스가 Waiting 상태일 경우, CPU는 놀고 있는 상태이기 때문에, 메모리에 있는 다른 프로세스의 작업을 수행(CPU가 입출력 완료 인터럽트를 받으면 이 작업도 중지하여, Ready 상태로 전환)
 
 장점:
@@ -59,6 +61,8 @@ CPU를 짧은 시간 단위로 나눠 각 프로세스에 배분
 
 ### 3. 프로세스 상태 (Process States)
 
+![3. 프로세스 상태 (Process States)](assets/운영체제--프로세스의-상태-Process-State-란/02-3.-프로세스-상태-Process-States.webp)
+
 한순간에 CPU는 오직 하나의 프로세스만 실행할 수 있음
 
 나머지는 Ready 또는 Waiting 상태에 있음
@@ -75,6 +79,8 @@ Terminated 상태에서는 작업이 완료된 프로세스를 제거함.
 
 ### 4. 프로세스 상태 변화 예시( I/O 요청 발생 )
 
+![4. 프로세스 상태 변화 예시( I/O 요청 발생 )](assets/운영체제--프로세스의-상태-Process-State-란/03-4.-프로세스-상태-변화-예시-I-O-요청-발생.webp)
+
 PID=1이 CPU에서 실행 중 (Running)
 
 I/O 요청 발생 → Waiting 상태로 전환
@@ -88,14 +94,6 @@ PID=1은 I/O 완료 후 인터럽트를 통해 Ready 상태로 복귀
 PID=3이 CPU를 할당받아 Running 상태로 전환(스케줄러가 PID 3번을 다음 작업으로 선택)
 
 ➡️ 여기서 포인트는 CPU의 프로세스 할당은 Ready 상태 중에서 스케줄러가 선택한다는 점!( 어떤 기준으로 선택하는지는 scheduler의 프로그래밍된 내용에 따라 달라짐 )
-
-## 핵심 이미지
-
-![1. 다중 프로그래밍 (Multiprogramming)](assets/운영체제--프로세스의-상태-Process-State-란/01-1.-다중-프로그래밍-Multiprogramming.webp)
-
-![3. 프로세스 상태 (Process States)](assets/운영체제--프로세스의-상태-Process-State-란/02-3.-프로세스-상태-Process-States.webp)
-
-![4. 프로세스 상태 변화 예시( I/O 요청 발생 )](assets/운영체제--프로세스의-상태-Process-State-란/03-4.-프로세스-상태-변화-예시-I-O-요청-발생.webp)
 
 ## 관련 글
 

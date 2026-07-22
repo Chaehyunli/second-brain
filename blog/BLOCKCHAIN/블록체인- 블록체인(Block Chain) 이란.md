@@ -71,6 +71,8 @@ https://ch010104.tistory.com/11
 
 ### 2. Public BlockChain vs Database
 
+![2. Public BlockChain vs Database](assets/블록체인--블록체인-Block-Chain-이란/01-2.-Public-BlockChain-vs-Database.webp)
+
 블록체인은 중앙 집중형으로 관리되는 일반 데이터베이스와 달리 공개적으로 분산(탈중앙화)되어 관리됨.
 
 또한, 블록체인은 일반 데이터베이스와 다르게 insert만 가능하면 한번 기록된 데이터를 변경할 수 없음!!
@@ -82,6 +84,8 @@ https://ch010104.tistory.com/11
 **기존의 거래 방식** 은 제 3자 신뢰기관이 거래 공증을 관리하기 때문에, 해커가 공격해야할 대상이 하나이지만, **블록체인** 의 경우 모든 네트워크 참여자가 공유 및 보관을 하기 때문에 해킹에 강하다.
 
 ### 3. 기존 문제 vs 블록체인의 해결책
+
+![3. 기존 문제 vs 블록체인의 해결책](assets/블록체인--블록체인-Block-Chain-이란/02-3.-기존-문제-vs-블록체인의-해결책.webp)
 
 **블록체인 트랜잭션의 과정**
 
@@ -100,6 +104,8 @@ https://ch010104.tistory.com/11
 6. 송금 완료 (Company B가 돈을 받음)
 
 ### 4. 블록체인의 구조
+
+![4. 블록체인의 구조](assets/블록체인--블록체인-Block-Chain-이란/03-4.-블록체인의-구조.webp)
 
 1) 블록 바디(Block Body)란?
 
@@ -178,14 +184,6 @@ https://ch010104.tistory.com/11
 3. 도입 장벽(Adoption Barrier)
 
 4. 사생활 문제(Privacy Issues)
-
-## 핵심 이미지
-
-![2. Public BlockChain vs Database](assets/블록체인--블록체인-Block-Chain-이란/01-2.-Public-BlockChain-vs-Database.webp)
-
-![3. 기존 문제 vs 블록체인의 해결책](assets/블록체인--블록체인-Block-Chain-이란/02-3.-기존-문제-vs-블록체인의-해결책.webp)
-
-![4. 블록체인의 구조](assets/블록체인--블록체인-Block-Chain-이란/03-4.-블록체인의-구조.webp)
 
 ## 관련 글
 

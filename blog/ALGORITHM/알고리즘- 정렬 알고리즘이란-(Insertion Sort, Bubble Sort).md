@@ -29,6 +29,8 @@ https://ch010104.tistory.com/115
 
 ### 정렬 알고리즘의 종류
 
+![정렬 알고리즘의 종류](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/01-정렬-알고리즘의-종류.webp)
+
 정렬 알고리즘은 크게 두 가지 방식으로 나눌 수 있음
 
 비교 기반 정렬
@@ -46,6 +48,10 @@ Linear Time Sort
 종류: 계수 정렬(Counting Sort), 기수 정렬(Radix Sort), 버킷 정렬(Bucket Sort) 등
 
 ### 삽입 정렬 (Insertion Sort)
+
+![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/02-삽입-정렬-Insertion-Sort.webp)
+
+![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/03-삽입-정렬-Insertion-Sort.webp)
 
 데이터를 하나씩 확인하며, 각 데이터를 이미 정렬된 부분 배열의 올바른 위치에 '삽입'하는 방식으로 동작
 
@@ -180,14 +186,6 @@ print(f"정렬 후: {my_list}")
 시간 복잡도 (Running Time)
 
 최악: O(n²)
-
-## 핵심 이미지
-
-![정렬 알고리즘의 종류](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/01-정렬-알고리즘의-종류.webp)
-
-![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/02-삽입-정렬-Insertion-Sort.webp)
-
-![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/03-삽입-정렬-Insertion-Sort.webp)
 
 ## 관련 글
 

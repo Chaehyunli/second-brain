@@ -35,6 +35,8 @@ https://ch010104.tistory.com/189
 
 ### 1. 텍스트 전달 앱: Interface를 이용한 통신
 
+![1. 텍스트 전달 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/01-1.-텍스트-전달-앱-Interface를-이용한-통신.webp)
+
 이 실습에서는 Interface(인터페이스)를 사용하여 프래그먼트와 액티비티 간의 통신을 구현
 
 데이터 흐름은 [Fragment A] → [Activity] → [Fragment B] 순서
@@ -421,6 +423,8 @@ class FragmentB : Fragment() {
 
 ### 2. 카운트 앱: Interface를 이용한 통신
 
+![2. 카운트 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/02-2.-카운트-앱-Interface를-이용한-통신.webp)
+
 실습 목표: Fragment A의 버튼을 클릭하면 Fragment B의 숫자가 1씩 증가하도록 구현
 
 UI 구성:
@@ -700,12 +704,6 @@ class FragmentB : Fragment() {
 
 </LinearLayout>
 ```
-
-## 핵심 이미지
-
-![1. 텍스트 전달 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/01-1.-텍스트-전달-앱-Interface를-이용한-통신.webp)
-
-![2. 카운트 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/02-2.-카운트-앱-Interface를-이용한-통신.webp)
 
 ## 관련 글
 

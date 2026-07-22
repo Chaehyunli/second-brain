@@ -41,6 +41,8 @@ https://ch010104.tistory.com/137
 
 ### 2. 모든 위젯이 상속받는 공통 XML 속성
 
+![2. 모든 위젯이 상속받는 공통 XML 속성](assets/모바일-프로그래밍--뷰-View-와-기본-위젯/01-2.-모든-위젯이-상속받는-공통-XML-속성.webp)
+
 - 모든 위젯은 View 클래스로부터 공통된 속성을 물려받음 - ML 레이아웃 파일에서 위젯을 다룰 때 필수로 알아야 할 기본 속성들을 소개
 
 id
@@ -415,10 +417,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 ```
-
-## 핵심 이미지
-
-![2. 모든 위젯이 상속받는 공통 XML 속성](assets/모바일-프로그래밍--뷰-View-와-기본-위젯/01-2.-모든-위젯이-상속받는-공통-XML-속성.webp)
 
 ## 관련 글
 

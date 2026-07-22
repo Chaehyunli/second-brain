@@ -29,6 +29,8 @@ https://ch010104.tistory.com/127
 
 ### 비교 기반 정렬의 한계
 
+![비교 기반 정렬의 한계](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/01-비교-기반-정렬의-한계.webp)
+
 주요 비교 기반 정렬 알고리즘들과 시간복잡도
 
 비교 기반 정렬의 이론적 하한선
@@ -46,6 +48,10 @@ n개 원소의 가능한 순열은 n!개
 따라서 최악의 경우 Ω(n lg n)번의 비교가 필요
 
 ### Linear Time Sorting
+
+![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/02-Linear-Time-Sorting.webp)
+
+![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/03-Linear-Time-Sorting.webp)
 
 비교 기반 정렬의 한계를 넘어서려면 비교가 아닌 다른 방식을 사용해야 Gㅏㅁ
 
@@ -160,14 +166,6 @@ Radix Sort: 고정된 자릿수를 가진 데이터일 때
 Bucket Sort: 데이터가 균등 분포를 따를 때
 
 이들은 비교 기반 정렬의 Ω(n lg n) 하한선을 넘어서는 강력한 도구들이지만, 각각의 제약 조건을 만족해야 함
-
-## 핵심 이미지
-
-![비교 기반 정렬의 한계](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/01-비교-기반-정렬의-한계.webp)
-
-![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/02-Linear-Time-Sorting.webp)
-
-![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/03-Linear-Time-Sorting.webp)
 
 ## 관련 글
 

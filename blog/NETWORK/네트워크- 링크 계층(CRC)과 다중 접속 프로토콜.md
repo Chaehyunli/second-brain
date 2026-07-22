@@ -85,6 +85,8 @@ LAN (Local Area Network): 로컬 단위로 묶인 통신망.
 
 ### 1) 기본 논리
 
+![1) 기본 논리](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/01-1-기본-논리.webp)
+
 송신 측은 원본 데이터 D에 특정 알고리즘을 수행하여 구한 오류 검출용 잉여 비트 EDC (Error Detection & Correction)를 덧붙여 전송합니다.
 
 수신 측은 받은 데이터 D'를 기반으로 동일 알고리즘을 돌려 계산한 값과 받은 EDC'를 교차 비교합니다.
@@ -97,6 +99,8 @@ LAN (Local Area Network): 로컬 단위로 묶인 통신망.
 
 ### ① 단일 비트 패리티 (Single Bit Parity)
 
+![① 단일 비트 패리티 (Single Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/02-단일-비트-패리티-Single-Bit-Parity.webp)
+
 짝수 패리티 (Even Parity) 기준: 데이터 비트들과 패리티 비트 내부의 1의 총 개수가 짝수가 되도록 패리티를 0 또는 1로 결정합니다.
 
 예시: 데이터가 0111000110101011 일 때, 원래 1이 9개(홀수)이므로 패리티 비트를 1로 두어 짝수 개를 맞춰 보냅니다.
@@ -104,6 +108,8 @@ LAN (Local Area Network): 로컬 단위로 묶인 통신망.
 한계: 오직 1비트 에러만 감지할 수 있습니다. 만약 전송 중 절묘하게 2개의 비트가 동시에 깨지면 전체 1의 개수 짝수 성질이 깨지지 않아 에러 감지에 완전히 실패합니다.
 
 ### ② 2차원 비트 패리티 (Two-dimensional Bit Parity)
+
+![② 2차원 비트 패리티 (Two-dimensional Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/03-2차원-비트-패리티-Two-dimensional-Bit-Parity.webp)
 
 데이터를 가로 i행, 세로 j열의 매트릭스 형태로 정렬하고 가로행 끝(row parity)과 세로열 끝(column parity)에 각각 패리티 비트를 부여합니다.
 
@@ -296,14 +302,6 @@ ACK (Acknowledgement): 무선은 충돌 감지가 불가능하므로, 수신 측
 아무도 보낼 데이터가 없어도 토큰이 계속 돌아야 하는 토큰 오버헤드 존재.
 
 중간 통신 잡음으로 토큰 자체가 깨지거나(토큰 분실), 특정 장비가 토큰을 먹은 채 먹통이 되면 복잡한 복구 알고리즘이 개입해야 함.
-
-## 핵심 이미지
-
-![1) 기본 논리](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/01-1-기본-논리.webp)
-
-![① 단일 비트 패리티 (Single Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/02-단일-비트-패리티-Single-Bit-Parity.webp)
-
-![② 2차원 비트 패리티 (Two-dimensional Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/03-2차원-비트-패리티-Two-dimensional-Bit-Parity.webp)
 
 ## 관련 글
 

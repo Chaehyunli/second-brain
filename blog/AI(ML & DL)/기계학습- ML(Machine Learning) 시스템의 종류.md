@@ -49,6 +49,8 @@ https://ch010104.tistory.com/15
 
 ### 1. 지도 학습 (Supervised Learning)
 
+![1. 지도 학습 (Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/01-1.-지도-학습-Supervised-Learning.webp)
+
 훈련 데이터에 **레이블(label)**이 포함된 경우, 즉 각 입력 데이터 x에 대해 정답 y 가 주어진 경우의 학습 방식 모델은 입력과 출력 간의 관계를 학습하여, 새로운 데이터에 대한 예측을 수행하는 것이 목표이다.
 
 지도 학습: 분류
@@ -84,6 +86,8 @@ https://ch010104.tistory.com/15
 집값 예측: 여러 개의 부동산 데이터(면적, 위치, 방 개수 등)와 해당 집의 가격을 학습하여, 새로운 집의 가격을 예측.
 
 ### 2. 비지도 학습 (Unsupervised Learning)
+
+![2. 비지도 학습 (Unsupervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/02-2.-비지도-학습-Unsupervised-Learning.webp)
 
 훈련 데이터에 **레이블(label)**이 포함되지 않은 경우, 즉 데이터 자체만 있고 정답 y 가 주어지지 않은 경우의 학습 방식 모델은 데이터에서 숨겨진 패턴이나 구조를 학습하는 것이 목표이다
 
@@ -160,6 +164,8 @@ clean한 훈련 데이터: 학습된 모델을 통해 탐지하고자 하는 어
 이상 탐지(Anomaly Detection): 신용 카드 거래 데이터를 분석하여 일반적인 패턴과 다른 이상 거래 탐지(예: 금융 사기 감지).
 
 ### 3. 준지도 학습 (Semi-Supervised Learning)
+
+![3. 준지도 학습 (Semi-Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/03-3.-준지도-학습-Semi-Supervised-Learning.webp)
 
 소량의 레이블이 포함된 데이터 + 대량의 레이블이 없는 데이터를 함께 사용하여 학습하는 방식 즉, 지도 학습과 비지도 학습의 중간 형태
 
@@ -314,14 +320,6 @@ k-최근접 이웃(K-NN, k-Nearest Neighbors)
 데이터를 학습하여 일반적인 선형 관계를 모델링
 
 OECD 국가의 1인당 GDP와 삶의 만족도간 연관 예시: - 특정 국가의 1인당 GDP가 주어졌을 때 삶의 만족도를 예측 하는 선형 모델을 도출 - life_satisfaction = θ0 + θ1 * GDP_per_capita - 훈련 과정을 통해 훈련 데이터에 가장 잘 맞는 최선의 θ0와 θ1을 찾아야 함 - 이런식으로 찾은 최적의 θ0 , θ1 값을 가진 직선을 선형 모델이라고 함 - 이 선형 모델을 토대로, 새로운 데이터가 들어왔을 경우 결과를 예측함.
-
-## 핵심 이미지
-
-![1. 지도 학습 (Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/01-1.-지도-학습-Supervised-Learning.webp)
-
-![2. 비지도 학습 (Unsupervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/02-2.-비지도-학습-Unsupervised-Learning.webp)
-
-![3. 준지도 학습 (Semi-Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/03-3.-준지도-학습-Semi-Supervised-Learning.webp)
 
 ## 관련 글
 

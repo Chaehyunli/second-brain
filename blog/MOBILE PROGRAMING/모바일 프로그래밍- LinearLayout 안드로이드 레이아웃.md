@@ -29,6 +29,8 @@ https://ch010104.tistory.com/149
 
 ### 1. 레이아웃(Layout)이란?
 
+![1. 레이아웃(Layout)이란?](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/01-1.-레이아웃-Layout-이란.webp)
+
 - 레이아웃은 내부에 다양한 위젯(버튼, 텍스트뷰 등)을 담는 일종의 컨테이너
 
 - 안드로이드에는 여러 종류의 레이아웃이 있으며, 각기 다른 규칙에 따라 위젯을 배치
@@ -44,6 +46,8 @@ https://ch010104.tistory.com/149
 프레임 레이아웃 (FrameLayout): 위젯을 좌측 상단에 겹쳐서 배치하며, 특정 위젯만 선택적으로 보여줄 때 유용
 
 ### 2. LinearLayout의 핵심 속성
+
+![2. LinearLayout의 핵심 속성](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/02-2.-LinearLayout의-핵심-속성.webp)
 
 - LinearLayout을 다루기 위해 꼭 알아야 할 주요 속성들이 있음
 
@@ -316,12 +320,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 ```
-
-## 핵심 이미지
-
-![1. 레이아웃(Layout)이란?](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/01-1.-레이아웃-Layout-이란.webp)
-
-![2. LinearLayout의 핵심 속성](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/02-2.-LinearLayout의-핵심-속성.webp)
 
 ## 관련 글
 

@@ -59,6 +59,10 @@ HDFS는 이러 장애 상황에서도 눈에 띄는 중단 없이 안정적으�
 
 ### HDFS 아키텍처: NameNode와 DataNode의 협력
 
+![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/01-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
+
+![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/02-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
+
 파일 시스템의 메타데이터와 실제 데이터를 분리하여 관리하는 독특한 구조를 가짐
 
 이 구조의 핵심에는 네임노드(NameNode)와 데이터노드(DataNode)가 있음
@@ -128,12 +132,6 @@ HDFS는 메타데이터를 관리하는 NameNode와 실제 데이터를 저장�
 데이터를 받은 데이터노드는 다음 데이터노드로 데이터를 전달하는 과정을 거쳐 최종적으로 모든 복제본이 저장
 
 - 클라이언트는 NameNode로부터 블록 위치 정보를 받아 DataNode에 직접 접속해 데이터를 읽음
-
-## 핵심 이미지
-
-![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/01-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
-
-![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/02-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
 
 ## 관련 글
 

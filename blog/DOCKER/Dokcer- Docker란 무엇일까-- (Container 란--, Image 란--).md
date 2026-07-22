@@ -55,6 +55,8 @@ docker run mysql
 
 ### 🧩 2. Docker의 핵심 개념 세 가지
 
+![🧩 2. Docker의 핵심 개념 세 가지](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/01-2.-Docker의-핵심-개념-세-가지.webp)
+
 1) Docker란?
 
 하나의 컴퓨터 안에 여러 개의 독립된 미니 컴퓨터 환경(컨테이너)을 만들 수 있는 툴
@@ -98,6 +100,8 @@ docker Image가 음식을 만들기 위한 레시피라면, docker Container는 
 
 ### 🌐 3. 보충: IP와 포트 개념
 
+![🌐 3. 보충: IP와 포트 개념](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/02-3.-보충-IP와-포트-개념.webp)
+
 1) IP란?
 
 네트워크 상에서 특정 컴퓨터의 주소
@@ -130,6 +134,8 @@ https: 443번
 
 ### 🔧4. 실습 예제: Nginx 컨테이너 실행
 
+![🔧4. 실습 예제: Nginx 컨테이너 실행](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/03-4.-실습-예제-Nginx-컨테이너-실행.webp)
+
 ```bash
 # 1. 이미지 다운로드
 docker pull nginx
@@ -152,14 +158,6 @@ docker stop webserver
 ```
 
 ### 💡5. 정리
-
-## 핵심 이미지
-
-![🧩 2. Docker의 핵심 개념 세 가지](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/01-2.-Docker의-핵심-개념-세-가지.webp)
-
-![🌐 3. 보충: IP와 포트 개념](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/02-3.-보충-IP와-포트-개념.webp)
-
-![🔧4. 실습 예제: Nginx 컨테이너 실행](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/03-4.-실습-예제-Nginx-컨테이너-실행.webp)
 
 ## 관련 글
 

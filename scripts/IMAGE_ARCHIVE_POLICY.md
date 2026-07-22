@@ -10,7 +10,8 @@
 
 - Select at most three visible, non-SVG raster images from a blog article body. Exclude hidden (`0×0`) and small (`<240×100`) images, icons, and duplicate URLs.
 - Save the selected image as WebP, resize to at most 1600px wide, and store it beside the note under `assets/<note-slug>/`.
-- Add a visible `## 핵심 이미지` section with local relative Markdown paths so both Obsidian and GitHub render the same files.
+- Insert each local image directly below its matching Markdown heading, preserving the original article/topic context; do not collect the images at the end of a note.
+- If a source image has only generic original-image context, insert it below the first non-metadata content section. Preserve unmatched images in a collector section for manual review rather than guessing.
 - Add `SOURCE.txt` beside each asset set. It records source page, context, source-image path without signed query parameters, source SHA-256, and archived dimensions.
 - Do not store expiring signed URLs, original high-resolution binaries, or images larger than 10 MiB.
 

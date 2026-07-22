@@ -51,6 +51,8 @@ https://ch010104.tistory.com/41
 
 ### 2. B-Tree 인덱스와 조회 방식 비교
 
+![2. B-Tree 인덱스와 조회 방식 비교](assets/SQL--MySql의-인덱스-설정---BTREE-INDEX/01-2.-B-Tree-인덱스와-조회-방식-비교.webp)
+
 BTREE 인덱스
 
 📌 인덱스가 없는 경우 (Full Table Scan)
@@ -162,10 +164,6 @@ email 컬럼에 인덱스가 있다면 빠르게 검색됨
 EXPLAIN으로 인덱스 사용 여부 확인 가능
 
 이메일 인증으로 통해 아이디나 비밀번호 찾기 기능을 지원하는 로그인 기능의 경우, 이메일 인덱스를 활용해 조회 속도를 높일 수 있음
-
-## 핵심 이미지
-
-![2. B-Tree 인덱스와 조회 방식 비교](assets/SQL--MySql의-인덱스-설정---BTREE-INDEX/01-2.-B-Tree-인덱스와-조회-방식-비교.webp)
 
 ## 관련 글
 

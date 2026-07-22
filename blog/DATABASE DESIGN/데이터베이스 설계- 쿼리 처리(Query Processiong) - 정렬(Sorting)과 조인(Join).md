@@ -29,6 +29,8 @@ https://ch010104.tistory.com/154
 
 ### 정렬 (Sorting)
 
+![정렬 (Sorting)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/01-정렬-Sorting.webp)
+
 데이터베이스 시스템에서 정렬이 중요한 두 가지 이유:
 
 사용자 요구: SQL의 ORDER BY 절을 통해 사용자가 결과의 정렬을 명시적으로 요구.
@@ -64,6 +66,10 @@ https://ch010104.tistory.com/154
 모든 Run의 데이터가 소진될 때까지 이 과정을 반복.
 
 ### 조인 연산 (Join Operation)
+
+![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/02-조인-연산-Join-Operation.webp)
+
+![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/03-조인-연산-Join-Operation.webp)
 
 조인 연산을 구현하기 위한 다양한 알고리즘. 비용 추정치를 기반으로 최적의 알고리즘을 선택.
 
@@ -174,14 +180,6 @@ OR 조건 조인 (r⋈θ1∨θ2​s): - Block Nested-Loop를 사용하거나, �
 수요 기반 (Demand-driven): - 상위 연산자가 필요할 때마다 하위 연산자에게 다음 튜플을 요청하는 '게으른(lazy)' 방식.
 
 생산자 기반 (Producer-driven): - 하위 연산자가 튜플을 생성하는 즉시 상위 연산자로 보내는 '적극적인(eager)' 방식. 연산자 사이에 버퍼를 두어 데이터를 전달.
-
-## 핵심 이미지
-
-![정렬 (Sorting)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/01-정렬-Sorting.webp)
-
-![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/02-조인-연산-Join-Operation.webp)
-
-![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/03-조인-연산-Join-Operation.webp)
 
 ## 관련 글
 

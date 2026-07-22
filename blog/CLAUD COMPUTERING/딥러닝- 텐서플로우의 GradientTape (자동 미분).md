@@ -87,6 +87,8 @@ for var, g in zip(layer.trainable_variables, grad):
 
 ### AutoGrad의 응용: Heatmap 활성화
 
+![AutoGrad의 응용: Heatmap 활성화](assets/딥러닝--텐서플로우의-GradientTape-자동-미분/01-AutoGrad의-응용-Heatmap-활성화.webp)
+
 - AutoGrad 개념은 모델 학습뿐만 아니라, 모델의 판단 근거를 시각화(Heatmap)하는 데에도 응용
 
 시각화 목적: 모델이 이미지를 특정 클래스(예: '코끼리')로 판단했다면, **"대체 이미지의 어느 부분을 보고 그렇게 판단했는가?"**를 알아내기 위함
@@ -114,10 +116,6 @@ Convolution 레이어의 출력(피처 맵)은 원본 이미지(WxH)와 크기(W
 하지만 Convolution은 위치 정보의 순서를 보존
 
 따라서 계산된 Heatmap(W'xH')을 원본 입력 크기(WxH)에 맞게 늘리면(resize), 이미지의 어느 부분을 활성화했는지 시각화할 수 있음
-
-## 핵심 이미지
-
-![AutoGrad의 응용: Heatmap 활성화](assets/딥러닝--텐서플로우의-GradientTape-자동-미분/01-AutoGrad의-응용-Heatmap-활성화.webp)
 
 ## 관련 글
 

@@ -39,6 +39,10 @@ image_cdfe45.png(송신자)와 image_ce549e.png(수신자)를 통해 확인할 �
 
 ### FSM 주요 로직
 
+![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/01-FSM-주요-로직.webp)
+
+![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/02-FSM-주요-로직.webp)
+
 송신자 (Sender):
 
 패킷을 보낼 때 0 또는 1 번호를 부여합니다.
@@ -52,6 +56,8 @@ has_seq0 또는 has_seq1 조건을 사용하여 내가 지금 기다리는 번�
 만약 이미 받았던 번호가 다시 오면(중복), 데이터를 위로 올리지는 않되 ACK를 다시 보내서 송신자를 안심시킵니다.
 
 ### 2. rdt 2.2: NAK-Free 프로토콜 (구조의 단순화)
+
+![2. rdt 2.2: NAK-Free 프로토콜 (구조의 단순화)](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/03-2.-rdt-2.2-NAK-Free-프로토콜-구조의-단순화.webp)
 
 ### 핵심 문제 해결
 
@@ -92,14 +98,6 @@ Premature Timeout: 네트워크 지연으로 ACK가 늦게 와서 중복 전송�
 ### 요약표: 프로토콜 진화 과정
 
 최종 결론: rdt 3.0은 현대 통신의 신뢰성을 보장하는 가장 기본적인 원리(에러 검출, 피드백, 순서 번호, 타임아웃)를 모두 갖춘 모델입니다.
-
-## 핵심 이미지
-
-![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/01-FSM-주요-로직.webp)
-
-![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/02-FSM-주요-로직.webp)
-
-![2. rdt 2.2: NAK-Free 프로토콜 (구조의 단순화)](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/03-2.-rdt-2.2-NAK-Free-프로토콜-구조의-단순화.webp)
 
 ## 관련 글
 

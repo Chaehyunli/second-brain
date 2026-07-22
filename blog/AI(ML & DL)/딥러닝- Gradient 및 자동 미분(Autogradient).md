@@ -35,6 +35,8 @@ https://ch010104.tistory.com/184
 
 ### 계산 그래프 예시 상세
 
+![계산 그래프 예시 상세](assets/딥러닝--Gradient-및-자동-미분-Autogradient/01-계산-그래프-예시-상세.webp)
+
 1. 초기값 설정
 
 w0 = 2.00
@@ -154,10 +156,6 @@ Copy Gate (복사): 그래디언트 덧셈기 (Gradient Adder)
 입력 중 최대값을 가졌던 노드에만 업스트림 그래디언트를 전달하고, 나머지는 0을 전달함.
 
 Max Gate (최대값): 그래디언트 라우터 (Gradient Router)
-
-## 핵심 이미지
-
-![계산 그래프 예시 상세](assets/딥러닝--Gradient-및-자동-미분-Autogradient/01-계산-그래프-예시-상세.webp)
 
 ## 관련 글
 

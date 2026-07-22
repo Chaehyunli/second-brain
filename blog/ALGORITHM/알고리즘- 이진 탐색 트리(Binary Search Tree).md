@@ -29,6 +29,8 @@ https://ch010104.tistory.com/145
 
 ### 1. 이진 탐색 트리(BST)란 무엇일까요?
 
+![1. 이진 탐색 트리(BST)란 무엇일까요?](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/01-1.-이진-탐색-트리-BST-란-무엇일까요.webp)
+
 이진 탐색 트리(BST)는 이름에서 알 수 있듯이 '검색'에 특화된 '이진 트리'
 
 일반적인 이진 트리는 각 노드가 최대 두 개의 자식 노드를 가지는 구조를 의미하지만, 이진 탐색 트리는 여기에 한 가지 중요한 규칙이 추가
@@ -78,6 +80,8 @@ x의 오른쪽 서브트리에 있는 모든 노드의 키(key) 값은 x의 키 
 자식이 둘인 경우: - 삭제할 노드(z)의 바로 다음 순서 값(successor)을 가진 노드(y)를 찾아 z의 위치로 옮김 - 이 y는 z의 오른쪽 서브트리에서 가장 작은 값을 가진 노드가 됨
 
 ### 3. 트리 순회(Traversal) 방법
+
+![3. 트리 순회(Traversal) 방법](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/02-3.-트리-순회-Traversal-방법.webp)
 
 - 트리의 모든 노드를 한 번씩 방문하는 것을 '순회'라고 함
 
@@ -145,6 +149,8 @@ void traversal(node){
 
 ### 4. 깊이 우선 탐색(DFS) vs. 너비 우선 탐색(BFS)
 
+![4. 깊이 우선 탐색(DFS) vs. 너비 우선 탐색(BFS)](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/03-4.-깊이-우선-탐색-DFS-vs.-너비-우선-탐색-BFS.webp)
+
 깊이 우선 탐색 (Depth-First Search, DFS)
 
 DFS는 최대한 깊이 내려간 후, 더 이상 갈 곳이 없으면 위로 올라와 다른 경로를 탐색하는 방식
@@ -156,14 +162,6 @@ BST의 **전위 순회(Pre-order)**는 DFS의 한 종류입
 BFS는 현재 노드와 가까운 레벨의 노드들을 먼저 방문하는 방식
 
 레벨 순서(Level Order) 순회라고도 불리며, 큐(Queue)를 이용하여 구현할 수 있음
-
-## 핵심 이미지
-
-![1. 이진 탐색 트리(BST)란 무엇일까요?](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/01-1.-이진-탐색-트리-BST-란-무엇일까요.webp)
-
-![3. 트리 순회(Traversal) 방법](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/02-3.-트리-순회-Traversal-방법.webp)
-
-![4. 깊이 우선 탐색(DFS) vs. 너비 우선 탐색(BFS)](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/03-4.-깊이-우선-탐색-DFS-vs.-너비-우선-탐색-BFS.webp)
 
 ## 관련 글
 

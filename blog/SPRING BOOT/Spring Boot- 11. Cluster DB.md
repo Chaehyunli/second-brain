@@ -279,6 +279,8 @@ Bucardo (부카르도) / Spock: 트리거 기술을 활용해 마스터 노드�
 
 ### 6. 인프라 레이어의 독립: HAProxy와 PgBouncer의 역할
 
+![6. 인프라 레이어의 독립: HAProxy와 PgBouncer의 역할](assets/Spring-Boot--11.-Cluster-DB/01-6.-인프라-레이어의-독립-HAProxy와-PgBouncer의-역할.webp)
+
 ### 6.1 Q. "HAProxy를 도입하면 결국 백엔드 코드가 프록시를 보도록 다 변경해야 하는 것 아닌가요?"
 
 설정 파일의 주소 단일화: 네, 맞습니다. DB 접속을 가리키는 application.properties 설정 주소는 변경해 주어야 합니다.
@@ -305,10 +307,6 @@ PostgreSQL은 접속이 한 개 수립될 때마다 운영체제의 독립된 �
 PgBouncer의 압축 중개: PgBouncer는 백엔드와 데이터베이스의 사이에 입점하여 수많은 앱의 장기 연결 대기 상태를 가볍게 수집해 안고 있습니다. 그리고 실제 PostgreSQL 엔진을 상대로는 하드웨어 사양에 맞춰 사전에 조율된 소수(예: 30개)의 실질 물리 커넥션만을 공유합니다. 그리고 쿼리가 들어올 때만 짧게 진짜 통로를 대여해주고 환수하는 "돌려막기 방식"으로 DB 자원을 드라마틱하게 보호합니다.
 
 ### 6.3 HAProxy와 PgBouncer 핵심 개념 대조표
-
-## 핵심 이미지
-
-![6. 인프라 레이어의 독립: HAProxy와 PgBouncer의 역할](assets/Spring-Boot--11.-Cluster-DB/01-6.-인프라-레이어의-독립-HAProxy와-PgBouncer의-역할.webp)
 
 ## 관련 글
 

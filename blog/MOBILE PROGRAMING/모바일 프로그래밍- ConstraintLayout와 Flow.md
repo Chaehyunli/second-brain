@@ -29,6 +29,8 @@ ConstraintLayout은 위젯에 여러 **제약(constraint)**을 적용해 위치�
 
 ### 1. ConstraintLayout
 
+![1. ConstraintLayout](assets/모바일-프로그래밍--ConstraintLayout와-Flow/01-1.-ConstraintLayout.webp)
+
 ConstraintLayout은 위젯에 여러 **제약(constraint)**을 적용해 위치와 크기를 결정하는 레이아웃. 각 위젯의 경계선을 다른 위젯이나 부모 레이아웃에 연결하는 방식으로 UI를 구성함.
 
 1. 상대적 위치 지정 (Relative Positioning)
@@ -158,6 +160,8 @@ packed: 모든 위젯을 가운데로 모아서 그룹화.
 
 ### 2. ConstraintLayout Flow
 
+![2. ConstraintLayout Flow](assets/모바일-프로그래밍--ConstraintLayout와-Flow/02-2.-ConstraintLayout-Flow.webp)
+
 - ConstraintLayout Flow는 화면 크기에 따라 UI가 깨지는 문제를 해결하는 가상 헬퍼(virtual helper)
 
 - 공간이 부족할 때 참조된 위젯을 다음 줄로 자동으로 넘겨 유연한 레이아웃을 만듬
@@ -252,12 +256,6 @@ packed: 위젯을 중앙으로 모음
 ```
 
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
-
-## 핵심 이미지
-
-![1. ConstraintLayout](assets/모바일-프로그래밍--ConstraintLayout와-Flow/01-1.-ConstraintLayout.webp)
-
-![2. ConstraintLayout Flow](assets/모바일-프로그래밍--ConstraintLayout와-Flow/02-2.-ConstraintLayout-Flow.webp)
 
 ## 관련 글
 

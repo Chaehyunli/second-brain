@@ -29,6 +29,10 @@ Docker 이미지는 특정 애플리케이션이 실행되기 위한 모든 설�
 
 ### 📥 1. Docker 이미지(Image) 다운로드
 
+![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/01-1.-Docker-이미지-Image-다운로드.webp)
+
+![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/02-1.-Docker-이미지-Image-다운로드.webp)
+
 Docker 이미지는 특정 애플리케이션이 실행되기 위한 모든 설정, 코드, 라이브러리가 포함된 패키지
 
 DockerHub에서 이미지를 다운로드(pull)
@@ -54,6 +58,8 @@ $ docker pull nginx:stable-perl
 🔗 태그 확인은 DockerHub nginx 페이지에서 가능
 
 ### 🔍 2. 이미지 확인 및 삭제
+
+![🔍 2. 이미지 확인 및 삭제](assets/Docker--Docker-CLI-익히기/03-2.-이미지-확인-및-삭제.webp)
 
 1) 다운로드한 이미지 목록 확인
 
@@ -261,14 +267,6 @@ $ redis-cli
 127.0.0.1:6379> set 1 jscode
 127.0.0.1:6379> get 1
 ```
-
-## 핵심 이미지
-
-![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/01-1.-Docker-이미지-Image-다운로드.webp)
-
-![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/02-1.-Docker-이미지-Image-다운로드.webp)
-
-![🔍 2. 이미지 확인 및 삭제](assets/Docker--Docker-CLI-익히기/03-2.-이미지-확인-및-삭제.webp)
 
 ## 관련 글
 

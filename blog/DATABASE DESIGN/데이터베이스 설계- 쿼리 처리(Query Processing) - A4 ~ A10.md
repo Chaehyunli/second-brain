@@ -29,6 +29,8 @@ https://ch010104.tistory.com/147
 
 ### 1. Secondary Index를 이용한 동등(Equality) 조건 선택 (A4)
 
+![1. Secondary Index를 이용한 동등(Equality) 조건 선택 (A4)](assets/데이터베이스-설계--쿼리-처리-Query-Processing---A4-A10/01-1.-Secondary-Index를-이용한-동등-Equality-조건-선택-A4.webp)
+
 - Secondary Index는 Primary Index와 달리 데이터가 물리적으로 정렬되어 있지 않은 경우에 사용
 
 A4 (Secondary B+-Tree, 동등 조건)
@@ -82,10 +84,6 @@ Disjunctive Selection (OR 연산)
 A10 (Identifier의 합집합 활용): - 각 조건에 대해 인덱스를 사용하여 레코드 포인터 목록을 얻은 후, 이 목록들을 모두 합집합(Union)하여 결과를 생성 - 이 방법은 모든 조건에 인덱스가 존재할 때 유용하며, 그렇지 않다면 전체 테이블 스캔이 더 나을 수 있음
 
 Negation (부정 연산): - NOT과 같은 부정 조건은 일반적으로 인덱스를 활용하기 어려워 전체 파일을 스캔(Linear Scan)해야 함 - 이 때문에 성능 저하의 원인이 될 수 있음
-
-## 핵심 이미지
-
-![1. Secondary Index를 이용한 동등(Equality) 조건 선택 (A4)](assets/데이터베이스-설계--쿼리-처리-Query-Processing---A4-A10/01-1.-Secondary-Index를-이용한-동등-Equality-조건-선택-A4.webp)
 
 ## 관련 글
 

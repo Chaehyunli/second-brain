@@ -41,6 +41,12 @@ www.typescriptlang.org
 
 ### 1. 타입은 집합이다
 
+![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/01-1.-타입은-집합이다.webp)
+
+![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/02-1.-타입은-집합이다.webp)
+
+![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/03-1.-타입은-집합이다.webp)
+
 타입스크립트에서 말하는 '타입'은 집합
 
 즉, number 타입은 1, 2, 3, 4, 5, ... 등 모든 숫자를 포함하는 집합이며, string 타입은 모든 문자열을 포함하는 집합
@@ -605,14 +611,6 @@ tag라는 공통 필드를 활용하여 타입을 좁히는 태그드 유니온 
 ### 10. 깃허브 코드 내용
 
 https://github.com/Chaehyunli/typescript_study/tree/main/section3
-
-## 핵심 이미지
-
-![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/01-1.-타입은-집합이다.webp)
-
-![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/02-1.-타입은-집합이다.webp)
-
-![1. 타입은 집합이다](assets/TypeScript--TypeScript는-집합이다/03-1.-타입은-집합이다.webp)
 
 ## 관련 글
 

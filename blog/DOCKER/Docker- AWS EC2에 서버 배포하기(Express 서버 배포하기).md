@@ -29,6 +29,8 @@ https://ch010104.tistory.com/101
 
 ### 1. 배포(Deployment)란?
 
+![1. 배포(Deployment)란?](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/01-1.-배포-Deployment-란.webp)
+
 배포란, 내가 개발한 웹 서비스 또는 서버를 다른 사용자들이 인터넷을 통해 사용할 수 있도록 만드는 것
 
 개발 중: localhost로 테스트함.
@@ -60,6 +62,10 @@ S3, Vercel, Netlify 등 정적 웹 호스팅 서비스가 있음
 EC2는 백엔드 서버 배포용으로 많이 씀
 
 ### 🛠 3. 실습: EC2로 Express 서버 배포하기
+
+![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/02-3.-실습-EC2로-Express-서버-배포하기.webp)
+
+![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/03-3.-실습-EC2로-Express-서버-배포하기.webp)
 
 1) EC2 인스턴스 생성
 
@@ -200,14 +206,6 @@ http://15.165.203.130
 1.EC2 인스턴스 중지 또는 종료
 
 2. 탄력적 IP 해제 (릴리스)
-
-## 핵심 이미지
-
-![1. 배포(Deployment)란?](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/01-1.-배포-Deployment-란.webp)
-
-![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/02-3.-실습-EC2로-Express-서버-배포하기.webp)
-
-![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/03-3.-실습-EC2로-Express-서버-배포하기.webp)
 
 ## 관련 글
 

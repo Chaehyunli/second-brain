@@ -65,6 +65,8 @@ Content-Length: 표현 데이터의 길이 (바이트 단위)
 
 ### 4. 협상(Content Negotiation)
 
+![4. 협상(Content Negotiation)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/01-4.-협상-Content-Negotiation.webp)
+
 클라이언트가 선호하는 표현을 서버에 요청하는 것으로, 요청시에만 사용합니다.
 
 종류: Accept (미디어 타입), Accept-Charset (문자 인코딩), Accept-Encoding (압축), Accept-Language (언어)
@@ -80,6 +82,10 @@ Content-Length: 표현 데이터의 길이 (바이트 단위)
 보장해주는 것은 아님(요청을 받는 서버가 지원해주는 것 중에서 우선순위가 높은 것으로 응답해주는 것)
 
 ### 5. 전송 방식
+
+![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/02-5.-전송-방식.webp)
+
+![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/03-5.-전송-방식.webp)
 
 단순 전송: Content-Length를 지정하여 한 번에 전송.
 
@@ -144,14 +150,6 @@ Secure: https인 경우에만 전송.
 HttpOnly: XSS 공격 방지 (JS에서 접근 불가).
 
 SameSite: XSRF 공격 방지 (요청 도메인과 쿠키 도메인이 같은 경우만 전송).
-
-## 핵심 이미지
-
-![4. 협상(Content Negotiation)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/01-4.-협상-Content-Negotiation.webp)
-
-![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/02-5.-전송-방식.webp)
-
-![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/03-5.-전송-방식.webp)
 
 ## 관련 글
 

@@ -29,6 +29,8 @@ URL (Uniform Resource Locator): 리소스가 있는 위치를 지정합니다.
 
 ### 1. URI (Uniform Resource Identifier)의 이해
 
+![1. URI (Uniform Resource Identifier)의 이해](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/01-1.-URI-Uniform-Resource-Identifier-의-이해.webp)
+
 URI는 리소스를 식별하는 통일된 방식을 의미하며, 크게 URL과 URN으로 분류됩니다.
 
 URL (Uniform Resource Locator): 리소스가 있는 위치를 지정합니다.
@@ -44,6 +46,8 @@ scheme://[userinfo@]host[:port][/path][?query][#fragment]
 구성 요소 설명 비고
 
 ### 2. 웹 브라우저 요청 흐름
+
+![2. 웹 브라우저 요청 흐름](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/02-2.-웹-브라우저-요청-흐름.webp)
 
 사용자가 URL을 입력했을 때, 서버로부터 결과를 받기까지의 과정은 다음과 같습니다.
 
@@ -66,12 +70,6 @@ HTTP 요청 메시지 생성: 웹 브라우저가 다음과 같은 메시지를 
 응답 전달: 응답 메시지가 다시 TCP/IP 패킷에 담겨 웹 브라우저로 전달됩니다.
 
 렌더링: 웹 브라우저가 도착한 HTTP 메시지 안의 HTML 데이터를 해석하여 화면에 출력합니다.
-
-## 핵심 이미지
-
-![1. URI (Uniform Resource Identifier)의 이해](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/01-1.-URI-Uniform-Resource-Identifier-의-이해.webp)
-
-![2. 웹 브라우저 요청 흐름](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/02-2.-웹-브라우저-요청-흐름.webp)
 
 ## 관련 글
 

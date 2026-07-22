@@ -41,6 +41,8 @@ https://ch010104.tistory.com/103
 
 ### 2. 타입 시스템이란?
 
+![2. 타입 시스템이란?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/01-2.-타입-시스템이란.webp)
+
 타입 시스템이란 프로그래밍 언어에서 사용하는 값들을 어떤 기준으로 타입으로 분류하고, 타입을 언제 어떻게 검사할지를 정의한 체계!
 
 1) 정적 타입 시스템 vs 동적 타입 시스템
@@ -65,6 +67,8 @@ int c = a * b; // ❌ 컴파일 에러
 
 ### 3. 타입스크립트의 장점: 점진적 타입 시스템
 
+![3. 타입스크립트의 장점: 점진적 타입 시스템](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/02-3.-타입스크립트의-장점-점진적-타입-시스템.webp)
+
 타입스크립트는 정적 타입 시스템의 안정성과, 동적 타입 시스템의 유연함을 동시에 제공하는 "점진적 타입 시스템 (Gradual Type System)"을 사용!!
 
 ```text
@@ -82,6 +86,8 @@ console.log(a.toUpperCase()); // ❌ 컴파일 에러
 ```
 
 ### 4. 타입스크립트는 어떻게 동작할까?
+
+![4. 타입스크립트는 어떻게 동작할까?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/03-4.-타입스크립트는-어떻게-동작할까.webp)
 
 타입스크립트는 일반적인 언어와는 다르게 컴파일 시 JavaScript 코드로 변환
 
@@ -275,14 +281,6 @@ export const hello = (message) => {
 ### 10. 깃허브 코드 내용
 
 https://github.com/Chaehyunli/typescript_study/tree/main/section1
-
-## 핵심 이미지
-
-![2. 타입 시스템이란?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/01-2.-타입-시스템이란.webp)
-
-![3. 타입스크립트의 장점: 점진적 타입 시스템](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/02-3.-타입스크립트의-장점-점진적-타입-시스템.webp)
-
-![4. 타입스크립트는 어떻게 동작할까?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/03-4.-타입스크립트는-어떻게-동작할까.webp)
 
 ## 관련 글
 

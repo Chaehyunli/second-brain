@@ -186,6 +186,12 @@ EXPOSE 8080
 
 ### 3. 실습: 프로젝트별 Dockerfile 작성 예시
 
+![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/01-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
+
+![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/02-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
+
+![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/03-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
+
 ⚡1) Spring Boot 프로젝트
 
 ```text
@@ -302,14 +308,6 @@ index.html 파일명이 꼭 있어야 Nginx가 기본 페이지로 인식
 docker logs [ContainerID]로 로그 확인
 
 컨테이너가 어떤 과정을 거쳐 실행되는지 확인하고자 한다면 ENTRYPOINT에 sleep을 걸고 직접 진입해서 ls, cat, env 등으로 확인하는 습관을 기르자
-
-## 핵심 이미지
-
-![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/01-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
-
-![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/02-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
-
-![3. 실습: 프로젝트별 Dockerfile 작성 예시](assets/Docker--Dockerfile를-사용하여-dockerimage-직접-만들기/03-3.-실습-프로젝트별-Dockerfile-작성-예시.webp)
 
 ## 관련 글
 

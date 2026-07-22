@@ -45,6 +45,10 @@ https://ch010104.tistory.com/248
 
 ### 2. 2xx - 성공 (Successful)
 
+![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/01-2.-2xx---성공-Successful.webp)
+
+![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/02-2.-2xx---성공-Successful.webp)
+
 클라이언트의 요청을 성공적으로 처리한 상태입니다.
 
 200 OK: 요청 성공.
@@ -68,6 +72,8 @@ https://ch010104.tistory.com/248
 웹 브라우저는 3xx 응답에 Location 헤더가 있으면 해당 위치로 자동 이동합니다.
 
 ### 영구 리다이렉션 (URI가 영구적으로 이동)
+
+![영구 리다이렉션 (URI가 영구적으로 이동)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/03-영구-리다이렉션-URI가-영구적으로-이동.webp)
 
 301 Moved Permanently: 리다이렉트 시 요청 메서드가 GET으로 변하고 본문이 제거될 수 있음.
 
@@ -156,14 +162,6 @@ https://ch010104.tistory.com/248
 503 Service Unavailable: 일시적인 과부하 또는 예정된 작업으로 잠시 처리 불가.
 
 예시: 서버 점검 중이거나 접속자가 너무 많아 서버가 응답을 거부할 때.
-
-## 핵심 이미지
-
-![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/01-2.-2xx---성공-Successful.webp)
-
-![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/02-2.-2xx---성공-Successful.webp)
-
-![영구 리다이렉션 (URI가 영구적으로 이동)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/03-영구-리다이렉션-URI가-영구적으로-이동.webp)
 
 ## 관련 글
 

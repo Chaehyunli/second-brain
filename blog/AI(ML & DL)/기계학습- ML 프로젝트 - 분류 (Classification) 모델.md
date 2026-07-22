@@ -39,6 +39,8 @@ MNIST 손글씨 숫자 이미지 데이터셋을 활용하여,
 
 ### 1. MNIST 데이터셋
 
+![1. MNIST 데이터셋](assets/기계학습--ML-프로젝트---분류-Classification-모델/01-1.-MNIST-데이터셋.webp)
+
 총 70,000개의 숫자 이미지 (28×28픽셀 → 784개의 특성)
 
 미국 고등학생과 인구조사국 직원들이 손으로 쓴 70,000개의 숫자 이미지로 구성 된 데이터셋
@@ -95,6 +97,10 @@ y_pred = sgd_clf.predict(X_test)
 ```
 
 ### 3. 분류기 성능 측정
+
+![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/02-3.-분류기-성능-측정.webp)
+
+![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/03-3.-분류기-성능-측정.webp)
 
 1) 정확도 (Accuracy)
 
@@ -161,14 +167,6 @@ False Positive를 줄이고 싶을 때 중요
 중요도에 따라서 가중치를 바꿀 수 있음.
 
 정밀도(Precision) vs 재현율(Recall) 의 중요도에 따라 가중치를 다르게 두는 것에 대한 것은 다음 글에서 다룰 예정
-
-## 핵심 이미지
-
-![1. MNIST 데이터셋](assets/기계학습--ML-프로젝트---분류-Classification-모델/01-1.-MNIST-데이터셋.webp)
-
-![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/02-3.-분류기-성능-측정.webp)
-
-![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/03-3.-분류기-성능-측정.webp)
 
 ## 관련 글
 

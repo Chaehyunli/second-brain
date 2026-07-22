@@ -29,6 +29,8 @@ DP 기반: 중간 정점 집합을 늘려가는 방식으로 최단 경로를 �
 
 ### 플로이드-워셜 (Floyd-Warshall) 알고리즘
 
+![플로이드-워셜 (Floyd-Warshall) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/01-플로이드-워셜-Floyd-Warshall-알고리즘.webp)
+
 - 모든 쌍 최단 경로(APSP)를 동적 계획법(Dynamic Programming) 기반으로 해결하는 알고리즘
 
 특징
@@ -89,6 +91,8 @@ FLOYD-WARSHALL (W, n)
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
 ### 존슨 (Johnson) 알고리즘
+
+![존슨 (Johnson) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/02-존슨-Johnson-알고리즘.webp)
 
 - 음수 가중치가 있지만 음수 사이클은 없는 유향 그래프에서 모든 쌍 최단 경로(APSP)를 효율적으로 해결하는 알고리즘
 
@@ -155,12 +159,6 @@ APSP 계산 (Dijkstra):
 다익스트라 $V$회 (힙 사용 시): $V \times O(E \log V) = O(VE \log V)
 
 총합: $O(VE + VE \log V)
-
-## 핵심 이미지
-
-![플로이드-워셜 (Floyd-Warshall) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/01-플로이드-워셜-Floyd-Warshall-알고리즘.webp)
-
-![존슨 (Johnson) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/02-존슨-Johnson-알고리즘.webp)
 
 ## 관련 글
 

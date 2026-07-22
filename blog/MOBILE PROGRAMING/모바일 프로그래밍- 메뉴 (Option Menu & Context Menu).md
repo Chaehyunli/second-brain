@@ -29,6 +29,10 @@ https://ch010104.tistory.com/158
 
 ### 옵션 메뉴 (Option Menu)
 
+![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/01-옵션-메뉴-Option-Menu.webp)
+
+![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/02-옵션-메뉴-Option-Menu.webp)
+
 옵션 메뉴는 액티비티의 주 메뉴로, 보통 앱 바(App Bar)에 표시
 
 XML을 이용한 생성 과정
@@ -200,6 +204,8 @@ class MainActivity : AppCompatActivity() {
 ```
 
 ### 컨텍스트 메뉴 (Context Menu)
+
+![컨텍스트 메뉴 (Context Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/03-컨텍스트-메뉴-Context-Menu.webp)
 
 - 컨텍스트 메뉴는 특정 위젯(버튼, 텍스트 뷰 등)을 길게 클릭(long-click)했을 때 나타나는 메뉴
 
@@ -388,14 +394,6 @@ class MainActivity : AppCompatActivity() {
 
 }
 ```
-
-## 핵심 이미지
-
-![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/01-옵션-메뉴-Option-Menu.webp)
-
-![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/02-옵션-메뉴-Option-Menu.webp)
-
-![컨텍스트 메뉴 (Context Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/03-컨텍스트-메뉴-Context-Menu.webp)
 
 ## 관련 글
 

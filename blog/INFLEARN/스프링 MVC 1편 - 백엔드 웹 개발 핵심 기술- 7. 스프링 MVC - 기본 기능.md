@@ -829,6 +829,10 @@ public class ResponseBodyController {
 
 ### 6.1 HTTP 메시지 컨버터 (HttpMessageConverter)
 
+![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/01-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
+
+![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/02-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
+
 뷰 템플릿 대신 HTTP 바디에 직접 읽고 쓸 때 사용됩니다.
 
 주요 컨버터:
@@ -842,6 +846,8 @@ MappingJackson2HttpMessageConverter: 객체 또는 Map 처리. 미디어타입 a
 동작 원리: 요청 시에는 Content-Type을, 응답 시에는 Accept 헤더와 반환 타입을 체크하여 canRead(), canWrite()를 호출해 적절한 컨버터를 선택합니다.
 
 ### 6.2 요청 매핑 핸들러 어댑터 구조
+
+![6.2 요청 매핑 핸들러 어댑터 구조](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/03-6.2-요청-매핑-핸들러-어댑터-구조.webp)
 
 스프링 MVC 구조에서 메시지 컨버터는 ArgumentResolver와 ReturnValueHandler 내부에서 호출됩니다.
 
@@ -875,14 +881,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 ```
-
-## 핵심 이미지
-
-![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/01-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
-
-![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/02-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
-
-![6.2 요청 매핑 핸들러 어댑터 구조](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/03-6.2-요청-매핑-핸들러-어댑터-구조.webp)
 
 ## 관련 글
 

@@ -29,6 +29,8 @@ MAC 주소: 이동성이 있습니다. 노트북을 들고 학교, 집, 카페�
 
 ### 1. 두 가지 네트워크 주소 체계 비교 (IP vs MAC)
 
+![1. 두 가지 네트워크 주소 체계 비교 (IP vs MAC)](assets/네트워크--MAC-주소와-ARP/01-1.-두-가지-네트워크-주소-체계-비교-IP-vs-MAC.webp)
+
 네트워크 기기들은 통신을 위해 두 가지 대표적인 주소(논리 주소와 물리 주소)를 가집니다.
 
 이동성(Portability)의 차이:
@@ -57,6 +59,8 @@ Phy (Physical Layer / 1계층):
 
 ### 3. ARP (Address Resolution Protocol)의 역할과 동작
 
+![3. ARP (Address Resolution Protocol)의 역할과 동작](assets/네트워크--MAC-주소와-ARP/02-3.-ARP-Address-Resolution-Protocol-의-역할과-동작.webp)
+
 ARP는 "상대방의 IP 주소는 알지만, MAC 주소를 모를 때" 이를 해결해 주는 통역사 역할을 수행합니다.
 
 ### 3.1 ARP 테이블 (ARP Table)
@@ -66,6 +70,8 @@ ARP는 "상대방의 IP 주소는 알지만, MAC 주소를 모를 때" 이를 �
 TTL (Time To Live): 매핑 정보의 유효 시간(통상 20분)입니다. 기기의 이동이나 IP 변경이 빈번하기 때문에, 유효 시간이 지나면 잘못된 전송을 막기 위해 테이블에서 자동 삭제됩니다.
 
 ### 3.2 ARP의 동작 과정
+
+![3.2 ARP의 동작 과정](assets/네트워크--MAC-주소와-ARP/03-3.2-ARP의-동작-과정.webp)
 
 ARP Query (Request):
 
@@ -126,14 +132,6 @@ MAC 주소와 IP 주소는 항상 1:1 대응인가요?
 예외 상황 (1:多): 하나의 웹 서버 랜카드(MAC)에 여러 개의 웹사이트 운영을 위해 다중 IP 주소를 바인딩(IP Aliasing)할 수 있습니다.
 
 예외 상황 (多:1): 이중화 구성(로드 밸런싱/HA) 환경에서는 외부로 드러난 가상 IP 하나를 백엔드의 여러 대 장비(여러 MAC)가 나누어 처리하기도 합니다.
-
-## 핵심 이미지
-
-![1. 두 가지 네트워크 주소 체계 비교 (IP vs MAC)](assets/네트워크--MAC-주소와-ARP/01-1.-두-가지-네트워크-주소-체계-비교-IP-vs-MAC.webp)
-
-![3. ARP (Address Resolution Protocol)의 역할과 동작](assets/네트워크--MAC-주소와-ARP/02-3.-ARP-Address-Resolution-Protocol-의-역할과-동작.webp)
-
-![3.2 ARP의 동작 과정](assets/네트워크--MAC-주소와-ARP/03-3.2-ARP의-동작-과정.webp)
 
 ## 관련 글
 

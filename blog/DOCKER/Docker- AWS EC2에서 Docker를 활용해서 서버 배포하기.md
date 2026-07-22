@@ -69,6 +69,10 @@ docker compose version # Docker Compose 버전 확인
 
 ### 2. AWS ECR (Elastic Container Registry) 개념 및 이유
 
+![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/01-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
+
+![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/02-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
+
 1) AWS ECR이란?
 
 docker를 사용하지 않고 EC2에서 깃허브 클론해서 배포하는 방식
@@ -86,6 +90,8 @@ EC2, ECS, EKS 등과 통합해 빠르고 효율적인 배포 가능.
 DockerHub를 대체하여 보안성과 속도, 비용 측면에서 유리할 수 있음.
 
 ### 3. AWS CLI 설치 및 ECR 사용 준비
+
+![3. AWS CLI 설치 및 ECR 사용 준비](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/03-3.-AWS-CLI-설치-및-ECR-사용-준비.webp)
 
 1) AWS CLI 설치 (Ubuntu 기준)
 
@@ -232,14 +238,6 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-2.amazonaws.com/instagram-serv
 docker compose pull
 docker compose up -d --build
 ```
-
-## 핵심 이미지
-
-![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/01-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
-
-![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/02-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
-
-![3. AWS CLI 설치 및 ECR 사용 준비](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/03-3.-AWS-CLI-설치-및-ECR-사용-준비.webp)
 
 ## 관련 글
 

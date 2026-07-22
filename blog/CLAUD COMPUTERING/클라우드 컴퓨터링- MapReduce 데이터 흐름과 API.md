@@ -55,6 +55,10 @@ https://ch010104.tistory.com/168
 
 ### MapReduce API
 
+![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/01-MapReduce-API.webp)
+
+![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/02-MapReduce-API.webp)
+
 Mapper 클래스
 
 setup(): 태스크 시작 시 1회 호출됨.
@@ -84,6 +88,8 @@ Job 객체
 입출력 경로, 입출력 포맷, 매퍼/리듀서/파티셔너 클래스, 중간/최종 키/값 클래스, 리듀서 개수 등을 지정해야 함.
 
 ### 작업(Job) 및 매퍼(Mapper) 구성
+
+![작업(Job) 및 매퍼(Mapper) 구성](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/03-작업-Job-및-매퍼-Mapper-구성.webp)
 
 v
 
@@ -282,14 +288,6 @@ job.waitForCompletion(true)를 호출해 작업을 제출하고 완료될 때까
 설정 (Driver): Configuration 객체를 생성하고 conf.set("key", "value")로 값을 설정한 뒤, 이 conf 객체로 new Job(conf)를 생성함.
 
 조회 (Mapper/Reducer): map() 또는 reduce() 메서드 내부에서 context.getConfiguration()을 호출하여 Configuration을 가져온 뒤, conf.get("key")로 값을 읽어옴.
-
-## 핵심 이미지
-
-![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/01-MapReduce-API.webp)
-
-![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/02-MapReduce-API.webp)
-
-![작업(Job) 및 매퍼(Mapper) 구성](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/03-작업-Job-및-매퍼-Mapper-구성.webp)
 
 ## 관련 글
 

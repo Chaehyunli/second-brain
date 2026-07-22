@@ -133,6 +133,10 @@ shape: (z=2, y=3, x=4)
 
 ### 난수 생성: rand vs randn
 
+![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/01-난수-생성-rand-vs-randn.webp)
+
+![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/02-난수-생성-rand-vs-randn.webp)
+
 ```text
 np.random.rand(2, 3)
 
@@ -210,6 +214,8 @@ np.linspace(0, 5/3, 6)
 
 ### np.fromfunction(): 함수 기반 배열 생성
 
+![np.fromfunction(): 함수 기반 배열 생성](assets/기계학습--Python-NumPy란---1/03-np.fromfunction-함수-기반-배열-생성.webp)
+
 배열 생성후에 초기값을 채우는 것을 함수를 이용하여 정함
 
 def my_function(z, y, x) 형식으로 함수를 선언
@@ -278,14 +284,6 @@ x가 가장 빨리 변하고 → 100 단위로 증가
 y는 중간 → 10 단위 증가
 
 z는 가장 느리게 → 1 단위 증가
-
-## 핵심 이미지
-
-![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/01-난수-생성-rand-vs-randn.webp)
-
-![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/02-난수-생성-rand-vs-randn.webp)
-
-![np.fromfunction(): 함수 기반 배열 생성](assets/기계학습--Python-NumPy란---1/03-np.fromfunction-함수-기반-배열-생성.webp)
 
 ## 관련 글
 

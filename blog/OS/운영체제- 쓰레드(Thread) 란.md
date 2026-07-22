@@ -43,6 +43,10 @@ https://ch010104.tistory.com/46
 
 ### 3. 단일 쓰레드 vs 다중 쓰레드
 
+![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/01-3.-단일-쓰레드-vs-다중-쓰레드.webp)
+
+![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/02-3.-단일-쓰레드-vs-다중-쓰레드.webp)
+
 Thread를 생성할 때마다, OS에 TCB를 생성함.
 
 Main 함수에 Thread를 실행하면, Thread로 넘겨받은 함수가 실행되며, Main 함수도 계속 실행됨(병렬 처리 가능 -> 각각의 작업을 서로 다른 CPU에서 처리 가능)
@@ -72,6 +76,8 @@ Main 함수에 Thread를 실행하면, Thread로 넘겨받은 함수가 실행�
 멀티코어 활용: 여러 CPU에 나누어 실행 가능
 
 ### 6. 스레드 구현 방식
+
+![6. 스레드 구현 방식](assets/운영체제--쓰레드-Thread-란/03-6.-스레드-구현-방식.webp)
 
 User-Level Thread (ULT) - 쓰레드 라이브러리
 
@@ -156,14 +162,6 @@ Task3: M:N 모델(M = 3, N = 2) + 1 user ↔ 1 kernel (1:1) + 1 user ↔ 1 kerne
 ```text
 pthread_create(&tid, &attr, run, (void *)count);
 ```
-
-## 핵심 이미지
-
-![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/01-3.-단일-쓰레드-vs-다중-쓰레드.webp)
-
-![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/02-3.-단일-쓰레드-vs-다중-쓰레드.webp)
-
-![6. 스레드 구현 방식](assets/운영체제--쓰레드-Thread-란/03-6.-스레드-구현-방식.webp)
 
 ## 관련 글
 

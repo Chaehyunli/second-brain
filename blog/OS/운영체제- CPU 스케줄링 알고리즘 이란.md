@@ -45,6 +45,8 @@ CPU의 스케줄링 알고리즘에는 20가지 이상이 있지만, 그 중에�
 
 ### 1. FCFS (First-Come First-Served)
 
+![1. FCFS (First-Come First-Served)](assets/운영체제--CPU-스케줄링-알고리즘-이란/01-1.-FCFS-First-Come-First-Served.webp)
+
 비선점형 스케줄링
 
 먼저 도착한 프로세스에게 CPU를 먼저 할당
@@ -68,6 +70,10 @@ CPU의 스케줄링 알고리즘에는 20가지 이상이 있지만, 그 중에�
 하나의 프로세스가 CPU를 반환할 때까지 기다림 -> 비선점식
 
 ### 2. SJF (Shortest Job First)
+
+![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/02-2.-SJF-Shortest-Job-First.webp)
+
+![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/03-2.-SJF-Shortest-Job-First.webp)
 
 다음 CPU 버스트가 가장 짧은 프로세스를 먼저 실행
 
@@ -216,14 +222,6 @@ Response Ratio = (대기시간+CPU 버스트)\ CPU 버스트
 우선순위 계산 공식에 따라 우선순위가 변하고, 오래 대기할수록 우선순위가 높음
 
 ### 8. 표 정리
-
-## 핵심 이미지
-
-![1. FCFS (First-Come First-Served)](assets/운영체제--CPU-스케줄링-알고리즘-이란/01-1.-FCFS-First-Come-First-Served.webp)
-
-![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/02-2.-SJF-Shortest-Job-First.webp)
-
-![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/03-2.-SJF-Shortest-Job-First.webp)
 
 ## 관련 글
 

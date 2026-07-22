@@ -29,6 +29,8 @@ https://ch010104.tistory.com/169
 
 ### 1. 안드로이드 앱의 주요 구성 요소: 액티비티 (Activity)
 
+![1. 안드로이드 앱의 주요 구성 요소: 액티비티 (Activity)](assets/모바일-프로그래밍--Activity와-Intent-단방향/01-1.-안드로이드-앱의-주요-구성-요소-액티비티-Activity.webp)
+
 액티비티는 안드로이드 앱에서 사용자가 상호작용하는 하나의 UI(사용자 인터페이스) 화면을 의미
 
 앱은 여러 개의 액티비티로 구성될 수 있음
@@ -62,6 +64,8 @@ https://ch010104.tistory.com/169
 암시적 인텐트 (Implicit Intent): 대상 컴포넌트를 명시하지 않고, 수행할 'Action'(동작)(예: '전화 걸기', '웹페이지 열기')을 지정하면 안드로이드 시스템이 해당 동작을 수행할 수 있는 적절한 컴포넌트를 찾아 연결해주는 방식
 
 ### 4. 명시적 인텐트를 이용한 데이터 전달 (단방향)
+
+![4. 명시적 인텐트를 이용한 데이터 전달 (단방향)](assets/모바일-프로그래밍--Activity와-Intent-단방향/02-4.-명시적-인텐트를-이용한-데이터-전달-단방향.webp)
 
 - 명시적 인텐트는 SecondActivity::class.java와 같이 대상 액티비티의 클래스 참조 정보를 사용하여 인텐트 객체를 생성
 
@@ -115,6 +119,8 @@ val rxNames = extras.getStringArray("Names")
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
 ### 5. Activity 및 Intent 구현 실습
+
+![5. Activity 및 Intent 구현 실습](assets/모바일-프로그래밍--Activity와-Intent-단방향/03-5.-Activity-및-Intent-구현-실습.webp)
 
 기본 구조: 일반적으로 액티비티 하나는 레이아웃 XML 파일 1개와 Kotlin(코틀린) 클래스 파일 1개로 구성
 
@@ -300,14 +306,6 @@ class SecondActivity : AppCompatActivity() {
 
 </manifest>
 ```
-
-## 핵심 이미지
-
-![1. 안드로이드 앱의 주요 구성 요소: 액티비티 (Activity)](assets/모바일-프로그래밍--Activity와-Intent-단방향/01-1.-안드로이드-앱의-주요-구성-요소-액티비티-Activity.webp)
-
-![4. 명시적 인텐트를 이용한 데이터 전달 (단방향)](assets/모바일-프로그래밍--Activity와-Intent-단방향/02-4.-명시적-인텐트를-이용한-데이터-전달-단방향.webp)
-
-![5. Activity 및 Intent 구현 실습](assets/모바일-프로그래밍--Activity와-Intent-단방향/03-5.-Activity-및-Intent-구현-실습.webp)
 
 ## 관련 글
 

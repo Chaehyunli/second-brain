@@ -35,6 +35,8 @@ https://ch010104.tistory.com/253
 
 ### 📁 정적 리소스 (Static Resources)
 
+![📁 정적 리소스 (Static Resources)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/01-정적-리소스-Static-Resources.webp)
+
 특징: 서버에 미리 저장된 파일을 그대로 전달합니다.
 
 내용: 고정된 HTML, CSS, JS, 이미지, 영상 등.
@@ -43,6 +45,8 @@ https://ch010104.tistory.com/253
 
 ### 📄 HTML 페이지 (Dynamic HTML)
 
+![📄 HTML 페이지 (Dynamic HTML)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/02-HTML-페이지-Dynamic-HTML.webp)
+
 특징: 사용자의 요청에 따라 서버에서 HTML을 동적으로 생성하여 전달합니다.
 
 기술: JSP, 타임리프(Thymeleaf) 등.
@@ -50,6 +54,8 @@ https://ch010104.tistory.com/253
 동작: WAS가 DB에서 데이터를 조회한 후, 템플릿 엔진을 통해 HTML을 완성해서 브라우저에 보냅니다.
 
 ### 2. HTTP API
+
+![2. HTTP API](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/03-2.-HTTP-API.webp)
 
 데이터 중심의 통신 방식으로, 화면(UI)이 아닌 데이터 자체를 주고받는 것이 목적입니다.
 
@@ -106,14 +112,6 @@ React, Vue.js 등은 프론트엔드 개발자의 전문 영역입니다.
 ### 핵심 요약
 
 구분 SSR (서버 사이드) CSR (클라이언트 사이드)
-
-## 핵심 이미지
-
-![📁 정적 리소스 (Static Resources)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/01-정적-리소스-Static-Resources.webp)
-
-![📄 HTML 페이지 (Dynamic HTML)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/02-HTML-페이지-Dynamic-HTML.webp)
-
-![2. HTTP API](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/03-2.-HTTP-API.webp)
 
 ## 관련 글
 

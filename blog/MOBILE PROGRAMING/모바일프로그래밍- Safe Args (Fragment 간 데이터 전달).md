@@ -29,6 +29,12 @@ Safe Args 플러그인을 사용하기 위해 build.gradle 파일 수정 필요.
 
 ### 1. Safe Args (Fragment 간 데이터 전달)
 
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/01-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/02-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/03-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
 Navigation Component의 Safe Args 플러그인을 사용하여 Fragment 간에 데이터를 안전하게 전달
 
 1.1. 사전 설정 (Gradle)
@@ -850,14 +856,6 @@ class AnotherFragment : Fragment() {
     </fragment>
 </navigation>
 ```
-
-## 핵심 이미지
-
-![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/01-1.-Safe-Args-Fragment-간-데이터-전달.webp)
-
-![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/02-1.-Safe-Args-Fragment-간-데이터-전달.webp)
-
-![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/03-1.-Safe-Args-Fragment-간-데이터-전달.webp)
 
 ## 관련 글
 

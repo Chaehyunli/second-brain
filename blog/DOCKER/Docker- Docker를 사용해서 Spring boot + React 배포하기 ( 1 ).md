@@ -210,6 +210,10 @@ GCP에서 artifact registry를 사용하기 위해서는 결제 수단 등록이
 
 ### 4. 확인
 
+![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/01-4.-확인.webp)
+
+![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/02-4.-확인.webp)
+
 1) docker 이미지 파일 빌드 확인(2단계)
 
 - docker Desktop을 켜서 docker 이미지가 추가되어있는지 확인
@@ -219,12 +223,6 @@ GCP에서 artifact registry를 사용하기 위해서는 결제 수단 등록이
 - GCP artifact registry내에 docker 이미지 파일이 추가되었는지 확인
 
 ### 5. 태그와 푸시 순서 요약표
-
-## 핵심 이미지
-
-![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/01-4.-확인.webp)
-
-![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/02-4.-확인.webp)
 
 ## 관련 글
 
