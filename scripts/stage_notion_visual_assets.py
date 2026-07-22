@@ -50,11 +50,40 @@ def upload_asset(path: Path) -> dict[str, object]:
     return payload
 
 
+def append_image(page_id: str, upload_id: str, caption: str) -> dict[str, object]:
+    body = {
+        "children": [
+            {
+                "object": "block",
+                "type": "image",
+                "image": {
+                    "type": "file_upload",
+                    "file_upload": {"id": upload_id},
+                    "caption": [{"type": "text", "text": {"content": caption}}],
+                },
+            }
+        ]
+    }
+    try:
+        result = subprocess.run(
+            ["ntn", "api", f"v1/blocks/{page_id}/children", "-X", "PATCH", "--data", "@-"],
+            input=json.dumps(body).encode(),
+            check=True,
+            capture_output=True,
+        )
+    except subprocess.CalledProcessError as exc:
+        detail = exc.stderr.decode("utf-8", errors="replace").strip()
+        raise RuntimeError(detail or f"ntn exited with status {exc.returncode}") from exc
+    return json.loads(result.stdout)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest", type=Path)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--receipt", type=Path)
+    parser.add_argument("--page-id", help="append uploaded images to this Notion page")
+    parser.add_argument("--caption", help="caption for a single uploaded visual")
     args = parser.parse_args()
 
     try:
@@ -66,6 +95,8 @@ def main() -> int:
         for page, path in assets:
             print(f"page={page} asset={path.name} status=ready")
         print(f"ready={len(assets)}")
+        if args.page_id:
+            print(f"target_page={args.page_id}")
         return 0
 
     if not shutil.which("ntn"):
@@ -75,7 +106,11 @@ def main() -> int:
     try:
         for page, path in assets:
             upload = upload_asset(path)
-            uploads.append({"page": page, "path": str(path.resolve()), "file_upload": upload})
+            record: dict[str, object] = {"page": page, "path": str(path.resolve()), "file_upload": upload}
+            if args.page_id:
+                caption = args.caption or f"시각 자료 — 페이지 {page}"
+                record["image_block"] = append_image(args.page_id, str(upload["id"]), caption)
+            uploads.append(record)
     except (OSError, RuntimeError, subprocess.CalledProcessError, json.JSONDecodeError) as exc:
         parser.error(f"Notion upload failed: {exc}")
 
