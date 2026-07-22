@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/212
+
+selected_images:
+- file: 01-3.-핵심-동작-원리-프록시와-DI.webp
+  context: 3. 핵심 동작 원리: 프록시와 DI
+  source_image_path: https://blog.kakaocdn.net/dna/eC9HdE/dJMcadA5U3o/AAAAAAAAAAAAAAAAAAAAAAamn7VblE_nyTKkPcPWlBun70xC-6ceTmykAyAAs0cy/img.png
+  source_content_type: image/png
+  source_sha256: d963c10b3684d23e6ba75ba4009272b9dae791d80edbb4b87a28e82c0116d9d8
+  archived_dimensions: 1038x600
+- file: 02-joinPoint.proceed-의-진짜-의미.webp
+  context: ③ joinPoint.proceed()의 진짜 의미
+  source_image_path: https://blog.kakaocdn.net/dna/I42Li/dJMcaduk2jQ/AAAAAAAAAAAAAAAAAAAAABFMcpH2_kjUcrjZlsQ1fgn0tOraOZJLGl7iZ87Gu4Dn/img.png
+  source_content_type: image/png
+  source_sha256: 54494af808a8a7f46d0a1cbf1fecbcbeb2f6f7b3cff895147b38da683b38e1c9
+  archived_dimensions: 1024x567
+- file: 03-joinPoint.proceed-의-진짜-의미.webp
+  context: ③ joinPoint.proceed()의 진짜 의미
+  source_image_path: https://blog.kakaocdn.net/dna/cIFcMi/dJMcacWxHOT/AAAAAAAAAAAAAAAAAAAAANqkV4r3qEWmXLLMOM6qBp1g--cRY44ObqnXJGGudW9_/img.png
+  source_content_type: image/png
+  source_sha256: 7c455f3ac3c7041e8b17b3865957041c22728eab813c6e7c2bb62f1f6061d3b1
+  archived_dimensions: 1022x538

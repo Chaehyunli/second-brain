@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/289
+
+selected_images:
+- file: 01-1-정상-흐름-호출-다이어그램.webp
+  context: 1) 정상 흐름 호출 다이어그램
+  source_image_path: https://blog.kakaocdn.net/dna/cl5GSv/dJMcabkxiwi/AAAAAAAAAAAAAAAAAAAAABOPfQ5fRXZ1upIFYEUZtjj5zaFB3N4aeUT6rgCW0P8X/img.png
+  source_content_type: image/png
+  source_sha256: 4f532f57910bb28fad2292be0f0e8e10526ce8e9362b401de71f4c89d450e40c
+  archived_dimensions: 1033x556
+- file: 02-2-예외-발생-시의-흐름-다이어그램.webp
+  context: 2) 예외 발생 시의 흐름 다이어그램
+  source_image_path: https://blog.kakaocdn.net/dna/cDHddE/dJMcag0kNKW/AAAAAAAAAAAAAAAAAAAAAClKCto4UOHWLAKSIUXRnvaeS_adCaRQGQplgPpH44Y6/img.png
+  source_content_type: image/png
+  source_sha256: a4dcc2ffde32ff9bb8f79e05bb4db30ed08d308daf5c69911e0fc8e50c97e9c9
+  archived_dimensions: 1030x559

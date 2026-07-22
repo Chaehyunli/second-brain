@@ -113,6 +113,14 @@ NAK: 에러 발생, 재전송 요청.
 
 ### 5. 에러 수정 철학 비교
 
+## 핵심 이미지
+
+![1. UDP (User Datagram Protocol): 최소한의 전송 서비스](assets/네트워크--UDP-프로토콜과-RDT/01-1.-UDP-User-Datagram-Protocol-최소한의-전송-서비스.webp)
+
+![2. 에러 검출의 핵심: 인터넷 체크섬 (Checksum)](assets/네트워크--UDP-프로토콜과-RDT/02-2.-에러-검출의-핵심-인터넷-체크섬-Checksum.webp)
+
+![3. RDT (Reliable Data Transfer)의 인터페이스](assets/네트워크--UDP-프로토콜과-RDT/03-3.-RDT-Reliable-Data-Transfer-의-인터페이스.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

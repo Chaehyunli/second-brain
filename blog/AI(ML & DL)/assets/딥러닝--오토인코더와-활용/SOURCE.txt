@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/179
+
+selected_images:
+- file: 01-오토인코더-개요.webp
+  context: 오토인코더 개요
+  source_image_path: https://blog.kakaocdn.net/dna/cilZ6k/dJMcacOWBCF/AAAAAAAAAAAAAAAAAAAAAMJJnYqymkhYMkz8Z2otvGgfGC4s42ce41A15KvXz3mx/img.png
+  source_content_type: image/png
+  source_sha256: 98c50f45227e26f8b8298354389cd3fe4d1885d94afb8147f461bedef6cb3a4b
+  archived_dimensions: 1051x534
+- file: 02-오토인코더-응용.webp
+  context: 오토인코더 응용
+  source_image_path: https://blog.kakaocdn.net/dna/VZz2Q/dJMcahvWULc/AAAAAAAAAAAAAAAAAAAAABB1vVwPZMW3PZcQH2Uqgc9iNX8X8v-XCcLPb_6GlFl8/img.png
+  source_content_type: image/png
+  source_sha256: 9c4f9f346167f515d2b9032a42df3f5b8c96644d6b3158a689263adbf1647428
+  archived_dimensions: 1303x672
+- file: 03-오토인코더-응용.webp
+  context: 오토인코더 응용
+  source_image_path: https://blog.kakaocdn.net/dna/YSkcD/dJMcaiBCPNy/AAAAAAAAAAAAAAAAAAAAAF3R5l1kldRnw_w6xY4UdKgpLzycuY7kFaqKsCVQzKfY/img.png
+  source_content_type: image/png
+  source_sha256: e0f1f8aa46d5929cb6d7580094785874a5e5eaf1cbf32cad6615d1f49ad50aba
+  archived_dimensions: 1077x432

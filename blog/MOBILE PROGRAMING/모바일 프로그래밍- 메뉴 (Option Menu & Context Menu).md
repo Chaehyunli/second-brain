@@ -389,6 +389,14 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+## 핵심 이미지
+
+![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/01-옵션-메뉴-Option-Menu.webp)
+
+![옵션 메뉴 (Option Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/02-옵션-메뉴-Option-Menu.webp)
+
+![컨텍스트 메뉴 (Context Menu)](assets/모바일-프로그래밍--메뉴-Option-Menu-Context-Menu/03-컨텍스트-메뉴-Context-Menu.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

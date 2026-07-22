@@ -81,6 +81,14 @@ x86 CPU는 4개의 권한 레벨(Ring 0~3)을 통해 시스템 자원을 보호 
 
 특징: - Guest OS 수정 없이 높은 호환성과 우수한 성능을 동시에 달성 가능 - 현대 가상화 기술의 표준
 
+## 핵심 이미지
+
+![1. 가상화(Virtualization)란 무엇일까?](assets/클라우드-컴퓨터링--가상화-기술-Virtualization-이란/01-1.-가상화-Virtualization-란-무엇일까.webp)
+
+![2. 하이퍼바이저(Hypervisor) 기반 가상화](assets/클라우드-컴퓨터링--가상화-기술-Virtualization-이란/02-2.-하이퍼바이저-Hypervisor-기반-가상화.webp)
+
+![3. 가상화 기술의 발전: 전가상화 vs 반가상화 vs 하드웨어 지원](assets/클라우드-컴퓨터링--가상화-기술-Virtualization-이란/03-3.-가상화-기술의-발전-전가상화-vs-반가상화-vs-하드웨어-지원.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

@@ -112,6 +112,12 @@ top-right 코너에 근접할 수록 좋은 성능의 분류기임.
 
 ### 6. 좋은 분류기의 기준
 
+## 핵심 이미지
+
+![4. ROC 곡선과 AUC](assets/기계학습--ML-프로젝트---분류-Classfication-모델-3/01-4.-ROC-곡선과-AUC.webp)
+
+![4. ROC 곡선과 AUC](assets/기계학습--ML-프로젝트---분류-Classfication-모델-3/02-4.-ROC-곡선과-AUC.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

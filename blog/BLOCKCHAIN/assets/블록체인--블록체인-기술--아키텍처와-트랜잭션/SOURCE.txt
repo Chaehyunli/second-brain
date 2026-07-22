@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/38
+
+selected_images:
+- file: 01-4.-보험-분야에서의-블록체인-적용-분석.webp
+  context: 4. 보험 분야에서의 블록체인 적용 분석
+  source_image_path: https://blog.kakaocdn.net/dna/lZaEG/btsM4lv49rV/AAAAAAAAAAAAAAAAAAAAAOkS-M-jL-xEsTDeqeLkOvJtVQee7lj8l4kM3CeXhvOo/img.png
+  source_content_type: image/png
+  source_sha256: eb47cd6bc35108af3d4ece61ec43965eaad4d6d28fe393e3d7898e84c8ca115c
+  archived_dimensions: 940x461
+- file: 02-8.-블록체인-도입-여부-판단-기준-Decision-Tree.webp
+  context: 8. 블록체인 도입 여부 판단 기준 (Decision Tree)
+  source_image_path: https://blog.kakaocdn.net/dna/bXfBGk/btsM4n1NacN/AAAAAAAAAAAAAAAAAAAAAFaO0FWl317-0_V7xPRNuEwabhnnEcjq8Idz3eDQmZjh/img.png
+  source_content_type: image/png
+  source_sha256: 522886714f19387f9fad7f4ae2754b34e7f7fb34048500cea1e408aec0dda90a
+  archived_dimensions: 940x606

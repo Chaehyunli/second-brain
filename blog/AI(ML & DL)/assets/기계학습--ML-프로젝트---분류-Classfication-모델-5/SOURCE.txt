@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/93
+
+selected_images:
+- file: 01-1.-오차-행렬-Confusion-Matrix-이란.webp
+  context: 1. 오차 행렬 (Confusion Matrix) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/z9NWi/btsOlNy7L3Y/AAAAAAAAAAAAAAAAAAAAAGFxEiyBq0LFQ9CTnvbL4gouKiLKee2ZE78JL2A6Vk46/img.png
+  source_content_type: image/png
+  source_sha256: df9ccaff53903947b8e8d3de7e1156915bbc6cad6c9cc1450747fc84028acad4
+  archived_dimensions: 1255x540
+- file: 02-1.-오차-행렬-Confusion-Matrix-이란.webp
+  context: 1. 오차 행렬 (Confusion Matrix) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/V8kIt/btsOoP2IrzP/AAAAAAAAAAAAAAAAAAAAAHbqykm5_M3_rSJjdjA-5WU49uzsN-WqcJCIjPecD-62/img.png
+  source_content_type: image/png
+  source_sha256: 5f2a75cfbcbbdd6bacc1a82c3d2fce20c39d0717b572900098b024de754a10ed
+  archived_dimensions: 1213x525

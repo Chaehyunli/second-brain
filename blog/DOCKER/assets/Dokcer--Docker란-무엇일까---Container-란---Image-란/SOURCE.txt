@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/95
+
+selected_images:
+- file: 01-2.-Docker의-핵심-개념-세-가지.webp
+  context: 🧩 2. Docker의 핵심 개념 세 가지
+  source_image_path: https://blog.kakaocdn.net/dna/vOjdZ/btsOFr9d7z3/AAAAAAAAAAAAAAAAAAAAAP7lsbHHLH1RxzW-T6FPbnPns04qERsg6B7ABIYwZUMj/img.png
+  source_content_type: image/png
+  source_sha256: b0217766e77708feafabf2a71c35bd3edc64b48fbcec6fe17c6c16fa695a2a3f
+  archived_dimensions: 1000x667
+- file: 02-3.-보충-IP와-포트-개념.webp
+  context: 🌐 3. 보충: IP와 포트 개념
+  source_image_path: https://blog.kakaocdn.net/dna/lzI5L/btsOD9g9t46/AAAAAAAAAAAAAAAAAAAAABSd0N7WzsAdih7inZKfuVhV3OR9qwVlgqTpcKIFIi5J/img.png
+  source_content_type: image/png
+  source_sha256: 196e65605fac268cdfdbc94097792b0a6831f6d8f212af8de48feb572896976e
+  archived_dimensions: 871x223
+- file: 03-4.-실습-예제-Nginx-컨테이너-실행.webp
+  context: 🔧4. 실습 예제: Nginx 컨테이너 실행
+  source_image_path: https://blog.kakaocdn.net/dna/XfAQ7/btsOF8nvokZ/AAAAAAAAAAAAAAAAAAAAALDjyQRmpHrMUnqd_svBu6zLJaTjMK_iJ994WthA0-fO/img.png
+  source_content_type: image/png
+  source_sha256: 17c5aa3b438bf88401da613f0d03492ef4d023fefa9eedd82dd13be1fcf708ad
+  archived_dimensions: 1041x576

@@ -276,6 +276,14 @@ export const hello = (message) => {
 
 https://github.com/Chaehyunli/typescript_study/tree/main/section1
 
+## 핵심 이미지
+
+![2. 타입 시스템이란?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/01-2.-타입-시스템이란.webp)
+
+![3. 타입스크립트의 장점: 점진적 타입 시스템](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/02-3.-타입스크립트의-장점-점진적-타입-시스템.webp)
+
+![4. 타입스크립트는 어떻게 동작할까?](assets/TypeScript--TypeScript란---컴파일러-옵션-설정하기/03-4.-타입스크립트는-어떻게-동작할까.webp)
+
 ## 관련 글
 
 - [[blog/TYPESCRIPT/index|TYPESCRIPT]]

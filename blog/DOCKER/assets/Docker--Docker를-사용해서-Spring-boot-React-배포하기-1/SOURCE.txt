@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/45
+
+selected_images:
+- file: 01-4.-확인.webp
+  context: 4. 확인
+  source_image_path: https://blog.kakaocdn.net/dna/0Vnmt/btsNcsWswUl/AAAAAAAAAAAAAAAAAAAAANfdPzMDmR67wDFHIejOg0BQyXUUwmbkKrHg73z2198j/img.png
+  source_content_type: image/png
+  source_sha256: a26578910c4b79703b6782a4b5512c97dfca044b76ae2dbd96cb23dfdcbb1a0a
+  archived_dimensions: 1473x721
+- file: 02-4.-확인.webp
+  context: 4. 확인
+  source_image_path: https://blog.kakaocdn.net/dna/bhJ7TW/btsNcH698EQ/AAAAAAAAAAAAAAAAAAAAAHOQ4AxycWXu9k_CGbYUcYJTCQo6WVMjjU_qI7QAaLKl/img.png
+  source_content_type: image/png
+  source_sha256: 79e6670d34473a32ffbe272adb422ec1c53412fc762f679895774e485ddfc4a5
+  archived_dimensions: 733x403

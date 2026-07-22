@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/224
+
+selected_images:
+- file: 01-3.-스프링-빈-조회---상속.webp
+  context: 3. 스프링 빈 조회 - 상속
+  source_image_path: https://blog.kakaocdn.net/dna/cxt5jc/dJMcaaxLFhX/AAAAAAAAAAAAAAAAAAAAACDJY2O6aewXxqPmSLvzuiWz9haQ5DfcFBoaIMpK5nNr/img.png
+  source_content_type: image/png
+  source_sha256: a56a008277c4393447d62f7f5e6ce6a9cc2521071bec8a373341dfe74e624c2d
+  archived_dimensions: 1047x459

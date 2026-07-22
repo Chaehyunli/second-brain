@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/102
+
+selected_images:
+- file: 01-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp
+  context: 2. AWS ECR (Elastic Container Registry) 개념 및 이유
+  source_image_path: https://blog.kakaocdn.net/dna/cQxVnI/btsOLyOsUh8/AAAAAAAAAAAAAAAAAAAAABpuEcyiFt1u-riY22Cr-8U-k5GE3MGoqZgfhbMNvQMW/img.png
+  source_content_type: image/png
+  source_sha256: 2074b07fff5cb1982c45be055f340294447f497e201b1d3403af2798502c05fd
+  archived_dimensions: 888x190
+- file: 02-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp
+  context: 2. AWS ECR (Elastic Container Registry) 개념 및 이유
+  source_image_path: https://blog.kakaocdn.net/dna/Xtkdo/btsOLcSuD8T/AAAAAAAAAAAAAAAAAAAAAP2P86AyHyWTTYfjKJ10PrpMqua_SXzntRGo9ZahJ2jC/img.png
+  source_content_type: image/png
+  source_sha256: 998b88f2f5cba8d4b651d417b2d491f71396f1591f2179f5c4bc0925b4461771
+  archived_dimensions: 919x211
+- file: 03-3.-AWS-CLI-설치-및-ECR-사용-준비.webp
+  context: 3. AWS CLI 설치 및 ECR 사용 준비
+  source_image_path: https://blog.kakaocdn.net/dna/JyeVa/btsOKE9xhLJ/AAAAAAAAAAAAAAAAAAAAAJMVtexcYRtSyjd3bf0GvNXwanGng6T-5u_fWB4fuBGO/img.png
+  source_content_type: image/png
+  source_sha256: 108242388daa250aa1abcb88b72f4a5bc5e24465e955a74d3fd7c3121151556a
+  archived_dimensions: 1366x268

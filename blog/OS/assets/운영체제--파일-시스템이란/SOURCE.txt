@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/92
+
+selected_images:
+- file: 01-4.-디렉토리-구조의-유형.webp
+  context: 4. 디렉토리 구조의 유형
+  source_image_path: https://blog.kakaocdn.net/dna/ciDyiI/btsOnsUl9nt/AAAAAAAAAAAAAAAAAAAAABcR6OC5wl1To350CHIcdP1Ah6pKanlx31xqa4LWOuqH/img.png
+  source_content_type: image/png
+  source_sha256: dc88302fc6f94fd0778d0b159f40585ccac0114544f231a1727c59c0c2ef7929
+  archived_dimensions: 1314x214
+- file: 02-4.-디렉토리-구조의-유형.webp
+  context: 4. 디렉토리 구조의 유형
+  source_image_path: https://blog.kakaocdn.net/dna/vwceB/btsOlz8pouf/AAAAAAAAAAAAAAAAAAAAAFfKDyl1sQEFjelPz4y5XfxAinqjeqTOCEHuuzsb-s_e/img.png
+  source_content_type: image/png
+  source_sha256: d0068361e8f87d138eedb4c5f368367b05ca7de1f20bfafabeb2ee77b9639776
+  archived_dimensions: 1293x351
+- file: 03-4.-디렉토리-구조의-유형.webp
+  context: 4. 디렉토리 구조의 유형
+  source_image_path: https://blog.kakaocdn.net/dna/4QQaL/btsOoi4LbiZ/AAAAAAAAAAAAAAAAAAAAAJEilRlkWpABROv10kEzRUHCuOp9E0EzcGISKKpn88CS/img.png
+  source_content_type: image/png
+  source_sha256: 49473469c56de9eca119e3b80ae238991f18db12a5cf08b8c446b8fb3ba3af31
+  archived_dimensions: 1096x607

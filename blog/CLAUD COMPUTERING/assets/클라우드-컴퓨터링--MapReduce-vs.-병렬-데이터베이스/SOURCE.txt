@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/185
+
+selected_images:
+- file: 01-데이터베이스-워크로드.webp
+  context: 데이터베이스 워크로드
+  source_image_path: https://blog.kakaocdn.net/dna/SKQUy/dJMcagKBVoA/AAAAAAAAAAAAAAAAAAAAAJ_fKiTjWhyRDg2Rqx6idKUsoPW9XO4rta0SCBJQiTTw/img.png
+  source_content_type: image/png
+  source_sha256: c5a8cc3ef86591abfbabd0890ec1ca1859264cfcf04fc74519b8490280f21d1d
+  archived_dimensions: 1273x637
+- file: 02-데이터-웨어하우스와-ETL.webp
+  context: 데이터 웨어하우스와 ETL
+  source_image_path: https://blog.kakaocdn.net/dna/cE89Kb/dJMcahbGqoL/AAAAAAAAAAAAAAAAAAAAABEI6UNpF0i_T97lIq0wCtEsOSSYZtIUmZWHSIbzRCOd/img.png
+  source_content_type: image/png
+  source_sha256: 5458f3edcc75b5b78c123d2c27d3936094a4befd862004f1cd2969a29320923e
+  archived_dimensions: 760x910
+- file: 03-OLAP-큐브-연산.webp
+  context: OLAP 큐브 연산
+  source_image_path: https://blog.kakaocdn.net/dna/UGzwJ/dJMcabvLHi7/AAAAAAAAAAAAAAAAAAAAADyKdIP2zrwNVkOG7I20fZyW6QX5_jocnLL7rCbDRr06/img.png
+  source_content_type: image/png
+  source_sha256: 5f50a3fc5d26e99dc3c5b672b09446ecd6062776c7d33db6970277c3e76e20bb
+  archived_dimensions: 924x873

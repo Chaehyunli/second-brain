@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/56
+
+selected_images:
+- file: 01-1.-FCFS-First-Come-First-Served.webp
+  context: 1. FCFS (First-Come First-Served)
+  source_image_path: https://blog.kakaocdn.net/dna/cw6L4l/btsNkIrrVnh/AAAAAAAAAAAAAAAAAAAAAMjMUlbFeInGBjo1UHZo5nRY1_KlM79fu1nc6-ALMbj0/img.png
+  source_content_type: image/png
+  source_sha256: 1e351f3e0a5de0609a4a9e80b62165b63ef62c41aba35f462707dd5ef7f5f283
+  archived_dimensions: 1026x190
+- file: 02-2.-SJF-Shortest-Job-First.webp
+  context: 2. SJF (Shortest Job First)
+  source_image_path: https://blog.kakaocdn.net/dna/bJbZTe/btsNlxCc1Xq/AAAAAAAAAAAAAAAAAAAAAEo-mDHX89nggKlLl4h_Z7zu5T2a4o9FKjtpc-DAP3le/img.png
+  source_content_type: image/png
+  source_sha256: 733b5a9c6320caac430d3efd5b20c545894b24c1755a64654942af739d64a092
+  archived_dimensions: 1036x211
+- file: 03-2.-SJF-Shortest-Job-First.webp
+  context: 2. SJF (Shortest Job First)
+  source_image_path: https://blog.kakaocdn.net/dna/mpc6z/btsNkTTNOvr/AAAAAAAAAAAAAAAAAAAAAFicjrzh53mWunBET_KDBfKth7L8vDmoWfkZxBuOPZVW/img.png
+  source_content_type: image/png
+  source_sha256: 632977e8499ee6dd823ea5bc2c851bdf02f1b9eaf489914ec4dd624e0990560f
+  archived_dimensions: 1111x216

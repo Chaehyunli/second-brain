@@ -207,6 +207,14 @@ Test Set: 최종 모델 성능 측정용 (학습에 사용되지 않은 데이�
 
 확률 변수(Random Variables): 데이터의 확률적 특성
 
+## 핵심 이미지
+
+![1. 머신러닝의 기본 개념](assets/딥러닝--머신러닝--학습-Learning-과-모델-Model/01-1.-머신러닝의-기본-개념.webp)
+
+![3. 주요 분류 알고리즘](assets/딥러닝--머신러닝--학습-Learning-과-모델-Model/02-3.-주요-분류-알고리즘.webp)
+
+![3. 주요 분류 알고리즘](assets/딥러닝--머신러닝--학습-Learning-과-모델-Model/03-3.-주요-분류-알고리즘.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

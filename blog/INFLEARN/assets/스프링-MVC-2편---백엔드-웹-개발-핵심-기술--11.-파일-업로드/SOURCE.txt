@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/293
+
+selected_images:
+- file: 01-1-application-x-www-form-urlencoded-방식.webp
+  context: 1) application/x-www-form-urlencoded 방식
+  source_image_path: https://blog.kakaocdn.net/dna/FBHI7/dJMcaccDI1z/AAAAAAAAAAAAAAAAAAAAAMiWXaF8tdRu-QN3cXcw2KToQ6tJ5V91cA66VLbZzg1s/img.png
+  source_content_type: image/png
+  source_sha256: 4668603c6be892b0564a521055cf5e7df5f7f4b2130318cdd29ce5e979cea34d
+  archived_dimensions: 1015x567
+- file: 02-2-multipart-form-data-방식.webp
+  context: 2) multipart/form-data 방식
+  source_image_path: https://blog.kakaocdn.net/dna/5Doyq/dJMb99UvRqg/AAAAAAAAAAAAAAAAAAAAAC6YE3spiv089zH3XrXkYECqCPztq0Bx0RRtk2wHWx7_/img.png
+  source_content_type: image/png
+  source_sha256: 356c3244a5884fc34a40de222c3989b3653dc0095a3d7b51b3b16d0c07331967
+  archived_dimensions: 1008x535

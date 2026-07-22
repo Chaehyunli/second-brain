@@ -220,6 +220,12 @@ GCP에서 artifact registry를 사용하기 위해서는 결제 수단 등록이
 
 ### 5. 태그와 푸시 순서 요약표
 
+## 핵심 이미지
+
+![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/01-4.-확인.webp)
+
+![4. 확인](assets/Docker--Docker를-사용해서-Spring-boot-React-배포하기-1/02-4.-확인.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

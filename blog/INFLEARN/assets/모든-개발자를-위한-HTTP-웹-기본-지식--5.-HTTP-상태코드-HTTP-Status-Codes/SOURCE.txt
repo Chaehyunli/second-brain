@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/248
+
+selected_images:
+- file: 01-2.-2xx---성공-Successful.webp
+  context: 2. 2xx - 성공 (Successful)
+  source_image_path: https://blog.kakaocdn.net/dna/EW6Xq/dJMcaduESPu/AAAAAAAAAAAAAAAAAAAAAAytKvSmFVJV4g9b-KNZjUaPV8H8BKF9SqEa4zqv1bEs/img.png
+  source_content_type: image/png
+  source_sha256: 39ad5ec18121e601c34c6b4b6df5f81e8c19b862596c1ebea0e9af389e57879a
+  archived_dimensions: 1339x760
+- file: 02-2.-2xx---성공-Successful.webp
+  context: 2. 2xx - 성공 (Successful)
+  source_image_path: https://blog.kakaocdn.net/dna/k6zIz/dJMcadOXOEE/AAAAAAAAAAAAAAAAAAAAAL5bkY3KfbqiodpzdjOMfGmWwuCkG_J_bMGxiVR3-Hxo/img.png
+  source_content_type: image/png
+  source_sha256: 8aa7e50b57aef99fbbb6be30067da85b8abae252753c4124c7d86388fe0e428e
+  archived_dimensions: 1535x753
+- file: 03-영구-리다이렉션-URI가-영구적으로-이동.webp
+  context: 영구 리다이렉션 (URI가 영구적으로 이동)
+  source_image_path: https://blog.kakaocdn.net/dna/qwwkN/dJMcaaY3uiz/AAAAAAAAAAAAAAAAAAAAAIn8hnu1AOyWhlSF6d77OeiKnNY85Wv4pHft6-Hr0Gxi/img.png
+  source_content_type: image/png
+  source_sha256: 5cfeb53d571ad6a98c5e079449d1f4a13954fcf5b9a1bfb628da0f39ecf3d60b
+  archived_dimensions: 1331x874

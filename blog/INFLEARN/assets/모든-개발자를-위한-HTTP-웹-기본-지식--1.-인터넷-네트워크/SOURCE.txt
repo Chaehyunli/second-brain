@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/240
+
+selected_images:
+- file: 01-2.-IP-인터넷-프로토콜.webp
+  context: 2. IP (인터넷 프로토콜)
+  source_image_path: https://blog.kakaocdn.net/dna/pJo0T/dJMcafeYYSb/AAAAAAAAAAAAAAAAAAAAAD9zlrLf2BhTh5ih7KuYGhtDYVReX2VQO3R35uchUsQt/img.png
+  source_content_type: image/png
+  source_sha256: 9e0f4e2c1054505a4ac5ffd07c5a52de4dda3f1f0549388de189699d8683262f
+  archived_dimensions: 1508x656
+- file: 02-3.-TCP-vs-UDP-전송-계층.webp
+  context: 3. TCP vs UDP (전송 계층)
+  source_image_path: https://blog.kakaocdn.net/dna/bhTkPq/dJMcabXU6mn/AAAAAAAAAAAAAAAAAAAAAE65at7GXFNWC6IGxOEOloswp7x69aO9V-ZBchawibb3/img.png
+  source_content_type: image/png
+  source_sha256: 52f1a3ea84cfe62185bca834f432422db6402c78241b7527ec338d5d39505c8e
+  archived_dimensions: 1385x637
+- file: 03-4.-PORT-프로그램-구분.webp
+  context: 4. PORT (프로그램 구분)
+  source_image_path: https://blog.kakaocdn.net/dna/XM8LZ/dJMcafTyDWR/AAAAAAAAAAAAAAAAAAAAAA0tKd1TxAwd0Ia5jD-olS03JcLIyPv-X9Saer-CWJ6T/img.png
+  source_content_type: image/png
+  source_sha256: dc668fd10da3866da495d11039ab7a9b0b26664b88b1467c43e9a5becd8c3ebe
+  archived_dimensions: 1177x696

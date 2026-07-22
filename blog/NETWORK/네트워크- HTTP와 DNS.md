@@ -123,6 +123,14 @@ DNS 서버의 이름 및 주소
 
 서브넷 마스크 (Subnet Mask)
 
+## 핵심 이미지
+
+![HTTP/2 (2015년 도입)](assets/네트워크--HTTP와-DNS/01-HTTP-2-2015년-도입.webp)
+
+![HTTP/3](assets/네트워크--HTTP와-DNS/02-HTTP-3.webp)
+
+![계층적 데이터베이스 구조](assets/네트워크--HTTP와-DNS/03-계층적-데이터베이스-구조.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

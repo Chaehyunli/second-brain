@@ -113,6 +113,14 @@ v.key를 w(u,v) 값으로 갱신.
 
 피보나치 힙을 사용할 경우, $O(E + V \log V)$로 개선 가능
 
+## 핵심 이미지
+
+![크루스칼 (Kruskal) 알고리즘](assets/알고리즘--최소-신장-트리-MST---크루스칼-Kruskal-프림-Prim-알고리즘/01-크루스칼-Kruskal-알고리즘.webp)
+
+![크루스칼 (Kruskal) 알고리즘](assets/알고리즘--최소-신장-트리-MST---크루스칼-Kruskal-프림-Prim-알고리즘/02-크루스칼-Kruskal-알고리즘.webp)
+
+![프림 (Prim) 알고리즘](assets/알고리즘--최소-신장-트리-MST---크루스칼-Kruskal-프림-Prim-알고리즘/03-프림-Prim-알고리즘.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

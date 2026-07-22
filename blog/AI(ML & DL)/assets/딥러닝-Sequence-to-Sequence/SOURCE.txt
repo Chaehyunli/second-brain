@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/190
+
+selected_images:
+- file: 01-3.-Seq2Seq-딥러닝-접근-방식.webp
+  context: 3. Seq2Seq 딥러닝 접근 방식
+  source_image_path: https://blog.kakaocdn.net/dna/dhhCxO/dJMcab3EEOG/AAAAAAAAAAAAAAAAAAAAAIKii3OX83SU_dbEIyzUjkAz_aZiS1tg1RlpegkMpHQS/img.png
+  source_content_type: image/png
+  source_sha256: f687049dfa302cb88f6ae31c2ef67c99addf0991b3084a8ff02ce50c8af497d4
+  archived_dimensions: 1524x744
+- file: 02-4.-순환-신경망-RNN.webp
+  context: 4. 순환 신경망 (RNN)
+  source_image_path: https://blog.kakaocdn.net/dna/dafvcE/dJMcaawUvkZ/AAAAAAAAAAAAAAAAAAAAABOJ2sS_55ZQhk5NUrk7i2uCXe_qM9QLdlVbFSuIQMTf/img.png
+  source_content_type: image/png
+  source_sha256: 80f93811fa2cb37a3902ef2eef9fc1bb0c40c0de7f1417263cdda28aa856d69e
+  archived_dimensions: 1336x868
+- file: 03-5.-LSTM-Long-Short-Term-Memory.webp
+  context: 5. LSTM (Long Short-Term Memory)
+  source_image_path: https://blog.kakaocdn.net/dna/cu90SU/dJMcacuI76Y/AAAAAAAAAAAAAAAAAAAAAM4CV0OqhvzS7vLlhFDWLnc0Lq7FZ4kY-eDy3SpW2zC1/img.png
+  source_content_type: image/png
+  source_sha256: f63596b3a54644a1376d9711dbd44b10bbbd5e848e3d970bcc35910eab156803
+  archived_dimensions: 1381x894

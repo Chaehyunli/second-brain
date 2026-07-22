@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/120
+
+selected_images:
+- file: 01-2.-스스로-학습하는-기계-머신러닝과-딥러닝.webp
+  context: 2. 스스로 학습하는 기계: 머신러닝과 딥러닝
+  source_image_path: https://blog.kakaocdn.net/dna/bID7Be/btsQokBkgzk/AAAAAAAAAAAAAAAAAAAAAP5W_rAGiovayjKAlmuiFbMhRB6OP_v3sZxvm2TJ8Bnq/img.png
+  source_content_type: image/png
+  source_sha256: f8e5acf787a50ce78f5451d0dd00124a587fb943ac05a5edd8806e9843163f32
+  archived_dimensions: 868x543
+- file: 02-2.-스스로-학습하는-기계-머신러닝과-딥러닝.webp
+  context: 2. 스스로 학습하는 기계: 머신러닝과 딥러닝
+  source_image_path: https://blog.kakaocdn.net/dna/Z17NC/btsQokah1CU/AAAAAAAAAAAAAAAAAAAAAIIdV0lT41sevgV90-ZHpNprwy80BC5PJoOyl8PR1EAq/img.png
+  source_content_type: image/png
+  source_sha256: e6e9a1b77f38945288b4e99b402cd4ebc4f886e78aae7258e8a6d7be943bd419
+  archived_dimensions: 1437x574
+- file: 03-3.-딥러닝-발전의-기폭제-이미지넷-ImageNet-챌린지.webp
+  context: 3. 딥러닝 발전의 기폭제: 이미지넷(ImageNet) 챌린지
+  source_image_path: https://blog.kakaocdn.net/dna/cG6Pi6/btsQrKLP7ys/AAAAAAAAAAAAAAAAAAAAAKhRdZ2rsfbWlxqK4-PrWsujySEdsodcmRbceGHgtOq5/img.png
+  source_content_type: image/png
+  source_sha256: 21d0237e1a9bd2a899fd8b747c7eaaa7f58e98475086a74f58567a2089c4681e
+  archived_dimensions: 1524x1141

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/278
+
+selected_images:
+- file: 01-2-왜-SDN-소프트웨어-정의-네트워킹-인가-중앙-집중화의-이점.webp
+  context: 2) 왜 SDN(소프트웨어 정의 네트워킹)인가? (중앙 집중화의 이점)
+  source_image_path: https://blog.kakaocdn.net/dna/bfQ3UZ/dJMcabdeEIJ/AAAAAAAAAAAAAAAAAAAAAJ2iIhOWIAurgygPTb6bLojZwOwSRX_EvF9iUjbCQJ2n/img.png
+  source_content_type: image/png
+  source_sha256: 063de9fe93a8e4da4d54a8d1ba8ad197dc5521bc239b7f127481f09e4f40f354
+  archived_dimensions: 825x474
+- file: 02-1-SDN의-3대-계층-구조.webp
+  context: 1) SDN의 3대 계층 구조
+  source_image_path: https://blog.kakaocdn.net/dna/BjfCA/dJMcaf01pC6/AAAAAAAAAAAAAAAAAAAAAP8LwFzI2yDZqoLxrnXHgzhRAkntd-y0ZtUe6vObIap-/img.png
+  source_content_type: image/png
+  source_sha256: 7b9dc750f3cd44e537485c1649de1540335731695fe6419ba54e7818903fc213
+  archived_dimensions: 1047x511
+- file: 03-2-컨트롤-데이터-평면-상호작용-시나리오-링크-단선-발생-예시.webp
+  context: 2) 컨트롤/데이터 평면 상호작용 시나리오 (링크 단선 발생 예시)
+  source_image_path: https://blog.kakaocdn.net/dna/cbNUhw/dJMcahxOIMr/AAAAAAAAAAAAAAAAAAAAAEnEPD6ki15tERWKumj9vLd-0O7eeT3vOI5_y-X3H_aq/img.png
+  source_content_type: image/png
+  source_sha256: 12ec42a12bc620ca7f2f6551f732372cf4c247748926847dbcacca173bcaee16
+  archived_dimensions: 429x526

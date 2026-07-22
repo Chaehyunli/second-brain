@@ -663,6 +663,12 @@ MyColorFragement : onResume : white
 
 '뒤로 가기' 버튼: replace 트랜잭션이 "취소(undo)"됩니다. 'red'는 파괴되고 'white'는 View부터 다시 생성
 
+## 핵심 이미지
+
+![프래그먼트 라이프사이클 (Fragment Lifecycle)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/01-프래그먼트-라이프사이클-Fragment-Lifecycle.webp)
+
+![실습 내용 (Practical Exercise)](assets/모바일-프로그래밍--Fragment와-생명-주기-실습/02-실습-내용-Practical-Exercise.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

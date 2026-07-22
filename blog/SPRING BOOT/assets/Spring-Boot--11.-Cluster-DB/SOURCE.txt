@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/276
+
+selected_images:
+- file: 01-6.-인프라-레이어의-독립-HAProxy와-PgBouncer의-역할.webp
+  context: 6. 인프라 레이어의 독립: HAProxy와 PgBouncer의 역할
+  source_image_path: https://blog.kakaocdn.net/dna/dr7oo7/dJMcajhYQYe/AAAAAAAAAAAAAAAAAAAAALDLnuV7Z2aV6E2Z0U-nGYP4rURwH_tgRNe0ldHCLp7p/img.png
+  source_content_type: image/png
+  source_sha256: ef90cbc86ca2a924f78721ebcb318a1e3484f6c2627a8366e98e2ff3ce498ed3
+  archived_dimensions: 892x580

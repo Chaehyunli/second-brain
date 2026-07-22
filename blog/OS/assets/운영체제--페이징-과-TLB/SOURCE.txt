@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/72
+
+selected_images:
+- file: 01-3.-성능-향상을-위한-해결책-TLB.webp
+  context: 3. 성능 향상을 위한 해결책: TLB
+  source_image_path: https://blog.kakaocdn.net/dna/1evz6/btsNWjYNp76/AAAAAAAAAAAAAAAAAAAAABUP84Yo891SpIZ0-Anj9e6CJZN1mxCcmjGvGZAK5WH9/img.png
+  source_content_type: image/png
+  source_sha256: 8de11b0a1da34d629d4908e9efb10596083705d36fe38e14c8dbd8dda6118ab5
+  archived_dimensions: 1149x703
+- file: 02-6.-페이지의-공유-Shared-Pages.webp
+  context: 6. 페이지의 공유 (Shared Pages)
+  source_image_path: https://blog.kakaocdn.net/dna/bvRdN9/btsNVi7mLXf/AAAAAAAAAAAAAAAAAAAAAIa6Y_xrRa-VtlAF7IT3OQBdoiN9E9tjJemh1QpBq_nq/img.png
+  source_content_type: image/png
+  source_sha256: 4bf2525dcb62fc73a4d3b2a1caf760c1a1cfb1d7addc833c429c6f3cc32f32aa
+  archived_dimensions: 1176x780

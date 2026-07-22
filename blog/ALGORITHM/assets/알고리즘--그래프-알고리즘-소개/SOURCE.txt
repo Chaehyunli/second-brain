@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/151
+
+selected_images:
+- file: 01-원문-이미지.webp
+  context: 원문 이미지 1
+  source_image_path: https://blog.kakaocdn.net/dna/bO56tR/btsQ1uuQZRr/AAAAAAAAAAAAAAAAAAAAAMIqPRj14SK0HP5Eq3i_XCVm7QrcxRsDln2Qeoij6_m6/img.png
+  source_content_type: image/png
+  source_sha256: 25af17522e87efd18274d5e7457f7cadf0f6dff4ac14759f73cfb78699337c77
+  archived_dimensions: 375x144
+- file: 02-원문-이미지.webp
+  context: 원문 이미지 2
+  source_image_path: https://blog.kakaocdn.net/dna/I2zny/btsQ086FBbQ/AAAAAAAAAAAAAAAAAAAAAOwAJ8KANbOIiyrHU96DnFwkj7kIi-u6fRC8nbEc5RN8/img.png
+  source_content_type: image/png
+  source_sha256: 1332c9263fc2867e7794cb3f13e7fa1c0605c90ef0fd4ab33cb3843e0c07cc47
+  archived_dimensions: 111x157
+- file: 03-원문-이미지.webp
+  context: 원문 이미지 3
+  source_image_path: https://blog.kakaocdn.net/dna/ch0OIx/btsQ1bCkUtC/AAAAAAAAAAAAAAAAAAAAALh_IYshPPtwfsxTwJK33ohq3vfjSr5doEZiHOvdM4uR/img.png
+  source_content_type: image/png
+  source_sha256: 47e0b8769a70ad0b336c062f9f6f3eaa86968f67a2e8e8e1afa489d65b5b4bb9
+  archived_dimensions: 558x156

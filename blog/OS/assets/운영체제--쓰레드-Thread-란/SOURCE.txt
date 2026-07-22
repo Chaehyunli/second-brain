@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/46
+
+selected_images:
+- file: 01-3.-단일-쓰레드-vs-다중-쓰레드.webp
+  context: 3. 단일 쓰레드 vs 다중 쓰레드
+  source_image_path: https://blog.kakaocdn.net/dna/bzzmd5/btsNcg1wtp9/AAAAAAAAAAAAAAAAAAAAAFyuD8XSCalpPNtmw5OF3NvFpT-za5K60z-_UukoWaCk/img.png
+  source_content_type: image/png
+  source_sha256: 5b15e142083c4fc7a30fcec88587cfc732af4924fdfc8ad684ad55c986102757
+  archived_dimensions: 598x760
+- file: 02-3.-단일-쓰레드-vs-다중-쓰레드.webp
+  context: 3. 단일 쓰레드 vs 다중 쓰레드
+  source_image_path: https://blog.kakaocdn.net/dna/bdxzoV/btsNbAGnsE5/AAAAAAAAAAAAAAAAAAAAAOo55aai2A2e33xe12RJbuqrG1ie6CuE2DAoVllW9gRx/img.png
+  source_content_type: image/png
+  source_sha256: 82281d3a58fe269ed4a80a492342cf9891a6d1a3f2996eb89d2b94adbb723f10
+  archived_dimensions: 934x553
+- file: 03-6.-스레드-구현-방식.webp
+  context: 6. 스레드 구현 방식
+  source_image_path: https://blog.kakaocdn.net/dna/02TmK/btsNbLucElY/AAAAAAAAAAAAAAAAAAAAAEZSs239h-_jMNpfy6xUq_0cu9OCSuWJubr-esinxHjo/img.png
+  source_content_type: image/png
+  source_sha256: c8c6fc6f6717c1dc7119b01d2f4fe8407552b421135f782e0b19e390b3e7fe54
+  archived_dimensions: 823x393

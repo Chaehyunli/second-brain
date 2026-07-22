@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/296
+
+selected_images:
+- file: 01-2.1-데이터베이스-연결-구조-분석.webp
+  context: 2.1 데이터베이스 연결 구조 분석
+  source_image_path: https://blog.kakaocdn.net/dna/4HMmY/dJMcabrjKtq/AAAAAAAAAAAAAAAAAAAAACSfsaZld0pQG97t0MDJ435vJPULOiwSmkmafq3W3MZP/img.png
+  source_content_type: image/png
+  source_sha256: 035fd4657d2ad9f6b4aca2748ee5cf92e3e16fd58b96d8b6066fb6bdc2167d57
+  archived_dimensions: 1030x322
+- file: 02-2.2-커넥션-풀과-세션의-관계.webp
+  context: 2.2 커넥션 풀과 세션의 관계
+  source_image_path: https://blog.kakaocdn.net/dna/Acb6k/dJMcagGdqV8/AAAAAAAAAAAAAAAAAAAAAFG6uBv4YDOJNDUDRZfjVZmYGmXkJLham7OrzzLJqTom/img.png
+  source_content_type: image/png
+  source_sha256: b3b8e11ad7607fb76cd0d30bc0e70d91417fff95641fd2269547fc3b14921046
+  archived_dimensions: 1030x406
+- file: 03-3.-트랜잭션---DB-예제.webp
+  context: 3. 트랜잭션 - DB 예제
+  source_image_path: https://blog.kakaocdn.net/dna/ebBboU/dJMcaglOSp8/AAAAAAAAAAAAAAAAAAAAAA0TdWM9jFCH6uhljnsQkcn_pzgZLzAGsGxSRD7D0Ps6/img.png
+  source_content_type: image/png
+  source_sha256: 3cd2c4b458ec6c6bbfe0343f73bcc3539685294a05e291ba80277705115dcdc7
+  archived_dimensions: 1027x411

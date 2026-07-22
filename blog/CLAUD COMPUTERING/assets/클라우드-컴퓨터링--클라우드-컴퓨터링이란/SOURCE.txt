@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/129
+
+selected_images:
+- file: 01-클라우드-컴퓨팅의-배경.webp
+  context: 클라우드 컴퓨팅의 배경
+  source_image_path: https://blog.kakaocdn.net/dna/Xrs5F/btsQBoCRasr/AAAAAAAAAAAAAAAAAAAAABZZNpehhl4eGlOqSitJOxkIbUnLG0hYIIYtTcYERfQf/img.png
+  source_content_type: image/png
+  source_sha256: 2cc66c65eb4b1e73ecb33e979286be9adc2efefa925adef21f13ca5bc7be6103
+  archived_dimensions: 840x867
+- file: 02-클라우드-컴퓨팅의-배경.webp
+  context: 클라우드 컴퓨팅의 배경
+  source_image_path: https://blog.kakaocdn.net/dna/c4pEWf/btsQA7VhD9j/AAAAAAAAAAAAAAAAAAAAAF7TBKg3huRShYq_LVovwoLuAQrRUnAdPVbHRp9YyvWA/img.png
+  source_content_type: image/png
+  source_sha256: 46e81ac242b5f50cb4ab7695d0e293e63c438f47ebde55954a88faf8890ad6cd
+  archived_dimensions: 1354x811
+- file: 03-클라우드-컴퓨팅의-배경.webp
+  context: 클라우드 컴퓨팅의 배경
+  source_image_path: https://blog.kakaocdn.net/dna/kJq3D/btsQA8fzsgm/AAAAAAAAAAAAAAAAAAAAACIBe6Wy70oE3KvHEXw9NxnTZaY4ZBTDMwY8J7eNHw-r/img.png
+  source_content_type: image/png
+  source_sha256: 81c9d718f31a00489cac4c25cfc8aef7ed8b7de7c33068e3314238ea535cfd64
+  archived_dimensions: 1011x532

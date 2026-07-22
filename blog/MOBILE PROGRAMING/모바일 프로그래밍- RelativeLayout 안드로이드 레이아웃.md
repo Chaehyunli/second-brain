@@ -233,6 +233,14 @@ layout_alignTop, layout_alignBottom, layout_alignLeft, layout_alignRight: 지정
 
 - 1번 버튼은 baseBtn1의 오른쪽이면서 baseBtn2의 위쪽에 위치하게 됨
 
+## 핵심 이미지
+
+![1. 부모 레이아웃을 기준으로 위치 지정하기](assets/모바일-프로그래밍--RelativeLayout-안드로이드-레이아웃/01-1.-부모-레이아웃을-기준으로-위치-지정하기.webp)
+
+![1. 부모 레이아웃을 기준으로 위치 지정하기](assets/모바일-프로그래밍--RelativeLayout-안드로이드-레이아웃/02-1.-부모-레이아웃을-기준으로-위치-지정하기.webp)
+
+![2. 다른 위젯을 기준으로 상대적 위치 지정하기](assets/모바일-프로그래밍--RelativeLayout-안드로이드-레이아웃/03-2.-다른-위젯을-기준으로-상대적-위치-지정하기.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

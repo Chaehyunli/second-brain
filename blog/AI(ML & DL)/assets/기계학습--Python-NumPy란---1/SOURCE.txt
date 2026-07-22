@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/21
+
+selected_images:
+- file: 01-난수-생성-rand-vs-randn.webp
+  context: 난수 생성: rand vs randn
+  source_image_path: https://blog.kakaocdn.net/dna/rzRS7/btsMSUxBbj7/AAAAAAAAAAAAAAAAAAAAAJsBoJCYZQPIIbfm8UxJeYIvOrBCXjU-bBrt5d8Ru46L/img.png
+  source_content_type: image/png
+  source_sha256: 86e58a6cb30de644a8f59d6c837a095f67ea3eeba61d7056535189373b7ed7d8
+  archived_dimensions: 552x412
+- file: 02-난수-생성-rand-vs-randn.webp
+  context: 난수 생성: rand vs randn
+  source_image_path: https://blog.kakaocdn.net/dna/lFlRT/btsMSUqQcnz/AAAAAAAAAAAAAAAAAAAAADqWffH9TuZilJVnsFfrn1I44h-Pwc8llduzjkp9pwgi/img.png
+  source_content_type: image/png
+  source_sha256: 3a68cbc057a0687e8a05a66490c4809bcd161b236d0b40addcbd89186fe31e81
+  archived_dimensions: 597x448
+- file: 03-np.fromfunction-함수-기반-배열-생성.webp
+  context: np.fromfunction(): 함수 기반 배열 생성
+  source_image_path: https://blog.kakaocdn.net/dna/cdcmmN/btsMRvMPJTP/AAAAAAAAAAAAAAAAAAAAAFfz16bBFv_7Nb6PloOfIXs_FDNM65hX6L3JxlBavLox/img.jpg
+  source_content_type: image/jpeg
+  source_sha256: 6db728f8370ce71756e31881f9d51c0f16a1aa51a8e53edd1a8238d2357fc622
+  archived_dimensions: 1600x1200

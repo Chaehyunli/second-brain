@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/138
+
+selected_images:
+- file: 01-1.-하이퍼바이저-심층-분석-Xen-아키텍처.webp
+  context: 1. 하이퍼바이저 심층 분석: Xen 아키텍처
+  source_image_path: https://blog.kakaocdn.net/dna/u5LAM/btsQKTiUtjs/AAAAAAAAAAAAAAAAAAAAAOhL_Xr7lkUgMQh9xuRID971FxGci57P16REUtSvaIO3/img.png
+  source_content_type: image/png
+  source_sha256: b01b3603f668af1377afc7bd0bfd0e21674a331998445c7dbef93d28c1cefdb0
+  archived_dimensions: 1200x585
+- file: 02-2.-하이브리드-전략.webp
+  context: 2. 하이브리드 전략
+  source_image_path: https://blog.kakaocdn.net/dna/uPsSO/btsQLcCuAlg/AAAAAAAAAAAAAAAAAAAAAJy__rqMi9U5CCfcEjWK4yNiTovOfOUOl-e3ko13PBZo/img.png
+  source_content_type: image/png
+  source_sha256: f59cde536bb5403da0aec97a03ad7b9c2c75efb7bc9d6478f55f86ad2a10bf45
+  archived_dimensions: 1402x274
+- file: 03-3.-컨테이너-가상화와-Docker.webp
+  context: 3. 컨테이너 가상화와 Docker
+  source_image_path: https://blog.kakaocdn.net/dna/bdI865/btsQKADQicX/AAAAAAAAAAAAAAAAAAAAAH3X6snrZMw3r004xqwoE-TOdrRKFXFhdBg-O3qd4VWa/img.png
+  source_content_type: image/png
+  source_sha256: 8a4cb6f2113de67ba7ca90b1ec50fb1780221d5f8f25cdf5846c79bc0d1a415d
+  archived_dimensions: 1194x526

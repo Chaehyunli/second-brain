@@ -253,6 +253,12 @@ packed: 위젯을 중앙으로 모음
 
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
+## 핵심 이미지
+
+![1. ConstraintLayout](assets/모바일-프로그래밍--ConstraintLayout와-Flow/01-1.-ConstraintLayout.webp)
+
+![2. ConstraintLayout Flow](assets/모바일-프로그래밍--ConstraintLayout와-Flow/02-2.-ConstraintLayout-Flow.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

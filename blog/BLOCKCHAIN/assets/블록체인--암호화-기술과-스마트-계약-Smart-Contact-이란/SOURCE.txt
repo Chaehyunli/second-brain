@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/19
+
+selected_images:
+- file: 01-2.-블록체인을-지원하는-주요-암호화-기술.webp
+  context: 2. 블록체인을 지원하는 주요 암호화 기술
+  source_image_path: https://blog.kakaocdn.net/dna/xixry/btsMPRHPEQM/AAAAAAAAAAAAAAAAAAAAAOWyxftXo494-hSf6IzmzliPoYqKr-ruAuViwxWcBsWT/img.png
+  source_content_type: image/png
+  source_sha256: 901d9b826023b05bb87f65a82c72ae7fbc400651418501b236d1596c51671ee3
+  archived_dimensions: 1098x489
+- file: 02-2.-블록체인을-지원하는-주요-암호화-기술.webp
+  context: 2. 블록체인을 지원하는 주요 암호화 기술
+  source_image_path: https://blog.kakaocdn.net/dna/ACHXA/btsMPulSA9P/AAAAAAAAAAAAAAAAAAAAAHiFh56-esg3CNNhmcYmKptW5jh_9LY9TtvyUUvsK1CV/img.png
+  source_content_type: image/png
+  source_sha256: 4b7280ed7f1a4f07cf95261a707faf8b13b17e54255c44f69b0d9b8509f41bdb
+  archived_dimensions: 810x148
+- file: 03-2.-블록체인을-지원하는-주요-암호화-기술.webp
+  context: 2. 블록체인을 지원하는 주요 암호화 기술
+  source_image_path: https://blog.kakaocdn.net/dna/bAZWuW/btsMO8XPbPe/AAAAAAAAAAAAAAAAAAAAAGqWTPxLpQh4CgkVUtsu7PvdZyC-n3imgGBgQ3oqvqbK/img.png
+  source_content_type: image/png
+  source_sha256: 82ade15c50ec9252525c2258a9d3dc4760fcabd9a4a09f25b044b2e7c953d541
+  archived_dimensions: 1123x433

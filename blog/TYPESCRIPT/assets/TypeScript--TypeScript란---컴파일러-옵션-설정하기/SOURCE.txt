@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/103
+
+selected_images:
+- file: 01-2.-타입-시스템이란.webp
+  context: 2. 타입 시스템이란?
+  source_image_path: https://blog.kakaocdn.net/dna/cvlZDj/btsONDIJaUk/AAAAAAAAAAAAAAAAAAAAAKqHGpzf1JwJnSBN9ZWJGS1YEPlYk_MVa3aEpFJuzYrD/img.png
+  source_content_type: image/png
+  source_sha256: 767549922a4b33666627d748ff6e7de2ada46d0cc8417a0bb04172f6ce84b8e8
+  archived_dimensions: 1077x607
+- file: 02-3.-타입스크립트의-장점-점진적-타입-시스템.webp
+  context: 3. 타입스크립트의 장점: 점진적 타입 시스템
+  source_image_path: https://blog.kakaocdn.net/dna/esJM6L/btsOOxt7Vki/AAAAAAAAAAAAAAAAAAAAAEwO2_Hl6R5juaBL41LUp9egVK7uZk-XbSKC86ZsDQX-/img.png
+  source_content_type: image/png
+  source_sha256: 24fad92f8f7109061055bfcbd1700af1f8f3ea11bca35f283a534b0b929cd03f
+  archived_dimensions: 1078x601
+- file: 03-4.-타입스크립트는-어떻게-동작할까.webp
+  context: 4. 타입스크립트는 어떻게 동작할까?
+  source_image_path: https://blog.kakaocdn.net/dna/bfLeMD/btsOOyzNY5p/AAAAAAAAAAAAAAAAAAAAAHzKB3XlgikbFyGAjlOHpqNeB4dEtV0vA_1f_nowVtSd/img.png
+  source_content_type: image/png
+  source_sha256: e87ecebc075cbbb13ccafb54a26367fc6111e5ba539d24d95bb7d3de80e5f4e3
+  archived_dimensions: 1081x606

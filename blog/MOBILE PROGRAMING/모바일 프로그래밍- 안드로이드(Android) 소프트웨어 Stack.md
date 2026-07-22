@@ -101,6 +101,10 @@ Content providers: 앱 간에 데이터를 공유하고 접근
 
 사용자를 위한 앱으로서 기능할 뿐만 아니라, 다른 앱 개발자들이 활용할 수 있는 핵심 기능을 제공하는 역할
 
+## 핵심 이미지
+
+![🏗️ 안드로이드 소프트웨어 스택 (구조)](assets/모바일-프로그래밍--안드로이드-Android-소프트웨어-Stack/01-안드로이드-소프트웨어-스택-구조.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/288
+
+selected_images:
+- file: 01-5.-로그인-처리하기---쿠키-Cookie-사용.webp
+  context: 5. 로그인 처리하기 - 쿠키(Cookie) 사용
+  source_image_path: https://blog.kakaocdn.net/dna/qhVT9/dJMcahZgEDj/AAAAAAAAAAAAAAAAAAAAAGmQGKQLuarHr00QZj2zYECROb9GsclHvucjHLkz-xOa/img.png
+  source_content_type: image/png
+  source_sha256: 15bbd1031c9898c844a5a19d0ef36c467d2e9162fed2211307a08045d96aa383
+  archived_dimensions: 1021x544
+- file: 02-5.-로그인-처리하기---쿠키-Cookie-사용.webp
+  context: 5. 로그인 처리하기 - 쿠키(Cookie) 사용
+  source_image_path: https://blog.kakaocdn.net/dna/lKHkh/dJMcac4JFIB/AAAAAAAAAAAAAAAAAAAAAEZi7VJIkhwNMGCCOHpCE0B0OelginFBUUj5rMBBOHoF/img.png
+  source_content_type: image/png
+  source_sha256: 770bf3468ad4a31c2a9a82b6d48edf7d192ef60e649abdf9e65ebec7a44f6816
+  archived_dimensions: 1027x484
+- file: 03-5.-로그인-처리하기---쿠키-Cookie-사용.webp
+  context: 5. 로그인 처리하기 - 쿠키(Cookie) 사용
+  source_image_path: https://blog.kakaocdn.net/dna/bjeDXH/dJMcac4JFIV/AAAAAAAAAAAAAAAAAAAAAK9F2s8jotix-tNmnGprSrR3RqW-wdaxiwRHtr4o9doF/img.png
+  source_content_type: image/png
+  source_sha256: 6ed4ace14a0588771ac9d955d1d329a3bc37ab8bb0b392d7061efd331c22b8d0
+  archived_dimensions: 1014x529

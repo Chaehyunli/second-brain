@@ -182,6 +182,14 @@ n-1개의 원소를 추출하고 재정렬하는 데 $O(n \log n)$이 걸림
 
 해결책: - 최악의 경우를 피하기 위해 피벗을 무작위로 선택하거나(Randomized Quicksort) - 배열의 처음/중간/끝 세 값 중 중간값을 피벗으로 사용하는 등의 개선 방법
 
+## 핵심 이미지
+
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/01-1.-병합-정렬-Merge-Sort.webp)
+
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/02-1.-병합-정렬-Merge-Sort.webp)
+
+![1. 병합 정렬 (Merge Sort)](assets/알고리즘--정렬-알고리즘이란--Merge-Sort-Heap-Sort-Quick-Sort/03-1.-병합-정렬-Merge-Sort.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

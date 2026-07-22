@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/202
+
+selected_images:
+- file: 01-1.-MVC와-템플릿-엔진-Model-View-Controller.webp
+  context: 1. MVC와 템플릿 엔진 (Model, View, Controller)
+  source_image_path: https://blog.kakaocdn.net/dna/tPrv3/dJMcadny689/AAAAAAAAAAAAAAAAAAAAAI4J9vQlPAmemoIlfVrWz8bNNBrpHJKtXdYDKSc4ua2J/img.png
+  source_content_type: image/png
+  source_sha256: 25595d54e707ffd26b13c6886d77c5b97fb4c0000c2a065228fb6f75fdcfd11c
+  archived_dimensions: 1042x561
+- file: 02-3.-API-방식---객체-반환-ResponseBody-JSON.webp
+  context: 3. API 방식 - 객체 반환 (@ResponseBody + JSON)
+  source_image_path: https://blog.kakaocdn.net/dna/bf9lyS/dJMcaiCqfm0/AAAAAAAAAAAAAAAAAAAAAK7pwyxIalD3YxXFZkJzwOBftfAkl6b4At_peigBBUEy/img.png
+  source_content_type: image/png
+  source_sha256: 4f338f3df596ee7efda1104d37da991214444ee8ec8f35885033324b62906a2e
+  archived_dimensions: 1045x523

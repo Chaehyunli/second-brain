@@ -232,6 +232,14 @@ $ docker exec -it <ID> bash
 $ mongosh
 ```
 
+## 핵심 이미지
+
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/01-1.-Docker-Volume-도커-볼륨-이란.webp)
+
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/02-1.-Docker-Volume-도커-볼륨-이란.webp)
+
+![📌 1. Docker Volume(도커 볼륨) 이란?](assets/Docker--Docker-Container-데이터-유실-방지하기---Volume-사용하기/03-1.-Docker-Volume-도커-볼륨-이란.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

@@ -113,6 +113,12 @@ Destination port number
 
 웹 서버(예: Apache)는 각 연결된 클라이언트마다 별도의 소켓을 생성하여 관리합니다.
 
+## 핵심 이미지
+
+![기본 개념](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/01-기본-개념.webp)
+
+![역다중화의 작동 방식](assets/네트워크--전송-계층-Transport-Layer-과-TCP-UDP/02-역다중화의-작동-방식.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

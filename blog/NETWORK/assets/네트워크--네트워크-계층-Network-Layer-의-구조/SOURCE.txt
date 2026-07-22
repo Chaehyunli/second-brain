@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/266
+
+selected_images:
+- file: 01-2.-서비스-모델-및-QoS-Quality-of-Service.webp
+  context: 2. 서비스 모델 및 QoS (Quality of Service)
+  source_image_path: https://blog.kakaocdn.net/dna/uJoKw/dJMcacQqZFy/AAAAAAAAAAAAAAAAAAAAANbcwSas9B-QtSzvqcUmU9IiB2WbeacthkOele3Lqzmw/img.png
+  source_content_type: image/png
+  source_sha256: 62c8e6e30bd45952f4a547cfe5328521b06ccf4192457d0590cb7e7697a45a7c
+  archived_dimensions: 1108x465
+- file: 02-4.-입력-포트-및-포워딩-기술.webp
+  context: 4. 입력 포트 및 포워딩 기술
+  source_image_path: https://blog.kakaocdn.net/dna/Pfa52/dJMcaffm4vb/AAAAAAAAAAAAAAAAAAAAAEpTp5CWo1aJni1pLeI4ymoYxCrUla8IaYoW2bWz32O1/img.png
+  source_content_type: image/png
+  source_sha256: ddfebd9312a8a3b61c6253e6eddb95e74ca833f92edcab131c35c83c376f6fe4
+  archived_dimensions: 907x442
+- file: 03-최장-일치-접두어-매칭-Longest-Prefix-Matching.webp
+  context: ② 최장 일치 접두어 매칭 (Longest Prefix Matching)
+  source_image_path: https://blog.kakaocdn.net/dna/bGsjMM/dJMcad2PwTd/AAAAAAAAAAAAAAAAAAAAAN_1ezecrCxfmYH6p0hRZvotele6YqiNWVu3vlhJHZ35/img.png
+  source_content_type: image/png
+  source_sha256: ae26a9bcca69134896d36d2c6e680247750fcac8aab896640a9fd6d8f23b8f6c
+  archived_dimensions: 1021x520

@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/208
+
+selected_images:
+- file: 01-1.-컴포넌트-스캔과-자동-의존관계-설정.webp
+  context: 1. 컴포넌트 스캔과 자동 의존관계 설정
+  source_image_path: https://blog.kakaocdn.net/dna/nyPDC/dJMb99Mhd62/AAAAAAAAAAAAAAAAAAAAAEvf49Pc93RiZJNZk920qO64AjT8J1XN2izpfKKhicNb/img.png
+  source_content_type: image/png
+  source_sha256: 4fdd89a75b0a967a4c0912e1a465e06b439c2d71b06091cb8832fcaeb8936a1e
+  archived_dimensions: 1211x671

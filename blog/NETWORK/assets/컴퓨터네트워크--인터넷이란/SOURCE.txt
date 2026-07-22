@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/214
+
+selected_images:
+- file: 01-1.-인터넷의-정의-두-가지-관점.webp
+  context: 1. 인터넷의 정의: 두 가지 관점
+  source_image_path: https://blog.kakaocdn.net/dna/cegCNz/dJMcac94ACz/AAAAAAAAAAAAAAAAAAAAAA016YsvRVCsdGomnbYzPgIekqv98BhHDu7BK5lHQSkA/img.png
+  source_content_type: image/png
+  source_sha256: 57468d87d4d59bdf2dbade76dc0e9eb1444df8935164613efc8c89bef9ede982
+  archived_dimensions: 1180x559
+- file: 02-4.-접속-네트워크의-종류와-특징-상세.webp
+  context: 4. 접속 네트워크의 종류와 특징 (상세)
+  source_image_path: https://blog.kakaocdn.net/dna/cknfrb/dJMcahp4JFJ/AAAAAAAAAAAAAAAAAAAAAJjeqkS8nhdfFTD6rQZsMk6BlFKvi0QKcvcw4jnlGSuu/img.png
+  source_content_type: image/png
+  source_sha256: c1049eb42e204602cac603141373e15c0342ffeaa0e246cd23c3c1acc7259503
+  archived_dimensions: 823x337
+- file: 03-4.-접속-네트워크의-종류와-특징-상세.webp
+  context: 4. 접속 네트워크의 종류와 특징 (상세)
+  source_image_path: https://blog.kakaocdn.net/dna/bxPIbG/dJMcaaqWYm2/AAAAAAAAAAAAAAAAAAAAAOodcYLCuZ-M_V5fEXcFC1RAc_g7rSi8spWLP5JJvo7I/img.png
+  source_content_type: image/png
+  source_sha256: 562ea42f9cb55864a3c2e37d04792702260a357efdabce5c28f3f55e3846e902
+  archived_dimensions: 715x478

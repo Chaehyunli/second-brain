@@ -205,6 +205,10 @@ O(g(n)) (Big-O): - 상한(Upper Bound)을 나타냄 - 알고리즘의 실행 시
 
 알고리즘 선택 시 중요한 기준이 됨
 
+## 핵심 이미지
+
+![1. 백트래킹(Backtracking)으로 순열과 조합 구하기](assets/알고리즘--백트래킹을-이용한-순열-조합-및-알고리즘-성능-분석-Big-O-Omega-Theta/01-1.-백트래킹-Backtracking-으로-순열과-조합-구하기.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

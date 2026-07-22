@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/100
+
+selected_images:
+- file: 01-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp
+  context: 2. Spring Boot + MySQL 연동 컨테이너 구성
+  source_image_path: https://blog.kakaocdn.net/dna/ev8Nfh/btsOKp4XjuD/AAAAAAAAAAAAAAAAAAAAAJAKLFSP3Fg0l2bJCLFn7sVGS3fiDVUcF6-aVfhZzSMy/img.png
+  source_content_type: image/png
+  source_sha256: f0235439b1a2950e4a2008ab4afd6f5034ce2b9b56b49a747d4a1e519f20ab8d
+  archived_dimensions: 1362x903
+- file: 02-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp
+  context: 2. Spring Boot + MySQL 연동 컨테이너 구성
+  source_image_path: https://blog.kakaocdn.net/dna/cG5ZrB/btsOLy7QdrN/AAAAAAAAAAAAAAAAAAAAAKhU-TY_yY5nR__f0B9R5c-R3ORd9QNFxf5L0pGknLid/img.png
+  source_content_type: image/png
+  source_sha256: df440ee50e2da0d050ac176ec4b96656a70d9be31e1310b731be8220ccc53c3f
+  archived_dimensions: 1033x874
+- file: 03-2.-Spring-Boot-MySQL-연동-컨테이너-구성.webp
+  context: 2. Spring Boot + MySQL 연동 컨테이너 구성
+  source_image_path: https://blog.kakaocdn.net/dna/bYtIxl/btsOLhFohSc/AAAAAAAAAAAAAAAAAAAAAJVpPRk7qhtcfuCdeOmpbnrYGk1yY3_OydxVpVxtt7wo/img.png
+  source_content_type: image/png
+  source_sha256: f268b19df241c66752f0fa4f348c34adbdf7abf22c415ba77bb5aa91c1a18f3a
+  archived_dimensions: 1036x219

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/81
+
+selected_images:
+- file: 01-원문-이미지.webp
+  context: 원문 이미지 1
+  source_image_path: https://blog.kakaocdn.net/dna/NWC5N/btsObUjg5y6/AAAAAAAAAAAAAAAAAAAAAHFDKsuofvKlxd-QkzjgBJqelamEJOh76pq6DUXbHkG9/img.png
+  source_content_type: image/png
+  source_sha256: beef88d98cc9fd8e73a30b78b77e63710ed145e82747dff709100b7dc2d0903e
+  archived_dimensions: 1600x859
+- file: 02-원문-이미지.webp
+  context: 원문 이미지 2
+  source_image_path: https://blog.kakaocdn.net/dna/bxZV4u/btsOciRI0tQ/AAAAAAAAAAAAAAAAAAAAAFXgDg1mjIYqNXcRH85H_6cz9NBEn-y6ULxuuWuOJH8m/img.png
+  source_content_type: image/png
+  source_sha256: 14539613a0c4f922b310b2e234211a907ced8e674db4305f055bb98773528dee
+  archived_dimensions: 1600x541

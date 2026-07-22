@@ -89,6 +89,14 @@ PID=3이 CPU를 할당받아 Running 상태로 전환(스케줄러가 PID 3번�
 
 ➡️ 여기서 포인트는 CPU의 프로세스 할당은 Ready 상태 중에서 스케줄러가 선택한다는 점!( 어떤 기준으로 선택하는지는 scheduler의 프로그래밍된 내용에 따라 달라짐 )
 
+## 핵심 이미지
+
+![1. 다중 프로그래밍 (Multiprogramming)](assets/운영체제--프로세스의-상태-Process-State-란/01-1.-다중-프로그래밍-Multiprogramming.webp)
+
+![3. 프로세스 상태 (Process States)](assets/운영체제--프로세스의-상태-Process-State-란/02-3.-프로세스-상태-Process-States.webp)
+
+![4. 프로세스 상태 변화 예시( I/O 요청 발생 )](assets/운영체제--프로세스의-상태-Process-State-란/03-4.-프로세스-상태-변화-예시-I-O-요청-발생.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

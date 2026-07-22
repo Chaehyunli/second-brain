@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/160
+
+selected_images:
+- file: 01-4.-예시-WordCount.webp
+  context: 4. 예시 – WordCount
+  source_image_path: https://blog.kakaocdn.net/dna/XyiNB/btsQ93j7ZJ5/AAAAAAAAAAAAAAAAAAAAAM6eGt0s9Hqf9F3LoTh9MwS9Hq4B1P6XdwGsFs2TvCa4/img.png
+  source_content_type: image/png
+  source_sha256: de5bdbc9156272973b8232af3b69658e648825c8552bd7f96db3cb240f53c638
+  archived_dimensions: 1281x784
+- file: 02-5.-실행-구조-Execution-Architecture.webp
+  context: 5. 실행 구조 (Execution Architecture)
+  source_image_path: https://blog.kakaocdn.net/dna/bg95YB/btsRaiVFkYN/AAAAAAAAAAAAAAAAAAAAAIWwtG5xwgZP8eFS_SYhj1_Txfo-L6I9O6FLxzEDdWHu/img.png
+  source_content_type: image/png
+  source_sha256: 0ec3eac821720906466189e62b29aecf15aeee6d92c538cca5ae7d9857e45b84
+  archived_dimensions: 1303x730
+- file: 03-9.-Shuffle-Sort.webp
+  context: 9. Shuffle & Sort
+  source_image_path: https://blog.kakaocdn.net/dna/XRuUQ/btsQ9ovxEpy/AAAAAAAAAAAAAAAAAAAAAKqoBh4w2o2RslnmeGw1FI5BEdrXgDA1WBMMJVTK2dE7/img.png
+  source_content_type: image/png
+  source_sha256: 1af6dcf75e27b8602a4ab2b8b5b00f4c075dfa8b3167e820168ace4a357b7a1d
+  archived_dimensions: 1393x633

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/304
+
+selected_images:
+- file: 01-예외-변환-전.webp
+  context: 예외 변환 전
+  source_image_path: https://blog.kakaocdn.net/dna/Dn5V0/dJMcafHqWck/AAAAAAAAAAAAAAAAAAAAAKohEtHTZ1h_-PHRHvTF2o8gQj-tdPFl0LmAN7HL87jA/img.png
+  source_content_type: image/png
+  source_sha256: 82e9a0bba0ab59bcb551457aa3df5c107a3cd7087e80547d2338388815bda16b
+  archived_dimensions: 795x240
+- file: 02-Repository-기반-예외-변환-후.webp
+  context: @Repository 기반 예외 변환 후
+  source_image_path: https://blog.kakaocdn.net/dna/bKycjG/dJMcafHqWcm/AAAAAAAAAAAAAAAAAAAAAOytXJ6ndWp0seTfUrD5im2B07XOj_IdiVzCSiJ0Rw2K/img.png
+  source_content_type: image/png
+  source_sha256: 9cfcd0f73db76bc8b42b93532131f23f0e9b48849735553496a48f2663e5a399
+  archived_dimensions: 893x320

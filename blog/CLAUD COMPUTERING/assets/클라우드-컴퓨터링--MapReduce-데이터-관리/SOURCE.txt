@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/163
+
+selected_images:
+- file: 01-MapReduce-데이터-지역성-최적화-Data-Locality-Optimization.webp
+  context: MapReduce 데이터 지역성 최적화 (Data Locality Optimization)
+  source_image_path: https://blog.kakaocdn.net/dna/bI76kC/dJMb9LDXMfU/AAAAAAAAAAAAAAAAAAAAAFzA6FI8KFq1AGuJfB0W4ZtkurvqW9HmB7RXFzu_86C3/img.png
+  source_content_type: image/png
+  source_sha256: 1c3dd4b9925afa4de18d9a0ab1a52a47f8b17b11725a0129629eef1bef418dd9
+  archived_dimensions: 781x898
+- file: 02-Hadoop-1.x-실행-구조-및-흐름.webp
+  context: Hadoop 1.x 실행 구조 및 흐름
+  source_image_path: https://blog.kakaocdn.net/dna/mWPON/dJMb9N2QQzn/AAAAAAAAAAAAAAAAAAAAAMRSbA_1FwmnATwXzGjMghyUziGM_TD1YIR0XUOcAhr1/img.png
+  source_content_type: image/png
+  source_sha256: 816f4d7ca219319b2859f4302e047635c8e4575fca974ea099589c9fd179e60e
+  archived_dimensions: 1113x901

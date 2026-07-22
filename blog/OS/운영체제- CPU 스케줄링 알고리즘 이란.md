@@ -217,6 +217,14 @@ Response Ratio = (대기시간+CPU 버스트)\ CPU 버스트
 
 ### 8. 표 정리
 
+## 핵심 이미지
+
+![1. FCFS (First-Come First-Served)](assets/운영체제--CPU-스케줄링-알고리즘-이란/01-1.-FCFS-First-Come-First-Served.webp)
+
+![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/02-2.-SJF-Shortest-Job-First.webp)
+
+![2. SJF (Shortest Job First)](assets/운영체제--CPU-스케줄링-알고리즘-이란/03-2.-SJF-Shortest-Job-First.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

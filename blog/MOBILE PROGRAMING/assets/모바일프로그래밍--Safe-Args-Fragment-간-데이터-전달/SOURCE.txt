@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/193
+
+selected_images:
+- file: 01-1.-Safe-Args-Fragment-간-데이터-전달.webp
+  context: 1. Safe Args (Fragment 간 데이터 전달)
+  source_image_path: https://blog.kakaocdn.net/dna/da4bv5/dJMcabvRfYt/AAAAAAAAAAAAAAAAAAAAAIq6Gvt8fx1h9JwhdvRmwXnirhmPeRuR-Fjy3vIW4Jtz/img.png
+  source_content_type: image/png
+  source_sha256: ec9a96a4cda44447caf82ef3f19c20093c7fec05654127d9352b2529d11b4c47
+  archived_dimensions: 1111x652
+- file: 02-1.-Safe-Args-Fragment-간-데이터-전달.webp
+  context: 1. Safe Args (Fragment 간 데이터 전달)
+  source_image_path: https://blog.kakaocdn.net/dna/dhI9GW/dJMcagDWyZ9/AAAAAAAAAAAAAAAAAAAAAMLIC0Wg5WLxAntYFAMmVbkfU_9WwcJHbQGKR8ZnA6wW/img.png
+  source_content_type: image/png
+  source_sha256: 6259d8d44af202a5332c98d50002da24ac36e7609c56ae4cb14db8fa174cb92b
+  archived_dimensions: 921x757
+- file: 03-1.-Safe-Args-Fragment-간-데이터-전달.webp
+  context: 1. Safe Args (Fragment 간 데이터 전달)
+  source_image_path: https://blog.kakaocdn.net/dna/cjt7CH/dJMcadtDaW9/AAAAAAAAAAAAAAAAAAAAANRSpFxniiZLm3oXvV5exKwSMcaExc7BeyKGRUN5QlRl/img.png
+  source_content_type: image/png
+  source_sha256: cc9e9f2f42b8e34d49583257fe4c3853eb54488cb2cdf1cfd01e8e8f5f7f719e
+  archived_dimensions: 1329x484

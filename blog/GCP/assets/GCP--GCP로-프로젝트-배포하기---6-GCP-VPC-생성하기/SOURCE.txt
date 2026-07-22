@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/87
+
+selected_images:
+- file: 01-VPC-네트워크-생성-및-설정-방법-방화벽의-경우는-나중에-추가-예정.webp
+  context: VPC 네트워크 생성 및 설정 방법(방화벽의 경우는 나중에 추가 예정)
+  source_image_path: https://blog.kakaocdn.net/dna/whRsG/btsOdF2fQRU/AAAAAAAAAAAAAAAAAAAAAH6_PTYrVE18cVg5XpTXpdnFqTbh5tq4QntbQLeinRUE/img.png
+  source_content_type: image/png
+  source_sha256: f01e31f5579ddc2973f967192ed8768468d02716a7c5e5c473fed2222fc75dfc
+  archived_dimensions: 1600x809

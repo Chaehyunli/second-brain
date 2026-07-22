@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/239
+
+selected_images:
+- file: 01-사용자-서버-상태-유지-쿠키-Cookies.webp
+  context: 사용자/서버 상태 유지: 쿠키 (Cookies)
+  source_image_path: https://blog.kakaocdn.net/dna/bnKsE5/dJMcaiWYV3e/AAAAAAAAAAAAAAAAAAAAAHg09diRg5HJu32hxsLEkJAAeXRV2t8bgxOTEdwbAnP0/img.png
+  source_content_type: image/png
+  source_sha256: b2b4d368ae13d2f63a52a0be4469b34aea1fe7f187f5760804a85f23f666691a
+  archived_dimensions: 986x583
+- file: 02-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp
+  context: 웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)
+  source_image_path: https://blog.kakaocdn.net/dna/coc3fC/dJMcahqhYcA/AAAAAAAAAAAAAAAAAAAAAGt687Yy4HFJVFjdE1g52fmZmJGszKUggToKyZK9xK-f/img.png
+  source_content_type: image/png
+  source_sha256: fa8bff09b645a75cae69b082ad65c29ec56a8312b7950f6e6d031edf70efa067
+  archived_dimensions: 578x390
+- file: 03-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp
+  context: 웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)
+  source_image_path: https://blog.kakaocdn.net/dna/bbCrJx/dJMcaf63rMu/AAAAAAAAAAAAAAAAAAAAAHjhAb3e6kqOqQAQb293SmVSeuZ1dr2wN1R3MIvQ5qnb/img.png
+  source_content_type: image/png
+  source_sha256: fcff7d6ea5bb290d9f93c20bd466d8cb8ecb82cac31c123dc0823d6f628ae144
+  archived_dimensions: 1096x532

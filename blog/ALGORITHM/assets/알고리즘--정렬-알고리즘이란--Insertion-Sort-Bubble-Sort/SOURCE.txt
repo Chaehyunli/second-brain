@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/115
+
+selected_images:
+- file: 01-정렬-알고리즘의-종류.webp
+  context: 정렬 알고리즘의 종류
+  source_image_path: https://blog.kakaocdn.net/dna/bwcZfZ/btsQmYdLzGf/AAAAAAAAAAAAAAAAAAAAAN1ydp9U2Yeur-AeUcyAq482nSISGs8k7JkApj2aND4m/img.png
+  source_content_type: image/png
+  source_sha256: 0b743c1b29f97ee937327cbc95e1a7ca6e874e04ef84039169d3b362754d033c
+  archived_dimensions: 1362x601
+- file: 02-삽입-정렬-Insertion-Sort.webp
+  context: 삽입 정렬 (Insertion Sort)
+  source_image_path: https://blog.kakaocdn.net/dna/1ECXO/btsQnSjQv58/AAAAAAAAAAAAAAAAAAAAAPHS9gagG6rr8BL05Bs7Ho3FbOpbh-RCA195QncZGe2b/img.png
+  source_content_type: image/png
+  source_sha256: 5aea0cc0ecaa3ee593b91e2603de321b8b003dbbb479d6e2cf9f6c8bb54fc655
+  archived_dimensions: 1404x367
+- file: 03-삽입-정렬-Insertion-Sort.webp
+  context: 삽입 정렬 (Insertion Sort)
+  source_image_path: https://blog.kakaocdn.net/dna/TMBGl/btsQnQzwf88/AAAAAAAAAAAAAAAAAAAAADMfUYOPZpOfzXw1amdGYK9MrwsxXpcFoSj5HHCFxx5m/img.png
+  source_content_type: image/png
+  source_sha256: 85b69e76cc63a26e9dbb4e86d8aed8097ddcf1a5a40978753fc0b8f2d56ca767
+  archived_dimensions: 981x219

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/178
+
+selected_images:
+- file: 01-3.-트랜잭션-상태-Transaction-State.webp
+  context: 3. 트랜잭션 상태 (Transaction State)
+  source_image_path: https://blog.kakaocdn.net/dna/Z5Ubs/dJMcaf5X6Vl/AAAAAAAAAAAAAAAAAAAAADGpiympuKS76guiE70Y1vhUAByD32ObeXMETBc5ytG6/img.png
+  source_content_type: image/png
+  source_sha256: 32985d1b2f0348d6c6162874cae9527958fa567d5b5062ad273165408fb4d9f3
+  archived_dimensions: 751x535
+- file: 02-5.-스케줄-Schedules.webp
+  context: 5. 스케줄 (Schedules)
+  source_image_path: https://blog.kakaocdn.net/dna/bZZUmR/dJMcag4SpJP/AAAAAAAAAAAAAAAAAAAAAEEoATycyKMI6_Pzrx0Gm9etLGd62uHsg5lAHxgEFMNB/img.png
+  source_content_type: image/png
+  source_sha256: 9869e6f78d1951e781e71af58d5b0cb13ff4505a16e6a24eb679bd83da3bc9e9
+  archived_dimensions: 502x616
+- file: 03-5.-스케줄-Schedules.webp
+  context: 5. 스케줄 (Schedules)
+  source_image_path: https://blog.kakaocdn.net/dna/bGZqbq/dJMcaj1Bmu4/AAAAAAAAAAAAAAAAAAAAANxDI7Noj2RaJ2wWW2cgjk39wTP7Hp6qfiGyYbbYvz-L/img.png
+  source_content_type: image/png
+  source_sha256: d2924cc92f1a86dc7338ddf70071212f98708a84d2ae455963b0dc108c23257b
+  archived_dimensions: 466x588

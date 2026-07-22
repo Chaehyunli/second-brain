@@ -181,6 +181,14 @@ print(f"정렬 후: {my_list}")
 
 최악: O(n²)
 
+## 핵심 이미지
+
+![정렬 알고리즘의 종류](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/01-정렬-알고리즘의-종류.webp)
+
+![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/02-삽입-정렬-Insertion-Sort.webp)
+
+![삽입 정렬 (Insertion Sort)](assets/알고리즘--정렬-알고리즘이란--Insertion-Sort-Bubble-Sort/03-삽입-정렬-Insertion-Sort.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

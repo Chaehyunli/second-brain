@@ -414,6 +414,14 @@ class MainActivity : AppCompatActivity() {
 </LinearLayout>
 ```
 
+## 핵심 이미지
+
+![2. 대화상자 (AlertDialog)](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/01-2.-대화상자-AlertDialog.webp)
+
+![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/02-3.-목록-형태의-대화상자.webp)
+
+![3. 목록 형태의 대화상자](assets/모바일-프로그래밍--토스트-Toast-와-대화-상자-AlertDialog/03-3.-목록-형태의-대화상자.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

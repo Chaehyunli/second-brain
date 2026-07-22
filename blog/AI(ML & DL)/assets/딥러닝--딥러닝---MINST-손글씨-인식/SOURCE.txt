@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/139
+
+selected_images:
+- file: 01-1단계-데이터-준비하기---MNIST란.webp
+  context: 1단계: 데이터 준비하기 - MNIST란 ?
+  source_image_path: https://blog.kakaocdn.net/dna/d463LK/btsQL6aJoLN/AAAAAAAAAAAAAAAAAAAAAOs82DmrmI8b9hTDD0c-KtxfZXh0yL9O2kj4YRLjyNaJ/img.png
+  source_content_type: image/png
+  source_sha256: 88737e0e26fd413a80b8c2dc8b4caa01ed5f4fa601cde8e24d3594f42651f627
+  archived_dimensions: 1092x643
+- file: 02-2단계-신경망-모델-만들기.webp
+  context: 2단계: 신경망 모델 만들기
+  source_image_path: https://blog.kakaocdn.net/dna/w7qU9/btsQK8tjItb/AAAAAAAAAAAAAAAAAAAAABc6jt3eqmFIAl3hg-vpZJlHZoqw5oVNcFB3l1sKk7qP/img.png
+  source_content_type: image/png
+  source_sha256: a4fd8afecd7e942b25712cbf5398188ddca0a4a948243efa946b267c2cb7d53f
+  archived_dimensions: 427x643
+- file: 03-3단계-모델-컴파일하기-학습-과정-설정.webp
+  context: 3단계: 모델 컴파일하기 (학습 과정 설정)
+  source_image_path: https://blog.kakaocdn.net/dna/uYVH5/btsQJYLJUpo/AAAAAAAAAAAAAAAAAAAAAKyCrdjO859s8UgQFbjO5aFEhfLquRhO0pYckeJtEZXj/img.png
+  source_content_type: image/png
+  source_sha256: 938127a5e6edd757ed0e36414715063e73af6f228d19c69c1a3f3e2b843c02a9
+  archived_dimensions: 1455x748

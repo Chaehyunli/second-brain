@@ -255,6 +255,10 @@ Non-EVM은 빠른 속도로 처리가 가능하고 높은 확장성을 가지지
 
 모든 자산은 자본 자산(Capital Asset), 원자재(Commodity), 가치 저장 수단(Store of Value) 세가지 그룹으로 구분 가능
 
+## 핵심 이미지
+
+![8) 계정 유형](assets/블록체인--이더리움-Ethereum-이란/01-8-계정-유형.webp)
+
 ## 관련 글
 
 - [[blog/BLOCKCHAIN/index|BLOCKCHAIN]]

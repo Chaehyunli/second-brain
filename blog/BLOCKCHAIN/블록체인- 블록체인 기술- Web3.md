@@ -55,6 +55,10 @@ Web3 브라우저 중에 Brave는 기존 Web2 브라우저와 달리 블록체�
 
 메타데이터, 콘텐츠 해시, 암호화폐 주소 등도 ENS를 통해 연결 가능
 
+## 핵심 이미지
+
+![1. Web3란 무엇인가?](assets/블록체인--블록체인-기술--Web3/01-1.-Web3란-무엇인가.webp)
+
 ## 관련 글
 
 - [[blog/BLOCKCHAIN/index|BLOCKCHAIN]]

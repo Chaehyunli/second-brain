@@ -143,6 +143,14 @@ Dynamic Programming: 하위 쿼리(subset)의 최적 계획을 한 번만 계산
 
 공통 하위 표현식 공유: 동일한 하위 표현식(subtree)을 포인터로 공유하여 메모리 공간 절약
 
+## 핵심 이미지
+
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/01-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/02-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
+![관계 표현식 변환 (Transformation of Relational Expressions)](assets/데이터베이스-설계--쿼리-최적화-Query-Optimization/03-관계-표현식-변환-Transformation-of-Relational-Expressions.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

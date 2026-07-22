@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/9
+
+selected_images:
+- file: 01-3-명령어-실행-순서-예시.webp
+  context: 3) 명령어 실행 순서(예시)
+  source_image_path: https://blog.kakaocdn.net/dna/b7erxd/btsMFmvcqsf/AAAAAAAAAAAAAAAAAAAAABb89KeIHnU5mLXtdLjaIt6HFHrWu8TdMSV7a5NcmIkE/img.png
+  source_content_type: image/png
+  source_sha256: 963ece069826a439361a750291f03afde2f11fed1ad62320cf479c6d6ef0c8e8
+  archived_dimensions: 840x772

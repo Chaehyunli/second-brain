@@ -157,6 +157,14 @@ BFS는 현재 노드와 가까운 레벨의 노드들을 먼저 방문하는 방
 
 레벨 순서(Level Order) 순회라고도 불리며, 큐(Queue)를 이용하여 구현할 수 있음
 
+## 핵심 이미지
+
+![1. 이진 탐색 트리(BST)란 무엇일까요?](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/01-1.-이진-탐색-트리-BST-란-무엇일까요.webp)
+
+![3. 트리 순회(Traversal) 방법](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/02-3.-트리-순회-Traversal-방법.webp)
+
+![4. 깊이 우선 탐색(DFS) vs. 너비 우선 탐색(BFS)](assets/알고리즘--이진-탐색-트리-Binary-Search-Tree/03-4.-깊이-우선-탐색-DFS-vs.-너비-우선-탐색-BFS.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

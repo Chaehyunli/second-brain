@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/191
+
+selected_images:
+- file: 01-4.-다중-입도-잠금-규약-Rules.webp
+  context: 4. 다중 입도 잠금 규약 (Rules)
+  source_image_path: https://blog.kakaocdn.net/dna/bvLyIz/dJMcaihp6jS/AAAAAAAAAAAAAAAAAAAAANoVwCBMBgfqSmGYIdXlx-4djthgZu-Ix7I66bq72tOg/img.png
+  source_content_type: image/png
+  source_sha256: cd58fdc862957ff2cee010ffdb35d3eeca7b1923736e2b758629bba1a36bcd26
+  archived_dimensions: 1348x864
+- file: 02-5.-스냅샷-격리-Snapshot-Isolation.webp
+  context: 5. 스냅샷 격리 (Snapshot Isolation)
+  source_image_path: https://blog.kakaocdn.net/dna/bQQnJu/dJMcacIg2bL/AAAAAAAAAAAAAAAAAAAAAFwxbBDgD-qn-GIAxGHIO4j_FK9U63rsNQA7qIKLeWeA/img.png
+  source_content_type: image/png
+  source_sha256: f3610e1efb70a508f5cda4f93cbc489224428b8c87f8261d0fff7c1389c2c023
+  archived_dimensions: 610x867

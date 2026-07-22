@@ -149,6 +149,10 @@ BCNF는 중복 제거라는 이상에 가장 가깝지만 종속성 보존을 �
 
 데이터베이스 설계 시 이 두 정규형의 장단점을 이해하고 상황에 맞는 적절한 정규형을 선택하는 것이 중요
 
+## 핵심 이미지
+
+![4. BCNF vs. 3NF: 핵심 비교](assets/데이터베이스-설계--데이터베이스의-정규화-Normalization-란--2---BCNF-와-3NF/01-4.-BCNF-vs.-3NF-핵심-비교.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

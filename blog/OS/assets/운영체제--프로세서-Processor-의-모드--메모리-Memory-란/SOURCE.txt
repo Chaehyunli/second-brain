@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/13
+
+selected_images:
+- file: 01-2.-메모리-Memory-란.webp
+  context: 2. 메모리(Memory) 란?
+  source_image_path: https://blog.kakaocdn.net/dna/PG1L7/btsMHQQEinp/AAAAAAAAAAAAAAAAAAAAAMcB8L6RLEv2VH76TDOMQsJ8KooW01NcDD0RLzKZqTuq/img.png
+  source_content_type: image/png
+  source_sha256: 93bf5f2897dd35759aae679c89e326fb7986b9c20076753a4d83545c401c36fe
+  archived_dimensions: 1273x733

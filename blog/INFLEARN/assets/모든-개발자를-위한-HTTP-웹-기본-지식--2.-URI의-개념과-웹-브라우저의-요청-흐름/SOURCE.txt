@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/242
+
+selected_images:
+- file: 01-1.-URI-Uniform-Resource-Identifier-의-이해.webp
+  context: 1. URI (Uniform Resource Identifier)의 이해
+  source_image_path: https://blog.kakaocdn.net/dna/b1LGD3/dJMcagkBMz1/AAAAAAAAAAAAAAAAAAAAADQJIS1qc_QWI-O3GkLurpTSQNNc8KXi6eDAYht6fdY1/img.png
+  source_content_type: image/png
+  source_sha256: 0dc6dbb9a89f205e042f40a022d80779b8517bea5317d89b5ceb3fff9797ba71
+  archived_dimensions: 887x531
+- file: 02-2.-웹-브라우저-요청-흐름.webp
+  context: 2. 웹 브라우저 요청 흐름
+  source_image_path: https://blog.kakaocdn.net/dna/0krH6/dJMcac3zlG4/AAAAAAAAAAAAAAAAAAAAAJnZv0JcVjjjwKlTR6tPcBA57U0mCnL9GUfZ05wUxRND/img.png
+  source_content_type: image/png
+  source_sha256: 7d57c6af52f2005ebced56b2b6d2e20eb4964fb4e629ac0a352e422623c6fde1
+  archived_dimensions: 1591x802

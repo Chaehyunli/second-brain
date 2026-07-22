@@ -119,6 +119,14 @@ long long factorial_iter (int n) {
 
 - 이를 통해 재귀의 단점인 스택 오버플로를 방지할 수 있음
 
+## 핵심 이미지
+
+![재귀(Recursion)란 무엇일까?](assets/알고리즘--재귀란--일반-재귀-vs-꼬리-재귀/01-재귀-Recursion-란-무엇일까.webp)
+
+![재귀(Recursion)란 무엇일까?](assets/알고리즘--재귀란--일반-재귀-vs-꼬리-재귀/02-재귀-Recursion-란-무엇일까.webp)
+
+![재귀(Recursion)란 무엇일까?](assets/알고리즘--재귀란--일반-재귀-vs-꼬리-재귀/03-재귀-Recursion-란-무엇일까.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

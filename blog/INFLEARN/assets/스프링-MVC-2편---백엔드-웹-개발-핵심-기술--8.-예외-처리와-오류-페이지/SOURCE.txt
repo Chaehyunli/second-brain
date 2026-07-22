@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/290
+
+selected_images:
+- file: 01-sendError의-흐름.webp
+  context: sendError의 흐름
+  source_image_path: https://blog.kakaocdn.net/dna/OLj0B/dJMb99NGPCV/AAAAAAAAAAAAAAAAAAAAAC9UT9Qg8Yk9uloJGR12NAmLX58PeB2GzQq1bdsML40j/img.png
+  source_content_type: image/png
+  source_sha256: 07b1da101caa057b5133531cd5fe3db3e0ee3232eb86cdc47d1b7ba36ee0cfd6
+  archived_dimensions: 769x109
+- file: 02-1-작동-흐름-요약.webp
+  context: 1) 작동 흐름 요약
+  source_image_path: https://blog.kakaocdn.net/dna/Sd7qM/dJMcahdYTR6/AAAAAAAAAAAAAAAAAAAAAKoIa9kE-lZqE0LV9refXh9gYuk9RrGYkBhj76mc7-Nu/img.png
+  source_content_type: image/png
+  source_sha256: e42dbea1a0c0fbf2fca90d817e5d138460af12279fb90f9c3936143b52890c0c
+  archived_dimensions: 729x106
+- file: 03-1-작동-흐름-요약.webp
+  context: 1) 작동 흐름 요약
+  source_image_path: https://blog.kakaocdn.net/dna/bMdGZz/dJMcaa0bkp6/AAAAAAAAAAAAAAAAAAAAAKB69JLgh4Nb96DJ_993eOMDJCBFbVdmamWRiofjwmJ9/img.png
+  source_content_type: image/png
+  source_sha256: 4d48806e6015062a18eb4077543ae2dee3bc917f20be876ae660b5d205f96c25
+  archived_dimensions: 765x111

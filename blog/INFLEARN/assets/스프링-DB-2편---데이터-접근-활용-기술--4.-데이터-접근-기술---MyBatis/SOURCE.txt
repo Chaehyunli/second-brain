@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/303
+
+selected_images:
+- file: 01-5.-MyBatis-적용-3---매퍼-구현체-분석.webp
+  context: 5. MyBatis 적용 3 - 매퍼 구현체 분석
+  source_image_path: https://blog.kakaocdn.net/dna/cmnYGg/dJMcabSstNG/AAAAAAAAAAAAAAAAAAAAAK7x1CMurwz-vUyVW9uYtSKa1kPG4jLYGfDYhK2dLGeT/img.png
+  source_content_type: image/png
+  source_sha256: 0b20582d84a2ecf7a1905aadb9731f94916a030afbaa73210430dd685476be93
+  archived_dimensions: 880x375

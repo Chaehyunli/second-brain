@@ -182,6 +182,14 @@ Dense 모델 파라미터 수: 407,050
 
 CNN 모델 파라미터 수: 131,242
 
+## 핵심 이미지
+
+![CNN 프로그래밍 (Keras API)](assets/딥러닝--CNN/01-CNN-프로그래밍-Keras-API.webp)
+
+![CNN 프로그래밍 (Keras API)](assets/딥러닝--CNN/02-CNN-프로그래밍-Keras-API.webp)
+
+![예제: MNIST with CNN](assets/딥러닝--CNN/03-예제-MNIST-with-CNN.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

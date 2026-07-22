@@ -173,6 +173,14 @@ TCP는 GBN과 SR의 장점을 섞은 하이브리드 형태입니다.
 
 ACK 수신: unACKed 세그먼트가 남았다면 타이머 다시 시작, 다 받았다면 종료.
 
+## 핵심 이미지
+
+![계산 예시 (1 Gbps 링크, 15ms 편도 지연, 8000비트 패킷)](assets/네트워크--rdt-3.0-과-TCP/01-계산-예시-1-Gbps-링크-15ms-편도-지연-8000비트-패킷.webp)
+
+![특징](assets/네트워크--rdt-3.0-과-TCP/02-특징.webp)
+
+![수신자 (Receiver)](assets/네트워크--rdt-3.0-과-TCP/03-수신자-Receiver.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

@@ -154,6 +154,12 @@ X_train_scaled = scaler.fit_transform(X_train.astype(np.float64))
 
 ### 9. 정리
 
+## 핵심 이미지
+
+![3. 이진 분류기를 활용한 다중 클래스 분류 전략](assets/기계학습--ML-프로젝트---분류-Classfication-모델-4/01-3.-이진-분류기를-활용한-다중-클래스-분류-전략.webp)
+
+![3. 이진 분류기를 활용한 다중 클래스 분류 전략](assets/기계학습--ML-프로젝트---분류-Classfication-모델-4/02-3.-이진-분류기를-활용한-다중-클래스-분류-전략.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

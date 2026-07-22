@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/183
+
+selected_images:
+- file: 01-DynamicProgramming알고리즘.webp
+  context: DynamicProgramming알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/UXRaH/dJMcaboZCGf/AAAAAAAAAAAAAAAAAAAAALGxaRX-WEpIYzAIRtrhQHu6YLgoDEyY-pcsCMOE6ykF/img.png
+  source_content_type: image/png
+  source_sha256: 3e61743ee774d8962aa2316d2009f3c992cf1fa20ba0ac6e5e2b1ba26163dec9
+  archived_dimensions: 1039x469
+- file: 02-DynamicProgramming알고리즘.webp
+  context: DynamicProgramming알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/zlEfv/dJMcadmOgyR/AAAAAAAAAAAAAAAAAAAAABd4QCx-NP1B4TrkYj5RYUL55BvnaUMGLX8sUipB2m6Z/img.png
+  source_content_type: image/png
+  source_sha256: d6d5216e3637e5d3898ec67aa568d87d190d674a9225fce34739386da18c7e66
+  archived_dimensions: 1384x688
+- file: 03-DynamicProgramming알고리즘.webp
+  context: DynamicProgramming알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/bp3XX9/dJMcaesuel5/AAAAAAAAAAAAAAAAAAAAAHqIsX2FE4q0N1DKicvE5sneDbACKrYSJF44aojZxy1Q/img.png
+  source_content_type: image/png
+  source_sha256: 1c4714d815c3ad3df6d3f113b7711540bd26aec7b11c52e0e39a2945a84de4a7
+  archived_dimensions: 1177x754

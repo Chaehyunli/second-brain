@@ -79,6 +79,12 @@ https://ch010104.tistory.com/18
 
 기억장치 할당 및 해제: 프로세스 실행을 위해 메모리 할당 및 해제.
 
+## 핵심 이미지
+
+![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/01-1.-시스템-호출-System-Call-이란.webp)
+
+![1. 시스템 호출(System Call) 이란?](assets/운영체제--시스템-호출-System-Call-과-운영체제/02-1.-시스템-호출-System-Call-이란.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

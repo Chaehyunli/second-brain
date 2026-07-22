@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/50
+
+selected_images:
+- file: 01-1.-인터럽트-사이클-Interrupt-Cycle.webp
+  context: 1. 인터럽트 사이클 (Interrupt Cycle)
+  source_image_path: https://blog.kakaocdn.net/dna/IUX72/btsNcUFXOEG/AAAAAAAAAAAAAAAAAAAAAG8d3kSj2uSh28kWd-pfFS6LA0p-ttm-_TtALF9V2Fc9/img.png
+  source_content_type: image/png
+  source_sha256: 1dfb889a3b42c6da1027cac0af87715905235e604cd10b8498244c993b34ba99
+  archived_dimensions: 565x313
+- file: 02-1.-인터럽트-사이클-Interrupt-Cycle.webp
+  context: 1. 인터럽트 사이클 (Interrupt Cycle)
+  source_image_path: https://blog.kakaocdn.net/dna/nVkRv/btsNdkYm2e0/AAAAAAAAAAAAAAAAAAAAAFYhBnR8KkYTPzhROyxjMypTWYXVA1StgxaOgtMJifdq/img.png
+  source_content_type: image/png
+  source_sha256: d629b747ddaf129f908178848d91090e176dc8c61ac688d82ad3e4b0d598a90a
+  archived_dimensions: 469x697
+- file: 03-1.-인터럽트-사이클-Interrupt-Cycle.webp
+  context: 1. 인터럽트 사이클 (Interrupt Cycle)
+  source_image_path: https://blog.kakaocdn.net/dna/DXGrz/btsNdpZM0i3/AAAAAAAAAAAAAAAAAAAAACrU7anvhBzwAgrSflKp0QhULhuDL6pteeBMkWBctmjQ/img.png
+  source_content_type: image/png
+  source_sha256: d5e6f7d03350f03b661d297bf38e2a452f660a48eff197f851d8c10a78a3709b
+  archived_dimensions: 772x349

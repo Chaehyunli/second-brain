@@ -156,6 +156,12 @@ APSP 계산 (Dijkstra):
 
 총합: $O(VE + VE \log V)
 
+## 핵심 이미지
+
+![플로이드-워셜 (Floyd-Warshall) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/01-플로이드-워셜-Floyd-Warshall-알고리즘.webp)
+
+![존슨 (Johnson) 알고리즘](assets/알고리즘-플로이드-워셜-Floyd-Warshall-알고리즘과-존슨-Johnson-알고리즘/02-존슨-Johnson-알고리즘.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

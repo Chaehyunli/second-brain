@@ -117,6 +117,14 @@ Fractional Knapsack (부분 배낭 문제): 물건을 쪼갤 수 있음
 
 이 과정을 통해 빈도수가 높은 문자는 트리의 루트에 가까워져 짧은 코드를, 빈도수가 낮은 문자는 트리의 깊은 곳에 위치하여 긴 코드를 갖게 됨
 
+## 핵심 이미지
+
+![A* (A-Star) 알고리즘 (vs. 다익스트라)](assets/알고리즘--A--A-Star-알고리즘과-Greedy-탐욕-알고리즘/01-A-A-Star-알고리즘-vs.-다익스트라.webp)
+
+![A* (A-Star) 알고리즘 (vs. 다익스트라)](assets/알고리즘--A--A-Star-알고리즘과-Greedy-탐욕-알고리즘/02-A-A-Star-알고리즘-vs.-다익스트라.webp)
+
+![A* (A-Star) 알고리즘 (vs. 다익스트라)](assets/알고리즘--A--A-Star-알고리즘과-Greedy-탐욕-알고리즘/03-A-A-Star-알고리즘-vs.-다익스트라.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

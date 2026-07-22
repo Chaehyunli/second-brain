@@ -279,6 +279,14 @@ y는 중간 → 10 단위 증가
 
 z는 가장 느리게 → 1 단위 증가
 
+## 핵심 이미지
+
+![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/01-난수-생성-rand-vs-randn.webp)
+
+![난수 생성: rand vs randn](assets/기계학습--Python-NumPy란---1/02-난수-생성-rand-vs-randn.webp)
+
+![np.fromfunction(): 함수 기반 배열 생성](assets/기계학습--Python-NumPy란---1/03-np.fromfunction-함수-기반-배열-생성.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

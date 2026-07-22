@@ -136,6 +136,12 @@ recalls: 각 threshold에서의 재현율
 
 이 데이터를 기반으로 최적의 threshold를 선택할 수 있습니다. (예: 특정 Precision 또는 Recall 기준을 만족하는 threshold 탐색)
 
+## 핵심 이미지
+
+![1. F1 Score란?](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/01-1.-F1-Score란.webp)
+
+![3. 정밀도와 재현율의 Trade-off](assets/기계학습--ML-프로젝트---분류-Classfication-모델-2/02-3.-정밀도와-재현율의-Trade-off.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

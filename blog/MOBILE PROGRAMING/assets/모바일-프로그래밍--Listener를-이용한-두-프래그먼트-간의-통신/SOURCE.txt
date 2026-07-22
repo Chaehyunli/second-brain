@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/189
+
+selected_images:
+- file: 01-1.-텍스트-전달-앱-Interface를-이용한-통신.webp
+  context: 1. 텍스트 전달 앱: Interface를 이용한 통신
+  source_image_path: https://blog.kakaocdn.net/dna/dIAT6X/dJMcagw7w3q/AAAAAAAAAAAAAAAAAAAAAAEYdYStWEI2NwMMnzsSeYcBcIkVnT2C-WpZQDyamODf/img.png
+  source_content_type: image/png
+  source_sha256: 12cc871956f965d037c92922dea67f65fff484a62c5109c24665b09257f6644e
+  archived_dimensions: 520x811
+- file: 02-2.-카운트-앱-Interface를-이용한-통신.webp
+  context: 2. 카운트 앱: Interface를 이용한 통신
+  source_image_path: https://blog.kakaocdn.net/dna/qSXNo/dJMcafSv7ei/AAAAAAAAAAAAAAAAAAAAACJTkXfbWEOviP1e8mhvGKu0OHJzf3jEpXeH2W0uqG9E/img.png
+  source_content_type: image/png
+  source_sha256: 18cae29914c871a040fe56c123678e80f599879a93c384ae57a10f43799136ba
+  archived_dimensions: 526x627

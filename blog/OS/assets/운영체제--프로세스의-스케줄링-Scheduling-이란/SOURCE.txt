@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/33
+
+selected_images:
+- file: 01-1-문맥-교환-Context-Switch.webp
+  context: 1️⃣ 문맥 교환 (Context Switch)
+  source_image_path: https://blog.kakaocdn.net/dna/wN4mz/btsM2e4NjD5/AAAAAAAAAAAAAAAAAAAAAMmWDldKDgHy3Q8U6NUFj1m-qH2PHLaa_z8_7v4xOJ5K/img.png
+  source_content_type: image/png
+  source_sha256: 11da1a0c5ed1c7eb412dd27e9c0449eff95daa1b4ae2a9b8b200a50a14a51fe2
+  archived_dimensions: 1132x790
+- file: 02-3-스케줄링-큐-Scheduling-Queue.webp
+  context: 3️⃣ 스케줄링 큐 (Scheduling Queue)
+  source_image_path: https://blog.kakaocdn.net/dna/buj0DQ/btsM3ieEhHv/AAAAAAAAAAAAAAAAAAAAAFzyeBXQUMTWADI5efizBoF_bUQGNXkOYmDUzi8c4MM_/img.png
+  source_content_type: image/png
+  source_sha256: 41dfc26ab2f6b19e4c21940fa82b6ce439b9abca8768387f4a7c03ed4c78936d
+  archived_dimensions: 1183x856
+- file: 03-4-프로세스-상태와-큐-이동.webp
+  context: 4️⃣ 프로세스 상태와 큐 이동
+  source_image_path: https://blog.kakaocdn.net/dna/CPmAl/btsM3qcAs9z/AAAAAAAAAAAAAAAAAAAAAFTLheHQVia3H8DnXSnOpdH2BueRQFUc8qbSAvsE-HqC/img.png
+  source_content_type: image/png
+  source_sha256: 0272927dd712d84c179c8380ff89ac0a246bb216f64f0a533fe7d7099851a231
+  archived_dimensions: 1357x685

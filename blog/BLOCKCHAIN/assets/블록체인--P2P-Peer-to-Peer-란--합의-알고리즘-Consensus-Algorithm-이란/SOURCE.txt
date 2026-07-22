@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/12
+
+selected_images:
+- file: 01-2.-합의-알고리즘-Consensus-Algorithm-이란.webp
+  context: 2. 합의 알고리즘 (Consensus Algorithm) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/k5ar5/btsMFGIphZM/AAAAAAAAAAAAAAAAAAAAANGTxjyWsnDCMskIQ7ZSMP7MMSW5ZfsbaDC6i_8nPeNr/img.png
+  source_content_type: image/png
+  source_sha256: 17b8073d948a3976a67673f76b5441a13a7f2b4a12cf1f2b221517b24e2fde0a
+  archived_dimensions: 1132x391

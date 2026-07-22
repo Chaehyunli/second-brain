@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/281
+
+selected_images:
+- file: 01-1-기본-논리.webp
+  context: 1) 기본 논리
+  source_image_path: https://blog.kakaocdn.net/dna/cZYRUA/dJMcabqTw78/AAAAAAAAAAAAAAAAAAAAAFDqxJFNdokNNGa_AbfDk4lsPL45jLcm5UHnOdOjn3wO/img.png
+  source_content_type: image/png
+  source_sha256: afbab5aa5d79dd0cd28cadc8b0eb7ea544092bec637898b94bdd2eee8523156c
+  archived_dimensions: 738x390
+- file: 02-단일-비트-패리티-Single-Bit-Parity.webp
+  context: ① 단일 비트 패리티 (Single Bit Parity)
+  source_image_path: https://blog.kakaocdn.net/dna/cK2EUg/dJMcaicvPZG/AAAAAAAAAAAAAAAAAAAAAF6kBKuxybPJtPBE_EeQuIfYrl7XbabRrigkqenzDkSH/img.png
+  source_content_type: image/png
+  source_sha256: f0cfe2b41c69a4b6690c4339621c2514967a0ee4511b78221a92f089ec2f3f3a
+  archived_dimensions: 348x318
+- file: 03-2차원-비트-패리티-Two-dimensional-Bit-Parity.webp
+  context: ② 2차원 비트 패리티 (Two-dimensional Bit Parity)
+  source_image_path: https://blog.kakaocdn.net/dna/c50SEu/dJMcaijeaik/AAAAAAAAAAAAAAAAAAAAAA63X7mGbHgrj7LmyvG-UvM_KqkRpqY3sHL21EnAAsIv/img.png
+  source_content_type: image/png
+  source_sha256: c7d7edeff16288d9d124ab0b699b5a26f368e45bfcb192dbe20aeca08ac6f8ca
+  archived_dimensions: 772x473

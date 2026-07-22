@@ -123,6 +123,14 @@ HOLB (Head-of-Line Blocking): 패킷 하나가 막히면 뒤의 모든 데이터
 
 Connection ID: IP 주소가 바뀌어도(Wi-Fi ↔ LTE) 연결이 끊기지 않는 이동성을 제공합니다.
 
+## 핵심 이미지
+
+![전송 속도 공식](assets/네트워크--TCP-혼잡-제어-및-전송/01-전송-속도-공식.webp)
+
+![① Slow Start (슬로우 스타트)](assets/네트워크--TCP-혼잡-제어-및-전송/02-Slow-Start-슬로우-스타트.webp)
+
+![② Congestion Avoidance (혼잡 회피 - AIMD)](assets/네트워크--TCP-혼잡-제어-및-전송/03-Congestion-Avoidance-혼잡-회피---AIMD.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

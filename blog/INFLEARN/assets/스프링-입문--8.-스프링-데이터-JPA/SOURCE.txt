@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/211
+
+selected_images:
+- file: 01-1.-핵심-구조-JpaRepository-상속.webp
+  context: 1. 핵심 구조: JpaRepository 상속
+  source_image_path: https://blog.kakaocdn.net/dna/4BBkm/dJMcajuAsr8/AAAAAAAAAAAAAAAAAAAAAHIxNQ3ked0TJ51O7Exd30DoJor75uTfRRKFetjjOQsN/img.png
+  source_content_type: image/png
+  source_sha256: dfd407e52b8cab643cdbe05b0338a279366951b536bb8ca588a7d83f275bbc75
+  archived_dimensions: 891x1206

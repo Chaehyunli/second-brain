@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/256
+
+selected_images:
+- file: 01-1.3-HTTP-요청-메시지-로그-확인.webp
+  context: 1.3 HTTP 요청 메시지 로그 확인
+  source_image_path: https://blog.kakaocdn.net/dna/cxiWCP/dJMcagSCdyu/AAAAAAAAAAAAAAAAAAAAALbGpJZJnKuHUieiNXvCT8DYP_5PQ-Fw9etHnG3Xjfvt/img.png
+  source_content_type: image/png
+  source_sha256: 7fdd1cfc0a2502384f5a5759763bbf78c745d2ea48da287e7e996c4560146a83
+  archived_dimensions: 1046x627
+- file: 02-1.3-HTTP-요청-메시지-로그-확인.webp
+  context: 1.3 HTTP 요청 메시지 로그 확인
+  source_image_path: https://blog.kakaocdn.net/dna/bfcZFB/dJMcagSCdyz/AAAAAAAAAAAAAAAAAAAAAJ0I-aaBFXbVmVVeSURwbNqEd-STJRC_QaXFJ00TNDhS/img.png
+  source_content_type: image/png
+  source_sha256: de9e9465d527b201c1123ff9c44b3e68cfbb6e65dbad94bb0046c41b562d959e
+  archived_dimensions: 1055x909
+- file: 03-3.-HTTP-요청-데이터-전달-방식.webp
+  context: 3. HTTP 요청 데이터 전달 방식
+  source_image_path: https://blog.kakaocdn.net/dna/btGs8j/dJMcaiCRUP4/AAAAAAAAAAAAAAAAAAAAALHpYxgFda0lmxIaMoAQVs3M1U6jTUzgFs9sVdGTq97J/img.png
+  source_content_type: image/png
+  source_sha256: e5ffd1ec8ee53562d786a44e27b77e3244652c976eebc65a726927dd3e655b12
+  archived_dimensions: 907x456

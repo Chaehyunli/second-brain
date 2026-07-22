@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/169
+
+selected_images:
+- file: 01-1.-안드로이드-앱의-주요-구성-요소-액티비티-Activity.webp
+  context: 1. 안드로이드 앱의 주요 구성 요소: 액티비티 (Activity)
+  source_image_path: https://blog.kakaocdn.net/dna/o8v0M/dJMb9LxenaU/AAAAAAAAAAAAAAAAAAAAAIpdSNsLVCWnmnVYgotaX_YIXO27u53PYjMNZhj7-PSz/img.png
+  source_content_type: image/png
+  source_sha256: 90bc4d20495b3a2bd56c0c66336c49c3795b32e20b1f78559fbf212c86caf8bd
+  archived_dimensions: 888x289
+- file: 02-4.-명시적-인텐트를-이용한-데이터-전달-단방향.webp
+  context: 4. 명시적 인텐트를 이용한 데이터 전달 (단방향)
+  source_image_path: https://blog.kakaocdn.net/dna/c8udBU/dJMb9hpiwGa/AAAAAAAAAAAAAAAAAAAAAHCcKad6j4BtOgzwBWhxdPo7BIxdeo2KbPKvQe8byPmT/img.png
+  source_content_type: image/png
+  source_sha256: 7a35619ccd99b0553f781fd969a35712f48b3980a245c1b8a879e8b7c04ad178
+  archived_dimensions: 754x399
+- file: 03-5.-Activity-및-Intent-구현-실습.webp
+  context: 5. Activity 및 Intent 구현 실습
+  source_image_path: https://blog.kakaocdn.net/dna/kytuP/dJMb9Qyxzaf/AAAAAAAAAAAAAAAAAAAAAMz0iiYt7fPXcRgNG4Kf4z5HgVU6HBY7mUX-PDn3fNGW/img.png
+  source_content_type: image/png
+  source_sha256: a79cfb6bd0a5e3c9372f007d29debaf9744c281f26ee0d6aeed2272cbe744ff0
+  archived_dimensions: 1473x349

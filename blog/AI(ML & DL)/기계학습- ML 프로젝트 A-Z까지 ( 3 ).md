@@ -216,6 +216,12 @@ housing_cat_1hot
 
 sparse=False 옵션을 주면 Numpy 배열로 출력
 
+## 핵심 이미지
+
+![5. 범주형 특성 다루기](assets/기계학습--ML-프로젝트-A-Z까지-3/01-5.-범주형-특성-다루기.webp)
+
+![7. 원-핫 인코딩 (One-Hot Encoding)](assets/기계학습--ML-프로젝트-A-Z까지-3/02-7.-원-핫-인코딩-One-Hot-Encoding.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

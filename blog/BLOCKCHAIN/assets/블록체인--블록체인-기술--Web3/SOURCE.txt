@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/37
+
+selected_images:
+- file: 01-1.-Web3란-무엇인가.webp
+  context: 1. Web3란 무엇인가?
+  source_image_path: https://blog.kakaocdn.net/dna/boxvv6/btsM3DRyZP8/AAAAAAAAAAAAAAAAAAAAAPMHa36KCokn-48imW45P8SL4vhbV2L_tWbGwu-0aIKI/img.png
+  source_content_type: image/png
+  source_sha256: 295d4848017fb89a266a99931fbb89d6b320b2e530ab6b7c671ffad7aa4cbce9
+  archived_dimensions: 940x659

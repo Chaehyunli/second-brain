@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/133
+
+selected_images:
+- file: 01-1.-목표-점들을-가르는-최적의-직선-찾기.webp
+  context: 1. 목표: 점들을 가르는 최적의 직선 찾기
+  source_image_path: https://blog.kakaocdn.net/dna/baoS6q/btsQEnxlSoO/AAAAAAAAAAAAAAAAAAAAAE_96sxT2WuEZeA8nWB46iSWS_61OafWjeqmROSHlWaL/img.png
+  source_content_type: image/png
+  source_sha256: 727c10f5380ab5f1896fa6fed1ea54fdf31e04347e609d85ec6ad4bda5d5f596
+  archived_dimensions: 846x595
+- file: 02-2.-퍼셉트론-알고리즘의-원리.webp
+  context: 2. 퍼셉트론 알고리즘의 원리
+  source_image_path: https://blog.kakaocdn.net/dna/b8hBsv/btsQD7IhRD1/AAAAAAAAAAAAAAAAAAAAAEZKY_3oKjjxSTbga0qnc3hZ-rF8MOGo-mh0c5Ir5QSZ/img.png
+  source_content_type: image/png
+  source_sha256: 8ddd678eb79331186a8f7e479ec86385ede72793d7fb04fb5c897408cbe0aa0f
+  archived_dimensions: 1600x264
+- file: 03-3.-퍼셉트론의-한계와-경사-하강법.webp
+  context: 3. 퍼셉트론의 한계와 경사 하강법
+  source_image_path: https://blog.kakaocdn.net/dna/buSwAL/btsQDXTzywA/AAAAAAAAAAAAAAAAAAAAAKu4SM9I-d1zwSiTJkG1Lv8Y2pCas9EPg29_gC8s2kbs/img.png
+  source_content_type: image/png
+  source_sha256: 0be67f0bb79a19c94fd85a0ea826c9c6ee6ccf175ddeec7b75b407b58b8661ba
+  archived_dimensions: 909x684

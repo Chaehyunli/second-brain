@@ -416,6 +416,10 @@ dependencies {
 }
 ```
 
+## 핵심 이미지
+
+![2. 모든 위젯이 상속받는 공통 XML 속성](assets/모바일-프로그래밍--뷰-View-와-기본-위젯/01-2.-모든-위젯이-상속받는-공통-XML-속성.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

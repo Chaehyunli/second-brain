@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/165
+
+selected_images:
+- file: 01-관계-표현식-변환-Transformation-of-Relational-Expressions.webp
+  context: 관계 표현식 변환 (Transformation of Relational Expressions)
+  source_image_path: https://blog.kakaocdn.net/dna/bWm9Fc/dJMb9Qed2Q8/AAAAAAAAAAAAAAAAAAAAABS3D-XDl0XN3qVBuMCvWjCHJdpnzEPJnEIOYRaD4hxL/img.png
+  source_content_type: image/png
+  source_sha256: 1b82ed140c062209563ddaacf4fc6536c5e3c14b6375e5a5437e18a9deed6f8e
+  archived_dimensions: 592x396
+- file: 02-관계-표현식-변환-Transformation-of-Relational-Expressions.webp
+  context: 관계 표현식 변환 (Transformation of Relational Expressions)
+  source_image_path: https://blog.kakaocdn.net/dna/bXUxOD/dJMb9V0PcN7/AAAAAAAAAAAAAAAAAAAAAO13n_86rfEp4L4BQjDsq0uR_eTq97gQhHrD3O7URfJM/img.png
+  source_content_type: image/png
+  source_sha256: cbc4e7b24cfccdc4b73b88ba15d71b4f6046616d4ead707e09337bdd4a3b7990
+  archived_dimensions: 571x268
+- file: 03-관계-표현식-변환-Transformation-of-Relational-Expressions.webp
+  context: 관계 표현식 변환 (Transformation of Relational Expressions)
+  source_image_path: https://blog.kakaocdn.net/dna/b09JEW/dJMb9LRv3n6/AAAAAAAAAAAAAAAAAAAAAL4mQelhS7hky2PvBBx6ZJ6cMNQTGwc6d4apfRtr2haV/img.png
+  source_content_type: image/png
+  source_sha256: 7de87a34ad981bbe2897585b2ceea504e77801da242f8b8648b165693bcb700c
+  archived_dimensions: 654x274

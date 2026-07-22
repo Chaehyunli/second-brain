@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/152
+
+selected_images:
+- file: 01-1.-TableLayout-표-형태-구조.webp
+  context: 1. TableLayout: 표 형태 구조
+  source_image_path: https://blog.kakaocdn.net/dna/BXp3k/btsQ3qtAw4E/AAAAAAAAAAAAAAAAAAAAAAoHM22ldVf-Lm5Wow8mTfmUV2Db_wg4C4X8wAPfcWHN/img.png
+  source_content_type: image/png
+  source_sha256: 749022338693223430ba1cd30c3624020e337b1bedf06d632413fe77b5bc5738
+  archived_dimensions: 307x133
+- file: 02-2.-GridLayout-유연한-그리드-구조.webp
+  context: 2. GridLayout: 유연한 그리드 구조
+  source_image_path: https://blog.kakaocdn.net/dna/D0TMX/btsQ3V7Iqe5/AAAAAAAAAAAAAAAAAAAAAD5pa6eDg4xzBOUFpjjieMxIaRdZ_Pkv52acgIMbAX_q/img.png
+  source_content_type: image/png
+  source_sha256: c0210332aa997712aab87852c5c44a10ea3f5af3483fbb331a07ac4c7e8ffd0f
+  archived_dimensions: 277x112
+- file: 03-3.-FrameLayout-뷰-겹치기.webp
+  context: 3. FrameLayout: 뷰 겹치기
+  source_image_path: https://blog.kakaocdn.net/dna/SHaUF/btsQ2xs18jI/AAAAAAAAAAAAAAAAAAAAAIYtT_Ub8qYIJklST0OqLSxM0gXzTNLcmFDaqrFy2zpS/img.png
+  source_content_type: image/png
+  source_sha256: a08c5e41f8177e6cc1eab395860bf503b3a8716b4bcab4144f3b0b7b4fb2a874
+  archived_dimensions: 340x481

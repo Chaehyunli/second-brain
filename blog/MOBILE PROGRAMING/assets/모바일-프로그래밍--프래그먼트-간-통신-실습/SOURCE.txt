@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/186
+
+selected_images:
+- file: 01-원문-이미지.webp
+  context: 원문 이미지 1
+  source_image_path: https://blog.kakaocdn.net/dna/cq3ENf/dJMcaaRazNv/AAAAAAAAAAAAAAAAAAAAAIZh53Qy5r_sqauM3YF2tglAlWgJM6p783FqMyy2RlNT/img.png
+  source_content_type: image/png
+  source_sha256: df0444d8340afc2b3a4fb37ad8f1b1a9fedb2f31923b7d4e1e584f72f2ef5abd
+  archived_dimensions: 528x796

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/225
+
+selected_images:
+- file: 01-원문-이미지.webp
+  context: 원문 이미지 1
+  source_image_path: https://blog.kakaocdn.net/dna/CHRTh/dJMcadnFWZn/AAAAAAAAAAAAAAAAAAAAAPPAjt5ndzToHumNCu8dk1BnkKQLjwr7m74OkDPPvpoJ/img.png
+  source_content_type: image/png
+  source_sha256: 2f34335a3305916a304209369ad81fcf0b49bf428f232a49baf3e2beb683543a
+  archived_dimensions: 415x597
+- file: 02-ApplicationContext가-제공하는-부가기능.webp
+  context: ApplicationContext가 제공하는 부가기능
+  source_image_path: https://blog.kakaocdn.net/dna/cQmZdb/dJMcabKedzZ/AAAAAAAAAAAAAAAAAAAAACSwbYNxU_WKd5btmc2zam8iCGjKZaxURTRWYaFSWya_/img.png
+  source_content_type: image/png
+  source_sha256: 0a121a8ebe3534a001cccbe533e81b2c74b1efc5c4e405cde4142b1332f9234a
+  archived_dimensions: 1027x373

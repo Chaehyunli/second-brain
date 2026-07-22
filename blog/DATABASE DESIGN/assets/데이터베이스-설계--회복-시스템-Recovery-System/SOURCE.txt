@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/192
+
+selected_images:
+- file: 01-5.-데이터-접근-Data-Access.webp
+  context: 5. 데이터 접근 (Data Access)
+  source_image_path: https://blog.kakaocdn.net/dna/bObv26/dJMcafruxgs/AAAAAAAAAAAAAAAAAAAAACYEED3KaLTHu66xez_XwUNr4n5tr49sFHIGJ9PB96TV/img.png
+  source_content_type: image/png
+  source_sha256: fa60e7e8209d33217de5865a29d2d6f6838073ce7a2f6c231257a9327419aaac
+  archived_dimensions: 1125x811
+- file: 02-5.-데이터-접근-Data-Access.webp
+  context: 5. 데이터 접근 (Data Access)
+  source_image_path: https://blog.kakaocdn.net/dna/cqatE3/dJMcafyf6uT/AAAAAAAAAAAAAAAAAAAAAK-bpkqNbklVmeseCqx8ijXfFeVBHcivt3TUPcp51uKe/img.png
+  source_content_type: image/png
+  source_sha256: 454d0bc7f647a159eddfd93222be82c588e47198973435ce4ba84f79b30458de
+  archived_dimensions: 1078x867

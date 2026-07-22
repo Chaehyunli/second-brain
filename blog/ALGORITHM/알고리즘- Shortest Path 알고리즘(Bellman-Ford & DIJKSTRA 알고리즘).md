@@ -356,6 +356,14 @@ DECREASE-KEY 연산: 최대 $|E|$번 * $O(\lg V)$ = $O(E \lg V)$
 
 총 수행 시간: $O((V+E) \lg V)$ (연결 그래프의 경우 $O(E \lg V)$와 같음)
 
+## 핵심 이미지
+
+![2. 최단 경로의 속성](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/01-2.-최단-경로의-속성.webp)
+
+![4. 벨만-포드 (Bellman-Ford) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/02-4.-벨만-포드-Bellman-Ford-알고리즘.webp)
+
+![5. 다익스트라 (Dijkstra) 알고리즘](assets/알고리즘--Shortest-Path-알고리즘-Bellman-Ford-DIJKSTRA-알고리즘/03-5.-다익스트라-Dijkstra-알고리즘.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

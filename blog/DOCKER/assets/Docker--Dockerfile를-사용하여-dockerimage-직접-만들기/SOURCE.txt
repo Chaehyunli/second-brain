@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/98
+
+selected_images:
+- file: 01-3.-실습-프로젝트별-Dockerfile-작성-예시.webp
+  context: 3. 실습: 프로젝트별 Dockerfile 작성 예시
+  source_image_path: https://blog.kakaocdn.net/dna/b7Qm0q/btsOJiDZ989/AAAAAAAAAAAAAAAAAAAAAMrdr-fHUMUQumxW2imbXnF2hZz_e_04kRS2yUrnbnjD/img.png
+  source_content_type: image/png
+  source_sha256: ca3b2c14d9c14b290f2151c64fe9e3b8c594bb73657b63192d9b61846621c809
+  archived_dimensions: 1174x601
+- file: 02-3.-실습-프로젝트별-Dockerfile-작성-예시.webp
+  context: 3. 실습: 프로젝트별 Dockerfile 작성 예시
+  source_image_path: https://blog.kakaocdn.net/dna/bMHQv2/btsOH0qz6y6/AAAAAAAAAAAAAAAAAAAAAA9lQl9Ajlnp54kOwju8Qr_l_x0TgmQGZracesCs86XL/img.png
+  source_content_type: image/png
+  source_sha256: b1f8a1cb41c13974e2ea03c0ed2550a1a970dae250a72174cab40aa664ca4c05
+  archived_dimensions: 1129x588
+- file: 03-3.-실습-프로젝트별-Dockerfile-작성-예시.webp
+  context: 3. 실습: 프로젝트별 Dockerfile 작성 예시
+  source_image_path: https://blog.kakaocdn.net/dna/Gmu17/btsOG0LGRYl/AAAAAAAAAAAAAAAAAAAAAKAFMgrDCGdWNXFxuuMX4MR4gIox_dYeACOngvnDpDYM/img.png
+  source_content_type: image/png
+  source_sha256: 9b022200c0fe4bd455d5dd99de4be8e8cfb80ae2cdd776495c64aab2a42a1ba8
+  archived_dimensions: 1132x607

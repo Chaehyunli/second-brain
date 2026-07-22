@@ -207,6 +207,14 @@ DeFi는 중앙 기관 없이 스마트 컨트랙트를 통해 은행, 증권, �
 
 규제 미비 및 소비자 보호 부족
 
+## 핵심 이미지
+
+![1. SSI (Self-Sovereign Identity): 자기주권 신원](assets/블록체인--SSI-DID-BaaS-DeFi-란/01-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp)
+
+![1. SSI (Self-Sovereign Identity): 자기주권 신원](assets/블록체인--SSI-DID-BaaS-DeFi-란/02-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp)
+
+![1. SSI (Self-Sovereign Identity): 자기주권 신원](assets/블록체인--SSI-DID-BaaS-DeFi-란/03-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp)
+
 ## 관련 글
 
 - [[blog/BLOCKCHAIN/index|BLOCKCHAIN]]

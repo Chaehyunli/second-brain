@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/277
+
+selected_images:
+- file: 01-요구사항-목록.webp
+  context: 요구사항 목록
+  source_image_path: https://blog.kakaocdn.net/dna/uTeUg/dJMcaaMaW5C/AAAAAAAAAAAAAAAAAAAAADDuSJyhcR2DiM-TxqA2A4FfuLt1fgn_4E25pV6uSsd1/img.png
+  source_content_type: image/png
+  source_sha256: e42b9f19ebc10f3041c90eed70d0f743d8931ff9cdea543896e376d8150b1be9
+  archived_dimensions: 984x557

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/49
+
+selected_images:
+- file: 01-1.-UX-개념과-핵심-목표.webp
+  context: 1. UX 개념과 핵심 목표
+  source_image_path: https://blog.kakaocdn.net/dna/x7LrK/btsNd5FIaZw/AAAAAAAAAAAAAAAAAAAAAL9zYtmrki9V8E5aBtSO_qi_OX-hH8XgY0oqfFH96fzq/img.png
+  source_content_type: image/png
+  source_sha256: 70921bcefa7dec081f6a00cc0087d985950f6d9aede469a13a664d5e108aec94
+  archived_dimensions: 1161x537
+- file: 02-2.-사용자-여정-User-Journey-예시-NFT-구매.webp
+  context: 2. 사용자 여정(User Journey) 예시 – NFT 구매
+  source_image_path: https://blog.kakaocdn.net/dna/4sWOH/btsNdpEY1f7/AAAAAAAAAAAAAAAAAAAAAIX_D7nc4ZCD3xsJfkpr1OjJkR3WiaqHuO1xpt5s_zoz/img.png
+  source_content_type: image/png
+  source_sha256: 3bed0f53c58c3f4d8ed58f35ec7119e2ba0bdd668e2105a3cfa82a34d0a21a07
+  archived_dimensions: 442x298
+- file: 03-7.-UX-설계-프로세스.webp
+  context: 7. UX 설계 프로세스
+  source_image_path: https://blog.kakaocdn.net/dna/dkpOAT/btsNd9nQkdL/AAAAAAAAAAAAAAAAAAAAACnXpi709EaNnwpUHy_-4Z8kOgmNmylLTZ0RPken8I-A/img.png
+  source_content_type: image/png
+  source_sha256: 8a727a67cff6f83ff71291acea77b0c070eab5ab6025955038a1cc72d394281a
+  archived_dimensions: 1138x567

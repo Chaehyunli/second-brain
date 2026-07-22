@@ -157,6 +157,14 @@ https://ch010104.tistory.com/248
 
 예시: 서버 점검 중이거나 접속자가 너무 많아 서버가 응답을 거부할 때.
 
+## 핵심 이미지
+
+![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/01-2.-2xx---성공-Successful.webp)
+
+![2. 2xx - 성공 (Successful)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/02-2.-2xx---성공-Successful.webp)
+
+![영구 리다이렉션 (URI가 영구적으로 이동)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--5.-HTTP-상태코드-HTTP-Status-Codes/03-영구-리다이렉션-URI가-영구적으로-이동.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

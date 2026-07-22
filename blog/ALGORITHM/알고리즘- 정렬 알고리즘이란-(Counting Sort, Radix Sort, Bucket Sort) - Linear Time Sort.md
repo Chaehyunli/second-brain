@@ -161,6 +161,14 @@ Bucket Sort: 데이터가 균등 분포를 따를 때
 
 이들은 비교 기반 정렬의 Ω(n lg n) 하한선을 넘어서는 강력한 도구들이지만, 각각의 제약 조건을 만족해야 함
 
+## 핵심 이미지
+
+![비교 기반 정렬의 한계](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/01-비교-기반-정렬의-한계.webp)
+
+![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/02-Linear-Time-Sorting.webp)
+
+![Linear Time Sorting](assets/알고리즘--정렬-알고리즘이란--Counting-Sort-Radix-Sort-Bucket-Sort---Linear-Time-Sort/03-Linear-Time-Sorting.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

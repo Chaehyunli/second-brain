@@ -701,6 +701,12 @@ class FragmentB : Fragment() {
 </LinearLayout>
 ```
 
+## 핵심 이미지
+
+![1. 텍스트 전달 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/01-1.-텍스트-전달-앱-Interface를-이용한-통신.webp)
+
+![2. 카운트 앱: Interface를 이용한 통신](assets/모바일-프로그래밍--Listener를-이용한-두-프래그먼트-간의-통신/02-2.-카운트-앱-Interface를-이용한-통신.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

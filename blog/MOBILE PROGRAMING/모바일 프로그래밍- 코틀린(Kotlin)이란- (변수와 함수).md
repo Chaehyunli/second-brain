@@ -237,6 +237,10 @@ val data3 = intArrayOf(10, 20, 30)
 
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
+## 핵심 이미지
+
+![1. 코틀린(Kotlin) 시작하기](assets/모바일-프로그래밍--코틀린-Kotlin-이란--변수와-함수/01-1.-코틀린-Kotlin-시작하기.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

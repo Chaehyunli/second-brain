@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/249
+
+selected_images:
+- file: 01-4.-협상-Content-Negotiation.webp
+  context: 4. 협상(Content Negotiation)
+  source_image_path: https://blog.kakaocdn.net/dna/bMNiqX/dJMb990bNku/AAAAAAAAAAAAAAAAAAAAAHl7AdXdX7el-qyj8V3K5L17A3eek04j4Zm5mPCZ6nLj/img.png
+  source_content_type: image/png
+  source_sha256: bd1802a97c9c122bbf46ca9fe7b0a104e3f8aa1a443cab180f37deb75ad7a568
+  archived_dimensions: 399x339
+- file: 02-5.-전송-방식.webp
+  context: 5. 전송 방식
+  source_image_path: https://blog.kakaocdn.net/dna/r7Ga0/dJMcaiCMg2W/AAAAAAAAAAAAAAAAAAAAAIymR3c1u-2VxzFODaB997ZlcTFa2DYXVfCl-lO7WaKE/img.png
+  source_content_type: image/png
+  source_sha256: e9d173459a2dee2aff6e3b68cfd5fff02f66ac9012980618126ae79688634528
+  archived_dimensions: 1385x600
+- file: 03-5.-전송-방식.webp
+  context: 5. 전송 방식
+  source_image_path: https://blog.kakaocdn.net/dna/dphyzN/dJMcabjoLKR/AAAAAAAAAAAAAAAAAAAAAN0SvIs2N9vG2VLyJXGNrUkYwnwZ3BE2AyO_yg1YEnt1/img.png
+  source_content_type: image/png
+  source_sha256: 918a66e97a48d2b0b7e634295cedddab62f53a73596378f942575f9e54462f6e
+  archived_dimensions: 1391x586

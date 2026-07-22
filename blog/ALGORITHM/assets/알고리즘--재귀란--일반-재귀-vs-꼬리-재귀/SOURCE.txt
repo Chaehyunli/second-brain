@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/135
+
+selected_images:
+- file: 01-재귀-Recursion-란-무엇일까.webp
+  context: 재귀(Recursion)란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/eeVmtT/btsQH3TEpTN/AAAAAAAAAAAAAAAAAAAAAFx56uBgKcRt3DKhOQtZN8XORK6y6qpAW1wjcYe2PRbw/img.png
+  source_content_type: image/png
+  source_sha256: 44d77ff829f35007e3b343fcaf4c709aee7c4fe27d5e8409a1b7dcfdcec65673
+  archived_dimensions: 1075x292
+- file: 02-재귀-Recursion-란-무엇일까.webp
+  context: 재귀(Recursion)란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/DWlpx/btsQHXTwQV4/AAAAAAAAAAAAAAAAAAAAAN7e4Ned4MOlYg8tZ2caNUJpkAjtl3bkMFG94Wd-Y_Pz/img.png
+  source_content_type: image/png
+  source_sha256: 38482a1b380352dd15f418061e3bf3827c4a7802e0463780da1d1dee23e2f078
+  archived_dimensions: 798x313
+- file: 03-재귀-Recursion-란-무엇일까.webp
+  context: 재귀(Recursion)란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/DUNbW/btsQJDGUaWM/AAAAAAAAAAAAAAAAAAAAAM0_VHDK1XypASJcA8hfvfR35_UI8Q35V5FCzuKqNmMd/img.png
+  source_content_type: image/png
+  source_sha256: c50d02d04c33066d5388f12403c077a4aa62f6cfdb714326ab623bec4e406496
+  archived_dimensions: 1029x388

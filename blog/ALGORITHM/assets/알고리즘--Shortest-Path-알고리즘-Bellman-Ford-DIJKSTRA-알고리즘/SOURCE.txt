@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/166
+
+selected_images:
+- file: 01-2.-최단-경로의-속성.webp
+  context: 2. 최단 경로의 속성
+  source_image_path: https://blog.kakaocdn.net/dna/dOmIMT/dJMb9V7ALiZ/AAAAAAAAAAAAAAAAAAAAACs3maHWJQAgUi2frBnDUmFfXui1VqEr1hz4nw-C2O3m/img.png
+  source_content_type: image/png
+  source_sha256: d3bbf510d88d35e706d828f76a00a577a712b48381ea8d64f5a23a42c22de67f
+  archived_dimensions: 1092x430
+- file: 02-4.-벨만-포드-Bellman-Ford-알고리즘.webp
+  context: 4. 벨만-포드 (Bellman-Ford) 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/bssJJd/dJMb9iuXUtp/AAAAAAAAAAAAAAAAAAAAADeBCV0qF7oEUQNqwW6125_Hho_2R4h-UkXvS_a2-aNz/img.png
+  source_content_type: image/png
+  source_sha256: 1f2d52efc993f34d183577a7777661d16e5f21feead836819cbee1463047c15b
+  archived_dimensions: 1387x760
+- file: 03-5.-다익스트라-Dijkstra-알고리즘.webp
+  context: 5. 다익스트라 (Dijkstra) 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/bqzbNg/dJMb85I9WgZ/AAAAAAAAAAAAAAAAAAAAAJO-XFhYK6lMtSYcSkKgUGnFZtN5y9A6LKinC08vRKz3/img.png
+  source_content_type: image/png
+  source_sha256: 3ad13a6f764ad86c635abe1004acc00238b851edd1479e3bc9b554b867679e12
+  archived_dimensions: 621x307

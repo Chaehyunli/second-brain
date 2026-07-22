@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/171
+
+selected_images:
+- file: 01-비용-추정을-위한-근사치-접근-페이지-28.webp
+  context: 비용 추정을 위한 근사치 접근 (페이지 28)
+  source_image_path: https://blog.kakaocdn.net/dna/cqVGnE/dJMcacH8NQ5/AAAAAAAAAAAAAAAAAAAAAM-XjVy0kOxG1VRq3AW2rd3EjQRjgjFA20GgE6ga9s0Z/img.png
+  source_content_type: image/png
+  source_sha256: 387dac0d9ecffe34bdeb0bcbf463371860b10d08716b330e83384879fb0d573b
+  archived_dimensions: 727x507
+- file: 02-비용-추정을-위한-근사치-접근-페이지-28.webp
+  context: 비용 추정을 위한 근사치 접근 (페이지 28)
+  source_image_path: https://blog.kakaocdn.net/dna/uEM5r/dJMcaihhTaI/AAAAAAAAAAAAAAAAAAAAAEq9B1K4X1SGWtbmgwm714uIpwKPp5v9Woy-tjQRy_AC/img.png
+  source_content_type: image/png
+  source_sha256: de20ad15572f3f2a91794ba905f661684bb2938680f9387557416c251e592ee7
+  archived_dimensions: 472x184

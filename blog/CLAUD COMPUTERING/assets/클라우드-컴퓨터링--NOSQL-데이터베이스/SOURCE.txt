@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/182
+
+selected_images:
+- file: 01-원문-이미지.webp
+  context: 원문 이미지 1
+  source_image_path: https://blog.kakaocdn.net/dna/bAmTst/dJMcaf5Y12d/AAAAAAAAAAAAAAAAAAAAACgjhLqwgAvqjlryEembT4rVOxd4yJL__Z_zbKBR1C7f/img.png
+  source_content_type: image/png
+  source_sha256: 38b6c207af4a8b0f0d43cd35ffbc4faf0303eb03e4c25f09be9bba5885f861cd
+  archived_dimensions: 909x838
+- file: 02-NoSQL-데이터-모델-유형.webp
+  context: NoSQL 데이터 모델 유형
+  source_image_path: https://blog.kakaocdn.net/dna/CAz9K/dJMcaiIpauI/AAAAAAAAAAAAAAAAAAAAAKVhNIwfm3JIQOjYZqFtwX13zsLtjLIo0ikLymPmqC1t/img.png
+  source_content_type: image/png
+  source_sha256: 796fc398d69bcdaa10b11fede3b02eb34a4e0aa3014ecbdd3deef57c22ff0bba
+  archived_dimensions: 1174x412
+- file: 03-NoSQL-데이터-모델-유형.webp
+  context: NoSQL 데이터 모델 유형
+  source_image_path: https://blog.kakaocdn.net/dna/mIjQj/dJMcadf1Fs1/AAAAAAAAAAAAAAAAAAAAANs9fJckubVBobTW8pDpcJFnkORvdNy51MF9Z7ryKLF-/img.png
+  source_content_type: image/png
+  source_sha256: d41b84cd55c281faa9fe165fbb1b478a97cd9cfc47e459418d7e317fb73251d2
+  archived_dimensions: 1138x523

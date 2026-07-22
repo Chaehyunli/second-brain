@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/228
+
+selected_images:
+- file: 01-1.-컴포넌트-스캔과-자동-주입이란.webp
+  context: 1. 컴포넌트 스캔과 자동 주입이란?
+  source_image_path: https://blog.kakaocdn.net/dna/cobVgj/dJMcaaYP4Bn/AAAAAAAAAAAAAAAAAAAAAMCHdgl3p1HKtqhVTl7zDnjhOYLDUOgHNAPHZBzXjgvI/img.png
+  source_content_type: image/png
+  source_sha256: b9f62f69a56748af582b455c38081b3cfc2abee52c5d760febe7548054592489
+  archived_dimensions: 1040x474

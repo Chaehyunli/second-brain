@@ -389,6 +389,14 @@ class SubActivity : AppCompatActivity() {
 </LinearLayout>
 ```
 
+## 핵심 이미지
+
+![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/01-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
+
+![1. 액티비티 간 양방향 데이터 전달 (Activity Result API)](assets/모바일-프로그래밍--Activity와-Intent-양방향/02-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp)
+
+![2. 실습 : 양방향 데이터 전달 (덧셈 + 뺄셈)](assets/모바일-프로그래밍--Activity와-Intent-양방향/03-2.-실습-양방향-데이터-전달-덧셈-뺄셈.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

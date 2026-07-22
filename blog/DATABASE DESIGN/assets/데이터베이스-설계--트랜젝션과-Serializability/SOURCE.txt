@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/181
+
+selected_images:
+- file: 01-3.-Conflict-Serializability-충돌-직렬-가능성.webp
+  context: 3. Conflict Serializability (충돌 직렬 가능성)
+  source_image_path: https://blog.kakaocdn.net/dna/vLpxd/dJMcah3NiEr/AAAAAAAAAAAAAAAAAAAAABe07y4NN22XlqrC0voG0JVqruLW8xu9mAYEYwuapcfp/img.png
+  source_content_type: image/png
+  source_sha256: ccada4e4b502ddc43d765e9e4c624e541647b88720d45460da5383260c68823a
+  archived_dimensions: 1080x498
+- file: 02-4.-View-Serializability-뷰-직렬-가능성.webp
+  context: 4. View Serializability (뷰 직렬 가능성)
+  source_image_path: https://blog.kakaocdn.net/dna/1x3xC/dJMcajUQleY/AAAAAAAAAAAAAAAAAAAAAFe_1M6djKcgnYBR-nFoyvMtV5cAszWSEHCGjLgPcGmU/img.png
+  source_content_type: image/png
+  source_sha256: 50cb0b2bdd70e70fd69c8ec9f266cbc5919a6114ff72e1b96d10a065a1037f3a
+  archived_dimensions: 475x217
+- file: 03-5.-Testing-for-Serializability-직렬-가능성-테스트.webp
+  context: 5. Testing for Serializability (직렬 가능성 테스트)
+  source_image_path: https://blog.kakaocdn.net/dna/kzy48/dJMcahJuyVy/AAAAAAAAAAAAAAAAAAAAAD7gzGEUHMRamh7oE5xhPbl3mQlbM9FNgmAZTrPYoZx-/img.png
+  source_content_type: image/png
+  source_sha256: 5b55d9ad9ebb3e8f6f78bdd27e8d88c8bcd33c29382f8a0c9cf96e6b3bfd18c9
+  archived_dimensions: 364x228

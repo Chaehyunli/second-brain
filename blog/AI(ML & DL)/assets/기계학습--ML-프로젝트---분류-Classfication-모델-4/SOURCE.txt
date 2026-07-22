@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/90
+
+selected_images:
+- file: 01-3.-이진-분류기를-활용한-다중-클래스-분류-전략.webp
+  context: 3. 이진 분류기를 활용한 다중 클래스 분류 전략
+  source_image_path: https://blog.kakaocdn.net/dna/JebeD/btsOkUYyKWt/AAAAAAAAAAAAAAAAAAAAAEXpw3HpCumnWbfXMCFINiw65KDEDsbOFrsbQvul6ZaE/img.png
+  source_content_type: image/png
+  source_sha256: 1c43e3b31bad5e4248a000549f083dac1049163194242e769fb377cba43cfb7c
+  archived_dimensions: 327x354
+- file: 02-3.-이진-분류기를-활용한-다중-클래스-분류-전략.webp
+  context: 3. 이진 분류기를 활용한 다중 클래스 분류 전략
+  source_image_path: https://blog.kakaocdn.net/dna/ZBlQN/btsOkKaSFlD/AAAAAAAAAAAAAAAAAAAAAHmerIMk1FrKcMxWD_9wkhwIAZxqAtsN-HciNJ9bWBO0/img.png
+  source_content_type: image/png
+  source_sha256: db2e96d30f3f4bd32a59a09d753843f9047f434ffc0e06c150ca858ac0e78dcb
+  archived_dimensions: 340x358

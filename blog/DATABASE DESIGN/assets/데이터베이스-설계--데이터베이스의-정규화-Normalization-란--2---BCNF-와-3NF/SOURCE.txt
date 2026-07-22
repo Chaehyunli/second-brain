@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/131
+
+selected_images:
+- file: 01-4.-BCNF-vs.-3NF-핵심-비교.webp
+  context: 4. BCNF vs. 3NF: 핵심 비교
+  source_image_path: https://blog.kakaocdn.net/dna/vkT1J/btsQFa4uz7Z/AAAAAAAAAAAAAAAAAAAAAPA97Pn3w4CUA36hADhwb_TjDww1347QcG2S7FiZj2mP/img.png
+  source_content_type: image/png
+  source_sha256: bb37aac0233e43519028c7d031986219b3cb7d21e2d552f5017ded94faaefc4f
+  archived_dimensions: 724x721

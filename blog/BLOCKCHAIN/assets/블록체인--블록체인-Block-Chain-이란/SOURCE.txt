@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/11
+
+selected_images:
+- file: 01-2.-Public-BlockChain-vs-Database.webp
+  context: 2. Public BlockChain vs Database
+  source_image_path: https://blog.kakaocdn.net/dna/dfVmHz/btsMHxJ2U69/AAAAAAAAAAAAAAAAAAAAAOJjTyGFuWnMAo-O1uzX3Y3Jal7IJn3oobThuu7dQpa3/img.png
+  source_content_type: image/png
+  source_sha256: b68eb35ef8ce5837d1eae877d25dc5d9801da493c5a71db801ab68f74518c7fd
+  archived_dimensions: 1078x613
+- file: 02-3.-기존-문제-vs-블록체인의-해결책.webp
+  context: 3. 기존 문제 vs 블록체인의 해결책
+  source_image_path: https://blog.kakaocdn.net/dna/Gxtqm/btsMGeSaWbA/AAAAAAAAAAAAAAAAAAAAADhw6KMz7hcBQB3GdYaolPbzNA2_esWYHK0WUPnZVgdN/img.png
+  source_content_type: image/png
+  source_sha256: 4c309e314d05b391c0c1dd8962e394b92b4504fdb8b0954a110b4833f423be79
+  archived_dimensions: 975x589
+- file: 03-4.-블록체인의-구조.webp
+  context: 4. 블록체인의 구조
+  source_image_path: https://blog.kakaocdn.net/dna/cF7bzH/btsMHQJAuBc/AAAAAAAAAAAAAAAAAAAAAFx1Qx0hJXCR9Hk2LyAsoghlSb023MJz06Wzj2abbxIV/img.png
+  source_content_type: image/png
+  source_sha256: 088760d12ac8bd06ef05a071dfc3c792ba282643387f60a4c00c00581639dcb9
+  archived_dimensions: 1080x648

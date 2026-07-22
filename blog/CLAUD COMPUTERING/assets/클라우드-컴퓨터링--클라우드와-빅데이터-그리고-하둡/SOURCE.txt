@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/121
+
+selected_images:
+- file: 01-1.-클라우드와-빅데이터-문제와-해결책의-공존.webp
+  context: 1. 클라우드와 빅데이터: 문제와 해결책의 공존
+  source_image_path: https://blog.kakaocdn.net/dna/dDp1Qq/btsQrRLCOkg/AAAAAAAAAAAAAAAAAAAAAKcdoa_O0Ct_0IDmHtbkl3b_pGox4AzJXP2iHAr3NrUR/img.png
+  source_content_type: image/png
+  source_sha256: 1c71213b88a2c5c6e7da5ea90b997879b4d38ff6f40445eced150ffad580c3a5
+  archived_dimensions: 1123x709
+- file: 02-2.-데이터-가치-창출의-주역-데이터-엔지니어-vs.-사이언티스트.webp
+  context: 2. 데이터 가치 창출의 주역: 데이터 엔지니어 vs. 사이언티스트
+  source_image_path: https://blog.kakaocdn.net/dna/ptAnr/btsQrmLSCTY/AAAAAAAAAAAAAAAAAAAAANCzw_wA7R9dB336Vzhwp-BHz9w_XrMun9JmnJuvuHH9/img.png
+  source_content_type: image/png
+  source_sha256: 7d6d4d728f80bc31c441b2bbd566646f27d0b07e64c2543c9a126f02fdf967a2
+  archived_dimensions: 1384x301
+- file: 03-3.-빅데이터-처리의-핵심-전략-병렬화와-추상화.webp
+  context: 3. 빅데이터 처리의 핵심 전략: 병렬화와 추상화
+  source_image_path: https://blog.kakaocdn.net/dna/cfdpOc/btsQs4Q0fpO/AAAAAAAAAAAAAAAAAAAAAKpqLiWU6IxRFr0RXccXLwpG6w6NwJsSU5rhnWP_F3LI/img.png
+  source_content_type: image/png
+  source_sha256: 8935715af8df3330c8b2c3555fcf07b22b33b24ead5aa78d57244e3df4844d6b
+  archived_dimensions: 1062x640

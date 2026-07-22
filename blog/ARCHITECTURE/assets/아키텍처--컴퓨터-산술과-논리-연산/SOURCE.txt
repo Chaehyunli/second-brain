@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/20
+
+selected_images:
+- file: 01-3-2의-보수-Two-s-Complement-방식-현대-컴퓨터-사용.webp
+  context: 3) 2의 보수(Two’s Complement) 방식 (현대 컴퓨터 사용)
+  source_image_path: https://blog.kakaocdn.net/dna/t1kRA/btsMQb68Har/AAAAAAAAAAAAAAAAAAAAABuP98UE2E-33Ne7wAsTiGjUrITQrZLNJ4uUk8mWT6W4/img.png
+  source_content_type: image/png
+  source_sha256: 531cc506a0ffa93c3b8c36fa5bcdb1b5ec5fad79717cc802b6f636c87f1beb6f
+  archived_dimensions: 688x400
+- file: 02-3-논리연산-장치.webp
+  context: 3) 논리연산 장치
+  source_image_path: https://blog.kakaocdn.net/dna/cvpyAp/btsMPPKhx51/AAAAAAAAAAAAAAAAAAAAACf5Pnd8Q0pDbo5mDXYfpHdQmwaC9ay_CMEL4RwETlij/img.png
+  source_content_type: image/png
+  source_sha256: ddd8cbce04536acb50f283989e51245d4937d24985bc7e6c16d8157f6af0e41f
+  archived_dimensions: 771x403
+- file: 03-3-논리연산-장치.webp
+  context: 3) 논리연산 장치
+  source_image_path: https://blog.kakaocdn.net/dna/4yXVc/btsMO6Tw4DS/AAAAAAAAAAAAAAAAAAAAAA-73OYVwLjEBVMOLAefeRctkh-s1vqI_BCQYAkRFqMt/img.png
+  source_content_type: image/png
+  source_sha256: a347997c963ac771ed384bcabf1dfafb80b1310a74798ed60bbe865d09573eb5
+  archived_dimensions: 652x279

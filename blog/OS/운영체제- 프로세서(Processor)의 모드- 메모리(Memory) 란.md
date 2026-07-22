@@ -187,6 +187,10 @@ https://ch010104.tistory.com/13
 
 - 자주 변경되는 펌웨어, 설정 데이터 저장용.
 
+## 핵심 이미지
+
+![2. 메모리(Memory) 란?](assets/운영체제--프로세서-Processor-의-모드--메모리-Memory-란/01-2.-메모리-Memory-란.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

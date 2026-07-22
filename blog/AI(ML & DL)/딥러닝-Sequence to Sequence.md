@@ -143,6 +143,14 @@ RNN의 기억: RNN Layer는 입력이 순차적으로 들어올 때, 최종 출�
 
 각 단어가 입력될 때마다 RNN의 은닉 상태(다이어그램 안의 막대 그래프)가 업데이트되며 정보가 누적
 
+## 핵심 이미지
+
+![3. Seq2Seq 딥러닝 접근 방식](assets/딥러닝-Sequence-to-Sequence/01-3.-Seq2Seq-딥러닝-접근-방식.webp)
+
+![4. 순환 신경망 (RNN)](assets/딥러닝-Sequence-to-Sequence/02-4.-순환-신경망-RNN.webp)
+
+![5. LSTM (Long Short-Term Memory)](assets/딥러닝-Sequence-to-Sequence/03-5.-LSTM-Long-Short-Term-Memory.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

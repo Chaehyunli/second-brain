@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/22
+
+selected_images:
+- file: 01-1-단일-커널-Monolithic-Kernel.webp
+  context: 1) 단일 커널 (Monolithic Kernel)
+  source_image_path: https://blog.kakaocdn.net/dna/om7O6/btsMSPkROM2/AAAAAAAAAAAAAAAAAAAAAN6RiFYLyBoUm0iGafYOIZs7oJkPzs7dM-Br4fVgUidx/img.png
+  source_content_type: image/png
+  source_sha256: f7ae155923e3345ab2a1175efd4674e2e6933b8a6c8371c2813348d5abf4bcc5
+  archived_dimensions: 826x568
+- file: 02-2-마이크로커널-Microkernel.webp
+  context: 2) 마이크로커널 (Microkernel)
+  source_image_path: https://blog.kakaocdn.net/dna/VSXhY/btsMVbTUe3g/AAAAAAAAAAAAAAAAAAAAAPiqHNGouhyXQUvUQ4_4RKiXZB9DpCdSFCj2fgLAc6W-/img.png
+  source_content_type: image/png
+  source_sha256: 7f9db83bd9d36254d2d40039ccc452ec06967615029d7d2ce71dfd83bf28f65f
+  archived_dimensions: 730x567
+- file: 03-3-모듈형-커널-Modular-Kernel.webp
+  context: 3) 모듈형 커널 (Modular Kernel)
+  source_image_path: https://blog.kakaocdn.net/dna/es6qIh/btsMTHTTeVX/AAAAAAAAAAAAAAAAAAAAAAMmViF8eGnfw0z0zRQd5BKFg3KXv-6qfjg35NC1lo24/img.png
+  source_content_type: image/png
+  source_sha256: f3c72bf7a50b691444cfbbe1a0a2ff56fa4e1001e24aaf803464c170e42c252c
+  archived_dimensions: 1165x676

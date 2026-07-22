@@ -317,6 +317,12 @@ dependencies {
 }
 ```
 
+## 핵심 이미지
+
+![1. 레이아웃(Layout)이란?](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/01-1.-레이아웃-Layout-이란.webp)
+
+![2. LinearLayout의 핵심 속성](assets/모바일-프로그래밍--LinearLayout-안드로이드-레이아웃/02-2.-LinearLayout의-핵심-속성.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

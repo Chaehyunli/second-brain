@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/118
+
+selected_images:
+- file: 01-1.-병합-정렬-Merge-Sort.webp
+  context: 1. 병합 정렬 (Merge Sort)
+  source_image_path: https://blog.kakaocdn.net/dna/20SCz/btsQo7gmnun/AAAAAAAAAAAAAAAAAAAAAIA_DbiRhDLXfMip5ti82aTX34TOeymMrBkUCRq7oRhk/img.png
+  source_content_type: image/png
+  source_sha256: 34dfab89a536cfc76e2f8ad6c8231fa9910ac0db6184d548faf9c0485b365f68
+  archived_dimensions: 1042x838
+- file: 02-1.-병합-정렬-Merge-Sort.webp
+  context: 1. 병합 정렬 (Merge Sort)
+  source_image_path: https://blog.kakaocdn.net/dna/6E2u3/btsQnFSG0Bc/AAAAAAAAAAAAAAAAAAAAAJeheC6YoY0UuVUR7E4RW-xP2l2jjL1SjeDcx_XCVEjL/img.png
+  source_content_type: image/png
+  source_sha256: 4a6e3bcfb318c4636e224fa31f190e1c19438f9dd093aa922882d613f5f8ca8e
+  archived_dimensions: 1099x871
+- file: 03-1.-병합-정렬-Merge-Sort.webp
+  context: 1. 병합 정렬 (Merge Sort)
+  source_image_path: https://blog.kakaocdn.net/dna/b1HCiA/btsQmviI3yP/AAAAAAAAAAAAAAAAAAAAAFEo2ez6pdYniy_Ffhzi52zR1FPdqfRLAj7pqU1G3fi-/img.png
+  source_content_type: image/png
+  source_sha256: 4451036c0a1c09cec40fcf165834eecd2c6e93fb96e61dfb96ed5c178097e5b7
+  archived_dimensions: 1215x411

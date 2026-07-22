@@ -149,6 +149,12 @@ forest_reg = Pipeline([
 
 ### 6. 마무리 요약
 
+## 핵심 이미지
+
+![4. 교차 검증 (Cross Validation) 도입](assets/기계학습--ML-프로젝트-A---Z-까지-6/01-4.-교차-검증-Cross-Validation-도입.webp)
+
+![5. 더 나은 모델을 위한 앙상블 기법: 랜덤 포레스트 회귀](assets/기계학습--ML-프로젝트-A---Z-까지-6/02-5.-더-나은-모델을-위한-앙상블-기법-랜덤-포레스트-회귀.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

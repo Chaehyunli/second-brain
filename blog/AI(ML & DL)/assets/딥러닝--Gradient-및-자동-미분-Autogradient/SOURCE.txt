@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/184
+
+selected_images:
+- file: 01-계산-그래프-예시-상세.webp
+  context: 계산 그래프 예시 상세
+  source_image_path: https://blog.kakaocdn.net/dna/m8L3m/dJMcadtAciY/AAAAAAAAAAAAAAAAAAAAAO4ZAv0MNHQzCwpVjTQSLh3dahhWN_ZlUAArCJyo_t1n/img.png
+  source_content_type: image/png
+  source_sha256: 81f3479f8adb8c76969f1d03675c7f5f4ca1b14152cee9615d170aac9384e79b
+  archived_dimensions: 1525x721

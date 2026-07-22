@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/291
+
+selected_images:
+- file: 01-예외-처리-동작-흐름-비교.webp
+  context: 예외 처리 동작 흐름 비교
+  source_image_path: https://blog.kakaocdn.net/dna/vd9b8/dJMcacKxBYw/AAAAAAAAAAAAAAAAAAAAANd-4ya9CkoFIOJZ2bSZeIhVkFCxLc0QTfcMc-8FqCOr/img.png
+  source_content_type: image/png
+  source_sha256: ae70feb832139ca609d02504b1dced26cdf2243cb5f7a0038892e27195837287
+  archived_dimensions: 1030x463
+- file: 02-예외-처리-동작-흐름-비교.webp
+  context: 예외 처리 동작 흐름 비교
+  source_image_path: https://blog.kakaocdn.net/dna/nX0dI/dJMcacKxBYN/AAAAAAAAAAAAAAAAAAAAANdJd9wb6OpTz1N3qhPd02TBMT9MTBbYVmJfwrGWVW-D/img.png
+  source_content_type: image/png
+  source_sha256: 09bdafe38baad30424617beaf6a9da23f40cac99cf7834b5d2b7d9f5c9115140
+  archived_dimensions: 1002x502

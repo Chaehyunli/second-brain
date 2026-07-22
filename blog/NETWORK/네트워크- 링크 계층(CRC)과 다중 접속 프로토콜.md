@@ -297,6 +297,14 @@ ACK (Acknowledgement): 무선은 충돌 감지가 불가능하므로, 수신 측
 
 중간 통신 잡음으로 토큰 자체가 깨지거나(토큰 분실), 특정 장비가 토큰을 먹은 채 먹통이 되면 복잡한 복구 알고리즘이 개입해야 함.
 
+## 핵심 이미지
+
+![1) 기본 논리](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/01-1-기본-논리.webp)
+
+![① 단일 비트 패리티 (Single Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/02-단일-비트-패리티-Single-Bit-Parity.webp)
+
+![② 2차원 비트 패리티 (Two-dimensional Bit Parity)](assets/네트워크--링크-계층-CRC-과-다중-접속-프로토콜/03-2차원-비트-패리티-Two-dimensional-Bit-Parity.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

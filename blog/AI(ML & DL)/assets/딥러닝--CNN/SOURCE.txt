@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/162
+
+selected_images:
+- file: 01-CNN-프로그래밍-Keras-API.webp
+  context: CNN 프로그래밍 (Keras API)
+  source_image_path: https://blog.kakaocdn.net/dna/WI1B9/dJMb9c2zGeP/AAAAAAAAAAAAAAAAAAAAACGlVC_QFtfpgpRXnO0W7ea9y2rqqQnbJtREhNIV8ybA/img.png
+  source_content_type: image/png
+  source_sha256: 8971855a65f7cd3aa1047f9fe3e482c510b450e46a64649f34f2e3b3ff3d79eb
+  archived_dimensions: 1059x502
+- file: 02-CNN-프로그래밍-Keras-API.webp
+  context: CNN 프로그래밍 (Keras API)
+  source_image_path: https://blog.kakaocdn.net/dna/U6di7/dJMb9bo3QPU/AAAAAAAAAAAAAAAAAAAAANk4NiunzkKvhxnZo-TPXAgPtVAf88DtgFe-kwgc6LQv/img.png
+  source_content_type: image/png
+  source_sha256: 2421c1d122a9a5782070e8438b0e56732209220b625549f6c9cbb413d3a9fded
+  archived_dimensions: 1198x525
+- file: 03-예제-MNIST-with-CNN.webp
+  context: 예제: MNIST with CNN
+  source_image_path: https://blog.kakaocdn.net/dna/v285b/dJMb9QkYfcI/AAAAAAAAAAAAAAAAAAAAAFsRlG35A9dnOEiHkZbKdw83bOET3nLU4YaXP9m08yfD/img.png
+  source_content_type: image/png
+  source_sha256: aef3421886e881d861d6bc6bf02db22da99f24df18b2930d8616e6679ce4ef63
+  archived_dimensions: 1177x910

@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/91
+
+selected_images:
+- file: 01-GCS-생성하기.webp
+  context: GCS 생성하기
+  source_image_path: https://blog.kakaocdn.net/dna/4KxRD/btsOlw4iRbt/AAAAAAAAAAAAAAAAAAAAALS8XzH6k3C__OKovhWNFX6Yyw7xJNsVEEShnihBE1jD/img.png
+  source_content_type: image/png
+  source_sha256: 8318c2aba454bdec155896a0015cc72f582cb4d0438b31bc0cfb43b92dccdbbe
+  archived_dimensions: 1273x637

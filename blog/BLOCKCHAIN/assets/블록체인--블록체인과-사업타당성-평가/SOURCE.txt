@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/64
+
+selected_images:
+- file: 01-2.-투자결정을-위한-평가-체계.webp
+  context: 2. 투자결정을 위한 평가 체계
+  source_image_path: https://blog.kakaocdn.net/dna/Jd8LA/btsNE56QelI/AAAAAAAAAAAAAAAAAAAAADNizXW7o0_M_GXqYdWtUWeVAS4ljdab2msCO1L7x4Cm/img.png
+  source_content_type: image/png
+  source_sha256: 4dc45759feb9c34e7a9be398ff75890f66a271a78f57b3e777ce77902c83de05
+  archived_dimensions: 1150x535
+- file: 02-6.-초기-생태계-구성.webp
+  context: 6. 초기 생태계 구성
+  source_image_path: https://blog.kakaocdn.net/dna/crqATU/btsNDKbL3HQ/AAAAAAAAAAAAAAAAAAAAAJsgpCVLcU-oCTnaTBpKjjH_yMFuE64DIqFH1Y8n0ijP/img.png
+  source_content_type: image/png
+  source_sha256: f6ae3120d22790a6cf87900f15fa72c93c7ea33134c89ffaadcd36f9c31da86b
+  archived_dimensions: 544x238
+- file: 03-10.-블록체인-거버넌스.webp
+  context: 10. 블록체인 거버넌스
+  source_image_path: https://blog.kakaocdn.net/dna/ZJHqe/btsNFwv3CVG/AAAAAAAAAAAAAAAAAAAAAD1EbWp6SglgVB801N-THN6JKKrLOxf3-9Xl4kOEBWBa/img.png
+  source_content_type: image/png
+  source_sha256: 921acf01eb67cf6f714223a54b8843038fd7d346d4bdbf31e24fda7eba152ba6
+  archived_dimensions: 625x607

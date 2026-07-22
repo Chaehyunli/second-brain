@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/298
+
+selected_images:
+- file: 01-예외-계층-그림.webp
+  context: 예외 계층 그림
+  source_image_path: https://blog.kakaocdn.net/dna/c41AXL/dJMcabLJzqJ/AAAAAAAAAAAAAAAAAAAAAD15lsMYo49GVjycNACu1h5ifslvh5nCBcWkrAJjHVEs/img.png
+  source_content_type: image/png
+  source_sha256: da956194b0f8325e412e199bc14101aef48806887dd6ed482089e83b28eee3d9
+  archived_dimensions: 1539x927
+- file: 02-예외-처리.webp
+  context: 예외 처리
+  source_image_path: https://blog.kakaocdn.net/dna/cjQ0U7/dJMcah6eg5L/AAAAAAAAAAAAAAAAAAAAAGmkJEXFh95upaawEVS_TAEQQFFK-AN70MY0u_xhI3VH/img.png
+  source_content_type: image/png
+  source_sha256: 76aef46381ce91f643ca8ecbc7cd68c7a8b60a33449f57a0f7bdb61d876fc814
+  archived_dimensions: 1539x345
+- file: 03-예외-던짐.webp
+  context: 예외 던짐
+  source_image_path: https://blog.kakaocdn.net/dna/cjJQBM/dJMcaijHRtI/AAAAAAAAAAAAAAAAAAAAAOb913X8FZ4-XwuJFu0B0wlU7URuujiwd9WcdwWP5Amv/img.png
+  source_content_type: image/png
+  source_sha256: 9d95ba65d1f7ebee5409b5e3025f28da84592b8c4ee9abd3036a3217056b4841
+  archived_dimensions: 1539x345

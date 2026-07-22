@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/26
+
+selected_images:
+- file: 01-8-계정-유형.webp
+  context: 8) 계정 유형
+  source_image_path: https://blog.kakaocdn.net/dna/rtaw6/btsMW7xbS8P/AAAAAAAAAAAAAAAAAAAAALxkl0QDr6m6sZMGmidiM0kA4tYV_2sjehfuAl4TWTQv/img.png
+  source_content_type: image/png
+  source_sha256: 93a82664826783ee077c6d255603ab9ac8bf7650d68848ac51d23223add90ea3
+  archived_dimensions: 1056x468

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/127
+
+selected_images:
+- file: 01-비교-기반-정렬의-한계.webp
+  context: 비교 기반 정렬의 한계
+  source_image_path: https://blog.kakaocdn.net/dna/bob3ED/btsQyEl9PRh/AAAAAAAAAAAAAAAAAAAAAFWVQ-m8QIxoCNFC8IoFDLksGSaXVEtaL7Slq1uJg-Zl/img.png
+  source_content_type: image/png
+  source_sha256: fc4c4837b1906a2796c6dc0303d35bbebeb27e158ad7943b73fc99ececc33cee
+  archived_dimensions: 1281x540
+- file: 02-Linear-Time-Sorting.webp
+  context: Linear Time Sorting
+  source_image_path: https://blog.kakaocdn.net/dna/cevcVX/btsQAtqjDbr/AAAAAAAAAAAAAAAAAAAAAFiK8q9xzh9F5Xgtwtd2eSyHeg1BXsN43LvtNfARswPb/img.png
+  source_content_type: image/png
+  source_sha256: f2b39dae3202da0a93bb434bf226c8de45d92ddce5480330fd383158a793400b
+  archived_dimensions: 1333x939
+- file: 03-Linear-Time-Sorting.webp
+  context: Linear Time Sorting
+  source_image_path: https://blog.kakaocdn.net/dna/boWZVf/btsQyE0I1h5/AAAAAAAAAAAAAAAAAAAAAIBYcrnfXj5kM90_yULOyuyrLYMTEzQxx8CC7_TUdzDS/img.png
+  source_content_type: image/png
+  source_sha256: 6988345428e2a12cee97c4fd315dddec8d469ce6ffcf2c37bfc6671e451ecf88
+  archived_dimensions: 1117x669

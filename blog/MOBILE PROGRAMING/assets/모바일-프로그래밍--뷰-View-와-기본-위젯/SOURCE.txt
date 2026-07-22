@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/137
+
+selected_images:
+- file: 01-2.-모든-위젯이-상속받는-공통-XML-속성.webp
+  context: 2. 모든 위젯이 상속받는 공통 XML 속성
+  source_image_path: https://blog.kakaocdn.net/dna/biBRp3/btsQJFxJc0s/AAAAAAAAAAAAAAAAAAAAALr_QBQQ8ga909Qj9yEhF664tR5SGv8C__pZ4MzHAy_Q/img.png
+  source_content_type: image/png
+  source_sha256: fcb8c7a74270b12c900cee2ffc45083f65ffca70761ca5399258a4aa4227a0b2
+  archived_dimensions: 1123x373

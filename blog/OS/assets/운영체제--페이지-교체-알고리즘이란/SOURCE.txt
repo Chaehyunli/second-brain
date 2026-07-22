@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/84
+
+selected_images:
+- file: 01-1.-FIFO-First-In-First-Out.webp
+  context: 1. FIFO (First-In First-Out)
+  source_image_path: https://blog.kakaocdn.net/dna/Ocsex/btsOclaLkSE/AAAAAAAAAAAAAAAAAAAAANESXoEEQnSZKO56gY2itxIRYpED-GfaLiwtc0BQNv5h/img.png
+  source_content_type: image/png
+  source_sha256: 129dc4ec6131e7dd2ba7d6c8aecd201563f0bc2e142155a1139ceac995a03c48
+  archived_dimensions: 1090x643
+- file: 02-2.-OPT-Optimal-Algorithm.webp
+  context: 2. OPT (Optimal Algorithm)
+  source_image_path: https://blog.kakaocdn.net/dna/tfhVL/btsOchGbgej/AAAAAAAAAAAAAAAAAAAAAEvGWExZUyZSY8PydHhnNnA8cEiUT0vok9fgbMLCXfBq/img.png
+  source_content_type: image/png
+  source_sha256: 946765ebcd4391f139e947f350ad37c19587e2cff79f00d942927e2efb764972
+  archived_dimensions: 801x453
+- file: 03-3.-LRU-Least-Recently-Used.webp
+  context: 3. LRU (Least Recently Used)
+  source_image_path: https://blog.kakaocdn.net/dna/cw0tDH/btsOdhS1Aya/AAAAAAAAAAAAAAAAAAAAACYX3eNr3Fewr7JSAxvvDt8yshupzweANWR3L2meeeVo/img.png
+  source_content_type: image/png
+  source_sha256: ad021fc473479e56989c78aec318da01116b485c21afe96f3788aa73a2f7b3aa
+  archived_dimensions: 723x400

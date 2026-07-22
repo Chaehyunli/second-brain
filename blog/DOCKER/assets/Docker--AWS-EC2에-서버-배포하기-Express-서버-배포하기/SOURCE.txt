@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/101
+
+selected_images:
+- file: 01-1.-배포-Deployment-란.webp
+  context: 1. 배포(Deployment)란?
+  source_image_path: https://blog.kakaocdn.net/dna/V3VCU/btsOKE2y3Fv/AAAAAAAAAAAAAAAAAAAAAIHcFeRQAjQwMYIl4kyE3cX300XgYQhs90EZQvzimQP2/img.png
+  source_content_type: image/png
+  source_sha256: 48ec506f487e48189efb55329fdb3ca0c649423bcf3e478299799363ac62b021
+  archived_dimensions: 649x408
+- file: 02-3.-실습-EC2로-Express-서버-배포하기.webp
+  context: 🛠 3. 실습: EC2로 Express 서버 배포하기
+  source_image_path: https://blog.kakaocdn.net/dna/b25Bf7/btsOLa7Yho1/AAAAAAAAAAAAAAAAAAAAACo9fPjlE1XT2cJWuOFH7TfRg7PzTS_Ho2Xl62ZNrXQb/img.png
+  source_content_type: image/png
+  source_sha256: 64dd200c2bbd558e9d2b5ce28ceffe12899c384c82c5a60baa520919c906a2a3
+  archived_dimensions: 589x565
+- file: 03-3.-실습-EC2로-Express-서버-배포하기.webp
+  context: 🛠 3. 실습: EC2로 Express 서버 배포하기
+  source_image_path: https://blog.kakaocdn.net/dna/eag5tR/btsOMFFz2U3/AAAAAAAAAAAAAAAAAAAAAPAHzug2jiFKcuUjhQInxduIuy2xzd1lU_3Yd1Bg8IBr/img.png
+  source_content_type: image/png
+  source_sha256: 98429d0da1dfc7ce5ea2cc9ef3e2c824683466719bae66f023d047eaf3146157
+  archived_dimensions: 1068x1180

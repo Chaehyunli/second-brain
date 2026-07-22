@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/297
+
+selected_images:
+- file: 01-1-표준적인-3계층-애플리케이션-구조.webp
+  context: 1) 표준적인 3계층 애플리케이션 구조
+  source_image_path: https://blog.kakaocdn.net/dna/mDVQB/dJMcaiqqQix/AAAAAAAAAAAAAAAAAAAAAOxoZTrLFPZ-RuEaz7djXGTQF9X83W9MZ8c57CGue0c5/img.png
+  source_content_type: image/png
+  source_sha256: de1f905668c8029895d67a1a12d19c44abc5468f5dd4ae70784f22c233f59a5d
+  archived_dimensions: 1048x223
+- file: 02-1-개념적인-트랜잭션-인터페이스-구성.webp
+  context: 1) 개념적인 트랜잭션 인터페이스 구성
+  source_image_path: https://blog.kakaocdn.net/dna/chpQLP/dJMb99757k1/AAAAAAAAAAAAAAAAAAAAAPF65nj7PFX-RmKN-H1OHXmr_pxFpy-sDnbhYCaBqqbB/img.png
+  source_content_type: image/png
+  source_sha256: e50cfa2aeb4addd3867e134e526ff3f7e4498bdccb23e4ed5c9bfb7bbfc2a1ae
+  archived_dimensions: 1018x544
+- file: 03-2-스프링의-트랜잭션-추상화-PlatformTransactionManager.webp
+  context: 2) 스프링의 트랜잭션 추상화: PlatformTransactionManager
+  source_image_path: https://blog.kakaocdn.net/dna/baI5vq/dJMcaf8gMlM/AAAAAAAAAAAAAAAAAAAAAKpJXIgUCXRn_Pa9jMyRYmJxQpQ18S5OPL9KpG1pLklM/img.png
+  source_content_type: image/png
+  source_sha256: 1fe6b6cb5b2ea14f9d2c6af3b29c3c88adc91ad4d01f60ab4f9efe42ceed0f01
+  archived_dimensions: 1024x438

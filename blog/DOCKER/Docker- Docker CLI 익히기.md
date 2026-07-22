@@ -262,6 +262,14 @@ $ redis-cli
 127.0.0.1:6379> get 1
 ```
 
+## 핵심 이미지
+
+![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/01-1.-Docker-이미지-Image-다운로드.webp)
+
+![📥 1. Docker 이미지(Image) 다운로드](assets/Docker--Docker-CLI-익히기/02-1.-Docker-이미지-Image-다운로드.webp)
+
+![🔍 2. 이미지 확인 및 삭제](assets/Docker--Docker-CLI-익히기/03-2.-이미지-확인-및-삭제.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

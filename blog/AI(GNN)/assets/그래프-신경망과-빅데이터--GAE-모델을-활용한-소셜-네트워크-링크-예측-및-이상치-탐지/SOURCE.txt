@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/117
+
+selected_images:
+- file: 01-2단계-GNN-모델-설계---관계를-학습할-두뇌-만들기.webp
+  context: 2단계: GNN 모델 설계 - 관계를 학습할 두뇌 만들기
+  source_image_path: https://blog.kakaocdn.net/dna/cIVD82/btsQpItF9R4/AAAAAAAAAAAAAAAAAAAAANJ2iE85gGOOBgx0Ajjp9tytpRIg1PqjXkKZRdjn63Lv/img.png
+  source_content_type: image/png
+  source_sha256: 9a8cde2f34ed0267d2715252296f83cc4bb09362374cd60c980c796f081e8166
+  archived_dimensions: 456x238
+- file: 02-3단계-학습-및-평가---AI를-학습시키기.webp
+  context: 3단계: 학습 및 평가 - AI를 학습시키기
+  source_image_path: https://blog.kakaocdn.net/dna/b00Rbt/btsQn1OyqJW/AAAAAAAAAAAAAAAAAAAAAMWiajBPilToPB1iaCa8txj3UF8yuOA_O4xj_XgK6jGs/img.png
+  source_content_type: image/png
+  source_sha256: eecc7bd7bd99fa7162dc4f6ccb654f3f8173c673e5923f1b42999c778ab1321a
+  archived_dimensions: 939x564
+- file: 03-3단계-학습-및-평가---AI를-학습시키기.webp
+  context: 3단계: 학습 및 평가 - AI를 학습시키기
+  source_image_path: https://blog.kakaocdn.net/dna/bCEvJk/btsQpIULXzt/AAAAAAAAAAAAAAAAAAAAAGCL-_J2TRy2dQgDYEuq7F930Mzvv41aUUCpRMV73Yf7/img.png
+  source_content_type: image/png
+  source_sha256: 7ba83efccb77d3227c17008a8febe79e089f22f0eda849571668c8be0009871b
+  archived_dimensions: 679x785

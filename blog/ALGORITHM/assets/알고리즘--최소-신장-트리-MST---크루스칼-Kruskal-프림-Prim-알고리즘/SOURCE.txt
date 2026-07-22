@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/161
+
+selected_images:
+- file: 01-크루스칼-Kruskal-알고리즘.webp
+  context: 크루스칼 (Kruskal) 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/cNMI3l/btsRbInAvWY/AAAAAAAAAAAAAAAAAAAAAKNCabSl0qbkkkgSmq_tx3HTVzCaIOLcdMTE1fd4en1L/img.png
+  source_content_type: image/png
+  source_sha256: 7ac05571308971369991da9161c2d6706cd85c4677eee76b433000d868e4cb49
+  archived_dimensions: 940x322
+- file: 02-크루스칼-Kruskal-알고리즘.webp
+  context: 크루스칼 (Kruskal) 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/r6tWX/btsRdEYBgDp/AAAAAAAAAAAAAAAAAAAAAGurzcioFXfYkIEybvH_8QlsfTMXvnon0hWw6BUiOymC/img.png
+  source_content_type: image/png
+  source_sha256: 4d20168be011322c12d2ed4221d9241f7f59b81ff447217c870444756e396ade
+  archived_dimensions: 1261x544
+- file: 03-프림-Prim-알고리즘.webp
+  context: 프림 (Prim) 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/BxJRh/btsRb7N2AYP/AAAAAAAAAAAAAAAAAAAAABaRSha_A3RKR1rMvLMaSkCxBxg6CT2E7Ivyq4AY-gXf/img.png
+  source_content_type: image/png
+  source_sha256: f846f7cce17069369ebf24e744c2b42a25a2e219399e137f08e23cee2904d4c1
+  archived_dimensions: 1374x592

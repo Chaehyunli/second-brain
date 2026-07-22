@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/258
+
+selected_images:
+- file: 01-서블릿과-JSP의-한계.webp
+  context: 서블릿과 JSP의 한계
+  source_image_path: https://blog.kakaocdn.net/dna/BYR7m/dJMcaakzMB6/AAAAAAAAAAAAAAAAAAAAAGbVkG7v8Bdm0S-uwp2B9GVmrH6WXmmAuB7CA1mOM850/img.png
+  source_content_type: image/png
+  source_sha256: 71f7dfb4e10e2175d01c94a47c8cd92ec09efffc4add2bb56aee0d222f350c19
+  archived_dimensions: 1068x566
+- file: 02-MVC-패턴-개요.webp
+  context: MVC 패턴 개요
+  source_image_path: https://blog.kakaocdn.net/dna/L4Gcd/dJMcai3VdLt/AAAAAAAAAAAAAAAAAAAAALQ_pk4KIqEjfJFFbx4y7JqJr7zzqsX1nWR7Ik3AXBbS/img.png
+  source_content_type: image/png
+  source_sha256: 39755946e2e09fe78e7877b30fdfb1a9ef67bc435411793add330870919b6792
+  archived_dimensions: 1059x799
+- file: 03-MVC-패턴-개요.webp
+  context: MVC 패턴 개요
+  source_image_path: https://blog.kakaocdn.net/dna/QL7jt/dJMcaarl9np/AAAAAAAAAAAAAAAAAAAAALGcqdFaxUUb7djlamNOIvTIaMxWGlaucaOzf6r_C1hR/img.png
+  source_content_type: image/png
+  source_sha256: 39755946e2e09fe78e7877b30fdfb1a9ef67bc435411793add330870919b6792
+  archived_dimensions: 1059x799

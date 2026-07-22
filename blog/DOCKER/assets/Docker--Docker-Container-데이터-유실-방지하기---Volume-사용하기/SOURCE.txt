@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/97
+
+selected_images:
+- file: 01-1.-Docker-Volume-도커-볼륨-이란.webp
+  context: 📌 1. Docker Volume(도커 볼륨) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/dxiHg9/btsOG9m0gCJ/AAAAAAAAAAAAAAAAAAAAAAjAJ5U5UpeVzujla42i827xcKKTxx8bkS_9HWLlCWto/img.png
+  source_content_type: image/png
+  source_sha256: 182eaadfe9de52a037c09e0de97f2a581e8abd4fc56cbdccf35d1713284390ed
+  archived_dimensions: 781x438
+- file: 02-1.-Docker-Volume-도커-볼륨-이란.webp
+  context: 📌 1. Docker Volume(도커 볼륨) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/bvDhwX/btsOGy7z22n/AAAAAAAAAAAAAAAAAAAAACbX2XPZtlEeEgvWD8VLBXiJU6SHRckdpvB1zruQX-jP/img.png
+  source_content_type: image/png
+  source_sha256: 6f3763002f91bbf5d8f21b410f62c75a24e2fca28ffd5709daad39c0daf5f3ce
+  archived_dimensions: 775x436
+- file: 03-1.-Docker-Volume-도커-볼륨-이란.webp
+  context: 📌 1. Docker Volume(도커 볼륨) 이란?
+  source_image_path: https://blog.kakaocdn.net/dna/cTwjsg/btsOHcxdgNW/AAAAAAAAAAAAAAAAAAAAAHNc-9eipPImPE57SqpNwL59yTX-1EdARGiwx6Ri1T2C/img.png
+  source_content_type: image/png
+  source_sha256: 80d08c1ce6fb92494e10659c53387a3a8b673e342742387f05e77a93c90c7c61
+  archived_dimensions: 784x433

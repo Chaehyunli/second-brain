@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/144
+
+selected_images:
+- file: 01-HDFS-아키텍처-NameNode와-DataNode의-협력.webp
+  context: HDFS 아키텍처: NameNode와 DataNode의 협력
+  source_image_path: https://blog.kakaocdn.net/dna/cgpgy8/btsQP0O5TAu/AAAAAAAAAAAAAAAAAAAAAMJIPQ32qi8MY6vIuN1KRR-V3djw3v4bPwvtk5D4DUHh/img.png
+  source_content_type: image/png
+  source_sha256: 0134f8fe3577942699829f46eb1a5952bcdebcf788dc173bb57a5971d5ebd6b6
+  archived_dimensions: 1216x561
+- file: 02-HDFS-아키텍처-NameNode와-DataNode의-협력.webp
+  context: HDFS 아키텍처: NameNode와 DataNode의 협력
+  source_image_path: https://blog.kakaocdn.net/dna/wrg3n/btsQPHaTE6z/AAAAAAAAAAAAAAAAAAAAAAOOkkDqe13r_FMtS2NTA-5hB43Kh1FVHaVNEHsiLneN/img.png
+  source_content_type: image/png
+  source_sha256: 445c192cd180d8d4aaad68de31b7751781ff31e891b6577a8be513a172964eea
+  archived_dimensions: 1249x691

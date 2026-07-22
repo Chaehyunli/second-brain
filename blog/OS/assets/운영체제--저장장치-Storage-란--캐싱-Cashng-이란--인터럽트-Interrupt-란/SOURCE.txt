@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/16
+
+selected_images:
+- file: 01-3.-저장장치-계층-구조.webp
+  context: 3. 저장장치 계층 구조
+  source_image_path: https://blog.kakaocdn.net/dna/qsxFn/btsMNsIgRr4/AAAAAAAAAAAAAAAAAAAAAEpKrtEuJ9n1t6xbEdcSHsASLu0ri392iHVBAC1FZ0Rx/img.png
+  source_content_type: image/png
+  source_sha256: 4e2d6bc5561ed4fea966d267459a745b907eab7429c56f08d33f20a673f0feed
+  archived_dimensions: 1018x709
+- file: 02-1.-운영체제의-수행-과정.webp
+  context: 1. 운영체제의 수행 과정
+  source_image_path: https://blog.kakaocdn.net/dna/bnc6S8/btsMNIEgsYC/AAAAAAAAAAAAAAAAAAAAAKQ-FNXSkXcWoz2fTQK4e6q50AvYJDUHpO_RD8o5FwyV/img.png
+  source_content_type: image/png
+  source_sha256: bda4fd082dfa71759aa9d12ceb6f3c76556f77803ed80c7a9c2b54bbad589ee9
+  archived_dimensions: 541x627
+- file: 03-1.-운영체제의-수행-과정.webp
+  context: 1. 운영체제의 수행 과정
+  source_image_path: https://blog.kakaocdn.net/dna/bW3P9q/btsMNh774ZK/AAAAAAAAAAAAAAAAAAAAADFbkEE_bGKqjnQK00OV7wqGeD9d-j0D9uSYs84M-N2Z/img.png
+  source_content_type: image/png
+  source_sha256: 56621e4578db43b107e4a23ff951e1dd786e0b400361e546d2f786c069d7d233
+  archived_dimensions: 522x586

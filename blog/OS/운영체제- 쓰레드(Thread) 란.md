@@ -157,6 +157,14 @@ Task3: M:N 모델(M = 3, N = 2) + 1 user ↔ 1 kernel (1:1) + 1 user ↔ 1 kerne
 pthread_create(&tid, &attr, run, (void *)count);
 ```
 
+## 핵심 이미지
+
+![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/01-3.-단일-쓰레드-vs-다중-쓰레드.webp)
+
+![3. 단일 쓰레드 vs 다중 쓰레드](assets/운영체제--쓰레드-Thread-란/02-3.-단일-쓰레드-vs-다중-쓰레드.webp)
+
+![6. 스레드 구현 방식](assets/운영체제--쓰레드-Thread-란/03-6.-스레드-구현-방식.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

@@ -201,6 +201,14 @@ http://15.165.203.130
 
 2. 탄력적 IP 해제 (릴리스)
 
+## 핵심 이미지
+
+![1. 배포(Deployment)란?](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/01-1.-배포-Deployment-란.webp)
+
+![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/02-3.-실습-EC2로-Express-서버-배포하기.webp)
+
+![🛠 3. 실습: EC2로 Express 서버 배포하기](assets/Docker--AWS-EC2에-서버-배포하기-Express-서버-배포하기/03-3.-실습-EC2로-Express-서버-배포하기.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/153
+
+selected_images:
+- file: 01-1.-ConstraintLayout.webp
+  context: 1. ConstraintLayout
+  source_image_path: https://blog.kakaocdn.net/dna/bJcTPr/btsQ3DsFoOl/AAAAAAAAAAAAAAAAAAAAAGgKzQYw2DsiM6QOrx0ewTC2AX2nlM2_6M0V0ZwZ7pIQ/img.png
+  source_content_type: image/png
+  source_sha256: 280936797830e61638f681fd858a150f1500771f51fb524472744e23063dd168
+  archived_dimensions: 238x240
+- file: 02-2.-ConstraintLayout-Flow.webp
+  context: 2. ConstraintLayout Flow
+  source_image_path: https://blog.kakaocdn.net/dna/E1jff/btsQ3nQ8xYt/AAAAAAAAAAAAAAAAAAAAACl1Gf0KTYeo-_aPFhkEF-ad3cSwca8ml1zaAwFuzf-O/img.png
+  source_content_type: image/png
+  source_sha256: 5a32b4c43682054ffedea9b4b580402a02986b935d3e02dacf37f39c030a2ca8
+  archived_dimensions: 661x313

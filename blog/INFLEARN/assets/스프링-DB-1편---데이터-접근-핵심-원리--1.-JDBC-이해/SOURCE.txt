@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/294
+
+selected_images:
+- file: 01-2.1-JDBC의-등장-배경.webp
+  context: 2.1 JDBC의 등장 배경
+  source_image_path: https://blog.kakaocdn.net/dna/cxLKYf/dJMcadP7cCH/AAAAAAAAAAAAAAAAAAAAANmbd9h44Fjj1muM3oFf3H3fPvP8OgHQClzyyExovWWf/img.png
+  source_content_type: image/png
+  source_sha256: a69824324bb7408c81ace69bdee266244a2adfb87c28b41f58238e45b9d31ca2
+  archived_dimensions: 1033x355
+- file: 02-2.1-JDBC의-등장-배경.webp
+  context: 2.1 JDBC의 등장 배경
+  source_image_path: https://blog.kakaocdn.net/dna/bfucmi/dJMcadP7cED/AAAAAAAAAAAAAAAAAAAAAKfunJjjaNvp9pcnr9O6HJqMXGfM4FZG70eo93tXtGMB/img.png
+  source_content_type: image/png
+  source_sha256: 23e43dc9daa40cd47e3f439720afc3371432e3d2b12e008f30ec269ff2d0d9e5
+  archived_dimensions: 1036x340
+- file: 03-2.2-JDBC-표준-인터페이스와-드라이버.webp
+  context: 2.2 JDBC 표준 인터페이스와 드라이버
+  source_image_path: https://blog.kakaocdn.net/dna/MPP8I/dJMcajv6Vx7/AAAAAAAAAAAAAAAAAAAAACzd32SvQK6EyXHwvYVWLL3WIrtil75UwxUNA8tCjeuZ/img.png
+  source_content_type: image/png
+  source_sha256: 96776be7d1e2b947b816403a3a893cd6f16d9af856e1b5357b33c5033c6628a1
+  archived_dimensions: 1027x496

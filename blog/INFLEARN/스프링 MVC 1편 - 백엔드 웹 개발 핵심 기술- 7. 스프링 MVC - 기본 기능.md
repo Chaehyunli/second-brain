@@ -876,6 +876,14 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
+## 핵심 이미지
+
+![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/01-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
+
+![6.1 HTTP 메시지 컨버터 (HttpMessageConverter)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/02-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp)
+
+![6.2 요청 매핑 핸들러 어댑터 구조](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--7.-스프링-MVC---기본-기능/03-6.2-요청-매핑-핸들러-어댑터-구조.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

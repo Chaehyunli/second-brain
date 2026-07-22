@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/175
+
+selected_images:
+- file: 01-AutoGrad의-응용-Heatmap-활성화.webp
+  context: AutoGrad의 응용: Heatmap 활성화
+  source_image_path: https://blog.kakaocdn.net/dna/qrMhX/dJMcahQejFw/AAAAAAAAAAAAAAAAAAAAAOxgBdstyZ56LZnEqGlemJde_snPnmhK8CTU_PSQHCVu/img.png
+  source_content_type: image/png
+  source_sha256: 61240b3df59a484091ca491677b4afa43faeb99d775c3420f40231612b0d2329
+  archived_dimensions: 1557x439

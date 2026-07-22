@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/227
+
+selected_images:
+- file: 01-코드-AppConfig-클래스-정보-확인-테스트.webp
+  context: [코드] AppConfig 클래스 정보 확인 테스트
+  source_image_path: https://blog.kakaocdn.net/dna/Q2dUb/dJMcac975KL/AAAAAAAAAAAAAAAAAAAAAJvoPjqU9OmpktGzFHk5JF8C7MOc5F-RoFWlh5fYlwm-/img.png
+  source_content_type: image/png
+  source_sha256: 0fd06c21e3af077dd13c4fcb68403a24eab001cae761453c93dc07713f05588b
+  archived_dimensions: 1019x540

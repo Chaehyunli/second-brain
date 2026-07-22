@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/142
+
+selected_images:
+- file: 01-쿼리-처리의-3가지-기본-단계.webp
+  context: 쿼리 처리의 3가지 기본 단계
+  source_image_path: https://blog.kakaocdn.net/dna/lwBSo/btsQNGDbl3l/AAAAAAAAAAAAAAAAAAAAAJ0v1s8dLiz88D1uh1QHOo51ZGmCrQg8-A3zehuFoh2N/img.png
+  source_content_type: image/png
+  source_sha256: c5e98b022062f4a2a154ffb87242d618f97fbd019bc5d0354eb41b42225634d3
+  archived_dimensions: 1195x685
+- file: 02-쿼리-비용은-어떻게-측정할까.webp
+  context: 쿼리 비용은 어떻게 측정할까?
+  source_image_path: https://blog.kakaocdn.net/dna/cqvv0o/btsQMja8KLo/AAAAAAAAAAAAAAAAAAAAAPzG4tctG1x5jxxpGEbRyUTRhr9-4Ehmk12clbeU4vfw/img.png
+  source_content_type: image/png
+  source_sha256: 22ba8ccca204a9981c5c806a9b4c54c59748eecfe6ef8fbfb94c0fe692369a73
+  archived_dimensions: 1024x792
+- file: 03-선택-Selection-연산-알고리즘과-비용-A1-A6.webp
+  context: 선택(Selection) 연산 알고리즘과 비용( A1 ~ A6 )
+  source_image_path: https://blog.kakaocdn.net/dna/bOedbh/btsQOaRwSdd/AAAAAAAAAAAAAAAAAAAAAD4xSW5sqxvI-Up2kJouUkQsGM7p5rSesqCwnTYACetj/img.png
+  source_content_type: image/png
+  source_sha256: 49bfe797d40cfba6afc0857c509144a8cb6a19799dba47547eb4b8554ef89a51
+  archived_dimensions: 1120x541

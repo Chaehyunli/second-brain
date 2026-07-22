@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/40
+
+selected_images:
+- file: 01-1.-명령어-형식-Instruction-Format.webp
+  context: 1. 명령어 형식 (Instruction Format)
+  source_image_path: https://blog.kakaocdn.net/dna/bSFR3w/btsM5OYWOxu/AAAAAAAAAAAAAAAAAAAAADXMVSnuqvJj68135AO9tHxCGFJ6XUX0dBbtr77jZ7hr/img.png
+  source_content_type: image/png
+  source_sha256: a831638d68cc96c4218eb174d8b8612f8c62d71338ff9b324dfc9992b5588a0e
+  archived_dimensions: 481x105
+- file: 02-2.-주소지정-방식-Addressing-Mode.webp
+  context: 2. 주소지정 방식 (Addressing Mode)
+  source_image_path: https://blog.kakaocdn.net/dna/YTbWA/btsM5wYRV1j/AAAAAAAAAAAAAAAAAAAAALMWRQ_jL5lvtQJT7AQT7DARLbb32RA03XQeb_FWC1-I/img.png
+  source_content_type: image/png
+  source_sha256: 22a6372516b630ba3e15ca2fdd3cf842d9a913a5d95c1af7635b68144fa56eb7
+  archived_dimensions: 393x226
+- file: 03-2.-주소지정-방식-Addressing-Mode.webp
+  context: 2. 주소지정 방식 (Addressing Mode)
+  source_image_path: https://blog.kakaocdn.net/dna/mOHaw/btsM6e4cSNK/AAAAAAAAAAAAAAAAAAAAABaJzK1bosvT0dJ4QRq1-fYaZ96tDjeM-HJ9RrkRGYWa/img.png
+  source_content_type: image/png
+  source_sha256: 0027e4c24648b9d8fbd825d14d38e7f5d9320b5a97c9411148fd84c105e1a523
+  archived_dimensions: 406x238

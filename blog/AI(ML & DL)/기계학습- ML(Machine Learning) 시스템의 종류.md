@@ -315,6 +315,14 @@ k-최근접 이웃(K-NN, k-Nearest Neighbors)
 
 OECD 국가의 1인당 GDP와 삶의 만족도간 연관 예시: - 특정 국가의 1인당 GDP가 주어졌을 때 삶의 만족도를 예측 하는 선형 모델을 도출 - life_satisfaction = θ0 + θ1 * GDP_per_capita - 훈련 과정을 통해 훈련 데이터에 가장 잘 맞는 최선의 θ0와 θ1을 찾아야 함 - 이런식으로 찾은 최적의 θ0 , θ1 값을 가진 직선을 선형 모델이라고 함 - 이 선형 모델을 토대로, 새로운 데이터가 들어왔을 경우 결과를 예측함.
 
+## 핵심 이미지
+
+![1. 지도 학습 (Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/01-1.-지도-학습-Supervised-Learning.webp)
+
+![2. 비지도 학습 (Unsupervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/02-2.-비지도-학습-Unsupervised-Learning.webp)
+
+![3. 준지도 학습 (Semi-Supervised Learning)](assets/기계학습--ML-Machine-Learning-시스템의-종류/03-3.-준지도-학습-Semi-Supervised-Learning.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

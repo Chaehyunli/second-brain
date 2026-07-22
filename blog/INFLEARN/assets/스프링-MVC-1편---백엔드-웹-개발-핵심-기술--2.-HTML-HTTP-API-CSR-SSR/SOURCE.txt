@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/253
+
+selected_images:
+- file: 01-정적-리소스-Static-Resources.webp
+  context: 📁 정적 리소스 (Static Resources)
+  source_image_path: https://blog.kakaocdn.net/dna/0UarE/dJMcaiW4DkS/AAAAAAAAAAAAAAAAAAAAACR1JNfPGfhO-cFGgskDTtJgqcl4JI9w0hVH_XqPrgPb/img.png
+  source_content_type: image/png
+  source_sha256: 52ef40d36dd6eadbdf67d5e9b5591673cbd32dfa4baced96afd622779d84aac3
+  archived_dimensions: 1327x553
+- file: 02-HTML-페이지-Dynamic-HTML.webp
+  context: 📄 HTML 페이지 (Dynamic HTML)
+  source_image_path: https://blog.kakaocdn.net/dna/4Jm7D/dJMcaibLA2J/AAAAAAAAAAAAAAAAAAAAAJkXaAXGv1odC1IY4vgFtPOs_69B6L5YJySmr7lDUw8T/img.png
+  source_content_type: image/png
+  source_sha256: 0eeee513ee97a73cba5241ad1c69cad8ec2ced000d65a7ad52d0e8d21c8c5d76
+  archived_dimensions: 1586x435
+- file: 03-2.-HTTP-API.webp
+  context: 2. HTTP API
+  source_image_path: https://blog.kakaocdn.net/dna/W3AmU/dJMcaco4cvy/AAAAAAAAAAAAAAAAAAAAAOvNBxnMbQi3GnRbk5d6bYh7IF1bWwWwCkcPeVSbTS8O/img.png
+  source_content_type: image/png
+  source_sha256: 5b5e4a6280f4e37fcfe42a5995f02d6f49504dd4635c9d4e199d53a05ee18a41
+  archived_dimensions: 1581x455

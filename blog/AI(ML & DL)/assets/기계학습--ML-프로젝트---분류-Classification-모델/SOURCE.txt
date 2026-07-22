@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/75
+
+selected_images:
+- file: 01-1.-MNIST-데이터셋.webp
+  context: 1. MNIST 데이터셋
+  source_image_path: https://blog.kakaocdn.net/dna/ufdh2/btsN4Q1RCVA/AAAAAAAAAAAAAAAAAAAAAFSmykNhhlEOZl4M1mS66Zlne5zGjyBA_Hei7_fhRte3/img.png
+  source_content_type: image/png
+  source_sha256: 48438a42955ed889b2b9bada492cf97920bf6a27b200520bc6c9a784e4c35f42
+  archived_dimensions: 789x778
+- file: 02-3.-분류기-성능-측정.webp
+  context: 3. 분류기 성능 측정
+  source_image_path: https://blog.kakaocdn.net/dna/kZjUA/btsN2YtynD8/AAAAAAAAAAAAAAAAAAAAAO4o1zFXKr15WUUHG4_RivjBHzFVaNzsgSrtHE7CJJK-/img.png
+  source_content_type: image/png
+  source_sha256: 47cd1a0dba5ef4a8a66b56ca4bf30a84803d2dd607c0cd8eb0772371d04a76d7
+  archived_dimensions: 496x100
+- file: 03-3.-분류기-성능-측정.webp
+  context: 3. 분류기 성능 측정
+  source_image_path: https://blog.kakaocdn.net/dna/kIoG7/btsN3MM2reV/AAAAAAAAAAAAAAAAAAAAANRtsVPdxF2pkZR7UpBwBmYkM5gDFueistlzA4Utib8k/img.png
+  source_content_type: image/png
+  source_sha256: 9591c14b09032c01d72e92b619d5afc9ccb20992df50030b0ed8b4ed2438cf33
+  archived_dimensions: 865x772

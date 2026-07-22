@@ -105,6 +105,14 @@ Buffering: 패브릭에서 쏟아지는 데이터가 링크 전송 속도($R$)�
 
 스케줄링 (Scheduling): 우선순위를 따져 누구를 먼저 보낼지 결정합니다. 이것이 QoS와 망 중립성 논쟁의 핵심 지점입니다.
 
+## 핵심 이미지
+
+![2. 서비스 모델 및 QoS (Quality of Service)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/01-2.-서비스-모델-및-QoS-Quality-of-Service.webp)
+
+![4. 입력 포트 및 포워딩 기술](assets/네트워크--네트워크-계층-Network-Layer-의-구조/02-4.-입력-포트-및-포워딩-기술.webp)
+
+![② 최장 일치 접두어 매칭 (Longest Prefix Matching)](assets/네트워크--네트워크-계층-Network-Layer-의-구조/03-최장-일치-접두어-매칭-Longest-Prefix-Matching.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

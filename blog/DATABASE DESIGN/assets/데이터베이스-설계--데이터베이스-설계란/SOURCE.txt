@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/114
+
+selected_images:
+- file: 01-데이터베이스의-핵심-개념-추상화와-독립성.webp
+  context: 🔧 데이터베이스의 핵심 개념: 추상화와 독립성
+  source_image_path: https://blog.kakaocdn.net/dna/bt0vjL/btsQmqNiKa4/AAAAAAAAAAAAAAAAAAAAALIUc5rlgtv1PuU9aHMmJpv83BHFbeW6VK1VSDRO937u/img.png
+  source_content_type: image/png
+  source_sha256: a1aa088fbc70382d0583141a493c2b8ff0c4a05be274c3f5f2d059ddea869c1f
+  archived_dimensions: 820x499
+- file: 02-데이터베이스의-내부-구조와-아키텍처.webp
+  context: 🏛️ 데이터베이스의 내부 구조와 아키텍처
+  source_image_path: https://blog.kakaocdn.net/dna/bHGY81/btsQkXMhEvM/AAAAAAAAAAAAAAAAAAAAAILc2CZMM_152B1v4HXn62yvWZ_3xKNPWACx6V_uDZr9/img.png
+  source_content_type: image/png
+  source_sha256: 6f627cf96141e7f516ee9162532de3261eb7082b60e7610c939b97cebe3855f4
+  archived_dimensions: 933x568
+- file: 03-데이터베이스의-내부-구조와-아키텍처.webp
+  context: 🏛️ 데이터베이스의 내부 구조와 아키텍처
+  source_image_path: https://blog.kakaocdn.net/dna/HKW2Q/btsQmxZXMjh/AAAAAAAAAAAAAAAAAAAAAJU-mJkw7N2-y1pUrebm8ApuRJMEPgFBpkk4NT0Tc3zY/img.png
+  source_content_type: image/png
+  source_sha256: 8396c1ed9de156d6e306bc9098b8e5ae58569359f77f318723c80ce741bf016f
+  archived_dimensions: 1123x693

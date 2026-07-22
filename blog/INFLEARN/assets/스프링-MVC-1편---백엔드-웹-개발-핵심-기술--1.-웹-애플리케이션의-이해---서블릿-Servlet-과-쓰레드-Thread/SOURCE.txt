@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/252
+
+selected_images:
+- file: 01-서블릿-Servlet-개념-및-동작-원리-정리.webp
+  context: 서블릿(Servlet) 개념 및 동작 원리 정리
+  source_image_path: https://blog.kakaocdn.net/dna/b2k51G/dJMcafsxILO/AAAAAAAAAAAAAAAAAAAAAN80mL_GRUj9V_lolN5N1Ak2kW6iCc3S2-bNyH0Xzq7G/img.png
+  source_content_type: image/png
+  source_sha256: 63ddd980f0bd8f9df43d6fe7fc8b2cf0c4a8f677c48b8cedb8fded139760c5d4
+  archived_dimensions: 1600x885
+- file: 02-요청-처리-모델.webp
+  context: 요청 처리 모델
+  source_image_path: https://blog.kakaocdn.net/dna/bhu9hl/dJMcai3O6ZP/AAAAAAAAAAAAAAAAAAAAAAhH7qFgt267g1vy4mpTB9ceOGpPlZRLy1DN6UoLMBFY/img.png
+  source_content_type: image/png
+  source_sha256: bbd4a53a8ab4ee169e2472c44df3be02fc622d4e2cdc1ce9e3d4efeda1d4bcae
+  archived_dimensions: 1600x715
+- file: 03-요청-처리-모델.webp
+  context: 요청 처리 모델
+  source_image_path: https://blog.kakaocdn.net/dna/K6eEy/dJMcai3O6ZY/AAAAAAAAAAAAAAAAAAAAALHfobLS2o0uXaKfqM9_EV4fqZnm2QrvmN3JQvS9Icqv/img.png
+  source_content_type: image/png
+  source_sha256: 59d4c8aee4f1cf1f72d611f0d6291bc7c0256bdb357b83c7b45af82d4039569b
+  archived_dimensions: 1600x864

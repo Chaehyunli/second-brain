@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/27
+
+selected_images:
+- file: 01-1.-다중-프로그래밍-Multiprogramming.webp
+  context: 1. 다중 프로그래밍 (Multiprogramming)
+  source_image_path: https://blog.kakaocdn.net/dna/euHkkS/btsMVTNxKj2/AAAAAAAAAAAAAAAAAAAAAIdnXq1vhlaNfZiFSXRhg-UEsD6WHse9QyoK7OqKKNHp/img.png
+  source_content_type: image/png
+  source_sha256: edd3a32fa1cdfbf041e90bfa5c669ef7ab1ccee0f9b2f282c453b15c92893100
+  archived_dimensions: 442x645
+- file: 02-3.-프로세스-상태-Process-States.webp
+  context: 3. 프로세스 상태 (Process States)
+  source_image_path: https://blog.kakaocdn.net/dna/m28DP/btsMXdqHqeT/AAAAAAAAAAAAAAAAAAAAAJxJJZVm5qASIAMeZYe2IRQupNLjtB_t86QKuhqqO3IX/img.png
+  source_content_type: image/png
+  source_sha256: ec07b7acb1f7d46b2494c56178aa77f016b385a056bd2ce20bedce48e549742f
+  archived_dimensions: 1435x592
+- file: 03-4.-프로세스-상태-변화-예시-I-O-요청-발생.webp
+  context: 4. 프로세스 상태 변화 예시( I/O 요청 발생 )
+  source_image_path: https://blog.kakaocdn.net/dna/5yN5o/btsMXzAlmEU/AAAAAAAAAAAAAAAAAAAAADDIGojk5OcG7hc4LfmTwFFxZI_Ltuj1jPFQpWk9BeiJ/img.png
+  source_content_type: image/png
+  source_sha256: 92bc515d246fc8838f59839566511e2b2267c29dc21fe153312970c03526447a
+  archived_dimensions: 1419x585

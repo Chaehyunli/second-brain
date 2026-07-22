@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/159
+
+selected_images:
+- file: 01-1.-이미지의-본질.webp
+  context: 1. 이미지의 본질
+  source_image_path: https://blog.kakaocdn.net/dna/GSnNm/btsQ66inro2/AAAAAAAAAAAAAAAAAAAAALJqNy2Moz1zXtDPhXiijJ1Hfk32XwrA2m2Vgd6F9PrJ/img.png
+  source_content_type: image/png
+  source_sha256: 6ad003e932761ec1a27e3972ea18d9a9e27fc59da73be55c580ca14eee4f3361
+  archived_dimensions: 1162x655
+- file: 02-2.-노이즈-감소-문제.webp
+  context: 2. 노이즈 감소 문제
+  source_image_path: https://blog.kakaocdn.net/dna/tfObE/btsQ6ZKjaBg/AAAAAAAAAAAAAAAAAAAAADGRiwa-dfxLHXmhbI7BCeI0y6WAC7ZhwDW-9UsbsV52/img.png
+  source_content_type: image/png
+  source_sha256: 7467af1dc82ca2b45d7a6e852f9c665598f63e19c4a68cc8ad053fcacd3d7cdb
+  archived_dimensions: 1377x547
+- file: 03-3.-선형-필터링의-원리.webp
+  context: 3. 선형 필터링의 원리
+  source_image_path: https://blog.kakaocdn.net/dna/cfT40u/btsRaeeQNOI/AAAAAAAAAAAAAAAAAAAAAE0KGv3oKm2WrkF2rpsTVfvtEyWJNd3qmN5qhjdACG9r/img.png
+  source_content_type: image/png
+  source_sha256: 37562aae62da51342273815894deb964730e8ad0acc6bfe8137ecbc441f954e8
+  archived_dimensions: 1068x295

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/51
+
+selected_images:
+- file: 01-1.-CPU-스케줄링-개요.webp
+  context: 1. CPU 스케줄링 개요
+  source_image_path: https://blog.kakaocdn.net/dna/clAldy/btsNdAzLGuw/AAAAAAAAAAAAAAAAAAAAANwjgAKumA9TRVPcMmJU4wMPwhiwPxaNyTSyq_0YF-qQ/img.png
+  source_content_type: image/png
+  source_sha256: 7a7cae9b9b7ec6ba7722ae145f7c06fb3d12ebdf4ea67dad08390545d958dee6
+  archived_dimensions: 1600x445
+- file: 02-2.-CPU-스케줄링이-일어나는-시점.webp
+  context: 2. CPU 스케줄링이 일어나는 시점
+  source_image_path: https://blog.kakaocdn.net/dna/blEN0Z/btsNd6kChpI/AAAAAAAAAAAAAAAAAAAAACbOBUhUO9iMznbmPjVTP4LESsNk9bC8KAeGvmb06FVE/img.png
+  source_content_type: image/png
+  source_sha256: 944ecd4cc6dd98e65736e1bc996d266813c0f5ec9b4415f2a63bd96fa14d7680
+  archived_dimensions: 825x457

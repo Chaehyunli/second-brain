@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/238
+
+selected_images:
+- file: 01-2.-프로토타입-스코프.webp
+  context: 2. 프로토타입 스코프
+  source_image_path: https://blog.kakaocdn.net/dna/Gjc9O/dJMcaduy9JW/AAAAAAAAAAAAAAAAAAAAANybRhbm1SOP7VnbqsKNJKg2f-GityKo1EpKUccB4QhO/img.png
+  source_content_type: image/png
+  source_sha256: 18989c1da3ad46871fdfae9541b8591d44639cdb7119d9d85f06ffff5b8c92b1
+  archived_dimensions: 1042x563
+- file: 02-2.-프로토타입-스코프.webp
+  context: 2. 프로토타입 스코프
+  source_image_path: https://blog.kakaocdn.net/dna/bRd1xI/dJMcai3Iq9U/AAAAAAAAAAAAAAAAAAAAAIGiDOc4rOXXc1-FBEdfcbL0Ah5-rqTq_ySbF-zbWkhk/img.png
+  source_content_type: image/png
+  source_sha256: 7628c4010003f7c66bfeb7f70b59d9caf2c4b3b1c4ad194a1df923a2691068e3
+  archived_dimensions: 1039x589
+- file: 03-3.-싱글톤-빈과-함께-사용-시-문제점.webp
+  context: 3. 싱글톤 빈과 함께 사용 시 문제점
+  source_image_path: https://blog.kakaocdn.net/dna/IIAN5/dJMcaduy9MQ/AAAAAAAAAAAAAAAAAAAAADgY8SOKDJty8s0zVAGJjPV184c3785sADOEAy-YWVbu/img.png
+  source_content_type: image/png
+  source_sha256: 22302c43e71a11f0f1ea981f8580279915128c9e080aede9ffb94fb71b2adbcc
+  archived_dimensions: 1020x527

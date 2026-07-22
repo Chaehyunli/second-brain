@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/128
+
+selected_images:
+- file: 01-1.-머신러닝의-기본-개념.webp
+  context: 1. 머신러닝의 기본 개념
+  source_image_path: https://blog.kakaocdn.net/dna/bb70ej/btsQAZJ2qkn/AAAAAAAAAAAAAAAAAAAAAOW8REILP-fReynwKsdaDNR7E-p2nAddQZ3-WeRlvler/img.png
+  source_content_type: image/png
+  source_sha256: 86848bc7e65907d125f644d30076c358f26e1694dbe3edc70ace4773544847a1
+  archived_dimensions: 559x489
+- file: 02-3.-주요-분류-알고리즘.webp
+  context: 3. 주요 분류 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/by27Dt/btsQCzQZ4EH/AAAAAAAAAAAAAAAAAAAAADjHRyCWDZtsMV8ftO7g3IVxwnyf3vbpwl2NMr6R26aT/img.png
+  source_content_type: image/png
+  source_sha256: 064fd4598cebcec36a4b674ea2f926cabefde2a87be8be841c04b09177ff28e4
+  archived_dimensions: 429x409
+- file: 03-3.-주요-분류-알고리즘.webp
+  context: 3. 주요 분류 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/IbVEc/btsQA1ujZPy/AAAAAAAAAAAAAAAAAAAAAFozUs89KPjp3-r2_VxYIRvpzy-r2_etzKO_7ffgDi0P/img.png
+  source_content_type: image/png
+  source_sha256: 02abeaf4373ac05a90bec28c80cb78211b192d88ef940c16792438f777e9060e
+  archived_dimensions: 604x601

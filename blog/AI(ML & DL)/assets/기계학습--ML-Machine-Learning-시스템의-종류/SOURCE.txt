@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/15
+
+selected_images:
+- file: 01-1.-지도-학습-Supervised-Learning.webp
+  context: 1. 지도 학습 (Supervised Learning)
+  source_image_path: https://blog.kakaocdn.net/dna/PVHUN/btsMKqxD6Pr/AAAAAAAAAAAAAAAAAAAAAIaRqm-lrmDX7cIpFcHnUHQ9PP8K07GFxsibGfYuTcc6/img.png
+  source_content_type: image/png
+  source_sha256: 560fad783d7b6359f0a57f2b5514ebc25fe401bd8787be393b79097907bbe69b
+  archived_dimensions: 1317x427
+- file: 02-2.-비지도-학습-Unsupervised-Learning.webp
+  context: 2. 비지도 학습 (Unsupervised Learning)
+  source_image_path: https://blog.kakaocdn.net/dna/buKndt/btsMKu050sh/AAAAAAAAAAAAAAAAAAAAAHz0gjD4YDxa6eZ-xXNDlHK6FWyvHVyZ7PU-a-Gtsa_f/img.png
+  source_content_type: image/png
+  source_sha256: 2a86048c2fff8bc61e9be5efad5dd3b148a73bc07d471554a3b3617a788020a2
+  archived_dimensions: 670x322
+- file: 03-3.-준지도-학습-Semi-Supervised-Learning.webp
+  context: 3. 준지도 학습 (Semi-Supervised Learning)
+  source_image_path: https://blog.kakaocdn.net/dna/Jz3bN/btsMKOruiGg/AAAAAAAAAAAAAAAAAAAAAPo-SgmYwzWX3s4PE7foiJxRHVnn9h_UUxu3tZ7deRjZ/img.png
+  source_content_type: image/png
+  source_sha256: 24950cac6ca96d6cc50df210b8989610bccda73bfbd42d46bc3c050d6ebea255
+  archived_dimensions: 688x340

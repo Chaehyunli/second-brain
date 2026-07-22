@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/122
+
+selected_images:
+- file: 01-1.-코틀린-Kotlin-시작하기.webp
+  context: 1. 코틀린(Kotlin) 시작하기
+  source_image_path: https://blog.kakaocdn.net/dna/bvEaRF/btsQtemMUNR/AAAAAAAAAAAAAAAAAAAAAEWV9GTJB1Jj88sa2L86dev2B0x-oDE8ltlR0XaODIaz/img.png
+  source_content_type: image/png
+  source_sha256: fc264e4495bf6abb201ad03839e52dda479edf789fff169a4eb7b119b660a874
+  archived_dimensions: 300x334

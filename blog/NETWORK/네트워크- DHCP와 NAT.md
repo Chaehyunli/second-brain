@@ -105,6 +105,14 @@ Incoming: 외부 응답의 포트 번호를 테이블에서 조회하여 다시 
 
 핵심: 포트 번호를 식별자로 사용하여 여러 사설 IP를 하나의 공인 IP에 매핑합니다
 
+## 핵심 이미지
+
+![1. DHCP (Dynamic Host Configuration Protocol)](assets/네트워크--DHCP와-NAT/01-1.-DHCP-Dynamic-Host-Configuration-Protocol.webp)
+
+![2. IP 주소 체계와 서브네팅 (Subnetting)](assets/네트워크--DHCP와-NAT/02-2.-IP-주소-체계와-서브네팅-Subnetting.webp)
+
+![2.2 서브네팅과 비트 계산 (2^n)](assets/네트워크--DHCP와-NAT/03-2.2-서브네팅과-비트-계산-2-n.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

@@ -165,6 +165,12 @@ plot_digit(cleaned_image)
 
 모델이 노이즈가 낀 이미지로부터 원본 이미지를 복원하는 다중 출력 분류를 수행
 
+## 핵심 이미지
+
+![1. 오차 행렬 (Confusion Matrix) 이란?](assets/기계학습--ML-프로젝트---분류-Classfication-모델-5/01-1.-오차-행렬-Confusion-Matrix-이란.webp)
+
+![1. 오차 행렬 (Confusion Matrix) 이란?](assets/기계학습--ML-프로젝트---분류-Classfication-모델-5/02-1.-오차-행렬-Confusion-Matrix-이란.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

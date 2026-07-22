@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/96
+
+selected_images:
+- file: 01-1.-Docker-이미지-Image-다운로드.webp
+  context: 📥 1. Docker 이미지(Image) 다운로드
+  source_image_path: https://blog.kakaocdn.net/dna/zm1J8/btsOG6Ksro6/AAAAAAAAAAAAAAAAAAAAAGq55ewXGxB1Copp3NbmyzZcFs0EsS5y1oS0EuwlRtUg/img.png
+  source_content_type: image/png
+  source_sha256: 16cc0d8c1ae83fc5ecdf5619b94776b274b2a6bac56ae248151770dfec04ae67
+  archived_dimensions: 853x337
+- file: 02-1.-Docker-이미지-Image-다운로드.webp
+  context: 📥 1. Docker 이미지(Image) 다운로드
+  source_image_path: https://blog.kakaocdn.net/dna/bzGjXs/btsOFWvI036/AAAAAAAAAAAAAAAAAAAAABGPtdGwdy5b6dY681PH1shBr5GUvPfW5_iHnNq9ojWf/img.png
+  source_content_type: image/png
+  source_sha256: 63f299fbeda06206abcd26a67efc56a4a56954b0f60a6e88c4ff6fe0d52f23b9
+  archived_dimensions: 1317x835
+- file: 03-2.-이미지-확인-및-삭제.webp
+  context: 🔍 2. 이미지 확인 및 삭제
+  source_image_path: https://blog.kakaocdn.net/dna/3OTNk/btsOIrtwu36/AAAAAAAAAAAAAAAAAAAAAABja-VMvf3sMd3E8MVacw8V7NpGEUyDoG5gAPouzZhG/img.png
+  source_content_type: image/png
+  source_sha256: b85f063b1927e3b980f726d3fb5523edec171c0c08153999acc11830b0fbeed0
+  archived_dimensions: 864x124

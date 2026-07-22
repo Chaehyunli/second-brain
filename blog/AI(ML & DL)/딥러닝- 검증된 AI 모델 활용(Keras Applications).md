@@ -337,6 +337,10 @@ model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
 
 설명: 모델의 검증된 구조(Architecture)만 가져오고 가중치는 무작위로 초기화 - ImageNet 가중치를 사용하지 않고, 완전히 새로운 데이터셋으로 처음부터(from scratch) 모델을 학습시킬 때 사용
 
+## 핵심 이미지
+
+![⚙️ Part 3. Keras 모델 활용 심화: 5가지 주요 시나리오](assets/딥러닝--검증된-AI-모델-활용-Keras-Applications/01-Part-3.-Keras-모델-활용-심화-5가지-주요-시나리오.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

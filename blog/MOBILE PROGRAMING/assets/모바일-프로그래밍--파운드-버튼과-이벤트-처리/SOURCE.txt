@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/141
+
+selected_images:
+- file: 01-1.-선택의-상태를-담다-컴파운드-버튼-CompoundButton.webp
+  context: 1. 선택의 상태를 담다: 컴파운드 버튼 (CompoundButton)
+  source_image_path: https://blog.kakaocdn.net/dna/dlYQEr/btsQMsFHGf6/AAAAAAAAAAAAAAAAAAAAAMNJPiTvxilMQtpidRIG_hsLcwV_6VqTI5y-FmCwhGWV/img.png
+  source_content_type: image/png
+  source_sha256: f8ca1c9c665419e3314a40f621a942c532b843b455d35aef0be414370eab7ece
+  archived_dimensions: 829x601

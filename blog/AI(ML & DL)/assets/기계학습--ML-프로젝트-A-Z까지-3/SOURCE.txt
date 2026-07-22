@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/63
+
+selected_images:
+- file: 01-5.-범주형-특성-다루기.webp
+  context: 5. 범주형 특성 다루기
+  source_image_path: https://blog.kakaocdn.net/dna/ZiZSL/btsNDmnv53s/AAAAAAAAAAAAAAAAAAAAABotScZxE8N2m6cVCjBaJwSHAb1u6EgytmjNc0-dn1SA/img.png
+  source_content_type: image/png
+  source_sha256: 69c6f0ff80587fa2254a8a441c7c3107e8f68dfbfaf82423904dc888e8f45ca4
+  archived_dimensions: 418x336
+- file: 02-7.-원-핫-인코딩-One-Hot-Encoding.webp
+  context: 7. 원-핫 인코딩 (One-Hot Encoding)
+  source_image_path: https://blog.kakaocdn.net/dna/dhIRqd/btsND5SSgRf/AAAAAAAAAAAAAAAAAAAAAAShBfXZWWvMrRmTsqnNEG2IKUaqXKncWabAcox1NBlZ/img.png
+  source_content_type: image/png
+  source_sha256: 152f187c3ebddc0f84afb2cdc36e2e7247442b1c1a5bab14b400eccbadb83fa5
+  archived_dimensions: 1185x315

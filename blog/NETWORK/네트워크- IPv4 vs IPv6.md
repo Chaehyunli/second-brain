@@ -127,6 +127,14 @@ Hop-by-hop: 모든 라우터가 에러 체크. (과도한 부하로 현대 인�
 
 SDN의 의의: 과거에는 각 미들박스를 하드웨어로 따로 구매해야 했으나, 이제는 OpenFlow의 "Match + Action" 추상화를 통해 일반 스위치 위에서 소프트웨어로 모든 미들박스 기능을 통합 구현 가능.
 
+## 핵심 이미지
+
+![1.1 등장 동기 및 헤더 구조](assets/네트워크--IPv4-vs-IPv6/01-1.1-등장-동기-및-헤더-구조.webp)
+
+![1.2 IPv4-IPv6 과도기 기술: 터널링(Tunneling)](assets/네트워크--IPv4-vs-IPv6/02-1.2-IPv4-IPv6-과도기-기술-터널링-Tunneling.webp)
+
+![1.2 IPv4-IPv6 과도기 기술: 터널링(Tunneling)](assets/네트워크--IPv4-vs-IPv6/03-1.2-IPv4-IPv6-과도기-기술-터널링-Tunneling.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

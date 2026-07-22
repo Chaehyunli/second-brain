@@ -301,6 +301,14 @@ class SecondActivity : AppCompatActivity() {
 </manifest>
 ```
 
+## 핵심 이미지
+
+![1. 안드로이드 앱의 주요 구성 요소: 액티비티 (Activity)](assets/모바일-프로그래밍--Activity와-Intent-단방향/01-1.-안드로이드-앱의-주요-구성-요소-액티비티-Activity.webp)
+
+![4. 명시적 인텐트를 이용한 데이터 전달 (단방향)](assets/모바일-프로그래밍--Activity와-Intent-단방향/02-4.-명시적-인텐트를-이용한-데이터-전달-단방향.webp)
+
+![5. Activity 및 Intent 구현 실습](assets/모바일-프로그래밍--Activity와-Intent-단방향/03-5.-Activity-및-Intent-구현-실습.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

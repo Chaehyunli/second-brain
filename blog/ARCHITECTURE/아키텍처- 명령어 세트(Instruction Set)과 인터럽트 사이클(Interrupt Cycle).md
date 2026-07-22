@@ -110,6 +110,14 @@ CPU의 처리 속도를 높이기 위한 대표적인 기술
 
 3) 특징 및 장점
 
+## 핵심 이미지
+
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/01-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/02-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
+![1. 인터럽트 사이클 (Interrupt Cycle)](assets/아키텍처--명령어-세트-Instruction-Set-과-인터럽트-사이클-Interrupt-Cycle/03-1.-인터럽트-사이클-Interrupt-Cycle.webp)
+
 ## 관련 글
 
 - [[blog/ARCHITECTURE/index|ARCHITECTURE]]

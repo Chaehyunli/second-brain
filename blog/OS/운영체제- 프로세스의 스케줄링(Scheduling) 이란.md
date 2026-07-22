@@ -137,6 +137,14 @@ fork()는 시스템 호출이기 때문에, OS에서 이를 처리함. OS에 저
 
 때문에 fork()된 서로 같은 두 자식과 부모 코드여도 자식은 if(pid == 0)의 코드를 실행 후에 부모에게 종료 시그널을 보내고, 부모닌 else문으로 들어가서 자식의 종료 시그널을 기다려(wait()) 프로세스를 종료함(exit 0).
 
+## 핵심 이미지
+
+![1️⃣ 문맥 교환 (Context Switch)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/01-1-문맥-교환-Context-Switch.webp)
+
+![3️⃣ 스케줄링 큐 (Scheduling Queue)](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/02-3-스케줄링-큐-Scheduling-Queue.webp)
+
+![4️⃣ 프로세스 상태와 큐 이동](assets/운영체제--프로세스의-스케줄링-Scheduling-이란/03-4-프로세스-상태와-큐-이동.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

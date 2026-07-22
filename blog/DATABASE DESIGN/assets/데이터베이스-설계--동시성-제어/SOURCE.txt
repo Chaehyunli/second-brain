@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/187
+
+selected_images:
+- file: 01-락-기반-프로토콜-Lock-Based-Protocols.webp
+  context: 락 기반 프로토콜 (Lock-Based Protocols)
+  source_image_path: https://blog.kakaocdn.net/dna/bSys1t/dJMcaiuTRpH/AAAAAAAAAAAAAAAAAAAAABsHUGfwz_fY8lqyMKgQruHvaXOCCRF1E7fk9yheSlSp/img.png
+  source_content_type: image/png
+  source_sha256: 2c81240dc4a8dbf003893d08c7a5e0b497ba8ed7e4ee967ceb7d34c67037e05f
+  archived_dimensions: 361x225
+- file: 02-2단계-락-프로토콜-Two-Phase-Locking-Protocol-2PL.webp
+  context: 2단계 락 프로토콜 (Two-Phase Locking Protocol, 2PL)
+  source_image_path: https://blog.kakaocdn.net/dna/bYch4a/dJMcai2JNtF/AAAAAAAAAAAAAAAAAAAAAFtrsUsPnkEFEEg3z6-MaU-5AWcKKiz3NbYo2O5xwgPU/img.png
+  source_content_type: image/png
+  source_sha256: 42e32e4438f1b5a41943124c1b957fd6a5ecabe44b049fdccc8ae3200f92cc07
+  archived_dimensions: 733x379
+- file: 03-락-구현-Implementation.webp
+  context: 락 구현 (Implementation)
+  source_image_path: https://blog.kakaocdn.net/dna/8PqJ5/dJMcahvZuyN/AAAAAAAAAAAAAAAAAAAAAEuLxPAAhvi2Y9lO6UrIKncQ3HSkTtaSwrYEUnD6p3fu/img.png
+  source_content_type: image/png
+  source_sha256: 085d23453fa28ec837752385296085300471e330bfdb8ba2fdc1d928fc6a5231
+  archived_dimensions: 655x814

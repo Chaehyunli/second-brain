@@ -249,6 +249,14 @@ PC ← 0170
 
 다음 명령어는 170번지에서 실행됨
 
+## 핵심 이미지
+
+![3.1 인출 사이클 (Fetch Cycle)](assets/아키텍처--CPU의-구조와-동작-원리/01-3.1-인출-사이클-Fetch-Cycle.webp)
+
+![2) 데이터 처리 연산 (ADD addr)](assets/아키텍처--CPU의-구조와-동작-원리/02-2-데이터-처리-연산-ADD-addr.webp)
+
+![4. 명령어 실행 예제](assets/아키텍처--CPU의-구조와-동작-원리/03-4.-명령어-실행-예제.webp)
+
 ## 관련 글
 
 - [[blog/ARCHITECTURE/index|ARCHITECTURE]]

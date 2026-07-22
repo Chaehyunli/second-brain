@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/71
+
+selected_images:
+- file: 01-1.-금융과-보험.webp
+  context: 1. 금융과 보험
+  source_image_path: https://blog.kakaocdn.net/dna/Cfg54/btsNU6yvHKa/AAAAAAAAAAAAAAAAAAAAAJ4lVdNQ12VW5gHfuzvS5yAmmPdQO3iHK4Ej1ocbsQTf/img.png
+  source_content_type: image/png
+  source_sha256: b497ee48565d228589cd90117575637360ea923bb67236c50cd24feb2a232310
+  archived_dimensions: 1063x439
+- file: 02-2.-공급망-및-유통.webp
+  context: 2. 공급망 및 유통
+  source_image_path: https://blog.kakaocdn.net/dna/dqoCEM/btsNWeh4fcy/AAAAAAAAAAAAAAAAAAAAAIIhQ8mLuKcOZCWrtAc1kqUijiLIMkVqVBiPCosmZx1B/img.png
+  source_content_type: image/png
+  source_sha256: 51b342dd8de4b185988564f7dba7528d35e6383717958d3fb9baf71d19423337
+  archived_dimensions: 1069x603
+- file: 03-3.-콘텐츠와-저작권.webp
+  context: 3. 콘텐츠와 저작권
+  source_image_path: https://blog.kakaocdn.net/dna/zEySo/btsNV2vrEkC/AAAAAAAAAAAAAAAAAAAAAHyOorxgUxcN9XLUnJD5GbQvAyDQ006vFzKPG9xX9x-_/img.png
+  source_content_type: image/png
+  source_sha256: 86d19b1be422679b68c136afd8f8c9b0552183643ad1427eb563dc89bbf2266d
+  archived_dimensions: 1002x385

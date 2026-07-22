@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/173
+
+selected_images:
+- file: 01-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp
+  context: 1. 액티비티 간 양방향 데이터 전달 (Activity Result API)
+  source_image_path: https://blog.kakaocdn.net/dna/cqZc1F/dJMcahbCAfo/AAAAAAAAAAAAAAAAAAAAAG91ioWMjQdsrKV94w6ILdE9hUKA-JoGorJBTPoX9puS/img.png
+  source_content_type: image/png
+  source_sha256: b19fb515f3623fb2ede6e3e1cf4c5de135b1c9053168ed04a106dfd36edc4cc5
+  archived_dimensions: 1597x714
+- file: 02-1.-액티비티-간-양방향-데이터-전달-Activity-Result-API.webp
+  context: 1. 액티비티 간 양방향 데이터 전달 (Activity Result API)
+  source_image_path: https://blog.kakaocdn.net/dna/bVOc7l/dJMcacVGy4J/AAAAAAAAAAAAAAAAAAAAAHlNmc-khZXTPtXp8z6iTRvCaf2YZXGSzoQwdDSrXwXa/img.png
+  source_content_type: image/png
+  source_sha256: e888f518afc6f4716f3192a11dd6802ae5ed2c57fe85a880d0067a556baf8c28
+  archived_dimensions: 1591x367
+- file: 03-2.-실습-양방향-데이터-전달-덧셈-뺄셈.webp
+  context: 2. 실습 : 양방향 데이터 전달 (덧셈 + 뺄셈)
+  source_image_path: https://blog.kakaocdn.net/dna/bdpvM7/dJMcadmKVHz/AAAAAAAAAAAAAAAAAAAAAE84-cpalPXHMVaVreN9vXae_BuHu3e4UJs20lstz-Nt/img.png
+  source_content_type: image/png
+  source_sha256: 3c17ff5d0793bb5ba54a9c7d916ba90f76b8a334b785adbc2727d7f3307d52fb
+  archived_dimensions: 1465x439

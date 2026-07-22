@@ -179,6 +179,14 @@ https://ch010104.tistory.com/11
 
 4. 사생활 문제(Privacy Issues)
 
+## 핵심 이미지
+
+![2. Public BlockChain vs Database](assets/블록체인--블록체인-Block-Chain-이란/01-2.-Public-BlockChain-vs-Database.webp)
+
+![3. 기존 문제 vs 블록체인의 해결책](assets/블록체인--블록체인-Block-Chain-이란/02-3.-기존-문제-vs-블록체인의-해결책.webp)
+
+![4. 블록체인의 구조](assets/블록체인--블록체인-Block-Chain-이란/03-4.-블록체인의-구조.webp)
+
 ## 관련 글
 
 - [[blog/BLOCKCHAIN/index|BLOCKCHAIN]]

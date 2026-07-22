@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/25
+
+selected_images:
+- file: 01-2.-비트코인-작동-원리.webp
+  context: 2. 비트코인 작동 원리
+  source_image_path: https://blog.kakaocdn.net/dna/b1o7eY/btsMVwLyOyS/AAAAAAAAAAAAAAAAAAAAAGxPsoCSBG71h24UTMCMl5dME72HM7FYlNsoBEk_iYP_/img.png
+  source_content_type: image/png
+  source_sha256: e8102780ee07815c8af056bde45598c573a59014f92e4350261861a012557286
+  archived_dimensions: 1000x481
+- file: 02-4.-비트코인-트랜젝션---UTXO-모델.webp
+  context: 4. 비트코인 트랜젝션 - UTXO 모델
+  source_image_path: https://blog.kakaocdn.net/dna/bgEFQI/btsMXckHi7D/AAAAAAAAAAAAAAAAAAAAAJkUeZ_yau3eEczcIWhQN5tn-GdtKin37LzPM6PQTImc/img.png
+  source_content_type: image/png
+  source_sha256: 335ee1720d8bf6041968892c70edf717cc708fea80baac5e4e3c37a1fa95158c
+  archived_dimensions: 1005x357
+- file: 03-8.-암호화폐-지갑-종류.webp
+  context: 8. 암호화폐 지갑 종류
+  source_image_path: https://blog.kakaocdn.net/dna/bV1Wti/btsMWDb7y3z/AAAAAAAAAAAAAAAAAAAAAA8C0Ff_brq9U3DIB6ArCdVaG6LqVI22zOjDV3QPXPmS/img.png
+  source_content_type: image/png
+  source_sha256: 14f4a0cf06617440f9f662d30a6d10ec60610338676d275f37543ecb173b73f4
+  archived_dimensions: 1045x586

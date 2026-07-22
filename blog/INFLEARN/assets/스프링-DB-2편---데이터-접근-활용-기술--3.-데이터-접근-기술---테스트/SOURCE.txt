@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/302
+
+selected_images:
+- file: 01-Transactional-테스트-동작-방식.webp
+  context: @Transactional 테스트 동작 방식
+  source_image_path: https://blog.kakaocdn.net/dna/bQFPFd/dJMcaalGI8V/AAAAAAAAAAAAAAAAAAAAAK--GkYLdAgaDQscyVX-RO146e-ekChLv1dxnHjL9UU5/img.png
+  source_content_type: image/png
+  source_sha256: 1b861a5508457c9374eafe80ddc9932dbba25090a27933943d22594f4d8a8f76
+  archived_dimensions: 716x484

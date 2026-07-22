@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/176
+
+selected_images:
+- file: 01-A-A-Star-알고리즘-vs.-다익스트라.webp
+  context: A* (A-Star) 알고리즘 (vs. 다익스트라)
+  source_image_path: https://blog.kakaocdn.net/dna/cSbVcR/dJMcabWNHbj/AAAAAAAAAAAAAAAAAAAAAB2YaYm3d2TFEaq4EFj3sj6vTw9XgMzYhihyEBob11d0/img.png
+  source_content_type: image/png
+  source_sha256: c61cd7403b8cff4c2d681273f0604d25b787838dfcc7ee8c3906a58eb02b2b98
+  archived_dimensions: 694x562
+- file: 02-A-A-Star-알고리즘-vs.-다익스트라.webp
+  context: A* (A-Star) 알고리즘 (vs. 다익스트라)
+  source_image_path: https://blog.kakaocdn.net/dna/d4v54b/dJMcagqgSsF/AAAAAAAAAAAAAAAAAAAAAOGwCoJAyOrNU_vrBcxrKykQ55-_r3yiKZzEbDA2o25W/img.png
+  source_content_type: image/png
+  source_sha256: fb174fa608749e1d26dac8c8fac19f96fade7899932728e61388f3627144ade0
+  archived_dimensions: 637x570
+- file: 03-A-A-Star-알고리즘-vs.-다익스트라.webp
+  context: A* (A-Star) 알고리즘 (vs. 다익스트라)
+  source_image_path: https://blog.kakaocdn.net/dna/yDba9/dJMcah3MIiP/AAAAAAAAAAAAAAAAAAAAAHXcHTmKL6cS6CPwSoAUxoldvq6XOS2lrTRIm_SjoDT0/img.png
+  source_content_type: image/png
+  source_sha256: ee3b1105b3ebc168bb9b804a9133fa6756ac851fa4c31b4f7e3d78fb635330ab
+  archived_dimensions: 760x565

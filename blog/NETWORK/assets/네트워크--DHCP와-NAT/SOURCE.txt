@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/271
+
+selected_images:
+- file: 01-1.-DHCP-Dynamic-Host-Configuration-Protocol.webp
+  context: 1. DHCP (Dynamic Host Configuration Protocol)
+  source_image_path: https://blog.kakaocdn.net/dna/2RNjf/dJMcajvlzyo/AAAAAAAAAAAAAAAAAAAAADWukK-RmPqq_qIkCQZhTcow1caKX1u3qAxed3dgIGVm/img.png
+  source_content_type: image/png
+  source_sha256: df442913d4ecd57dd9fa28899ce0ff2dd974ec5377ca28aff2cfb430f90e63fe
+  archived_dimensions: 508x421
+- file: 02-2.-IP-주소-체계와-서브네팅-Subnetting.webp
+  context: 2. IP 주소 체계와 서브네팅 (Subnetting)
+  source_image_path: https://blog.kakaocdn.net/dna/dF9STS/dJMcabcZ46Q/AAAAAAAAAAAAAAAAAAAAAHZqvccbpGfk_UJ6Uc3biE2BNXgeTDLQD7ez3k5ZuX1X/img.png
+  source_content_type: image/png
+  source_sha256: d2616ce0824d8ff0fbafef8bc1b5612e1c93b804943c53ed3d9cf46d7910fb58
+  archived_dimensions: 857x428
+- file: 03-2.2-서브네팅과-비트-계산-2-n.webp
+  context: 2.2 서브네팅과 비트 계산 (2^n)
+  source_image_path: https://blog.kakaocdn.net/dna/quVPk/dJMcad2V299/AAAAAAAAAAAAAAAAAAAAAPNZxt_wJTuxC05-k0dDTS7yvAW4qoZ1V7IyaEolhcQ-/img.png
+  source_content_type: image/png
+  source_sha256: f93a637854ffb85a9bca6481920621896587a55e80fd40de2672b1e489556cf6
+  archived_dimensions: 986x379

@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/136
+
+selected_images:
+- file: 01-1.-복잡한-함수-종속성-다듬기-정규형-커버-Canonical-Cover.webp
+  context: 1. 복잡한 함수 종속성 다듬기: 정규형 커버 (Canonical Cover)
+  source_image_path: https://blog.kakaocdn.net/dna/zc6Ip/btsQH1hgxNP/AAAAAAAAAAAAAAAAAAAAAAcPTOgU4ASU0pNqNnB0i1bmKtp3zxgk4JzB3wEaOCvN/img.png
+  source_content_type: image/png
+  source_sha256: 864b512467e8952c19c83e8b2e5af0bc1b73e15885a61f532cf41bcc7a84923f
+  archived_dimensions: 1297x697

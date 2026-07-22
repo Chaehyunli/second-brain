@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/28
+
+selected_images:
+- file: 01-1.-덧셈-2의-보수-기반.webp
+  context: 1. 덧셈 (2의 보수 기반)
+  source_image_path: https://blog.kakaocdn.net/dna/byS1qq/btsMWv0aEFB/AAAAAAAAAAAAAAAAAAAAAIXuR74KIqDOkFs_K1igMegSb9zwEuPx60MiuG7KQxdW/img.png
+  source_content_type: image/png
+  source_sha256: 4f89a1bdc95c16f680362671d7a5db6817126431410c35b51766b9f3412534ac
+  archived_dimensions: 546x301
+- file: 02-1.-덧셈-2의-보수-기반.webp
+  context: 1. 덧셈 (2의 보수 기반)
+  source_image_path: https://blog.kakaocdn.net/dna/be6xNH/btsMVYBwA61/AAAAAAAAAAAAAAAAAAAAAIHtJsW--UH9zssdqc5f8JR5ogRpJ4Rc3ul5zeDTrDJM/img.png
+  source_content_type: image/png
+  source_sha256: 0881c0171ef9af43b6b26d4b1aef22cc11fde5cc4d32577f2980c04a70afc1f9
+  archived_dimensions: 877x361
+- file: 03-1.-덧셈-2의-보수-기반.webp
+  context: 1. 덧셈 (2의 보수 기반)
+  source_image_path: https://blog.kakaocdn.net/dna/xVcZ3/btsMWSADeXh/AAAAAAAAAAAAAAAAAAAAADhcRv3Mrin6_VWs1RLkDRjAr3E2yPtYLAn6rylkZkCW/img.png
+  source_content_type: image/png
+  source_sha256: 154784ec0aaff70374a5abaec438d2997f40ff68432052828a35c1817dcaeb73
+  archived_dimensions: 598x136

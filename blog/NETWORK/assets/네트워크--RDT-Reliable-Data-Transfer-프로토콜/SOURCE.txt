@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/257
+
+selected_images:
+- file: 01-FSM-주요-로직.webp
+  context: FSM 주요 로직
+  source_image_path: https://blog.kakaocdn.net/dna/KKET3/dJMcacCHufh/AAAAAAAAAAAAAAAAAAAAAC2yyie8gYtOvwpFbASe8bbUQ6I6NcLmDaot0Ym0LPq4/img.png
+  source_content_type: image/png
+  source_sha256: a14c43278da74e291a88a39437f9b3bf739e2c939c6115e3008fb4e267b74118
+  archived_dimensions: 1180x658
+- file: 02-FSM-주요-로직.webp
+  context: FSM 주요 로직
+  source_image_path: https://blog.kakaocdn.net/dna/Kcjg4/dJMcabqgxfJ/AAAAAAAAAAAAAAAAAAAAAMBkaP_s19RBkuZw6rHxq_iUFYJu8NiS11K2plB6-WU8/img.png
+  source_content_type: image/png
+  source_sha256: 1a576b771c87e092c6fd2fc1b7921ab90c0e27b8e6811d42fae35d9fbe8a9533
+  archived_dimensions: 1206x676
+- file: 03-2.-rdt-2.2-NAK-Free-프로토콜-구조의-단순화.webp
+  context: 2. rdt 2.2: NAK-Free 프로토콜 (구조의 단순화)
+  source_image_path: https://blog.kakaocdn.net/dna/AScyO/dJMb99TueBR/AAAAAAAAAAAAAAAAAAAAAP9cNeShMBuPdS9iTQneYZvp0bsrR7j3rxRsKTJewWFQ/img.png
+  source_content_type: image/png
+  source_sha256: 56019e6891ca8e8d2f0abceb4dfad3a572bbb55d9d31659541f19f745da92e9f
+  archived_dimensions: 1042x708

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/94
+
+selected_images:
+- file: 01-1.-하드디스크-HDD-구조.webp
+  context: 1. 하드디스크(HDD) 구조
+  source_image_path: https://blog.kakaocdn.net/dna/O7g0K/btsOoqQJaVm/AAAAAAAAAAAAAAAAAAAAAIjR_HYAnIXAdJxj8PsOg4FNOg9RaISQDnUgnzZS-s9Q/img.png
+  source_content_type: image/png
+  source_sha256: f7076ad153b8807e838eae326718b8df942c7582edf299e4521369e50b3c4a8f
+  archived_dimensions: 690x637
+- file: 02-3.-디스크-스케줄링-알고리즘.webp
+  context: 3. 디스크 스케줄링 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/b0mpvd/btsOomgViQT/AAAAAAAAAAAAAAAAAAAAAHuz4pgouFCYa7xUtzYLA-BS7zVF6KFLUwzPhISTTSLl/img.png
+  source_content_type: image/png
+  source_sha256: 7fa40d39b278b831393a1384f57d350e09a0097cdb81f7338325d14d6513d74a
+  archived_dimensions: 1177x568
+- file: 03-3.-디스크-스케줄링-알고리즘.webp
+  context: 3. 디스크 스케줄링 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/dl26hU/btsOo6RV6i3/AAAAAAAAAAAAAAAAAAAAABHqP8u7siZ_m_5G5fyZKo-699DqZoQ2j2OutAa6ZdQ1/img.png
+  source_content_type: image/png
+  source_sha256: 620d50bd2be3e4c07e237632a0a698ee880eb0cd3a259bdfa5aa179092a8f209
+  archived_dimensions: 1203x598

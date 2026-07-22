@@ -89,6 +89,12 @@ Reduce Task:
 
 개수 결정: Map Task의 개수는 입력 데이터의 크기에 따라 자동 결정되지만, Reduce Task의 개수는 사용자가 직접 지정함.
 
+## 핵심 이미지
+
+![MapReduce 데이터 지역성 최적화 (Data Locality Optimization)](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/01-MapReduce-데이터-지역성-최적화-Data-Locality-Optimization.webp)
+
+![Hadoop 1.x 실행 구조 및 흐름](assets/클라우드-컴퓨터링--MapReduce-데이터-관리/02-Hadoop-1.x-실행-구조-및-흐름.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

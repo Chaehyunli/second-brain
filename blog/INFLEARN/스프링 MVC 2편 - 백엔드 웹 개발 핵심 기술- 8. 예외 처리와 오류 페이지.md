@@ -777,6 +777,14 @@ ErrorController 인터페이스를 직접 상속받아 직접 완전히 새로�
 
 스프링 부트가 가져다주는 극단적 편리함: BasicErrorController를 통해 모든 복잡한 Customizer 구현체 및 매핑 핸들러 작성 작업이 필요 없어지며, 약속된 디렉터리(templates/error/, static/error/) 안에 알맞은 HTML을 명명하여 생성하기만 하면 예외 처리가 유연하게 완성됩니다.
 
+## 핵심 이미지
+
+![sendError의 흐름](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--8.-예외-처리와-오류-페이지/01-sendError의-흐름.webp)
+
+![1) 작동 흐름 요약](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--8.-예외-처리와-오류-페이지/02-1-작동-흐름-요약.webp)
+
+![1) 작동 흐름 요약](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--8.-예외-처리와-오류-페이지/03-1-작동-흐름-요약.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

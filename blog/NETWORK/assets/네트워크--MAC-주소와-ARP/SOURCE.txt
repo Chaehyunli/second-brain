@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/283
+
+selected_images:
+- file: 01-1.-두-가지-네트워크-주소-체계-비교-IP-vs-MAC.webp
+  context: 1. 두 가지 네트워크 주소 체계 비교 (IP vs MAC)
+  source_image_path: https://blog.kakaocdn.net/dna/kAfZF/dJMcabdi0tE/AAAAAAAAAAAAAAAAAAAAAFqI20z_gBfmBi8g7OOLRGUDlJqKbFiCshMN4-66_kMI/img.png
+  source_content_type: image/png
+  source_sha256: 5465ac5808c807ffadcfcec85c73fe4308f5462405f3eafd566cd5a2401f00d1
+  archived_dimensions: 706x468
+- file: 02-3.-ARP-Address-Resolution-Protocol-의-역할과-동작.webp
+  context: 3. ARP (Address Resolution Protocol)의 역할과 동작
+  source_image_path: https://blog.kakaocdn.net/dna/lErRe/dJMcahxTel1/AAAAAAAAAAAAAAAAAAAAADDMZECH85yFZgEjZBJbRAum4SAgQMPRKpf7uZaRhuwg/img.png
+  source_content_type: image/png
+  source_sha256: 135808a3fec107ed8c5833e28f5edf345746d61a2f15577922487a7e179ca16a
+  archived_dimensions: 598x409
+- file: 03-3.2-ARP의-동작-과정.webp
+  context: 3.2 ARP의 동작 과정
+  source_image_path: https://blog.kakaocdn.net/dna/cEWJaY/dJMcacwAnfs/AAAAAAAAAAAAAAAAAAAAADi8LTcZZTdqze_79XWqem4ZpG5WuxPXOaY0gCj-aExB/img.png
+  source_content_type: image/png
+  source_sha256: 6d154c8e0ef2b5d0b195896566e4e1edef1c4ba5b056c269e7fad23e22f6019f
+  archived_dimensions: 1277x521

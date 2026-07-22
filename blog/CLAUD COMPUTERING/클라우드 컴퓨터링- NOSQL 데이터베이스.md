@@ -143,6 +143,14 @@ Apache Giraph: 그래프 데이터베이스. Facebook 사용자 및 연결 관�
 
 RocksDB: 고성능 키-값 저장소. Facebook 내부에서 개발되어 현재 오픈 소스로 공개됨.
 
+## 핵심 이미지
+
+![원문 이미지 1](assets/클라우드-컴퓨터링--NOSQL-데이터베이스/01-원문-이미지.webp)
+
+![NoSQL 데이터 모델 유형](assets/클라우드-컴퓨터링--NOSQL-데이터베이스/02-NoSQL-데이터-모델-유형.webp)
+
+![NoSQL 데이터 모델 유형](assets/클라우드-컴퓨터링--NOSQL-데이터베이스/03-NoSQL-데이터-모델-유형.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

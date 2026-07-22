@@ -159,6 +159,12 @@ write(X)는 트랜잭션 커밋(Commit) 전 언제든 실행 가능.
 
 output(B_X) (디스크 기록)가 write(X) 직후에 수행될 필요는 없음 (시스템이 적절한 시점에 수행)
 
+## 핵심 이미지
+
+![5. 데이터 접근 (Data Access)](assets/데이터베이스-설계--회복-시스템-Recovery-System/01-5.-데이터-접근-Data-Access.webp)
+
+![5. 데이터 접근 (Data Access)](assets/데이터베이스-설계--회복-시스템-Recovery-System/02-5.-데이터-접근-Data-Access.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

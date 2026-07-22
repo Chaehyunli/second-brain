@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/268
+
+selected_images:
+- file: 01-1.-버퍼-관리-Buffer-Management.webp
+  context: 1. 버퍼 관리 (Buffer Management):
+  source_image_path: https://blog.kakaocdn.net/dna/dVX40u/dJMcai4ad5u/AAAAAAAAAAAAAAAAAAAAAHkT1yDuBD4vk3V6cHeZ1YPrT-CgNTvnPOPcJIekBEYI/img.png
+  source_content_type: image/png
+  source_sha256: ce74906799767dc26aca72dbe5d58fd57391a25b1ba190433a4cb7d8f8f9da15
+  archived_dimensions: 549x512
+- file: 02-주요-알고리즘.webp
+  context: 주요 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/01sWJ/dJMcajhILbj/AAAAAAAAAAAAAAAAAAAAAJue1gz8RLbRd-DtQP3yVgD7IUw1prkvRD9Cq6G7_ba0/img.png
+  source_content_type: image/png
+  source_sha256: 3dffd6a60ab5b0381516336cb62b968bf08f8791578395e77596362c0fdf55e1
+  archived_dimensions: 481x197
+- file: 03-주요-알고리즘.webp
+  context: 주요 알고리즘
+  source_image_path: https://blog.kakaocdn.net/dna/b2SNEe/dJMcacwb39I/AAAAAAAAAAAAAAAAAAAAALN0smCYNKKGzmQUa5fb9ePzEG5kltlxj30XLIGE-2lC/img.png
+  source_content_type: image/png
+  source_sha256: 09642be647f788cb748bf40d80f09b197b989e22ea0ac2bffa5dc4c879aced17
+  archived_dimensions: 488x494

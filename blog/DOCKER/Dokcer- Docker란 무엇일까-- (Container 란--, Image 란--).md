@@ -153,6 +153,14 @@ docker stop webserver
 
 ### 💡5. 정리
 
+## 핵심 이미지
+
+![🧩 2. Docker의 핵심 개념 세 가지](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/01-2.-Docker의-핵심-개념-세-가지.webp)
+
+![🌐 3. 보충: IP와 포트 개념](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/02-3.-보충-IP와-포트-개념.webp)
+
+![🔧4. 실습 예제: Nginx 컨테이너 실행](assets/Dokcer--Docker란-무엇일까---Container-란---Image-란/03-4.-실습-예제-Nginx-컨테이너-실행.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

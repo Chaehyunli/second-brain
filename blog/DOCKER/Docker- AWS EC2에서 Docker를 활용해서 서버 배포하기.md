@@ -233,6 +233,14 @@ docker compose pull
 docker compose up -d --build
 ```
 
+## 핵심 이미지
+
+![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/01-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
+
+![2. AWS ECR (Elastic Container Registry) 개념 및 이유](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/02-2.-AWS-ECR-Elastic-Container-Registry-개념-및-이유.webp)
+
+![3. AWS CLI 설치 및 ECR 사용 준비](assets/Docker--AWS-EC2에서-Docker를-활용해서-서버-배포하기/03-3.-AWS-CLI-설치-및-ECR-사용-준비.webp)
+
 ## 관련 글
 
 - [[blog/DOCKER/index|DOCKER]]

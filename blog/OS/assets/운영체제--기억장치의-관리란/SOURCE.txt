@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/69
+
+selected_images:
+- file: 01-1.-배경-컴퓨터-시스템에서-기억장치의-역할.webp
+  context: 1. 배경: 컴퓨터 시스템에서 기억장치의 역할
+  source_image_path: https://blog.kakaocdn.net/dna/bC2rzt/btsNTnNvjc6/AAAAAAAAAAAAAAAAAAAAAFwEsmJ6QRHaBYtbFdj0V6D3n7G3rQ6HcB1t7REM8f5t/img.png
+  source_content_type: image/png
+  source_sha256: 24cec4034bcb1832ac2f4c98d7ff6010efc80a4459f082f19ba963ec252ae91d
+  archived_dimensions: 1213x808
+- file: 02-5.-MMU-Memory-Management-Unit.webp
+  context: 5. MMU (Memory Management Unit)
+  source_image_path: https://blog.kakaocdn.net/dna/VhXbz/btsNTGy6iTS/AAAAAAAAAAAAAAAAAAAAAG1oSxJGPx0YqHiyRKeRFaME1WMhoV8M4I7_smAQr4Iz/img.png
+  source_content_type: image/png
+  source_sha256: 58186cadd6306117d66309564486e940c31d33cb64e8f9e12dbbdcbb0a4bfae4
+  archived_dimensions: 1081x727
+- file: 03-6.-기억장치-할당-기법.webp
+  context: 6. 기억장치 할당 기법
+  source_image_path: https://blog.kakaocdn.net/dna/uNwyF/btsNTBSlld9/AAAAAAAAAAAAAAAAAAAAALxzAzuDXsCiJWU7IAejr1-GXy6-Ws0RKQOp9JfPbof4/img.png
+  source_content_type: image/png
+  source_sha256: e8c00fdaea2799dd5a5e56b9c9cdac596bd00655625ec41b1ec97ce85231201b
+  archived_dimensions: 1600x354

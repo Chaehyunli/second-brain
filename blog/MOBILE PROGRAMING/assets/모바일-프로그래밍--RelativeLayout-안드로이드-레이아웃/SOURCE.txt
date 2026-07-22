@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/150
+
+selected_images:
+- file: 01-1.-부모-레이아웃을-기준으로-위치-지정하기.webp
+  context: 1. 부모 레이아웃을 기준으로 위치 지정하기
+  source_image_path: https://blog.kakaocdn.net/dna/c7Tfjr/btsQZaqX2rv/AAAAAAAAAAAAAAAAAAAAAL0IaWVqSpGcCy0_4p6KH5nrB-7gHwxMcx2gMMvQAH2l/img.png
+  source_content_type: image/png
+  source_sha256: 4359701cb1387e446d4f116c3dc6a0dde6c187d588248cf7e37b4efc30c6fe52
+  archived_dimensions: 1039x577
+- file: 02-1.-부모-레이아웃을-기준으로-위치-지정하기.webp
+  context: 1. 부모 레이아웃을 기준으로 위치 지정하기
+  source_image_path: https://blog.kakaocdn.net/dna/mGHDy/btsQZDMVmUo/AAAAAAAAAAAAAAAAAAAAADWZUpUAl8ZUjHh5U3mnZEX5NjYv9HlY8VSvHoPUzRII/img.png
+  source_content_type: image/png
+  source_sha256: 165fcd93561452160ace3de5128b23a34100cf24d8a4b154d933e35cec0e296f
+  archived_dimensions: 271x384
+- file: 03-2.-다른-위젯을-기준으로-상대적-위치-지정하기.webp
+  context: 2. 다른 위젯을 기준으로 상대적 위치 지정하기
+  source_image_path: https://blog.kakaocdn.net/dna/cJDAtq/btsQ0uBFg9q/AAAAAAAAAAAAAAAAAAAAAGYP1DdttFVnI4fDoyRZkDh_w2F1m97MQcifunSlu_et/img.png
+  source_content_type: image/png
+  source_sha256: 7dc4afcda16746639a238c99a2ade6a5dba56461ac2d96457d8ebf2e97a7f1ae
+  archived_dimensions: 1035x507

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/154
+
+selected_images:
+- file: 01-정렬-Sorting.webp
+  context: 정렬 (Sorting)
+  source_image_path: https://blog.kakaocdn.net/dna/ym7xn/btsQ3eGK13B/AAAAAAAAAAAAAAAAAAAAAD6J-Xw1p6UzRS88eZMPBos6kZibapCflPBP7YaZUSbK/img.png
+  source_content_type: image/png
+  source_sha256: 710bbeb8eece75081c0212c86f88540a29c1e142fcc5c21646d9c32e4cbaef8c
+  archived_dimensions: 826x904
+- file: 02-조인-연산-Join-Operation.webp
+  context: 조인 연산 (Join Operation)
+  source_image_path: https://blog.kakaocdn.net/dna/bjGWYW/btsQ37786oy/AAAAAAAAAAAAAAAAAAAAAAGtrh8qcRhawyzK_eeFZTXCOF3ya9K5zM5dc_2olsWo/img.png
+  source_content_type: image/png
+  source_sha256: c83f8b174b85991c1b50406a6bd33c3d7075cd259d72ac40ad0df17bc213fd28
+  archived_dimensions: 583x552
+- file: 03-조인-연산-Join-Operation.webp
+  context: 조인 연산 (Join Operation)
+  source_image_path: https://blog.kakaocdn.net/dna/bo027P/btsQ3FYmHtH/AAAAAAAAAAAAAAAAAAAAAHAioxkXO5zNw88ZtVIBVQQW-l8YEZ1J5KvbdUpPl58O/img.png
+  source_content_type: image/png
+  source_sha256: a9dd19a9dc6790ea6c699306ac17c036b52bb37907494343503cff9148850cd2
+  archived_dimensions: 907x894

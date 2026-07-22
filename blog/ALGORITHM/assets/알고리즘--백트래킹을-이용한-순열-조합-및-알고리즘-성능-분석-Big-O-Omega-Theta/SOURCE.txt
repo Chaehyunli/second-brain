@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/146
+
+selected_images:
+- file: 01-1.-백트래킹-Backtracking-으로-순열과-조합-구하기.webp
+  context: 1. 백트래킹(Backtracking)으로 순열과 조합 구하기
+  source_image_path: https://blog.kakaocdn.net/dna/bw8v38/btsQVCAfXN1/AAAAAAAAAAAAAAAAAAAAABeTUQ868jOGFjX6mIKNnuXyGYdY5kHLKJNFy4LKSXR_/img.png
+  source_content_type: image/png
+  source_sha256: f9b4884daa7983e018dd320a28d8e71287d1f5f38bbfae9c4e205a78cd123ac4
+  archived_dimensions: 589x258

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/88
+
+selected_images:
+- file: 01-2.-스레싱-Thrashing-이란.webp
+  context: 2. 스레싱(Thrashing)이란?
+  source_image_path: https://blog.kakaocdn.net/dna/dx0Cn9/btsOfAk7q6x/AAAAAAAAAAAAAAAAAAAAAGxpn4xpwp4Ot76ALnW4kPNpOAdDlOikUetTQwjQEqec/img.png
+  source_content_type: image/png
+  source_sha256: 853c9453274ce23ec33c80c9a4a833d446e877ace32c3628f03994cf7587803d
+  archived_dimensions: 931x433
+- file: 02-3.-지역성-Locality-의-원리.webp
+  context: 3. 지역성(Locality)의 원리
+  source_image_path: https://blog.kakaocdn.net/dna/sDa34/btsOe1Kvi7o/AAAAAAAAAAAAAAAAAAAAALqVD1VaFJ4Raqmop-gZoQj0fPZR7nfzkHTlsez6kIRY/img.png
+  source_content_type: image/png
+  source_sha256: c832cc944a3aaae229b7f348cc7defe05f1dc6f00987c23f67fc623a2edbd1cd
+  archived_dimensions: 772x693
+- file: 03-4.-작업집합-Working-Set-모델.webp
+  context: 4. 작업집합(Working Set) 모델
+  source_image_path: https://blog.kakaocdn.net/dna/DZoK1/btsOeXg9Yi0/AAAAAAAAAAAAAAAAAAAAALF_WvA9eqBbf1jSXo2g5voSz2C0a_4lB-SZWaMCwT-r/img.png
+  source_content_type: image/png
+  source_sha256: 7a4f8216be6d78bbeb8ab071588c9ec003cd95e7ce6dab17d95f22721cd42703
+  archived_dimensions: 1429x280

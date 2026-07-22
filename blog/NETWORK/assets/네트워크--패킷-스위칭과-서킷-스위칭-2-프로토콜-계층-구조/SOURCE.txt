@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/229
+
+selected_images:
+- file: 01-2.-인터넷의-구조-네트워크의-네트워크.webp
+  context: 2. 인터넷의 구조: "네트워크의 네트워크"
+  source_image_path: https://blog.kakaocdn.net/dna/JCBn5/dJMcagxZaTQ/AAAAAAAAAAAAAAAAAAAAAF3Os8Dtmvdo2GkW6OpyxBltmchKUf5oWiWjJlbC1tR8/img.png
+  source_content_type: image/png
+  source_sha256: c663dc241bcac380418474cb1460d0324d753f8c36cfcfa2696ab2629accdfce
+  archived_dimensions: 889x460
+- file: 02-3.-패킷-손실과-지연은-왜-발생하는가.webp
+  context: 3. 패킷 손실과 지연은 왜 발생하는가?
+  source_image_path: https://blog.kakaocdn.net/dna/TQRDY/dJMcacWER72/AAAAAAAAAAAAAAAAAAAAAEURgkPJHBfSBKCNOuaI_FZMfArotixsTheg0IOagcov/img.png
+  source_content_type: image/png
+  source_sha256: 33c4cc8ce7516cb536fb146c7b5cc4520a95c3627a489ab8920b9a286da5239a
+  archived_dimensions: 846x334
+- file: 03-4.-처리량-Throughput-의-개념.webp
+  context: 4. 처리량 (Throughput)의 개념
+  source_image_path: https://blog.kakaocdn.net/dna/S7tG9/dJMcaaq1Y9F/AAAAAAAAAAAAAAAAAAAAAN4BYGhGW300kdOK_jef75t1xczIfVuFG1ogD1x3yil3/img.png
+  source_content_type: image/png
+  source_sha256: ce197bc9d46e1c9a75b86b140228b40ab46323f4d721ba51746e8556c154c37f
+  archived_dimensions: 970x545

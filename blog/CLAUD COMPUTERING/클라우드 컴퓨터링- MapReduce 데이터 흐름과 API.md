@@ -283,6 +283,14 @@ job.waitForCompletion(true)를 호출해 작업을 제출하고 완료될 때까
 
 조회 (Mapper/Reducer): map() 또는 reduce() 메서드 내부에서 context.getConfiguration()을 호출하여 Configuration을 가져온 뒤, conf.get("key")로 값을 읽어옴.
 
+## 핵심 이미지
+
+![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/01-MapReduce-API.webp)
+
+![MapReduce API](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/02-MapReduce-API.webp)
+
+![작업(Job) 및 매퍼(Mapper) 구성](assets/클라우드-컴퓨터링--MapReduce-데이터-흐름과-API/03-작업-Job-및-매퍼-Mapper-구성.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

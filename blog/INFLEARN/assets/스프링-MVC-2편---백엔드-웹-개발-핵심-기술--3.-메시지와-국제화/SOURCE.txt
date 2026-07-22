@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/279
+
+selected_images:
+- file: 01-참고-타임리프에서-파라미터-전달-방법.webp
+  context: 💡 참고: 타임리프에서 파라미터 전달 방법
+  source_image_path: https://blog.kakaocdn.net/dna/cZbMGL/dJMcadWswJt/AAAAAAAAAAAAAAAAAAAAAM5IBHKq1t69PmxqQ6iBfu0Si_KinH1AJnGTDsZMcDt9/img.png
+  source_content_type: image/png
+  source_sha256: 57cc78efa0d1d1422d7d7f590c4c6dd9a0bce1b0ff5ffad230c2afc727629914
+  archived_dimensions: 983x527
+- file: 02-웹에서-동작-확인하기.webp
+  context: 웹에서 동작 확인하기
+  source_image_path: https://blog.kakaocdn.net/dna/bRBqGh/dJMcaiwIpmp/AAAAAAAAAAAAAAAAAAAAAJCKN5HuwCrkpcvaGkfXkkltiqhZincAkMnKJg5SiAN2/img.png
+  source_content_type: image/png
+  source_sha256: 0a6435869eb8e9f5f72f02f93a711caae380bdbac8542eee920d533c5384864b
+  archived_dimensions: 1600x512
+- file: 03-스프링의-국제화-메시지-선택.webp
+  context: 스프링의 국제화 메시지 선택
+  source_image_path: https://blog.kakaocdn.net/dna/bgMuuY/dJMcadB5aJG/AAAAAAAAAAAAAAAAAAAAAE4ULYVL1EqTTE4xtsDAIG0vUcEG_RteamTBt3fxBPVx/img.png
+  source_content_type: image/png
+  source_sha256: 8a1e43b6240ffbf78df2adf5e6af2ce08aaf45f743f6158632f9d5f787547b04
+  archived_dimensions: 1022x583

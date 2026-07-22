@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/172
+
+selected_images:
+- file: 01-Part-3.-Keras-모델-활용-심화-5가지-주요-시나리오.webp
+  context: ⚙️ Part 3. Keras 모델 활용 심화: 5가지 주요 시나리오
+  source_image_path: https://blog.kakaocdn.net/dna/7zZy7/dJMcacnQcDr/AAAAAAAAAAAAAAAAAAAAAG2S32KTYkT4E4SKgOS6XobmBZdbySQyUPTZUZkkFhl1/img.png
+  source_content_type: image/png
+  source_sha256: 8dabf6bf10fa5e5365c13fbf7697605716ac805f4917759b557733cca333f8fc
+  archived_dimensions: 1383x942

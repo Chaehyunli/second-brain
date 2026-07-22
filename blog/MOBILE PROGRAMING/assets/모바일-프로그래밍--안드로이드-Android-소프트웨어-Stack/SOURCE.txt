@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/113
+
+selected_images:
+- file: 01-안드로이드-소프트웨어-스택-구조.webp
+  context: 🏗️ 안드로이드 소프트웨어 스택 (구조)
+  source_image_path: https://blog.kakaocdn.net/dna/b7739U/btsQmfyld0j/AAAAAAAAAAAAAAAAAAAAAG_Fz0-BdvC-vN8t8SNK6BgLgelN29SCFeNtBuceg3h3/img.png
+  source_content_type: image/png
+  source_sha256: 1ebd613295d27b1935408b3b9f390f8be589d00fa1998d3244e8b99c974bba07
+  archived_dimensions: 703x1036

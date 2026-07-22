@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/48
+
+selected_images:
+- file: 01-2.-블록체인-보안-사고-사례---Crypto-Scam.webp
+  context: 2. 블록체인 보안 사고 사례 - Crypto Scam
+  source_image_path: https://blog.kakaocdn.net/dna/w1rTG/btsNdwRid6M/AAAAAAAAAAAAAAAAAAAAACpbT0qKOKbRUutHJSsxruKQgLzZ4IS7IDSRkVZx1xfZ/img.png
+  source_content_type: image/png
+  source_sha256: 7207d492dfe272230f096ee29c1b74ebae433418d3cb4aa2705ffef33a132d9f
+  archived_dimensions: 865x468
+- file: 02-4.-공격-가능한-계층-구조.webp
+  context: 4. 공격 가능한 계층 구조
+  source_image_path: https://blog.kakaocdn.net/dna/dv8njz/btsNdKhI4hj/AAAAAAAAAAAAAAAAAAAAAONMCzgd9aZiRaAB_irhN71aJ7CJ7GDL9OogI-tpT0mm/img.png
+  source_content_type: image/png
+  source_sha256: 8f28ecfb209be40e27a27870695a0d52c17277da73ff89266ae8462f2b9f5bb3
+  archived_dimensions: 1111x454
+- file: 03-5.-주요-공격-사례별-정리.webp
+  context: 5. 주요 공격 사례별 정리
+  source_image_path: https://blog.kakaocdn.net/dna/sEarL/btsNdcFMOku/AAAAAAAAAAAAAAAAAAAAADTJl_DgjblXtuehLOCaRQOYm8_Vcm2b62EhKIbdANi1/img.png
+  source_content_type: image/png
+  source_sha256: 63b7edde4719ef642790b4395ee80be95801b07c4d8b4e5bc437f1bb56449bd8
+  archived_dimensions: 1125x430

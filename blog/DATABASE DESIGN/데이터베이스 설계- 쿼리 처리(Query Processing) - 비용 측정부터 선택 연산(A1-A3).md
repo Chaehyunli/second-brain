@@ -149,6 +149,14 @@ b: 조건을 만족하는 레코드들이 포함된 블록의 수
 
 Cost = h_i * (t_T + t_S) + t_S + b * t_T
 
+## 핵심 이미지
+
+![쿼리 처리의 3가지 기본 단계](assets/데이터베이스-설계--쿼리-처리-Query-Processing---비용-측정부터-선택-연산-A1-A3/01-쿼리-처리의-3가지-기본-단계.webp)
+
+![쿼리 비용은 어떻게 측정할까?](assets/데이터베이스-설계--쿼리-처리-Query-Processing---비용-측정부터-선택-연산-A1-A3/02-쿼리-비용은-어떻게-측정할까.webp)
+
+![선택(Selection) 연산 알고리즘과 비용( A1 ~ A6 )](assets/데이터베이스-설계--쿼리-처리-Query-Processing---비용-측정부터-선택-연산-A1-A3/03-선택-Selection-연산-알고리즘과-비용-A1-A6.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

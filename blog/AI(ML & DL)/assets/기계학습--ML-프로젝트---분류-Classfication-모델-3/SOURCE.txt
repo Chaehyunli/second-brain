@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/85
+
+selected_images:
+- file: 01-4.-ROC-곡선과-AUC.webp
+  context: 4. ROC 곡선과 AUC
+  source_image_path: https://blog.kakaocdn.net/dna/c4uJId/btsOcSAyqRf/AAAAAAAAAAAAAAAAAAAAABiywiaOrrUmncluWCDMT_-fXXSY-mRqFZZUudGnkU5k/img.png
+  source_content_type: image/png
+  source_sha256: 38e80166c5748fbcbb6595a949dd29989714302d5db4a053ef7a8f37ef6d43ff
+  archived_dimensions: 804x657
+- file: 02-4.-ROC-곡선과-AUC.webp
+  context: 4. ROC 곡선과 AUC
+  source_image_path: https://blog.kakaocdn.net/dna/bWrcyw/btsOcUdZyNS/AAAAAAAAAAAAAAAAAAAAANPNUuY4XCq5IR-NneroLnGj4FdOdKNv2yPKpECSvWZd/img.png
+  source_content_type: image/png
+  source_sha256: bc1b12ad63163f2d2c760ca8c72a1d0a5f7f96fdf4a506227cfd974426a3883f
+  archived_dimensions: 922x769

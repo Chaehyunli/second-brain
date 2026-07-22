@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/164
+
+selected_images:
+- file: 01-2.-대화상자-AlertDialog.webp
+  context: 2. 대화상자 (AlertDialog)
+  source_image_path: https://blog.kakaocdn.net/dna/btrmaS/dJMb89SkmOG/AAAAAAAAAAAAAAAAAAAAALFiQtw1gq_zWJVcQOebUyXeqM_tPm514K_kHbU1ZERO/img.png
+  source_content_type: image/png
+  source_sha256: 418f9e6fecb1057b1c848f5c77a213a59d2e1faa292702a9d0b762d790cb26cb
+  archived_dimensions: 538x249
+- file: 02-3.-목록-형태의-대화상자.webp
+  context: 3. 목록 형태의 대화상자
+  source_image_path: https://blog.kakaocdn.net/dna/lIE85/dJMb9eF6a0u/AAAAAAAAAAAAAAAAAAAAADdu-nVft7SyIdxlDtocDmiAzkoO38rONTyjMLMK7cd_/img.png
+  source_content_type: image/png
+  source_sha256: 7309e1a49267d341eee54bfae742c2b34d51251166ee7371168f21e079106c52
+  archived_dimensions: 249x214
+- file: 03-3.-목록-형태의-대화상자.webp
+  context: 3. 목록 형태의 대화상자
+  source_image_path: https://blog.kakaocdn.net/dna/vRFLj/dJMb9hph0nE/AAAAAAAAAAAAAAAAAAAAACFg8OR_5-uAXk3o4iRe9i1VLTE5QaiLTHGmfhLJESVb/img.png
+  source_content_type: image/png
+  source_sha256: 876f7117fa77f9e1310cc4ae2558978ae86d1303a5bbc1942c4b852078dabee9
+  archived_dimensions: 289x259

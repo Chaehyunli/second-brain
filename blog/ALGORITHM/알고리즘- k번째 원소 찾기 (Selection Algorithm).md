@@ -101,6 +101,12 @@ Deterministic-Select (Median of Medians): 최악의 경우에도 O(n) 성능을 
 
 데이터 정렬이라는 $O(n \log n)$의 과정을 거치지 않고도 선형 시간 복잡도로 원하는 값을 찾아낼 수 있다는 점에서 선택 알고리즘은 매우 큰 의미를 가짐
 
+## 핵심 이미지
+
+![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/01-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
+
+![1. 무작위 분할을 이용한 선택 (Randomized-Select)](assets/알고리즘--k번째-원소-찾기-Selection-Algorithm/02-1.-무작위-분할을-이용한-선택-Randomized-Select.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

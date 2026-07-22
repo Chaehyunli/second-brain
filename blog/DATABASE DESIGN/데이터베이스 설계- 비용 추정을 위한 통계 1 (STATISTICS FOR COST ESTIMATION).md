@@ -127,6 +127,12 @@ Negation (NOT 연산):
 
 추정 튜플 수: n_r - \text{size}(\sigma_{\theta}(r))
 
+## 핵심 이미지
+
+![비용 추정을 위한 근사치 접근 (페이지 28)](assets/데이터베이스-설계--비용-추정을-위한-통계-1-STATISTICS-FOR-COST-ESTIMATION/01-비용-추정을-위한-근사치-접근-페이지-28.webp)
+
+![비용 추정을 위한 근사치 접근 (페이지 28)](assets/데이터베이스-설계--비용-추정을-위한-통계-1-STATISTICS-FOR-COST-ESTIMATION/02-비용-추정을-위한-근사치-접근-페이지-28.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

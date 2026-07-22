@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/123
+
+selected_images:
+- file: 01-1.-카디널리티-제약조건의-표현.webp
+  context: 1. 카디널리티 제약조건의 표현
+  source_image_path: https://blog.kakaocdn.net/dna/dKe42F/btsQuivcv32/AAAAAAAAAAAAAAAAAAAAAJjBsAXFGkg6X6oK1M0_Gf83YABek1N7Rpc2jNO5Ulno/img.png
+  source_content_type: image/png
+  source_sha256: ac964652887ae099cdbc2c205413bd6ab04bbbcf753775a5de9fa06c9f44201d
+  archived_dimensions: 898x241
+- file: 02-1.-카디널리티-제약조건의-표현.webp
+  context: 1. 카디널리티 제약조건의 표현
+  source_image_path: https://blog.kakaocdn.net/dna/b9CfPf/btsQrnkIkhL/AAAAAAAAAAAAAAAAAAAAAPExJtHSGwz7vIN8eHhVttWgZQYWFOTHE5b_hE_7M8S6/img.png
+  source_content_type: image/png
+  source_sha256: 129ef0d30a47bb34879f284589a0ff8cc9122751b75791946592458096c193ad
+  archived_dimensions: 727x282
+- file: 03-1.-카디널리티-제약조건의-표현.webp
+  context: 1. 카디널리티 제약조건의 표현
+  source_image_path: https://blog.kakaocdn.net/dna/6VcFs/btsQt5JB2H1/AAAAAAAAAAAAAAAAAAAAAMA4uesNnee_bB8Kg6JHqBPuQQLHz8nU7zgFN0slSHGe/img.png
+  source_content_type: image/png
+  source_sha256: 67c837c3dff3f1aa1086970eeae36a34104d8e249a895a23110a3cb27ed1b981
+  archived_dimensions: 895x195

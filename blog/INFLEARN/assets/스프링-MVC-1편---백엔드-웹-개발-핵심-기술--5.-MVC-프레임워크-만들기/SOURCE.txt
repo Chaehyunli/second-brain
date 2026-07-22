@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/259
+
+selected_images:
+- file: 01-1.-프론트-컨트롤러-Front-Controller-패턴-소개.webp
+  context: 1. 프론트 컨트롤러(Front Controller) 패턴 소개
+  source_image_path: https://blog.kakaocdn.net/dna/bRqjJ7/dJMcabX6dOp/AAAAAAAAAAAAAAAAAAAAABqi7sriM1moJqAzS4pMKdVKps4EvhvkSQXA1xNs7sgy/img.png
+  source_content_type: image/png
+  source_sha256: 21145d19312f08d34daab0285536f0ddcf5dd79e58c8de0e048aa5437f0a930e
+  archived_dimensions: 1057x753
+- file: 02-1.-프론트-컨트롤러-Front-Controller-패턴-소개.webp
+  context: 1. 프론트 컨트롤러(Front Controller) 패턴 소개
+  source_image_path: https://blog.kakaocdn.net/dna/dUNg1r/dJMcabX6dOy/AAAAAAAAAAAAAAAAAAAAABsASa0i1jCpdPmxUJxeiAA3GeRcf7PFgmtYqUd9jpm_/img.png
+  source_content_type: image/png
+  source_sha256: 128fe4f9cea514c1a9f16e6d9066d69057f35a785d90a80530230334b3906602
+  archived_dimensions: 1047x581
+- file: 03-2.-프론트-컨트롤러-도입---v1-구조-맞추기.webp
+  context: 2. 프론트 컨트롤러 도입 - v1 (구조 맞추기)
+  source_image_path: https://blog.kakaocdn.net/dna/EqmpZ/dJMcadIkzcn/AAAAAAAAAAAAAAAAAAAAAJdLSev8XpcDOjwoi8t-OZzG5i3Bdm6iUSHKjLD1BlgC/img.png
+  source_content_type: image/png
+  source_sha256: 0a2f8385a7432fff8e96bd298e745827c964b7efa68fddc010b68c2fe65d26a5
+  archived_dimensions: 1057x598

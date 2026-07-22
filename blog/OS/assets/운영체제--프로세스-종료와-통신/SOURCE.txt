@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/39
+
+selected_images:
+- file: 01-4.-직접-통신-vs-간접-통신.webp
+  context: 4. 직접 통신 vs 간접 통신
+  source_image_path: https://blog.kakaocdn.net/dna/VkVe8/btsM4jFn3Hq/AAAAAAAAAAAAAAAAAAAAAMxwnGaZrIpsj0hHTlrbLDALrFmIFEctFs6s34GJYqru/img.png
+  source_content_type: image/png
+  source_sha256: 86eeb1077ad66138ab8c8712d10207c2c900d5b56b88bf979430c31f5a7eae72
+  archived_dimensions: 520x736
+- file: 02-4.-직접-통신-vs-간접-통신.webp
+  context: 4. 직접 통신 vs 간접 통신
+  source_image_path: https://blog.kakaocdn.net/dna/brWSEA/btsM5ZFGDv4/AAAAAAAAAAAAAAAAAAAAABFPMCx-FlmNo3fsLRxoTQxABlY6Vn-UZQkKTrtNWUFx/img.png
+  source_content_type: image/png
+  source_sha256: 135e41764b7c926262fb8058106cdc2286421965911dc8bb8475134c5907da67
+  archived_dimensions: 661x811

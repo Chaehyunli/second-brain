@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/77
+
+selected_images:
+- file: 01-2.-요구-페이징-Demand-Paging.webp
+  context: 2. 요구 페이징 (Demand Paging)
+  source_image_path: https://blog.kakaocdn.net/dna/kDYKW/btsN4BlpqAY/AAAAAAAAAAAAAAAAAAAAAAwwkbt5fnjF3UhUDgutPfQmPsJQs2dvUbHuyjXPMeu3/img.png
+  source_content_type: image/png
+  source_sha256: 42bd0bdb53161388d3147453915f5ac67f0f92470503e96831bdbcb3ba58028c
+  archived_dimensions: 1491x820
+- file: 02-3.-페이지-테이블과-유효-무효-비트.webp
+  context: 3. 페이지 테이블과 유효-무효 비트
+  source_image_path: https://blog.kakaocdn.net/dna/IGWEe/btsN44OuVn7/AAAAAAAAAAAAAAAAAAAAAIL0xhjA39Xf11oJoUL83odxDhUhPSlaxEmQhVxRZa4H/img.png
+  source_content_type: image/png
+  source_sha256: c201ed8f12665ff719a1f4299afbf22e91c7376c20ac2bdaf6269da89dda1893
+  archived_dimensions: 793x721
+- file: 03-4.-페이지-부재-처리-과정.webp
+  context: 4. 페이지 부재 처리 과정
+  source_image_path: https://blog.kakaocdn.net/dna/TlMwO/btsN4M1c88u/AAAAAAAAAAAAAAAAAAAAAAw15-FnlabkQ6UtUSvwLS9hp0hXt5q3nVFe-qMdkpQ9/img.png
+  source_content_type: image/png
+  source_sha256: f9ece05d371f93116325d8cf5312215f37aa0224a9169d6076872466e72e9352
+  archived_dimensions: 1245x721

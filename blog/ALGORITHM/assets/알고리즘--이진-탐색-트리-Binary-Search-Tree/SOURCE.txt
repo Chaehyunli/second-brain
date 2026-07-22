@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/145
+
+selected_images:
+- file: 01-1.-이진-탐색-트리-BST-란-무엇일까요.webp
+  context: 1. 이진 탐색 트리(BST)란 무엇일까요?
+  source_image_path: https://blog.kakaocdn.net/dna/caEBKn/btsQNBW5JIk/AAAAAAAAAAAAAAAAAAAAAN0_P2ULpZK7gGYsqdymZssktNfhUKvXr4MQbD2ACDmD/img.png
+  source_content_type: image/png
+  source_sha256: acd5cf05e283c78b39bb88ede81928c79908de868e8fba72b1f687d7453a1687
+  archived_dimensions: 1381x490
+- file: 02-3.-트리-순회-Traversal-방법.webp
+  context: 3. 트리 순회(Traversal) 방법
+  source_image_path: https://blog.kakaocdn.net/dna/b3x5jf/btsQRvUQRtJ/AAAAAAAAAAAAAAAAAAAAAA4uDQRikKWV2U4xNJNCf7rBagSmUVTjmHZpmRqOIGUN/img.png
+  source_content_type: image/png
+  source_sha256: 77b9b2cc454ee9e5b11e0a9f77ebb84ce2cbdc75ddb9133fe06a17ae208d3b13
+  archived_dimensions: 577x439
+- file: 03-4.-깊이-우선-탐색-DFS-vs.-너비-우선-탐색-BFS.webp
+  context: 4. 깊이 우선 탐색(DFS) vs. 너비 우선 탐색(BFS)
+  source_image_path: https://blog.kakaocdn.net/dna/VIIg9/btsQNHXkprF/AAAAAAAAAAAAAAAAAAAAACkZo8SUxXXjQnDZx2WPSWsH0p27I0StDHeCBdg9yBD5/img.png
+  source_content_type: image/png
+  source_sha256: 52a85bd93b178c0460135748ad55b485fd881bfb4c1c4e7d41005f6a20b73296
+  archived_dimensions: 1366x480

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/119
+
+selected_images:
+- file: 01-E-R-모델의-3가지-핵심-요소-엔티티-관계-속성.webp
+  context: E-R 모델의 3가지 핵심 요소: 엔티티, 관계, 속성
+  source_image_path: https://blog.kakaocdn.net/dna/bzPq4O/btsQo63C4EK/AAAAAAAAAAAAAAAAAAAAAA34a6C-dmYhhLgDJu4lOZ7QQuZxWtmPEOt3TKvQkrwW/img.png
+  source_content_type: image/png
+  source_sha256: a73347f49e3c7909cb48f4929e8435278bfd303f94904b96def160ad95a0dde3
+  archived_dimensions: 1024x640
+- file: 02-E-R-모델의-3가지-핵심-요소-엔티티-관계-속성.webp
+  context: E-R 모델의 3가지 핵심 요소: 엔티티, 관계, 속성
+  source_image_path: https://blog.kakaocdn.net/dna/bC88vi/btsQrLjxWyA/AAAAAAAAAAAAAAAAAAAAAFCX6m0gjkaFAiEyp69dpxo7vWFej7oAQWwrPbRhKTb9/img.png
+  source_content_type: image/png
+  source_sha256: 9ea63cb872602a5bbfd30ef8c7a387af5dac3aef893e50e5dfd53f318fb2d216
+  archived_dimensions: 973x486
+- file: 03-E-R-모델의-3가지-핵심-요소-엔티티-관계-속성.webp
+  context: E-R 모델의 3가지 핵심 요소: 엔티티, 관계, 속성
+  source_image_path: https://blog.kakaocdn.net/dna/bsEE5m/btsQpcircGZ/AAAAAAAAAAAAAAAAAAAAAKw1N82GWGRUaSp2iOq7ov57ZIKnjJRZzz2tx6D2YZJa/img.png
+  source_content_type: image/png
+  source_sha256: 6767e3a489fe1f4d57b5f0a7ea3db9663fff31cd9f6386ce0960268706e50647
+  archived_dimensions: 829x732

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/177
+
+selected_images:
+- file: 01-2.-액티비티-생명주기-Activity-Lifecycle.webp
+  context: 2. 액티비티 생명주기 (Activity Lifecycle)
+  source_image_path: https://blog.kakaocdn.net/dna/bcmwJ0/dJMcadmMl8A/AAAAAAAAAAAAAAAAAAAAANuygDras3XkM6YQ8AzQNJOhek11Ck9zY2I-NRleXVt3/img.png
+  source_content_type: image/png
+  source_sha256: 8c248367267f4dc182df5d32beaac885424413a4395513ec97e99d7532af64dd
+  archived_dimensions: 1600x720
+- file: 02-2.-액티비티-생명주기-Activity-Lifecycle.webp
+  context: 2. 액티비티 생명주기 (Activity Lifecycle)
+  source_image_path: https://blog.kakaocdn.net/dna/kU59C/dJMb99SdtvE/AAAAAAAAAAAAAAAAAAAAAOXNydUTsJEckVlbm_HuRrIW-J6nGCS12Nz5BLbkaCN-/img.png
+  source_content_type: image/png
+  source_sha256: 27ea8405b5b0cbfa989cc59d5940303dc6033270499470c8714a783ada0db299
+  archived_dimensions: 936x769

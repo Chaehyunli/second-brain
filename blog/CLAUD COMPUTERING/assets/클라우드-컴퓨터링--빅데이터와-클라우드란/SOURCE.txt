@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/116
+
+selected_images:
+- file: 01-빅데이터-Big-Data-란-무엇일까.webp
+  context: 빅데이터(Big Data)란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/bpC2bw/btsQofZ53fj/AAAAAAAAAAAAAAAAAAAAAGnA_8AsRFvbcdQayBsxiBf5TeaC5IkMr4JhqWoe4q8O/img.png
+  source_content_type: image/png
+  source_sha256: 27007777d21a7c3488cd42ef8975cd82f2f88d51a880370aa134664de8328679
+  archived_dimensions: 1426x811
+- file: 02-클라우드-컴퓨팅-Cloud-Computing-이란-무엇일까.webp
+  context: 클라우드 컴퓨팅(Cloud Computing)이란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/ckGp2D/btsQpe7p7gK/AAAAAAAAAAAAAAAAAAAAAHbZ7O2-6i-nQwcpMABbOp6t6ZCzPvDI56T9cSPuZ5Vg/img.png
+  source_content_type: image/png
+  source_sha256: 2b73acaaf1434266bbc1587496a2c25f341ec220443668db9b97c4a294a694f8
+  archived_dimensions: 972x841
+- file: 03-클라우드-컴퓨팅-Cloud-Computing-이란-무엇일까.webp
+  context: 클라우드 컴퓨팅(Cloud Computing)이란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/b2l00I/btsQmfUCwlg/AAAAAAAAAAAAAAAAAAAAAIWpRRqgZNJ2jHr4ZHNr8MflG9jRTY1XIv2jLLpICfY9/img.png
+  source_content_type: image/png
+  source_sha256: 79d5eaa4ef3198b5f5a400b241a2b4b1c37bc549ac44710cbf8905c072c89e4d
+  archived_dimensions: 619x691

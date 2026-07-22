@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/261
+
+selected_images:
+- file: 01-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp
+  context: 1.1 직접 만든 프레임워크 vs 스프링 MVC 비교
+  source_image_path: https://blog.kakaocdn.net/dna/PQdPh/dJMcadhl3CB/AAAAAAAAAAAAAAAAAAAAAMvtx-Okyp0-EuZxSouTOBd2rZuSwCHsL3kora37d1oX/img.png
+  source_content_type: image/png
+  source_sha256: 91e9a9738116af69653357a5d0b23015244c49ea917f8390773fe799e3402780
+  archived_dimensions: 1030x521
+- file: 02-1.1-직접-만든-프레임워크-vs-스프링-MVC-비교.webp
+  context: 1.1 직접 만든 프레임워크 vs 스프링 MVC 비교
+  source_image_path: https://blog.kakaocdn.net/dna/eCN0fS/dJMcaa507M2/AAAAAAAAAAAAAAAAAAAAALSuyFM6p0gZYUsg0T26W3SlbceaP2cnHtND0fp8UYI2/img.png
+  source_content_type: image/png
+  source_sha256: 46f1a6d1c3d62881188957d9c9e8ed869f4de0ef1d99914817e09956038e3af5
+  archived_dimensions: 1029x500

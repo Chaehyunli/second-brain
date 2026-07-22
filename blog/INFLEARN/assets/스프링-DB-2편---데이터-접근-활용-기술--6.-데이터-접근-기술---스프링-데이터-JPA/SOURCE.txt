@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/305
+
+selected_images:
+- file: 01-2.-공통-인터페이스---JpaRepository.webp
+  context: 2. 공통 인터페이스 - JpaRepository
+  source_image_path: https://blog.kakaocdn.net/dna/dw7YUR/dJMcaf8net7/AAAAAAAAAAAAAAAAAAAAAEBoKIveiyYSbjwdoJz38tNaJAYGXnww6Hv9SAMvA9wQ/img.png
+  source_content_type: image/png
+  source_sha256: c5d8106183c228eed4f905898af2a434fcb46c234fd0eeba2e8247d56aba09da
+  archived_dimensions: 785x1030
+- file: 02-3.-프록시-구현체-자동-생성.webp
+  context: 3. 프록시 구현체 자동 생성
+  source_image_path: https://blog.kakaocdn.net/dna/bEzTPl/dJMcajpmzLI/AAAAAAAAAAAAAAAAAAAAADDXkeiPFqvhPAUE6bw5FDgb8fMPLzcaTpJ3gxfdiy82/img.png
+  source_content_type: image/png
+  source_sha256: 476e1db9b5f0c2f2bf1921914f317f393d5bc350b92fe078a9b04caa63e038bc
+  archived_dimensions: 780x400
+- file: 03-클래스-의존-관계.webp
+  context: 클래스 의존 관계
+  source_image_path: https://blog.kakaocdn.net/dna/nZJXt/dJMcac4VIYL/AAAAAAAAAAAAAAAAAAAAAHETBK0rBLS50BUQZbPDlTv5nRxAQFMC32mWGQ-3zND0/img.png
+  source_content_type: image/png
+  source_sha256: f54555589d82442ccd33624a746b507b8d6cac7f5da094d4bd65cbc64a5e7fad
+  archived_dimensions: 805x330

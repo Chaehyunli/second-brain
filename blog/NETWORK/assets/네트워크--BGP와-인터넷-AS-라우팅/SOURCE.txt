@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/275
+
+selected_images:
+- file: 01-BGP가-각-AS에-제공하는-이중-핵심-기능.webp
+  context: 🔑 BGP가 각 AS에 제공하는 이중 핵심 기능
+  source_image_path: https://blog.kakaocdn.net/dna/btHJIK/dJMcah5AORM/AAAAAAAAAAAAAAAAAAAAAP7awVreeEjmen3ijilaYkULTNkmz6J5reiVADD4LzM0/img.png
+  source_content_type: image/png
+  source_sha256: b21892450a0dd8d7771810746c52409325c00b1af6696aa6fa2069cec34f461e
+  archived_dimensions: 802x481
+- file: 02-2.-BGP의-기본-동작-및-세션-구성.webp
+  context: 2. BGP의 기본 동작 및 세션 구성
+  source_image_path: https://blog.kakaocdn.net/dna/80XjB/dJMb997wGEk/AAAAAAAAAAAAAAAAAAAAALDC_GQNXyCiU4ZVhld7SgDxIwmhfPLjQ5umzP9Ey4wE/img.png
+  source_content_type: image/png
+  source_sha256: 8c9a398552353987b173df86cdc7336028e17d992b32b06c29eb95e1b14268b9
+  archived_dimensions: 1017x292
+- file: 03-4.-BGP-경로-광고-및-전파-과정-eBGP-iBGP.webp
+  context: 4. BGP 경로 광고 및 전파 과정 (eBGP & iBGP)
+  source_image_path: https://blog.kakaocdn.net/dna/by2ion/dJMcaaL6ZtJ/AAAAAAAAAAAAAAAAAAAAAD6M6e9wHz91aiTozcPN4B0hw38DbuCXOYMDJEaofJvo/img.png
+  source_content_type: image/png
+  source_sha256: b89fa9d205cd636ac3a6537ec78c45a356b758297bc69c7c96b3964e659cf41d
+  archived_dimensions: 943x268

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/236
+
+selected_images:
+- file: 01-1.-네트워크-애플리케이션의-기본-원리.webp
+  context: 1. 네트워크 애플리케이션의 기본 원리
+  source_image_path: https://blog.kakaocdn.net/dna/eDhk8B/dJMcagdO7wJ/AAAAAAAAAAAAAAAAAAAAAFu9MPQqytXJz_LBi5VNjIWo_NXWug2P-E2f1lMS2mE6/img.png
+  source_content_type: image/png
+  source_sha256: f71f2ddb12309d8da1dda671719aea2b2c3291c532144c71e289c63e39837dd7
+  archived_dimensions: 494x565
+- file: 02-3.-프로세스-간-통신과-소켓-Socket.webp
+  context: 3. 프로세스 간 통신과 소켓(Socket)
+  source_image_path: https://blog.kakaocdn.net/dna/bqLD3k/dJMcabDzYgc/AAAAAAAAAAAAAAAAAAAAAIQT6zosm3cY6KztFmO2w27qHg14pwSSL4Mxpk5-nTAu/img.png
+  source_content_type: image/png
+  source_sha256: 53c7e22a17d9caaf2bb0054a9334f9d0a5859f0cb67a87da36361e9d753cb4e8
+  archived_dimensions: 855x279
+- file: 03-5.-애플리케이션이-요구하는-전송-서비스.webp
+  context: 5. 애플리케이션이 요구하는 전송 서비스
+  source_image_path: https://blog.kakaocdn.net/dna/0FxFe/dJMcajuOce9/AAAAAAAAAAAAAAAAAAAAAAxDxnBdGywxsxYnv3Ull3Eh0zGE-jI15otDXvQgn--Q/img.png
+  source_content_type: image/png
+  source_sha256: 6874524312d48a3943ce5e4e67da2b4d9b9d1548a7c8bc0035abe0356d1a5bb2
+  archived_dimensions: 1171x497

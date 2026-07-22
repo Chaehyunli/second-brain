@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/168
+
+selected_images:
+- file: 01-MapReduce-API.webp
+  context: MapReduce API
+  source_image_path: https://blog.kakaocdn.net/dna/wluWR/dJMb9XxzEFZ/AAAAAAAAAAAAAAAAAAAAAD-smGlmDvmW6GT9FGpLCEO8CnpVtGW3E4tCZGRPGVb0/img.png
+  source_content_type: image/png
+  source_sha256: 19cf2f55a400d84c9d8b6cb44d7b053d1cfc083553c173f9f743698ce9839f06
+  archived_dimensions: 885x382
+- file: 02-MapReduce-API.webp
+  context: MapReduce API
+  source_image_path: https://blog.kakaocdn.net/dna/T7q9H/dJMb9NaJp5B/AAAAAAAAAAAAAAAAAAAAAGeOZKoSjG7mFAQEij2YwtUHsJrqy8JlyNU9G1gOcbVX/img.png
+  source_content_type: image/png
+  source_sha256: 88a6de13fafe04adab3650d5296917cd6003890373893402b315f23a1720da7d
+  archived_dimensions: 1042x364
+- file: 03-작업-Job-및-매퍼-Mapper-구성.webp
+  context: 작업(Job) 및 매퍼(Mapper) 구성
+  source_image_path: https://blog.kakaocdn.net/dna/b3D6XS/dJMb9aqaqHW/AAAAAAAAAAAAAAAAAAAAAAvGNe2RLDEyx8F7K624fxEx5C4c--DU6EQ8ZFIEDRmd/img.png
+  source_content_type: image/png
+  source_sha256: e4e38faca1eeb6fd5ad508e4a3205b02d06ae3be5c307ef187b7ec94bc5147f9
+  archived_dimensions: 1390x771

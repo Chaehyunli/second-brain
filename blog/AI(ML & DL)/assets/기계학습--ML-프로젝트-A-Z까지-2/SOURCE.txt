@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/60
+
+selected_images:
+- file: 01-1.-데이터-구하기-이어서.webp
+  context: 1. 데이터 구하기 ( 이어서 )
+  source_image_path: https://blog.kakaocdn.net/dna/daX9iS/btsNumOt8WO/AAAAAAAAAAAAAAAAAAAAAIJl0A8nKqpnysFtrwPa-2ewI2n19dGLkM6YEMqiu0NW/img.png
+  source_content_type: image/png
+  source_sha256: 08bfbc86db3c98514c0513d7f1405f368b1090585b7dade1b0f28132a1d63c63
+  archived_dimensions: 1555x442
+- file: 02-1.-데이터-구하기-이어서.webp
+  context: 1. 데이터 구하기 ( 이어서 )
+  source_image_path: https://blog.kakaocdn.net/dna/5oEPy/btsNpXbEoEa/AAAAAAAAAAAAAAAAAAAAAIkkop2iemgJ4mqip6ltEX4iNAjeB4kW6SQinL9HI3d_/img.png
+  source_content_type: image/png
+  source_sha256: 222d5be45544b8d8b55605b41f502edcddd29038684f9842ab50fa2a14a622a4
+  archived_dimensions: 679x445
+- file: 03-2.-데이터-이해를-위한-탐색-및-시각화.webp
+  context: 2. 데이터 이해를 위한 탐색 및 시각화
+  source_image_path: https://blog.kakaocdn.net/dna/mztgA/btsNpUlBQKv/AAAAAAAAAAAAAAAAAAAAAPgMg0tkdKP5qAVrwT5TOGneedLLdtAZJw845xZhNaZ2/img.png
+  source_content_type: image/png
+  source_sha256: a70425a62cbaa606244329d3ae113b76e584e02119c893dfffd506307d9d4586
+  archived_dimensions: 697x334

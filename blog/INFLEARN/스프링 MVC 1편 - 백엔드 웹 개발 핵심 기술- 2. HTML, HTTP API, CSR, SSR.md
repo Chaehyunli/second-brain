@@ -107,6 +107,14 @@ React, Vue.js 등은 프론트엔드 개발자의 전문 영역입니다.
 
 구분 SSR (서버 사이드) CSR (클라이언트 사이드)
 
+## 핵심 이미지
+
+![📁 정적 리소스 (Static Resources)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/01-정적-리소스-Static-Resources.webp)
+
+![📄 HTML 페이지 (Dynamic HTML)](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/02-HTML-페이지-Dynamic-HTML.webp)
+
+![2. HTTP API](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--2.-HTML-HTTP-API-CSR-SSR/03-2.-HTTP-API.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

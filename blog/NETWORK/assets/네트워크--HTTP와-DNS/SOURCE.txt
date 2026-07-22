@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/247
+
+selected_images:
+- file: 01-HTTP-2-2015년-도입.webp
+  context: HTTP/2 (2015년 도입)
+  source_image_path: https://blog.kakaocdn.net/dna/A0gaN/dJMcaco2QuF/AAAAAAAAAAAAAAAAAAAAAKucwb6naCEUEYY2Z3crlcnLmcP4l9qePHvgQQxvVLup/img.png
+  source_content_type: image/png
+  source_sha256: adf52ab0c176960bf11aa4c86070e0369b8fd97b3b2fcdfe677afcc52c301694
+  archived_dimensions: 954x482
+- file: 02-HTTP-3.webp
+  context: HTTP/3
+  source_image_path: https://blog.kakaocdn.net/dna/bG2I08/dJMcaibKc7b/AAAAAAAAAAAAAAAAAAAAAIxZtmtD2_EEKHFYRAzq_u6iX9pjkZr4xWh2N9x3Xk11/img.png
+  source_content_type: image/png
+  source_sha256: 8bb9367a4d11b88213e0797333fe90a3abd2adb86c368d15e1d4d78acbb4af34
+  archived_dimensions: 946x502
+- file: 03-계층적-데이터베이스-구조.webp
+  context: 계층적 데이터베이스 구조
+  source_image_path: https://blog.kakaocdn.net/dna/tHeTC/dJMcabDFXbM/AAAAAAAAAAAAAAAAAAAAAOAMF4OYOzDOmVW7YzLUNitehci-P34m5L8Bu60wuhPd/img.png
+  source_content_type: image/png
+  source_sha256: ad6b9087f93e3b98320c2b6a86ae703e00fbae250434479668aacf4f57f27a0c
+  archived_dimensions: 1188x284

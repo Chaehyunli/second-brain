@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/67
+
+selected_images:
+- file: 01-3.-자원-할당-그래프-Resource-Allocation-Graph.webp
+  context: 3. 자원 할당 그래프 (Resource Allocation Graph)
+  source_image_path: https://blog.kakaocdn.net/dna/b8Vi0N/btsNLqiTDqf/AAAAAAAAAAAAAAAAAAAAABXbnFCnjPT_lEsjPUFJeidjHp4ef0RIHf2LqHencWry/img.png
+  source_content_type: image/png
+  source_sha256: 9996a364cc4b8d20e3370173dbc7843ae6976380d1675bed2de57feec0d1ed96
+  archived_dimensions: 598x697
+- file: 02-5.-교착상태-회피-Avoidance.webp
+  context: 5. 교착상태 회피 (Avoidance)
+  source_image_path: https://blog.kakaocdn.net/dna/99eq1/btsNJZfxzCB/AAAAAAAAAAAAAAAAAAAAAPhBNd4ch8F3H2iavKcks6D_9GdrkrINUx5HNWkPpHrW/img.png
+  source_content_type: image/png
+  source_sha256: f9f493fd6a7cbcea8a5359fd0e4a94e302bd48e770acb11675d455dc08e1688d
+  archived_dimensions: 1386x637
+- file: 03-6.-교착상태-탐지-Detection.webp
+  context: 6. 교착상태 탐지 (Detection)
+  source_image_path: https://blog.kakaocdn.net/dna/m0rwq/btsNKc6LMjE/AAAAAAAAAAAAAAAAAAAAAHqO4VW9eeaL7QwEKICA8bUksxY2H9WxANWERcYmCRaY/img.png
+  source_content_type: image/png
+  source_sha256: 4acdcf2f4bdb7758b1eaf23ef7c12cac608bf612538ee57b314c19d94407a456
+  archived_dimensions: 1297x595

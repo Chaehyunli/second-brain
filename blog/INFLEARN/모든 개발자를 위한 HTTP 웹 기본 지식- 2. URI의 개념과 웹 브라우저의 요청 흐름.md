@@ -67,6 +67,12 @@ HTTP 요청 메시지 생성: 웹 브라우저가 다음과 같은 메시지를 
 
 렌더링: 웹 브라우저가 도착한 HTTP 메시지 안의 HTML 데이터를 해석하여 화면에 출력합니다.
 
+## 핵심 이미지
+
+![1. URI (Uniform Resource Identifier)의 이해](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/01-1.-URI-Uniform-Resource-Identifier-의-이해.webp)
+
+![2. 웹 브라우저 요청 흐름](assets/모든-개발자를-위한-HTTP-웹-기본-지식--2.-URI의-개념과-웹-브라우저의-요청-흐름/02-2.-웹-브라우저-요청-흐름.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/167
+
+selected_images:
+- file: 01-CNN의-역사.webp
+  context: CNN의 역사
+  source_image_path: https://blog.kakaocdn.net/dna/pr2Qi/dJMb9NIzuj8/AAAAAAAAAAAAAAAAAAAAAJ_Ox9bD3NMY6Zm7PO5szd1m0qH0udb24CzFNEwy7KSI/img.png
+  source_content_type: image/png
+  source_sha256: 032910ae369f5e79d0a64deebff48341b5b828e7dd14ffa9925a14818317abbf
+  archived_dimensions: 1333x801
+- file: 02-Dropout과-Batch-Normalization.webp
+  context: Dropout과 Batch Normalization
+  source_image_path: https://blog.kakaocdn.net/dna/bAezjA/dJMb9NPk2N1/AAAAAAAAAAAAAAAAAAAAAJoXbewE4TtG3ipy-ylkqndXT5bhhuvt7vhg2Qdb5b4z/img.png
+  source_content_type: image/png
+  source_sha256: c7772fbed9783c2b7966faa0b33d414b6a4868823868b3569a467095e20e7561
+  archived_dimensions: 598x667
+- file: 03-Dropout과-Batch-Normalization.webp
+  context: Dropout과 Batch Normalization
+  source_image_path: https://blog.kakaocdn.net/dna/caqZnF/dJMb80OCAFF/AAAAAAAAAAAAAAAAAAAAAAPjESZdbnL048nyoSMiPmPtaLwh93NzckPziYUMRCKH/img.png
+  source_content_type: image/png
+  source_sha256: d0b73f31eb903021f64e7416248ddc7c6af449809c00c745e0d27ee40a159079
+  archived_dimensions: 1342x591

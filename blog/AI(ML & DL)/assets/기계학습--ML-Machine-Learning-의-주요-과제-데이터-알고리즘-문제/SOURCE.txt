@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/17
+
+selected_images:
+- file: 01-1.-데이터-관련-문제.webp
+  context: 1. 데이터 관련 문제
+  source_image_path: https://blog.kakaocdn.net/dna/HNvEJ/btsMMeY7TnH/AAAAAAAAAAAAAAAAAAAAAPjDvMOiPNjKwERCRNf958cLdKxlXVhwPqAdlQgRfxmj/img.png
+  source_content_type: image/png
+  source_sha256: 4e8d55082955c2b4d84ed759e7a25fe8b3fa5188ff91a3d546f3279611172440
+  archived_dimensions: 1150x379
+- file: 02-2.-알고리즘-관련-문제.webp
+  context: 2. 알고리즘 관련 문제
+  source_image_path: https://blog.kakaocdn.net/dna/bd2u4u/btsMMKJ2SA7/AAAAAAAAAAAAAAAAAAAAAONQVhhGjqbEzi7_C2GnHlwxKcRothGZgSnohCzZn0W-/img.png
+  source_content_type: image/png
+  source_sha256: f0baa60c609b5e3831f4ca13b687e76a1ce8e2dc694e55e7abed3f8cb0e68b31
+  archived_dimensions: 1012x385
+- file: 03-2.-알고리즘-관련-문제.webp
+  context: 2. 알고리즘 관련 문제
+  source_image_path: https://blog.kakaocdn.net/dna/bs6QB1/btsMOgHUrjV/AAAAAAAAAAAAAAAAAAAAAOI_BESOBLWBxtKFBUSS78a223uDcEb6LcOEu8H4wNjz/img.png
+  source_content_type: image/png
+  source_sha256: 0f4de80fd960ce92bfcce709221850cff9974a76c60137cecf286c104eb45585
+  archived_dimensions: 571x372

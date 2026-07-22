@@ -103,6 +103,14 @@ HTTP 요청 메시지의 쿠키 헤더 라인: 클라이언트가 서버에 요�
 
 이 경우 링크 이용률은 58%로 떨어지고, 평균 종단간 지연 시간은 약 1.2초로 개선됩니다. 이는 고가 링크를 사는 것보다 훨씬 저렴하면서 효율적인 방법입니다.
 
+## 핵심 이미지
+
+![사용자/서버 상태 유지: 쿠키 (Cookies)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/01-사용자-서버-상태-유지-쿠키-Cookies.webp)
+
+![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/02-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
+
+![웹 캐시: 프록시 서버 (Web Caches / Proxy Servers)](assets/네트워크--쿠키-Cookies-와-Proxy-Servers/03-웹-캐시-프록시-서버-Web-Caches-Proxy-Servers.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

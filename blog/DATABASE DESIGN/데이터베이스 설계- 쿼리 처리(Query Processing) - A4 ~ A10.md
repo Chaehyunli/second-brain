@@ -83,6 +83,10 @@ A10 (Identifier의 합집합 활용): - 각 조건에 대해 인덱스를 사용
 
 Negation (부정 연산): - NOT과 같은 부정 조건은 일반적으로 인덱스를 활용하기 어려워 전체 파일을 스캔(Linear Scan)해야 함 - 이 때문에 성능 저하의 원인이 될 수 있음
 
+## 핵심 이미지
+
+![1. Secondary Index를 이용한 동등(Equality) 조건 선택 (A4)](assets/데이터베이스-설계--쿼리-처리-Query-Processing---A4-A10/01-1.-Secondary-Index를-이용한-동등-Equality-조건-선택-A4.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

@@ -195,6 +195,14 @@ $k$를 거쳐가는 경로가 더 짧다면 ($d_{ij}^{(k-1)} > d_{ik}^{(k-1)} + 
 
 아니라면, $k$를 거치지 않는 경로의 선행 정점($\pi_{ij}^{(k-1)}$)을 유지
 
+## 핵심 이미지
+
+![DynamicProgramming알고리즘](assets/알고리즘--DynamicProgramming과-AllPairShortestPathAlgorithm/01-DynamicProgramming알고리즘.webp)
+
+![DynamicProgramming알고리즘](assets/알고리즘--DynamicProgramming과-AllPairShortestPathAlgorithm/02-DynamicProgramming알고리즘.webp)
+
+![DynamicProgramming알고리즘](assets/알고리즘--DynamicProgramming과-AllPairShortestPathAlgorithm/03-DynamicProgramming알고리즘.webp)
+
 ## 관련 글
 
 - [[blog/ALGORITHM/index|ALGORITHM]]

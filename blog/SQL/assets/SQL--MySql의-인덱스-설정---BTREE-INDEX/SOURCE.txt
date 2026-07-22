@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/41
+
+selected_images:
+- file: 01-2.-B-Tree-인덱스와-조회-방식-비교.webp
+  context: 2. B-Tree 인덱스와 조회 방식 비교
+  source_image_path: https://blog.kakaocdn.net/dna/yOMpg/btsM7ceQcl4/AAAAAAAAAAAAAAAAAAAAAFalDO2zqvvThfsWRDdX07ERNAmlxOrps7CMnASZ035C/img.png
+  source_content_type: image/png
+  source_sha256: f53bc389d2dc67a12e65064d82c4cbb450c92324009129e6bfd4aff7d74e4a2d
+  archived_dimensions: 1047x415

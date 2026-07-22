@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/223
+
+selected_images:
+- file: 01-1.-스프링-컨테이너-생성.webp
+  context: 1. 스프링 컨테이너 생성
+  source_image_path: https://blog.kakaocdn.net/dna/zEhym/dJMcahDCOMq/AAAAAAAAAAAAAAAAAAAAANyZ8CZZfucqKFHSRXp48eGO7U17OxHWV_g0WMqF6wI5/img.png
+  source_content_type: image/png
+  source_sha256: 9d20ba0d97c09fcbf9cdbf7d3e23566f4f79292073d6db77fdc60245ed9f4e6c
+  archived_dimensions: 1012x472
+- file: 02-2.-스프링-빈-등록.webp
+  context: 2. 스프링 빈 등록
+  source_image_path: https://blog.kakaocdn.net/dna/AeiIU/dJMcagdGwiR/AAAAAAAAAAAAAAAAAAAAAD5onJnp5vlL9KTVvl1BkTzGw7iQiIMU34iI54h6mPHE/img.png
+  source_content_type: image/png
+  source_sha256: 6a70c40d89f65ef024bce65c5fac1893052348eee547e5510c4c6a5113e63a70
+  archived_dimensions: 1024x448
+- file: 03-3.-스프링-빈-의존관계-설정-준비-및-완료.webp
+  context: 3. 스프링 빈 의존관계 설정 (준비 및 완료)
+  source_image_path: https://blog.kakaocdn.net/dna/uq0DM/dJMcadVveXX/AAAAAAAAAAAAAAAAAAAAAFk51QkE2C0WtpLCf1cWMc-k5qmZLOf_8207B5yrk55B/img.png
+  source_content_type: image/png
+  source_sha256: 2bca9eceed2d068c80d15fab70db5dc1a8468d326f033b3830e5a8d5c29943c5
+  archived_dimensions: 1024x451

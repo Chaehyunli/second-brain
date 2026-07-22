@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/263
+
+selected_images:
+- file: 01-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp
+  context: 6.1 HTTP 메시지 컨버터 (HttpMessageConverter)
+  source_image_path: https://blog.kakaocdn.net/dna/dVbJiF/dJMcaiwemmz/AAAAAAAAAAAAAAAAAAAAAF7W0dz0SnHT4V1vXEIhhqzJNs5EjW8JTaLjPNP1_AfM/img.png
+  source_content_type: image/png
+  source_sha256: 0906b2857e5b5d8ee18fab18334ce92af573851c50536098fb53061c1e15932e
+  archived_dimensions: 1056x565
+- file: 02-6.1-HTTP-메시지-컨버터-HttpMessageConverter.webp
+  context: 6.1 HTTP 메시지 컨버터 (HttpMessageConverter)
+  source_image_path: https://blog.kakaocdn.net/dna/7926Z/dJMcafsKYsh/AAAAAAAAAAAAAAAAAAAAAP8XSDVQ_ny31ztN-COmRcnvYU8hfiIVXjZzMgMB5Bxz/img.png
+  source_content_type: image/png
+  source_sha256: b00972d69ea117cb048c61a4a7823ee200ae925722be424752389dac34b38316
+  archived_dimensions: 1049x570
+- file: 03-6.2-요청-매핑-핸들러-어댑터-구조.webp
+  context: 6.2 요청 매핑 핸들러 어댑터 구조
+  source_image_path: https://blog.kakaocdn.net/dna/A2z74/dJMcafM6svV/AAAAAAAAAAAAAAAAAAAAADivxtM9Sqig5OM0Vu1zS4zuFXKw_63u19awFgdicfoS/img.png
+  source_content_type: image/png
+  source_sha256: 96281f3b6512e8cf13136b51629260d9b578ae495e6453ee5570c426973eb780
+  archived_dimensions: 1029x511

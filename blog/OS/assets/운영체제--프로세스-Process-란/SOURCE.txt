@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/23
+
+selected_images:
+- file: 01-1.-프로세스란.webp
+  context: 1. 프로세스란?
+  source_image_path: https://blog.kakaocdn.net/dna/bthQ00/btsMTmo4cmg/AAAAAAAAAAAAAAAAAAAAANcFa1y3cpUizINrz9R8eXfpUhXOhFEgV-SgOHyM7_ax/img.png
+  source_content_type: image/png
+  source_sha256: 85a8831b552388698bd51130c989cc545a30a64b2828e4528344a30257db1d8b
+  archived_dimensions: 853x295
+- file: 02-2.-실행-파일의-구조.webp
+  context: 2. 실행 파일의 구조
+  source_image_path: https://blog.kakaocdn.net/dna/cUX8kM/btsMUqxmhGo/AAAAAAAAAAAAAAAAAAAAAI3Id1kARLvI6iL2WcgKYu3mbg4DTJ9mEBSs0YfW6yBR/img.png
+  source_content_type: image/png
+  source_sha256: e39cf4042ee0d22aad95b0000006069cac37034591331fc816b22359c8233fa6
+  archived_dimensions: 1153x541
+- file: 03-2.-실행-파일의-구조.webp
+  context: 2. 실행 파일의 구조
+  source_image_path: https://blog.kakaocdn.net/dna/dfHw5K/btsMVtNDIYU/AAAAAAAAAAAAAAAAAAAAAPgfFY3gAGi01hLB0-l-wdmy1yHLjdGvw8-wnzRTGv9s/img.png
+  source_content_type: image/png
+  source_sha256: 3bc195b447750b94ace198e2513f3b406d105d717e7eeb669c69f78c35e9db13
+  archived_dimensions: 499x387

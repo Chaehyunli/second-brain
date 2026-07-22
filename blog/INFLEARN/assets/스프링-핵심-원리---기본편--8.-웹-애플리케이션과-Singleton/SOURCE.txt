@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/226
+
+selected_images:
+- file: 01-1.-웹-애플리케이션과-싱글톤.webp
+  context: 1. 웹 애플리케이션과 싱글톤
+  source_image_path: https://blog.kakaocdn.net/dna/cjixyb/dJMb99MmKIq/AAAAAAAAAAAAAAAAAAAAAPWT9sMkIbP3keAKm-gv4arIlX4nt0cvzIr_eaQOvEQo/img.png
+  source_content_type: image/png
+  source_sha256: bee066e5e5a89e0bdf68aeb9441f71400a0a694150e4334271cd99216a7008c0
+  archived_dimensions: 1026x520
+- file: 02-4.-싱글톤-컨테이너-Spring.webp
+  context: 4. 싱글톤 컨테이너 (Spring)
+  source_image_path: https://blog.kakaocdn.net/dna/drHbHV/dJMcacPS4SJ/AAAAAAAAAAAAAAAAAAAAALNJ_kSd0FMmjHTKwMBzR9x06ZY7vvv5IlhlcPPNFgYy/img.png
+  source_content_type: image/png
+  source_sha256: a41d8f4326933a23b8acbb3fcba4260a285c1099c00111ee52edaeec65a8ad51
+  archived_dimensions: 1029x510

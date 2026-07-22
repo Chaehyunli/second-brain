@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/260
+
+selected_images:
+- file: 01-계산-예시-1-Gbps-링크-15ms-편도-지연-8000비트-패킷.webp
+  context: 계산 예시 (1 Gbps 링크, 15ms 편도 지연, 8000비트 패킷)
+  source_image_path: https://blog.kakaocdn.net/dna/caMD5w/dJMcacirDlE/AAAAAAAAAAAAAAAAAAAAAFCTJeWLQhQRnJGouhzGfDzFYu1a9R-W7eo77HTw3v_i/img.png
+  source_content_type: image/png
+  source_sha256: 45420b0535fee7f4c0737f925ef06e4e76da1fb9429aaff53c71461189495652
+  archived_dimensions: 810x381
+- file: 02-특징.webp
+  context: 특징
+  source_image_path: https://blog.kakaocdn.net/dna/bV4BgA/dJMcacW1I3u/AAAAAAAAAAAAAAAAAAAAAIiJLUKWnstd7ERaiijR9de3Bk94P8KuiMSjCt6QsDyq/img.png
+  source_content_type: image/png
+  source_sha256: 5a7a8719f20954e32ffaade7f7d4aa5aae9e83eeed8c547b6d8081bf63a8999d
+  archived_dimensions: 1032x511
+- file: 03-수신자-Receiver.webp
+  context: 수신자 (Receiver)
+  source_image_path: https://blog.kakaocdn.net/dna/bjywGQ/dJMcaibUxKG/AAAAAAAAAAAAAAAAAAAAACBA7r2ZgD5RTXfmpja3ZHUwC8wx4KIpB1GapVLvdoJ0/img.png
+  source_content_type: image/png
+  source_sha256: b7fa638c2631bf1aa043772c6a4c51325f732144e99fe4308011299e10ba8a41
+  archived_dimensions: 1107x319

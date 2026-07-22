@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/58
+
+selected_images:
+- file: 01-3.-토큰-설계-시-고려-사항.webp
+  context: 3. 토큰 설계 시 고려 사항
+  source_image_path: https://blog.kakaocdn.net/dna/4zIKv/btsNl0FE7jM/AAAAAAAAAAAAAAAAAAAAAJD3uIs4XHmDBxm49htSDjJEz4V_cjqPOjvyXGSvZrDe/img.png
+  source_content_type: image/png
+  source_sha256: bd8ae76910ef32e65358c926e2a91c07b7e3bda734fc40126192d0f237f79f80
+  archived_dimensions: 798x403

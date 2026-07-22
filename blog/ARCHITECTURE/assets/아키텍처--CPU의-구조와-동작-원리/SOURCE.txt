@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/14
+
+selected_images:
+- file: 01-3.1-인출-사이클-Fetch-Cycle.webp
+  context: 3.1 인출 사이클 (Fetch Cycle)
+  source_image_path: https://blog.kakaocdn.net/dna/K5XRJ/btsMKu7iBzp/AAAAAAAAAAAAAAAAAAAAAEPBdIprvj1-lndBLbQVNHPDzucdGWLY94aHMnb81PYl/img.png
+  source_content_type: image/png
+  source_sha256: bcc8ae604f9df140e812030ecbed0bcbf6b496f44f9f17a4b357a0d8b8dca4c6
+  archived_dimensions: 892x556
+- file: 02-2-데이터-처리-연산-ADD-addr.webp
+  context: 2) 데이터 처리 연산 (ADD addr)
+  source_image_path: https://blog.kakaocdn.net/dna/Y1BU9/btsMKsIo4jH/AAAAAAAAAAAAAAAAAAAAAPxHI27yMeU6jg4tEmgYOLIx31ZVU0iuCZHyV-Ynyaxq/img.png
+  source_content_type: image/png
+  source_sha256: 8e3523cab2e9c24ceda6aeda7a2bd0c8e90955cf8808a615d2e96c49707575c5
+  archived_dimensions: 904x573
+- file: 03-4.-명령어-실행-예제.webp
+  context: 4. 명령어 실행 예제
+  source_image_path: https://blog.kakaocdn.net/dna/EpKUR/btsMKUknyl0/AAAAAAAAAAAAAAAAAAAAANptlA0U2cHRig3EUgr1pVZ-k-PSOSb4C7QE6XlPid6c/img.png
+  source_content_type: image/png
+  source_sha256: 9ec8b3eb013e0ff951acfebd61a1c725d3f4df8d40fe50358573675fcb0f2905
+  archived_dimensions: 735x1009

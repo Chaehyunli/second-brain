@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/105
+
+selected_images:
+- file: 01-1.-타입은-집합이다.webp
+  context: 1. 타입은 집합이다
+  source_image_path: https://blog.kakaocdn.net/dna/N25Mn/btsOSBENnK7/AAAAAAAAAAAAAAAAAAAAACQS8XrGYL58RSrRf7jLUvPKcCdtvp_XBC6FN9FnoQMQ/img.png
+  source_content_type: image/png
+  source_sha256: 1a88012a780753c86e34243f6135380f8b2490364d244a36467dc93a3b09afc0
+  archived_dimensions: 1087x612
+- file: 02-1.-타입은-집합이다.webp
+  context: 1. 타입은 집합이다
+  source_image_path: https://blog.kakaocdn.net/dna/bIWg8n/btsORUxE38z/AAAAAAAAAAAAAAAAAAAAADxoYPOOtzHytt7hnPWvv28S1GsbKcmaKKBvyDMlkOwS/img.png
+  source_content_type: image/png
+  source_sha256: 844ce3fb96f43aefbfbf934efec79e9aacb73fcd2ba4b219bc7c2894b5b02e9c
+  archived_dimensions: 322x445
+- file: 03-1.-타입은-집합이다.webp
+  context: 1. 타입은 집합이다
+  source_image_path: https://blog.kakaocdn.net/dna/OvD28/btsOTQAuIBw/AAAAAAAAAAAAAAAAAAAAAKJmcF1UwG64fBakpE-u96ANQhknfAvWTzq-wq7HdLF9/img.png
+  source_content_type: image/png
+  source_sha256: b239f24efcb67437060063a87dc409f026ec00861139beb1d35816b95821847c
+  archived_dimensions: 1083x618

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/218
+
+selected_images:
+- file: 01-1.-네트워크-코어의-기본-전달-방식-패킷-스위칭.webp
+  context: 1. 네트워크 코어의 기본 전달 방식: 패킷 스위칭
+  source_image_path: https://blog.kakaocdn.net/dna/b0g5Gc/dJMcajuErVq/AAAAAAAAAAAAAAAAAAAAADwcdMP_yhhTIPwiaerVgpZDihP5hES7PxjjoaSmu-Fu/img.png
+  source_content_type: image/png
+  source_sha256: 7aa4748b23070e4cc9aaa4fb9b6cda7a10fa74dedf07457654227d4937b88736
+  archived_dimensions: 897x252
+- file: 02-2.-라우터-내부의-혼잡과-성능-저하.webp
+  context: 2. 라우터 내부의 혼잡과 성능 저하
+  source_image_path: https://blog.kakaocdn.net/dna/UVlxM/dJMcaibuokM/AAAAAAAAAAAAAAAAAAAAABWUtv6I7L0CMiTf4EcKeTT6DnbBdRNvBf8nOltaGge7/img.png
+  source_content_type: image/png
+  source_sha256: a85026f14aea1744bea0a7d04735dc7df128a36a0d86d5911c5d10f02e9b3147
+  archived_dimensions: 837x285
+- file: 03-3.-라우터의-핵심-기능-데이터-전달의-두-단계.webp
+  context: 3. 라우터의 핵심 기능 (데이터 전달의 두 단계)
+  source_image_path: https://blog.kakaocdn.net/dna/qyKff/dJMcacI6Xl9/AAAAAAAAAAAAAAAAAAAAAO-MEPMaz5fNQakWEUrJoPzonhNdwJL4IXFW7-2qJmw4/img.png
+  source_content_type: image/png
+  source_sha256: 6930f9a3b944629a17c82095bd77b035e6aecc28e379ba21601f73e1f3b6d686
+  archived_dimensions: 1174x541

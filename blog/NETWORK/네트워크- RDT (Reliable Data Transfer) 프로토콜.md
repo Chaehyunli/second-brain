@@ -93,6 +93,14 @@ Premature Timeout: 네트워크 지연으로 ACK가 늦게 와서 중복 전송�
 
 최종 결론: rdt 3.0은 현대 통신의 신뢰성을 보장하는 가장 기본적인 원리(에러 검출, 피드백, 순서 번호, 타임아웃)를 모두 갖춘 모델입니다.
 
+## 핵심 이미지
+
+![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/01-FSM-주요-로직.webp)
+
+![FSM 주요 로직](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/02-FSM-주요-로직.webp)
+
+![2. rdt 2.2: NAK-Free 프로토콜 (구조의 단순화)](assets/네트워크--RDT-Reliable-Data-Transfer-프로토콜/03-2.-rdt-2.2-NAK-Free-프로토콜-구조의-단순화.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

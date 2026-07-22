@@ -162,6 +162,14 @@ False Positive를 줄이고 싶을 때 중요
 
 정밀도(Precision) vs 재현율(Recall) 의 중요도에 따라 가중치를 다르게 두는 것에 대한 것은 다음 글에서 다룰 예정
 
+## 핵심 이미지
+
+![1. MNIST 데이터셋](assets/기계학습--ML-프로젝트---분류-Classification-모델/01-1.-MNIST-데이터셋.webp)
+
+![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/02-3.-분류기-성능-측정.webp)
+
+![3. 분류기 성능 측정](assets/기계학습--ML-프로젝트---분류-Classification-모델/03-3.-분류기-성능-측정.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

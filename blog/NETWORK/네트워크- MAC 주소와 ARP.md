@@ -127,6 +127,14 @@ MAC 주소와 IP 주소는 항상 1:1 대응인가요?
 
 예외 상황 (多:1): 이중화 구성(로드 밸런싱/HA) 환경에서는 외부로 드러난 가상 IP 하나를 백엔드의 여러 대 장비(여러 MAC)가 나누어 처리하기도 합니다.
 
+## 핵심 이미지
+
+![1. 두 가지 네트워크 주소 체계 비교 (IP vs MAC)](assets/네트워크--MAC-주소와-ARP/01-1.-두-가지-네트워크-주소-체계-비교-IP-vs-MAC.webp)
+
+![3. ARP (Address Resolution Protocol)의 역할과 동작](assets/네트워크--MAC-주소와-ARP/02-3.-ARP-Address-Resolution-Protocol-의-역할과-동작.webp)
+
+![3.2 ARP의 동작 과정](assets/네트워크--MAC-주소와-ARP/03-3.2-ARP의-동작-과정.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

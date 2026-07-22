@@ -155,6 +155,10 @@ Copy Gate (복사): 그래디언트 덧셈기 (Gradient Adder)
 
 Max Gate (최대값): 그래디언트 라우터 (Gradient Router)
 
+## 핵심 이미지
+
+![계산 그래프 예시 상세](assets/딥러닝--Gradient-및-자동-미분-Autogradient/01-계산-그래프-예시-상세.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

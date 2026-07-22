@@ -306,6 +306,10 @@ PgBouncer의 압축 중개: PgBouncer는 백엔드와 데이터베이스의 사�
 
 ### 6.3 HAProxy와 PgBouncer 핵심 개념 대조표
 
+## 핵심 이미지
+
+![6. 인프라 레이어의 독립: HAProxy와 PgBouncer의 역할](assets/Spring-Boot--11.-Cluster-DB/01-6.-인프라-레이어의-독립-HAProxy와-PgBouncer의-역할.webp)
+
 ## 관련 글
 
 - [[blog/SPRING BOOT/index|SPRING BOOT]]

@@ -1094,6 +1094,14 @@ javax.validation.@Valid: 자바 표준 스펙(JSR-303 / Jakarta)에 정의된 �
 
 org.springframework.validation.annotation.@Validated: 스프링 프레임워크 전용 검증 유틸 애노테이션으로, 자바 표준 검증 기능에 스프링 특화 편리성(그룹 검증 기능 등)을 한층 업그레이드하여 기본 탑재한 버전입니다.
 
+## 핵심 이미지
+
+![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/01-1-아키텍처-흐름도.webp)
+
+![1) 아키텍처 흐름도](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/02-1-아키텍처-흐름도.webp)
+
+![3) Thymeleaf 뷰 템플릿 구현](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--4.-검증1---Validation/03-3-Thymeleaf-뷰-템플릿-구현.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

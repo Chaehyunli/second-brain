@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/273
+
+selected_images:
+- file: 01-1.1-등장-동기-및-헤더-구조.webp
+  context: 1.1 등장 동기 및 헤더 구조
+  source_image_path: https://blog.kakaocdn.net/dna/c5B9LU/dJMcaayvv08/AAAAAAAAAAAAAAAAAAAAACnrFZlu5RLu9pz3IAGvjhpgUhFhXy6aCEOBFxh6r_Dy/img.png
+  source_content_type: image/png
+  source_sha256: 06bad023b73d798c830a34c4ffa58aa4f2bea118ecfe6753dea9d4a8e8dca0ab
+  archived_dimensions: 1188x388
+- file: 02-1.2-IPv4-IPv6-과도기-기술-터널링-Tunneling.webp
+  context: 1.2 IPv4-IPv6 과도기 기술: 터널링(Tunneling)
+  source_image_path: https://blog.kakaocdn.net/dna/b9fGKh/dJMcagZJ9J5/AAAAAAAAAAAAAAAAAAAAALyF7nRHIWM848-II3vSSWiGTBsUJYTN9yllY0_c5jWo/img.png
+  source_content_type: image/png
+  source_sha256: 4afa5e34bd0629cb0d0bed84631c09a3f22fa2ad249f9ec8186507f92e5a0fdd
+  archived_dimensions: 720x241
+- file: 03-1.2-IPv4-IPv6-과도기-기술-터널링-Tunneling.webp
+  context: 1.2 IPv4-IPv6 과도기 기술: 터널링(Tunneling)
+  source_image_path: https://blog.kakaocdn.net/dna/bKnMoY/dJMcaaecBzp/AAAAAAAAAAAAAAAAAAAAAL3Eo7OyiuOWOOQIyZ9L_30wT8LO3eaEl2IDi_i2R4lW/img.png
+  source_content_type: image/png
+  source_sha256: 49867121e727a8266f03f2440224d2934596e45dcf21d87a270319f8ac8701d5
+  archived_dimensions: 955x577

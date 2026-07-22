@@ -135,6 +135,14 @@ ESTABLISHED: 연결 완료, 데이터 전송 중.
 
 TIME_WAIT: 종료 후 유실 패킷 처리를 위한 대기 시간.
 
+## 핵심 이미지
+
+![1. TCP 연결 설정 (Connection Establishment)](assets/네트워크--TCP-연결과-3-Way-Handshake/01-1.-TCP-연결-설정-Connection-Establishment.webp)
+
+![1.1 2-Way Handshake의 한계](assets/네트워크--TCP-연결과-3-Way-Handshake/02-1.1-2-Way-Handshake의-한계.webp)
+
+![1.2 3-Way Handshake (표준 방식)](assets/네트워크--TCP-연결과-3-Way-Handshake/03-1.2-3-Way-Handshake-표준-방식.webp)
+
 ## 관련 글
 
 - [[blog/NETWORK/index|NETWORK]]

@@ -217,6 +217,14 @@ connection.setAutoCommit(false)와 같은 지시어로 암시적 커밋을 끌 �
 
 예시: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE.
 
+## 핵심 이미지
+
+![3. Conflict Serializability (충돌 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/01-3.-Conflict-Serializability-충돌-직렬-가능성.webp)
+
+![4. View Serializability (뷰 직렬 가능성)](assets/데이터베이스-설계--트랜젝션과-Serializability/02-4.-View-Serializability-뷰-직렬-가능성.webp)
+
+![5. Testing for Serializability (직렬 가능성 테스트)](assets/데이터베이스-설계--트랜젝션과-Serializability/03-5.-Testing-for-Serializability-직렬-가능성-테스트.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

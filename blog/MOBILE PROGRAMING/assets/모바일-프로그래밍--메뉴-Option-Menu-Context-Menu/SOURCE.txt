@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/158
+
+selected_images:
+- file: 01-옵션-메뉴-Option-Menu.webp
+  context: 옵션 메뉴 (Option Menu)
+  source_image_path: https://blog.kakaocdn.net/dna/X7X5A/btsQ6fF2vyy/AAAAAAAAAAAAAAAAAAAAAHVj8cFGKYGIalG2P-sXgqp5VuChVeewm5ouOlVjq_6X/img.png
+  source_content_type: image/png
+  source_sha256: b1eaaa6a4cab6d25a3e1a8c59e05c61149e5d17853751a04438601de4f396b53
+  archived_dimensions: 1086x454
+- file: 02-옵션-메뉴-Option-Menu.webp
+  context: 옵션 메뉴 (Option Menu)
+  source_image_path: https://blog.kakaocdn.net/dna/bVFQbr/btsQ9v79JLn/AAAAAAAAAAAAAAAAAAAAACPg4JoepWpJIDOQgpHUtr18VF9BweGrlqiadgu2i9vK/img.png
+  source_content_type: image/png
+  source_sha256: 848ca3da5ef0462b9b20e99b1efc565c3b1fe5bcf8822b9b7725bf4bac7549c3
+  archived_dimensions: 400x652
+- file: 03-컨텍스트-메뉴-Context-Menu.webp
+  context: 컨텍스트 메뉴 (Context Menu)
+  source_image_path: https://blog.kakaocdn.net/dna/Wn2nS/btsQ7y6gIGG/AAAAAAAAAAAAAAAAAAAAAJ_2eaosxIbRopmu5hCq51IxkPMaY1UNghNoPRhOJ5kl/img.png
+  source_content_type: image/png
+  source_sha256: 952598c19ba5fad9524057caadf4f5a80f39113fc1a3215b765f79bbbc225069
+  archived_dimensions: 1233x532

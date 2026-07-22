@@ -115,6 +115,10 @@ Convolution 레이어의 출력(피처 맵)은 원본 이미지(WxH)와 크기(W
 
 따라서 계산된 Heatmap(W'xH')을 원본 입력 크기(WxH)에 맞게 늘리면(resize), 이미지의 어느 부분을 활성화했는지 시각화할 수 있음
 
+## 핵심 이미지
+
+![AutoGrad의 응용: Heatmap 활성화](assets/딥러닝--텐서플로우의-GradientTape-자동-미분/01-AutoGrad의-응용-Heatmap-활성화.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

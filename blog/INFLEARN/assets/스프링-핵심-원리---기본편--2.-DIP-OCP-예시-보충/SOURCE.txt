@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/220
+
+selected_images:
+- file: 01-요점-정리.webp
+  context: 💡 요점 정리
+  source_image_path: https://blog.kakaocdn.net/dna/OqVXA/dJMcag5Od3g/AAAAAAAAAAAAAAAAAAAAAH1_bNz9mEDBuG3FpRycYoCyrTelp27_JdgAPWIhgA3Y/img.png
+  source_content_type: image/png
+  source_sha256: d4905b8abf9543dbeddf1409daa7296e6e39bbce6b72f08cb4c2307aa1f01cd2
+  archived_dimensions: 997x730
+- file: 02-요점-정리.webp
+  context: 💡 요점 정리
+  source_image_path: https://blog.kakaocdn.net/dna/Ia102/dJMcaaYNUVe/AAAAAAAAAAAAAAAAAAAAAIXDkZhJbPbQpEKTJDJULuCsxhVfsNk0uTFPN4cGGpDk/img.png
+  source_content_type: image/png
+  source_sha256: a09a603fddc6ad8d137ca0611a81c0711a849a3a305f8eeb38ef2eb5f37154f9
+  archived_dimensions: 994x318

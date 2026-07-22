@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/270
+
+selected_images:
+- file: 01-2.1-주요-필드와-역할.webp
+  context: 2.1 주요 필드와 역할
+  source_image_path: https://blog.kakaocdn.net/dna/kPTw3/dJMcaad7AFQ/AAAAAAAAAAAAAAAAAAAAAJI4RW3V5qaN_wet_X8EFY5FX-Rh58ucqjn5ABJghk2p/img.png
+  source_content_type: image/png
+  source_sha256: 016e0cde13293d3b2df01a604aadf851504e381f251c4bb1784a3709dcfb146a
+  archived_dimensions: 1245x575
+- file: 02-3.1-서브넷-마스크-Subnet-Mask.webp
+  context: 3.1 서브넷 마스크 (Subnet Mask)
+  source_image_path: https://blog.kakaocdn.net/dna/dakrQN/dJMcahdecLZ/AAAAAAAAAAAAAAAAAAAAAIgkVpWBXlZpsqvAJv9e6gH5EgLyh05Ysrj1bIhcljeT/img.png
+  source_content_type: image/png
+  source_sha256: af2d7b68a572ea5354897bb136f70812d8135ae7e35df0b269e615f692806b3f
+  archived_dimensions: 535x422
+- file: 03-3.2-서브네팅-vs-슈퍼네팅.webp
+  context: 3.2 서브네팅 vs 슈퍼네팅
+  source_image_path: https://blog.kakaocdn.net/dna/bzjBRA/dJMb990Bmge/AAAAAAAAAAAAAAAAAAAAAK__BPCrFOaxEut7BcwEYpnmpVH-9rqcHDyzWDFVCqB0/img.png
+  source_content_type: image/png
+  source_sha256: 6fc704ce42aa4c3388f57e9c6988224c947e033d74bdfc60743fd591ce37bf7e
+  archived_dimensions: 918x555

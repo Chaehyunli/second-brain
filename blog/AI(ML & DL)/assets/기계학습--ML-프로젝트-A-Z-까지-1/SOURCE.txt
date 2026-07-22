@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/59
+
+selected_images:
+- file: 01-1.-큰-그림-보기.webp
+  context: 1. 큰 그림 보기
+  source_image_path: https://blog.kakaocdn.net/dna/cBdGXc/btsNrmARFmO/AAAAAAAAAAAAAAAAAAAAAO5gBXFsfDjfO7A4kNpfXVqH7up5WMqvJvzvkSTjGhlO/img.png
+  source_content_type: image/png
+  source_sha256: b386bfee083b1f9df2af73b5b009255a3fcbd0a90aeb0fb8279e1e58f7ed5869
+  archived_dimensions: 631x139
+- file: 02-1.-큰-그림-보기.webp
+  context: 1. 큰 그림 보기
+  source_image_path: https://blog.kakaocdn.net/dna/xa5N0/btsNmEJRXXx/AAAAAAAAAAAAAAAAAAAAAAJaPJFMK5fiVKaR_7DTS_7ezr_oArmMGY_ALSjaRx5X/img.png
+  source_content_type: image/png
+  source_sha256: c69dab0960f8b7a68088ec7ef4364624e452f2793aaf6b8b2cbd39dbd392a000
+  archived_dimensions: 586x151
+- file: 03-2.-데이터-구하기.webp
+  context: 2. 데이터 구하기
+  source_image_path: https://blog.kakaocdn.net/dna/q1CqX/btsNrjD9aAq/AAAAAAAAAAAAAAAAAAAAAJ5DxVxddNovOvlde3dWv6Xod-MTCDm342zAPc-VKeHB/img.png
+  source_content_type: image/png
+  source_sha256: 2b8b4bbe7196af15702472d2dc270810d7d8f23a12ad242daeac1a9c1b2ffdf1
+  archived_dimensions: 592x412

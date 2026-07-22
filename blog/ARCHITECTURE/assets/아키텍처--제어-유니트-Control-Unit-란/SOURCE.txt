@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/52
+
+selected_images:
+- file: 01-2.-제어-유니트의-구조.webp
+  context: 2. 제어 유니트의 구조
+  source_image_path: https://blog.kakaocdn.net/dna/qSq6S/btsNdLaQRHB/AAAAAAAAAAAAAAAAAAAAAD57NlfDud1xu_C7wHYkBq0_b5YPBgl91RgufEGXhLCW/img.png
+  source_content_type: image/png
+  source_sha256: b14c615dc6cf3d32fe63037c29c0dde15e3c3c9a605261655febaebc70ab13d0
+  archived_dimensions: 655x685
+- file: 02-3.-마이크로명령어-형식.webp
+  context: 3. 마이크로명령어 형식
+  source_image_path: https://blog.kakaocdn.net/dna/BQDtq/btsNc9ww1c2/AAAAAAAAAAAAAAAAAAAAADdhKONITkzkzVs8T60DS6ccrwAVM0FH7uD4mdiPDYsm/img.png
+  source_content_type: image/png
+  source_sha256: aace10cd8ac47f13017cd04e767ad560196cb35534c0db0a701beb2d2fd9546c
+  archived_dimensions: 493x262
+- file: 03-3.-마이크로명령어-형식.webp
+  context: 3. 마이크로명령어 형식
+  source_image_path: https://blog.kakaocdn.net/dna/Tuj4M/btsNeztK4is/AAAAAAAAAAAAAAAAAAAAAJw7DYHl-LL0-1-D1i0zLxG23la6Xx-Z4NlAC8RgNIHf/img.png
+  source_content_type: image/png
+  source_sha256: 808288d00804fb3fb7c26644aaeff156361493c8ef3bb84ac4d6dab0c19659d8
+  archived_dimensions: 496x256

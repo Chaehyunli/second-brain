@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/86
+
+selected_images:
+- file: 01-2.-왜-CBDC를-도입하려-할까-도입-배경.webp
+  context: 2. 왜 CBDC를 도입하려 할까? (도입 배경)
+  source_image_path: https://blog.kakaocdn.net/dna/t8vyd/btsOfZYKtm6/AAAAAAAAAAAAAAAAAAAAAP185Y6ATLhTjIPHsM6rrzZQA8s1PoxDVyVJrHpL9UQv/img.png
+  source_content_type: image/png
+  source_sha256: 32b821449b2d961e18ea72eb2bddab6a4a9de9bc30b319c1edb1d4860b3d77f6
+  archived_dimensions: 601x316
+- file: 02-2.-왜-CBDC를-도입하려-할까-도입-배경.webp
+  context: 2. 왜 CBDC를 도입하려 할까? (도입 배경)
+  source_image_path: https://blog.kakaocdn.net/dna/dS63Hm/btsOf0pNxoC/AAAAAAAAAAAAAAAAAAAAAKQO0k_WLpjBjuOJqy_qaBumCRihbvSefTUVbTf8DLVa/img.png
+  source_content_type: image/png
+  source_sha256: 535cab723bde81d42647bdcaa57e24cd20615e63a2fc5b8a3f6db8c63e949243
+  archived_dimensions: 799x292

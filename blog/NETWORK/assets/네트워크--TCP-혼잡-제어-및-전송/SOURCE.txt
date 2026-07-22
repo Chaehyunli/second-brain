@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/264
+
+selected_images:
+- file: 01-전송-속도-공식.webp
+  context: 전송 속도 공식
+  source_image_path: https://blog.kakaocdn.net/dna/ctsXfc/dJMcaaLMKeV/AAAAAAAAAAAAAAAAAAAAAPrV5xW3_5Akh23Gm7sN3s-byZ6hWKi3gliMJsodsCZ8/img.png
+  source_content_type: image/png
+  source_sha256: 96c1954b51e695667ebc8696ad0aa8aeeefebea01fcc4b8feb86f2f2490252df
+  archived_dimensions: 1150x325
+- file: 02-Slow-Start-슬로우-스타트.webp
+  context: ① Slow Start (슬로우 스타트)
+  source_image_path: https://blog.kakaocdn.net/dna/byCSdi/dJMcabDU9GO/AAAAAAAAAAAAAAAAAAAAAN9VrPx2bqgrT8Ene40u51UgxEgO2C5a86tU-ryYH86Y/img.png
+  source_content_type: image/png
+  source_sha256: 0958d53c565537052bb8e9e4e36c27238d96a15a28325827d3bb89da5a091b0c
+  archived_dimensions: 374x562
+- file: 03-Congestion-Avoidance-혼잡-회피---AIMD.webp
+  context: ② Congestion Avoidance (혼잡 회피 - AIMD)
+  source_image_path: https://blog.kakaocdn.net/dna/sDGJD/dJMcaibZOSN/AAAAAAAAAAAAAAAAAAAAAKZqD4EjtHap3MvzV9mh7BTN7a5nzcqcAcZJXDB7GKk-/img.png
+  source_content_type: image/png
+  source_sha256: f106dceb9d2565788b571f225d2d57fd8c161ab7edf99b910259e5d9385546aa
+  archived_dimensions: 622x350

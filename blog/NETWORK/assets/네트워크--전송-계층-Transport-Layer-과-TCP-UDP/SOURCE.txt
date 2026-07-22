@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/251
+
+selected_images:
+- file: 01-기본-개념.webp
+  context: 기본 개념
+  source_image_path: https://blog.kakaocdn.net/dna/bR6tQO/dJMcadIegZi/AAAAAAAAAAAAAAAAAAAAAEweIlamP4jseq6GCTf4qRDhlpPezi9uynuS6OZ81nWF/img.png
+  source_content_type: image/png
+  source_sha256: 6f2f2e0cdec1c18fc9de402d9338cf5e4080cb09d6ddf5460d4304e663cc79fa
+  archived_dimensions: 1203x585
+- file: 02-역다중화의-작동-방식.webp
+  context: 역다중화의 작동 방식
+  source_image_path: https://blog.kakaocdn.net/dna/pO2El/dJMcaiW4AJT/AAAAAAAAAAAAAAAAAAAAAA3NZepHGfPMYc_TXS6e2l8FxbVZ5cWC-zpFALJyrK8_/img.png
+  source_content_type: image/png
+  source_sha256: bc23c6e23fdbc35d402b9f24acc7d8012eaa36b3f41e2bb9e95c4318d4a02ba2
+  archived_dimensions: 1299x577

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/274
+
+selected_images:
+- file: 01-라우터별-컨트롤-플레인-Per-router-Control-Plane.webp
+  context: ① 라우터별 컨트롤 플레인 (Per-router Control Plane)
+  source_image_path: https://blog.kakaocdn.net/dna/1myGU/dJMcagersQk/AAAAAAAAAAAAAAAAAAAAABOhJ8NjzhCY0V_L8Zs9eavxb10yn9qHIqH66DKHE2HX/img.png
+  source_content_type: image/png
+  source_sha256: 3ba5b27ad9704b5409f3f88a896723c1bca3fc901415e5a4183ede3129106c23
+  archived_dimensions: 937x576
+- file: 02-SDN-컨트롤-플레인-Software-Defined-Networking.webp
+  context: ② SDN 컨트롤 플레인 (Software-Defined Networking)
+  source_image_path: https://blog.kakaocdn.net/dna/nmSZz/dJMcaaFjQhP/AAAAAAAAAAAAAAAAAAAAAJsCyu_r-1r5bYxm17lHriCE_po8wVKKj6ogjWQi9Zhx/img.png
+  source_content_type: image/png
+  source_sha256: 7bbdd0bd428daeb823a7163bbe9678863983bbcc6be8c0a5a95bcd586fb3282e
+  archived_dimensions: 1030x592
+- file: 03-SDN-컨트롤-플레인-Software-Defined-Networking.webp
+  context: ② SDN 컨트롤 플레인 (Software-Defined Networking)
+  source_image_path: https://blog.kakaocdn.net/dna/V7kBT/dJMb99M6EG9/AAAAAAAAAAAAAAAAAAAAAJVvZIXSP7Bjf_qnxC8yccBC98Tn0Ki-85MemVvLuB-y/img.png
+  source_content_type: image/png
+  source_sha256: ce200986625775d611e4f947f02e565918e3ea40b448fc9c913025fe6f61d252
+  archived_dimensions: 1120x496

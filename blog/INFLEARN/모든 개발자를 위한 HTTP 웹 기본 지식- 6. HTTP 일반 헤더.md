@@ -145,6 +145,14 @@ HttpOnly: XSS 공격 방지 (JS에서 접근 불가).
 
 SameSite: XSRF 공격 방지 (요청 도메인과 쿠키 도메인이 같은 경우만 전송).
 
+## 핵심 이미지
+
+![4. 협상(Content Negotiation)](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/01-4.-협상-Content-Negotiation.webp)
+
+![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/02-5.-전송-방식.webp)
+
+![5. 전송 방식](assets/모든-개발자를-위한-HTTP-웹-기본-지식--6.-HTTP-일반-헤더/03-5.-전송-방식.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

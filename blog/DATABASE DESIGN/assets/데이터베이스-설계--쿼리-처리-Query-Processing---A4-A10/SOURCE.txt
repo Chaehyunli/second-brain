@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/147
+
+selected_images:
+- file: 01-1.-Secondary-Index를-이용한-동등-Equality-조건-선택-A4.webp
+  context: 1. Secondary Index를 이용한 동등(Equality) 조건 선택 (A4)
+  source_image_path: https://blog.kakaocdn.net/dna/bdBUzW/btsQVQkJ9vb/AAAAAAAAAAAAAAAAAAAAABF3-enzPsVBhHs2AeL8nmHZLMTfpGjALC1F87aidYhk/img.png
+  source_content_type: image/png
+  source_sha256: b57c7b875ae7baa7a781ba53bc418b6a477383d3a4cac884b427eb43ecea5b09
+  archived_dimensions: 1165x402

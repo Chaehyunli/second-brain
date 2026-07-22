@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/250
+
+selected_images:
+- file: 01-캐시가-없을-때.webp
+  context: 캐시가 없을 때
+  source_image_path: https://blog.kakaocdn.net/dna/cTGKdD/dJMcafe2Ldp/AAAAAAAAAAAAAAAAAAAAAOqMSElrPzBbz6i1rY1qDKVNj3fZaDI2S5ExL3YKfiML/img.png
+  source_content_type: image/png
+  source_sha256: 5eb9ce5817b4b4c84e7083bdb33fb20078421e8fc27532c0be0d01e949d33dd9
+  archived_dimensions: 1416x687
+- file: 02-캐시가-없을-때.webp
+  context: 캐시가 없을 때
+  source_image_path: https://blog.kakaocdn.net/dna/oP4ax/dJMcadnU7AF/AAAAAAAAAAAAAAAAAAAAAO0hn6S4tp-2XjZI6GyjmZOWOJF71E4riJJbBWxALc-X/img.png
+  source_content_type: image/png
+  source_sha256: 1914d3432eb34bd8e648258032285197dbbba2fb627de39aeaf3a6ab8b1bbcd6
+  archived_dimensions: 1413x538
+- file: 03-캐시가-적용.webp
+  context: 캐시가 적용
+  source_image_path: https://blog.kakaocdn.net/dna/riywz/dJMcadnU7CT/AAAAAAAAAAAAAAAAAAAAAMjP0VVzk7KNpXwmgzo0GGN4DejGW1NGRq6cSPRYThnT/img.png
+  source_content_type: image/png
+  source_sha256: e426c5ed3b7ab38a0a0b7537e81e84d777697e477e3f8ba091dd683441c3b706
+  archived_dimensions: 1396x752

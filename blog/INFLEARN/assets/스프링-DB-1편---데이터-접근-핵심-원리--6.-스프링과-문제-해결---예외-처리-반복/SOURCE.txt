@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/299
+
+selected_images:
+- file: 01-인터페이스-도입.webp
+  context: 인터페이스 도입
+  source_image_path: https://blog.kakaocdn.net/dna/bPQIpI/dJMcaaF2Ibg/AAAAAAAAAAAAAAAAAAAAAEPY-fYxiSl73KmM95LJZet9M4E5I4x0tw5_Yp9GvPJE/img.png
+  source_content_type: image/png
+  source_sha256: 78f2f9c21c601dfb7eaa9d1f8e3cec304950fee96cfbd9a9b9461bff28f8a230
+  archived_dimensions: 1042x512
+- file: 02-DB-오류-코드.webp
+  context: DB 오류 코드
+  source_image_path: https://blog.kakaocdn.net/dna/cFyClA/dJMcaa66oVU/AAAAAAAAAAAAAAAAAAAAAAz9CzzFgG1PQ0V08nTIZhrl1C_2q5khCYwMBLYhSUKV/img.png
+  source_content_type: image/png
+  source_sha256: 0af8772f40b46bb265fa5aaaffb27637adefae2501a77788ead46cef5eb1dc76
+  archived_dimensions: 1042x278
+- file: 03-5.-스프링-예외-추상화-이해.webp
+  context: 5. 스프링 예외 추상화 이해
+  source_image_path: https://blog.kakaocdn.net/dna/dAphs9/dJMcac4P0cP/AAAAAAAAAAAAAAAAAAAAAEZQ_pKja_gASt2p5MocSoq_lrPscElqEWbAAaj5jHQf/img.png
+  source_content_type: image/png
+  source_sha256: a3ec3e2a49666c728cc6befe9749f7d281a5f2a9913124ab76d4a749b4076a91
+  archived_dimensions: 1042x756

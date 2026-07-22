@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/180
+
+selected_images:
+- file: 01-프래그먼트-라이프사이클-Fragment-Lifecycle.webp
+  context: 프래그먼트 라이프사이클 (Fragment Lifecycle)
+  source_image_path: https://blog.kakaocdn.net/dna/bfKzoX/dJMcadmMRMi/AAAAAAAAAAAAAAAAAAAAAFK42v_q9zEiIsARLgDx3r0Z3bd8QpbEEYDBQ2PWc-OZ/img.png
+  source_content_type: image/png
+  source_sha256: 08918ccefbeba972846ac18e1b0c182094dbc98b0b5faed759dc88e42eab8aa3
+  archived_dimensions: 685x619
+- file: 02-실습-내용-Practical-Exercise.webp
+  context: 실습 내용 (Practical Exercise)
+  source_image_path: https://blog.kakaocdn.net/dna/U5VNx/dJMcacVIuyA/AAAAAAAAAAAAAAAAAAAAAJWipuVNyq9EUqcjDf3FSP18MOyLt9h0MkFZax8DrRiO/img.png
+  source_content_type: image/png
+  source_sha256: 892957609c2308d3db2cd119b9d36d9042678bb56cf315a43e6395c66159c97e
+  archived_dimensions: 1159x450

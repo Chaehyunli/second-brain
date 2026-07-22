@@ -203,6 +203,14 @@ Hadoop: 데이터 로딩(쓰기)이 'Schema-on-Read' 덕분에 매우 빠르고,
 
 현대적 전략: 일단 모든 원본 데이터를 하둡(데이터 레이크)에 빠르게 쏟아붓고(Loading), 나중에 Hive, Spark SQL 또는 전문 DB로 옮겨 분석함.
 
+## 핵심 이미지
+
+![데이터베이스 워크로드](assets/클라우드-컴퓨터링--MapReduce-vs.-병렬-데이터베이스/01-데이터베이스-워크로드.webp)
+
+![데이터 웨어하우스와 ETL](assets/클라우드-컴퓨터링--MapReduce-vs.-병렬-데이터베이스/02-데이터-웨어하우스와-ETL.webp)
+
+![OLAP 큐브 연산](assets/클라우드-컴퓨터링--MapReduce-vs.-병렬-데이터베이스/03-OLAP-큐브-연산.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

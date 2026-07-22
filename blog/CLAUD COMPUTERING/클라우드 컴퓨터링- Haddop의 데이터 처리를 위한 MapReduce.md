@@ -217,6 +217,14 @@ MapReduce의 핵심 병목이지만 자동 처리됨
 
 대규모 분산 환경에서도 단일 프로그램처럼 동작
 
+## 핵심 이미지
+
+![4. 예시 – WordCount](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/01-4.-예시-WordCount.webp)
+
+![5. 실행 구조 (Execution Architecture)](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/02-5.-실행-구조-Execution-Architecture.webp)
+
+![9. Shuffle & Sort](assets/클라우드-컴퓨터링--Haddop의-데이터-처리를-위한-MapReduce/03-9.-Shuffle-Sort.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

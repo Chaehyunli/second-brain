@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/149
+
+selected_images:
+- file: 01-1.-레이아웃-Layout-이란.webp
+  context: 1. 레이아웃(Layout)이란?
+  source_image_path: https://blog.kakaocdn.net/dna/pTO2A/btsQWxkPp4k/AAAAAAAAAAAAAAAAAAAAABMGtNVywuvyINzVn65V5Af90g7S6lG_xPeevE-s0g-L/img.png
+  source_content_type: image/png
+  source_sha256: 5427032dd278528ef4966280bb1f1bcc41ce69e5fec221089a12397515c3272f
+  archived_dimensions: 1390x414
+- file: 02-2.-LinearLayout의-핵심-속성.webp
+  context: 2. LinearLayout의 핵심 속성
+  source_image_path: https://blog.kakaocdn.net/dna/qFlRc/btsQSQNzOXI/AAAAAAAAAAAAAAAAAAAAAH9oJ5DZmSgjSwfi0jdeyKFENIxqWnJLfhRj0wnZg9b4/img.png
+  source_content_type: image/png
+  source_sha256: de5ff035390f0fb7a737dfb91ee2357bfe070180411b857683f87cf03c44a0af
+  archived_dimensions: 1380x574

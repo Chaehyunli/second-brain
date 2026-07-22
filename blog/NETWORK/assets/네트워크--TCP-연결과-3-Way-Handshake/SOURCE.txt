@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/262
+
+selected_images:
+- file: 01-1.-TCP-연결-설정-Connection-Establishment.webp
+  context: 1. TCP 연결 설정 (Connection Establishment)
+  source_image_path: https://blog.kakaocdn.net/dna/c2ZWwI/dJMcabcLkme/AAAAAAAAAAAAAAAAAAAAAKVPyhq1qVnkaGVPUD52fLZTEsPfB7C7frfQ6TXkqFsN/img.png
+  source_content_type: image/png
+  source_sha256: 8f6c79a56eba8b37195ca157e52ee6d9b30efa5146139b8d31890059bd908876
+  archived_dimensions: 693x622
+- file: 02-1.1-2-Way-Handshake의-한계.webp
+  context: 1.1 2-Way Handshake의 한계
+  source_image_path: https://blog.kakaocdn.net/dna/X9v1J/dJMcaiJH61l/AAAAAAAAAAAAAAAAAAAAAB9R4n35z5W8lbTgwwNmQ0e-s9A1DWJ-Q9aanGyKv-f3/img.png
+  source_content_type: image/png
+  source_sha256: ae6d7129ba7506537af6909c74c3bba4db3199f495fe05b2b178d9cd67f5f860
+  archived_dimensions: 476x618
+- file: 03-1.2-3-Way-Handshake-표준-방식.webp
+  context: 1.2 3-Way Handshake (표준 방식)
+  source_image_path: https://blog.kakaocdn.net/dna/3o7au/dJMcacJyVCe/AAAAAAAAAAAAAAAAAAAAALhDNHr8g6Rjsib5CB_UR7MoymNeRmuPugB0wfvteMRk/img.png
+  source_content_type: image/png
+  source_sha256: 6e8a1296d4e2955ee68cba0eaa6337573e72e94a2de6d6509b66a1098ce0c423
+  archived_dimensions: 1344x592

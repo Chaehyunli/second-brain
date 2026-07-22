@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/134
+
+selected_images:
+- file: 01-1.-가상화-Virtualization-란-무엇일까.webp
+  context: 1. 가상화(Virtualization)란 무엇일까?
+  source_image_path: https://blog.kakaocdn.net/dna/k0IIC/btsQEPmTMTN/AAAAAAAAAAAAAAAAAAAAAMDhS6GtS59kiUQ0mh_qDo0y-7xK2ysdBJBVdsQX87Df/img.png
+  source_content_type: image/png
+  source_sha256: 16e18ee022e8206ea3e52f3c9d69ea72f3c74d0e4deebdb3eff47b8959392728
+  archived_dimensions: 778x409
+- file: 02-2.-하이퍼바이저-Hypervisor-기반-가상화.webp
+  context: 2. 하이퍼바이저(Hypervisor) 기반 가상화
+  source_image_path: https://blog.kakaocdn.net/dna/3EXN2/btsQGgRGT9S/AAAAAAAAAAAAAAAAAAAAAFVetqB85iIujggVfPi09Rv4fYZEHt2ZPe69TqFr1c6I/img.png
+  source_content_type: image/png
+  source_sha256: 9ab4d8bbdcbd67d962768f13846dd82035e66b7164ffce75752032f89291da40
+  archived_dimensions: 1060x453
+- file: 03-3.-가상화-기술의-발전-전가상화-vs-반가상화-vs-하드웨어-지원.webp
+  context: 3. 가상화 기술의 발전: 전가상화 vs 반가상화 vs 하드웨어 지원
+  source_image_path: https://blog.kakaocdn.net/dna/bZ1T87/btsQGnprKnd/AAAAAAAAAAAAAAAAAAAAANSHhYCbBe-SZU8_eeHjTlzFye-CPHrg__E7VcyI9BpK/img.png
+  source_content_type: image/png
+  source_sha256: eaee295f9d7b5caa14d3c200ea72bc9f01f532969c04e6f86b2e1f70c9f25f30
+  archived_dimensions: 966x537

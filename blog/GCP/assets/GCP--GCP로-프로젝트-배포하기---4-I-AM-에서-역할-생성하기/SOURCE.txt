@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/82
+
+selected_images:
+- file: 01-특정-사용자만-특정-리소스에-접근-하도록-설정하기.webp
+  context: 특정 사용자만 특정 리소스에 접근 하도록 설정하기
+  source_image_path: https://blog.kakaocdn.net/dna/eJyQ44/btsOba8cb6A/AAAAAAAAAAAAAAAAAAAAAAmhncBE7UH8VvflJs_mB6ZBmVdUTiCBvQjVpb5q9K9Z/img.png
+  source_content_type: image/png
+  source_sha256: 38cc724ec6913e9f80f694ac9a4840bae9e3a9da1bef1fa0b82f9d9b51873d85
+  archived_dimensions: 1600x737
+- file: 02-특정-사용자만-특정-리소스에-접근-하도록-설정하기.webp
+  context: 특정 사용자만 특정 리소스에 접근 하도록 설정하기
+  source_image_path: https://blog.kakaocdn.net/dna/5Se5q/btsOaXuPOA0/AAAAAAAAAAAAAAAAAAAAAGsrJKtrOZooT8N1Mqm_8JwixhgFBcHipjSnzrWyeEC6/img.png
+  source_content_type: image/png
+  source_sha256: 37933e3b5bcf0d4c688c8dd64f514bcb89f011e39aa105fbb677092c6a1eac43
+  archived_dimensions: 859x736

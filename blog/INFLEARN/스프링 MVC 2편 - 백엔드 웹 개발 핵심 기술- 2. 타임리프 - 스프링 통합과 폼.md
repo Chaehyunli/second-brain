@@ -650,6 +650,10 @@ public List<DeliveryCode> deliveryCodes() {
 
 ### 8. 최종 정리 요약
 
+## 핵심 이미지
+
+![요구사항 목록](assets/스프링-MVC-2편---백엔드-웹-개발-핵심-기술--2.-타임리프---스프링-통합과-폼/01-요구사항-목록.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

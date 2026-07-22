@@ -175,6 +175,14 @@ OR 조건 조인 (r⋈θ1∨θ2​s): - Block Nested-Loop를 사용하거나, �
 
 생산자 기반 (Producer-driven): - 하위 연산자가 튜플을 생성하는 즉시 상위 연산자로 보내는 '적극적인(eager)' 방식. 연산자 사이에 버퍼를 두어 데이터를 전달.
 
+## 핵심 이미지
+
+![정렬 (Sorting)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/01-정렬-Sorting.webp)
+
+![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/02-조인-연산-Join-Operation.webp)
+
+![조인 연산 (Join Operation)](assets/데이터베이스-설계--쿼리-처리-Query-Processiong---정렬-Sorting-과-조인-Join/03-조인-연산-Join-Operation.webp)
+
 ## 관련 글
 
 - [[blog/DATABASE DESIGN/index|DATABASE DESIGN]]

@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/132
+
+selected_images:
+- file: 01-1.-무작위-분할을-이용한-선택-Randomized-Select.webp
+  context: 1. 무작위 분할을 이용한 선택 (Randomized-Select)
+  source_image_path: https://blog.kakaocdn.net/dna/cK5Zn6/btsQCQ7ZuOG/AAAAAAAAAAAAAAAAAAAAAF2iEbW24FCLCgI2DC9ElxD4xGmrYdk0Wnbe-59ZUokk/img.png
+  source_content_type: image/png
+  source_sha256: 6e184375febd1839ce36b764bb81645e7be7bbc4183a2a374c88ef3233cf4467
+  archived_dimensions: 1383x537
+- file: 02-1.-무작위-분할을-이용한-선택-Randomized-Select.webp
+  context: 1. 무작위 분할을 이용한 선택 (Randomized-Select)
+  source_image_path: https://blog.kakaocdn.net/dna/bVZlNE/btsQEMcFj1o/AAAAAAAAAAAAAAAAAAAAABF3aXmb_TxNAH5u_VcsuNefHWsr1_KMkFbAEm-WXQZi/img.png
+  source_content_type: image/png
+  source_sha256: 06abf4a71140bca3c6caa1ea4cff4b4cb38a1c581d48bf7f5b82f06d83928eaf
+  archived_dimensions: 1389x829

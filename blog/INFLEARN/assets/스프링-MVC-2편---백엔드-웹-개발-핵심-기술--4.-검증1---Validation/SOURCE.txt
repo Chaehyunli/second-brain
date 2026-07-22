@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/280
+
+selected_images:
+- file: 01-1-아키텍처-흐름도.webp
+  context: 1) 아키텍처 흐름도
+  source_image_path: https://blog.kakaocdn.net/dna/wbycB/dJMcacDldIM/AAAAAAAAAAAAAAAAAAAAAI7nW1b3xCTpRWO71VdgQ0hsJ9GP1CDevwPowLcGz3zz/img.png
+  source_content_type: image/png
+  source_sha256: 0a94bce2434fd0ef5d15bc548a2918279129d7b28885359993de0450f940f808
+  archived_dimensions: 1047x898
+- file: 02-1-아키텍처-흐름도.webp
+  context: 1) 아키텍처 흐름도
+  source_image_path: https://blog.kakaocdn.net/dna/bb8zVk/dJMb990UW6U/AAAAAAAAAAAAAAAAAAAAAAflWXwhS6YxRXkAcxbyxfqu2ryhQLv2LvhPJfyGJafE/img.png
+  source_content_type: image/png
+  source_sha256: 83e8d91c3b214168ec64f096907638fd7822285d0ae0a25a23be8d184c01da65
+  archived_dimensions: 1015x673
+- file: 03-3-Thymeleaf-뷰-템플릿-구현.webp
+  context: 3) Thymeleaf 뷰 템플릿 구현
+  source_image_path: https://blog.kakaocdn.net/dna/b4DXGg/dJMcabdhawK/AAAAAAAAAAAAAAAAAAAAAGE8h6UKPOW8JJYklfZQJqbIeC7Hay98qrLHvMxEQeZw/img.png
+  source_content_type: image/png
+  source_sha256: 0b4444fe42462428e80e9ce5ce008fbfafc9ac80b7ccadc8751c78355ae0ab16
+  archived_dimensions: 964x774

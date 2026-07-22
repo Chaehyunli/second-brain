@@ -309,6 +309,12 @@ model.summary()
 
 > 원문 코드가 길어 이 노트에서는 앞부분만 보존했습니다. 전체는 원문에서 확인합니다.
 
+## 핵심 이미지
+
+![실습: 다중 입출력 모델](assets/딥러닝--모델-다루기-Sequential-Functional-Inception-Module-실습/01-실습-다중-입출력-모델.webp)
+
+![실습: Inception Module](assets/딥러닝--모델-다루기-Sequential-Functional-Inception-Module-실습/02-실습-Inception-Module.webp)
+
 ## 관련 글
 
 - [[blog/AI(ML & DL)/index|AI(ML & DL)]]

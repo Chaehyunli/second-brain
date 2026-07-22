@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/265
+
+selected_images:
+- file: 01-2.-요구사항-분석.webp
+  context: 2. 요구사항 분석
+  source_image_path: https://blog.kakaocdn.net/dna/cAyyws/dJMcahxqciu/AAAAAAAAAAAAAAAAAAAAAAPdSjID1N0-y4liBJTKh2BARTK6SFq9M9x43fjtsgo3/img.png
+  source_content_type: image/png
+  source_sha256: 4ba4bb8906209c4403ddcbe1188cb8394345f2f63506dea265b2b5590f6b369f
+  archived_dimensions: 1049x508
+- file: 02-10.-PRG-Post-Redirect-Get.webp
+  context: 10. PRG (Post/Redirect/Get)
+  source_image_path: https://blog.kakaocdn.net/dna/cXZ8Ef/dJMcajhEaIT/AAAAAAAAAAAAAAAAAAAAADFnXhUu5miOUlhO5OzOFVL6im1kQXKYu-_ami_O5JXs/img.png
+  source_content_type: image/png
+  source_sha256: 29f38f806213bb17cec3d3e1ba2fb65ed36bc5d009fe9f36d768474db77049f9
+  archived_dimensions: 1040x778
+- file: 03-해결-방안.webp
+  context: 해결 방안
+  source_image_path: https://blog.kakaocdn.net/dna/QqwD8/dJMcajhEaJS/AAAAAAAAAAAAAAAAAAAAAJpbnTHtJQ-nx1eASApW3tiQVY4uRZ0rzXvkBgcPn8If/img.png
+  source_content_type: image/png
+  source_sha256: f0460997077ea8246cbd5cfb95e0039c51400f86c93964a2ca9ed0691c15ad19
+  archived_dimensions: 1052x832

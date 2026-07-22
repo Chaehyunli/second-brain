@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/61
+
+selected_images:
+- file: 01-2.-대표-예시-생산자-소비자-문제.webp
+  context: 2. 대표 예시: 생산자-소비자 문제
+  source_image_path: https://blog.kakaocdn.net/dna/Q0Ws0/btsNvdX6Rdk/AAAAAAAAAAAAAAAAAAAAABeirjGPN7c4-YHuYkA0-JR_BTnkqNEnUiDLYxDvsrJQ/img.png
+  source_content_type: image/png
+  source_sha256: 225815d6564c54bf7c8cffb0f351331bafd3b4667b8506256d2bc52a722be19e
+  archived_dimensions: 1077x313

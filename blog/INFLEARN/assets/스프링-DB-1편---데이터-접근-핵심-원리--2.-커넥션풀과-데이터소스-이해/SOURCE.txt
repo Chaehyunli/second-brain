@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/295
+
+selected_images:
+- file: 01-1.1-데이터베이스-커넥션을-매번-획득할-때의-한계.webp
+  context: 1.1 데이터베이스 커넥션을 매번 획득할 때의 한계
+  source_image_path: https://blog.kakaocdn.net/dna/tObi0/dJMcadbuuG3/AAAAAAAAAAAAAAAAAAAAAKrMtr4u5Ltb7Y1zxc0mvoLq9EjWQEE0LNHJw8x8SuZw/img.png
+  source_content_type: image/png
+  source_sha256: 305e4a1d2c6f32bf98f590632ec756106c183dbd5705b74c4b31a8e28a244f33
+  archived_dimensions: 1030x339
+- file: 02-1-커넥션-풀-초기화-및-연결-상태.webp
+  context: 1) 커넥션 풀 초기화 및 연결 상태
+  source_image_path: https://blog.kakaocdn.net/dna/Z2NyZ/dJMcab5UjOt/AAAAAAAAAAAAAAAAAAAAAJp6SBAvnSIur_9qBZQTQaDSWDI8BKaIK77fVVcbvaOi/img.png
+  source_content_type: image/png
+  source_sha256: 7345dabf6073cc6e496dd8bedf596d6a26edd9572e82fa2b01b579b0636408e1
+  archived_dimensions: 1030x484
+- file: 03-2-커넥션-풀의-사용-Acquire-Release.webp
+  context: 2) 커넥션 풀의 사용 (Acquire & Release)
+  source_image_path: https://blog.kakaocdn.net/dna/bPZYjN/dJMcagTG6f5/AAAAAAAAAAAAAAAAAAAAABzzRRvu0_0BloR3pxaDlUSY7mrcSPkBb-zDJySwIQr7/img.png
+  source_content_type: image/png
+  source_sha256: 172144e6331f890228537fe8512ea12ec5f8f525666d8714ac03b5391da7e574
+  archived_dimensions: 1041x451

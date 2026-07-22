@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/74
+
+selected_images:
+- file: 01-2.-계층적-페이징-Hierarchical-Paging.webp
+  context: 2. 계층적 페이징(Hierarchical Paging)
+  source_image_path: https://blog.kakaocdn.net/dna/caCv0O/btsN35kxly2/AAAAAAAAAAAAAAAAAAAAAFstgSIpgVYyU50gonpAQ_r9q7PqUYNBQ6KxSiCMxwzG/img.png
+  source_content_type: image/png
+  source_sha256: 2f3c16f6ebfca6b31b4155299f59a4646b0c34509cd6a0a1a42b327ff45ba9b4
+  archived_dimensions: 1117x604
+- file: 02-3.-해시-기반-페이지-테이블-Hashed-Page-Table.webp
+  context: 3. 해시 기반 페이지 테이블 (Hashed Page Table)
+  source_image_path: https://blog.kakaocdn.net/dna/LTQ9y/btsN205lZCe/AAAAAAAAAAAAAAAAAAAAAFNIViBTrqkHhjzUiRePoAfRZewtpyAX7l6ZkO-6kUbn/img.png
+  source_content_type: image/png
+  source_sha256: 9ea8f835af6ea03cfb5a6fbfd44da20b132f7a796878375f83dbf374f0fdcab9
+  archived_dimensions: 420x334
+- file: 03-5.-세그먼테이션-Segmentation.webp
+  context: 5. 세그먼테이션(Segmentation)
+  source_image_path: https://blog.kakaocdn.net/dna/eaDUzi/btsN3jp3td8/AAAAAAAAAAAAAAAAAAAAAME2f7IBehqpnfmgCgiGVUo9sEe2sPDt5WGFTTxXAREE/img.png
+  source_content_type: image/png
+  source_sha256: a0e696ccfd3ac3fd0976cc8a28218cb0fdd6295c067e6df206470d0f5b71957f
+  archived_dimensions: 1126x640

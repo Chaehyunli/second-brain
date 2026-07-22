@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/255
+
+selected_images:
+- file: 01-1.-UDP-User-Datagram-Protocol-최소한의-전송-서비스.webp
+  context: 1. UDP (User Datagram Protocol): 최소한의 전송 서비스
+  source_image_path: https://blog.kakaocdn.net/dna/lLwrW/dJMcahDWdF3/AAAAAAAAAAAAAAAAAAAAAHR3FF7hmiOb9s2dF2KFZ2VGY0VFAfT6fCoMmG0j6i_J/img.png
+  source_content_type: image/png
+  source_sha256: 47a142f1a433f71a4bedbb6cd6d43c79635d3ae63fda5fe5fc7f1e063454f5d2
+  archived_dimensions: 1282x494
+- file: 02-2.-에러-검출의-핵심-인터넷-체크섬-Checksum.webp
+  context: 2. 에러 검출의 핵심: 인터넷 체크섬 (Checksum)
+  source_image_path: https://blog.kakaocdn.net/dna/bI8Wwp/dJMcaarjvPf/AAAAAAAAAAAAAAAAAAAAAKjhxZy7mb8q6xRwN3U3szO8iXEg48Z09mIC4sx7zmLG/img.png
+  source_content_type: image/png
+  source_sha256: fa4fc22430613c2798ab30fe18d1fe456683f8bfd8241a910c96f38e80084e9d
+  archived_dimensions: 1173x618
+- file: 03-3.-RDT-Reliable-Data-Transfer-의-인터페이스.webp
+  context: 3. RDT (Reliable Data Transfer)의 인터페이스
+  source_image_path: https://blog.kakaocdn.net/dna/nAf17/dJMcaaY7Wxa/AAAAAAAAAAAAAAAAAAAAAGsyn3faZ5HWFN2qHcZm9b51LytGflrw2hn1LnwgZ7Ys/img.png
+  source_content_type: image/png
+  source_sha256: ce4598eb11fee956b9ff0b3c249df215e767072ee8070a394f94f15bb2bb4c18
+  archived_dimensions: 1327x616

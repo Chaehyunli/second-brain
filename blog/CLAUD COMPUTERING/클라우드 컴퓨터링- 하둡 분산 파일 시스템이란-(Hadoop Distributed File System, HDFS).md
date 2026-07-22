@@ -129,6 +129,12 @@ HDFS는 메타데이터를 관리하는 NameNode와 실제 데이터를 저장�
 
 - 클라이언트는 NameNode로부터 블록 위치 정보를 받아 DataNode에 직접 접속해 데이터를 읽음
 
+## 핵심 이미지
+
+![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/01-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
+
+![HDFS 아키텍처: NameNode와 DataNode의 협력](assets/클라우드-컴퓨터링--하둡-분산-파일-시스템이란--Hadoop-Distributed-File-System-HDFS/02-HDFS-아키텍처-NameNode와-DataNode의-협력.webp)
+
 ## 관련 글
 
 - [[blog/CLAUD COMPUTERING/index|CLAUD COMPUTERING]]

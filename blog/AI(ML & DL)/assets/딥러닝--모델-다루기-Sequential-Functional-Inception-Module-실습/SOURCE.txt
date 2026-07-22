@@ -1,0 +1,15 @@
+source_page: https://ch010104.tistory.com/170
+
+selected_images:
+- file: 01-실습-다중-입출력-모델.webp
+  context: 실습: 다중 입출력 모델
+  source_image_path: https://blog.kakaocdn.net/dna/exjRRR/dJMb9LDZNQv/AAAAAAAAAAAAAAAAAAAAAIglFQiQBbNuOMnIlVUNV7Imy3b1EcHVLQTEIWnYCINW/img.png
+  source_content_type: image/png
+  source_sha256: cc903c821e11e366ad334f8b659e3ffe4486d422c0fd5655b367170e6a3a9b9a
+  archived_dimensions: 1296x1008
+- file: 02-실습-Inception-Module.webp
+  context: 실습: Inception Module
+  source_image_path: https://blog.kakaocdn.net/dna/bpNrUj/dJMb9MQqXwf/AAAAAAAAAAAAAAAAAAAAAC8lkVZlDga91leUoi3YUG7ir6oLd8s0481uWJqnTFtT/img.png
+  source_content_type: image/png
+  source_sha256: 83ab02eac4b577c92332ef10e07b9c2c81de68b6c17574a516f5fd6fc7e86830
+  archived_dimensions: 1549x955

@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/124
+
+selected_images:
+- file: 01-AI-머신러닝-딥러닝의-관계.webp
+  context: AI, 머신러닝, 딥러닝의 관계
+  source_image_path: https://blog.kakaocdn.net/dna/Yf0iV/btsQwBBxNqe/AAAAAAAAAAAAAAAAAAAAAE34K13Qc9Yp0p1L47vCBPgAYtyNCskyu2WDLVFFo5Ue/img.png
+  source_content_type: image/png
+  source_sha256: e65933e12c39bbb1ec30d4a089496b6df2a35732ec28bafb45c1c2c7cb241083
+  archived_dimensions: 859x859
+- file: 02-딥러닝-무엇이-다른가.webp
+  context: 딥러닝, 무엇이 다른가?
+  source_image_path: https://blog.kakaocdn.net/dna/b4jTcQ/btsQuZXwxH0/AAAAAAAAAAAAAAAAAAAAABpSz8wAQKurMTwyDC0cArEsT_OaBY2ubjK_WFLC0nB3/img.png
+  source_content_type: image/png
+  source_sha256: 47df73e306d6b2f6977a028b0e40c732774649a244a0f559f51bf245fd38dbc5
+  archived_dimensions: 1389x529
+- file: 03-빅데이터와-딥러닝의-만남.webp
+  context: 빅데이터와 딥러닝의 만남
+  source_image_path: https://blog.kakaocdn.net/dna/dccjnH/btsQtNKcOWA/AAAAAAAAAAAAAAAAAAAAAOEiKKO8ay4VhiXkX38zZCeJUMmHlTKKdalwI_xHjB3V/img.png
+  source_content_type: image/png
+  source_sha256: 4f75b8551d784a2e8c5bf9a67f85acb77d6eae6df0ec637ab1c5c78f9f59843b
+  archived_dimensions: 1153x519

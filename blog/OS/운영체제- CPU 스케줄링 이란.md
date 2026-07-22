@@ -89,6 +89,12 @@ HRN (Highest Response-rate Next)
 
 각각의 자세한 내용음 다음 글에서 알아보겠다.
 
+## 핵심 이미지
+
+![1. CPU 스케줄링 개요](assets/운영체제--CPU-스케줄링-이란/01-1.-CPU-스케줄링-개요.webp)
+
+![2. CPU 스케줄링이 일어나는 시점](assets/운영체제--CPU-스케줄링-이란/02-2.-CPU-스케줄링이-일어나는-시점.webp)
+
 ## 관련 글
 
 - [[blog/OS/index|OS]]

@@ -686,6 +686,14 @@ ViewPath 중복: /WEB-INF/views/와 .jsp라는 경로명이 중복됩니다. 만
 
 스프링 MVC의 핵심도 바로 이 프론트 컨트롤러(입구를 하나로!)에 있습니다.
 
+## 핵심 이미지
+
+![서블릿과 JSP의 한계](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--4.-서블릿-JSP-MVC-패턴/01-서블릿과-JSP의-한계.webp)
+
+![MVC 패턴 개요](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--4.-서블릿-JSP-MVC-패턴/02-MVC-패턴-개요.webp)
+
+![MVC 패턴 개요](assets/스프링-MVC-1편---백엔드-웹-개발-핵심-기술--4.-서블릿-JSP-MVC-패턴/03-MVC-패턴-개요.webp)
+
 ## 관련 글
 
 - [[blog/INFLEARN/index|INFLEARN]]

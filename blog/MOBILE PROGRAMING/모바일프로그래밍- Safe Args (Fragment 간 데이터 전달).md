@@ -851,6 +851,14 @@ class AnotherFragment : Fragment() {
 </navigation>
 ```
 
+## 핵심 이미지
+
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/01-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/02-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
+![1. Safe Args (Fragment 간 데이터 전달)](assets/모바일프로그래밍--Safe-Args-Fragment-간-데이터-전달/03-1.-Safe-Args-Fragment-간-데이터-전달.webp)
+
 ## 관련 글
 
 - [[blog/MOBILE PROGRAMING/index|MOBILE PROGRAMING]]

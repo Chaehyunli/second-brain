@@ -1,0 +1,21 @@
+source_page: https://ch010104.tistory.com/76
+
+selected_images:
+- file: 01-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp
+  context: 1. SSI (Self-Sovereign Identity): 자기주권 신원
+  source_image_path: https://blog.kakaocdn.net/dna/ddKqhj/btsN4PbXCSx/AAAAAAAAAAAAAAAAAAAAAEdsiqzT3tCgxQfysGwkUk7f_Wy2AIb4q-fvFib7NXHi/img.png
+  source_content_type: image/png
+  source_sha256: 68522943f7f635b6d760cb252e3523239ce818abd39a3ba71f90279d9cb56186
+  archived_dimensions: 1059x447
+- file: 02-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp
+  context: 1. SSI (Self-Sovereign Identity): 자기주권 신원
+  source_image_path: https://blog.kakaocdn.net/dna/dnhTxf/btsN6msQZxR/AAAAAAAAAAAAAAAAAAAAAK0nIzVfB3dNejL7-A8RXmV2tiJ53XFmqD9HfECKqAAj/img.png
+  source_content_type: image/png
+  source_sha256: f7b2e6f48adf055aa1fc163c41cd196c81bf01ce28e7fcff3b9eb2f8c3d184b8
+  archived_dimensions: 384x258
+- file: 03-1.-SSI-Self-Sovereign-Identity-자기주권-신원.webp
+  context: 1. SSI (Self-Sovereign Identity): 자기주권 신원
+  source_image_path: https://blog.kakaocdn.net/dna/KscIx/btsN5IiVzwd/AAAAAAAAAAAAAAAAAAAAAFmmLDDA2EkQF98uqjeOsSArHS4pzz1ASGXJlorQQYXf/img.png
+  source_content_type: image/png
+  source_sha256: 8a9f88fd36c2f56bdcca0f1c57040ceb1f0dcefed8638318d3cedee9eb67b5db
+  archived_dimensions: 526x376

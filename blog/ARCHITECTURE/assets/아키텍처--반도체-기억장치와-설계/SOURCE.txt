@@ -1,0 +1,9 @@
+source_page: https://ch010104.tistory.com/62
+
+selected_images:
+- file: 01-2.-RAM-Random-Access-Memory.webp
+  context: 2. RAM (Random Access Memory)
+  source_image_path: https://blog.kakaocdn.net/dna/cRXmGZ/btsNuag0E6d/AAAAAAAAAAAAAAAAAAAAAEk7_vxMqP23vpOL6q7wZj7ynF_fJCGyv3aYMPRlCcDf/img.png
+  source_content_type: image/png
+  source_sha256: 49f898d057384222573ef464ccf78c6a91a0791f1ab4fee039d2a2f01f0775dc
+  archived_dimensions: 636x252
