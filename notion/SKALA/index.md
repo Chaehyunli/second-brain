@@ -37,3 +37,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 7/22 — LLM과 Transformer 아키텍처 Day2
 - [[notion/SKALA/7-22 LLM과 Transformer 아키텍처_Day2/7-22 LLM과 Transformer 아키텍처_Day2 - 핵심 정리]]
+- [[notion/SKALA/7-22 LLM과 Transformer 아키텍처_Day2/7-22 transformer 실습]]
