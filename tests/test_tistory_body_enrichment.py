@@ -57,6 +57,20 @@ class TistoryBodyEnrichmentTests(unittest.TestCase):
         )
         self.assertIn(r"\[\[100, 200\]\]", result)
         self.assertNotIn("\nNumPy 결과는 [[100, 200]]", result)
+    def test_literalizes_html_tags_in_prose(self):
+        result = enrich.render_source_structure([
+            ("text", "여러 요소(<h2>, <p> 등)를 하나의 <div>로 묶습니다."),
+        ])
+        self.assertIn("`<h2>`", result)
+        self.assertIn("`<p>`", result)
+        self.assertIn("`<div>`", result)
+        self.assertNotIn("여러 요소(<h2>", result)
+    def test_literalizes_html_tags_only_outside_fenced_code(self):
+        source = "### HTML Div - <div>\n\n여러 요소(<h2>, <p>)를 묶습니다.\n\n```html\n<div><h2>Example</h2></div>\n```\n"
+        result = enrich.literalize_html_tags_in_markdown(source)
+        self.assertIn("### HTML Div - `<div>`", result)
+        self.assertIn("요소(`<h2>`, `<p>`)", result)
+        self.assertIn("```html\n<div><h2>Example</h2></div>\n```", result)
 
 
 if __name__ == "__main__":

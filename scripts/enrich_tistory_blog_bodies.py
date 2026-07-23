@@ -140,12 +140,40 @@ def code_language(code: str) -> str:
     return "text"
 
 
+HTML_TAG_RE = re.compile(r"</?[A-Za-z][^>\n]*>")
+
+
+def literalize_html_tags(value: str) -> str:
+    """Keep source HTML examples as Markdown code instead of live renderer nodes."""
+    return HTML_TAG_RE.sub(lambda match: f"`{match.group(0)}`", value)
+
+
+def literalize_html_tags_in_markdown(markdown: str) -> str:
+    """Quote literal HTML examples while preserving fenced code blocks verbatim."""
+    fenced = False
+    output: list[str] = []
+    for line in markdown.splitlines(keepends=True):
+        if line.lstrip().startswith("```"):
+            fenced = not fenced
+            output.append(line)
+            continue
+        if fenced:
+            output.append(line)
+            continue
+        parts = re.split(r"(`[^`]*`)", line)
+        output.append("".join(
+            part if index % 2 else literalize_html_tags(part)
+            for index, part in enumerate(parts)
+        ))
+    return "".join(output)
+
+
 def opening_texts(blocks: list[tuple[str, str]], limit: int = 2) -> list[str]:
     found: list[str] = []
     for kind, value in blocks:
         if kind != "text" or len(value) < 35:
             continue
-        found.append(value[:700])
+        found.append(literalize_html_tags(value[:700]))
         if len(found) == limit:
             break
     return found
@@ -155,7 +183,7 @@ def render_source_structure(blocks: list[tuple[str, str]]) -> str:
     lines: list[str] = []
     for kind, value in blocks:
         if kind == "heading":
-            clean = value.lstrip("# ").strip()
+            clean = literalize_html_tags(value.lstrip("# ").strip())
             if clean:
                 lines.extend([f"### {clean}", ""])
         elif kind == "code":
@@ -168,7 +196,7 @@ def render_source_structure(blocks: list[tuple[str, str]]) -> str:
             if value:
                 # Blog prose can contain NumPy-like [[...]] values; make them literal so
                 # Obsidian never turns source data into phantom graph links.
-                literal = value.replace("[[", r"\[\[").replace("]]", r"\]\]")
+                literal = literalize_html_tags(value).replace("[[", r"\[\[").replace("]]", r"\]\]")
                 lines.extend([literal, ""])
     return "\n".join(lines).strip()
 
