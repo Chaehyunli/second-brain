@@ -9,6 +9,9 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
+from archive_note_images import append_image_section
+from archive_tistory_images import safe_slug
+from relocate_note_images import relocate_note
 from enrich_tistory_blog_bodies import (
     body_blocks,
     classify_post,
@@ -68,17 +71,31 @@ def render_changed_note(
     blocks: list[tuple[str, str]],
 ) -> str:
     frontmatter, old_body = split_note(original)
-    tag_line = "tags: [" + ", ".join(f'"{quote(tag)}"' for tag in tags) + "]"
+    current_category = re.search(r'^category:\s*"(.*)"\s*$', frontmatter, re.M)
+    category = current_category.group(1) if current_category else category
     for key, value in (
         ("title", f'"{quote(title)}"'),
         ("updated", date.today().isoformat()),
-        ("category", f'"{quote(category)}"'),
-        ("published", published),
-        ("tags", tag_line),
     ):
         frontmatter = replace_front_value(frontmatter, key, value)
     note_type = classify_post(title, category, blocks)
     return literalize_html_tags_in_markdown(render_note(frontmatter, old_body, title, note_type, blocks))
+
+
+def restore_local_images(note: Path) -> int:
+    """Reinsert already archived local images using their recorded source context."""
+    manifest = note.parent / "assets" / safe_slug(note.stem) / "SOURCE.txt"
+    if not manifest.exists():
+        return 0
+    entries = [
+        (f"assets/{manifest.parent.name}/{match.group('file')}", match.group("context"))
+        for match in re.finditer(r"^- file: (?P<file>.+)\n  context: (?P<context>.+)$", manifest.read_text(encoding="utf-8"), re.MULTILINE)
+        if (manifest.parent / match.group("file")).is_file()
+    ]
+    if not entries:
+        return 0
+    append_image_section(note, entries)
+    return relocate_note(note).placed
 
 
 def local_notes() -> dict[str, Path]:
@@ -161,6 +178,7 @@ def main() -> None:
             published=item.published,
             blocks=item.blocks,
         ), encoding="utf-8")
+        restore_local_images(path)
         updated += 1
     for url in added:
         category, _ = make_post(url)

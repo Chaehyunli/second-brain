@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -38,12 +39,30 @@ source_url: https://ch010104.tistory.com/1
             blocks=[("heading", "새 섹션"), ("text", "새 본문에서 <h2>는 예시 태그입니다.")],
         )
         self.assertIn('title: "새 제목"', result)
-        self.assertIn('category: "NEW"', result)
+        self.assertIn('category: "OLD"', result)
+        self.assertIn('tags: ["blog"]', result)
         self.assertIn("# 새 제목", result)
         self.assertIn("### 새 섹션", result)
         self.assertIn("`<h2>`", result)
         self.assertIn("[[blog/OLD/index|OLD]]", result)
         self.assertNotIn("이전 본문", result)
+    def test_restores_existing_archived_images_after_body_rebuild(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            note = Path(tmp) / "blog" / "CAT" / "note.md"
+            asset_dir = note.parent / "assets" / "note"
+            asset_dir.mkdir(parents=True)
+            note.write_text("# 제목\n\n### 새 섹션\n\n본문\n\n## 관련 글\n", encoding="utf-8")
+            (asset_dir / "01-그림.webp").write_bytes(b"image")
+            (asset_dir / "SOURCE.txt").write_text(
+                "source_page: https://ch010104.tistory.com/1\n\nselected_images:\n"
+                "- file: 01-그림.webp\n  context: 새 섹션\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(sync.restore_local_images(note), 1)
+            updated = note.read_text(encoding="utf-8")
+            self.assertIn("### 새 섹션\n\n![새 섹션](assets/note/01-그림.webp)", updated)
+            self.assertNotIn("## 핵심 이미지", updated)
+
     def test_treats_missing_manifest_entry_for_an_existing_note_as_baseline_only(self):
         changed, new, baseline = sync.plan_updates(
             previous={},
