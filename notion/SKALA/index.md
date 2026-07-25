@@ -21,6 +21,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 - [[notion/SKALA/7-15 기타/7-15 Agent Harness 핵심 구조 — LangChain]]
 - [[notion/SKALA/7-15 기타/7-15 AI 에이전틱 패턴의 진화 — Prompt·Context·Harness]]
 - [[notion/SKALA/7-15 기타/7-15 OpenCode로 보는 코딩 에이전트 내부 구조]]
+- [[notion/SKALA/7-15 Prompt 설계와 Context/7-15 실습 과제 - 흐름]]
 
 ## 7/16 — 데이터 분석 개요 및 기초통계 1
 - [[notion/SKALA/7-16 데이터 분석 개요 및 기초통계 1/7-16 데이터 분석 개요 및 기초통계_Day1]]
@@ -38,3 +39,11 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 7/22 — LLM과 Transformer 아키텍처 Day2
 - [[notion/SKALA/7-22 LLM과 Transformer 아키텍처_Day2/7-22 LLM과 Transformer 아키텍처_Day2 - 핵심 정리]]
 - [[notion/SKALA/7-22 LLM과 Transformer 아키텍처_Day2/7-22 transformer 실습]]
+- [[notion/SKALA/7-22 LLM과 Transformer 아키텍처_Day2/7-21 transformer 개인 실습]]
+
+## 7/23 — HTML, CSS, JavaScript Day1
+- [[notion/SKALA/7-23 HTML, CSS, JavaScript_Day1/7-23 HTML, CSS, JavaScript— Day1 핵심 정리]]
+
+## 7/24 — HTML, CSS, JavaScript Day2
+- [[notion/SKALA/7-24 HTML, CSS, JavaScript_Day2/7-24 HTML, CSS, JavaScript— Day2 핵심 정리]]
+- [[notion/SKALA/7-24 HTML, CSS, JavaScript_Day2/7-24 HTML, CSS, JavaScript— Day2_실습]]
