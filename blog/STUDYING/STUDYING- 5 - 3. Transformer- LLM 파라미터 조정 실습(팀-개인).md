@@ -4,7 +4,7 @@ created: 2026-07-24
 updated: 2026-07-24
 type: blog-post
 tags: ["blog", "technical-writing"]
-category: "카테고리 없음"
+category: "STUDYING"
 published: 2026-07-24
 source_url: https://ch010104.tistory.com/314
 ---
@@ -36,4 +36,4 @@ transformer팀실습.pdf 1.26MB transformer_minimodel_practice
 
 ## 관련 글
 
-- [[blog/카테고리 없음/index|카테고리 없음]]
+- [[blog/STUDYING/index|STUDYING]]

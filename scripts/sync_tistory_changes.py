@@ -53,7 +53,7 @@ def snapshot(url: str) -> Snapshot:
     return Snapshot(
         url=url,
         title=title,
-        category=category_of(source),
+        category=category_of(source, title),
         published=meta(source, "article:published_time")[:10] or date.today().isoformat(),
         tags=["blog", "technical-writing", *tags_of(source)],
         blocks=blocks,

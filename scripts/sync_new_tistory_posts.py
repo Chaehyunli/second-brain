@@ -40,7 +40,7 @@ def make_post(url: str) -> tuple[str, Path]:
     source = fetch(url)
     title = re.sub(r"\s*::\s*소소한 지식 저장소\s*$", "", meta(source, "og:title")).strip()
     published = meta(source, "article:published_time")[:10] or date.today().isoformat()
-    category = category_of(source)
+    category = category_of(source, title)
     blocks = body_blocks(source)
     note_type = classify_post(title, category, blocks)
     category_dir = BLOG / safe_name(category)
@@ -79,7 +79,9 @@ def rebuild_category_index(category: str) -> None:
         front = replace_front_value(front, "updated", date.today().isoformat())
     else:
         front = "\n".join(["---", f'title: "{quote(category)}"', f"created: {date.today().isoformat()}", f"updated: {date.today().isoformat()}", "type: blog-category", "tags: [blog, technical-writing]", "---", ""])
-    lines = [front.rstrip(), "", f"# {category}", "", f"> 글 {len(notes)}개 · 카테고리 기반 탐색", "", "## 글", ""]
+    lines = [front.rstrip(), "", f"# {category}", "", f"> 글 {len(notes)}개 · 카테고리 기반 탐색", "", "## 글"]
+    if notes:
+        lines.append("")
     for published, title, path in notes:
         lines.append(f"- [[blog/{path.relative_to(BLOG).with_suffix('').as_posix()}|{title}]] — {published}")
     index.write_text("\n".join(lines) + "\n", encoding="utf-8")

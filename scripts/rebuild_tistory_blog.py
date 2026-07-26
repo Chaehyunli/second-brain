@@ -46,12 +46,18 @@ def text_only(fragment: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(fragment))).strip()
 
 
-def category_of(source: str) -> str:
+def category_of(source: str, title: str = "") -> str:
     value = meta(source, "article:section")
     if not value:
         hit = re.search(r'<p[^>]+class=["\']category["\'][^>]*>(.*?)</p>', source, re.I | re.S)
-        value = text_only(hit.group(1)) if hit else "카테고리 없음"
-    return value or "카테고리 없음"
+        value = text_only(hit.group(1)) if hit else ""
+    if value:
+        return value
+    if title.startswith("[STUDYING]"):
+        return "STUDYING"
+    if re.match(r"^\[(?:스프링|모든 개발자를 위한 HTTP 웹 기본 지식)", title):
+        return "INFLEARN"
+    return "카테고리 없음"
 
 
 def tags_of(source: str) -> list[str]:

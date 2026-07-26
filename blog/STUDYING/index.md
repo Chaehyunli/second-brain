@@ -1,17 +1,19 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-07-23
+updated: 2026-07-26
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 8개 · 카테고리 기반 탐색
+> 글 10개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 8. HTML, CSS, JavaScript_Day2|[STUDYING] 8. HTML, CSS, JavaScript_Day2]] — 2026-07-24
+- [[blog/STUDYING/STUDYING- 5 - 3. Transformer- LLM 파라미터 조정 실습(팀-개인)|[STUDYING] 5 - 3. Transformer: LLM 파라미터 조정 실습(팀/개인)]] — 2026-07-24
 - [[blog/STUDYING/STUDYING- HTML, CSS, JavaScript_Day1|[STUDYING] HTML, CSS, JavaScript_Day1]] — 2026-07-23
 - [[blog/STUDYING/STUDYING- 6 - 1. LLM과 Transformer 아키텍처_Day2 - 핵심 정리|[STUDYING] 6 - 1. LLM과 Transformer 아키텍처_Day2 - 핵심 정리]] — 2026-07-22
 - [[blog/STUDYING/STUDYING- 5. Transformer- Self-Attention부터 생성 구조까지|[STUDYING] 5. Transformer: Self-Attention부터 생성 구조까지]] — 2026-07-21
