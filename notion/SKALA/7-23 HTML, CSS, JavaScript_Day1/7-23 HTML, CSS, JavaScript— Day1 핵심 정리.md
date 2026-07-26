@@ -22,20 +22,10 @@ content_sha256: "fa26af9cecf1d351bac5c18ddffbd6503f0176ffcae68c0fe082af3102464e4
 - 각 종단 시스템은 **고유 IP 주소**를 식별자로 할당받아 애플리케이션 프로세스를 구동함.
 #### 전송 매체 (Transmission Media)
 데이터 신호가 **물리 계층 위에서 이동하는 채널**을 제공하는 매체임.
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>**유선**</td>
-<td>광케이블, Ethernet(LAN선), 해저 광케이블</td>
-</tr>
-<tr>
-<td>**무선**</td>
-<td>Wi-Fi, 5G/LTE, 위성통신</td>
-</tr>
-</table>
+| 구분 | 예시 |
+| --- | --- |
+| **유선** | 광케이블, Ethernet(LAN선), 해저 광케이블 |
+| **무선** | Wi-Fi, 5G/LTE, 위성통신 |
 ---
 ### 네트워크 장비 (Network Equipment)
 **패킷(Packet)의 헤더 정보를 파싱**해 최적 경로를 정하고 다음 목적지로 포워딩(Forwarding)하는 노드 장비임.
@@ -53,44 +43,13 @@ content_sha256: "fa26af9cecf1d351bac5c18ddffbd6503f0176ffcae68c0fe082af3102464e4
 - **Transport Layer**: 데이터를 목적지까지 **안전·정확하게** 전달
 - **Application Layer**: 사용자가 쓰는 앱과 직접 상호작용
 #### OSI ↔ TCP/IP 계층 대응 & PDU
-<table header-row="true">
-<tr>
-<td>OSI 7계층</td>
-<td>TCP/IP 4계층</td>
-<td>주요 프로토콜</td>
-<td>PDU(데이터 단위)</td>
-</tr>
-<tr>
-<td>응용 / 표현 / 세션</td>
-<td>Application</td>
-<td>HTTP, FTP, DNS, DHCP</td>
-<td>Data/Message</td>
-</tr>
-<tr>
-<td>전송(Transport)</td>
-<td>Transport</td>
-<td>TCP, UDP</td>
-<td>Segment(TCP) / Datagram(UDP)</td>
-</tr>
-<tr>
-<td>네트워크(Network)</td>
-<td>Internet</td>
-<td>IP, ICMP</td>
-<td>Packet</td>
-</tr>
-<tr>
-<td>데이터 링크</td>
-<td>Network Access</td>
-<td>Ethernet, ATM</td>
-<td>Frame</td>
-</tr>
-<tr>
-<td>물리(Physical)</td>
-<td>Network Access</td>
-<td>—</td>
-<td>Bit</td>
-</tr>
-</table>
+| OSI 7계층 | TCP/IP 4계층 | 주요 프로토콜 | PDU(데이터 단위) |
+| --- | --- | --- | --- |
+| 응용 / 표현 / 세션 | Application | HTTP, FTP, DNS, DHCP | Data/Message |
+| 전송(Transport) | Transport | TCP, UDP | Segment(TCP) / Datagram(UDP) |
+| 네트워크(Network) | Internet | IP, ICMP | Packet |
+| 데이터 링크 | Network Access | Ethernet, ATM | Frame |
+| 물리(Physical) | Network Access | — | Bit |
 - **PDU(Protocol Data Unit)**: 각 계층에서 다루는 데이터 단위의 이름. 계층을 내려갈수록 헤더가 붙으며 이름이 바뀜 (Message → Segment → Packet → Frame → Bit).
 - OSI의 상위 3계층(응용·표현·세션)이 TCP/IP에서는 **Application 하나로 통합**됨.
 ---
@@ -109,86 +68,31 @@ TCP/IP 4계층 중 **하위 두 계층**으로, 실제 물리적 전송과 네�
 - **데이터 단위: Packet**
 - 핵심 Protocol: **IP**(주소 부여·경로 지정), **ICMP**(오류·상태 메시지 전달)
 #### IP Address — 인터넷에서 각 장치를 식별하는 고유 주소
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>IPv4</td>
-<td>IPv6</td>
-</tr>
-<tr>
-<td>표기</td>
-<td>`192.168.0.1` (점 3개로 나뉜 숫자 4개)</td>
-<td>`2001:0db8:...:7334`</td>
-</tr>
-<tr>
-<td>주소 수</td>
-<td>약 **43억 개** → \<u\>거의 고갈\</u\></td>
-<td>사실상 무한대 (고갈 걱정 X)</td>
-</tr>
-<tr>
-<td>등장 이유</td>
-<td>—</td>
-<td>IPv4 주소 부족 해결</td>
-</tr>
-</table>
+| 구분 | IPv4 | IPv6 |
+| --- | --- | --- |
+| 표기 | `192.168.0.1` (점 3개로 나뉜 숫자 4개) | `2001:0db8:...:7334` |
+| 주소 수 | 약 **43억 개** → \<u\>거의 고갈\</u\> | 사실상 무한대 (고갈 걱정 X) |
+| 등장 이유 | — | IPv4 주소 부족 해결 |
 #### 공인 IP vs 사설 IP
 - **Public IP**: 전 세계 인터넷 망(WAN)에서 \<u\>유일무이\</u\>하게 식별되는 주소
 - **Private IP**: 폐쇄된 내부 네트워크(LAN) **안에서만** 쓰이는 주소 (예: `172.16.20.59`)
 - **NAT (Network Address Translation)**: 하나의 공인 IP ↔ 여러 사설 IP를 상호 **변환**하는 기술
 #### 두 계층의 식별자 비교 (핵심)
-<table header-row="true">
-<tr>
-<td></td>
-<td>MAC 주소</td>
-<td>IP 주소</td>
-</tr>
-<tr>
-<td>계층</td>
-<td>Network Access</td>
-<td>Internet</td>
-</tr>
-<tr>
-<td>성격</td>
-<td>**물리적**(하드웨어 고정)</td>
-<td>**논리적**(네트워크 따라 가변)</td>
-</tr>
-<tr>
-<td>역할</td>
-<td>같은 네트워크 내 장치 식별</td>
-<td>서로 다른 네트워크 간 통신·경로 지정</td>
-</tr>
-</table>
+|  | MAC 주소 | IP 주소 |
+| --- | --- | --- |
+| 계층 | Network Access | Internet |
+| 성격 | **물리적**(하드웨어 고정) | **논리적**(네트워크 따라 가변) |
+| 역할 | 같은 네트워크 내 장치 식별 | 서로 다른 네트워크 간 통신·경로 지정 |
 ---
 ### 전송 계층 (Transport Layer)
 데이터 전송의 **신뢰성**을 담당하는 계층임. **데이터 단위: Segment**, 핵심 Protocol은 **TCP · UDP**임.
 #### TCP vs UDP 비교
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>**TCP** (Transmission Control)</td>
-<td>**UDP** (User Datagram)</td>
-</tr>
-<tr>
-<td>방식</td>
-<td>**연결 지향** (전송 전 **3-Way Handshake**로 연결 확립)</td>
-<td>**비연결형** (연결 없이 일방적으로 던짐)</td>
-</tr>
-<tr>
-<td>신뢰성</td>
-<td>\<u\>높음\</u\> — 유실 시 재전송, 순서 보장</td>
-<td>\<u\>낮음\</u\> — 유실·순서 뒤바뀜 미보정</td>
-</tr>
-<tr>
-<td>속도</td>
-<td>느림, 오버헤드 큼</td>
-<td>**매우 빠름**, 헤더 가벼움</td>
-</tr>
-<tr>
-<td>용도</td>
-<td>신뢰성이 중요한 서비스 — 웹(HTTP), 파일 전송(FTP), 이메일(SMTP)</td>
-<td>실시간성이 중요한 서비스 — 실시간 스트리밍, 온라인 게임</td>
-</tr>
-</table>
+| 구분 | **TCP** (Transmission Control) | **UDP** (User Datagram) |
+| --- | --- | --- |
+| 방식 | **연결 지향** (전송 전 **3-Way Handshake**로 연결 확립) | **비연결형** (연결 없이 일방적으로 던짐) |
+| 신뢰성 | \<u\>높음\</u\> — 유실 시 재전송, 순서 보장 | \<u\>낮음\</u\> — 유실·순서 뒤바뀜 미보정 |
+| 속도 | 느림, 오버헤드 큼 | **매우 빠름**, 헤더 가벼움 |
+| 용도 | 신뢰성이 중요한 서비스 — 웹(HTTP), 파일 전송(FTP), 이메일(SMTP) | 실시간성이 중요한 서비스 — 실시간 스트리밍, 온라인 게임 |
 - 핵심 트레이드오프: **신뢰성(TCP) ↔ 속도(UDP)**. 약간의 손실이 허용되고 실시간성이 중요하면 UDP를 씀.
 #### 포트/연결 현황 확인
 - **Windows**: `netstat -an`
@@ -210,56 +114,18 @@ TCP/IP 4계층 중 **하위 두 계층**으로, 실제 물리적 전송과 네�
 #### WWW (World Wide Web)
 인터넷 상에서 **웹 페이지를 통해 정보를 주고받는 서비스**의 한 형태임. 웹 페이지는 **HTML로 작성**되고 웹 브라우저로 열람함.
 #### WEB의 3대 개념
-<table header-row="true">
-<tr>
-<td>질문</td>
-<td>요소</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>**어떻게**</td>
-<td>HTTP (HyperText Transfer Protocol)</td>
-<td>데이터를 주고받는 통신 규약</td>
-</tr>
-<tr>
-<td>**어디로**</td>
-<td>URL (Uniform Resource Locator)</td>
-<td>자원의 위치(주소)</td>
-</tr>
-<tr>
-<td>**무엇을**</td>
-<td>HTML (HyperText Markup Language)</td>
-<td>웹 페이지를 구성하는 문서 언어</td>
-</tr>
-</table>
+| 질문 | 요소 | 의미 |
+| --- | --- | --- |
+| **어떻게** | HTTP (HyperText Transfer Protocol) | 데이터를 주고받는 통신 규약 |
+| **어디로** | URL (Uniform Resource Locator) | 자원의 위치(주소) |
+| **무엇을** | HTML (HyperText Markup Language) | 웹 페이지를 구성하는 문서 언어 |
 #### Internet vs WWW (핵심 구분)
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>인터넷 (Internet)</td>
-<td>웹 (WWW)</td>
-</tr>
-<tr>
-<td>정의</td>
-<td>전 세계 컴퓨터를 연결한 **물리적 통신망(인프라)**</td>
-<td>인터넷 위에서 정보를 공유하는 **정보 공간(서비스)**</td>
-</tr>
-<tr>
-<td>구성 요소</td>
-<td>케이블·라우터·스위치·컴퓨터 (**하드웨어**)</td>
-<td>HTML·HTTP·URL·브라우저 (**소프트웨어**)</td>
-</tr>
-<tr>
-<td>TCP/IP 기준 계층</td>
-<td>하위 계층 (인터넷·전송 계층 중심)</td>
-<td>**최상위 응용 계층**</td>
-</tr>
-<tr>
-<td>포함 관계</td>
-<td>전체 인프라 (모든 서비스의 기반)</td>
-<td>인프라 위 \<u\>수많은 서비스 중 하나\</u\></td>
-</tr>
-</table>
+| 구분 | 인터넷 (Internet) | 웹 (WWW) |
+| --- | --- | --- |
+| 정의 | 전 세계 컴퓨터를 연결한 **물리적 통신망(인프라)** | 인터넷 위에서 정보를 공유하는 **정보 공간(서비스)** |
+| 구성 요소 | 케이블·라우터·스위치·컴퓨터 (**하드웨어**) | HTML·HTTP·URL·브라우저 (**소프트웨어**) |
+| TCP/IP 기준 계층 | 하위 계층 (인터넷·전송 계층 중심) | **최상위 응용 계층** |
+| 포함 관계 | 전체 인프라 (모든 서비스의 기반) | 인프라 위 \<u\>수많은 서비스 중 하나\</u\> |
 #### WWW — Client와 Server
 웹은 요청하는 **Client**와 응답하는 **Server**의 상호작용으로 동작함.
 #### Client
@@ -269,67 +135,25 @@ TCP/IP 4계층 중 **하위 두 계층**으로, 실제 물리적 전송과 네�
 - 클라이언트의 요청을 받아 처리하고 데이터를 **제공하는** 컴퓨터
 - 웹 서버는 **HTML·이미지·CSS·JavaScript** 등을 저장했다가 클라이언트에 전달
 #### 대표 웹 서버
-<table header-row="true">
-<tr>
-<td>Web Server</td>
-<td>특징</td>
-</tr>
-<tr>
-<td>**Apache**</td>
-<td>오픈소스, \<u\>모든 OS에서 동작\</u\> (1995, Apache SW Foundation)</td>
-</tr>
-<tr>
-<td>**Nginx**</td>
-<td>오픈소스+상용, 모든 OS 동작. **빠른 속도·가벼운 리소스**, 이벤트 기반 **비동기** 처리</td>
-</tr>
-<tr>
-<td>**Microsoft IIS**</td>
-<td>Windows 전용, Windows 생태계에 최적화 (1995, Microsoft)</td>
-</tr>
-</table>
+| Web Server | 특징 |
+| --- | --- |
+| **Apache** | 오픈소스, \<u\>모든 OS에서 동작\</u\> (1995, Apache SW Foundation) |
+| **Nginx** | 오픈소스+상용, 모든 OS 동작. **빠른 속도·가벼운 리소스**, 이벤트 기반 **비동기** 처리 |
+| **Microsoft IIS** | Windows 전용, Windows 생태계에 최적화 (1995, Microsoft) |
 ---
 #### URL (Uniform Resource Locator)
 
 네트워크 상에서 **자원(리소스)의 위치와 접근 방법**을 나타내는 주소 규약임. 통신 프로토콜, 서버 위치(도메인/IP), 포트, 경로, 파일명, 쿼리 등이 결합된 구조로 이뤄짐.
 #### URL 구성 요소
 예시: `http://www.codns.com:80/codns/codns.jsp?id=1`
-<table header-row="true">
-<tr>
-<td>구성</td>
-<td>예시</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>**통신 프로토콜**</td>
-<td>`http://`</td>
-<td>자원에 접근하는 통신 규약</td>
-</tr>
-<tr>
-<td>**호스트 / 도메인**</td>
-<td>`www.codns.com`</td>
-<td>서버 위치. `www`(3차/서브 도메인) · `codns`(2차/메인) · `.com`(**최상위 도메인 TLD**)</td>
-</tr>
-<tr>
-<td>**포트 번호**</td>
-<td>`:80`</td>
-<td>서버 내 접속 지점 (HTTP 기본 80, 생략 가능)</td>
-</tr>
-<tr>
-<td>**디렉터리 경로**</td>
-<td>`/codns/`</td>
-<td>서버 내 폴더 경로</td>
-</tr>
-<tr>
-<td>**파일 / 형식**</td>
-<td>`codns.jsp`</td>
-<td>요청 파일명과 확장자(형식)</td>
-</tr>
-<tr>
-<td>**쿼리 (Query String)**</td>
-<td>`?id=1`</td>
-<td>`?` 뒤에 붙는 매개변수(parameter)</td>
-</tr>
-</table>
+| 구성 | 예시 | 의미 |
+| --- | --- | --- |
+| **통신 프로토콜** | `http://` | 자원에 접근하는 통신 규약 |
+| **호스트 / 도메인** | `www.codns.com` | 서버 위치. `www`(3차/서브 도메인) · `codns`(2차/메인) · `.com`(**최상위 도메인 TLD**) |
+| **포트 번호** | `:80` | 서버 내 접속 지점 (HTTP 기본 80, 생략 가능) |
+| **디렉터리 경로** | `/codns/` | 서버 내 폴더 경로 |
+| **파일 / 형식** | `codns.jsp` | 요청 파일명과 확장자(형식) |
+| **쿼리 (Query String)** | `?id=1` | `?` 뒤에 붙는 매개변수(parameter) |
 ---
 #### HTTP (HyperText Transfer Protocol)
 클라이언트와 웹 서버가 **HTTP 요청(Request)을 보내고 응답(Response)을 받는** 방식으로 통신하는 프로토콜임.
@@ -344,28 +168,11 @@ TCP/IP 4계층 중 **하위 두 계층**으로, 실제 물리적 전송과 네�
 #### HTTP - Request
 클라이언트가 서버에 보내는 요청 메시지의 구조와 방식임.
 #### HTTP Request 구성요소
-<table header-row="true">
-<tr>
-<td>구성</td>
-<td>내용</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>**Request Line**</td>
-<td>Request Method + URL + HTTP 버전</td>
-<td>`POST /test/demo_form.php HTTP/1.1`</td>
-</tr>
-<tr>
-<td>**Request Header**</td>
-<td>요청 부가정보 (User-Agent, Content-Type 등)</td>
-<td>`Host: w3schools.com`</td>
-</tr>
-<tr>
-<td>**Request Body**</td>
-<td>서버로 보낼 실제 Data</td>
-<td>`name1=value1&name2=value2`</td>
-</tr>
-</table>
+| 구성 | 내용 | 예시 |
+| --- | --- | --- |
+| **Request Line** | Request Method + URL + HTTP 버전 | `POST /test/demo_form.php HTTP/1.1` |
+| **Request Header** | 요청 부가정보 (User-Agent, Content-Type 등) | `Host: w3schools.com` |
+| **Request Body** | 서버로 보낼 실제 Data | `name1=value1&name2=value2` |
 #### HTTP Methods
 - **GET**: 지정한 자원에서 데이터를 **조회(요청)**
 - **POST**: 서버로 데이터를 **보내 자원을 생성/수정**
@@ -374,61 +181,19 @@ TCP/IP 4계층 중 **하위 두 계층**으로, 실제 물리적 전송과 네�
 #### HTTP - Response
 서버가 클라이언트 요청에 대해 돌려주는 응답 메시지의 구조와 상태 코드임.
 #### HTTP Response 구성요소
-<table header-row="true">
-<tr>
-<td>구성</td>
-<td>내용</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>**Status Line**</td>
-<td>HTTP 버전 + 상태 코드 + 상태 메시지</td>
-<td>`HTTP/1.1 200 OK`</td>
-</tr>
-<tr>
-<td>**Response Header**</td>
-<td>응답 부가정보 (Content-Type, Server 등)</td>
-<td>`Content-Type: application/json; charset=utf-8`</td>
-</tr>
-<tr>
-<td>**Response Body**</td>
-<td>실제 응답 데이터 (HTML, JSON 등)</td>
-<td>`{ "userId": 1, "id": 1, ... }`</td>
-</tr>
-</table>
+| 구성 | 내용 | 예시 |
+| --- | --- | --- |
+| **Status Line** | HTTP 버전 + 상태 코드 + 상태 메시지 | `HTTP/1.1 200 OK` |
+| **Response Header** | 응답 부가정보 (Content-Type, Server 등) | `Content-Type: application/json; charset=utf-8` |
+| **Response Body** | 실제 응답 데이터 (HTML, JSON 등) | `{ "userId": 1, "id": 1, ... }` |
 #### HTTP Status Codes
-<table header-row="true">
-<tr>
-<td>코드 대역</td>
-<td>의미</td>
-<td>대표 예시</td>
-</tr>
-<tr>
-<td>**1xx**</td>
-<td>Informational (정보)</td>
-<td>—</td>
-</tr>
-<tr>
-<td>**2xx**</td>
-<td>Success (성공)</td>
-<td>200 OK, 201 Created</td>
-</tr>
-<tr>
-<td>**3xx**</td>
-<td>Redirection (리다이렉션)</td>
-<td>304 Not Modified</td>
-</tr>
-<tr>
-<td>**4xx**</td>
-<td>Client Error (**클라이언트** 잘못)</td>
-<td>400 Bad Request, 404 Not Found</td>
-</tr>
-<tr>
-<td>**5xx**</td>
-<td>Server Error (**서버** 잘못)</td>
-<td>500 Internal Server Error</td>
-</tr>
-</table>
+| 코드 대역 | 의미 | 대표 예시 |
+| --- | --- | --- |
+| **1xx** | Informational (정보) | — |
+| **2xx** | Success (성공) | 200 OK, 201 Created |
+| **3xx** | Redirection (리다이렉션) | 304 Not Modified |
+| **4xx** | Client Error (**클라이언트** 잘못) | 400 Bad Request, 404 Not Found |
+| **5xx** | Server Error (**서버** 잘못) | 500 Internal Server Error |
 - 상태 코드는 **앞자리 숫자**로 성격이 갈림. **4xx는 요청한 쪽(클라이언트) 문제**, **5xx는 처리하는 쪽(서버) 문제**라는 구분이 핵심임.
 ---
 #### HTTP - HTTPS (HyperText Transfer Protocol Secure)
@@ -437,20 +202,10 @@ HTTP의 **보안 버전**으로, **SSL(Secure Sockets Layer) / TLS(Transport Lay
 #### 암호화 범위
 - **암호화됨**: Request Headers, Request Body, Response Headers, Response Body (실제 주고받는 내용 전체)
 - **암호화 안 됨**: 목적지 주소(**도메인과 IP**) — 목적지까지 배달하려면 이 주소만은 노출돼야 하기 때문임
-<table header-row="true">
-<tr>
-<td>항목</td>
-<td>암호화 여부</td>
-</tr>
-<tr>
-<td>요청/응답 헤더·바디 (id/pw, Cookie, 본문 데이터 등)</td>
-<td>O (암호화)</td>
-</tr>
-<tr>
-<td>목적지 도메인 / IP</td>
-<td>X (노출)</td>
-</tr>
-</table>
+| 항목 | 암호화 여부 |
+| --- | --- |
+| 요청/응답 헤더·바디 (id/pw, Cookie, 본문 데이터 등) | O (암호화) |
+| 목적지 도메인 / IP | X (노출) |
 #### 실무 위치
 - HTTPS는 현재 웹사이트의 **기본 표준**임.
 - Google 크롬 등 브라우저는 HTTPS를 쓰지 않는 사이트에 \*\*"보안 위험 경고"\*\*를 표시함 (예: "이 사이트는 보안 연결(HTTPS)이 사용되지 않았습니다").
@@ -466,61 +221,27 @@ HTTP의 **보안 버전**으로, **SSL(Secure Sockets Layer) / TLS(Transport Lay
 - 다양한 기기·브라우저에서 작동함
 - **CSS**로 스타일링, **JavaScript**로 동작을 추가할 수 있음 (HTML=구조 / CSS=스타일 / JS=동작)
 #### 참고 — Markup vs. Markdown
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>Markup</td>
-<td>Markdown</td>
-</tr>
-<tr>
-<td>정의</td>
-<td>문서 구조·스타일을 **태그**로 지정하는 언어 (HTML, XML)</td>
-<td>문서 작성용 **경량** 마크업 언어 (README, 블로그 / `.md`)</td>
-</tr>
-<tr>
-<td>목적</td>
-<td>콘텐츠 구조화 + 표현 제어 (스타일 포함)</td>
-<td>텍스트 중심의 간단한 서식 표현</td>
-</tr>
-<tr>
-<td>문법</td>
-<td>복잡, **태그 기반** — 예: `<h1>제목</h1>`</td>
-<td>직관적, **기호 기반** — 예: `# 제목`</td>
-</tr>
-</table>
+| 구분 | Markup | Markdown |
+| --- | --- | --- |
+| 정의 | 문서 구조·스타일을 **태그**로 지정하는 언어 (HTML, XML) | 문서 작성용 **경량** 마크업 언어 (README, 블로그 / `.md`) |
+| 목적 | 콘텐츠 구조화 + 표현 제어 (스타일 포함) | 텍스트 중심의 간단한 서식 표현 |
+| 문법 | 복잡, **태그 기반** — 예: `<h1>제목</h1>` | 직관적, **기호 기반** — 예: `# 제목` |
 - **Markup은 정밀한 구조·표현 제어**에, **Markdown은 빠르고 간단한 문서 작성**에 강점이 있음.
 ---
 #### HTML - Page Structure
 HTML 문서의 기본 뼈대 구조임. 크게 문서 선언 → `html` → `head`/`body`로 이뤄짐.
 #### 기본 구조 요소
-<table header-row="true">
-<tr>
-<td>요소</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**`<!DOCTYPE html>`**</td>
-<td>**DTD(문서형 정의)**. 이 문서가 **HTML5** 문서임을 선언</td>
-</tr>
-<tr>
-<td>**`<html>`**</td>
-<td>HTML 문서의 **시작과 끝**을 감싸는 최상위 태그 (`lang` 속성으로 언어 지정)</td>
-</tr>
-<tr>
-<td>**`<head>`**</td>
-<td>문서 **정보(메타데이터)** 정의. 화면에 직접 표시되지 않음</td>
-</tr>
-<tr>
-<td>**`<body>`**</td>
-<td>웹 브라우저에 **실제 표시할 내용**</td>
-</tr>
-</table>
+| 요소 | 역할 |
+| --- | --- |
+| **`<!DOCTYPE html>`** | **DTD(문서형 정의)**. 이 문서가 **HTML5** 문서임을 선언 |
+| **`<html>`** | HTML 문서의 **시작과 끝**을 감싸는 최상위 태그 (`lang` 속성으로 언어 지정) |
+| **`<head>`** | 문서 **정보(메타데이터)** 정의. 화면에 직접 표시되지 않음 |
+| **`<body>`** | 웹 브라우저에 **실제 표시할 내용** |
 #### head 안의 주요 태그
 - **`<meta charset="UTF-8">`**: 문자 인코딩 지정 (한글 깨짐 방지)
 - **`<meta name="viewport" ...>`**: 반응형을 위한 화면 크기·배율 설정
 - **`<title>`**: 브라우저 탭에 표시되는 문서 제목
 #### 기본 골격 예시
-html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -538,243 +259,72 @@ html
 #### HTML - 주요 태그 정리
 카테고리별 대표 태그 모음임.
 #### 문서 구조 & Metadata
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<html>`</td>
-<td>문서의 **루트 요소**. 시작과 끝 표시</td>
-</tr>
-<tr>
-<td>`<head>`</td>
-<td>메타데이터(제목·스타일·스크립트) 정의</td>
-</tr>
-<tr>
-<td>`<title>`</td>
-<td>브라우저 탭에 표시되는 문서 제목</td>
-</tr>
-<tr>
-<td>`<body>`</td>
-<td>문서의 **본문 콘텐츠**</td>
-</tr>
-<tr>
-<td>`<meta>`</td>
-<td>문서 메타데이터 정의. **SEO** 및 브라우저 동작에 영향</td>
-</tr>
-<tr>
-<td>`<link>`</td>
-<td>외부 리소스(CSS 파일 등)와의 관계 정의</td>
-</tr>
-<tr>
-<td>`<script>`</td>
-<td>JavaScript 코드 삽입 또는 외부 스크립트 연결</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<html>` | 문서의 **루트 요소**. 시작과 끝 표시 |
+| `<head>` | 메타데이터(제목·스타일·스크립트) 정의 |
+| `<title>` | 브라우저 탭에 표시되는 문서 제목 |
+| `<body>` | 문서의 **본문 콘텐츠** |
+| `<meta>` | 문서 메타데이터 정의. **SEO** 및 브라우저 동작에 영향 |
+| `<link>` | 외부 리소스(CSS 파일 등)와의 관계 정의 |
+| `<script>` | JavaScript 코드 삽입 또는 외부 스크립트 연결 |
 #### Text / Contents
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<h1>~<h6>`</td>
-<td>제목(Heading). `<h1>` 최대 \~ `<h6>` 최소</td>
-</tr>
-<tr>
-<td>`<p>`</td>
-<td>단락</td>
-</tr>
-<tr>
-<td>`<br>`</td>
-<td>줄바꿈 삽입</td>
-</tr>
-<tr>
-<td>`<span>`</td>
-<td>인라인 요소. 텍스트를 묶어 스타일·스크립트 적용</td>
-</tr>
-<tr>
-<td>`<strong>`</td>
-<td>중요 텍스트를 **굵게**</td>
-</tr>
-<tr>
-<td>`<em>`</td>
-<td>강조 텍스트를 *기울임꼴*로</td>
-</tr>
-<tr>
-<td>`<a>`</td>
-<td>하이퍼링크 생성 (`href` 속성으로 대상 지정)</td>
-</tr>
-<tr>
-<td>`<hr>`</td>
-<td>수평선</td>
-</tr>
-<tr>
-<td>`<mark>`</td>
-<td>형광펜 강조</td>
-</tr>
-<tr>
-<td>`<small>`</td>
-<td>작은 글씨</td>
-</tr>
-<tr>
-<td>`<blockquote>`</td>
-<td>인용 문단</td>
-</tr>
-<tr>
-<td>\`\`</td>
-<td>출처 인용</td>
-</tr>
-<tr>
-<td>`<code>`</td>
-<td>코드 조각 표현</td>
-</tr>
-<tr>
-<td>`<pre>`</td>
-<td>공백·줄바꿈 유지한 채 텍스트 표시</td>
-</tr>
-<tr>
-<td>`<div>`</td>
-<td>의미 없는 구획(block). 스타일·스크립트 용도</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<h1>~<h6>` | 제목(Heading). `<h1>` 최대 \~ `<h6>` 최소 |
+| `<p>` | 단락 |
+| `<br>` | 줄바꿈 삽입 |
+| `<span>` | 인라인 요소. 텍스트를 묶어 스타일·스크립트 적용 |
+| `<strong>` | 중요 텍스트를 **굵게** |
+| `<em>` | 강조 텍스트를 *기울임꼴*로 |
+| `<a>` | 하이퍼링크 생성 (`href` 속성으로 대상 지정) |
+| `<hr>` | 수평선 |
+| `<mark>` | 형광펜 강조 |
+| `<small>` | 작은 글씨 |
+| `<blockquote>` | 인용 문단 |
+| \`\` | 출처 인용 |
+| `<code>` | 코드 조각 표현 |
+| `<pre>` | 공백·줄바꿈 유지한 채 텍스트 표시 |
+| `<div>` | 의미 없는 구획(block). 스타일·스크립트 용도 |
 #### List & Table
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<ul>`</td>
-<td>순서 **없는** 목록</td>
-</tr>
-<tr>
-<td>`<ol>`</td>
-<td>순서 **있는** 목록</td>
-</tr>
-<tr>
-<td>`<li>`</td>
-<td>목록 항목 (ul·ol 공통)</td>
-</tr>
-<tr>
-<td>`<dl>` / `<dt>` / `<dd>`</td>
-<td>설명 목록 / 설명 제목 / 설명 내용</td>
-</tr>
-<tr>
-<td>`<table>`</td>
-<td>표 정의</td>
-</tr>
-<tr>
-<td>`<thead>` / `<tbody>` / `<tfoot>`</td>
-<td>표의 머리글 / 본문 / 바닥글</td>
-</tr>
-<tr>
-<td>`<tr>`</td>
-<td>표의 행(Row)</td>
-</tr>
-<tr>
-<td>`<th>`</td>
-<td>헤더 셀 (굵게 + 가운데 정렬)</td>
-</tr>
-<tr>
-<td>`<td>`</td>
-<td>데이터 셀</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<ul>` | 순서 **없는** 목록 |
+| `<ol>` | 순서 **있는** 목록 |
+| `<li>` | 목록 항목 (ul·ol 공통) |
+| `<dl>` / `<dt>` / `<dd>` | 설명 목록 / 설명 제목 / 설명 내용 |
+| `<table>` | 표 정의 |
+| `<thead>` / `<tbody>` / `<tfoot>` | 표의 머리글 / 본문 / 바닥글 |
+| `<tr>` | 표의 행(Row) |
+| `<th>` | 헤더 셀 (굵게 + 가운데 정렬) |
+| `<td>` | 데이터 셀 |
 #### Form
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<form>`</td>
-<td>사용자 입력을 서버로 전송하는 폼 정의</td>
-</tr>
-<tr>
-<td>`<input>`</td>
-<td>입력 필드 (텍스트·비밀번호·체크박스 등)</td>
-</tr>
-<tr>
-<td>`<button>`</td>
-<td>버튼</td>
-</tr>
-<tr>
-<td>`<label>`</td>
-<td>입력 필드 설명 제공</td>
-</tr>
-<tr>
-<td>`<textarea>`</td>
-<td>여러 줄 텍스트 입력</td>
-</tr>
-<tr>
-<td>`<select>` / `<option>`</td>
-<td>드롭다운 선택 필드 / 선택 항목</td>
-</tr>
-<tr>
-<td>`<fieldset>` / `<legend>`</td>
-<td>입력 항목 그룹화 / 그룹 설명 제목</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<form>` | 사용자 입력을 서버로 전송하는 폼 정의 |
+| `<input>` | 입력 필드 (텍스트·비밀번호·체크박스 등) |
+| `<button>` | 버튼 |
+| `<label>` | 입력 필드 설명 제공 |
+| `<textarea>` | 여러 줄 텍스트 입력 |
+| `<select>` / `<option>` | 드롭다운 선택 필드 / 선택 항목 |
+| `<fieldset>` / `<legend>` | 입력 항목 그룹화 / 그룹 설명 제목 |
 #### Media
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<img>`</td>
-<td>이미지 삽입 (`src`=경로, `alt`=대체 텍스트)</td>
-</tr>
-<tr>
-<td>`<audio>` / `<video>`</td>
-<td>오디오 / 비디오 콘텐츠 삽입</td>
-</tr>
-<tr>
-<td>`<source>`</td>
-<td>audio·video에 미디어 소스 지정</td>
-</tr>
-<tr>
-<td>`<track>`</td>
-<td>자막 트랙</td>
-</tr>
-<tr>
-<td>`<figure>` / `<figcaption>`</td>
-<td>미디어+캡션 묶음 / 설명 캡션</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<img>` | 이미지 삽입 (`src`=경로, `alt`=대체 텍스트) |
+| `<audio>` / `<video>` | 오디오 / 비디오 콘텐츠 삽입 |
+| `<source>` | audio·video에 미디어 소스 지정 |
+| `<track>` | 자막 트랙 |
+| `<figure>` / `<figcaption>` | 미디어+캡션 묶음 / 설명 캡션 |
 #### Semantic (의미 태그)
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`<header>` / `<footer>`</td>
-<td>문서·섹션의 머리글 / 바닥글</td>
-</tr>
-<tr>
-<td>`<main>`</td>
-<td>문서의 주 콘텐츠</td>
-</tr>
-<tr>
-<td>`<article>`</td>
-<td>독립적인 콘텐츠</td>
-</tr>
-<tr>
-<td>`<section>`</td>
-<td>주제를 정의하는 섹션</td>
-</tr>
-<tr>
-<td>`<aside>`</td>
-<td>부가 콘텐츠 (예: 사이드바)</td>
-</tr>
-<tr>
-<td>`<nav>`</td>
-<td>네비게이션 링크 섹션</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| `<header>` / `<footer>` | 문서·섹션의 머리글 / 바닥글 |
+| `<main>` | 문서의 주 콘텐츠 |
+| `<article>` | 독립적인 콘텐츠 |
+| `<section>` | 주제를 정의하는 섹션 |
+| `<aside>` | 부가 콘텐츠 (예: 사이드바) |
+| `<nav>` | 네비게이션 링크 섹션 |
 - **Semantic 태그**는 `<div>`처럼 단순 구획이 아니라 **의미(역할)를 가진 구획**임. 검색엔진·스크린리더가 문서 구조를 이해하기 쉬워져 SEO·접근성에 유리함.
 ---
 #### HTML Elements (요소)
@@ -783,36 +333,14 @@ HTML 요소는 **시작 태그 + 콘텐츠 + 종료 태그**로 정의됨. 시�
 <tagname> Content goes here... </tagname>
 ```
 #### 요소 구조 예시
-<table header-row="true">
-<tr>
-<td>Start Tag</td>
-<td>Element Content</td>
-<td>End Tag</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>`<h1>`</td>
-<td>My First Heading</td>
-<td>`</h1>`</td>
-<td>제목 1</td>
-</tr>
-<tr>
-<td>`<p>`</td>
-<td>My first paragraph.</td>
-<td>`</p>`</td>
-<td>문단</td>
-</tr>
-<tr>
-<td>`<br>`</td>
-<td>none</td>
-<td>none</td>
-<td>줄바꿈</td>
-</tr>
-</table>
+| Start Tag | Element Content | End Tag | 의미 |
+| --- | --- | --- | --- |
+| `<h1>` | My First Heading | `</h1>` | 제목 1 |
+| `<p>` | My first paragraph. | `</p>` | 문단 |
+| `<br>` | none | none | 줄바꿈 |
 - 콘텐츠가 없는 요소를 빈 요소(empty element)라 함 (예: `<br>`, `<img>`, `<meta>`). 종료 태그가 없음.
 #### 중첩 (Nesting)
 HTML 요소는 **다른 요소를 포함**할 수 있음. 바깥 요소가 안쪽 요소를 감싸는 계층 구조를 이룸.
-html
 ```html
 <html>
   <body>
@@ -825,73 +353,20 @@ html
 - HTML은 **대소문자를 구분하지 않음** (Not Case Sensitive). `<P>`와 `<p>`가 동일하게 동작하나, 관례상 **소문자 사용**이 권장됨.
 #### HTML Attributes - Global Attributes
 **모든 HTML Element에서 공통으로 사용 가능한 속성**임.
-<table header-row="true">
-<tr>
-<td>Attribute</td>
-<td>설명</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>**id**</td>
-<td>요소의 **고유 식별자**. JS·CSS에서 참조할 때 사용 - 중요</td>
-<td>`<div id="title">...</div>`</td>
-</tr>
-<tr>
-<td>**class**</td>
-<td>CSS·JS에서 참조 가능한 클래스 이름 (**여러 개 가능**) - 중요</td>
-<td>`<p class="red-color">...</p>`</td>
-</tr>
-<tr>
-<td>**style**</td>
-<td>인라인 스타일 지정 - 중요</td>
-<td>`<h1 style="color:red;"></h1>`</td>
-</tr>
-<tr>
-<td>title</td>
-<td>요소의 추가 정보 (마우스 올리면 **툴팁** 표시)</td>
-<td>`<img src="cat.jpg" title="고양이">`</td>
-</tr>
-<tr>
-<td>lang</td>
-<td>요소·콘텐츠의 언어 지정 (en, ko, fr 등)</td>
-<td>`<html lang="ko">`, `<p lang="en">Hello</p>`</td>
-</tr>
-<tr>
-<td>hidden</td>
-<td>요소를 화면에 표시하지 않음 (렌더링 X)</td>
-<td>`<div hidden>비밀 정보</div>`</td>
-</tr>
-<tr>
-<td>tabindex</td>
-<td>키보드 탭 순서 지정 (작은 숫자가 먼저)</td>
-<td>`<button tabindex="1">확인</button>`</td>
-</tr>
-<tr>
-<td>draggable</td>
-<td>드래그 가능 여부 (true / false)</td>
-<td>`<img src="logo.png" draggable="true">`</td>
-</tr>
-<tr>
-<td>spellcheck</td>
-<td>입력 텍스트 맞춤법 검사 여부 (true / false)</td>
-<td>`<textarea spellcheck="true"></textarea>`</td>
-</tr>
-<tr>
-<td>contenteditable</td>
-<td>사용자가 콘텐츠를 편집 가능하게 설정 (true / false)</td>
-<td>`<div contenteditable="true">편집 가능</div>`</td>
-</tr>
-<tr>
-<td>dir</td>
-<td>텍스트 방향 설정 (ltr, rtl, auto)</td>
-<td>`<p dir="rtl">...</p>`</td>
-</tr>
-<tr>
-<td>**data-\***</td>
-<td>사용자가 **임의의 속성**을 생성</td>
-<td>`<p data-name="spiderMan" data-hero="true">`</td>
-</tr>
-</table>
+| Attribute | 설명 | 예시 |
+| --- | --- | --- |
+| **id** | 요소의 **고유 식별자**. JS·CSS에서 참조할 때 사용 - 중요 | `<div id="title">...</div>` |
+| **class** | CSS·JS에서 참조 가능한 클래스 이름 (**여러 개 가능**) - 중요 | `<p class="red-color">...</p>` |
+| **style** | 인라인 스타일 지정 - 중요 | `<h1 style="color:red;"></h1>` |
+| title | 요소의 추가 정보 (마우스 올리면 **툴팁** 표시) | `<img src="cat.jpg" title="고양이">` |
+| lang | 요소·콘텐츠의 언어 지정 (en, ko, fr 등) | `<html lang="ko">`, `<p lang="en">Hello</p>` |
+| hidden | 요소를 화면에 표시하지 않음 (렌더링 X) | `<div hidden>비밀 정보</div>` |
+| tabindex | 키보드 탭 순서 지정 (작은 숫자가 먼저) | `<button tabindex="1">확인</button>` |
+| draggable | 드래그 가능 여부 (true / false) | `<img src="logo.png" draggable="true">` |
+| spellcheck | 입력 텍스트 맞춤법 검사 여부 (true / false) | `<textarea spellcheck="true"></textarea>` |
+| contenteditable | 사용자가 콘텐츠를 편집 가능하게 설정 (true / false) | `<div contenteditable="true">편집 가능</div>` |
+| dir | 텍스트 방향 설정 (ltr, rtl, auto) | `<p dir="rtl">...</p>` |
+| **data-\*** | 사용자가 **임의의 속성**을 생성 | `<p data-name="spiderMan" data-hero="true">` |
 - **id는 문서 내 유일**, **class는 여러 요소에 중복 사용 가능**하다는 점이 핵심 차이임.
 - **data-\*** 속성은 표준에 없는 커스텀 데이터를 요소에 심어 두고 JS에서 꺼내 쓸 때 사용함.
 ---
@@ -937,28 +412,11 @@ html
 ```
 - 위 예시에서 `class="note"`가 붙은 **여러 요소에 동일한 스타일이 한꺼번에 적용**됨.
 #### id와의 비교
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>id</td>
-<td>class</td>
-</tr>
-<tr>
-<td>중복</td>
-<td>문서 내 **유일**</td>
-<td>**여러 요소에 반복 사용 가능**</td>
-</tr>
-<tr>
-<td>CSS 선택자</td>
-<td>`#이름`</td>
-<td>`.이름`</td>
-</tr>
-<tr>
-<td>용도</td>
-<td>특정 요소 하나를 지목</td>
-<td>공통 스타일·그룹 처리</td>
-</tr>
-</table>
+| 구분 | id | class |
+| --- | --- | --- |
+| 중복 | 문서 내 **유일** | **여러 요소에 반복 사용 가능** |
+| CSS 선택자 | `#이름` | `.이름` |
+| 용도 | 특정 요소 하나를 지목 | 공통 스타일·그룹 처리 |
 #### HTML Attributes - style
 `style` 속성은 요소에 **인라인 스타일**(색상·글꼴·크기 등)을 직접 지정할 때 사용함.
 ```plain text
@@ -966,38 +424,13 @@ html
 ```
 - **property**는 CSS 속성명, **value**는 CSS 값임.
 #### 대표 CSS Property
-<table header-row="true">
-<tr>
-<td>Property</td>
-<td>역할</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>**background-color**</td>
-<td>요소의 배경색</td>
-<td>`<body style="background-color:powderblue;">`</td>
-</tr>
-<tr>
-<td>**color**</td>
-<td>글자 색</td>
-<td>`<h1 style="color:blue;">Heading</h1>`</td>
-</tr>
-<tr>
-<td>**font-family**</td>
-<td>글꼴</td>
-<td>`<p style="font-family:courier;">Paragraph</p>`</td>
-</tr>
-<tr>
-<td>**font-size**</td>
-<td>글자 크기</td>
-<td>`<h1 style="font-size:300%;">Heading</h1>`</td>
-</tr>
-<tr>
-<td>**text-align**</td>
-<td>텍스트 정렬</td>
-<td>`<p style="text-align:center;">Paragraph</p>`</td>
-</tr>
-</table>
+| Property | 역할 | 예시 |
+| --- | --- | --- |
+| **background-color** | 요소의 배경색 | `<body style="background-color:powderblue;">` |
+| **color** | 글자 색 | `<h1 style="color:blue;">Heading</h1>` |
+| **font-family** | 글꼴 | `<p style="font-family:courier;">Paragraph</p>` |
+| **font-size** | 글자 크기 | `<h1 style="font-size:300%;">Heading</h1>` |
+| **text-align** | 텍스트 정렬 | `<p style="text-align:center;">Paragraph</p>` |
 #### 적용 예시
 ```html
 <body style="background-color:powderblue;">
@@ -1036,25 +469,11 @@ html
 - 즉 코드상의 들여쓰기·정렬은 가독성용일 뿐, 실제 출력에 반영되지 않음.
 - 의도적으로 줄을 바꾸려면 **`<br>`**, 공백·줄바꿈을 그대로 살리려면 `<pre>`를 사용해야 함.
 #### HTML Paragraphs - `<hr>` / `<br>`
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>의미</td>
-<td>화면 효과</td>
-</tr>
-<tr>
-<td>**`<hr>`**</td>
-<td>주제의 전환(**thematic break**)</td>
-<td>대부분 **수평선**을 그려 시각적으로 구분</td>
-</tr>
-<tr>
-<td>**`<br>`**</td>
-<td>줄바꿈(**line break**)</td>
-<td>문장 중간에서 다음 줄로 내림</td>
-</tr>
-</table>
+| 태그 | 의미 | 화면 효과 |
+| --- | --- | --- |
+| **`<hr>`** | 주제의 전환(**thematic break**) | 대부분 **수평선**을 그려 시각적으로 구분 |
+| **`<br>`** | 줄바꿈(**line break**) | 문장 중간에서 다음 줄로 내림 |
 - 둘 다 빈 태그(empty tag)라 **종료 태그가 필요 없음**.
-html
 ```html
 <h1>This is heading 1</h1>
 <p>This is some text.</p>
@@ -1069,43 +488,14 @@ html
 ---
 ## HTML Block & Inline
 모든 HTML Element는 기본 표시(**display**) 값을 가짐. 크게 **Block**과 **Inline**으로 나뉨.
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>Block Elements</td>
-<td>Inline Elements</td>
-</tr>
-<tr>
-<td>디스플레이</td>
-<td>**새 줄에서 시작**, 가로 폭을 최대로 차지</td>
-<td>텍스트·다른 인라인 요소와 **같은 줄에 표시**</td>
-</tr>
-<tr>
-<td>영역 크기</td>
-<td>기본적으로 **전체 폭** 차지</td>
-<td>**콘텐츠 크기만큼**만 차지</td>
-</tr>
-<tr>
-<td>배치</td>
-<td>위/아래로 쌓임(수직 정렬), 겹치지 않음</td>
-<td>다른 인라인 요소와 가로로 나란히 배치</td>
-</tr>
-<tr>
-<td>주요 태그</td>
-<td>`<div>`, `<p>`, `<h1>~<h6>`, `<ul>`, `<ol>`, `<li>`, `<table>`, `<form>`, `<section>`, `<article>`, `<header>`, `<footer>`, `<nav>`</td>
-<td>`<span>`, `<a>`, `<strong>`, `<em>`, `<b>`, `<i>`, `<img>`, `<input>`, `<label>`, `<button>`, `<small>`, `<code>`, `<mark>`</td>
-</tr>
-<tr>
-<td>CSS 적용</td>
-<td>width, height, margin, padding **모두 적용 가능**</td>
-<td>**width·height 무시**, margin·padding은 **수평 방향만** 적용</td>
-</tr>
-<tr>
-<td>용도</td>
-<td>레이아웃 구성, 큰 영역 표현</td>
-<td>텍스트·소규모 콘텐츠 강조, 링크, 부분 스타일 적용</td>
-</tr>
-</table>
+| 구분 | Block Elements | Inline Elements |
+| --- | --- | --- |
+| 디스플레이 | **새 줄에서 시작**, 가로 폭을 최대로 차지 | 텍스트·다른 인라인 요소와 **같은 줄에 표시** |
+| 영역 크기 | 기본적으로 **전체 폭** 차지 | **콘텐츠 크기만큼**만 차지 |
+| 배치 | 위/아래로 쌓임(수직 정렬), 겹치지 않음 | 다른 인라인 요소와 가로로 나란히 배치 |
+| 주요 태그 | `<div>`, `<p>`, `<h1>~<h6>`, `<ul>`, `<ol>`, `<li>`, `<table>`, `<form>`, `<section>`, `<article>`, `<header>`, `<footer>`, `<nav>` | `<span>`, `<a>`, `<strong>`, `<em>`, `<b>`, `<i>`, `<img>`, `<input>`, `<label>`, `<button>`, `<small>`, `<code>`, `<mark>` |
+| CSS 적용 | width, height, margin, padding **모두 적용 가능** | **width·height 무시**, margin·padding은 **수평 방향만** 적용 |
+| 용도 | 레이아웃 구성, 큰 영역 표현 | 텍스트·소규모 콘텐츠 강조, 링크, 부분 스타일 적용 |
 - 핵심 차이는 줄을 차지하느냐(Block) / 줄 안에 끼어드느냐(Inline)임.
 - Inline 요소에 크기를 지정해야 하면 CSS로 `display: inline-block` 또는 `block`으로 바꿔야 함.
 #### HTML Inline Container - `<span>`
@@ -1137,33 +527,16 @@ and my father has <span style="color:darkolivegreen;font-weight:bold;">dark gree
 - `<div>` 자체는 의미가 없는 순수 구획용 태그임. 의미가 명확한 영역이라면 `<section>`, `<article>`, `<header>` 같은 **Semantic 태그**를 쓰는 것이 더 좋음.
 #### HTML Links - `<a>`
 `<a>` 태그는 **하이퍼링크**를 정의함. **`href`**** 속성**으로 링크의 목적지 URL을 지정함.
-html
 ```html
 <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 ```
 #### target 속성 — 링크된 문서가 열리는 공간 지정
-<table header-row="true">
-<tr>
-<td>값</td>
-<td>동작</td>
-</tr>
-<tr>
-<td>**_self**</td>
-<td>**기본값**. 클릭한 것과 같은 창/탭에서 열림</td>
-</tr>
-<tr>
-<td>**_blank**</td>
-<td>**새 창 또는 새 탭**에서 열림</td>
-</tr>
-<tr>
-<td>_parent</td>
-<td>부모 프레임에서 열림</td>
-</tr>
-<tr>
-<td>_top</td>
-<td>창의 전체 영역(full body)에서 열림</td>
-</tr>
-</table>
+| 값 | 동작 |
+| --- | --- |
+| **_self** | **기본값**. 클릭한 것과 같은 창/탭에서 열림 |
+| **_blank** | **새 창 또는 새 탭**에서 열림 |
+| _parent | 부모 프레임에서 열림 |
+| _top | 창의 전체 영역(full body)에서 열림 |
 ```html
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 ```
@@ -1177,63 +550,18 @@ html
 - 이동할 목적지 요소에 `id`를 부여하고, 링크의 `href`에 `#id이름`을 적는 방식임.
 #### HTML Text Formatting
 특별한 형태의 텍스트를 표시하기 위해 설계된 **서식(Formatting) 요소들**임.
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>역할</td>
-<td>표시 결과</td>
-</tr>
-<tr>
-<td>`<b>`</td>
-<td>단순히 **굵게** (의미 없음)</td>
-<td>**This text is bold**</td>
-</tr>
-<tr>
-<td>`<strong>`</td>
-<td>**중요한** 텍스트 (의미 있음)</td>
-<td>**This text is important!**</td>
-</tr>
-<tr>
-<td>`<i>`</td>
-<td>단순히 *기울임* (의미 없음)</td>
-<td>*This text is italic*</td>
-</tr>
-<tr>
-<td>`<em>`</td>
-<td>**강조된** 텍스트 (의미 있음)</td>
-<td>*This text is emphasized*</td>
-</tr>
-<tr>
-<td>`<small>`</td>
-<td>작은 글씨</td>
-<td>This is some smaller text.</td>
-</tr>
-<tr>
-<td>`<mark>`</td>
-<td>형광펜 강조</td>
-<td>buy `milk` today (노란 배경)</td>
-</tr>
-<tr>
-<td>`<del>`</td>
-<td>삭제된 텍스트</td>
-<td>~~blue~~</td>
-</tr>
-<tr>
-<td>`<ins>`</td>
-<td>삽입된 텍스트</td>
-<td>밑줄 표시</td>
-</tr>
-<tr>
-<td>`<sub>`</td>
-<td>아래첨자(subscript)</td>
-<td>H₂O 형태</td>
-</tr>
-<tr>
-<td>`<sup>`</td>
-<td>위첨자(superscript)</td>
-<td>x² 형태</td>
-</tr>
-</table>
+| 태그 | 역할 | 표시 결과 |
+| --- | --- | --- |
+| `<b>` | 단순히 **굵게** (의미 없음) | **This text is bold** |
+| `<strong>` | **중요한** 텍스트 (의미 있음) | **This text is important!** |
+| `<i>` | 단순히 *기울임* (의미 없음) | *This text is italic* |
+| `<em>` | **강조된** 텍스트 (의미 있음) | *This text is emphasized* |
+| `<small>` | 작은 글씨 | This is some smaller text. |
+| `<mark>` | 형광펜 강조 | buy `milk` today (노란 배경) |
+| `<del>` | 삭제된 텍스트 | ~~blue~~ |
+| `<ins>` | 삽입된 텍스트 | 밑줄 표시 |
+| `<sub>` | 아래첨자(subscript) | H₂O 형태 |
+| `<sup>` | 위첨자(superscript) | x² 형태 |
 #### 핵심 구분
 - **`<b>`**** vs ****`<strong>`**, `<i>` vs `<em>`은 겉보기는 같지만, 앞은 **시각적 표현만**이고 뒤는 **의미(중요성·강조)를 담음**.
 - 검색엔진·스크린리더는 의미 태그(`<strong>`, `<em>`)를 인식하므로 SEO·접근성 측면에서 이쪽이 권장됨.
@@ -1248,28 +576,12 @@ html
 ```
 #### list-style-type — 마커(불릿) 모양 지정
 CSS의 **`list-style-type`** 속성으로 항목 마커 스타일을 정의함.
-<table header-row="true">
-<tr>
-<td>값</td>
-<td>마커 모양</td>
-</tr>
-<tr>
-<td>**disc**</td>
-<td>● 검은 원 (기본값)</td>
-</tr>
-<tr>
-<td>**circle**</td>
-<td>○ 빈 원</td>
-</tr>
-<tr>
-<td>**square**</td>
-<td>■ 사각형</td>
-</tr>
-<tr>
-<td>**none**</td>
-<td>마커 없음</td>
-</tr>
-</table>
+| 값 | 마커 모양 |
+| --- | --- |
+| **disc** | ● 검은 원 (기본값) |
+| **circle** | ○ 빈 원 |
+| **square** | ■ 사각형 |
+| **none** | 마커 없음 |
 ```html
 <ul style="list-style-type:square;">
   <li>Coffee</li>
@@ -1282,38 +594,13 @@ CSS의 **`list-style-type`** 속성으로 항목 마커 스타일을 정의함.
 **순서 있는 목록**은 `<ol>` 태그로 시작하고, 각 항목은 `<li>` 태그로 작성함.
 #### type 속성 — 항목 마커 종류 지정
 `<ol>`의 **`type`**** 속성**으로 번호 표기 방식을 정함.
-<table header-row="true">
-<tr>
-<td>type</td>
-<td>마커</td>
-<td>표시 예</td>
-</tr>
-<tr>
-<td>**"1"**</td>
-<td>숫자 (기본값)</td>
-<td>1. 2. 3.</td>
-</tr>
-<tr>
-<td>**"A"**</td>
-<td>대문자 알파벳</td>
-<td>A. B. C.</td>
-</tr>
-<tr>
-<td>**"a"**</td>
-<td>소문자 알파벳</td>
-<td>a. b. c.</td>
-</tr>
-<tr>
-<td>**"I"**</td>
-<td>대문자 로마 숫자</td>
-<td>I. II. III.</td>
-</tr>
-<tr>
-<td>**"i"**</td>
-<td>소문자 로마 숫자</td>
-<td>i. ii. iii.</td>
-</tr>
-</table>
+| type | 마커 | 표시 예 |
+| --- | --- | --- |
+| **"1"** | 숫자 (기본값) | 1. 2. 3. |
+| **"A"** | 대문자 알파벳 | A. B. C. |
+| **"a"** | 소문자 알파벳 | a. b. c. |
+| **"I"** | 대문자 로마 숫자 | I. II. III. |
+| **"i"** | 소문자 로마 숫자 | i. ii. iii. |
 ```html
 <ol type="A">
   <li>Coffee</li>
@@ -1324,7 +611,6 @@ CSS의 **`list-style-type`** 속성으로 항목 마커 스타일을 정의함.
 - `<ul>`은 **순서가 중요하지 않은** 항목 나열, `<ol>`은 **순서·단계가 의미를 갖는** 항목(절차, 순위 등)에 사용함.
 #### HTML Lists - Nested Lists (중첩 목록)
 목록은 **다른 목록 안에 중첩**될 수 있음 (list inside list).
-html
 ```html
 <ol>
   <li>Coffee</li>
@@ -1342,24 +628,11 @@ html
 - 렌더링 시 하위 목록은 자동으로 **들여쓰기**되어 계층 구조가 시각적으로 드러남.
 #### HTML Lists - Description Lists `<dl>` / `<dt>` / `<dd>`
 **용어와 그 설명**을 짝지어 나열하는 정의 목록임.
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**`<dl>`**</td>
-<td>정의 리스트 **전체를 감싸는** 태그</td>
-</tr>
-<tr>
-<td>**`<dt>`**</td>
-<td>목록 항목의 **제목** (용어·항목 이름)</td>
-</tr>
-<tr>
-<td>**`<dd>`**</td>
-<td>`<dt>`에서 정의된 항목의 **상세 설명**</td>
-</tr>
-</table>
+| 태그 | 역할 |
+| --- | --- |
+| **`<dl>`** | 정의 리스트 **전체를 감싸는** 태그 |
+| **`<dt>`** | 목록 항목의 **제목** (용어·항목 이름) |
+| **`<dd>`** | `<dt>`에서 정의된 항목의 **상세 설명** |
 ```html
 <dl>
   <dt>HTML</dt>
@@ -1375,40 +648,15 @@ html
 #### HTML Tables
 HTML의 표는 행(row)과 열(column) 안의 셀(cell)들로 구성됨.
 #### 구성 태그
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**`<table>`**</td>
-<td>표 전체를 감싸는 태그</td>
-</tr>
-<tr>
-<td>**`<thead>`**</td>
-<td>표의 **머리글(제목 행)**. `<tr>`과 `<th>`로 구성</td>
-</tr>
-<tr>
-<td>**`<tbody>`**</td>
-<td>실제 **데이터 행**을 담는 부분. `<tr>`과 `<td>`로 구성</td>
-</tr>
-<tr>
-<td>**`<tfoot>`**</td>
-<td>표의 **바닥글**. 합계·요약 정보에 사용</td>
-</tr>
-<tr>
-<td>**`<tr>`**</td>
-<td>표의 한 **행(Row)**</td>
-</tr>
-<tr>
-<td>**`<th>`**</td>
-<td>**머리글 셀**(Header cell). 기본적으로 굵은 글씨 + 가운데 정렬</td>
-</tr>
-<tr>
-<td>**`<td>`**</td>
-<td>**일반 데이터 셀**(Data cell)</td>
-</tr>
-</table>
+| 태그 | 역할 |
+| --- | --- |
+| **`<table>`** | 표 전체를 감싸는 태그 |
+| **`<thead>`** | 표의 **머리글(제목 행)**. `<tr>`과 `<th>`로 구성 |
+| **`<tbody>`** | 실제 **데이터 행**을 담는 부분. `<tr>`과 `<td>`로 구성 |
+| **`<tfoot>`** | 표의 **바닥글**. 합계·요약 정보에 사용 |
+| **`<tr>`** | 표의 한 **행(Row)** |
+| **`<th>`** | **머리글 셀**(Header cell). 기본적으로 굵은 글씨 + 가운데 정렬 |
+| **`<td>`** | **일반 데이터 셀**(Data cell) |
 ```html
 <table style="width:100%">
   <tr>
@@ -1451,38 +699,13 @@ HTML의 표는 행(row)과 열(column) 안의 셀(cell)들로 구성됨.
 - **상호작용**: 정렬·스크롤 고정(헤더 고정) 같은 기능 구현 시 기준이 됨
 #### HTML Tables - Styling
 표의 모양은 **HTML 속성이 아닌 CSS로 지정하는 것이 권장**됨.
-<table header-row="true">
-<tr>
-<td>주요 항목</td>
-<td>HTML 속성 (지양)</td>
-<td>CSS (권장)</td>
-</tr>
-<tr>
-<td>테두리</td>
-<td>`border`</td>
-<td>**border, border-collapse**</td>
-</tr>
-<tr>
-<td>셀 간격</td>
-<td>`cellspacing`</td>
-<td>**border-spacing**</td>
-</tr>
-<tr>
-<td>셀 안쪽 여백</td>
-<td>`cellpadding`</td>
-<td>**padding**</td>
-</tr>
-<tr>
-<td>정렬</td>
-<td>`align`</td>
-<td>**margin, text-align**</td>
-</tr>
-<tr>
-<td>배경색</td>
-<td>`bgcolor`</td>
-<td>**background-color**</td>
-</tr>
-</table>
+| 주요 항목 | HTML 속성 (지양) | CSS (권장) |
+| --- | --- | --- |
+| 테두리 | `border` | **border, border-collapse** |
+| 셀 간격 | `cellspacing` | **border-spacing** |
+| 셀 안쪽 여백 | `cellpadding` | **padding** |
+| 정렬 | `align` | **margin, text-align** |
+| 배경색 | `bgcolor` | **background-color** |
 #### Zebra Striped Table 예시
 ```html
 <style>
@@ -1499,28 +722,12 @@ Emoji는 이미지가 아니라 \*\*UTF-8(유니코드) 문자셋의 문자(char
 - **유니코드**(국제 문자 인코딩 표준의 일부)로 관리됨
 - 일반 텍스트처럼 전송되며 \*\*유니코드 코드포인트(`U+1F600` 형식)\*\*로 표현됨
 #### Emoji 역사
-<table header-row="true">
-<tr>
-<td>연도</td>
-<td>내용</td>
-</tr>
-<tr>
-<td>1999년</td>
-<td>일본 통신사 NTT 도코모가 세계 최초로 휴대폰용 이모지 도입 (176개)</td>
-</tr>
-<tr>
-<td>2010년</td>
-<td>유니코드 6.0에 처음으로 722개 이모지가 공식 포함</td>
-</tr>
-<tr>
-<td>2016년</td>
-<td>성별(남성/여성/성중립), 직업 관련 이모지 추가</td>
-</tr>
-<tr>
-<td>2025년</td>
-<td>3,800개 이상 등록, 매년 유니코드에서 새 이모지 승인</td>
-</tr>
-</table>
+| 연도 | 내용 |
+| --- | --- |
+| 1999년 | 일본 통신사 NTT 도코모가 세계 최초로 휴대폰용 이모지 도입 (176개) |
+| 2010년 | 유니코드 6.0에 처음으로 722개 이모지가 공식 포함 |
+| 2016년 | 성별(남성/여성/성중립), 직업 관련 이모지 추가 |
+| 2025년 | 3,800개 이상 등록, 매년 유니코드에서 새 이모지 승인 |
 #### HTML에서 사용하기
 Emoji는 문자이므로 **그냥 복사·붙여넣기**하면 다른 문자처럼 사용 가능함.
 ```html
@@ -1555,297 +762,75 @@ HTML form은 **사용자 입력을 수집**하는 데 사용되며, 수집된 �
 </form>
 ```
 #### 주요 속성
-<table header-row="true">
-<tr>
-<td>속성</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**action**</td>
-<td>입력 데이터를 보낼 **서버 측 처리 URL**</td>
-</tr>
-<tr>
-<td>**method**</td>
-<td>전송 방식 (**get** / **post**)</td>
-</tr>
-<tr>
-<td>**name**</td>
-<td>각 입력값이 서버로 전달될 때의 **키 이름**</td>
-</tr>
-<tr>
-<td>**value**</td>
-<td>입력 필드의 초기값(기본값)</td>
-</tr>
-</table>
+| 속성 | 역할 |
+| --- | --- |
+| **action** | 입력 데이터를 보낼 **서버 측 처리 URL** |
+| **method** | 전송 방식 (**get** / **post**) |
+| **name** | 각 입력값이 서버로 전달될 때의 **키 이름** |
+| **value** | 입력 필드의 초기값(기본값) |
 - `<label>`의 **`for`**** 속성**은 `<input>`의 `id`와 짝을 이룸. 라벨 클릭 시 해당 입력 필드가 선택되어 접근성이 좋아짐.
 - `<input type="submit">`을 누르면 폼 데이터가 `action`에 지정된 주소로 전송됨.
 #### HTML Form 정리 (속성 · 요소 · Input)
 Form 관련 태그와 속성을 하나의 표로 정리함.
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>이름</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>**form 속성**</td>
-<td>action</td>
-<td>폼 제출 시 데이터를 **보낼 위치(URL)**</td>
-</tr>
-<tr>
-<td></td>
-<td>method</td>
-<td>전송에 사용할 **HTTP 메서드** (get / post)</td>
-</tr>
-<tr>
-<td></td>
-<td>accept-charset</td>
-<td>폼 제출에 사용할 문자 인코딩</td>
-</tr>
-<tr>
-<td></td>
-<td>autocomplete</td>
-<td>폼의 자동완성 on/off</td>
-</tr>
-<tr>
-<td></td>
-<td>enctype</td>
-<td>데이터 인코딩 방식 (`method="post"`일 때만)</td>
-</tr>
-<tr>
-<td></td>
-<td>name</td>
-<td>폼의 이름</td>
-</tr>
-<tr>
-<td></td>
-<td>novalidate</td>
-<td>제출 시 유효성 검사를 하지 않음</td>
-</tr>
-<tr>
-<td></td>
-<td>rel</td>
-<td>연결된 리소스와 현재 문서의 관계</td>
-</tr>
-<tr>
-<td></td>
-<td>target</td>
-<td>제출 후 응답을 표시할 위치</td>
-</tr>
-<tr>
-<td>**form 요소**</td>
-<td>`<input>`</td>
-<td>다양한 형태의 입력을 받음 (type, name, value, placeholder, required)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<label>`</td>
-<td>입력 필드의 텍스트 설명 (`for`로 id와 연결)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<textarea>`</td>
-<td>여러 줄 텍스트 입력 (rows, cols, placeholder, name)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<select>`</td>
-<td>드롭다운 목록 (name, multiple, required)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<option>`</td>
-<td>select 안의 선택 항목 (value, selected)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<button>`</td>
-<td>클릭 가능한 버튼 (type: submit / reset / button)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<fieldset>`</td>
-<td>관련 입력 필드를 그룹화</td>
-</tr>
-<tr>
-<td></td>
-<td>`<legend>`</td>
-<td>fieldset의 제목</td>
-</tr>
-<tr>
-<td></td>
-<td>`<datalist>`</td>
-<td>input에 자동완성 옵션 제공 (option과 함께 사용)</td>
-</tr>
-<tr>
-<td></td>
-<td>`<output>`</td>
-<td>계산 결과 등의 출력용 필드 (for, name)</td>
-</tr>
-<tr>
-<td>**input type**</td>
-<td>text</td>
-<td>일반 텍스트 입력 필드</td>
-</tr>
-<tr>
-<td></td>
-<td>password</td>
-<td>입력 내용을 숨기는 비밀번호 필드</td>
-</tr>
-<tr>
-<td></td>
-<td>email</td>
-<td>이메일 입력 필드. **형식 검증 제공**</td>
-</tr>
-<tr>
-<td></td>
-<td>number</td>
-<td>숫자 입력 필드 (min, max, step 사용 가능)</td>
-</tr>
-<tr>
-<td></td>
-<td>tel</td>
-<td>전화번호 입력 필드 (형식 검증 없음)</td>
-</tr>
-<tr>
-<td></td>
-<td>url</td>
-<td>URL 입력 필드. 형식 검증 제공</td>
-</tr>
-<tr>
-<td></td>
-<td>color</td>
-<td>색상 선택기</td>
-</tr>
-<tr>
-<td></td>
-<td>date</td>
-<td>날짜 선택 필드 (YYYY-MM-DD)</td>
-</tr>
-<tr>
-<td></td>
-<td>checkbox</td>
-<td>체크박스. **여러 개 선택 가능**</td>
-</tr>
-<tr>
-<td></td>
-<td>radio</td>
-<td>라디오 버튼. 같은 name 그룹에서 **하나만 선택**</td>
-</tr>
-<tr>
-<td></td>
-<td>file</td>
-<td>파일 선택(업로드) 필드</td>
-</tr>
-<tr>
-<td></td>
-<td>hidden</td>
-<td>숨겨진 필드. 미노출 데이터 전송용</td>
-</tr>
-<tr>
-<td></td>
-<td>range</td>
-<td>슬라이더로 범위 값 선택</td>
-</tr>
-<tr>
-<td>**input 속성**</td>
-<td>value</td>
-<td>입력 필드의 초기값</td>
-</tr>
-<tr>
-<td></td>
-<td>readonly</td>
-<td>읽기 전용으로 지정</td>
-</tr>
-<tr>
-<td></td>
-<td>disabled</td>
-<td>입력 필드 비활성화</td>
-</tr>
-<tr>
-<td></td>
-<td>size</td>
-<td>입력 필드의 표시 너비(문자 수 기준)</td>
-</tr>
-<tr>
-<td></td>
-<td>maxlength</td>
-<td>입력 가능한 최대 문자 수</td>
-</tr>
-<tr>
-<td></td>
-<td>min / max</td>
-<td>입력 가능한 최솟값·최댓값</td>
-</tr>
-<tr>
-<td></td>
-<td>multiple</td>
-<td>둘 이상의 값 입력 허용</td>
-</tr>
-<tr>
-<td></td>
-<td>pattern</td>
-<td>제출 시 검사할 **정규표현식** 지정</td>
-</tr>
-<tr>
-<td></td>
-<td>placeholder</td>
-<td>기대하는 입력값에 대한 짧은 힌트</td>
-</tr>
-<tr>
-<td></td>
-<td>required</td>
-<td>제출 전 **반드시 입력**해야 함</td>
-</tr>
-<tr>
-<td></td>
-<td>step</td>
-<td>허용되는 숫자 간격</td>
-</tr>
-<tr>
-<td></td>
-<td>autofocus</td>
-<td>페이지 로드 시 자동으로 포커스</td>
-</tr>
-<tr>
-<td></td>
-<td>height / width</td>
-<td>`<input type="image">`의 높이·너비</td>
-</tr>
-<tr>
-<td></td>
-<td>list</td>
-<td>미리 정의된 옵션을 담은 `<datalist>` 참조</td>
-</tr>
-<tr>
-<td></td>
-<td>autocomplete</td>
-<td>자동완성 on/off</td>
-</tr>
-</table>
+| 구분 | 이름 | 설명 |
+| --- | --- | --- |
+| **form 속성** | action | 폼 제출 시 데이터를 **보낼 위치(URL)** |
+|  | method | 전송에 사용할 **HTTP 메서드** (get / post) |
+|  | accept-charset | 폼 제출에 사용할 문자 인코딩 |
+|  | autocomplete | 폼의 자동완성 on/off |
+|  | enctype | 데이터 인코딩 방식 (`method="post"`일 때만) |
+|  | name | 폼의 이름 |
+|  | novalidate | 제출 시 유효성 검사를 하지 않음 |
+|  | rel | 연결된 리소스와 현재 문서의 관계 |
+|  | target | 제출 후 응답을 표시할 위치 |
+| **form 요소** | `<input>` | 다양한 형태의 입력을 받음 (type, name, value, placeholder, required) |
+|  | `<label>` | 입력 필드의 텍스트 설명 (`for`로 id와 연결) |
+|  | `<textarea>` | 여러 줄 텍스트 입력 (rows, cols, placeholder, name) |
+|  | `<select>` | 드롭다운 목록 (name, multiple, required) |
+|  | `<option>` | select 안의 선택 항목 (value, selected) |
+|  | `<button>` | 클릭 가능한 버튼 (type: submit / reset / button) |
+|  | `<fieldset>` | 관련 입력 필드를 그룹화 |
+|  | `<legend>` | fieldset의 제목 |
+|  | `<datalist>` | input에 자동완성 옵션 제공 (option과 함께 사용) |
+|  | `<output>` | 계산 결과 등의 출력용 필드 (for, name) |
+| **input type** | text | 일반 텍스트 입력 필드 |
+|  | password | 입력 내용을 숨기는 비밀번호 필드 |
+|  | email | 이메일 입력 필드. **형식 검증 제공** |
+|  | number | 숫자 입력 필드 (min, max, step 사용 가능) |
+|  | tel | 전화번호 입력 필드 (형식 검증 없음) |
+|  | url | URL 입력 필드. 형식 검증 제공 |
+|  | color | 색상 선택기 |
+|  | date | 날짜 선택 필드 (YYYY-MM-DD) |
+|  | checkbox | 체크박스. **여러 개 선택 가능** |
+|  | radio | 라디오 버튼. 같은 name 그룹에서 **하나만 선택** |
+|  | file | 파일 선택(업로드) 필드 |
+|  | hidden | 숨겨진 필드. 미노출 데이터 전송용 |
+|  | range | 슬라이더로 범위 값 선택 |
+| **input 속성** | value | 입력 필드의 초기값 |
+|  | readonly | 읽기 전용으로 지정 |
+|  | disabled | 입력 필드 비활성화 |
+|  | size | 입력 필드의 표시 너비(문자 수 기준) |
+|  | maxlength | 입력 가능한 최대 문자 수 |
+|  | min / max | 입력 가능한 최솟값·최댓값 |
+|  | multiple | 둘 이상의 값 입력 허용 |
+|  | pattern | 제출 시 검사할 **정규표현식** 지정 |
+|  | placeholder | 기대하는 입력값에 대한 짧은 힌트 |
+|  | required | 제출 전 **반드시 입력**해야 함 |
+|  | step | 허용되는 숫자 간격 |
+|  | autofocus | 페이지 로드 시 자동으로 포커스 |
+|  | height / width | `<input type="image">`의 높이·너비 |
+|  | list | 미리 정의된 옵션을 담은 `<datalist>` 참조 |
+|  | autocomplete | 자동완성 on/off |
 - `checkbox`는 다중 선택, `radio`는 **같은 ****`name`****으로 묶인 그룹 안에서 단일 선택**이라는 점이 핵심 차이임.
 - `required`, `pattern`, `min/max`는 서버로 보내기 전 **브라우저 단계에서 유효성 검사**를 수행함.
 #### HTML Buttons
 `<button>` 요소는 **클릭 가능한 버튼**을 정의함.
 #### Button Types — `type` 속성
-<table header-row="true">
-<tr>
-<td>type</td>
-<td>동작</td>
-</tr>
-<tr>
-<td>**button**</td>
-<td>일반 클릭 버튼. 기본적으로 아무 동작도 하지 않음 (JS와 연결해 사용)</td>
-</tr>
-<tr>
-<td>**submit**</td>
-<td>폼을 **제출**함</td>
-</tr>
-<tr>
-<td>**reset**</td>
-<td>폼의 모든 필드를 **초기화**함</td>
-</tr>
-</table>
+| type | 동작 |
+| --- | --- |
+| **button** | 일반 클릭 버튼. 기본적으로 아무 동작도 하지 않음 (JS와 연결해 사용) |
+| **submit** | 폼을 **제출**함 |
+| **reset** | 폼의 모든 필드를 **초기화**함 |
 ```html
 <button type="button">클릭</button>
 <button type="submit">제출</button>
@@ -1938,20 +923,10 @@ Form 관련 태그와 속성을 하나의 표로 정리함.
 웹 페이지에 미디어를 삽입하는 태그들임.
 #### `<img>` — 이미지
 **필수 속성 2가지**를 가짐.
-<table header-row="true">
-<tr>
-<td>속성</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**src**</td>
-<td>이미지 파일의 **경로** 지정</td>
-</tr>
-<tr>
-<td>**alt**</td>
-<td>이미지의 **대체 텍스트** (로딩 실패·스크린리더 대응)</td>
-</tr>
-</table>
+| 속성 | 역할 |
+| --- | --- |
+| **src** | 이미지 파일의 **경로** 지정 |
+| **alt** | 이미지의 **대체 텍스트** (로딩 실패·스크린리더 대응) |
 ```html
 <img src="https://www.w3schools.com/images/w3schools_green.jpg"
      alt="W3Schools.com" style="width:104px;height:142px;">
@@ -1975,28 +950,12 @@ Form 관련 태그와 속성을 하나의 표로 정리함.
   Your browser does not support the audio element.
 </audio>
 ```
-<table header-row="true">
-<tr>
-<td>속성</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**controls**</td>
-<td>play, pause, volume 등 기본 컨트롤 표시</td>
-</tr>
-<tr>
-<td>**autoplay**</td>
-<td>자동 재생 (브라우저에서 제한될 수 있음)</td>
-</tr>
-<tr>
-<td>**loop**</td>
-<td>반복 재생</td>
-</tr>
-<tr>
-<td>**muted**</td>
-<td>음소거</td>
-</tr>
-</table>
+| 속성 | 역할 |
+| --- | --- |
+| **controls** | play, pause, volume 등 기본 컨트롤 표시 |
+| **autoplay** | 자동 재생 (브라우저에서 제한될 수 있음) |
+| **loop** | 반복 재생 |
+| **muted** | 음소거 |
 #### `<video>` — 비디오
 ```html
 <video width="320" height="240" autoplay>
@@ -2005,28 +964,12 @@ Form 관련 태그와 속성을 하나의 표로 정리함.
   Your browser does not support the video tag.
 </video>
 ```
-<table header-row="true">
-<tr>
-<td>속성</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**controls**</td>
-<td>기본 컨트롤 표시</td>
-</tr>
-<tr>
-<td>**autoplay**</td>
-<td>자동 재생</td>
-</tr>
-<tr>
-<td>**poster**</td>
-<td>동영상 로딩 전 표시할 이미지</td>
-</tr>
-<tr>
-<td>**width, height**</td>
-<td>비디오 플레이어의 크기 지정</td>
-</tr>
-</table>
+| 속성 | 역할 |
+| --- | --- |
+| **controls** | 기본 컨트롤 표시 |
+| **autoplay** | 자동 재생 |
+| **poster** | 동영상 로딩 전 표시할 이미지 |
+| **width, height** | 비디오 플레이어의 크기 지정 |
 #### 공통 원리
 - `<source>`는 **대체 미디어 파일 여러 개를 나열**하는 용도임. 브라우저는 **가장 먼저 인식 가능한 형식**을 사용함.
 - `<audio>`·`<video>` 태그 **사이의 텍스트**는 해당 요소를 지원하지 않는 브라우저에서만 표시되는 fallback 문구임.
@@ -2034,48 +977,17 @@ Form 관련 태그와 속성을 하나의 표로 정리함.
 #### Semantic Layout Tags
 
 레이아웃 영역을 **의미(역할)에 맞게 구분**하는 시맨틱 태그들임.
-<table header-row="true">
-<tr>
-<td>태그</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>**`<header>`**</td>
-<td>헤더 영역을 구분</td>
-</tr>
-<tr>
-<td>**`<nav>`**</td>
-<td>내부의 다른 영역이나 외부를 연결하는 **링크 영역** 구분</td>
-</tr>
-<tr>
-<td>**`<main>`**</td>
-<td>문서의 **주요 콘텐츠**. 페이지의 핵심 내용 포함</td>
-</tr>
-<tr>
-<td>**`<section>`**</td>
-<td>**논리적으로 관련 있는** 내용 영역 구분</td>
-</tr>
-<tr>
-<td>**`<article>`**</td>
-<td>**독립적인** 영역 구분</td>
-</tr>
-<tr>
-<td>**`<aside>`**</td>
-<td>주력 내용이나 독립적 내용으로 보기 어려워 article·section으로 구분할 수 없을 때 사용 (사이드바 등)</td>
-</tr>
-<tr>
-<td>**`<footer>`**</td>
-<td>footer 영역 구분</td>
-</tr>
-<tr>
-<td>**`<figure>`**</td>
-<td>이미지·도표·코드 등 삽입된 콘텐츠를 감쌈 (`<figcaption>`과 함께 사용)</td>
-</tr>
-<tr>
-<td>**`<figcaption>`**</td>
-<td>`<figure>`에 대한 설명 제공</td>
-</tr>
-</table>
+| 태그 | 설명 |
+| --- | --- |
+| **`<header>`** | 헤더 영역을 구분 |
+| **`<nav>`** | 내부의 다른 영역이나 외부를 연결하는 **링크 영역** 구분 |
+| **`<main>`** | 문서의 **주요 콘텐츠**. 페이지의 핵심 내용 포함 |
+| **`<section>`** | **논리적으로 관련 있는** 내용 영역 구분 |
+| **`<article>`** | **독립적인** 영역 구분 |
+| **`<aside>`** | 주력 내용이나 독립적 내용으로 보기 어려워 article·section으로 구분할 수 없을 때 사용 (사이드바 등) |
+| **`<footer>`** | footer 영역 구분 |
+| **`<figure>`** | 이미지·도표·코드 등 삽입된 콘텐츠를 감쌈 (`<figcaption>`과 함께 사용) |
+| **`<figcaption>`** | `<figure>`에 대한 설명 제공 |
 #### 핵심 구분
 - **`<section>`**** vs ****`<article>`**: section은 **묶여 있는 관련 내용**, article은 **떼어내도 그 자체로 성립하는** 독립 콘텐츠(게시글, 뉴스 기사 등)임.
 - `<div>` 대신 이들 태그를 쓰면 검색엔진·스크린리더가 문서 구조를 이해할 수 있어 **SEO와 접근성**에 유리함.
@@ -2083,28 +995,12 @@ Form 관련 태그와 속성을 하나의 표로 정리함.
 시각·청각·지체 장애를 가진 분들을 포함해 **어떤 사용자도 웹사이트 이용에서 소외되지 않도록** HTML 문서를 표준에 맞게 작성하는 기술임.
 - 화면을 보지 못해 **스크린 리더**(소리로 읽어주는 프로그램)를 쓰는 사용자 등 모두에게 **동등한 사용자 경험**을 제공하는 것이 목적임.
 #### 웹 접근성을 높이는 HTML 작성 규칙
-<table header-row="true">
-<tr>
-<td>규칙</td>
-<td>내용</td>
-</tr>
-<tr>
-<td>**시맨틱 태그 사용**</td>
-<td>`<header>`, `<nav>`, `<main>` 등을 쓰면 스크린 리더가 화면 구조를 정확히 파악할 수 있음</td>
-</tr>
-<tr>
-<td>**Heading Elements 활용**</td>
-<td>`<h1>~<h6>`으로 문서 구조와 섹션 간 관계를 명확히 표현</td>
-</tr>
-<tr>
-<td>**`<img>`****의 alt 속성**</td>
-<td>눈으로 볼 수 없는 사용자를 위해 "이 이미지가 어떤 내용인지" 말로 설명</td>
-</tr>
-<tr>
-<td>**label과 input 연결**</td>
-<td>텍스트와 입력창을 눈으로만 배치하지 말고 **코드로 연결**해야 함</td>
-</tr>
-</table>
+| 규칙 | 내용 |
+| --- | --- |
+| **시맨틱 태그 사용** | `<header>`, `<nav>`, `<main>` 등을 쓰면 스크린 리더가 화면 구조를 정확히 파악할 수 있음 |
+| **Heading Elements 활용** | `<h1>~<h6>`으로 문서 구조와 섹션 간 관계를 명확히 표현 |
+| **`<img>`****의 alt 속성** | 눈으로 볼 수 없는 사용자를 위해 "이 이미지가 어떤 내용인지" 말로 설명 |
+| **label과 input 연결** | 텍스트와 입력창을 눈으로만 배치하지 말고 **코드로 연결**해야 함 |
 ```html
 <label for="userId">아이디</label>
 <input type="text" id="userId" name="userId">
@@ -2130,24 +1026,11 @@ h1 { color: blue; font-size: 12px; }
  ↑   └────── declaration ──────┘
 selector      property: value
 ```
-<table header-row="true">
-<tr>
-<td>구성 요소</td>
-<td>역할</td>
-</tr>
-<tr>
-<td>**selector**</td>
-<td>스타일을 적용할 **HTML 요소를 지목**</td>
-</tr>
-<tr>
-<td>**declaration block**</td>
-<td>`{ }`로 감싸며, **세미콜론(;)으로 구분된** 하나 이상의 선언 포함</td>
-</tr>
-<tr>
-<td>**declaration**</td>
-<td>**property(속성명) : value(값)** 형태. 콜론(:)으로 구분</td>
-</tr>
-</table>
+| 구성 요소 | 역할 |
+| --- | --- |
+| **selector** | 스타일을 적용할 **HTML 요소를 지목** |
+| **declaration block** | `{ }`로 감싸며, **세미콜론(;)으로 구분된** 하나 이상의 선언 포함 |
+| **declaration** | **property(속성명) : value(값)** 형태. 콜론(:)으로 구분 |
 #### 작성 예시
 
 ```css
@@ -2205,59 +1088,21 @@ h1 {color: navy; margin-left: 20px;}
 ```
 - `rel="stylesheet"`로 관계를 명시하고, `href`에 CSS 파일 경로를 지정함.
 #### 세 방식 비교
-<table header-row="true">
-<tr>
-<td>방식</td>
-<td>작성 위치</td>
-<td>적용 범위</td>
-<td>선택자 사용</td>
-</tr>
-<tr>
-<td>**Inline**</td>
-<td>태그의 `style` 속성</td>
-<td>그 요소 하나</td>
-<td>불가</td>
-</tr>
-<tr>
-<td>**Internal**</td>
-<td>`<head>` 안 `<style>`</td>
-<td>그 HTML 문서 전체</td>
-<td>가능</td>
-</tr>
-<tr>
-<td>**External**</td>
-<td>별도 `.css` 파일 + `<link>`</td>
-<td>연결한 **모든 페이지**</td>
-<td>가능</td>
-</tr>
-</table>
+| 방식 | 작성 위치 | 적용 범위 | 선택자 사용 |
+| --- | --- | --- | --- |
+| **Inline** | 태그의 `style` 속성 | 그 요소 하나 | 불가 |
+| **Internal** | `<head>` 안 `<style>` | 그 HTML 문서 전체 | 가능 |
+| **External** | 별도 `.css` 파일 + `<link>` | 연결한 **모든 페이지** | 가능 |
 - 실무 기준은 **External CSS**임. 구조(HTML)와 표현(CSS)이 완전히 분리되어 유지보수·재사용에 가장 유리하고, CSS 파일이 캐싱되어 성능에도 이점이 있음.
 ---
 #### CSS Selectors - Simple Selectors
 CSS 선택자(selector)는 스타일을 적용할 **HTML 요소를 "찾는(select)"** 데 사용됨.
 #### 기본 선택자 3가지
-<table header-row="true">
-<tr>
-<td>선택자</td>
-<td>표기</td>
-<td>대상</td>
-</tr>
-<tr>
-<td>**element**</td>
-<td>`p { }`</td>
-<td>해당 **태그명**을 가진 모든 요소</td>
-</tr>
-<tr>
-<td>**id**</td>
-<td>`#para1 { }`</td>
-<td>`id="para1"`인 **요소 하나**</td>
-</tr>
-<tr>
-<td>**class**</td>
-<td>`.center { }`</td>
-<td>`class="center"`인 **모든 요소**</td>
-</tr>
-</table>
+| 선택자 | 표기 | 대상 |
+| --- | --- | --- |
+| **element** | `p { }` | 해당 **태그명**을 가진 모든 요소 |
+| **id** | `#para1 { }` | `id="para1"`인 **요소 하나** |
+| **class** | `.center { }` | `class="center"`인 **모든 요소** |
 ```css
 p {
   color: red;
@@ -2302,40 +1147,15 @@ p  { text-align: center; color: red; }
 ```
 #### CSS Selectors - Attribute Selectors
 **속성 선택자**는 특정 **속성** 또는 **속성값**(혹은 둘 다)을 가진 HTML 요소를 선택해 스타일링함.
-<table header-row="true">
-<tr>
-<td>선택자</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>`[attribute]`</td>
-<td>해당 **속성을 가진** 요소</td>
-</tr>
-<tr>
-<td>`[attribute="value"]`</td>
-<td>속성값이 **정확히 일치**하는 요소</td>
-</tr>
-<tr>
-<td>`[attribute~="value"]`</td>
-<td>속성값에 해당 **단어를 포함**하는 요소 (공백 구분)</td>
-</tr>
-<tr>
-<td>`[attribute|="value"]`</td>
-<td>속성값이 해당 값과 정확히 같거나, **값 + 하이픈(-)으로 시작**하는 요소</td>
-</tr>
-<tr>
-<td>`[attribute^="value"]`</td>
-<td>속성값이 해당 값으로 **시작**하는 요소</td>
-</tr>
-<tr>
-<td>`[attribute$="value"]`</td>
-<td>속성값이 해당 값으로 **끝나는** 요소</td>
-</tr>
-<tr>
-<td>`[attribute*="value"]`</td>
-<td>속성값에 해당 값을 **포함**하는 요소</td>
-</tr>
-</table>
+| 선택자 | 의미 |
+| --- | --- |
+| `[attribute]` | 해당 **속성을 가진** 요소 |
+| `[attribute="value"]` | 속성값이 **정확히 일치**하는 요소 |
+| `[attribute~="value"]` | 속성값에 해당 **단어를 포함**하는 요소 (공백 구분) |
+| `[attribute\|="value"]` | 속성값이 해당 값과 정확히 같거나, **값 + 하이픈(-)으로 시작**하는 요소 |
+| `[attribute^="value"]` | 속성값이 해당 값으로 **시작**하는 요소 |
+| `[attribute$="value"]` | 속성값이 해당 값으로 **끝나는** 요소 |
+| `[attribute*="value"]` | 속성값에 해당 값을 **포함**하는 요소 |
 #### 사용 예시
 ```css
 input[type="text"] {
@@ -2355,33 +1175,12 @@ input[type="button"] {
 - `^`(시작), `$`(끝), (포함)은 정규표현식과 같은 의미로 기억하면 됨. 예: `a[href^="https"]`는 https로 시작하는 링크만 선택함.
 #### CSS Selectors - Combinator
 CSS 선택자는 여러 개를 조합할 수 있으며, 선택자 사이에 결합자(combinator)를 넣어 더 구체적으로 선택함.
-<table header-row="true">
-<tr>
-<td>결합자</td>
-<td>기호</td>
-<td>선택 대상</td>
-</tr>
-<tr>
-<td>**Descendant** (후손)</td>
-<td>공백</td>
-<td>지정 요소의 **모든 후손** (자식, 손자 등 전부)</td>
-</tr>
-<tr>
-<td>**Child** (자식)</td>
-<td>`>`</td>
-<td>지정 요소의 **직계 자식**만</td>
-</tr>
-<tr>
-<td>**Next sibling** (인접 형제)</td>
-<td>`+`</td>
-<td>지정 요소 **바로 다음**에 오는 형제 하나</td>
-</tr>
-<tr>
-<td>**Subsequent-sibling** (일반 형제)</td>
-<td>`~`</td>
-<td>지정 요소 **이후의 모든 형제**</td>
-</tr>
-</table>
+| 결합자 | 기호 | 선택 대상 |
+| --- | --- | --- |
+| **Descendant** (후손) | 공백 | 지정 요소의 **모든 후손** (자식, 손자 등 전부) |
+| **Child** (자식) | `>` | 지정 요소의 **직계 자식**만 |
+| **Next sibling** (인접 형제) | `+` | 지정 요소 **바로 다음**에 오는 형제 하나 |
+| **Subsequent-sibling** (일반 형제) | `~` | 지정 요소 **이후의 모든 형제** |
 #### 예시
 ```css
 div p   { color: red; }   /* div 안의 모든 p (깊이 무관) */
@@ -2408,90 +1207,33 @@ selector:pseudo-class-name {
 - 폼 요소의 **valid / invalid / required / optional** 상태별 스타일
 - 부모의 **첫 번째 자식**인 요소 스타일
 #### Pseudo-class 분류
-<table header-row="true">
-<tr>
-<td>분류</td>
-<td>성격</td>
-<td>예</td>
-</tr>
-<tr>
-<td>**Interactive**</td>
-<td>사용자 동작·상태에 반응</td>
-<td>`:hover`, `:focus`, `:active`, `:visited`</td>
-</tr>
-<tr>
-<td>**Structural**</td>
-<td>문서 구조상의 위치로 선택</td>
-<td>`:first-child`, `:last-child`, `:nth-child()`</td>
-</tr>
-</table>
+| 분류 | 성격 | 예 |
+| --- | --- | --- |
+| **Interactive** | 사용자 동작·상태에 반응 | `:hover`, `:focus`, `:active`, `:visited` |
+| **Structural** | 문서 구조상의 위치로 선택 | `:first-child`, `:last-child`, `:nth-child()` |
 - 의사클래스는 HTML에 별도 class를 추가하지 않고도 **상태나 위치에 따른 스타일**을 줄 수 있다는 점이 핵심임.
 #### CSS Selectors - Pseudo-classes 종류
 #### Interactive Pseudo-classes
 **사용자와의 상호작용**에 따라 스타일을 적용함.
-<table header-row="true">
-<tr>
-<td>의사클래스</td>
-<td>상태</td>
-</tr>
-<tr>
-<td>**`:link`**</td>
-<td>방문한 적이 **없는** 링크 상태</td>
-</tr>
-<tr>
-<td>**`:visited`**</td>
-<td>사용자가 이미 **방문한(클릭한 적 있는)** 링크 상태</td>
-</tr>
-<tr>
-<td>**`:hover`**</td>
-<td>요소 위에 **마우스 커서가 올라가 있는** 상태</td>
-</tr>
-<tr>
-<td>**`:active`**</td>
-<td>요소를 마우스로 **클릭하고 있는(누르고 있는)** 상태</td>
-</tr>
-<tr>
-<td>**`:focus`**</td>
-<td>Tab 키나 클릭으로 요소(주로 input, button)가 선택되어 **초점이 맞춰진** 상태</td>
-</tr>
-</table>
+| 의사클래스 | 상태 |
+| --- | --- |
+| **`:link`** | 방문한 적이 **없는** 링크 상태 |
+| **`:visited`** | 사용자가 이미 **방문한(클릭한 적 있는)** 링크 상태 |
+| **`:hover`** | 요소 위에 **마우스 커서가 올라가 있는** 상태 |
+| **`:active`** | 요소를 마우스로 **클릭하고 있는(누르고 있는)** 상태 |
+| **`:focus`** | Tab 키나 클릭으로 요소(주로 input, button)가 선택되어 **초점이 맞춰진** 상태 |
 - 링크에 적용할 때는 순서가 중요함: **`:link`**** → ****`:visited`**** → ****`:hover`**** → ****`:active`** 순으로 작성해야 의도대로 동작함.
 #### Structural Pseudo-classes
 **문서 트리에서의 위치**를 기준으로 요소를 선택함.
-<table header-row="true">
-<tr>
-<td>의사클래스</td>
-<td>선택 대상</td>
-</tr>
-<tr>
-<td>**`:first-child`**</td>
-<td>부모의 자식들 중 **첫 번째** 요소</td>
-</tr>
-<tr>
-<td>**`:last-child`**</td>
-<td>부모의 자식들 중 **마지막** 요소</td>
-</tr>
-<tr>
-<td>**`:nth-child(n)`**</td>
-<td>부모의 자식들 중 **n번째** 요소 (`:nth-child(2)`=2번째, `:nth-child(2n)`=짝수 번째)</td>
-</tr>
-<tr>
-<td>**`:nth-last-child(n)`**</td>
-<td>**끝에서부터** n번째 자식</td>
-</tr>
-<tr>
-<td>**`:only-child`**</td>
-<td>자식이 **하나뿐일 때** 그 요소</td>
-</tr>
-<tr>
-<td>**`:first-of-type`**</td>
-<td>같은 **타입(태그) 중 첫 번째** 요소</td>
-</tr>
-<tr>
-<td>**`:last-of-type`**</td>
-<td>같은 타입 중 **마지막** 요소</td>
-</tr>
-</table>
+| 의사클래스 | 선택 대상 |
+| --- | --- |
+| **`:first-child`** | 부모의 자식들 중 **첫 번째** 요소 |
+| **`:last-child`** | 부모의 자식들 중 **마지막** 요소 |
+| **`:nth-child(n)`** | 부모의 자식들 중 **n번째** 요소 (`:nth-child(2)`=2번째, `:nth-child(2n)`=짝수 번째) |
+| **`:nth-last-child(n)`** | **끝에서부터** n번째 자식 |
+| **`:only-child`** | 자식이 **하나뿐일 때** 그 요소 |
+| **`:first-of-type`** | 같은 **타입(태그) 중 첫 번째** 요소 |
+| **`:last-of-type`** | 같은 타입 중 **마지막** 요소 |
 - **`child`**** vs ****`of-type`**: `child`는 **모든 형제 중 순서**를 세고, `of-type`은 **같은 태그끼리만** 순서를 셈.
 - `:nth-child()`에는 숫자 외에 `2n`(짝수), `2n+1`(홀수), `even`, `odd` 같은 수식을 쓸 수 있음.
 ---
@@ -2499,7 +1241,6 @@ selector:pseudo-class-name {
 - 의사요소(가상요소)는 선택자에 붙여 **요소의 특정 부분**에 스타일을 적용하는 키워드임.
 #### Syntax
 선택자 뒤에 더블콜론(::)을 붙여 사용함.
-css
 ```css
 selector::pseudo-element-name {
   CSS properties
@@ -2514,40 +1255,17 @@ selector::pseudo-element-name {
 - dialog 뒤의 viewbox 스타일링
 #### Text Pseudo-elements
 텍스트 콘텐츠의 **특정 부분**을 스타일링함.
-<table header-row="true">
-<tr>
-<td>의사요소</td>
-<td>대상</td>
-</tr>
-<tr>
-<td>**`::first-line`**</td>
-<td>텍스트 블록의 **첫 번째 줄**만 선택. 브라우저 창 너비에 따라 줄바꿈이 바뀌면 첫 줄 범위도 **자동 갱신**됨</td>
-</tr>
-<tr>
-<td>**`::first-letter`**</td>
-<td>텍스트 블록의 **첫 번째 글자**만 선택</td>
-</tr>
-<tr>
-<td>**`::selection`**</td>
-<td>사용자가 마우스로 **드래그해 선택한 영역**</td>
-</tr>
-</table>
+| 의사요소 | 대상 |
+| --- | --- |
+| **`::first-line`** | 텍스트 블록의 **첫 번째 줄**만 선택. 브라우저 창 너비에 따라 줄바꿈이 바뀌면 첫 줄 범위도 **자동 갱신**됨 |
+| **`::first-letter`** | 텍스트 블록의 **첫 번째 글자**만 선택 |
+| **`::selection`** | 사용자가 마우스로 **드래그해 선택한 영역** |
 #### Content Pseudo-elements
 **생성된 콘텐츠를 삽입**하거나 스타일링함. 삽입할 내용은 **`content`**** 속성**으로 지정함.
-<table header-row="true">
-<tr>
-<td>의사요소</td>
-<td>위치</td>
-</tr>
-<tr>
-<td>**`::before`**</td>
-<td>선택한 요소의 \*\*가장 앞쪽(내부 시작점)\*\*에 가상 콘텐츠 생성</td>
-</tr>
-<tr>
-<td>**`::after`**</td>
-<td>선택한 요소의 \*\*가장 뒤쪽(내부 끝점)\*\*에 가상 콘텐츠 생성</td>
-</tr>
-</table>
+| 의사요소 | 위치 |
+| --- | --- |
+| **`::before`** | 선택한 요소의 \*\*가장 앞쪽(내부 시작점)\*\*에 가상 콘텐츠 생성 |
+| **`::after`** | 선택한 요소의 \*\*가장 뒤쪽(내부 끝점)\*\*에 가상 콘텐츠 생성 |
 ```css
 p::before { content: "▶ "; }
 p::after  { content: " (끝)"; }
@@ -2556,41 +1274,15 @@ p::after  { content: " (끝)"; }
 - 실제 DOM에 요소를 추가하지 않고 시각적 장식(아이콘, 구분선 등)을 넣을 때 자주 사용됨.
 #### CSS Selectors - Selector 조합 예
 여러 선택자를 결합해 대상을 정밀하게 지정할 수 있음.
-<table header-row="true">
-<tr>
-<td>조합 예시</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>`p.notice`</td>
-<td>class가 `notice`인 **p 요소**</td>
-</tr>
-<tr>
-<td>`div#header`</td>
-<td>id가 `header`인 **div 요소**</td>
-</tr>
-<tr>
-<td>`button.btn.primary`</td>
-<td>class가 `btn`이면서 **동시에** `primary`인 button</td>
-</tr>
-<tr>
-<td>`input[type="text"][required]`</td>
-<td>type이 `"text"`이고 `required` 속성도 가진 input</td>
-</tr>
-<tr>
-<td>`ul li:first-child:hover`</td>
-<td>ul 내 **첫 번째 li**에 마우스를 올렸을 때</td>
-</tr>
-<tr>
-<td>`*:hover`</td>
-<td>마우스를 올린 **모든** 요소</td>
-</tr>
-<tr>
-<td>`section.news > article.featured h2.title + p.summary`</td>
-<td>`.news` section의 **직계 자식** `.featured` article의 **후손** 중 `.title` h2 **바로 다음**에 오는 `.summary` p</td>
-</tr>
-</table>
-css
+| 조합 예시 | 의미 |
+| --- | --- |
+| `p.notice` | class가 `notice`인 **p 요소** |
+| `div#header` | id가 `header`인 **div 요소** |
+| `button.btn.primary` | class가 `btn`이면서 **동시에** `primary`인 button |
+| `input[type="text"][required]` | type이 `"text"`이고 `required` 속성도 가진 input |
+| `ul li:first-child:hover` | ul 내 **첫 번째 li**에 마우스를 올렸을 때 |
+| `*:hover` | 마우스를 올린 **모든** 요소 |
+| `section.news > article.featured h2.title + p.summary` | `.news` section의 **직계 자식** `.featured` article의 **후손** 중 `.title` h2 **바로 다음**에 오는 `.summary` p |
 ```css
 p.notice {font-size: 18px;}
 div#header {background: gray;}
@@ -2608,44 +1300,13 @@ section.news > article.featured h2.title + p.summary {font-style: italic;}
 #### CSS Specificity (우선순위 / 명시도)
 **Specificity**는 어떤 스타일 선언이 최종적으로 요소에 적용될지 결정하는 알고리즘임. 둘 이상의 규칙이 같은 요소를 가리키면 **명시도가 가장 높은 선언이 이김(win)**.
 #### Specificity Hierarchy — 선택자별 가중치(weight)
-<table header-row="true">
-<tr>
-<td>순위</td>
-<td>Selector</td>
-<td>Example</td>
-<td>Weight</td>
-</tr>
-<tr>
-<td>1순위</td>
-<td>**Inline styles**</td>
-<td>`<h1 style="color: pink;">`</td>
-<td>**1-0-0-0**</td>
-</tr>
-<tr>
-<td>2순위</td>
-<td>**Id selectors**</td>
-<td>`#navbar`</td>
-<td>**0-1-0-0**</td>
-</tr>
-<tr>
-<td>3순위</td>
-<td>**Classes, 속성 선택자, 의사클래스**</td>
-<td>`.test`, `[type="text"]`, `:hover`</td>
-<td>**0-0-1-0**</td>
-</tr>
-<tr>
-<td>4순위</td>
-<td>**Elements, 의사요소**</td>
-<td>`h1`, `::before`, `::after`</td>
-<td>**0-0-0-1**</td>
-</tr>
-<tr>
-<td>—</td>
-<td>**Universal selector, ****`:where()`**</td>
-<td>`*`, `:where()`</td>
-<td>**0-0-0-0** (우선순위 없음)</td>
-</tr>
-</table>
+| 순위 | Selector | Example | Weight |
+| --- | --- | --- | --- |
+| 1순위 | **Inline styles** | `<h1 style="color: pink;">` | **1-0-0-0** |
+| 2순위 | **Id selectors** | `#navbar` | **0-1-0-0** |
+| 3순위 | **Classes, 속성 선택자, 의사클래스** | `.test`, `[type="text"]`, `:hover` | **0-0-1-0** |
+| 4순위 | **Elements, 의사요소** | `h1`, `::before`, `::after` | **0-0-0-1** |
+| — | **Universal selector, ****`:where()`** | `*`, `:where()` | **0-0-0-0** (우선순위 없음) |
 #### Specificity 작동 원칙
 - **자릿수가 높으면 무조건 승리** — `[0,0,1,0]`(클래스 1개)이 `[0,0,0,15]`(태그 15개)보다 우선함. 아래 자릿수를 아무리 쌓아도 상위 자릿수를 이길 수 없음.
 - **점수가 같으면 나중에 작성된 코드가 승리** — 합산 점수가 완전히 동일하면 CSS 파일에서 **가장 아래에 있는 규칙**이 이전 규칙을 덮어씀 (**Cascading 원칙**).
@@ -2680,33 +1341,12 @@ section.news > article.featured h2.title + p.summary {font-style: italic;}
 ### CSS Colors
 CSS에서 색상은 **미리 정의된 색상 이름** 또는 **RGB, HEX, HSL, RGBA, HSLA 값**으로 지정함.
 #### 지정 방식
-<table header-row="true">
-<tr>
-<td>방식</td>
-<td>표기 예</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>**Color name**</td>
-<td>`Tomato`, `Orange`, `DodgerBlue`, `MediumSeaGreen`, `Gray`, `SlateBlue`, `Violet`, `LightGray`</td>
-<td>미리 정의된 색상 이름</td>
-</tr>
-<tr>
-<td>**RGB**</td>
-<td>`rgb(255, 99, 71)`</td>
-<td>Red, Green, Blue 각 0\~255</td>
-</tr>
-<tr>
-<td>**HEX**</td>
-<td>`#ff6347`</td>
-<td>16진수 색상 코드</td>
-</tr>
-<tr>
-<td>**HSL**</td>
-<td>`hsl(9, 100%, 64%)`</td>
-<td>Hue(색상), Saturation(채도), Lightness(명도)</td>
-</tr>
-</table>
+| 방식 | 표기 예 | 설명 |
+| --- | --- | --- |
+| **Color name** | `Tomato`, `Orange`, `DodgerBlue`, `MediumSeaGreen`, `Gray`, `SlateBlue`, `Violet`, `LightGray` | 미리 정의된 색상 이름 |
+| **RGB** | `rgb(255, 99, 71)` | Red, Green, Blue 각 0\~255 |
+| **HEX** | `#ff6347` | 16진수 색상 코드 |
+| **HSL** | `hsl(9, 100%, 64%)` | Hue(색상), Saturation(채도), Lightness(명도) |
 - 위 세 값 `rgb(255,99,71)`, `#ff6347`, `hsl(9,100%,64%)`은 모두 \*\*동일한 색(Tomato)\*\*임.
 - **RGBA / HSLA**는 뒤에 **alpha(투명도)** 값을 추가한 형태임 (예: `rgba(255,99,71,0.5)`).
 #### CSS Units
@@ -2714,33 +1354,13 @@ CSS 단위는 여러 속성의 **길이와 크기**를 정의하는 데 사용�
 #### Absolute Units (절대 단위)
 - **px (pixels)** — 화면에서 가장 많이 쓰이는 절대 단위
 #### Relative Units (상대 단위)
-<table header-row="true">
-<tr>
-<td>단위</td>
-<td>기준</td>
-</tr>
-<tr>
-<td>**em**</td>
-<td>**부모 요소의 폰트 크기** (1em = 부모의 font-size)</td>
-</tr>
-<tr>
-<td>**rem**</td>
-<td>부모와 관계없이 **최상위 Root HTML 요소**의 폰트 크기 (Root em)</td>
-</tr>
-<tr>
-<td>**%**</td>
-<td>부모 요소의 해당 속성 크기를 100%로 두고 계산한 상대 비율</td>
-</tr>
-<tr>
-<td>**vw** (Viewport Width)</td>
-<td>브라우저 화면 **전체 너비의 1%** (100vw = 화면 전체 너비)</td>
-</tr>
-<tr>
-<td>**vh** (Viewport Height)</td>
-<td>브라우저 화면 **전체 높이의 1%** (100vh = 화면 전체 높이)</td>
-</tr>
-</table>
-css
+| 단위 | 기준 |
+| --- | --- |
+| **em** | **부모 요소의 폰트 크기** (1em = 부모의 font-size) |
+| **rem** | 부모와 관계없이 **최상위 Root HTML 요소**의 폰트 크기 (Root em) |
+| **%** | 부모 요소의 해당 속성 크기를 100%로 두고 계산한 상대 비율 |
+| **vw** (Viewport Width) | 브라우저 화면 **전체 너비의 1%** (100vw = 화면 전체 너비) |
+| **vh** (Viewport Height) | 브라우저 화면 **전체 높이의 1%** (100vh = 화면 전체 높이) |
 ```css
 body {font-size: 16px;}      /* Base font size */
 h1 {font-size: 2.5em;}       /* 2.5 * 16 = 40px */
@@ -2822,142 +1442,35 @@ URL의 `family=` 뒤에 폰트명을 **파이프(****`|`****)로 구분**해 나
 ---
 #### CSS 텍스트 스타일링 (CSS Text Styling)
 텍스트 자체의 **색·정렬·형태·간격·그림자**를 제어하는 속성군임. 글꼴(font-\*) 속성과는 별개로, 이미 렌더링된 텍스트의 배치와 장식을 다룸.
-<table header-row="true">
-<tr>
-<td>분류</td>
-<td>속성</td>
-<td>값 예시</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>색상</td>
-<td>`color`</td>
-<td>`blue`, `#00ff00`, `rgb(255,0,0)`</td>
-<td>글자색. **키워드 / HEX / RGB 세 가지 표기 모두 가능**</td>
-</tr>
-<tr>
-<td>정렬</td>
-<td>`text-align`</td>
-<td>`center`, `left`, `right`</td>
-<td>블록 요소 안에서 인라인 콘텐츠의 **가로 정렬**</td>
-</tr>
-<tr>
-<td>변형</td>
-<td>`text-transform`</td>
-<td>`uppercase`, `lowercase`, `capitalize`</td>
-<td>원본 HTML은 그대로 두고 **표시만** 대/소문자 변환. `capitalize`는 각 단어 첫 글자만 대문자</td>
-</tr>
-<tr>
-<td>장식</td>
-<td>`text-decoration-line`</td>
-<td>`underline`, `overline`, `line-through`</td>
-<td>선의 **위치**</td>
-</tr>
-<tr>
-<td></td>
-<td>`text-decoration-color`</td>
-<td>`red`, `green`</td>
-<td>선의 **색** (글자색과 별도 지정 가능)</td>
-</tr>
-<tr>
-<td></td>
-<td>`text-decoration-style`</td>
-<td>`solid`, `double`, `dotted`, `wavy`</td>
-<td>선의 **모양**</td>
-</tr>
-<tr>
-<td></td>
-<td>`text-decoration-thickness`</td>
-<td>`15px`, `25%`</td>
-<td>선의 **두께**. px 절대값 또는 폰트 크기 대비 %</td>
-</tr>
-<tr>
-<td>간격</td>
-<td>`text-indent`</td>
-<td>`50px`</td>
-<td>문단 **첫 줄** 들여쓰기</td>
-</tr>
-<tr>
-<td></td>
-<td>`letter-spacing`</td>
-<td>`1px`</td>
-<td>글자 사이 간격</td>
-</tr>
-<tr>
-<td></td>
-<td>`word-spacing`</td>
-<td>`5px`</td>
-<td>단어 사이 간격</td>
-</tr>
-<tr>
-<td></td>
-<td>`line-height`</td>
-<td>`1.5`</td>
-<td>줄 간격. **단위 없는 배수 지정 권장**(폰트 크기에 비례)</td>
-</tr>
-<tr>
-<td></td>
-<td>`white-space`</td>
-<td>`nowrap`, `pre`, `normal`</td>
-<td>공백·줄바꿈 처리 방식. `nowrap`은 **자동 줄바꿈 금지**</td>
-</tr>
-<tr>
-<td>그림자</td>
-<td>`text-shadow`</td>
-<td>`0 0 3px #ff0000, 0 0 5px #0000ff`</td>
-<td>`x축 y축 흐림반경 색` 순서. **쉼표로 여러 겹 중첩 가능**</td>
-</tr>
-</table>
+| 분류 | 속성 | 값 예시 | 의미 |
+| --- | --- | --- | --- |
+| 색상 | `color` | `blue`, `#00ff00`, `rgb(255,0,0)` | 글자색. **키워드 / HEX / RGB 세 가지 표기 모두 가능** |
+| 정렬 | `text-align` | `center`, `left`, `right` | 블록 요소 안에서 인라인 콘텐츠의 **가로 정렬** |
+| 변형 | `text-transform` | `uppercase`, `lowercase`, `capitalize` | 원본 HTML은 그대로 두고 **표시만** 대/소문자 변환. `capitalize`는 각 단어 첫 글자만 대문자 |
+| 장식 | `text-decoration-line` | `underline`, `overline`, `line-through` | 선의 **위치** |
+|  | `text-decoration-color` | `red`, `green` | 선의 **색** (글자색과 별도 지정 가능) |
+|  | `text-decoration-style` | `solid`, `double`, `dotted`, `wavy` | 선의 **모양** |
+|  | `text-decoration-thickness` | `15px`, `25%` | 선의 **두께**. px 절대값 또는 폰트 크기 대비 % |
+| 간격 | `text-indent` | `50px` | 문단 **첫 줄** 들여쓰기 |
+|  | `letter-spacing` | `1px` | 글자 사이 간격 |
+|  | `word-spacing` | `5px` | 단어 사이 간격 |
+|  | `line-height` | `1.5` | 줄 간격. **단위 없는 배수 지정 권장**(폰트 크기에 비례) |
+|  | `white-space` | `nowrap`, `pre`, `normal` | 공백·줄바꿈 처리 방식. `nowrap`은 **자동 줄바꿈 금지** |
+| 그림자 | `text-shadow` | `0 0 3px #ff0000, 0 0 5px #0000ff` | `x축 y축 흐림반경 색` 순서. **쉼표로 여러 겹 중첩 가능** |
 #### 유의점
 - `text-decoration-*` 4종은 `text-decoration: underline red dotted 2px;` 형태의 **단축 속성**으로 한 줄에 쓸 수 있음.
 - `text-transform`은 시각적 변환일 뿐이라 **복사하면 원본 텍스트 그대로** 나옴.
 ---
 #### CSS 배경 (CSS Backgrounds)
 요소의 **배경 영역**을 색·이미지로 채우는 속성군임. 배경은 콘텐츠 박스가 아니라 기본적으로 **패딩 영역까지 포함**해 칠해짐.
-<table header-row="true">
-<tr>
-<td>분류</td>
-<td>속성</td>
-<td>값 예시</td>
-<td>의미</td>
-</tr>
-<tr>
-<td>색</td>
-<td>`background-color`</td>
-<td>`lightblue`</td>
-<td>배경색</td>
-</tr>
-<tr>
-<td></td>
-<td>`opacity`</td>
-<td>`0.3`</td>
-<td>요소 **전체**의 불투명도(0\~1)</td>
-</tr>
-<tr>
-<td>이미지</td>
-<td>`background-image`</td>
-<td>`url("paper.gif")`</td>
-<td>배경 이미지 지정. **경로는 ****`url()`****로 감쌈**</td>
-</tr>
-<tr>
-<td>반복</td>
-<td>`background-repeat`</td>
-<td>`no-repeat`, `repeat-x`, `repeat-y`</td>
-<td>기본값은 **가로·세로 모두 반복(****`repeat`****)**</td>
-</tr>
-<tr>
-<td>위치</td>
-<td>`background-position`</td>
-<td>`right top`, `center`, `50% 50%`</td>
-<td>`가로 세로` 순서로 시작 위치 지정</td>
-</tr>
-<tr>
-<td>고정</td>
-<td>`background-attachment`</td>
-<td>`scroll`, `fixed`</td>
-<td>`scroll`은 콘텐츠와 **함께 스크롤**, `fixed`는 화면에 **고정**되어 패럴랙스 효과 연출</td>
-</tr>
-</table>
+| 분류 | 속성 | 값 예시 | 의미 |
+| --- | --- | --- | --- |
+| 색 | `background-color` | `lightblue` | 배경색 |
+|  | `opacity` | `0.3` | 요소 **전체**의 불투명도(0\~1) |
+| 이미지 | `background-image` | `url("paper.gif")` | 배경 이미지 지정. **경로는 ****`url()`****로 감쌈** |
+| 반복 | `background-repeat` | `no-repeat`, `repeat-x`, `repeat-y` | 기본값은 **가로·세로 모두 반복(****`repeat`****)** |
+| 위치 | `background-position` | `right top`, `center`, `50% 50%` | `가로 세로` 순서로 시작 위치 지정 |
+| 고정 | `background-attachment` | `scroll`, `fixed` | `scroll`은 콘텐츠와 **함께 스크롤**, `fixed`는 화면에 **고정**되어 패럴랙스 효과 연출 |
 #### 유의점
 - 슬라이드 표기 `background-attatchement`는 **오타**임. 실제 속성명은 `background-attachment`.
 - `opacity`는 배경뿐 아니라 **자식 요소·텍스트까지 함께 투명해짐.** 배경만 반투명하게 하려면 `background-color: rgba(173,216,230,0.3);`처럼 **rgba/hsla를 쓰는 것이 정석**임.
@@ -2965,126 +1478,45 @@ URL의 `family=` 뒤에 폰트명을 **파이프(****`|`****)로 구분**해 나
 ---
 #### CSS 박스 모델 (CSS Box Model)
 모든 HTML 요소는 **하나의 사각형 박스로 감싸져** 렌더링됨. 이 박스는 안쪽부터 **Content → Padding → Border → Margin** 4개 층으로 구성됨.
-<table header-row="true">
-<tr>
-<td>영역</td>
-<td>역할</td>
-<td>위치</td>
-</tr>
-<tr>
-<td>**Content**</td>
-<td>요소의 실제 내용(텍스트·이미지)이 들어가는 영역</td>
-<td>가장 안쪽</td>
-</tr>
-<tr>
-<td>**Padding**</td>
-<td>콘텐츠와 경계(border) 사이의 안쪽 여백</td>
-<td>Content 바깥</td>
-</tr>
-<tr>
-<td>**Border**</td>
-<td>요소의 경계선</td>
-<td>Padding 바깥</td>
-</tr>
-<tr>
-<td>**Margin**</td>
-<td>해당 요소와 **다른 요소** 사이의 바깥 여백</td>
-<td>가장 바깥</td>
-</tr>
-</table>
+| 영역 | 역할 | 위치 |
+| --- | --- | --- |
+| **Content** | 요소의 실제 내용(텍스트·이미지)이 들어가는 영역 | 가장 안쪽 |
+| **Padding** | 콘텐츠와 경계(border) 사이의 안쪽 여백 | Content 바깥 |
+| **Border** | 요소의 경계선 | Padding 바깥 |
+| **Margin** | 해당 요소와 **다른 요소** 사이의 바깥 여백 | 가장 바깥 |
 #### 확인 방법
 - 브라우저 **개발자도구 → Elements → Computed** 패널에서 각 층의 실제 픽셀값을 시각적으로 확인 가능함.
 - 그림에서 안쪽부터 `61.328×19`(content) → `padding 1` → `border 2` → `margin 0` 순으로 값이 표시됨. **레이아웃이 어긋날 때 어느 층 때문인지 특정하는 데 가장 빠른 수단임.**
 ---
 #### 박스 모델 – 너비와 높이 (Width / Height)
-<table header-row="true">
-<tr>
-<td>속성</td>
-<td>예시</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>`width` / `height`</td>
-<td>`div {height: 200px; width: 50%;}`</td>
-<td>**Content 영역만의** 크기. padding·border·margin은 **포함하지 않음**</td>
-</tr>
-<tr>
-<td>기본값 `auto`</td>
-<td>—</td>
-<td>브라우저가 콘텐츠와 부모 크기를 보고 자동 계산</td>
-</tr>
-<tr>
-<td>`min-width` / `max-width`</td>
-<td>`.div1 {max-width: 500px;}`</td>
-<td>너비의 하한/상한</td>
-</tr>
-<tr>
-<td>`min-height` / `max-height`</td>
-<td>—</td>
-<td>높이의 하한/상한</td>
-</tr>
-</table>
+| 속성 | 예시 | 설명 |
+| --- | --- | --- |
+| `width` / `height` | `div {height: 200px; width: 50%;}` | **Content 영역만의** 크기. padding·border·margin은 **포함하지 않음** |
+| 기본값 `auto` | — | 브라우저가 콘텐츠와 부모 크기를 보고 자동 계산 |
+| `min-width` / `max-width` | `.div1 {max-width: 500px;}` | 너비의 하한/상한 |
+| `min-height` / `max-height` | — | 높이의 하한/상한 |
 #### width vs max-width
-<table header-row="true">
-<tr>
-<td>지정</td>
-<td>창이 500px보다 좁아질 때</td>
-<td>결과</td>
-</tr>
-<tr>
-<td>`width: 500px`</td>
-<td>500px를 그대로 유지</td>
-<td>**가로 스크롤바 발생**</td>
-</tr>
-<tr>
-<td>`max-width: 500px`</td>
-<td>창 너비에 맞춰 줄어듦</td>
-<td>**스크롤바 없이 자연스럽게 축소**</td>
-</tr>
-</table>
+| 지정 | 창이 500px보다 좁아질 때 | 결과 |
+| --- | --- | --- |
+| `width: 500px` | 500px를 그대로 유지 | **가로 스크롤바 발생** |
+| `max-width: 500px` | 창 너비에 맞춰 줄어듦 | **스크롤바 없이 자연스럽게 축소** |
 - 반응형 레이아웃에서는 **고정 ****`width`****보다 ****`max-width`****가 기본 선택지**임.
 ---
 #### 박스 모델 – 마진 (Margins)
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>속성 / 예시</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>개별 지정</td>
-<td>`margin-top`, `margin-right`, `margin-bottom`, `margin-left`</td>
-<td>방향별로 따로 지정</td>
-</tr>
-<tr>
-<td>단축 속성</td>
-<td>`p {margin: 25px 50px 75px 100px;}`</td>
-<td>**시계방향으로 top → right → bottom → left** 순서</td>
-</tr>
-</table>
+| 구분 | 속성 / 예시 | 설명 |
+| --- | --- | --- |
+| 개별 지정 | `margin-top`, `margin-right`, `margin-bottom`, `margin-left` | 방향별로 따로 지정 |
+| 단축 속성 | `p {margin: 25px 50px 75px 100px;}` | **시계방향으로 top → right → bottom → left** 순서 |
 #### 마진 병합 (Margin Collapse)
 - **세로 방향 마진**끼리 만나면 두 값이 더해지지 않고, **둘 중 더 큰 값 하나로 합쳐지는** 현상임.
 - 예시: `h1 {margin-bottom: 50px;}` + `h2 {margin-top: 20px;}` → 실제 간격은 70px이 아니라 **50px**.
 - **좌우(가로) 마진은 병합되지 않음.** 가로는 그대로 합산됨.
 ---
 #### 박스 모델 – 패딩 (Padding)
-<table header-row="true">
-<tr>
-<td>구분</td>
-<td>속성 / 예시</td>
-<td>설명</td>
-</tr>
-<tr>
-<td>개별 지정</td>
-<td>`padding-top`, `padding-right`, `padding-bottom`, `padding-left`</td>
-<td>방향별로 따로 지정</td>
-</tr>
-<tr>
-<td>단축 속성</td>
-<td>`div {padding: 25px 50px 75px 100px;}`</td>
-<td>**top → right → bottom → left** 순서 (margin과 동일)</td>
-</tr>
-</table>
+| 구분 | 속성 / 예시 | 설명 |
+| --- | --- | --- |
+| 개별 지정 | `padding-top`, `padding-right`, `padding-bottom`, `padding-left` | 방향별로 따로 지정 |
+| 단축 속성 | `div {padding: 25px 50px 75px 100px;}` | **top → right → bottom → left** 순서 (margin과 동일) |
 #### width와 padding의 관계
 - `width`는 **content 영역만의 너비**이므로, padding을 주면 요소의 실제 차지 너비는 그만큼 **더 커짐**.
 - 예시: `div {width: 300px; padding: 25px;}` → 총 너비 = **300 + 25×2 = 350px**.
@@ -3093,50 +1525,13 @@ URL의 `family=` 뒤에 폰트명을 **파이프(****`|`****)로 구분**해 나
 ---
 #### CSS 배치 (CSS Position)
 `position` 속성은 요소의 **배치 유형**을 지정함. 값에 따라 `top`/`right`/`bottom`/`left`의 **기준점**과 **문서 흐름 유지 여부**가 달라짐.
-<table header-row="true">
-<tr>
-<td>값</td>
-<td>기준점</td>
-<td>문서 흐름</td>
-<td>원래 공간</td>
-<td>예시</td>
-</tr>
-<tr>
-<td>`static`</td>
-<td>없음 (기본값)</td>
-<td>일반 흐름대로 배치</td>
-<td>차지</td>
-<td>`div.static {position: static;}` — **top/left 등이 적용되지 않음**</td>
-</tr>
-<tr>
-<td>`relative`</td>
-<td>**자기 자신의 원래 위치**</td>
-<td>유지</td>
-<td>**차지함**</td>
-<td>`div.relative {position: relative; left: 30px;}`</td>
-</tr>
-<tr>
-<td>`fixed`</td>
-<td>**뷰포트(브라우저 창)**</td>
-<td>제거</td>
-<td>차지 안 함</td>
-<td>`div.fixed {position: fixed; bottom: 0; right: 0;}` — **스크롤해도 고정**</td>
-</tr>
-<tr>
-<td>`absolute`</td>
-<td>**가장 가까운 조상 요소**</td>
-<td>제거</td>
-<td>차지 안 함</td>
-<td>`div.absolute {position: absolute; top: 80px; right: 0;}`</td>
-</tr>
-<tr>
-<td>`sticky`</td>
-<td>스크롤 위치에 따라 전환</td>
-<td>조건부</td>
-<td>차지</td>
-<td>`div.sticky {position: sticky; top: 0;}` — **relative ↔ fixed 자동 전환**</td>
-</tr>
-</table>
+| 값 | 기준점 | 문서 흐름 | 원래 공간 | 예시 |
+| --- | --- | --- | --- | --- |
+| `static` | 없음 (기본값) | 일반 흐름대로 배치 | 차지 | `div.static {position: static;}` — **top/left 등이 적용되지 않음** |
+| `relative` | **자기 자신의 원래 위치** | 유지 | **차지함** | `div.relative {position: relative; left: 30px;}` |
+| `fixed` | **뷰포트(브라우저 창)** | 제거 | 차지 안 함 | `div.fixed {position: fixed; bottom: 0; right: 0;}` — **스크롤해도 고정** |
+| `absolute` | **가장 가까운 조상 요소** | 제거 | 차지 안 함 | `div.absolute {position: absolute; top: 80px; right: 0;}` |
+| `sticky` | 스크롤 위치에 따라 전환 | 조건부 | 차지 | `div.sticky {position: sticky; top: 0;}` — **relative ↔ fixed 자동 전환** |
 #### 핵심 구분
 - **공간 차지 여부**가 가장 큰 갈림길임. `relative`는 원래 자리를 비워둔 채 시각적으로만 이동하지만, `absolute`·`fixed`는 **흐름에서 완전히 빠져 다른 요소가 그 자리를 채움.**
 - `absolute`의 기준이 되는 "가장 가까운 조상"은 정확히는 **position이 static이 아닌 가장 가까운 조상**임. 없으면 문서 전체(초기 컨테이닝 블록)가 기준이 됨. 그래서 부모에 `position: relative;`를 걸어두고 자식을 `absolute`로 배치하는 조합이 관용적으로 쓰임.
@@ -3144,24 +1539,11 @@ URL의 `family=` 뒤에 폰트명을 **파이프(****`|`****)로 구분**해 나
 ---
 #### CSS 중첩 순서 (CSS Z-index)
 `z-index` 속성은 동일 위치에 **겹쳐진(overlap) 요소들의 앞뒤 순서**를 지정함. 값은 **양수·음수 모두 가능**하며, 값이 클수록 앞으로 나옴.
-<table header-row="true">
-<tr>
-<td>상황</td>
-<td>결과</td>
-</tr>
-<tr>
-<td>`z-index` 값이 큼</td>
-<td>더 **앞쪽**(사용자 쪽)에 표시</td>
-</tr>
-<tr>
-<td>`z-index: -1`</td>
-<td>일반 콘텐츠보다 **뒤쪽**으로 밀려 배경처럼 깔림</td>
-</tr>
-<tr>
-<td>`z-index` 미지정</td>
-<td>HTML 문서상 **나중에 나온 요소가 위**에 표시</td>
-</tr>
-</table>
+| 상황 | 결과 |
+| --- | --- |
+| `z-index` 값이 큼 | 더 **앞쪽**(사용자 쪽)에 표시 |
+| `z-index: -1` | 일반 콘텐츠보다 **뒤쪽**으로 밀려 배경처럼 깔림 |
+| `z-index` 미지정 | HTML 문서상 **나중에 나온 요소가 위**에 표시 |
 #### 예제 해석
 ```plain text
 img {position: absolute; left: 0px; top: 0px; z-index: -1;}
@@ -3173,51 +1555,19 @@ img {position: absolute; left: 0px; top: 0px; z-index: -1;}
 #### CSS 상속 (CSS Inheritance)
 **부모 요소에 지정된 스타일 중 일부가 자식 요소로 자동 적용되는 것**을 상속이라 함. HTML이 **계층적 트리 구조**이기 때문에 가능한 동작임.
 #### 상속되는 속성
-<table header-row="true">
-<tr>
-<td>분류</td>
-<td>속성</td>
-</tr>
-<tr>
-<td>텍스트</td>
-<td>`color`, `text-align`, `text-indent`, `letter-spacing`, `word-spacing`, `line-height`, `visibility`, `white-space`</td>
-</tr>
-<tr>
-<td>폰트</td>
-<td>`font`, `font-family`, `font-size`, `font-style`, `font-variant`, `font-weight`</td>
-</tr>
-<tr>
-<td>리스트</td>
-<td>`list-style`, `list-style-type`, `list-style-position`, `list-style-image`</td>
-</tr>
-<tr>
-<td>테이블</td>
-<td>`border-collapse`, `border-spacing`, `caption-side`, `empty-cells`</td>
-</tr>
-</table>
+| 분류 | 속성 |
+| --- | --- |
+| 텍스트 | `color`, `text-align`, `text-indent`, `letter-spacing`, `word-spacing`, `line-height`, `visibility`, `white-space` |
+| 폰트 | `font`, `font-family`, `font-size`, `font-style`, `font-variant`, `font-weight` |
+| 리스트 | `list-style`, `list-style-type`, `list-style-position`, `list-style-image` |
+| 테이블 | `border-collapse`, `border-spacing`, `caption-side`, `empty-cells` |
 #### 상속되지 않는 속성
-<table header-row="true">
-<tr>
-<td>분류</td>
-<td>속성</td>
-</tr>
-<tr>
-<td>레이아웃</td>
-<td>`margin`, `padding`, `border`, `width`, `height`, `display`, `position`</td>
-</tr>
-<tr>
-<td>배경</td>
-<td>`background-color`, `background-image`</td>
-</tr>
-<tr>
-<td>박스 정렬</td>
-<td>`flex`, `grid`, `justify-content`, `align-items`</td>
-</tr>
-<tr>
-<td>기타</td>
-<td>`box-shadow`, `z-index`, `overflow`</td>
-</tr>
-</table>
+| 분류 | 속성 |
+| --- | --- |
+| 레이아웃 | `margin`, `padding`, `border`, `width`, `height`, `display`, `position` |
+| 배경 | `background-color`, `background-image` |
+| 박스 정렬 | `flex`, `grid`, `justify-content`, `align-items` |
+| 기타 | `box-shadow`, `z-index`, `overflow` |
 #### 구분 기준
 - **글자의 생김새를 결정하는 속성은 상속되고, 박스의 크기·위치를 결정하는 속성은 상속되지 않음.** 만약 margin이나 border가 상속된다면 모든 자식 요소에 여백과 테두리가 중복 적용되어 레이아웃이 무너지기 때문임.
 - 그래서 `body`에 `font-family`와 `color`를 한 번만 지정해 문서 전체 서체를 통일하는 방식이 관용적으로 쓰임.
@@ -3233,38 +1583,18 @@ img {position: absolute; left: 0px; top: 0px; z-index: -1;}
   color: inherit; /* .card 안에 있는 <a> 태그의 색상을 부모(.card)와 똑같이 맞춤 */
 }
 ```
-<table header-row="true">
-<tr>
-<td>요소</td>
-<td>결과</td>
-</tr>
-<tr>
-<td>`.card`</td>
-<td>부모의 글자 색상은 `dimgray`</td>
-</tr>
-<tr>
-<td>`.card`의 `<a>`</td>
-<td>`inherit`으로 인해 **부모와 동일한 색상이 됨**</td>
-</tr>
-</table>
+| 요소 | 결과 |
+| --- | --- |
+| `.card` | 부모의 글자 색상은 `dimgray` |
+| `.card`의 `<a>` | `inherit`으로 인해 **부모와 동일한 색상이 됨** |
 ```plain text
 p { border: 1px solid red; }
 strong { border: inherit; }
 ```
-<table header-row="true">
-<tr>
-<td>요소</td>
-<td>결과</td>
-</tr>
-<tr>
-<td>`<p>`</td>
-<td>빨간색 1px 실선 테두리</td>
-</tr>
-<tr>
-<td>`<strong>` (p의 자식)</td>
-<td>`inherit`으로 인해 **부모와 동일한 1px solid red 테두리가 그려짐**</td>
-</tr>
-</table>
+| 요소 | 결과 |
+| --- | --- |
+| `<p>` | 빨간색 1px 실선 테두리 |
+| `<strong>` (p의 자식) | `inherit`으로 인해 **부모와 동일한 1px solid red 테두리가 그려짐** |
 - `border`는 원래 비상속 속성이므로, `inherit`이 없었다면 `<strong>`에는 테두리가 생기지 않음.
 - 상속 관련 키워드로는 `inherit` 외에 `initial`(속성의 CSS 기본값으로 되돌림), `unset`(상속 속성이면 상속, 비상속 속성이면 initial)도 함께 쓰임.
 ---
