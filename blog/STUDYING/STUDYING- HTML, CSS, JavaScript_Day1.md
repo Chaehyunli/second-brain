@@ -1,5 +1,5 @@
 ---
-title: "[STUDYING] HTML, CSS, JavaScript_Day1"
+title: "[STUDYING] 7. HTML, CSS, JavaScript_Day1"
 created: 2026-07-23
 updated: 2026-07-23
 type: blog-post
@@ -8,7 +8,7 @@ category: "STUDYING"
 published: 2026-07-23
 source_url: https://ch010104.tistory.com/313
 ---
-# [STUDYING] HTML, CSS, JavaScript_Day1
+# [STUDYING] 7. HTML, CSS, JavaScript_Day1
 
 ## 원문
 

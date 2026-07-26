@@ -82,6 +82,31 @@ def render_changed_note(
     return literalize_html_tags_in_markdown(render_note(frontmatter, old_body, title, note_type, blocks))
 
 
+def update_title_only(original: str, title: str) -> str:
+    """Repair local title drift without rewriting the archived body or metadata."""
+    frontmatter, body = split_note(original)
+    frontmatter = replace_front_value(frontmatter, "title", f'"{quote(title)}"')
+    body, replacements = re.subn(r"^# .+$", f"# {title}", body, count=1, flags=re.MULTILINE)
+    if replacements != 1:
+        raise ValueError("archived note is missing a single H1 title")
+    return f"{frontmatter}{body}"
+
+
+def title_drift_urls(local: dict[str, Path], observed: dict[str, Snapshot]) -> list[str]:
+    """Find local notes whose displayed title does not match the live source."""
+    drifted: list[str] = []
+    for url, path in local.items():
+        item = observed.get(url)
+        if item is None:
+            continue
+        text = path.read_text(encoding="utf-8")
+        expected_frontmatter = f'title: "{quote(item.title)}"'
+        expected_h1 = f"# {item.title}"
+        if expected_frontmatter not in text or expected_h1 not in text:
+            drifted.append(url)
+    return sorted(drifted)
+
+
 def restore_local_images(note: Path) -> int:
     """Reinsert already archived local images using their recorded source context."""
     manifest = note.parent / "assets" / safe_slug(note.stem) / "SOURCE.txt"
@@ -162,8 +187,11 @@ def main() -> None:
 
     notes = local_notes()
     changed, added, baseline = plan_updates(previous, observed_hashes, notes)
+    title_drift = [url for url in title_drift_urls(notes, observed) if url not in changed]
     updated = 0
+    title_fixed = 0
     added_categories: set[str] = set()
+    reindex_categories: set[str] = set()
     for url in changed:
         path = notes.get(url)
         if path is None:
@@ -180,10 +208,17 @@ def main() -> None:
         ), encoding="utf-8")
         restore_local_images(path)
         updated += 1
+    for url in title_drift:
+        path = notes[url]
+        path.write_text(update_title_only(path.read_text(encoding="utf-8"), observed[url].title), encoding="utf-8")
+        category_match = re.search(r'^category:\s*"(.*)"\s*$', path.read_text(encoding="utf-8"), re.M)
+        if category_match:
+            reindex_categories.add(category_match.group(1))
+        title_fixed += 1
     for url in added:
         category, _ = make_post(url)
         added_categories.add(category)
-    for category in added_categories:
+    for category in sorted(added_categories | reindex_categories):
         rebuild_category_index(category)
     if added_categories:
         rebuild_root_index()
@@ -192,7 +227,7 @@ def main() -> None:
     merged = {**previous, **{url: observed_hashes[url] for url in successful}}
     if merged != previous:
         save_manifest(MANIFEST, merged)
-    print(f"baseline={len(baseline)} changed={updated} added={len(added)} errors={len(errors)}")
+    print(f"baseline={len(baseline)} changed={updated} title_fixed={title_fixed} added={len(added)} errors={len(errors)}")
 
 
 if __name__ == "__main__":

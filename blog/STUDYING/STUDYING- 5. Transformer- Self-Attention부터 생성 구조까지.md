@@ -1,5 +1,5 @@
 ---
-title: "[STUDYING] 5. Transformer: Self-Attention부터 생성 구조까지"
+title: "[STUDYING] 5 - 1. Transformer: Self-Attention부터 생성 구조까지"
 created: 2026-07-21
 updated: 2026-07-21
 type: blog-post
@@ -8,7 +8,7 @@ category: "STUDYING"
 published: 2026-07-21
 source_url: https://ch010104.tistory.com/311
 ---
-# [STUDYING] 5. Transformer: Self-Attention부터 생성 구조까지
+# [STUDYING] 5 - 1. Transformer: Self-Attention부터 생성 구조까지
 
 ## 원문
 

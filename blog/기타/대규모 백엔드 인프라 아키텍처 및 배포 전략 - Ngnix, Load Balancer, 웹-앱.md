@@ -1,5 +1,5 @@
 ---
-title: "대규모 백엔드 인프라 아키텍처 및 배포 전략 - Ngnix, Load Balancer, 웹/앱"
+title: "[기타] 대규모 백엔드 인프라 아키텍처 및 배포 전략 - Ngnix, Load Balancer, 웹/앱"
 created: 2026-07-13
 updated: 2026-07-13
 type: blog-post
@@ -9,7 +9,7 @@ published: 2026-06-12
 source_url: https://ch010104.tistory.com/284
 ---
 
-# 대규모 백엔드 인프라 아키텍처 및 배포 전략 - Ngnix, Load Balancer, 웹/앱
+# [기타] 대규모 백엔드 인프라 아키텍처 및 배포 전략 - Ngnix, Load Balancer, 웹/앱
 
 ## 원문
 

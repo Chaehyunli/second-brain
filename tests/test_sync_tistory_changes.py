@@ -46,6 +46,49 @@ source_url: https://ch010104.tistory.com/1
         self.assertIn("`<h2>`", result)
         self.assertIn("[[blog/OLD/index|OLD]]", result)
         self.assertNotIn("이전 본문", result)
+
+    def test_updates_only_frontmatter_and_h1_for_title_drift(self):
+        original = """---
+title: \"이전 제목\"
+updated: 2026-01-01
+source_url: https://ch010104.tistory.com/1
+---
+
+# 이전 제목
+
+본문은 그대로여야 합니다.
+"""
+        result = sync.update_title_only(original, "새 제목")
+        self.assertEqual(
+            result,
+            """---
+title: \"새 제목\"
+updated: 2026-01-01
+source_url: https://ch010104.tistory.com/1
+---
+
+# 새 제목
+
+본문은 그대로여야 합니다.
+""",
+        )
+
+    def test_detects_title_drift_when_manifest_already_matches_remote(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            note = Path(tmp) / "blog" / "CAT" / "note.md"
+            note.parent.mkdir(parents=True)
+            note.write_text("---\ntitle: \"이전 제목\"\n---\n\n# 이전 제목\n", encoding="utf-8")
+            observed = {
+                "https://ch010104.tistory.com/1": sync.Snapshot(
+                    url="https://ch010104.tistory.com/1", title="새 제목", category="CAT",
+                    published="2026-01-01", tags=[], blocks=[], digest="a" * 64,
+                )
+            }
+            self.assertEqual(
+                sync.title_drift_urls({"https://ch010104.tistory.com/1": note}, observed),
+                ["https://ch010104.tistory.com/1"],
+            )
+
     def test_restores_existing_archived_images_after_body_rebuild(self):
         with tempfile.TemporaryDirectory() as tmp:
             note = Path(tmp) / "blog" / "CAT" / "note.md"
