@@ -107,7 +107,7 @@ Vault 안에 이미 근거가 있다면 외부 문서 전체를 다시 탐색하
 
 ## Vault 트랜잭션과 자동화
 
-- `AGENTS.md`가 공통 지침의 정본이다. `CLAUDE.md`와 `agent.md`는 호환용 동일 사본으로 유지하며, 셋이 달라지면 쓰기 작업을 중단하고 맞춘다.
+- `AGENTS.md`는 Hermes 호환 진입점이다. 현재 저장소에서는 `agent.md`를 공통 물리 원본으로 두고 `AGENTS.md`·`CLAUDE.md`가 이를 가리킨다. 셋의 내용은 하나의 계약으로 유지하며, 다르면 쓰기 작업을 중단하고 맞춘다.
 - 자동 쓰기 전에는 Vault 루트에서 `git status --porcelain`와 관련 정책을 확인한다. 사용자의 미커밋 변경이 있으면 파일을 건드리거나 커밋하지 않는다.
 - 동기화성 Git 작업은 `scripts/vault_sync_lock.sh`를 통해 잠금 아래에서 수행한다. `reset`, `force push`, 사용자 변경의 자동 stage는 금지한다.
 - 변경한 Markdown은 커밋 전 `python3 scripts/validate_vault_contract.py --changed-from-index --strict`로 링크·컨텍스트 계약을 검사한다.
