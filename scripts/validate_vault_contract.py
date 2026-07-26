@@ -63,10 +63,10 @@ def context_files_match(root: Path) -> bool:
 
 def staged_markdown_paths(root: Path) -> list[Path]:
     result = subprocess.run(
-        ["git", "diff", "--cached", "--name-only", "--", "*.md"],
-        cwd=root, check=True, capture_output=True, text=True,
+        ["git", "diff", "--cached", "--name-only", "-z", "--", "*.md"],
+        cwd=root, check=True, capture_output=True,
     )
-    return [root / line for line in result.stdout.splitlines() if line]
+    return [root / item.decode("utf-8") for item in result.stdout.split(b"\0") if item]
 
 
 def main() -> int:

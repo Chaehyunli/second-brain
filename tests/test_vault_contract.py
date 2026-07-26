@@ -6,7 +6,7 @@ import time
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from validate_vault_contract import audit_markdown, context_files_match
+from validate_vault_contract import audit_markdown, context_files_match, staged_markdown_paths
 
 
 class VaultContractTests(unittest.TestCase):
@@ -53,6 +53,16 @@ class VaultContractTests(unittest.TestCase):
             "agent.md": "different\n",
         })
         self.assertFalse(context_files_match(root))
+
+    def test_staged_paths_keep_unicode_filenames(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            note = root / "notes" / "한글 노트.md"
+            note.parent.mkdir()
+            note.write_text("# note\n", encoding="utf-8")
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            self.assertEqual(staged_markdown_paths(root), [note])
 
     def test_vault_lock_refuses_a_second_writer(self):
         with tempfile.TemporaryDirectory() as directory:
