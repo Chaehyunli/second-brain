@@ -47,12 +47,19 @@ def text_only(fragment: str) -> str:
 
 
 def category_of(source: str, title: str = "") -> str:
-    value = meta(source, "article:section")
-    if not value:
-        hit = re.search(r'<p[^>]+class=["\']category["\'][^>]*>(.*?)</p>', source, re.I | re.S)
-        value = text_only(hit.group(1)) if hit else ""
-    if value:
-        return value
+    entry = re.search(r'window\.T\.entryInfo\s*=\s*\{.*?"categoryLabel"\s*:\s*"((?:\\.|[^"\\])*)"', source, re.DOTALL)
+    if entry:
+        return bytes(entry.group(1), 'utf-8').decode('unicode_escape') if '\\' in entry.group(1) else entry.group(1)
+    visible = re.search(r'<strong[^>]+class=["\'][^"\']*\btit_category\b[^"\']*["\'][^>]*>.*?<a[^>]*>(.*?)</a>', source, re.I | re.S)
+    if visible:
+        value = text_only(visible.group(1))
+        if value:
+            return value
+    hit = re.search(r'<p[^>]+class=["\']category["\'][^>]*>(.*?)</p>', source, re.I | re.S)
+    if hit:
+        value = text_only(hit.group(1))
+        if value:
+            return value
     if title.startswith("[STUDYING]"):
         return "STUDYING"
     if re.match(r"^\[(?:스프링|모든 개발자를 위한 HTTP 웹 기본 지식)", title):

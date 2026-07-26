@@ -16,9 +16,12 @@ class TistoryCategoryRoutingTests(unittest.TestCase):
             "INFLEARN",
         )
 
-    def test_explicit_tistory_category_has_priority(self):
-        source = '<meta property="article:section" content="PROJECT">'
-        self.assertEqual(category_of(source, "[STUDYING] 임의 제목"), "PROJECT")
+    def test_tistory_entry_category_label_has_priority_over_service_section(self):
+        source = '''
+        window.T.entryInfo = {"entryId":316,"categoryId":1321517,"categoryLabel":"INFLEARN"};
+        <meta property="article:section" content="IT 인터넷">
+        '''
+        self.assertEqual(category_of(source, "[아무 제목]"), "INFLEARN")
 
 
 if __name__ == "__main__":
