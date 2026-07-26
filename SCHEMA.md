@@ -20,6 +20,37 @@
 - New or changed pages must be listed in `index.md` and logged in `log.md`.
 - New tags must be added below before use.
 
+## Typed metadata contract
+
+새로 생성하거나 명시적으로 갱신하는 노트에만 아래 공통 필드를 점진 적용한다. 기존 노트를 형식 통일만을 위해 일괄 재작성하지 않는다.
+
+```yaml
+schema_version: 1
+id: stable-source-or-local-id
+title:
+type:
+status: draft # draft | verified | frozen | superseded
+created:
+updated:
+tags: []
+sources: []
+```
+
+- `blog-post`: `source_url`, `published_at`, `category`를 추가한다.
+- `notion-learning-note`: `notion_page_id`, `notion_url`, `content_sha256`를 추가한다.
+- `project`·`experience`: `period`, `evidence_status`, `sources`를 추가한다.
+- `course-note`: `course`, `module`, `source_material`을 추가한다.
+- `research-note`: `source_url`, `checked_at`, `confidence`를 추가한다.
+
+`id`는 파일명 변경과 별개로 유지하는 안정 식별자다. 외부 원본이 있으면 URL·Notion ID 등 원본 식별자를 우선하며, 제목 유사도만으로 병합하지 않는다. 태그는 자유어가 아니라 `domain/`, `concept/`, `kind/`, `source/`, `status/`, `evidence/` namespace를 우선한다.
+
+## Inbox / Staging contract
+
+- `inbox/`에는 신뢰되지 않은 외부 자동 수집물·AI 초안만 둔다. 사용자가 직접 승인한 Notion/티스토리 기준본은 기존 source 정책을 따른다.
+- Inbox 노트에는 `captured_at`, `review_status: pending`, `source_url` 또는 `sources`, `agent_generated`를 남긴다.
+- 검토가 끝난 자료만 적합한 canonical 폴더로 옮기며, 원본 링크·확인일·근거 상태를 유지한다.
+- 자동화는 Inbox의 자료를 삭제·대량 이동·사실 확정하지 않는다.
+
 ## Tag taxonomy
 
 - Profile: `profile`, `career`, `education`, `award`, `credential`

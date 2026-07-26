@@ -6,6 +6,8 @@
 
 - [[index]] — 검증된 프로젝트·경험·수상·자격·기술 지식의 지도
 - [[SCHEMA]] — 사실 검증, 개인정보 보호, 파일·태그 작성 규칙
+- [[AGENTS]] — Hermes·Codex·Claude 공통 작업 계약
+- [[inbox/README|Inbox / Staging]] — 외부 자동 수집물·AI 초안의 검토 대기 영역
 - [[log]] — Wiki에 반영한 변경 기록
 
 ## 이 Vault에 담는 것
