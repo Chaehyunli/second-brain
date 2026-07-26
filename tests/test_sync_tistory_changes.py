@@ -89,6 +89,24 @@ source_url: https://ch010104.tistory.com/1
                 ["https://ch010104.tistory.com/1"],
             )
 
+    def test_renames_title_drift_file_and_repairs_explicit_wikilinks(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            note = root / "blog" / "STUDYING" / "STUDYING- Day1.md"
+            note.parent.mkdir(parents=True)
+            note.write_text("# 새 제목\n", encoding="utf-8")
+            index = note.parent / "index.md"
+            index.write_text("[[blog/STUDYING/STUDYING- Day1|새 제목]]\n", encoding="utf-8")
+            related = root / "notes" / "related.md"
+            related.parent.mkdir()
+            related.write_text("[[blog/STUDYING/STUDYING- Day1]]\n", encoding="utf-8")
+            renamed = sync.rename_note_to_title(note, "[STUDYING] 7. Day1", root / "blog", root)
+            self.assertEqual(renamed.name, "STUDYING- 7. Day1.md")
+            self.assertTrue(renamed.exists())
+            self.assertFalse(note.exists())
+            self.assertIn("[[blog/STUDYING/STUDYING- 7. Day1|새 제목]]", index.read_text(encoding="utf-8"))
+            self.assertIn("[[blog/STUDYING/STUDYING- 7. Day1]]", related.read_text(encoding="utf-8"))
+
     def test_restores_existing_archived_images_after_body_rebuild(self):
         with tempfile.TemporaryDirectory() as tmp:
             note = Path(tmp) / "blog" / "CAT" / "note.md"

@@ -20,7 +20,7 @@ from enrich_tistory_blog_bodies import (
     render_note,
     split_note,
 )
-from rebuild_tistory_blog import category_of, meta, quote, tags_of
+from rebuild_tistory_blog import category_of, meta, quote, safe_name, tags_of
 from sync_new_tistory_posts import (
     ROOT,
     rebuild_category_index,
@@ -90,6 +90,25 @@ def update_title_only(original: str, title: str) -> str:
     if replacements != 1:
         raise ValueError("archived note is missing a single H1 title")
     return f"{frontmatter}{body}"
+
+
+def rename_note_to_title(path: Path, title: str, blog_root: Path = BLOG, vault_root: Path = ROOT) -> Path:
+    """Rename an archive note from its canonical title and repair explicit inbound wikilinks."""
+    target = path.with_name(f"{safe_name(title)}.md")
+    if target == path:
+        return path
+    if target.exists():
+        raise FileExistsError(f"title-derived path already exists: {target}")
+    old_link = f"blog/{path.relative_to(blog_root).with_suffix('').as_posix()}"
+    new_link = f"blog/{target.relative_to(blog_root).with_suffix('').as_posix()}"
+    path.rename(target)
+    link_pattern = re.compile(rf"\[\[{re.escape(old_link)}(?=\| |\||\]\])")
+    for candidate in vault_root.rglob("*.md"):
+        text = candidate.read_text(encoding="utf-8")
+        updated = link_pattern.sub(f"[[{new_link}", text)
+        if updated != text:
+            candidate.write_text(updated, encoding="utf-8")
+    return target
 
 
 def title_drift_urls(local: dict[str, Path], observed: dict[str, Snapshot]) -> list[str]:
@@ -190,6 +209,7 @@ def main() -> None:
     title_drift = [url for url in title_drift_urls(notes, observed) if url not in changed]
     updated = 0
     title_fixed = 0
+    filename_fixed = 0
     added_categories: set[str] = set()
     reindex_categories: set[str] = set()
     for url in changed:
@@ -207,14 +227,23 @@ def main() -> None:
             blocks=item.blocks,
         ), encoding="utf-8")
         restore_local_images(path)
+        renamed = rename_note_to_title(path, item.title)
+        if renamed != path:
+            filename_fixed += 1
+        category_match = re.search(r'^category:\s*"(.*)"\s*$', renamed.read_text(encoding="utf-8"), re.M)
+        if category_match:
+            reindex_categories.add(category_match.group(1))
         updated += 1
     for url in title_drift:
         path = notes[url]
         path.write_text(update_title_only(path.read_text(encoding="utf-8"), observed[url].title), encoding="utf-8")
-        category_match = re.search(r'^category:\s*"(.*)"\s*$', path.read_text(encoding="utf-8"), re.M)
+        title_fixed += 1
+        renamed = rename_note_to_title(path, observed[url].title)
+        if renamed != path:
+            filename_fixed += 1
+        category_match = re.search(r'^category:\s*"(.*)"\s*$', renamed.read_text(encoding="utf-8"), re.M)
         if category_match:
             reindex_categories.add(category_match.group(1))
-        title_fixed += 1
     for url in added:
         category, _ = make_post(url)
         added_categories.add(category)
@@ -227,7 +256,7 @@ def main() -> None:
     merged = {**previous, **{url: observed_hashes[url] for url in successful}}
     if merged != previous:
         save_manifest(MANIFEST, merged)
-    print(f"baseline={len(baseline)} changed={updated} title_fixed={title_fixed} added={len(added)} errors={len(errors)}")
+    print(f"baseline={len(baseline)} changed={updated} title_fixed={title_fixed} filename_fixed={filename_fixed} added={len(added)} errors={len(errors)}")
 
 
 if __name__ == "__main__":
