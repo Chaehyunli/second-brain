@@ -47,3 +47,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 7/24 — HTML, CSS, JavaScript Day2
 - [[notion/SKALA/7-24 HTML, CSS, JavaScript_Day2/7-24 HTML, CSS, JavaScript— Day2 핵심 정리]]
 - [[notion/SKALA/7-24 HTML, CSS, JavaScript_Day2/7-24 HTML, CSS, JavaScript— Day2_실습]]
+
+## 7/27 — 스마트 데이터 이해 및 활용 Day1
+- [[notion/SKALA/7-27 스마트 데이터 이해 및 활용_Day1/7-27 스마트 데이터 이해 및 활용_Day1 핵심 정리]]
+- [[notion/SKALA/7-27 스마트 데이터 이해 및 활용_Day1/7-27 스마트 데이터 이해 및 활용_Day1 실습]]
