@@ -1,0 +1,2234 @@
+---
+title: "[STUDYING] 10. 스마트 데이터 이해 및 활용_Day2_핵심 정리"
+created: 2026-07-28
+updated: 2026-07-28
+type: blog-post
+tags: ["blog", "technical-writing"]
+category: "STUDYING"
+published: 2026-07-28
+source_url: https://ch010104.tistory.com/323
+---
+# [STUDYING] 10. 스마트 데이터 이해 및 활용_Day2_핵심 정리
+
+## 원문
+
+https://ch010104.tistory.com/323
+
+## 노트 유형
+
+`concept`
+
+## 핵심 개념과 선택 맥락
+
+데이터를 다루는 세 계층을 목적과 처리 방식으로 구분한 비교임. DBMS는 실시간 트랜잭션, Data Warehouse는 축적된 데이터 분석, Data Mining은 그 데이터에서 패턴·지식을 뽑아내는 단계로 이어짐.
+
+마이크로서비스 환경에서 RDBMS만으로 부족한 부분(비동기 전파, 검색, 캐싱)을 세 미들웨어로 보완하는 연동 패턴임.
+
+## 원문 기반 개념 정리
+
+### DBMS vs Data Warehouse vs Data Mining
+
+데이터를 다루는 세 계층을 목적과 처리 방식으로 구분한 비교임. DBMS는 실시간 트랜잭션, Data Warehouse는 축적된 데이터 분석, Data Mining은 그 데이터에서 패턴·지식을 뽑아내는 단계로 이어짐.
+
+### MSA 환경에서 DB 연동 — Kafka / Elasticsearch / Redis
+
+마이크로서비스 환경에서 RDBMS만으로 부족한 부분(비동기 전파, 검색, 캐싱)을 세 미들웨어로 보완하는 연동 패턴임.
+
+### Kafka 연동 패턴
+
+목적: 비동기 메시징, 이벤트 기반 아키텍처, 서비스 간 decoupling
+
+DB 변경사항(Event Sourcing)을 Kafka Topic으로 전파 → 다른 마이크로서비스가 구독
+
+Kafka는 서비스 사이에 메시지(요청/이벤트)를 중계 및 통제함
+
+Schema Registry: Producer/Consumer 간 스키마(Avro/Protobuf)를 중앙 관리해 호환성 보장
+
+주의: Kafka 메시지 전송 전 DB COMMIT을 완료하거나 Kafka Transaction 기능으로 atomic 처리해야 함 (DB 반영과 메시지 전송의 불일치 방지)
+
+→ DB 저장만 되고 Kafka 메시지가 안 나가거나, 반대로 DB는 실패했는데 Kafka 메시지만 나가는 '데이터 불일치 현상’을 방지하기 위함
+
+### Elasticsearch 연동
+
+목적: 빠른 검색, 필터링, 로그 분석, 비정형 텍스트 인덱싱
+
+DB → Logstash/Debezium → Elasticsearch 동기화 (CDC 패턴)
+
+CDC 패턴 : 데이터베이스에 일어나는 모든 변경 사항을 실시간으로 감지하고 추출해서, 다른 시스템으로 전달하는 기술
+
+MSA에서 분산되어 있는 DB간에 주기적으로 SELECT 문으로 데이터를 동기화하는 것은 비효율적! → 변경사항이 있을 때만, 변경된 데이터만 넘기자!!(CDC)
+
+ES는 ACID 지원이 부족해서, 빠른 검색을 위해서 CDC로 ES에 복사본을 실시간으로 보내서 처리함
+
+주의: ES는 Eventually Consistent라 실시간 정합성 보장이 불가함 → RDBMS와 역할을 분리해서, 원본·정합성은 RDBMS가, 검색은 ES가 담당하도록 설계해야 함
+
+### Redis 연동
+
+목적: 캐시(Cache-Aside/Write-Through), 세션 저장, Pub/Sub, Rate Limiting
+
+캐시 히트율 목표는 90% 이상, Cache Stampede(캐시 만료 순간 요청 폭주)는 Lock 또는 Jitter로 방지
+
+주의: Redis는 인메모리라 데이터 유실 가능 → persistence 설정(RDB/AOF) 확인 필수
+
+Redis는 전원이 꺼지면 메모리의 데이터가 날아가기 때문에 백업본을 남겨야한다는 뜻
+
+### 집계 함수 (Aggregate Functions) — COUNT / SUM / AVG
+
+여러 행을 하나의 값으로 요약하는 함수임. 공통적으로 NULL 처리 규칙이 핵심 포인트임.
+
+### COUNT()
+
+행의 개수를 반환하며, 인자에 따라 세는 대상이 달라짐.
+
+### SUM() / AVG()
+
+합계와 평균을 구함. 활용 예: 부서별 평균 급여, 카테고리별 총 매출.
+
+NULL은 자동으로 제외하고 계산함 (분모에도 안 들어감)
+
+AVG의 결과가 NULL인 경우: 모든 값이 NULL이면 AVG(NULL) = NULL이며, 0이 아님에 유의
+
+### 집계 함수 (Aggregate Functions) — MIN / MAX / FILTER
+
+### MIN() / MAX()
+
+최댓값·최솟값을 구함.
+
+숫자뿐 아니라 문자열에도 사용 가능하며, 이때는 알파벳·유니코드 순서로 비교함
+
+### FILTER (PostgreSQL 전용)
+
+집계 함수에 조건을 붙여, 특정 조건을 만족하는 행만 골라 집계하는 문법임 (조건부 집계).
+
+예시: COUNT(*) FILTER (WHERE score >= 80) → 점수 80 이상인 행만 카운트
+
+PostgreSQL 전용 문법이라, MySQL/Oracle에서는 SUM(CASE WHEN score >= 80 THEN 1 ELSE 0 END) 형태로 대체함
+
+### GROUP BY / HAVING 기본 패턴
+
+GROUP BY는 지정한 키로 행을 묶어 그룹별 집계를 수행함. SELECT 절에는 그룹 키 또는 집계 함수만 올 수 있음 (그 외 일반 컬럼은 불가).
+
+### WHERE vs HAVING (필터 시점 차이)
+
+가장 헷갈리는 지점이며, 필터가 적용되는 시점이 다름.
+
+### 기본 쿼리 구조
+
+```sql
+SELECT department_id,
+       COUNT(*) AS emp_count,
+       ROUND(AVG(salary), 0) AS avg_salary,
+       MAX(salary) AS max_salary,
+       MIN(salary) AS min_salary
+FROM employees
+WHERE hire_date >= '2020-01-01'   -- 집계 전 행 필터
+GROUP BY department_id
+HAVING COUNT(*) >= 3              -- 집계 후 그룹 필터
+   AND AVG(salary) >= 5000
+ORDER BY avg_salary DESC;
+```
+
+실행 순서상 WHERE로 행을 먼저 걸러낸 뒤 그룹을 묶고, 그 그룹에 HAVING을 적용함
+
+COUNT(DISTINCT col)로 중복 제거 후 고유 개수를 셀 수 있음 (예: 재구매 고객 수)
+
+### ROLLUP / CUBE — 다차원 소계 집계
+
+GROUP BY에 소계·총계 행을 자동으로 추가해주는 확장 문법임. 소계 자리의 값은 NULL로 표시됨.
+
+### ROLLUP vs CUBE
+
+예시 데이터: (East,A,100), (East,B,150), (West,A,200), (West,B,50)
+
+ROLLUP(region, product) 결과에는 지역별 소계 (East,NULL,250)·(West,NULL,250)와 전체합 (NULL,NULL,500)이 추가됨
+
+CUBE(region, product)는 여기에 상품별 소계 (NULL,A,300)·(NULL,B,200)까지 더 추가됨
+
+SET은 SET 에 넣은 것만
+
+### 원본 데이터 (sales_summary)
+
+미리 소계를 계산해두면:
+
+지역별 합 → East = 250, West = 250
+
+상품별 합 → A = 300 (100+200), B = 200 (150+50)
+
+전체 합 → 500
+
+### ROLLUP(region, product) 결과
+
+ROLLUP은 적은 순서(region → product)를 따라 위로만 접어 올라가는 계층 집계야. 그래서 "지역별 소계"와 "전체 합"은 나오지만, "상품별 소계"는 안 나옴
+
+여기서 NULL은 "이 차원을 접었다(=소계)"는 표시야. product가 NULL이면 "상품 구분 없이 그 지역 전체를 합쳤다"는 뜻.
+
+핵심은 (NULL, A, ...) 같은 상품만의 소계 행이 없다는 점. region을 먼저 접는 계층 구조라, region을 건너뛰고 product만 묶는 조합은 만들지 않아.
+
+### CUBE(region, product) 결과
+
+CUBE는 가능한 모든 차원 조합을 다 만들어. ROLLUP 결과에 더해서 상품별 소계까지 붙어.
+
+굵게 표시한 두 줄 (NULL, A, 300), (NULL, B, 200)이 ROLLUP엔 없고 CUBE에만 생기는 부분이야.
+
+### 한눈에 비교
+
+정리하면:
+
+ROLLUP = region을 기준으로 한 방향으로만 접음 → 지역별 소계 + 총합. 조합이 적어서 빠름. "지역별로 쪼갠 뒤 마지막에 전체 합" 같은 리포트에 딱.
+
+CUBE = 모든 축을 독립적으로 접었다 폈다 → 지역별 + 상품별 + 총합 전부. 조합이 많아 느림. "어느 각도로 잘라도 소계가 필요한" 피벗 테이블류에 씀.
+
+### GROUPING 함수
+
+소계 행의 NULL이 집계용으로 생긴 것인지, 원래 데이터의 실제 NULL인지 구분하는 함수임.
+
+GROUPING(col) = 1이면 그 칸은 집계(소계)용 NULL, 0이면 실제 값
+
+CASE WHEN GROUPING(region) = 1 THEN '전체' ELSE region END 형태로 소계 행에 라벨을 붙여 가독성을 높임
+
+### ROLLUP / CUBE DBMS별 지원 현황
+
+문법 자체는 SQL 표준이지만 DBMS·버전마다 지원 범위가 다름.
+
+MySQL 계열은 CUBE 지원이 불완전하고 버전 의존성이 크므로, 사용 전 버전 확인이 필요함
+
+GROUPING_ID()는 여러 컬럼의 GROUPING 결과를 하나의 비트값으로 묶어 소계 수준을 식별하게 해줌 (Oracle·SQL Server)
+
+### 집계 쿼리 성능 최적화 포인트 (1)
+
+집계·그룹화 쿼리를 실무에서 빠르게 돌리기 위한 주의점과 기법임.
+
+### SELECT에 GROUP BY 키 이외 컬럼 포함 금지
+
+GROUP BY를 쓰면 SELECT에는 그룹 키 또는 집계 함수만 올 수 있음.
+
+MySQL의 ONLY_FULL_GROUP_BY 모드에서 위반 시 에러 발생
+
+이 모드가 꺼져 있으면 에러 대신 그룹 내 임의값을 반환해 결과가 부정확해짐 (더 위험)
+
+해결: 필요한 컬럼은 GROUP BY에 넣거나 집계 함수(MAX, MIN 등)로 명시함
+
+### OFFSET 기반 페이지네이션의 함정
+
+LIMIT 10 OFFSET 990은 DB가 앞의 990개 행을 실제로 읽고 버린 뒤 10개만 반환함.
+
+뒤 페이지로 갈수록 건너뛰는 행이 늘어 비용이 O(N)으로 증가함
+
+해결: Cursor/Keyset 방식 — 마지막으로 본 값을 기준으로 이어서 조회함
+
+```text
+WHERE id > :last_id ORDER BY id LIMIT 10
+```
+
+이 방식은 인덱스를 타고 바로 다음 지점으로 점프하므로 페이지가 뒤로 가도 비용이 일정함.
+
+→ 이 last_id를 백엔드나 프론트단에서 기억하고 넘기는 것임
+
+### ORDER BY + 인덱스 활용
+
+정렬 기준 컬럼에 인덱스가 있으면, 이미 정렬된 순서로 읽을 수 있어 별도 정렬(Sort) 연산이 사라짐.
+
+인덱스 컬럼을 ORDER BY 기준으로 사용 → 실행계획에서 Sort 노드 제거 → 성능 향상
+
+예: INDEX(dept_id, salary DESC)는 GROUP BY dept_id ORDER BY salary DESC 쿼리에 최적화됨 (그룹 키 + 정렬 방향까지 인덱스와 일치)
+
+INDEX(dept_id, salary DESC) :
+
+1순위: dept_id를 기준으로 오름차순(기본값, ASC) 정렬
+
+- 2순위: dept_id 값이 같은 데이터들끼리는 salary를 기준으로 내림차순(DESC, 역순) 정렬
+
+### 집계 쿼리 성능 최적화 포인트 (2)
+
+### 통계 테이블 전략 (대용량 집계)
+
+매번 대용량 테이블을 집계하는 대신, 자주 쓰는 집계값을 미리 계산해 별도 테이블에 저장해두는 방식임 (Materialized 집계).
+
+예: user_stats(user_id, total_orders, last_order_date) 테이블을 두고, 원본 변경 시 트리거로 갱신함
+
+또는 Materialized View를 만들고 주기적으로 REFRESH해 최신화함
+
+트레이드오프: 조회는 빨라지지만 저장 공간이 늘고, 갱신 시점과 실제 데이터 사이에 약간의 지연이 생길 수 있음
+
+### AI 서비스 연계
+
+집계·그룹화는 AI 결과를 분석·시각화하는 데도 그대로 쓰임.
+
+예: 임베딩 클러스터별 평균 유사도, 태그 빈도 등을 GROUP BY로 집계한 뒤 시각화함
+
+### JOIN 알고리즘
+
+두 테이블을 결합할 때 옵티마이저가 상황에 따라 고르는 물리적 조인 방식들임. 각 방식은 데이터 크기·인덱스 유무·정렬 상태에 따라 유불리가 갈림.
+
+### Nested Loop Join (NLJ)
+
+외부 테이블의 행 하나마다 내부 테이블을 탐색하는 방식임 (이중 반복문 구조).
+
+내부 테이블에 인덱스가 있으면 탐색이 빨라 유리함
+
+외부 집합이 작거나 내부에 인덱스가 있을 때 적합함
+
+반대로 양쪽 다 크면 반복 횟수가 폭증해 느려짐
+
+### Hash Join (HJ)
+
+작은 쪽으로 해시 테이블을 만들고(빌드), 큰 쪽을 그 해시에 대조하는(프로브) 방식임.
+
+동등 조인(=)에 강력함 — 해시로 O(1) 조회
+
+메모리가 부족하면 디스크로 분할 처리함 (Spill)
+
+대용량 등가 조인이거나 인덱스가 없을 때 적합함
+
+### Sort-Merge Join (SMJ)
+
+양쪽을 조인 키로 정렬한 뒤, 정렬된 순서를 따라가며 병합·매칭하는 방식임.
+
+이미 정렬된 데이터면 정렬 비용이 없어 유리함
+
+등가뿐 아니라 범위·비등가 조인도 가능함 (Hash Join과의 차이점)
+
+이미 정렬된 대용량·스트리밍 데이터에 적합함
+
+### BNL / BKA (MySQL)
+
+NLJ의 반복 탐색 비용을 줄이려는 MySQL의 개선 방식임.
+
+Block Nested Loop: 외부 행을 하나씩이 아니라 여러 행을 버퍼에 모아 한 번에 내부 테이블을 탐색함
+
+Batched Key Access: 모은 키들을 배치로 인덱스 조회해 랜덤 접근을 줄임
+
+버퍼 크기는 join_buffer_size로 튜닝함
+
+### DBMS별 JOIN 엔진 비교
+
+같은 조인이라도 DBMS마다 지원 알고리즘과 선택 방식, 제어 수단이 다름.
+
+공통점: 최신 버전들은 실행 중 통계와 실제 행 수를 비교해 조인 방식을 바꾸는 적응형(Adaptive) 기능을 갖춤
+
+MySQL은 Hash Join이 8.0.18부터 도입되어, 그 이전 버전은 BNL로 대용량 조인을 처리함
+
+### 실행계획으로 JOIN 알고리즘 확인
+
+옵티마이저가 실제로 어떤 조인을 골랐는지는 EXPLAIN/EXPLAIN ANALYZE로 확인함. 특히 ANALYZE는 예측이 아닌 실측값을 보여줌.
+
+### PostgreSQL 실행계획 읽기
+
+```sql
+EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
+SELECT s.name, c.title, e.score
+FROM students s
+  JOIN enrollments e ON e.student_id = s.id
+  JOIN courses c ON c.id = e.course_id
+WHERE s.grade = 3;
+
+-- 결과 해석:
+-- Hash Join (cost=12.5..45.8 rows=200 width=32)
+-- (actual time=0.5..2.3 rows=185 loops=1)
+-- Hash Cond: (e.student_id = s.id)
+-- Buffers: shared hit=12 read=5 ← 디스크 읽기 횟수
+-- -> Seq Scan on enrollments ← Full Scan (인덱스 필요?)
+-- -> Hash
+-- -> Index Scan on students ← 인덱스 사용
+-- Index Cond: (grade = 3)
+```
+
+출력에서 확인할 지점:
+
+Hash Join 등 맨 앞에 찍히는 노드 이름이 실제 선택된 조인 알고리즘임
+
+cost=...는 옵티마이저의 예측 비용, actual time=...은 실제 소요 시간 — 둘의 괴리가 크면 통계가 부정확한 것임
+
+rows=200 (예측) vs rows=185 (실측): 예측과 실제 행 수 차이가 크면 실행계획이 틀어질 수 있음
+
+Buffers: shared hit=12 read=5에서 read는 디스크에서 실제로 읽은 횟수임 (클수록 캐시 미스)
+
+Seq Scan이 보이면 Full Scan 중이라 인덱스 추가를 검토하고, Index Scan이면 인덱스를 잘 타는 것임
+
+### MySQL에서 Hash Join 확인
+
+```sql
+EXPLAIN ANALYZE
+SELECT * FROM customers c JOIN orders o ON c.id = o.customer_id;
+```
+
+출력에 > Inner hash join (...)이 보이면 Hash Join이 선택된 것임 (8.0.18+)
+
+Hash Batches가 1보다 크면 해시 테이블이 메모리에 다 안 들어가 디스크로 분할된 상태 → work_mem 증가를 검토함 (메모리 Spill 발생)
+
+### 체크포인트 요약
+
+조인 알고리즘 타입을 먼저 확인함
+
+예측 행 수(rows) vs 실제 행 수, Buffers의 디스크 읽기량, Spill 발생 여부를 함께 점검함
+
+### OIN 성능 튜닝 실전 체크리스트
+
+### 공통 원칙 (모든 DBMS)
+
+세 슬라이드 공통으로 반복되는 기본 수칙임.
+
+FK 컬럼에는 반드시 인덱스를 걸어야 함 (ON DELETE CASCADE 대상 컬럼도 포함) — 조인·삭제 전파 시 Full Scan을 막음
+
+작은 테이블 × 큰 테이블 + 인덱스 조합 → Nested Loop가 유리함
+
+대형 × 대형 조인 → Hash가 유리함
+
+ON 조건 누락 주의 → 조인 조건이 빠지면 카르테시안 곱(N×M행)이 발생해 결과가 폭증함
+
+### PostgreSQL 튜닝
+
+큰 동등 조인이 느리면 work_mem을 늘리고 hash_mem_multiplier를 확인함 (해시 테이블용 메모리 확보)
+
+enable_parallel_hash = on과 max_parallel_workers_per_gather 상향으로 병렬 해시 조인을 활용함
+
+Hash Batches가 1보다 크면 Spill이 발생한 것 → work_mem 부족 신호임
+
+### MySQL 튜닝
+
+인덱스 없는 조인은 BNL/BKA로 처리되므로 join_buffer_size를 적절히 설정함
+
+8.0.18+ 에서는 Hash Join이 후보가 되므로 EXPLAIN ANALYZE로 실제 선택 여부를 확인함
+
+과대 설정 주의: join_buffer_size는 스레드 수 × 조인 수만큼 메모리가 할당되므로 너무 크게 잡으면 전체 메모리를 압박함
+
+### SQL Server 튜닝
+
+tempdb Spill(Hash/Sort Warning)이 감지되면 통계를 갱신하고 MAXDOP(병렬 처리 수준)을 조정함
+
+Adaptive Join 활용(2017+): 런타임에 실제 행 수를 보고 NL ↔ Hash를 자동 전환함
+
+### JOIN 개념 및 종류 개요
+
+### JOIN의 본질
+
+모든 JOIN은 내부적으로 두 테이블의 카르테시안 곱(Cartesian Product)을 만든 뒤, ON 조건을 만족하는 행만 걸러내는 연산임.
+
+A JOIN B ON 조건 → 개념상 A × B를 다 펼친 뒤 조건 충족 행만 반환
+
+종류의 차이는 "조건에 안 맞는 행을 버리느냐, NULL로 채워 남기느냐"에서 갈림
+
+### INNER JOIN
+
+두 테이블에 모두 매칭되는 행만 반환함 (교집합)
+
+가장 일반적인 조인이며, JOIN만 쓰면 기본이 INNER JOIN임
+
+### LEFT OUTER JOIN
+
+왼쪽 테이블은 전부 남기고, 오른쪽에 짝이 없으면 그 자리를 NULL로 채움
+
+"모든 A를 보여주되 B가 없으면 NULL" → 예: 수강 안 한 학생도 목록에 표시
+
+### RIGHT OUTER JOIN
+
+오른쪽 테이블을 전부 남기고, 왼쪽에 짝이 없으면 NULL로 채움 (LEFT의 반대)
+
+실무에서는 방향만 바꿔 LEFT JOIN으로 다시 쓰는 것이 관례임 (읽는 순서와 일치해 가독성이 좋음)
+
+### FULL OUTER JOIN
+
+양쪽 테이블을 모두 보존하고, 한쪽에만 있는 행은 반대편을 NULL로 채움
+
+MySQL은 미지원 → LEFT JOIN 결과와 RIGHT JOIN 결과를 UNION으로 합쳐 우회함
+
+### SELF JOIN
+
+같은 테이블을 별칭 두 개로 두어 자기 자신과 조인하는 방식임
+
+계층형·자기참조 데이터에 사용 (예: 직원 테이블에서 직원-상사 관계 연결)
+
+### CROSS JOIN
+
+조건 없이 카르테시안 곱(N × M행) 전체를 그대로 반환함
+
+의도적으로 모든 조합이 필요할 때만 사용하고, ON 조건 누락으로 인한 실수와 구분해야 함 (조건 없는 JOIN이 곧 CROSS JOIN 결과가 됨)
+
+### INNER / LEFT / RIGHT / FULL OUTER JOIN 비교
+
+student(id, name)와 enroll(student_id, course, grade)를 조인하는 예제로, 각 조인이 어떤 행을 남기는지 비교함.
+
+### INNER JOIN — 수강한 학생만
+
+```sql
+SELECT s.name, e.course, e.grade
+FROM student s INNER JOIN enroll e ON s.id = e.student_id;
+```
+
+양쪽에 공통으로 짝이 있는 행만 반환함 (수강 기록 없는 학생은 빠짐).
+
+### LEFT OUTER JOIN — 모든 학생 포함
+
+```sql
+SELECT s.name, e.course, e.grade
+FROM student s LEFT JOIN enroll e ON s.id = e.student_id;
+```
+
+학생 전체를 남기고, 수강 기록이 없으면 course·grade가 NULL로 채워짐.
+
+### RIGHT OUTER JOIN — 모든 수강 기록 포함
+
+```sql
+SELECT s.name, e.course
+FROM student s RIGHT JOIN enroll e ON s.id = e.student_id;
+```
+
+수강 기록 전체를 남김. 학생 테이블에 없는 고아(orphan) 수강 기록도 포함되며, 이때 학생 정보가 NULL이 됨.
+
+### FULL OUTER JOIN — 양쪽 모두 보존
+
+PostgreSQL·Oracle·SQL Server는 FULL OUTER JOIN을 직접 지원함
+
+MySQL은 미지원 → LEFT JOIN 결과와 RIGHT JOIN 결과를 UNION으로 합쳐 우회함
+
+```sql
+SELECT s.name, e.course FROM student s LEFT JOIN enroll e ON s.id = e.student_id
+UNION
+SELECT s.name, e.course FROM student s RIGHT JOIN enroll e ON s.id = e.student_id;
+```
+
+### SELF JOIN / CROSS JOIN / Anti-Join 패턴
+
+### SELF JOIN — 계층 조회
+
+같은 테이블을 별칭 두 개로 조인해 자기참조 관계를 펼침.
+
+```sql
+SELECT e.name AS employee, m.name AS manager
+FROM employees e
+  LEFT JOIN employees m ON m.id = e.manager_id
+ORDER BY m.name NULLS FIRST, e.name;
+```
+
+LEFT JOIN을 쓰는 이유: 상사가 없는 최상위 직원(CEO 등)도 결과에 남기기 위함
+
+NULLS FIRST로 상사 없는 행을 맨 위에 정렬함
+
+### Anti-Join — 한 번도 매칭되지 않은 행 찾기
+
+"수강 기록이 전혀 없는 학생"처럼 반대쪽에 짝이 없는 행만 뽑는 패턴이며, 세 가지 방법이 있음.
+
+방법 1 — LEFT JOIN + IS NULL (직관적):
+
+```sql
+SELECT s.name FROM student s
+  LEFT JOIN enroll e ON e.student_id = s.id
+WHERE e.student_id IS NULL;
+```
+
+방법 2 — NOT EXISTS (성능·NULL 안전, 권장):
+
+```sql
+SELECT s.name FROM student s
+WHERE NOT EXISTS (SELECT 1 FROM enroll e WHERE e.student_id = s.id);
+```
+
+방법 3 — NOT IN (NULL 함정 주의):
+
+```sql
+SELECT s.name FROM student s WHERE s.id NOT IN (SELECT student_id FROM enroll);
+```
+
+NOT IN의 함정: 서브쿼리 결과에 NULL이 하나라도 있으면 전체 결과가 빈 집합이 됨 (NULL과의 비교가 UNKNOWN이 되기 때문)
+
+NULL 때문에 인덱스를 활용하지 못하고, 테이블 전체를 훑는 Full Table Scan을 하기 때문에 지양
+
+그래서 NOT IN보다 NOT EXISTS가 NULL 안전성·성능 모두 우수해 실무에서 선호됨
+
+조건을 만족하는 첫번 째 행을 찾는 즉시 스캔을 멈춤
+
+### CROSS JOIN — 모든 조합 생성
+
+```sql
+SELECT s.id AS student_id, c.id AS course_id
+FROM students s CROSS JOIN courses c
+LIMIT 100;
+```
+
+전체 학생 × 전체 강좌의 모든 조합을 만듦 (추천 후보 생성 등). 행이 폭발하므로 반드시 LIMIT을 걸거나 의도를 명확히 확인함.
+
+### 실무 집계 JOIN — 고객별 주문 통계
+
+### 고객별 주문건수·총액 (주문 없는 고객 포함)
+
+```text
+SELECT
+  c.customer_name,
+  COUNT(o.order_id) AS order_count,
+  COALESCE(SUM(o.amount), 0) AS total_spent,
+  MAX(o.order_date) AS last_order_date
+FROM customers c
+  LEFT JOIN orders o ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.customer_name
+ORDER BY total_spent DESC;
+```
+
+LEFT JOIN + GROUP BY로 주문이 없는 고객도 결과에 남김
+
+COUNT(o.order_id)는 주문 없는 고객에서 NULL을 세지 않아 0이 됨 (COUNT(*)와의 차이)
+
+COALESCE(SUM(...), 0)으로 합계가 NULL인 고객을 0으로 표시함 — Anti-Join·아웃터 조인 결과를 다룰 때 핵심 습관
+
+### 총액 상위 10명 (CTE 활용)
+
+```sql
+WITH customer_stats AS (
+  SELECT c.customer_name,
+         COUNT(o.order_id) AS cnt, SUM(o.amount) AS total
+  FROM customers c LEFT JOIN orders o ON o.customer_id = c.customer_id
+  GROUP BY c.customer_id, c.customer_name
+)
+SELECT customer_name, cnt, total
+FROM customer_stats
+ORDER BY total DESC
+LIMIT 10;
+```
+
+WITH(CTE)로 집계 결과를 임시 이름으로 정의한 뒤, 그 결과를 다시 정렬·제한함 (복잡한 쿼리를 단계별로 분리해 가독성을 높임).
+
+### 다중 테이블 JOIN (학생-수강-강좌-교수)
+
+```sql
+SELECT s.name, c.title, p.name AS professor, e.score
+FROM students s
+  JOIN enrollments e ON e.student_id = s.id
+  JOIN courses c ON c.id = e.course_id
+  JOIN professors p ON p.id = c.professor_id
+WHERE e.score >= 80
+ORDER BY e.score DESC;
+```
+
+여러 테이블을 연쇄로 조인함. 중간 연결 테이블(enrollments)을 거쳐 학생·강좌·교수를 하나의 행으로 이음.
+
+### JOIN 주의사항 및 성능 팁
+
+자주 발생하는 조인 실수와 대응책 정리임.
+
+특히 주의: OUTER JOIN을 해놓고 오른쪽 테이블 컬럼을 WHERE로 필터하면, NULL 행이 걸러져 결과적으로 INNER JOIN이 되어버림 — 오른쪽 조건은 WHERE가 아니라 ON 절에 두어야 아웃터 조인이 유지됨
+
+### 서브쿼리 유형
+
+쿼리 안에 중첩된 또 다른 SELECT를 서브쿼리라 하며, 놓이는 위치(절)에 따라 역할과 성능 특성이 달라짐.
+
+### 스칼라 서브쿼리 (SELECT 절)
+
+SELECT 목록 안에 들어가, 단 하나의 값(1행 1열)만 반환하는 서브쿼리임.
+
+```sql
+SELECT name,
+       (SELECT COUNT(*) FROM orders o WHERE o.cust_id = c.id) AS order_count
+FROM customers c;
+```
+
+바깥 쿼리의 각 행마다 서브쿼리가 반복 실행되므로 행 수가 많으면 성능이 나빠짐
+
+대부분 JOIN + GROUP BY로 대체 가능하며, 성능상 그 편을 검토함
+
+### 인라인 뷰 (FROM 절)
+
+FROM 절에 놓여 임시 테이블처럼 취급되는 서브쿼리임.
+
+```sql
+SELECT *
+FROM (
+  SELECT *, ROW_NUMBER() OVER (...) AS rn
+  FROM orders
+) sub
+WHERE rn <= 5;
+```
+
+서브쿼리 결과에 별칭(sub)을 붙여 바깥에서 다시 필터·정렬함
+
+윈도우 함수(ROW_NUMBER) 결과를 WHERE로 거를 때 자주 쓰임 — 윈도우 함수는 WHERE에서 직접 못 쓰므로 한 번 감싸야 함
+
+상위 N개 추출·페이지네이션에 흔히 사용됨
+
+### WHERE 절 서브쿼리
+
+WHERE의 비교 조건 오른쪽에 놓여 필터 기준값을 공급하는 서브쿼리임.
+
+```sql
+WHERE salary > (SELECT AVG(salary) FROM employees)
+```
+
+단일값 반환이면 =, >, < 등으로 비교
+
+다중행 반환이면 IN, ANY, ALL, EXISTS로 받음
+
+소량 데이터에 유리함
+
+### 상관 서브쿼리 (Correlated)
+
+서브쿼리 안에서 바깥 쿼리의 컬럼을 참조하는 형태임. 바깥 행이 바뀔 때마다 서브쿼리가 새로 실행됨.
+
+```sql
+WHERE salary > (
+  SELECT AVG(salary) FROM employees
+  WHERE dept_id = e.dept_id   -- ← 바깥 쿼리 e를 참조
+)
+```
+
+위 예는 "각 직원의 급여가 자기 부서 평균보다 높은가"를 판정 — 부서마다 기준이 달라짐
+
+바깥 행마다 독립 실행되므로 행이 많으면 느림 → JOIN이나 CTE로 대체를 권장함
+
+일반 서브쿼리와의 차이: 서브쿼리가 바깥을 참조하면 독립 실행이 불가능해 단독으로 돌릴 수 없음
+
+### EXISTS / IN / ANY / ALL 비교 및 선택 기준
+
+서브쿼리 결과와 값을 비교하는 연산자들이며, 특히 NULL 처리와 성능에서 차이가 큼.
+
+### IN — 목록·서브쿼리 결과에 포함 여부
+
+```sql
+SELECT name FROM students
+WHERE major_id IN (SELECT id FROM majors WHERE region = 'Seoul');
+```
+
+값이 서브쿼리 결과 집합에 들어 있는지 검사함.
+
+### EXISTS — 행 존재 여부만 확인
+
+```sql
+SELECT name FROM students s
+WHERE EXISTS (SELECT 1 FROM enrollments e WHERE e.student_id = s.id);
+```
+
+서브쿼리에 조건을 만족하는 행이 하나라도 있으면 TRUE
+
+실제 값이 아니라 존재 여부만 보므로 SELECT 1을 관용적으로 씀 (무엇을 뽑는지는 무의미)
+
+조건을 만족하는 행을 찾는 즉시 멈추므로 대용량에서 IN보다 빠른 경우가 많음
+
+### NOT EXISTS — Anti-Join (권장)
+
+```sql
+SELECT name FROM students s
+WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.student_id = s.id);
+```
+
+NOT IN보다 안전하고 성능이 우수해 실무에서 선호됨.
+
+### NOT IN의 NULL 함정
+
+```sql
+WHERE id NOT IN (SELECT student_id FROM enrollments)
+```
+
+서브쿼리 결과에 NULL이 하나라도 있으면 전체 결과가 항상 빈 집합이 됨
+
+이유: NOT IN은 내부적으로 모든 값과 != 비교를 하는데, NULL과의 비교 결과가 UNKNOWN이라 조건이 절대 참이 되지 못함
+
+그래서 같은 목적이면 NOT EXISTS를 씀
+
+### ANY / ALL — 다중값 비교
+
+```sql
+WHERE salary > ANY (SELECT salary FROM employees WHERE dept = 'HR')   -- 최솟값보다 크면 됨
+WHERE salary > ALL (SELECT salary FROM employees WHERE dept = 'HR')   -- 최댓값보다 커야 함
+```
+
+> ANY: 집합의 값 중 하나 이상보다 크면 참 → > MIN과 동일
+
+> ALL: 집합의 모든 값보다 커야 참 → > MAX와 동일
+
+### 집합 연산자 — UNION / INTERSECT / EXCEPT
+
+여러 SELECT 결과를 세로로 합치거나 비교하는 연산자임. 각 쿼리의 컬럼 수·타입이 맞아야 함.
+
+### UNION / UNION ALL — 합집합
+
+```sql
+SELECT name FROM students_2024
+UNION
+SELECT name FROM students_2025;   -- 같은 이름은 1번만 출력
+```
+
+UNION은 중복을 제거함 (내부적으로 정렬·비교가 일어나 비용이 큼)
+
+UNION ALL은 중복을 그대로 두어 빠름 → 중복이 없거나 상관없을 때 권장
+
+```sql
+SELECT 'sale' AS type, product_id, amount FROM sales
+UNION ALL
+SELECT 'refund', product_id, amount FROM refunds;
+```
+
+위처럼 상수 컬럼('sale'/'refund')을 붙여 어느 쪽에서 온 행인지 구분하는 패턴이 유용함
+
+### INTERSECT — 교집합
+
+```sql
+SELECT customer_id FROM orders WHERE EXTRACT(YEAR FROM order_date) = 2024
+INTERSECT
+SELECT customer_id FROM orders WHERE EXTRACT(YEAR FROM order_date) = 2025;
+```
+
+두 결과에 공통으로 있는 행만 반환함 (예: 2024·2025년 모두 구매한 고객).
+
+### EXCEPT — 차집합 (Oracle: MINUS)
+
+```sql
+SELECT student_id FROM enrollments WHERE course = 'DB'
+EXCEPT
+SELECT student_id FROM enrollments WHERE course = 'Algorithm';
+```
+
+앞 결과에서 뒤 결과를 뺌 (예: DB는 듣지만 알고리즘은 안 듣는 학생). Oracle에서는 MINUS로 씀.
+
+### MySQL 우회
+
+MySQL은 INTERSECT·EXCEPT를 (구버전에서) 미지원하므로 조인으로 대체함.
+
+```sql
+-- EXCEPT 대체
+SELECT name FROM customers c
+WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.customer_name = c.name);
+```
+
+교집합은 INNER JOIN, 차집합은 LEFT JOIN + IS NULL 또는 NOT EXISTS로 대체함
+
+### CTE (Common Table Expression) — WITH 절
+
+WITH 절로 쿼리 앞에 이름 붙은 임시 결과 집합을 정의하는 문법임. 복잡한 쿼리를 단계별로 쪼개 가독성을 높임.
+
+### 기본 CTE
+
+```sql
+WITH dept_avg AS (
+  SELECT dept_id, AVG(salary) AS avg_sal
+  FROM employees
+  GROUP BY dept_id
+)
+SELECT e.emp_name, e.salary, d.avg_sal,
+       e.salary - d.avg_sal AS diff
+FROM employees e
+  JOIN dept_avg d ON d.dept_id = e.dept_id
+WHERE e.salary > d.avg_sal
+ORDER BY diff DESC;
+```
+
+dept_avg를 먼저 정의한 뒤 본 쿼리에서 일반 테이블처럼 조인함 (부서별 평균보다 급여가 높은 직원 조회)
+
+장점: 가독성 향상, 한 쿼리 안에서 여러 번 재사용 가능, 재귀 쿼리 지원
+
+### 다중 CTE
+
+```sql
+WITH
+major_avg AS (          -- 1단계: 학과별 평균 성적
+  SELECT s.major_id, AVG(e.score) AS avg_score
+  FROM students s JOIN enrollments e ON e.student_id = s.id
+  GROUP BY s.major_id
+),
+top_students AS (       -- 2단계: 학과 평균보다 높은 학생
+  SELECT s.id, s.name, s.major_id, AVG(e.score) AS my_avg
+  FROM students s JOIN enrollments e ON e.student_id = s.id
+  GROUP BY s.id, s.name, s.major_id
+  HAVING AVG(e.score) > (SELECT avg_score FROM major_avg m WHERE m.major_id = s.major_id)
+)
+SELECT t.name, m.avg_score AS major_avg, t.my_avg
+FROM top_students t JOIN major_avg m ON m.major_id = t.major_id
+ORDER BY t.my_avg DESC;
+```
+
+쉼표로 여러 CTE를 연달아 정의하며, 뒤 CTE는 앞 CTE(major_avg)를 참조할 수 있음
+
+복잡한 서브쿼리는 이렇게 CTE로 분해하면 각 단계가 명확해짐
+
+### 재귀 CTE — 계층형 데이터 탐색
+
+WITH RECURSIVE로 자기 자신을 참조해, 조직도·카테고리 트리 같은 계층 구조를 위에서 아래로 펼치는 문법임.
+
+```sql
+WITH RECURSIVE org_tree AS (
+-- 기저 단계(Anchor): 최상위 관리자
+  SELECT id, emp_name, manager_id,
+         1 AS depth,
+         emp_name::TEXT AS path
+  FROM employees
+  WHERE manager_id IS NULL
+
+  UNION ALL
+
+-- 재귀 단계: 하위 직원 추가
+  SELECT e.id, e.emp_name, e.manager_id,
+         t.depth + 1,
+         t.path || ' > ' || e.emp_name
+  FROM employees e
+    JOIN org_tree t ON t.id = e.manager_id
+  WHERE t.depth < 10          -- ← 무한 재귀 방지
+)
+SELECT depth,
+       REPEAT('  ', depth - 1) || emp_name AS indented_name,
+       path
+FROM org_tree
+ORDER BY path;
+```
+
+재귀 CTE의 두 부분:
+
+기저 단계(Anchor): 시작점을 정함 — 여기서는 manager_id IS NULL인 최상위 관리자
+
+재귀 단계: 직전 결과(org_tree)에 자신을 조인해 하위 직원을 한 단계씩 붙여나감. UNION ALL로 두 부분을 연결함
+
+depth로 계층 깊이를, path로 누적 경로(예: 대표 > 팀장 > 사원)를 만듦
+
+주의: 재귀 단계에 종료 조건(WHERE t.depth < 10)이 없으면 무한 재귀에 빠지므로 반드시 넣어야 함
+
+### View / Materialized View 생성 및 활용
+
+### 일반 View — 조회할 때마다 쿼리 실행
+
+```sql
+CREATE OR REPLACE VIEW v_student_dashboard AS
+SELECT s.id, s.student_no, s.name, m.name AS major_name,
+       COUNT(e.id) AS course_count,
+       ROUND(AVG(e.score), 2) AS avg_score,
+       MAX(e.score) AS best_score,
+       SUM(c.credits) AS total_credits
+FROM students s
+  LEFT JOIN majors m ON m.id = s.major_id
+  LEFT JOIN enrollments e ON e.student_id = s.id
+  LEFT JOIN courses c ON c.id = e.course_id
+GROUP BY s.id, s.student_no, s.name, m.name;
+```
+
+복잡한 쿼리에 이름을 붙여 저장한 것으로, 데이터는 저장하지 않고 조회 시마다 원본 쿼리를 다시 실행함 → 항상 최신
+
+조회는 일반 테이블처럼 함: SELECT * FROM v_student_dashboard WHERE avg_score >= 85;
+
+### Materialized View — 결과를 디스크에 저장
+
+```sql
+CREATE MATERIALIZED VIEW mv_monthly_sales AS
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(amount) AS total_sales
+FROM orders
+GROUP BY 1;
+
+CREATE INDEX ON mv_monthly_sales (month);   -- 인덱스 생성 가능
+```
+
+쿼리 결과를 실제 디스크에 저장해두어 조회가 빠름 (무거운 집계를 미리 계산해 캐싱)
+
+일반 View와 달리 인덱스를 걸 수 있음 (강력한 장점)
+
+데이터가 자동 갱신되지 않음 → 스케줄러나 pg_cron으로 주기적 REFRESH 필요
+
+```text
+REFRESH MATERIALIZED VIEW CONCURRENTLY mv_monthly_sales;  -- 잠금 없이 갱신
+```
+
+CONCURRENTLY 옵션은 갱신 중에도 조회를 막지 않음 (단, 유니크 인덱스가 있어야 함)
+
+### View vs Materialized View vs CTE 비교
+
+셋 다 쿼리를 재구성하는 도구지만, 저장 여부·최신성·수명에서 갈림.
+
+선택 기준: 항상 최신이어야 하고 한 쿼리 안에서만 쓰면 CTE, 여러 쿼리에서 재사용하며 최신성이 중요하면 View, 조회 성능이 최우선이고 약간의 시차를 허용할 수 있으면 Materialized View
+
+View의 숨은 용도: 민감 컬럼을 뺀 View만 노출해 권한을 제어하거나, 내부 테이블 구조가 바뀌어도 View 인터페이스는 유지해 상위 코드를 보호함
+
+### Window Function — GROUP BY와 핵심 차이
+
+집계는 하되 원래 행을 없애지 않는 함수임. GROUP BY와 대비하면 개념이 명확해짐.
+
+기본 문법: 함수명() OVER ([PARTITION BY 컬럼] [ORDER BY 컬럼] [ROWS/RANGE 프레임])
+
+PARTITION BY: 분석 단위 구분(부서별·지역별) — GROUP BY와 비슷하지만 행을 유지함
+
+ORDER BY: 윈도우(프레임) 내부의 정렬 기준
+
+ROWS/RANGE BETWEEN: 집계에 포함할 행 범위(프레임)를 지정
+
+함수 계열은 크게 넷으로 나뉨:
+
+순위 함수: ROW_NUMBER, RANK, DENSE_RANK, NTILE
+
+이동/비교 함수: LAG, LEAD, FIRST_VALUE, LAST_VALUE
+
+집계 윈도우: SUM/AVG/COUNT/MIN/MAX OVER() — 누적합·이동평균
+
+분포 함수: PERCENT_RANK, CUME_DIST 등
+
+### ROW_NUMBER / RANK / DENSE_RANK 비교
+
+순위를 매기는 세 함수는 동점(tie) 처리 방식이 다름.
+
+```sql
+SELECT region, month, revenue,
+  ROW_NUMBER() OVER (PARTITION BY region ORDER BY revenue DESC) AS row_num,
+  RANK()       OVER (PARTITION BY region ORDER BY revenue DESC) AS rank_r,
+  DENSE_RANK() OVER (PARTITION BY region ORDER BY revenue DESC) AS d_rank,
+  NTILE(3)     OVER (PARTITION BY region ORDER BY revenue DESC) AS tier,
+  RANK()       OVER (ORDER BY revenue DESC) AS overall_rank   -- PARTITION 없이 전체 기준
+FROM sales;
+```
+
+PARTITION BY region이 있으면 지역 안에서 순위를 매기고, 없으면 전체를 하나의 창으로 보고 순위를 매김
+
+페이지네이션·"그룹별 상위 N개" 추출에는 고유 번호가 보장되는 ROW_NUMBER를 씀
+
+### LAG / LEAD — 전월 대비 증감 분석
+
+같은 파티션 안에서 앞/뒤 행의 값을 현재 행으로 끌어와 비교하는 함수임.
+
+LAG(col, n): n행 앞(이전)의 값
+
+LEAD(col, n): n행 뒤(다음)의 값
+
+```sql
+SELECT region, month, revenue,
+  LAG(revenue, 1) OVER (PARTITION BY region ORDER BY month) AS prev_month_sales,
+  revenue - LAG(revenue, 1) OVER (PARTITION BY region ORDER BY month) AS mom_diff,
+  ROUND(
+    (revenue - LAG(revenue, 1) OVER (PARTITION BY region ORDER BY month))
+    / NULLIF(LAG(revenue, 1) OVER (PARTITION BY region ORDER BY month), 0) * 100, 1
+  ) AS mom_growth_pct,
+  LEAD(revenue, 1) OVER (PARTITION BY region ORDER BY month) AS next_month_sales
+FROM sales
+ORDER BY region, month;
+```
+
+활용: MoM(전월 대비) 성장률, YoY는 LAG(revenue, 12)로 12개월 전과 비교, 로그인 연속일 수·이벤트 간 대기 시간 계산
+
+주의: 증감률의 분모(이전 값)가 0이면 0으로 나누기 오류가 남 → NULLIF(prev, 0)으로 감싸 분모가 0이면 NULL을 반환하게 해 오류를 피함
+
+### 누적합 / 이동평균 — ROWS/RANGE 프레임
+
+집계 윈도우에 프레임을 붙이면 "어디부터 어디까지"를 누적·평균할지 지정할 수 있음.
+
+누적합 (Running Total):
+
+```text
+SUM(revenue) OVER (
+  PARTITION BY region ORDER BY month
+  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+) AS cumulative_revenue
+```
+
+UNBOUNDED PRECEDING(파티션 시작)부터 CURRENT ROW(현재 행)까지 더해 누적합을 만듦
+
+3개월 이동평균 (Moving Average):
+
+```text
+AVG(revenue) OVER (
+  PARTITION BY region ORDER BY month
+  ROWS BETWEEN 2 PRECEDING AND CURRENT ROW   -- 현재 포함 최근 3개월
+)
+```
+
+현재 행 포함 직전 2개 행까지, 총 3개 행의 평균
+
+ROWS vs RANGE 차이 (중요):
+
+ROWS: 물리적 행 개수 기준 (정확히 몇 행 앞/뒤) — 대부분 이걸 씀
+
+RANGE: ORDER BY 값 기준. 같은 값을 가진 행은 한 덩어리로 모두 포함됨 → 동점이 있으면 프레임에 들어오는 행 수가 달라짐
+
+### Window Function 고급 패턴 — 실무 활용
+
+### 백분위 분석
+
+```sql
+SELECT student_id, score,
+  PERCENT_RANK() OVER (ORDER BY score) AS pct_rank,
+  CUME_DIST()    OVER (ORDER BY score) AS cume_dist,
+  NTILE(4)       OVER (ORDER BY score) AS quartile
+FROM enrollments WHERE course_id = 1;
+```
+
+PERCENT_RANK·CUME_DIST는 전체에서의 상대 위치(백분위)를, NTILE(4)는 사분위 그룹을 매김
+
+### 코호트 분석 (가입 월별 재구매율)
+
+first_order CTE로 고객별 최초 구매월(cohort_month)을 구하고, 각 주문월과의 개월 차(months_after)를 계산해 가입 시점별 잔존·재구매를 추적함
+
+### Gap and Island (연속 구간 찾기)
+
+연속 로그인 구간처럼 "끊기지 않고 이어진 구간"을 찾는 고전 패턴임.
+
+```sql
+SELECT MIN(login_date) AS streak_start, MAX(login_date) AS streak_end,
+       COUNT(*) AS streak_days
+FROM (
+  SELECT login_date,
+         login_date - ROW_NUMBER() OVER (ORDER BY login_date) * INTERVAL '1 day' AS grp
+  FROM user_logins WHERE user_id = 42
+) t GROUP BY grp ORDER BY streak_start;
+```
+
+핵심 아이디어: 날짜에서 ROW_NUMBER를 빼면, 연속된 날짜들은 같은 grp 값을 가짐(등차 상쇄) → 그 grp로 묶으면 연속 구간이 하나의 그룹이 됨
+
+### Window Function DBMS 지원 비교
+
+MySQL은 8.0부터 윈도우 함수를 지원하므로, 그 이전 버전에서는 변수 트릭 등으로 우회해야 함
+
+FILTER 절은 PostgreSQL 전용이라 다른 DBMS에서는 CASE WHEN으로 대체함
+
+### LATERAL JOIN — 행별 독립 서브쿼리
+
+FROM 절의 서브쿼리가 그 앞에 나온 테이블의 컬럼을 참조할 수 있게 해주는 조인임. 일반 서브쿼리는 바깥 컬럼을 못 보지만, LATERAL을 붙이면 외부 행 하나하나마다 서브쿼리가 그 값을 받아 독립 실행됨.
+
+```sql
+-- 각 학생의 점수 상위 3개 과목
+SELECT s.name, recent.title, recent.score
+FROM students s
+CROSS JOIN LATERAL (
+  SELECT c.title, e.score
+  FROM enrollments e JOIN courses c ON c.id = e.course_id
+  WHERE e.student_id = s.id      -- ← 외부 행(s) 참조
+  ORDER BY e.score DESC
+  LIMIT 3
+) recent;
+```
+
+핵심 용도: "그룹별 상위 N개(Top-N per group)"를 깔끔하게 처리함. 각 학생마다 LIMIT 3이 따로 적용됨
+
+WHERE p.category_id = cat.id + LIMIT 2 형태로 "카테고리별 Best-2 상품"도 같은 패턴으로 뽑음
+
+DBMS 지원:
+
+PostgreSQL·Hive·BigQuery는 LATERAL 지원
+
+MySQL은 미지원 → FROM 절 서브쿼리 안에서 ROW_NUMBER()로 그룹별 순번을 매긴 뒤 바깥에서 WHERE rn <= N으로 거르는 방식으로 대체함
+
+### UPSERT — INSERT ON CONFLICT
+
+"있으면 UPDATE, 없으면 INSERT"를 한 문장으로 처리하는 구문임. 키 충돌 시 동작을 지정함.
+
+### PostgreSQL — ON CONFLICT
+
+```sql
+INSERT INTO user_stats (user_id, login_count, last_login)
+VALUES (42, 1, now())
+ON CONFLICT (user_id)          -- PK 또는 UNIQUE 충돌 시
+DO UPDATE SET
+  login_count = user_stats.login_count + EXCLUDED.login_count,
+  last_login  = EXCLUDED.last_login;
+```
+
+EXCLUDED는 충돌로 인해 삽입되지 못한 새 값을 담은 가상 테이블임 (INSERT하려던 값)
+
+위 예는 이미 있으면 카운트를 누적하고, 없으면 새로 넣음 → 실시간 집계 카운터에 유용
+
+중복 무시 (DO NOTHING):
+
+```sql
+INSERT INTO log_events (event_id, payload)
+VALUES ('ev-001', '{"type":"click"}')
+ON CONFLICT (event_id) DO NOTHING;
+```
+
+이미 있으면 아무것도 안 하고 넘어감 (중복 이벤트 방지)
+
+### DBMS별 문법 차이
+
+MySQL: INSERT ... ON DUPLICATE KEY UPDATE login_count = login_count + 1
+
+SQL Server: 표준 MERGE INTO ... WHEN MATCHED THEN UPDATE / WHEN NOT MATCHED THEN INSERT
+
+활용: 스트리밍 데이터 적재, 실시간 집계 카운터처럼 "같은 키가 반복 유입되는" 상황의 필수 패턴임.
+
+### STRING_AGG / ARRAY_AGG / JSON_AGG
+
+GROUP BY로 묶은 여러 행을, 하나의 값(문자열·배열·JSON)으로 합치는 집계 함수들임. 1:N 관계를 한 행으로 접을 때 유용함.
+
+### STRING_AGG — 여러 행을 하나의 문자열로
+
+```sql
+SELECT s.name,
+       STRING_AGG(c.title, ', ' ORDER BY c.title) AS courses_taken
+FROM students s JOIN enrollments e ON e.student_id = s.id
+                JOIN courses c ON c.id = e.course_id
+GROUP BY s.id, s.name;
+```
+
+한 학생이 들은 여러 과목을 과목A, 과목B, 과목C 형태의 한 문자열로 합침
+
+구분자(', ')와 내부 정렬(ORDER BY)을 지정할 수 있음 (MySQL은 GROUP_CONCAT)
+
+### ARRAY_AGG — 배열로 집계 (PostgreSQL)
+
+```sql
+SELECT major_id,
+       ARRAY_AGG(name ORDER BY grade DESC) AS students,
+       ARRAY_AGG(DISTINCT grade) AS grades
+FROM students GROUP BY major_id;
+```
+
+문자열이 아니라 실제 배열 타입으로 묶음. DISTINCT로 중복 제거도 가능
+
+### JSON_AGG + JSON_BUILD_OBJECT — JSON 배열로 집계 (API 응답용)
+
+```sql
+SELECT s.name,
+       JSON_AGG(
+         JSON_BUILD_OBJECT(
+           'course', c.title,
+           'score',  e.score,
+           'grade',  CASE WHEN e.score >= 90 THEN 'A'
+                          WHEN e.score >= 80 THEN 'B' ELSE 'C' END
+         ) ORDER BY e.score DESC
+       ) AS enrollment_history
+FROM students s
+  JOIN enrollments e ON e.student_id = s.id
+  JOIN courses c ON c.id = e.course_id
+GROUP BY s.id, s.name;
+```
+
+JSON_BUILD_OBJECT로 각 행을 {course, score, grade} 객체로 만들고, JSON_AGG로 그것들을 JSON 배열로 묶음
+
+별도 가공 없이 그대로 API 응답 형태로 내려줄 수 있어, 백엔드에서 N+1 쿼리를 피하고 중첩 구조를 한 번에 만들 때 유용함
+
+### AI 기반 SQL 도구 활용 현황
+
+SQL 작성·최적화를 돕는 최신 AI 도구 흐름 정리임 (참고 자료).
+
+### 클라이언트/IDE 계열
+
+Chat2DB: AI 연동 SQL 작성 + ERD 기반 자동 SQL 생성 도구. ChatGPT·Claude를 연동해 자연어로 쿼리를 작성하고 오류를 자동 수정하며, DBeaver처럼 PostgreSQL·MySQL·Oracle·SQL Server 등 여러 DB를 지원함
+
+GitHub Copilot for SQL / Tabnine: IDE 안에서 SQL을 자동완성함. 쿼리 패턴을 학습해 반복 작업을 효율화함
+
+### Cloud AI 기반 도구
+
+BigQuery with Gemini: 자연어를 SQL로 변환하고 쿼리 최적화를 제안함
+
+Snowflake Cortex AI: DB에 내장된 AI로 분석을 자동화함
+
+AWS Query Editor + Bedrock: SQL 작성·실행·최적화를 통합 제공함
+
+### pgvector + LLM (DB가 AI 서비스의 일부가 되는 흐름)
+
+PostgreSQL의 pgvector 확장으로 임베딩을 저장하고 유사도 검색을 수행 → RAG(Retrieval-Augmented Generation)의 검색 계층으로 DB 자체를 사용함
+
+예시 (유사도 상위 5개 문서 검색):
+
+```sql
+SELECT * FROM documents
+ORDER BY embedding <=> query_vector
+LIMIT 5;
+```
+
+<=>는 pgvector의 거리 연산자(코사인 거리 등)로, 질의 벡터와 가까운 순으로 정렬함. 이 결과를 LLM 프롬프트에 넣어 답변을 생성하는 것이 RAG의 기본 구조임
+
+### AI SQL 도구 주의사항
+
+생성된 쿼리는 반드시 EXPLAIN으로 성능을 검증함 (AI가 만든 쿼리가 항상 효율적이진 않음)
+
+데이터 보안: 민감한 스키마·데이터를 외부 AI에 전달하면 정보 유출 위험이 있음
+
+### 집합 연산자 DBMS별 지원 비교
+
+앞서 본 UNION/INTERSECT/EXCEPT 계열의 DBMS별 지원 현황임.
+
+MySQL은 8.0.31부터 INTERSECT를 지원하며, EXCEPT는 미지원이라 NOT EXISTS나 LEFT JOIN + IS NULL로 우회함
+
+Oracle은 EXCEPT 대신 MINUS라는 이름으로 제공함
+
+INTERSECT ALL·EXCEPT ALL(중복 개수까지 고려하는 빈도 기반 버전)은 사실상 PostgreSQL만 지원하는 희귀 기능임
+
+### 트랜잭션 제어 — BEGIN / COMMIT / ROLLBACK / SAVEPOINT
+
+여러 DML을 하나의 논리 단위로 묶어, 전부 반영하거나 전부 취소하는 것을 보장하는 구문임 (원자성).
+
+### 기본 흐름
+
+```text
+BEGIN;
+  UPDATE account SET balance = balance - 10000 WHERE id = 'A';
+  UPDATE account SET balance = balance + 10000 WHERE id = 'B';
+COMMIT;   -- 성공 시 확정
+```
+
+COMMIT으로 변경을 영구 확정하고, 중간에 오류가 나면 ROLLBACK으로 트랜잭션 시작 지점까지 전체를 취소함 (계좌 이체처럼 둘 다 되거나 둘 다 안 되어야 하는 작업의 표준)
+
+### SAVEPOINT — 부분 롤백
+
+```sql
+BEGIN;
+  INSERT INTO orders(customer_id, amount) VALUES(1, 50000);
+  SAVEPOINT after_insert;              -- 중간 저장점
+
+  INSERT INTO order_items(order_id, product_id) VALUES(lastval(), 99);
+-- 여기서 문제 발생 →
+  ROLLBACK TO SAVEPOINT after_insert;  -- insert 이후만 취소
+COMMIT;
+```
+
+SAVEPOINT는 트랜잭션 중간에 찍는 저장점이며, ROLLBACK TO로 그 지점까지만 되돌리고 그 앞의 작업은 유지함
+
+활용: 대량 배치 처리 시 청크 단위로 저장점을 찍어두고, 오류가 나면 전체가 아니라 마지막 체크포인트로만 롤백함
+
+### DBMS별 트랜잭션 시작 구문
+
+MySQL: START TRANSACTION 또는 BEGIN
+
+Oracle: 명시적 BEGIN이 없고, DML이 시작되면 트랜잭션이 자동 시작됨
+
+SQL Server: BEGIN TRANSACTION 또는 BEGIN TRAN
+
+### DB별 AUTO COMMIT 정책 비교
+
+각 문장을 자동으로 커밋할지(AUTO COMMIT), 트랜잭션을 어떻게 시작하는지가 DBMS마다 다름.
+
+핵심 주의: MySQL·Oracle에서는 DDL(CREATE/ALTER/DROP/TRUNCATE)이 묵시적 커밋을 유발함 → 트랜잭션 중간에 DDL을 실행하면 그 앞의 DML까지 커밋되어 롤백이 불가능해짐
+
+반면 PostgreSQL·SQL Server는 DDL도 트랜잭션 안에서 롤백 가능함 (마이그레이션 스크립트를 안전하게 되돌릴 수 있음)
+
+### 정렬(ORDER BY)과 NULL 처리
+
+정렬 문법은 표준이지만 NULL의 위치와 결과 제한 구문이 DBMS마다 다름.
+
+기본 정렬 공통 사항:
+
+ORDER BY col ASC가 기본, DESC로 역순. 여러 컬럼은 ORDER BY salary DESC, name ASC처럼 우선순위대로 나열
+
+주의: 숫자를 문자열로 저장하면 사전순으로 정렬됨 → 문자 "10"이 "9"보다 앞에 옴. 숫자 정렬이 필요하면 숫자 타입으로 두거나 캐스팅해야 함
+
+PostgreSQL·Oracle은 NULLS FIRST/NULLS LAST를 표준 지원하지만, MySQL·SQL Server는 이 구문이 없어 ISNULL()이나 CASE로 우회함
+
+### 페이지네이션 — OFFSET 방식 vs Cursor/Keyset 방식
+
+앞서 성능 최적화에서 다룬 내용의 상세 버전임.
+
+### OFFSET 방식 (간단하지만 대용량에서 느림)
+
+```sql
+SELECT * FROM orders ORDER BY id LIMIT 10 OFFSET 9990;
+```
+
+DB가 앞의 9990개를 실제로 읽고 버린 뒤 10개만 반환 → O(N)
+
+OFFSET이 클수록 느려짐 (100만 페이지면 100만 행 스캔)
+
+### Cursor/Keyset 방식 (권장, 항상 O(log N))
+
+```sql
+-- 첫 페이지
+SELECT * FROM orders ORDER BY id LIMIT 10;
+-- 반환된 마지막 row의 id = 1000이라 가정
+
+-- 다음 페이지: 마지막 id 이후부터 바로 탐색
+SELECT * FROM orders WHERE id > 1000 ORDER BY id LIMIT 10;
+```
+
+인덱스를 타고 1001부터 바로 접근하므로 페이지가 뒤로 가도 비용이 일정함
+
+정렬 기준이 고유하지 않을 때 (복합 키로 안정성 확보):
+
+```sql
+SELECT * FROM orders
+WHERE (created_at, id) > ('2024-03-15', 500)
+ORDER BY created_at, id LIMIT 10;
+```
+
+created_at만으로는 같은 값이 여러 개일 수 있어 경계에서 행이 누락·중복될 수 있음 → id를 tie-breaker로 함께 묶어 (created_at, id) 튜플 비교로 정확한 경계를 만듦
+
+### 트레이드오프
+
+단점: 임의 페이지로 점프 불가 (1→3→2처럼 특정 페이지로 바로 이동하기 어려움)
+
+적합: 무한 스크롤, "다음 페이지" 버튼만 있는 UI
+
+### ON 절 vs WHERE 절 — OUTER JOIN에서의 차이
+
+OUTER JOIN에서 조건을 ON에 두느냐 WHERE에 두느냐에 따라 결과가 완전히 달라짐. 적용 시점이 다르기 때문임.
+
+시나리오: 모든 학생을 보이되(수강 없으면 NULL), CS101(course_id = 1) 성적만 함께 표시하고 싶음.
+
+잘못된 방법 — WHERE에서 필터:
+
+```sql
+SELECT s.name, e.score
+FROM students s LEFT JOIN enrollments e ON e.student_id = s.id
+WHERE e.course_id = 1;   -- LEFT JOIN 효과가 사라짐
+```
+
+조인 후 WHERE가 적용되는데, 수강 없는 학생은 e.course_id가 NULL이라 조건에서 탈락 → 결과적으로 INNER JOIN이 되어 수강 없는 학생이 사라짐
+
+올바른 방법 — ON에 조건 추가:
+
+```sql
+SELECT s.name, e.score
+FROM students s
+  LEFT JOIN enrollments e ON e.student_id = s.id AND e.course_id = 1;
+```
+
+조건을 ON에 두면 조인 매칭 단계에서 적용되므로, CS101을 안 들은 학생도 score = NULL로 남아 LEFT JOIN이 유지됨
+
+정리:
+
+ON 조건: 조인 과정에서 적용 → OUTER JOIN 결과(비매칭 행) 유지
+
+WHERE 조건: 조인 완료 후 행 필터 → NULL 행 제거 → 사실상 INNER JOIN
+
+의도적으로 INNER JOIN처럼 만들고 싶으면 WHERE, OUTER JOIN 결과를 유지하며 특정 조건을 걸고 싶으면 ON
+
+단, WHERE b.col IS NULL은 예외적으로 Anti-Join(짝 없는 행 찾기) 패턴으로 의도적으로 사용함
+
+### Semi-Join — 존재 여부만 확인하는 조인
+
+오른쪽 테이블의 존재 여부만 확인하고 그 컬럼은 결과에 가져오지 않는 조인임. IN·EXISTS가 내부적으로 Semi-Join으로 최적화됨.
+
+```sql
+-- EXISTS (권장): 조건 만족 행이 하나라도 있으면 TRUE
+SELECT s.name FROM students s
+WHERE EXISTS (SELECT 1 FROM enrollments e WHERE e.student_id = s.id AND e.score >= 90);
+-- → 90점 이상 과목이 하나라도 있는 학생
+
+-- IN (소량 목록에 적합)
+SELECT name FROM students
+WHERE major_id IN (SELECT id FROM majors WHERE region = 'Seoul');
+```
+
+JOIN으로 같은 걸 구현하면 중복 문제가 생김:
+
+```sql
+SELECT DISTINCT s.name
+FROM students s JOIN enrollments e ON e.student_id = s.id
+WHERE e.score >= 90;   -- DISTINCT 없으면 90점 이상 과목 수만큼 학생이 중복됨
+```
+
+일반 JOIN은 오른쪽에 매칭이 N개면 왼쪽 행이 N번 복제됨 → DISTINCT가 필요. Semi-Join(EXISTS)은 존재만 보므로 복제가 없어 더 깔끔하고 빠름
+
+Anti Semi-Join (NOT EXISTS) — 존재하지 않는 경우:
+
+```sql
+SELECT s.name FROM students s
+WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.student_id = s.id);
+-- → 단 한 번도 수강하지 않은 학생
+```
+
+### JOIN 종류별 결과 행 수 예측
+
+A(5행)와 B(3행), 조인 조건 매칭이 2건인 상황을 기준으로 각 조인의 결과 행 수를 예측한 표임.
+
+감 잡는 법: INNER는 매칭 건수, LEFT/RIGHT는 기준 테이블 전체 행 수 이상, CROSS는 곱, Anti는 기준에서 매칭을 뺀 값
+
+1:N 매칭이면 행이 곱해져 예상보다 커질 수 있으므로 항상 카디널리티를 염두에 둠
+
+### 다중 테이블 JOIN — 실습 쿼리
+
+여러 테이블을 연쇄 조인하며 CASE로 학점을 계산하는 실전 예시임.
+
+```text
+SELECT
+  s.student_no AS 학번,
+  s.name       AS 학생,
+  d.name       AS 학과,
+  c.code       AS 강좌코드,
+  c.title      AS 강좌명,
+  p.name       AS 담당교수,
+  e.score      AS 점수,
+  CASE
+    WHEN e.score >= 90 THEN 'A'
+    WHEN e.score >= 80 THEN 'B'
+    WHEN e.score >= 70 THEN 'C'
+    WHEN e.score >= 60 THEN 'D'
+    ELSE 'F'
+  END AS 학점
+FROM students s
+  JOIN departments d ON d.id = s.department_id
+  JOIN enrollments e ON e.student_id = s.id
+  JOIN courses c     ON c.id = e.course_id
+  JOIN professors p  ON p.id = c.professor_id
+WHERE s.enrolled = TRUE
+  AND e.score IS NOT NULL
+ORDER BY s.name, e.score DESC;
+```
+
+핵심 주의: 테이블이 5개면 ON 조건이 4개 필요함 (테이블 수 − 1). 하나라도 빠지면 그 지점에서 CROSS JOIN이 발생해 행이 폭증함
+
+### JOIN 실수 패턴 및 방지법 (종합)
+
+앞서 나온 실수들을 원인·증상·해결로 정리함.
+
+ON 조건 누락 → 카르테시안 곱 폭발: FROM a JOIN b에는 반드시 ON a.id = b.a_id를 추가함. EXPLAIN의 actual rows가 예상보다 훨씬 크면 이 실수를 의심함
+
+OUTER JOIN 후 WHERE로 NULL 필터 → INNER JOIN으로 변환: 오른쪽 테이블 조건은 WHERE가 아니라 ON 절에 AND b.col = ... 형태로 넣어 아웃터 조인을 유지함
+
+중복 행 폭발 (1:N 조인 시 N배 증가): COUNT(*)가 이상하게 크면 다중 조인 중복을 의심하고, 서브쿼리에서 먼저 집계한 뒤 조인하거나 DISTINCT로 해결함
+
+NOT IN의 NULL 함정: 서브쿼리 결과에 NULL이 하나라도 있으면 전체 결과가 빈 집합이 됨 → NOT IN을 NOT EXISTS로 변경함
+
+큰 테이블을 작은 테이블처럼 조인 (옵티마이저 오판): 통계가 오래되면 옵티마이저가 조인 순서·방식을 잘못 고름 → ANALYZE로 통계를 갱신하고 EXPLAIN으로 rows 예측값을 확인함
+
+### 상관 서브쿼리 (Correlated Subquery) 최적화
+
+상관 서브쿼리는 바깥 쿼리의 각 행마다 내부 쿼리를 반복 실행하므로, 행 수(N) × 내부 쿼리 비용(M) = 성능 문제가 생김. 같은 결과를 CTE나 윈도우 함수로 바꾸면 훨씬 빠름.
+
+느린 방법 — 상관 서브쿼리 (N × M):
+
+```sql
+SELECT e.emp_name, e.salary, e.dept_id
+FROM employees e
+WHERE e.salary > (
+  SELECT AVG(salary) FROM employees WHERE dept_id = e.dept_id
+);
+```
+
+직원 한 명마다 그 부서의 평균을 매번 다시 계산함 → 부서 평균이 반복 재계산됨
+
+빠른 방법 1 — CTE로 한 번만 집계:
+
+```sql
+WITH dept_avg AS (
+  SELECT dept_id, AVG(salary) AS avg_sal FROM employees GROUP BY dept_id
+)
+SELECT e.emp_name, e.salary, d.avg_sal
+FROM employees e JOIN dept_avg d ON d.dept_id = e.dept_id
+WHERE e.salary > d.avg_sal;
+```
+
+부서 평균을 한 번만 계산해두고 조인함
+
+빠른 방법 2 — 윈도우 함수 (가장 우아):
+
+```sql
+SELECT emp_name, salary, dept_id,
+       AVG(salary) OVER (PARTITION BY dept_id) AS dept_avg
+FROM employees
+WHERE salary > AVG(salary) OVER (PARTITION BY dept_id);
+```
+
+서브쿼리 없이 한 번의 스캔으로 처리함 (단, 위 예처럼 WHERE에서 윈도우 함수를 직접 못 쓰는 DBMS에서는 인라인 뷰로 한 번 감싸야 함)
+
+정리: 상관 서브쿼리는 가독성은 좋지만 성능이 나쁨 → CTE나 윈도우 함수로 대체 검토
+
+### CTE MATERIALIZED vs NOT MATERIALIZED (PostgreSQL 12+)
+
+PostgreSQL 12부터 CTE를 "결과를 임시 저장할지(MATERIALIZED)" vs "인라인으로 펼쳐 최적화할지(NOT MATERIALIZED)" 선택할 수 있음.
+
+NOT MATERIALIZED (기본) — 인라인으로 펼쳐 최적화 허용:
+
+```sql
+WITH dept_stats AS NOT MATERIALIZED (
+  SELECT department_id, COUNT(*) AS cnt, AVG(salary) AS avg_sal
+  FROM employees GROUP BY department_id
+)
+SELECT e.name, ds.avg_sal
+FROM employees e JOIN dept_stats ds ON ds.department_id = e.department_id
+WHERE e.salary > ds.avg_sal;
+```
+
+CTE를 본 쿼리에 펼쳐 넣어, 옵티마이저가 CTE를 조인 최적화·조건 푸시다운에 포함할 수 있음 (PostgreSQL 12 이전엔 CTE가 항상 최적화 경계여서 느렸음)
+
+MATERIALIZED — 결과를 임시 저장 후 재사용 (한 번만 실행):
+
+```sql
+WITH expensive_calc AS MATERIALIZED (
+  SELECT DISTINCT customer_id, COUNT(DISTINCT product_id) AS variety
+  FROM orders WHERE order_date >= '2024-01-01'
+)
+SELECT c.name, ec.variety
+FROM customers c JOIN expensive_calc ec ON ec.customer_id = c.id
+WHERE ec.variety >= 5;
+```
+
+비용이 큰 집계를 한 번만 실행하고 여러 곳에서 재사용함
+
+언제 MATERIALIZED를 강제할까:
+
+CTE가 여러 번 참조될 때 (매번 재실행 방지)
+
+내부에 random()·now() 같은 비결정적 함수가 있어 매 참조마다 값이 달라지면 안 될 때
+
+옵티마이저가 잘못된 플랜을 고를 때 실행 방식을 강제 고정하고 싶을 때
+
+### PIVOT — 행을 열로 변환 (CASE WHEN 방식)
+
+세로로 쌓인 행을 가로 열로 펼치는 것이 피벗임. PostgreSQL·MySQL은 표준 PIVOT 구문이 없어 CASE WHEN으로 구현함.
+
+```text
+SELECT
+  product_category,
+  SUM(CASE WHEN EXTRACT(MONTH FROM order_date) = 1 THEN amount ELSE 0 END) AS jan,
+  SUM(CASE WHEN EXTRACT(MONTH FROM order_date) = 2 THEN amount ELSE 0 END) AS feb,
+  SUM(CASE WHEN EXTRACT(MONTH FROM order_date) = 3 THEN amount ELSE 0 END) AS mar,
+-- ... (4~6월 동일)
+  SUM(amount) AS h1_total
+FROM orders
+WHERE EXTRACT(YEAR FROM order_date) = 2024
+GROUP BY product_category
+ORDER BY h1_total DESC;
+```
+
+원리: 각 월에 해당하는 행만 CASE로 골라 SUM하면, 월별 매출이 각각의 열이 됨 (ELSE 0으로 해당 월이 아닌 행은 0 처리)
+
+DBMS별 대안: SQL Server·Oracle은 PIVOT 구문을 직접 지원하고, PostgreSQL은 tablefunc 확장의 crosstab() 함수를 쓸 수 있음
+
+한계: 컬럼(월 목록)을 미리 고정해서 나열해야 함 → 동적 피벗은 별도 처리가 필요함
+
+### 서브쿼리 vs CTE vs Window Function vs JOIN — 선택 기준
+
+같은 목적을 여러 방식으로 표현할 수 있으므로, 상황에 맞는 선택 기준을 정리함.
+
+서브쿼리를 쓸 때:
+
+단순하고 한 번만 사용되는 조건
+
+소량 데이터의 IN 체크
+
+EXISTS로 존재 여부만 확인
+
+CTE를 쓸 때:
+
+복잡한 쿼리를 단계별로 분해해 가독성을 높일 때
+
+같은 집계 결과를 여러 곳에서 재사용할 때
+
+재귀 쿼리(조직도·카테고리 트리)
+
+서브쿼리가 3단계 이상 중첩될 때
+
+Window Function을 쓸 때:
+
+원래 행을 유지하면서 집계값이 필요할 때 (순위·누적·비교)
+
+상관 서브쿼리로 느린 경우 (부서 평균보다 높은 사원 등)
+
+LAG/LEAD로 이전·다음 행 값이 필요할 때
+
+ROWS/RANGE 프레임으로 이동 집계가 필요할 때
+
+JOIN을 쓸 때:
+
+두 테이블의 데이터를 함께 조회할 때 → 항상 JOIN을 우선 고려
+
+EXISTS/IN으로 표현한 서브쿼리가 복잡해질 때
+
+### ROWS vs RANGE 프레임 상세
+
+앞서 나온 개념의 구체적인 문법과 프레임 경계 키워드를 정리함.
+
+ROWS — 물리적 행 개수 기준:
+
+```sql
+SELECT date, revenue,
+  SUM(revenue) OVER (
+    ORDER BY date
+    ROWS BETWEEN 2 PRECEDING AND CURRENT ROW   -- 현재 + 앞 2개 = 정확히 3개 행
+  ) AS sum_3rows
+FROM daily_sales;
+```
+
+RANGE — 논리적 값 기준 (ORDER BY 값이 같은 행은 모두 포함):
+
+```sql
+SELECT date, revenue,
+  SUM(revenue) OVER (
+    ORDER BY date
+    RANGE BETWEEN INTERVAL '2 days' PRECEDING AND CURRENT ROW
+-- 오늘 기준 2일 전 날짜부터 오늘까지의 모든 행
+  ) AS sum_3days
+FROM daily_sales;
+```
+
+차이: ROWS는 정확히 N개 행, RANGE는 ORDER BY 값 범위로 포함 여부를 결정 → 같은 날짜 여러 행이 있으면 RANGE는 그것들을 한꺼번에 묶음
+
+프레임 경계 키워드:
+
+선택 기준: 정확한 행 개수 기반 이동평균 → ROWS, 날짜·값 범위 기반 집계 → RANGE
+
+### NTILE / PERCENT_RANK / CUME_DIST 상세
+
+### NTILE(n) — n개 구간으로 균등 분할
+
+```sql
+SELECT student_id, score,
+  NTILE(4)   OVER (ORDER BY score DESC) AS quartile,    -- 4분위
+  NTILE(10)  OVER (ORDER BY score DESC) AS decile,      -- 10분위
+  NTILE(100) OVER (ORDER BY score DESC) AS percentile   -- 백분위
+FROM enrollments WHERE course_id = 1;
+```
+
+전체 행을 n개 버킷으로 균등하게 나눠 1~n 번호를 부여함. 행 수가 n으로 나누어떨어지지 않으면 앞쪽 버킷이 하나 더 많아짐
+
+### PERCENT_RANK / CUME_DIST — 상대 위치 (0~1)
+
+```sql
+SELECT student_id, score,
+  PERCENT_RANK() OVER (ORDER BY score DESC) AS pct_rank,
+  CUME_DIST()    OVER (ORDER BY score DESC) AS cume_dist
+FROM enrollments WHERE course_id = 1;
+```
+
+PERCENT_RANK: (현재 순위 - 1) / (전체 행 수 - 1) → 0.0~1.0, 최고값이 0.0
+
+CUME_DIST: 현재 값 이하인 행의 비율 → "나보다 낮은 사람이 몇 %인가"
+
+상위 20% 학생 추출:
+
+```sql
+SELECT * FROM (
+  SELECT student_id, score,
+         PERCENT_RANK() OVER (ORDER BY score DESC) AS pct_rank
+  FROM enrollments WHERE course_id = 1
+) t
+WHERE pct_rank <= 0.20;
+```
+
+윈도우 함수를 WHERE에 직접 쓸 수 없으므로 인라인 뷰로 한 번 감싸야 함
+
+### FIRST_VALUE / LAST_VALUE — 파티션의 첫/마지막 값
+
+```sql
+SELECT region, month, revenue,
+  FIRST_VALUE(revenue) OVER (PARTITION BY region ORDER BY month) AS first_rev,
+  LAST_VALUE(revenue)  OVER (PARTITION BY region ORDER BY month
+    ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS last_rev
+FROM sales;
+```
+
+LAST_VALUE 주의: 기본 프레임이 CURRENT ROW까지라서 프레임을 UNBOUNDED FOLLOWING까지 명시하지 않으면 현재 행이 마지막 값처럼 보임 → 반드시 프레임을 전체로 넓혀야 함
+
+### Gap & Island — 연속 구간 패턴 심화
+
+앞서 간략히 소개한 Gap & Island 패턴의 CTE를 활용한 완성형 쿼리임.
+
+```sql
+WITH login_data AS (
+  SELECT DISTINCT user_id, login_date
+  FROM user_sessions WHERE user_id = 42
+),
+grouped AS (
+  SELECT user_id, login_date,
+         login_date - (ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY login_date)
+                       * INTERVAL '1 day') AS grp_key
+  FROM login_data
+)
+SELECT user_id,
+       MIN(login_date) AS streak_start,
+       MAX(login_date) AS streak_end,
+       COUNT(*) AS consecutive_days
+FROM grouped
+GROUP BY user_id, grp_key
+ORDER BY streak_start;
+```
+
+원리: 연속된 날짜들은 login_date - ROW_NUMBER() * 1day가 같은 상수가 됨. 예를 들어 1월 1·2·3일은 ROW_NUMBER가 1·2·3이라 빼면 모두 12월 31일이 되어 같은 grp_key로 묶임. 하루가 빠지면 그 이후 날짜들의 grp_key가 달라져 구간이 끊김. PARTITION BY user_id를 넣어 여러 유저를 동시에 처리함.
+
+### 코호트 분석 — Window Function 활용
+
+가입 월별 이후 월 재구매 유지율을 계산하는 패턴임. 여러 CTE를 단계별로 쌓아 구성함.
+
+```sql
+WITH user_cohorts AS (
+-- 각 유저의 가입 월
+  SELECT user_id, DATE_TRUNC('month', created_at) AS cohort_month
+  FROM users
+),
+monthly_active AS (
+-- 각 유저가 주문한 월 (중복 제거)
+  SELECT DISTINCT user_id, DATE_TRUNC('month', order_date) AS active_month
+  FROM orders
+),
+cohort_matrix AS (
+-- 코호트월 × 활동월 조합: 활성 유저 수 + 가입 후 몇 개월째인지
+  SELECT uc.cohort_month, ma.active_month,
+         COUNT(DISTINCT uc.user_id) AS active_users,
+         EXTRACT(MONTH FROM AGE(ma.active_month, uc.cohort_month)) AS months_after
+  FROM user_cohorts uc JOIN monthly_active ma ON ma.user_id = uc.user_id
+  GROUP BY 1, 2
+),
+cohort_size AS (
+-- 코호트별 초기 유저 수
+  SELECT cohort_month, COUNT(*) AS total_users
+  FROM user_cohorts GROUP BY 1
+)
+SELECT cm.cohort_month,
+       cm.months_after,
+       cm.active_users,
+       cs.total_users,
+       ROUND(cm.active_users::NUMERIC / cs.total_users * 100, 1) AS retention_rate
+FROM cohort_matrix cm JOIN cohort_size cs ON cs.cohort_month = cm.cohort_month
+ORDER BY 1, 2;
+```
+
+4개의 CTE가 하는 일:
+
+user_cohorts: 유저별 가입 월 (코호트 기준)
+
+monthly_active: 유저별 활동(주문)한 월 목록
+
+cohort_matrix: 둘을 조인해 코호트월 × 활동월 행렬을 만들고, 가입 후 몇 달째인지(months_after) 계산
+
+cohort_size: 코호트 초기 유저 수 (유지율 분모)
+
+최종 SELECT에서 active_users / total_users * 100으로 유지율을 계산함. 이 결과를 피벗하면 흔히 보는 코호트 삼각형 테이블이 됨.
+
+### 집계 함수 DBMS별 상세 비교
+
+함수별로 DBMS마다 성능 특성과 문법이 갈리는 포인트만 정리함.
+
+COUNT(*) MySQL 주의: MyISAM은 행 수를 메타데이터에 저장해 즉시 반환하지만, InnoDB는 MVCC(다중 버전 동시성 제어) 특성상 실제 행을 스캔해야 해 테이블이 크면 느려짐
+
+PostgreSQL도 MVCC 방식이라 COUNT(*)가 타 DBMS 대비 약간 느릴 수 있음 — 대용량에서는 통계 테이블이나 Materialized View 우회가 유효함
+
+문자열 집계는 함수명이 DBMS마다 다르지만 역할은 동일함 (여러 행을 구분자로 이어 붙이기)
+
+### 집계 쿼리 AI 서비스 연계 — 벡터 임베딩 통계
+
+embedding_store(id, user_id, cluster_id, similarity, tag) 테이블을 기반으로 AI 파이프라인 결과를 분석하는 SQL 패턴임.
+
+### 1. 사용자별 임베딩 개수 및 평균 유사도
+
+```sql
+SELECT user_id,
+       COUNT(*) AS total_embeddings,
+       ROUND(AVG(similarity), 3) AS avg_similarity,
+       MAX(similarity) AS best_match
+FROM embedding_store
+GROUP BY user_id
+ORDER BY avg_similarity DESC;
+```
+
+유저별로 임베딩이 얼마나 쌓였는지, 평균·최대 유사도가 어느 수준인지 확인함
+
+### 2. 클러스터별 통계 (k-means 결과 분석)
+
+```sql
+SELECT cluster_id,
+       COUNT(*) AS cluster_size,
+       ROUND(AVG(similarity), 3) AS cohesion,
+       COUNT(DISTINCT tag) AS tag_variety,
+       STRING_AGG(DISTINCT tag, ', ') AS top_tags
+FROM embedding_store
+GROUP BY cluster_id
+HAVING COUNT(*) >= 5
+ORDER BY cohesion DESC;
+```
+
+cohesion(응집도): 클러스터 내 평균 유사도 — 높을수록 잘 묶인 클러스터
+
+tag_variety: 클러스터 안에 다양한 태그가 섞여 있는지 — 낮을수록 태그가 순수하게 분리됨
+
+STRING_AGG(DISTINCT tag): 클러스터에 속한 고유 태그들을 콤마로 이어 붙여 어떤 의미 묶음인지 한눈에 파악
+
+HAVING COUNT(*) >= 5로 너무 작은 클러스터는 제외
+
+### 3. 태그별 빈도 (워드클라우드·빈도 분석용)
+
+```sql
+SELECT tag,
+       COUNT(*) AS freq,
+       ROUND(COUNT(*)::NUMERIC / SUM(COUNT(*)) OVER () * 100, 1) AS pct
+FROM embedding_store
+GROUP BY tag
+ORDER BY freq DESC LIMIT 20;
+```
+
+SUM(COUNT(*)) OVER (): 파티션 없는 윈도우 함수로 전체 행 수를 계산해 각 태그의 전체 비율(pct)을 구함 (GROUP BY 후에도 윈도우 함수로 전체 합을 참조할 수 있는 패턴)
+
+결과: 각 태그가 전체에서 몇 %를 차지하는지 → 워드클라우드·태그 중요도 시각화에 바로 사용 가능
+
+AI 파이프라인에서의 의미: k-means 클러스터링이나 임베딩 기반 검색 결과를 GROUP BY 집계로 품질 검증하거나 태그 분포를 파악하는 데 SQL이 그대로 활용됨.
+
+### 쿼리 최적화의 기본 원칙
+
+### SELECT * 사용 금지
+
+필요한 컬럼만 명시함으로써 불필요한 데이터 전송을 줄임
+
+조회하는 컬럼만 인덱스로 커버할 수 있는 경우(커버링 인덱스) 테이블 본체를 읽지 않아 성능이 크게 향상됨 → SELECT *는 이 최적화를 막음
+
+### WHERE 절 인덱스 컬럼에 함수 사용 금지
+
+```text
+-- 인덱스 무력화
+WHERE YEAR(order_date) = 2024
+
+-- 인덱스 사용 (범위 조건으로 대체)
+WHERE order_date >= '2024-01-01' AND order_date < '2025-01-01'
+```
+
+인덱스 컬럼에 함수를 씌우면 DB가 모든 행에 함수를 적용한 뒤 비교해야 해 인덱스를 타지 못함 → 비교 기준을 컬럼 쪽으로 옮겨야 인덱스가 살아남
+
+### N+1 문제
+
+루프 안에서 개별 쿼리를 반복하면 N개 항목에 대해 N번 추가 쿼리가 실행됨 → 한 번의 JOIN으로 묶어 해결함
+
+### EXPLAIN / EXPLAIN ANALYZE 습관화
+
+EXPLAIN으로 예상 실행계획을, EXPLAIN ANALYZE로 실제 실행 시간까지 확인함
+
+실행계획에서 Seq Scan vs Index Scan 여부, cost, actual rows, Buffers 체크
+
+### 통계 최신화
+
+옵티마이저는 테이블 통계를 기반으로 실행계획을 선택함 → 통계가 오래되면 잘못된 플랜을 고름
+
+ANALYZE를 주기적으로 실행해 통계를 갱신함
+
+### EXPLAIN ANALYZE 기초
+
+### 문법
+
+```sql
+-- 실행계획 확인만 (쿼리 실행 안 함)
+EXPLAIN
+SELECT s.name, AVG(e.score)
+FROM students s JOIN enrollments e ON e.student_id = s.id
+WHERE s.major_id = 1 GROUP BY s.id, s.name;
+
+-- 실행계획 + 실제 시간 측정 (쿼리를 실제로 실행)
+EXPLAIN (ANALYZE, BUFFERS)
+SELECT s.name, AVG(e.score) FROM students s
+  JOIN enrollments e ON e.student_id = s.id
+WHERE s.major_id = 1 GROUP BY s.id, s.name;
+```
+
+### 출력 항목 해석
+
+### 인덱스 유무에 따른 실행계획 변화
+
+인덱스 없을 때: Seq Scan on students (cost=0.00..45.00 rows=1000) — 전체 1000행을 다 읽음
+
+인덱스 추가 후: Index Scan using idx_students_major on students (cost=0.29..8.30 rows=50) — 해당 학과 50행만 읽어 비용이 크게 줄어듦
+
+cost 수치가 낮을수록, actual rows와 rows 예측값이 가까울수록 좋은 실행계획임.
+
+### 실전 패턴 — TOP-N Per Group (3가지 방법)
+
+"그룹별 상위 N개"는 실무에서 매우 자주 나오는 패턴임. 각 학과별 성적 상위 3명을 추출하는 예제로 세 방법을 비교함.
+
+방법 1 — Window Function (가장 추천):
+
+```sql
+SELECT * FROM (
+  SELECT s.name, m.name AS major, e.score,
+         ROW_NUMBER() OVER (PARTITION BY s.major_id ORDER BY e.score DESC) AS rn
+  FROM students s
+    JOIN majors m ON m.id = s.major_id
+    JOIN enrollments e ON e.student_id = s.id
+  WHERE e.course_id = 1
+) ranked
+WHERE rn <= 3;
+```
+
+학과별로 성적 내림차순 순번을 매기고, 바깥에서 rn <= 3으로 필터함 (동점자를 정확히 N명으로 자르려면 ROW_NUMBER, 동점자를 포함하려면 RANK·DENSE_RANK)
+
+방법 2 — LATERAL JOIN (PostgreSQL):
+
+```sql
+SELECT m.name AS major, top3.name, top3.score
+FROM majors m
+CROSS JOIN LATERAL (
+  SELECT s.name, e.score
+  FROM students s JOIN enrollments e ON e.student_id = s.id
+  WHERE s.major_id = m.id AND e.course_id = 1
+  ORDER BY e.score DESC LIMIT 3
+) top3;
+```
+
+학과마다 서브쿼리가 독립 실행되어 그 학과 상위 3명을 뽑음. 코드가 직관적이며 PostgreSQL에서 지원
+
+방법 3 — 상관 서브쿼리 (느림, 학습용):
+
+```sql
+SELECT s.name, e.score, s.major_id
+FROM students s JOIN enrollments e ON e.student_id = s.id
+WHERE e.course_id = 1
+  AND (SELECT COUNT(*) FROM students s2 JOIN enrollments e2 ON e2.student_id = s2.id
+       WHERE s2.major_id = s.major_id AND e2.course_id = 1 AND e2.score > e.score) < 3;
+```
+
+"나보다 높은 점수가 3개 미만인 행"이 상위 3명에 해당함. 행마다 서브쿼리가 재실행되어 느리고, 동점자가 3명 이상이면 결과가 3명을 초과함. 실무 금지, 원리 이해용
+
+### 실전 패턴 — JSONB 조작 (PostgreSQL)
+
+PostgreSQL의 JSONB 타입은 JSON을 이진 형태로 저장해 조회·인덱싱이 빠름.
+
+### 조회 연산자
+
+```sql
+SELECT name,
+  attrs->>'color'            AS color,       -- 텍스트로 추출
+  attrs->'price'             AS price_json,  -- JSONB로 추출
+  (attrs->>'price')::NUMERIC AS price_num,   -- 숫자로 캐스팅
+  attrs @> '{"color":"red"}' AS is_red,      -- 포함 여부 (true/false)
+  attrs ? 'discount'         AS has_discount -- 키 존재 여부
+FROM products;
+```
+
+>>: 값을 텍스트로, >: 값을 JSONB로 추출
+
+@>: 왼쪽 JSONB가 오른쪽 JSON을 포함하는지 (부분 일치 조건에 유용)
+
+?: 해당 키가 존재하는지
+
+### 업데이트
+
+```text
+-- 키 추가/수정
+UPDATE products SET attrs = attrs || '{"discount":0.1}' WHERE id = 1;
+
+-- 키 삭제
+UPDATE products SET attrs = attrs - 'discount' WHERE id = 1;
+```
+
+|| 연산자로 JSON 객체를 병합(같은 키면 덮어씀), 로 키를 제거함
+
+### GIN 인덱스로 검색 가속
+
+```sql
+CREATE INDEX idx_products_attrs ON products USING GIN (attrs);
+SELECT * FROM products WHERE attrs @> '{"color":"red","size":"L"}';  -- 인덱스 사용
+```
+
+JSONB 컬럼에 GIN 인덱스를 걸면 @> 조건이 Full Scan 없이 빠르게 처리됨
+
+### 실전 패턴 — 날짜 처리 완전 가이드
+
+### 월별·주별·일별 집계
+
+```sql
+SELECT DATE_TRUNC('month', order_date) AS month,
+       COUNT(*) AS orders,
+       SUM(amount) AS revenue
+FROM orders GROUP BY 1 ORDER BY 1;
+```
+
+### 최근 N일 필터
+
+```text
+WHERE order_date >= CURRENT_DATE - INTERVAL '30 days'
+WHERE order_date >= NOW() - INTERVAL '30 days'  -- 시각까지 고려
+```
+
+### 요일별 집계
+
+```sql
+SELECT TO_CHAR(order_date, 'Day') AS weekday,
+       EXTRACT(DOW FROM order_date) AS dow_num,   -- 0=일, 6=토
+       COUNT(*) AS cnt
+FROM orders GROUP BY 1, 2 ORDER BY 2;
+```
+
+### 타임존 변환 (UTC → KST)
+
+```sql
+SELECT order_date AT TIME ZONE 'UTC' AT TIME ZONE 'Asia/Seoul' AS kst_time
+FROM orders;
+```
+
+### 월말일 계산
+
+```sql
+SELECT DATE_TRUNC('month', NOW()) + INTERVAL '1 month' - INTERVAL '1 day' AS last_day;
+```
+
+### 두 날짜 사이 영업일 수 (주말 제외)
+
+```sql
+SELECT COUNT(*) FILTER (WHERE EXTRACT(DOW FROM d) NOT IN (0, 6)) AS workdays
+FROM GENERATE_SERIES('2024-01-01'::DATE, '2024-12-31'::DATE, '1 day') d;
+```
+
+GENERATE_SERIES로 날짜를 하루씩 생성한 뒤, 일(0)·토(6)를 FILTER로 제외해 영업일만 셈
+
+### 실전 패턴 — 문자열 처리 고급
+
+### 이메일 도메인 추출
+
+```sql
+SELECT email,
+  SPLIT_PART(email, '@', 2)       AS domain,
+  SUBSTRING(email FROM '@(.+)$')  AS domain2
+FROM users;
+```
+
+SPLIT_PART(문자열, 구분자, n): 구분자로 분할한 뒤 n번째 조각을 반환함. SPLIT_PART('user@gmail.com', '@', 2)는 'gmail.com'을 반환. n은 1부터 시작.
+
+SUBSTRING(문자열 FROM 정규식): 정규식에서 괄호로 묶인 캡처 그룹의 첫 번째 매치를 반환함. '@(.+)$'에서 (.+)가 @ 이후의 모든 문자를 캡처함.
+
+### 전화번호 정규화 (하이픈·특수문자 제거)
+
+```sql
+SELECT REGEXP_REPLACE(phone, '[^0-9]', '', 'g') AS clean_phone
+FROM users;
+```
+
+REGEXP_REPLACE(문자열, 패턴, 대체문자, 플래그): 패턴에 매칭되는 부분을 대체 문자로 치환함.
+
+[^0-9]: 숫자가 아닌 모든 문자를 의미하는 문자 클래스
+
+'': 빈 문자열로 대체 = 삭제
+
+'g' 플래그: global, 첫 번째 매치뿐 아니라 전체에서 반복 치환함. 이 플래그가 없으면 첫 번째 하이픈만 제거됨
+
+예: '010-1234-5678' → '01012345678'
+
+### 이름 마스킹 (홍길동 → 홍*동)
+
+```sql
+SELECT name,
+  SUBSTRING(name, 1, 1)
+  || REPEAT('*', GREATEST(LENGTH(name)-2, 0))
+  || CASE WHEN LENGTH(name) >= 2 THEN SUBSTRING(name, LENGTH(name)) ELSE '' END
+  AS masked_name
+FROM users;
+```
+
+SUBSTRING(문자열, 시작위치, 길이): 시작 위치부터 지정 길이만큼 추출함. SUBSTRING('홍길동', 1, 1)은 '홍'.
+
+REPEAT(문자열, n): 문자열을 n번 반복함. REPEAT('*', 1)은 '*'.
+
+GREATEST(값1, 값2): 두 값 중 큰 쪽을 반환함. LENGTH(name) - 2가 음수가 되는 1글자 이름을 방지하기 위해 GREATEST(..., 0)으로 최소값을 0으로 고정함.
+
+LENGTH(문자열): 문자열의 글자 수를 반환함. 한글도 1자로 셈 (PostgreSQL 기준).
+
+|| 연산자: 문자열 연결(concatenation). '홍' || '*' || '동'은 '홍*동'.
+
+구조 분해:
+
+첫 글자: SUBSTRING(name, 1, 1) → '홍'
+
+가운데 마스킹: REPEAT('*', GREATEST(LENGTH(name)-2, 0)) → '*'
+
+마지막 글자: SUBSTRING(name, LENGTH(name)) → '동' (2자 이상일 때만)
+
+### 텍스트 유사도 (pg_trgm 확장)
+
+```sql
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
+SELECT a.name, b.name, SIMILARITY(a.name, b.name) AS sim
+FROM products a CROSS JOIN products b
+WHERE a.id < b.id AND SIMILARITY(a.name, b.name) > 0.5;
+```
+
+pg_trgm 확장: Trigram(3연속 문자) 기반 문자열 유사도 기능을 제공하는 PostgreSQL 확장임. CREATE EXTENSION으로 한 번만 활성화하면 됨.
+
+SIMILARITY(문자열1, 문자열2): 두 문자열의 trigram 집합이 얼마나 겹치는지를 0.0~1.0으로 반환함. 1.0은 완전히 같고, 0.0은 공통 trigram이 없음.
+
+예: SIMILARITY('아이폰15', '아이폰 15') → 0.7~0.8 수준 (띄어쓰기 차이에도 높게 나옴)
+
+a.id < b.id 조건: CROSS JOIN이면 (A,B)와 (B,A)가 모두 나오므로, id 순서로 제한해 중복 쌍을 제거함.
+
+GIN 인덱스를 함께 쓰면 대용량에서도 유사도 검색이 빠름:
+
+```text
+CREATE INDEX ON products USING GIN (name gin_trgm_ops);
+```
+
+### 정규표현식 검색
+
+```sql
+SELECT name FROM customers WHERE name ~ '^[가-힣]{2,4}$';
+```
+
+~ 연산자: PostgreSQL의 정규표현식 매치 연산자임. 대소문자를 구분함. ~*는 대소문자 구분 없이 매치, !~는 매치하지 않는 경우임.
+
+정규식 해석:
+
+^: 문자열 시작
+
+[가-힣]: 가~힣 범위의 한글 문자 하나
+
+{2,4}: 앞의 패턴이 최소 2회, 최대 4회 반복
+
+$: 문자열 끝
+
+따라서 '^[가-힣]{2,4}$'는 한글로만 이루어진 2~4자 이름만 매칭함. '홍길동', '김철수'는 매칭되고 'hong', '홍1동', '홍'은 매칭되지 않음.
+
+### AI 시대의 DB — pgvector 하이브리드 검색
+
+RAG(Retrieval-Augmented Generation) 구현을 위한 PostgreSQL 벡터 검색 패턴임.
+
+### 설치 및 테이블 설계
+
+```sql
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE knowledge_base (
+  id        BIGSERIAL PRIMARY KEY,
+  title     TEXT NOT NULL,
+  content   TEXT,
+  chunk_idx INT DEFAULT 0,       -- 긴 문서를 청크로 분할한 순번
+  embedding VECTOR(1536),        -- OpenAI text-embedding-3-small 기준 1536차원
+  search_ts TSVECTOR,            -- 전문 검색(Full-Text Search)용 인덱스 컬럼
+  created_at TIMESTAMPTZ DEFAULT now()
+);
+```
+
+VECTOR(n): pgvector가 제공하는 타입. n차원 부동소수점 벡터를 저장함. 모델마다 차원이 다름 (OpenAI ada-002는 1536, 다른 모델은 768·384 등)
+
+TSVECTOR: PostgreSQL 내장 전문 검색 타입. 텍스트를 토큰화·정규화해 인덱스로 저장함
+
+### 인덱스 생성
+
+```text
+-- 벡터 유사도 검색 인덱스 (코사인 거리)
+CREATE INDEX ON knowledge_base USING HNSW (embedding vector_cosine_ops);
+
+-- 전문 검색 인덱스
+CREATE INDEX ON knowledge_base USING GIN (search_ts);
+```
+
+HNSW: Hierarchical Navigable Small World. 근사 최근접 이웃(ANN) 알고리즘으로, 정확도를 약간 희생하고 대신 속도가 매우 빠름. 대용량 벡터 검색의 표준 방식
+
+vector_cosine_ops: 코사인 거리 기반으로 인덱스를 구성함. <=> 연산자로 검색
+
+GIN: Generalized Inverted Index. TSVECTOR·JSONB·배열 등에 사용하는 역인덱스 방식
+
+### 하이브리드 검색 (벡터 + 키워드 결합)
+
+```sql
+WITH vector_search AS (
+  SELECT id, 1 - (embedding <=> $1::VECTOR) AS vec_score
+  FROM knowledge_base ORDER BY embedding <=> $1::VECTOR LIMIT 20
+),
+keyword_search AS (
+  SELECT id, ts_rank(search_ts, plainto_tsquery('korean', $2)) AS kw_score
+  FROM knowledge_base WHERE search_ts @@ plainto_tsquery('korean', $2)
+)
+SELECT kb.title, kb.content,
+       COALESCE(vs.vec_score, 0) * 0.7 + COALESCE(ks.kw_score, 0) * 0.3 AS hybrid_score
+FROM knowledge_base kb
+  LEFT JOIN vector_search vs ON vs.id = kb.id
+  LEFT JOIN keyword_search ks ON ks.id = kb.id
+WHERE vs.id IS NOT NULL OR ks.id IS NOT NULL
+ORDER BY hybrid_score DESC LIMIT 5;
+```
+
+<=>: pgvector의 코사인 거리 연산자. 값이 작을수록 가까움. 1 - (embedding <=> ...) 로 유사도로 변환
+
+plainto_tsquery('korean', $2): 자연어 쿼리를 TSVECTOR와 매칭 가능한 쿼리로 변환. 'korean' 설정은 한국어 형태소 분석을 적용
+
+@@: TSVECTOR와 TSQUERY가 매칭되는지 확인하는 전문 검색 연산자
+
+ts_rank(...): 전문 검색 매칭 품질 점수를 반환
+
+COALESCE(값, 0) * 가중치: 어느 한 쪽에만 있는 문서는 해당 점수를 0으로 처리해 합산. 벡터 70% + 키워드 30%로 하이브리드 점수를 구성함
+
+### SQL 튜닝 안티패턴 vs 해결책
+
+### GROUP BY 실수 — ONLY_FULL_GROUP_BY 모드
+
+GROUP BY에서 SELECT 절에 쓸 수 있는 컬럼이 DBMS마다 다름. 이 차이를 모르면 특정 DB에서만 오류가 나는 쿼리를 짜게 됨.
+
+MySQL: ONLY_FULL_GROUP_BY 모드가 기본 활성화되어 있어, SELECT 절에 GROUP BY 키나 집계 함수 이외의 컬럼을 쓰면 오류가 발생함.
+
+SELECT name, dept, COUNT(*) FROM emp GROUP BY dept → ERROR (name이 GROUP BY에 없음)
+
+해결: SELECT dept, COUNT(*) 또는 GROUP BY dept, name으로 수정
+
+PostgreSQL: 동일하게 엄격함. GROUP BY 키에 없는 컬럼을 SELECT에 쓰면 항상 오류. 예외적으로 기본키를 GROUP BY에 포함하면 해당 테이블의 모든 컬럼을 SELECT에 쓸 수 있음 (기본키로 행이 고유하게 결정되기 때문).
+
+Oracle: 표준 준수 방식. 비집계 컬럼은 GROUP BY에 있어야 함. ANY_VALUE(col)로 그룹 내 임의값을 선택하는 비표준 우회도 제공함.
+
+실무 원칙:
+
+SELECT에 쓸 컬럼은 GROUP BY에도 포함하는 습관을 들임
+
+개별 행 값과 집계값을 동시에 보고 싶으면 GROUP BY 대신 윈도우 함수를 씀
+
+복잡한 집계는 CTE로 단계별로 분리해 어떤 컬럼이 집계 키인지 명확히 함
+
+## 관련 글
+
+- [[blog/STUDYING/index|STUDYING]]
