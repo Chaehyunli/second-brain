@@ -1,14 +1,14 @@
 ---
-title: "[STUDYING] 10. 스마트 데이터 이해 및 활용_Day2_핵심 정리"
+title: "[STUDYING] 10 - 1. 스마트 데이터 이해 및 활용_Day2_핵심 정리"
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-30
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "STUDYING"
 published: 2026-07-28
 source_url: https://ch010104.tistory.com/323
 ---
-# [STUDYING] 10. 스마트 데이터 이해 및 활용_Day2_핵심 정리
+# [STUDYING] 10 - 1. 스마트 데이터 이해 및 활용_Day2_핵심 정리
 
 ## 원문
 
