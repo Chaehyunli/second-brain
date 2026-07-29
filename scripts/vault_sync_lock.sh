@@ -2,6 +2,10 @@
 # Serialize Git-mutating Vault automation without locking ordinary Obsidian reads.
 set -euo pipefail
 
+# GitHub calculates commit contributions using the timezone embedded in the
+# author timestamp. The Vault's daily boundary is Korea Standard Time.
+export TZ=Asia/Seoul
+
 repo=$(git rev-parse --show-toplevel)
 cd "$repo"
 exec 9>"$repo/.git/hermes-vault-sync.lock"

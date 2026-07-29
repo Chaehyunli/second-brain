@@ -64,6 +64,14 @@ class VaultContractTests(unittest.TestCase):
             subprocess.run(["git", "add", "."], cwd=root, check=True)
             self.assertEqual(staged_markdown_paths(root), [note])
 
+    def test_vault_lock_runs_git_transactions_in_korea_time(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            script = Path(__file__).resolve().parents[1] / "scripts" / "vault_sync_lock.sh"
+            result = subprocess.run([str(script), "date", "+%z"], cwd=root, check=True, capture_output=True, text=True)
+            self.assertEqual(result.stdout.strip(), "+0900")
+
     def test_vault_lock_refuses_a_second_writer(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
