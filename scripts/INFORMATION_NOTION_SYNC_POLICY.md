@@ -4,6 +4,12 @@
 
 `Information`의 Notion 페이지를 Obsidian/GitHub에 **원문 사본**으로 보관한다. 이 경로는 요약·해석·재구성 공간이 아니다.
 
+## 적용 범위
+
+이 정책은 **자동 실행되는 Information → Obsidian/GitHub 동기화 작업에만** 적용한다.
+
+사용자가 “Information에 정리해줘”, “Information의 해당 페이지를 수정해줘”, “Information 아래에 새 페이지를 만들어줘”라고 명시적으로 요청한 경우에는 Hermes가 Notion `Information`에 새 페이지를 만들거나 기존 페이지를 수정할 수 있다. 그 작성·수정 작업은 원문 미러링 cron과 별개의 사용자 요청 작업이다.
+
 ## 동기화 원칙
 
 1. Notion 페이지의 본문은 Markdown 파일의 frontmatter 뒤에 **그대로** 저장한다.
