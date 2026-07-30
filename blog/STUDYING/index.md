@@ -1,17 +1,19 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-07-30
+updated: 2026-07-31
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 16개 · 카테고리 기반 탐색
+> 글 18개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 12 - 2. 스마트 데이터 이해 및 활용_Day4_실습|[STUDYING] 12 - 2. 스마트 데이터 이해 및 활용_Day4_실습]] — 2026-07-30
+- [[blog/STUDYING/STUDYING- 12 - 1. 스마트 데이터 이해 및 활용_Day4_핵심 정리|[STUDYING] 12 - 1. 스마트 데이터 이해 및 활용_Day4_핵심 정리]] — 2026-07-30
 - [[blog/STUDYING/STUDYING- 11 - 2. 스마트 데이터 이해 및 활용_Day3_실습|[STUDYING] 11 - 2. 스마트 데이터 이해 및 활용_Day3_실습]] — 2026-07-29
 - [[blog/STUDYING/STUDYING- 11 - 1. 스마트 데이터 이해 및 활용_Day3_핵심 정리|[STUDYING] 11 - 1. 스마트 데이터 이해 및 활용_Day3_핵심 정리]] — 2026-07-29
 - [[blog/STUDYING/STUDYING- 10 - 2. 스마트 데이터 이해 및 활용_Day2_실습|[STUDYING] 10 - 2. 스마트 데이터 이해 및 활용_Day2_실습]] — 2026-07-29
