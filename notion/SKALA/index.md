@@ -59,3 +59,6 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 7/30 — 스마트 데이터 이해 및 활용 Day4
 - [[notion/SKALA/7-30 스마트 데이터 이해 및 활용_Day4/7-30 스마트 데이터 이해 및 활용_Day4 핵심 정리]]
 - [[notion/SKALA/7-30 스마트 데이터 이해 및 활용_Day4/7-30 스마트 데이터 이해 및 활용_Day4 실습]]
+
+## 7/31 — Front-framework: Vue.js Day1
+- [[notion/SKALA/7-31 Front-framework- Vue.js_Day1/7-31 Front-framework- Vue.js_Day1_핵심 정리]]
