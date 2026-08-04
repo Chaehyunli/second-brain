@@ -10,6 +10,15 @@
 
 사용자가 “Information에 정리해줘”, “Information의 해당 페이지를 수정해줘”, “Information 아래에 새 페이지를 만들어줘”라고 명시적으로 요청한 경우에는 Hermes가 Notion `Information`에 새 페이지를 만들거나 기존 페이지를 수정할 수 있다. 그 작성·수정 작업은 원문 미러링 cron과 별개의 사용자 요청 작업이다.
 
+## 공개 Notion 링크를 원문으로 받았을 때
+
+사용자가 `*.notion.site` 공개 링크를 제공하면 원문 수집은 **브라우저 공개 페이지 조회를 우선**한다. 외부 공개 페이지는 HERMES Notion API·CLI 연동 범위 밖일 수 있으므로, API/CLI 404를 권한 연결 요청이나 작업 차단 사유로 삼지 않는다.
+
+1. 브라우저에서 공개 본문을 읽어 사용자 요청 범위로 정리한다.
+2. 정리 결과는 HERMES `Information` 하위 Notion 페이지로 만든다.
+3. GitHub에는 외부 원문이 아니라, 새로 만든 HERMES `Information` 페이지의 본문을 이 정책에 따라 원문 미러링한다.
+4. 공개 페이지가 브라우저에서도 실제로 접근 불가할 때만, 원문 접근 불가 사실을 알린다. 사용자에게 Notion API·CLI 연결을 요구하지 않는다.
+
 ## 동기화 원칙
 
 1. Notion 페이지의 본문은 Markdown 파일의 frontmatter 뒤에 **그대로** 저장한다.
