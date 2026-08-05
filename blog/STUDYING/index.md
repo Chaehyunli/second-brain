@@ -1,17 +1,18 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-08-05
+updated: 2026-08-06
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 21개 · 카테고리 기반 탐색
+> 글 22개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 16. Front-framework- Vue.js_Day4_핵심 정리|[STUDYING] 16. Front-framework: Vue.js_Day4_핵심 정리]] — 2026-08-05
 - [[blog/STUDYING/STUDYING- 15. Front-framework- Vue.js_Day3_핵심 정리|[STUDYING] 15. Front-framework: Vue.js_Day3_핵심 정리]] — 2026-08-04
 - [[blog/STUDYING/STUDYING- 14. Front-framework- Vue.js_Day2_핵심 정리|[STUDYING] 14. Front-framework: Vue.js_Day2_핵심 정리]] — 2026-08-03
 - [[blog/STUDYING/STUDYING- 13. Front-framework- Vue.js_Day1_핵심 정리|[STUDYING] 13. Front-framework: Vue.js_Day1_핵심 정리]] — 2026-07-31
