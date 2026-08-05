@@ -62,3 +62,12 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 7/31 — Front-framework: Vue.js Day1
 - [[notion/SKALA/7-31 Front-framework- Vue.js_Day1/7-31 Front-framework- Vue.js_Day1_핵심 정리]]
+
+## 8/3 — Front-framework: Vue.js Day2
+- [[notion/SKALA/8-3 Front-framework- Vue.js_Day2/8-3 Front-framework- Vue.js_Day2_핵심 정리]]
+
+## 8/4 — Front-framework: Vue.js Day3
+- [[notion/SKALA/8-4 Front-framework- Vue.js_Day3/8-4 Front-framework- Vue.js_Day3_핵심 정리]]
+
+## 8/5 — Front-framework: Vue.js Day4
+- [[notion/SKALA/8-5 Front-framework- Vue.js_Day4/8-5 Front-framework- Vue.js_Day4_핵심 정리]]
