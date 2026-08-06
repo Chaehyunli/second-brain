@@ -41,6 +41,7 @@ sources: []
 - `project`·`experience`: `period`, `evidence_status`, `sources`를 추가한다.
 - `course-note`: `course`, `module`, `source_material`을 추가한다.
 - `research-note`: `source_url`, `checked_at`, `confidence`를 추가한다.
+- `knowledge-note`: `checked_at`를 추가하며, `sources`에는 원본 URL·Notion ID 또는 원본 노트 경로를 남긴다. 본문에는 `## 핵심`, `## 연결된 근거`, `## 적용 기준`, `## 주의점 또는 한계`를 둔다. 기준본을 복사·대체하지 않고 출처 간 재사용 가능한 개념만 정리한다.
 
 `id`는 파일명 변경과 별개로 유지하는 안정 식별자다. 외부 원본이 있으면 URL·Notion ID 등 원본 식별자를 우선하며, 제목 유사도만으로 병합하지 않는다. 태그는 자유어가 아니라 `domain/`, `concept/`, `kind/`, `source/`, `status/`, `evidence/` namespace를 우선한다.
 

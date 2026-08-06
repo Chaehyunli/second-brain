@@ -51,3 +51,9 @@
 
 - Reviewed Searchive backend `main` commits for embedding model initialization locking, KeyBERT latency reduction, and document-summary fallback context for AI responses; linked the implementation evidence to the Searchive project note.
 - Added traceable UI-flow evidence to Masil, PETNER, 동아리모아, and 노소공 notes. Each entry records whether it is an original mobile panel, local fixture rendering, or mock-only UI verification so interface evidence is not presented as production backend validation.
+
+## [2026-08-06] build | Knowledge curator and review workflow
+
+- Added a source-preserving `knowledge/` layer with initial cross-source notes for Vue application composition, source-to-public technical writing, and evidence-grounded portfolio narrative.
+- Added candidate discovery, Inbox review queue, explicit approval-only promotion, and read-only health-audit tools with unit tests.
+- Registered daily Knowledge Curator candidate discovery and weekly health-check/safe-update cron roles; source mirrors remain authoritative and automatic interpretation/promotion stays prohibited.
