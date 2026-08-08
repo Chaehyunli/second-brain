@@ -5,8 +5,8 @@ title: 근거 기반 포트폴리오 서사
 type: knowledge-note
 status: verified
 created: 2026-08-06
-updated: 2026-08-06
-checked_at: 2026-08-06
+updated: 2026-08-08
+checked_at: 2026-08-08
 tags: [career, portfolio, evidence, backend]
 sources:
   - concepts/backend-portfolio-narrative.md
@@ -16,19 +16,22 @@ sources:
 
 # 근거 기반 포트폴리오 서사
 
-## 핵심
-포트폴리오는 기술 목록이 아니라 문제 맥락, 내가 맡은 판단·구현 범위, 검증 결과, 그리고 한계를 연결해 설명해야 한다. 결과 수치나 수상·역할은 원본 근거와 측정 조건이 확인될 때만 사실로 쓴다.
+## 주장 단위
+포트폴리오 문장은 기술 목록이 아니라 문제 맥락, 내가 내린 판단, 구현 범위, 검증 결과, 한계를 함께 가진 하나의 주장이다.
 
-## 연결된 근거
-- [[concepts/backend-portfolio-narrative|기존 Backend Portfolio Narrative]] — 프로젝트별 성능·정합성·보안·신뢰성 근거와 작성 규칙.
-- [[entities/lim-chae-hyun|프로필]] — 문제→판단→구현 범위→검증 결과→한계 순서의 설명 원칙.
-- [[entities/projects/petner|PETNER]] — 실시간 시스템과 팀 프로젝트에서 개인 기여·검증 근거를 분리해야 하는 사례.
+## 서사의 연결 규칙
+[[concepts/backend-portfolio-narrative]]의 순서처럼 제약과 대안을 먼저 두고 선택·구현을 잇는다. [[entities/lim-chae-hyun]]의 역량 지도는 사례를 찾는 출발점이지, 프로젝트의 세부 성과를 자동으로 증명하는 근거는 아니다.
 
-## 적용 기준
-- 기술 선택에는 해결하려는 제약과 대안을 함께 적는다.
-- 팀 결과와 내 기여를 분리한다.
-- 성능·품질 수치는 데이터 규모, 환경, 반복 조건 같은 측정 맥락을 붙인다.
-- 확인이 부족한 내용은 삭제하거나 추정으로 숨기지 않고 추가 근거 필요 상태로 남긴다.
+## 필요한 증거의 모양
+수치에는 데이터 규모·환경·반복 조건을, 역할에는 팀 결과와 개인 구현 범위를 붙인다. PETNER처럼 팀 프로젝트에서는 서비스 전체 기능과 나의 설계·검증 범위를 분리한다.
 
-## 주의점 또는 한계
-이 노트는 포트폴리오 작성 원칙이며, 각 프로젝트의 역할·성과를 새로 증명하지 않는다. 외부 공개 페이지에는 비공개 코드·고객 정보·자격 식별값을 포함하지 않는다.
+## 공개 가능한 범위
+비공개 코드, 고객 정보, 자격 식별값은 공개 서사에 넣지 않는다. 근거가 부족하면 멋있게 보이도록 추정하지 않고 추가 확인 필요 상태로 남긴다.
+
+## 다른 지식 노트와의 관계
+[[knowledge/performance-investigation-and-measurement-boundaries]]는 성능 수치의 측정 범위를, [[knowledge/legacy-characterization-and-team-reproducibility]]는 재현 가능한 검증 흔적을 제공한다. 이 노트는 그 기술 내용을 반복하지 않고 주장 가능 조건을 정한다.
+
+## 출처와 한계
+- [[concepts/backend-portfolio-narrative]]
+- [[entities/lim-chae-hyun]]
+- [[entities/projects/petner]]

@@ -1,7 +1,7 @@
 # Personal Career Wiki Index
 
 > 검증된 포트폴리오·기술 경험·기술 글 카탈로그. 원본 근거와 불일치 사항은 각 페이지에서 확인한다.
-> Last updated: 2026-07-12
+> Last updated: 2026-08-08
 
 ## Entities — Profile
 
@@ -48,3 +48,9 @@
 ## Source manifests
 
 - [[raw/sources/index|원본 근거 아카이브]] — 원본 자료 경로·해시·수집 범위와 연결한 검증 근거 허브.
+
+
+## Knowledge
+
+- [[knowledge/README|Knowledge 탐색 지도]] — 출처 기반의 적응형 지식 노트: 아키텍처 지도, 비교 가이드, 절차, 사례 종합, 근거 프레임워크.
+- [[knowledge/python-analysis-and-service-boundaries|Python의 분석 실험과 서비스 통합 경계]] — SKALA Python Day1/Day2와 Masil·노소공·Searchive의 확인된 Python 역할을 연결하되, 분석·합성 데이터·운영 성과의 증거 경계를 분리.

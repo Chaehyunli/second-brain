@@ -57,3 +57,9 @@
 - Added a source-preserving `knowledge/` layer with initial cross-source notes for Vue application composition, source-to-public technical writing, and evidence-grounded portfolio narrative.
 - Added candidate discovery, Inbox review queue, explicit approval-only promotion, and read-only health-audit tools with unit tests.
 - Registered daily Knowledge Curator candidate discovery and weekly health-check/safe-update cron roles; source mirrors remain authoritative and automatic interpretation/promotion stays prohibited.
+
+## [2026-08-08] refactor | Adaptive Knowledge and Python evidence map
+
+- Reframed all existing Knowledge notes by their evidence-fit archetype rather than a fixed project-oriented body template; retained stable IDs, source lists, and explicit scope/uncertainty.
+- Updated the Knowledge schema, curator policy, navigation map, and index with the adaptive minimum invariants: topic, source-backed evidence, meaningful relation, and scope/uncertainty.
+- Added the source-backed Python analysis/service-boundary note from SKALA Day1/Day2 and the Masil, 노소공, Searchive, and profile evidence paths; it keeps synthetic-data, analysis, and operational claims distinct.
