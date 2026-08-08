@@ -7,7 +7,7 @@ status: verified
 created: 2026-08-06
 updated: 2026-08-06
 checked_at: 2026-08-06
-tags: [knowledge, initial-curation]
+tags: [knowledge, initial-curation, fastapi, backend]
 sources:
   - entities/projects/masil.md
   - raw/sources/masil-github-2026-07-10.md

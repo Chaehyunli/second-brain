@@ -7,7 +7,7 @@ status: verified
 created: 2026-08-06
 updated: 2026-08-06
 checked_at: 2026-08-06
-tags: [knowledge, initial-curation]
+tags: [knowledge, initial-curation, java, spring-boot]
 sources:
   - blog/SPRING BOOT/Spring Boot- 11. Spring Weflux에서의 Transaction 관리.md
   - blog/INFLEARN/스프링 DB 1편 - 데이터 접근 핵심 원리- 3. 트랜잭션 이해.md

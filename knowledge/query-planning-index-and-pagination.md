@@ -7,7 +7,7 @@ status: verified
 created: 2026-08-06
 updated: 2026-08-06
 checked_at: 2026-08-06
-tags: [knowledge, initial-curation]
+tags: [knowledge, initial-curation, database, sql, postgresql]
 sources:
   - blog/SQL/SQL- MySql의 인덱스 설정 - BTREE INDEX.md
   - blog/DATABASE DESIGN/데이터베이스 설계- 쿼리 최적화 (Query Optimization).md

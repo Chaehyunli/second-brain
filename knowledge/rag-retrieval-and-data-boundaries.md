@@ -7,7 +7,7 @@ status: verified
 created: 2026-08-06
 updated: 2026-08-06
 checked_at: 2026-08-06
-tags: [knowledge, initial-curation]
+tags: [knowledge, initial-curation, Transformer, database, postgresql, sql]
 sources:
   - blog/STUDYING/STUDYING- 12 - 1. 스마트 데이터 이해 및 활용_Day4_핵심 정리.md
   - notion/SKALA/7-28 스마트 데이터 이해 및 활용_Day2/7-28 스마트 데이터 이해 및 활용_Day2 핵심 정리.md
