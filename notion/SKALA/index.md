@@ -79,3 +79,6 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 8/7 — 데이터 분석을 위한 Python 이해 Day2
 - [[notion/SKALA/8-7 데이터 분석을 위한 Python 이해_Day2/8-7 데이터 분석을 위한 Python 이해_Day2 핵심 정리]]
 - [[notion/SKALA/8-7 데이터 분석을 위한 Python 이해_Day2/8-7 데이터 분석을 위한 Python 이해_Day2 실습]]
+
+## 8/10 — Java, SpringBoot, Rest API 구현 Day1
+- [[notion/SKALA/8-10 Java, SpringBoot, Rest API 구현_Day1/8-10 Java, SpringBoot, Rest API 구현_Day1_핵심 정리]]
