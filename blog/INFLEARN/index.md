@@ -1,7 +1,7 @@
 ---
 title: "INFLEARN"
 created: 2026-07-13
-updated: 2026-07-26
+updated: 2026-08-15
 type: blog-category
 tags: [blog, technical-writing]
 ---
