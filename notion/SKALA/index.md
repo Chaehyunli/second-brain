@@ -94,3 +94,6 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 8/14 — Java, SpringBoot, Rest API 구현 Day5
 - [[notion/SKALA/8-14 Java, SpringBoot, Rest API 구현_Day5/8-14 Java, SpringBoot, Rest API 구현_Day5_핵심 정리]]
+
+## 8/18 — Spring AI Day1
+- [[notion/SKALA/8-18Spring AI_Day1/8-18 Spring AI_Day1_핵심 정리]]
