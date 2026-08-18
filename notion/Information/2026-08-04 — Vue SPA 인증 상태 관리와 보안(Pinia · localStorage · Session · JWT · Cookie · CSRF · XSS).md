@@ -1,9 +1,9 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/3b21d84bf68e800bbcc7e3098b3c6c24
+notion_url: https://www.notion.so/3b21d84bf68e800bbcc7e3098b3c6c24
 notion_page_id: 3b21d84b-f68e-800b-bcc7-e3098b3c6c24
-synced_at_utc: 2026-08-08T15:12:24Z
-notion_content_sha256: 1cf316459ae7c8502e4d5af6bbfce091a55ecb372ac4738091a5bf99c99f5c17
+synced_at_utc: 2026-08-18T15:14:03Z
+notion_content_sha256: 521ed3e274ef2afe9aab19381e2ecb0cbb865a99645b591e8be8b3e51ae4ac34
 ---
 
 ### 전체 구조 이해

@@ -1,9 +1,9 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/3b81d84bf68e812e9e33ca5adcc4f2de
+notion_url: https://www.notion.so/3b81d84bf68e812e9e33ca5adcc4f2de
 notion_page_id: 3b81d84b-f68e-812e-9e33-ca5adcc4f2de
-synced_at_utc: 2026-08-11T15:14:04Z
-notion_content_sha256: 3ab17e7d505bf6542646378242b7e800f22d26b94d8a3b61d1280cd1882e6a04
+synced_at_utc: 2026-08-18T15:14:03Z
+notion_content_sha256: e3821cb7de9fd06a0e970578f2264b8647abb7361c225ba6ee3eebe7c4bebcc0
 ---
 
 > **원문**: [SK AX Case Study — 한미전선 ERP Agentic AI 구축 사례](https://www.skax.co.kr/case-study/story/3618/)

@@ -1,9 +1,9 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/2026-08-06-AWS-AI-Competency-SK-AX-AI-3b61d84bf68e819db04ac3968c693377
+notion_url: https://www.notion.so/3b61d84bf68e819db04ac3968c693377
 notion_page_id: 3b61d84b-f68e-819d-b04a-c3968c693377
-synced_at_utc: 2026-08-08T15:12:24Z
-notion_content_sha256: b0e4a71b25359b6cd55ca0213f8ca5f3b574e9c4d1ac2d4ad4adc05f8a75bdb2
+synced_at_utc: 2026-08-18T15:14:03Z
+notion_content_sha256: 0a4372624ee79f87f1bcc6503b5034be674bba5d356b224a1d1e005f860188bf
 ---
 
 > **원문**: [SK AX Insight — AWS AI Competency를 통해 검증된 SK AX의 에이전틱 AI 구축 역량](https://www.skax.co.kr/insight/trend/3810)
