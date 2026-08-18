@@ -97,3 +97,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 8/18 — Spring AI Day1
 - [[notion/SKALA/8-18Spring AI_Day1/8-18 Spring AI_Day1_핵심 정리]]
+- [[notion/SKALA/8-18Spring AI_Day1/8-18 Spring AI_Day1_실습]]
