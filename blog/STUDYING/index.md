@@ -1,17 +1,18 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-08-15
+updated: 2026-08-19
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 29개 · 카테고리 기반 탐색
+> 글 30개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 24. SpringAI_Day1_핵심 정리|[STUDYING] 24. SpringAI_Day1_핵심 정리]] — 2026-08-18
 - [[blog/STUDYING/STUDYING- 23. Java, SpringBoot, Rest API 구현_Day5_핵심 정리|[STUDYING] 23. Java, SpringBoot, Rest API 구현_Day5_핵심 정리]] — 2026-08-14
 - [[blog/STUDYING/STUDYING- 22. Java, SpringBoot, Rest API 구현_Day4_핵심 정리|[STUDYING] 22. Java, SpringBoot, Rest API 구현_Day4_핵심 정리]] — 2026-08-13
 - [[blog/STUDYING/STUDYING- 21. Java, SpringBoot, Rest API 구현_Day3_핵심 정리|[STUDYING] 21. Java, SpringBoot, Rest API 구현_Day3_핵심 정리]] — 2026-08-12
