@@ -5,7 +5,6 @@ notion_page_id: 39a1d84b-f68e-81e5-b2f0-d3d7f60b70c2
 synced_at_utc: 2026-08-20T04:18:03Z
 notion_content_sha256: ea87dabdf0c158622dc9fee7cae25fb1c361da8d286ef1c667425c1c8d64873e
 ---
-
 <callout icon="🔎" color="blue_bg">
 	**조사 기준:** 공식 문서와 GitHub 저장소, 이 서버의 실제 Hermes 상태를 함께 확인했다.
 	- 공식 문서: [Hermes Agent Docs](https://hermes-agent.nousresearch.com/docs)

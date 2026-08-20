@@ -5,7 +5,6 @@ notion_page_id: 3b61d84b-f68e-819d-b04a-c3968c693377
 synced_at_utc: 2026-08-20T04:18:03Z
 notion_content_sha256: b0e4a71b25359b6cd55ca0213f8ca5f3b574e9c4d1ac2d4ad4adc05f8a75bdb2
 ---
-
 > **원문**: [SK AX Insight — AWS AI Competency를 통해 검증된 SK AX의 에이전틱 AI 구축 역량](https://www.skax.co.kr/insight/trend/3810)
 > **게시일**: 2026-08-06
 > **정리 기준**: SK AX 공식 인사이트 원문

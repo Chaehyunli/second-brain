@@ -5,7 +5,6 @@ notion_page_id: 3b21d84b-f68e-800b-bcc7-e3098b3c6c24
 synced_at_utc: 2026-08-20T04:18:03Z
 notion_content_sha256: 1cf316459ae7c8502e4d5af6bbfce091a55ecb372ac4738091a5bf99c99f5c17
 ---
-
 ### 전체 구조 이해
 SPA 로그인 구조에서 각 도구의 역할은 다름.
 ```plain text

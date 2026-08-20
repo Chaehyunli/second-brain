@@ -5,7 +5,6 @@ notion_page_id: 3a21d84b-f68e-811b-80e0-ccfa4cdda7a9
 synced_at_utc: 2026-08-20T04:18:03Z
 notion_content_sha256: 6fe0ea11d00ae7df075fb684b560b76c18925d087bf15e95968cb4c99add7e15
 ---
-
 <callout icon="📖" color="blue_bg">
 	**원문 범위:** 이 문서는 [디버깅 팀(Debugging Teams)](https://ita9naiwa.github.io/debuggingteams/) 페이지의 내용만 바탕으로, 원문의 전개 순서에 맞춰 핵심을 압축했다. 외부 자료·반응·추가 사례는 넣지 않았다.
 </callout>
