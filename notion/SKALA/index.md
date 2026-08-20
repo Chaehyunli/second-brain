@@ -101,3 +101,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 8/19 — Spring AI Day2
 - [[notion/SKALA/8-19Spring AI_Day2/8-19Spring AI_Day2_핵심 정리]]
+- [[notion/SKALA/8-19Spring AI_Day2/8-19Spring AI_Day2_실습]]
