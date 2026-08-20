@@ -1,14 +1,14 @@
 ---
-title: "[STUDYING] 24. SpringAI_Day2_핵심 정리"
+title: "[STUDYING] 25. SpringAI_Day2_핵심 정리"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-21
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "STUDYING"
 published: 2026-08-19
 source_url: https://ch010104.tistory.com/343
 ---
-# [STUDYING] 24. SpringAI_Day2_핵심 정리
+# [STUDYING] 25. SpringAI_Day2_핵심 정리
 
 ## 원문
 
