@@ -105,6 +105,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 ## 8/20 — Spring AI Day3
 - [[notion/SKALA/8-20Spring AI_Day3/8-20Spring AI_Day3_핵심 정리]]
+- [[notion/SKALA/8-20Spring AI_Day3/8-20Spring AI_Day3_실습]]
 - [[notion/SKALA/8-20Spring AI_Day3/8-20Spring AI_Day3_종합실습]]
 
 ## 8/21 — 컨테이너 이해 및 애플리케이션 컨테이너화 Day1
