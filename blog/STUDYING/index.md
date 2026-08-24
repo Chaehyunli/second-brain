@@ -1,17 +1,18 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-08-22
+updated: 2026-08-25
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 33개 · 카테고리 기반 탐색
+> 글 34개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 28. 컨테이너 이해 및 애플리케이션 컨테이너화_Day2|[STUDYING] 28. 컨테이너 이해 및 애플리케이션 컨테이너화_Day2]] — 2026-08-24
 - [[blog/STUDYING/STUDYING- 27. 컨테이너 이해 및 애플리케이션 컨테이너화_Day1|[STUDYING] 27. 컨테이너 이해 및 애플리케이션 컨테이너화_Day1]] — 2026-08-21
 - [[blog/STUDYING/STUDYING- 26. SpringAI_Day3_핵심 정리|[STUDYING] 26. SpringAI_Day3_핵심 정리]] — 2026-08-20
 - [[blog/STUDYING/STUDYING- 25. SpringAI_Day2_핵심 정리|[STUDYING] 25. SpringAI_Day2_핵심 정리]] — 2026-08-19
