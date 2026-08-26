@@ -112,4 +112,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 - [[notion/SKALA/8-21 컨테이너 이해 및 애플리케이션 컨테이너화_Day1/8-21 컨테이너 이해 및 애플리케이션 컨테이너화_Day1_핵심 정리]]
 
 ## 8/24 — 컨테이너 이해 및 애플리케이션 컨테이너화 Day2
-- [[notion/SKALA/8-24 컨테이너 이해 및 애플리케이션 컨테이너화_Day2/8-24 컨테이너 이해 및 애플리케이션 컨테이너화_Day2_핵심 정리]]
+- [[notion/SKALA/8-24 컨테이너 이해 및 애플리케이션 컨테이너화_Day2/8-24 컨테이너 이해 및 애플리케이션 컨테이너화_Day2_핵심 정리]]\n\n## 8/26 — Agile 방법론 및 MSA 개발 Day1\n- [[notion/SKALA/8-26 Agile 방법론 및 MSA 개발_Day1/8-26 Agile 방법론 및 MSA 개발_Day1_핵심 정리]]\n
