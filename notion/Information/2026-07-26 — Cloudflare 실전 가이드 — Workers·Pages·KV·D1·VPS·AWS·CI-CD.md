@@ -1,8 +1,8 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/3a91d84bf68e81cca79dff639ef7d95f
+notion_url: https://app.notion.com/p/2026-07-26-Cloudflare-Workers-Pages-KV-D1-VPS-AWS-CI-CD-3a91d84bf68e81cca79dff639ef7d95f
 notion_page_id: 3a91d84b-f68e-81cc-a79d-ff639ef7d95f
-synced_at_utc: 2026-08-20T04:18:03Z
+synced_at_utc: 2026-08-26T15:13:06Z
 notion_content_sha256: 56d3a31bf29d54e7a8cedae377e8dccaa5a9f42a26547b0d54148adbb0ce3af3
 ---
 <callout icon="☁️" color="blue_bg">
