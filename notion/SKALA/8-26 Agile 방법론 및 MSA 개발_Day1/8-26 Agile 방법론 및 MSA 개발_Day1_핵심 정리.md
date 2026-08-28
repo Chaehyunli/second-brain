@@ -727,3 +727,12 @@ MSA는 여러 마이크로서비스가 하나의 단일 애플리케이션으로
 ---
 
 <empty-block/>
+
+## 보충 — [8/26] Agile 방법론 및 MSA 개발_개인 서브 노트
+
+> 원문: [Notion 페이지](https://app.notion.com/p/3c81d84bf68e80e0bf55fa1654595ac5)
+
+- **사례(AgentPass)**: 기존 수강신청 서비스의 `Course`/`Enrollment`를 Mission/Passport 도메인으로 전환하고, 자연어 업무 요청에 맞춘 Agent·최소 권한 추천과 관리자 승인 흐름을 설계했다.
+- **Agile 적용**: 제한된 실습 시간에 맞춰 50분 작업과 5분 스크럼을 반복했으며, Sprint Review에서는 결제부터 Kafka를 거친 크레딧 반영과 화면 잔액 변경까지 E2E 기준으로 확인했다.
+- **MSA 경계**: User·Course(Mission)·Enrollment(Passport)·Payment·Recommend를 API로 분리했다. 서비스 간 존재 여부 확인도 직접 DB 조회가 아니라 내부 API로 처리한 사례다.
+- **운영상 학습**: 독립 배포에서는 애플리케이션과 DB 스키마의 배포 순서, 이벤트 소비자의 하위 호환성, 내부 API의 URL·응답 계약 통일이 함께 관리되어야 한다. 원문은 `ddl-auto`에 의존한 제약 변경 실패와 서비스별 설정/API 계약 불일치를 사례로 든다.
