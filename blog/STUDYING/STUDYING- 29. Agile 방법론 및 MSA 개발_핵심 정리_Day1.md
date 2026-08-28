@@ -1,14 +1,14 @@
 ---
-title: "[STUDYING] 29. Agile 방법론 및 MSA 개발_Day1_핵심 정리_Day1"
+title: "[STUDYING] 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1"
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-29
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "STUDYING"
 published: 2026-08-26
 source_url: https://ch010104.tistory.com/347
 ---
-# [STUDYING] 29. Agile 방법론 및 MSA 개발_Day1_핵심 정리_Day1
+# [STUDYING] 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1
 
 ## 원문
 

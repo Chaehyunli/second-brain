@@ -1,18 +1,19 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-08-27
+updated: 2026-08-29
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 35개 · 카테고리 기반 탐색
+> 글 36개 · 카테고리 기반 탐색
 
 ## 글
 
-- [[blog/STUDYING/STUDYING- 29. Agile 방법론 및 MSA 개발_Day1_핵심 정리_Day1|[STUDYING] 29. Agile 방법론 및 MSA 개발_Day1_핵심 정리_Day1]] — 2026-08-26
+- [[blog/STUDYING/STUDYING- 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리_Day1|[STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리_Day1]] — 2026-08-28
+- [[blog/STUDYING/STUDYING- 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1|[STUDYING] 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1]] — 2026-08-26
 - [[blog/STUDYING/STUDYING- 28. 컨테이너 이해 및 애플리케이션 컨테이너화_Day2|[STUDYING] 28. 컨테이너 이해 및 애플리케이션 컨테이너화_Day2]] — 2026-08-24
 - [[blog/STUDYING/STUDYING- 27. 컨테이너 이해 및 애플리케이션 컨테이너화_Day1|[STUDYING] 27. 컨테이너 이해 및 애플리케이션 컨테이너화_Day1]] — 2026-08-21
 - [[blog/STUDYING/STUDYING- 26. SpringAI_Day3_핵심 정리|[STUDYING] 26. SpringAI_Day3_핵심 정리]] — 2026-08-20
