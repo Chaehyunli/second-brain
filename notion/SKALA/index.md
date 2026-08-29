@@ -144,6 +144,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 8/26 — Agile 방법론 및 MSA 개발 Day1
 
 - [[notion/SKALA/8-26 Agile 방법론 및 MSA 개발_Day1/8-26 Agile 방법론 및 MSA 개발_Day1_핵심 정리]]
+- [[notion/SKALA/8-26 Agile 방법론 및 MSA 개발_Day1/8-26 Agile 방법론 및 MSA 개발_개인 서브 노트]]
 
 ## 8/28 — sLLM 구현 및 Fine Tunning Day1
 
