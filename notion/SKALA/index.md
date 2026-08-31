@@ -158,3 +158,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 8/31 — sLLM 구현 및 Fine Tunning Day2
 
 - [[notion/SKALA/8-31 sLLM 구현 및 Fine Tunning_Day2/8-31 sLLM 구현 및 Fine Tunning_Day2_핵심 정리]]
+- [[notion/SKALA/8-31 sLLM 구현 및 Fine Tunning_Day2/8-31 sLLM 구현 및 Fine Tunning_Day2_개인 서브 노트]]
