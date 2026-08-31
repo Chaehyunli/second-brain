@@ -1,14 +1,14 @@
 ---
-title: "[STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리_Day1"
+title: "[STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리"
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-09-01
 type: blog-post
 tags: ["blog", "technical-writing"]
 category: "STUDYING"
 published: 2026-08-28
 source_url: https://ch010104.tistory.com/348
 ---
-# [STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리_Day1
+# [STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리
 
 ## 원문
 
