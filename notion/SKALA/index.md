@@ -163,3 +163,4 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 9/1 — 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해 Day1
 
 - [[notion/SKALA/9-1 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_Day1/9-1 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_A_핵심정리]]
+- [[notion/SKALA/9-1 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_Day1/9-1 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_B_핵심정리]]
