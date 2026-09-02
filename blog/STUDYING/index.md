@@ -1,17 +1,20 @@
 ---
 title: "STUDYING"
 created: 2026-07-21
-updated: 2026-09-01
+updated: 2026-09-03
 type: blog-category
 tags: [blog, technical-writing]
 ---
 
 # STUDYING
 
-> 글 37개 · 카테고리 기반 탐색
+> 글 40개 · 카테고리 기반 탐색
 
 ## 글
 
+- [[blog/STUDYING/STUDYING- 34. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_C_핵심정리|[STUDYING] 34. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_C_핵심정리]] — 2026-09-02
+- [[blog/STUDYING/STUDYING- 33. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_B_핵심정리|[STUDYING] 33. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_B_핵심정리]] — 2026-09-02
+- [[blog/STUDYING/STUDYING- 32. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_A_핵심정리|[STUDYING] 32. 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_A_핵심정리]] — 2026-09-02
 - [[blog/STUDYING/STUDYING- 31. sLLM 구현 및 Fine Tunning_Day2_핵심 정리|[STUDYING] 31. sLLM 구현 및 Fine Tunning_Day2_핵심 정리]] — 2026-08-31
 - [[blog/STUDYING/STUDYING- 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리|[STUDYING] 30. sLLM 구현 및 Fine Tunning_Day1_핵심 정리]] — 2026-08-28
 - [[blog/STUDYING/STUDYING- 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1|[STUDYING] 29. Agile 방법론 및 MSA 개발_핵심 정리_Day1]] — 2026-08-26
