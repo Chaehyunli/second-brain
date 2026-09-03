@@ -177,3 +177,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## [8/25] 취업 캠프
 
 - [[notion/SKALA/8-25 취업 캠프]]
+
+## [9/4] 도메인 특강
+
+- [[notion/SKALA/9-4 도메인 특강/9-4 도메인 특강_핵심 정리]]
