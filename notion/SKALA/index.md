@@ -193,3 +193,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 공모전
 
 - [[notion/SKALA/공모전/2026 NAIS AI 해커톤 - 2026-08-06 ~ 2026-09-07 17-00 KST]]
+
+## 공모전
+
+- [[notion/SKALA/공모전/2026 뉴스빅데이터 해커톤 - 2026-08-24 ~ 2026-09-17 17-00 KST]]
