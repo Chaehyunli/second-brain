@@ -169,3 +169,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 
 - [[notion/SKALA/9-2 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_Day2/9-2 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_C_핵심정리]]
 - [[notion/SKALA/9-2 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_Day2/9-2 데이터분석 및 AIOps_머신러닝 및 딥러닝 이해_Day2_종합실습]]
+
+## [8/20]Spring AI_Day3
+
+- [[notion/SKALA/8-20Spring AI_Day3/8-20 종합 실습 .env(절대 동기화 금지)]]
