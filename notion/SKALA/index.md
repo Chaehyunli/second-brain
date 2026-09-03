@@ -189,3 +189,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## 공모전
 
 - [[notion/SKALA/공모전/2026 금융 AI Challenge - 2026-07-13 ~ 2026-09-07 10-00 KST]]
+
+## 공모전
+
+- [[notion/SKALA/공모전/2026 NAIS AI 해커톤 - 2026-08-06 ~ 2026-09-07 17-00 KST]]
