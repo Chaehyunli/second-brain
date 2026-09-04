@@ -204,6 +204,13 @@ def locked(vault: Path, args: list[str], *, env: dict[str, str] | None = None) -
     return subprocess.run([str(vault / "scripts/vault_sync_lock.sh"), *args], cwd=vault, text=True, capture_output=True, env=env, check=False)
 
 
+def safe_error_reason(exc: Exception) -> str:
+    """Keep operational errors concise and never reflect ntn output."""
+    if isinstance(exc, ValueError) and str(exc) in {"source incomplete", "markdown missing", "empty learning source"}:
+        return str(exc)
+    return "Notion API 호출 실패"
+
+
 def concise(leaf: Leaf, reason: str) -> None:
     print(f"SKALA 오류: {leaf.title} | {leaf.page_id} | {reason}")
 
@@ -250,7 +257,16 @@ def main() -> int:
             print("SKALA 보류: 기존 SKALA ID 검증 실패")
             return 2
         known = existing_page_ids(vault / "notion" / "SKALA")
-        for leaf in discover_leaves(run_dir):
+        try:
+            leaves = discover_leaves(run_dir)
+        except RuntimeError as exc:
+            failed = True
+            root = Leaf(ROOT_ID, "SKALA", (), False)
+            reason = safe_error_reason(exc)
+            concise(root, reason)
+            write_manifest(run_dir, reason=reason, leaf=root)
+            return 1
+        for leaf in leaves:
             if leaf.page_id in known or is_scope_excluded(leaf.title, in_padlet=leaf.in_padlet):
                 continue
             try:
@@ -258,8 +274,9 @@ def main() -> int:
                 body = retained_markdown(payload)
             except (RuntimeError, ValueError) as exc:
                 failed = True
-                concise(leaf, str(exc))
-                write_manifest(run_dir, reason=str(exc), leaf=leaf)
+                reason = safe_error_reason(exc)
+                concise(leaf, reason)
+                write_manifest(run_dir, reason=reason, leaf=leaf)
                 continue
             note = note_path(vault, leaf)
             if note.exists():

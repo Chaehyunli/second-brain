@@ -8,6 +8,7 @@ from sync_skala_notion import (  # noqa: E402
     is_scope_excluded,
     remove_temporary_signed_url_lines,
     safe_component,
+    safe_error_reason,
 )
 
 
@@ -25,6 +26,9 @@ class SyncSkalaNotionPureHelperTests(unittest.TestCase):
         self.assertTrue(is_scope_excluded("종합 실습 .env(절대 동기화 금지)", in_padlet=False))
         self.assertTrue(is_scope_excluded("[8/25] 취업 캠프", in_padlet=False))
         self.assertTrue(is_scope_excluded("2026 금융 AI Challenge | 2026-07-13 ~ 2026-09-07 10:00 KST", in_padlet=False))
+
+    def test_safe_error_reason_does_not_echo_untrusted_command_output(self):
+        self.assertEqual(safe_error_reason(RuntimeError("ntn exit 1: secret markdown body")), "Notion API 호출 실패")
 
     def test_removes_only_lines_containing_temporary_signed_urls(self):
         source = "보존\n![img](https://s3.example/x?X-Amz-Signature=abc)\n계속\n[안정](https://example.com/a)\n"
