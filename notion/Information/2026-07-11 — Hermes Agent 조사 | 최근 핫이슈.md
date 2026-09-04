@@ -1,10 +1,11 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/39a1d84bf68e81e5b2f0d3d7f60b70c2
+notion_url: https://www.notion.so/39a1d84bf68e81e5b2f0d3d7f60b70c2
 notion_page_id: 39a1d84b-f68e-81e5-b2f0-d3d7f60b70c2
-synced_at_utc: 2026-08-20T04:18:03Z
-notion_content_sha256: ea87dabdf0c158622dc9fee7cae25fb1c361da8d286ef1c667425c1c8d64873e
+synced_at_utc: 2026-09-04T15:12:20Z
+notion_content_sha256: fdfce2e8e2339110043ff103857a9da3e94eff09dcf4f682216d99ed45d13514
 ---
+
 <callout icon="🔎" color="blue_bg">
 	**조사 기준:** 공식 문서와 GitHub 저장소, 이 서버의 실제 Hermes 상태를 함께 확인했다.
 	- 공식 문서: [Hermes Agent Docs](https://hermes-agent.nousresearch.com/docs)

@@ -1,10 +1,11 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/3a91d84bf68e81cca79dff639ef7d95f
+notion_url: https://www.notion.so/3a91d84bf68e81cca79dff639ef7d95f
 notion_page_id: 3a91d84b-f68e-81cc-a79d-ff639ef7d95f
-synced_at_utc: 2026-08-30T15:13:29Z
-notion_content_sha256: 56d3a31bf29d54e7a8cedae377e8dccaa5a9f42a26547b0d54148adbb0ce3af3
+synced_at_utc: 2026-09-04T15:12:20Z
+notion_content_sha256: 1efc8b7da2f0a2840f84971897dd73fe5f021552d2137a5f110be8fb1e4d6e10
 ---
+
 <callout icon="☁️" color="blue_bg">
 	**목적**: React·FastAPI 조합을 기준으로 Cloudflare를 처음부터 선택·배포·운영하는 실전 매뉴얼입니다. Workers, Pages, KV, D1, R2, Vectorize, GitHub CI/CD와 기존 Hermes VPS·AWS의 역할 분리를 한 문서에 묶었습니다.<br>**조사 기준**: 2026-07-26 KST. 제품 동작·제약은 Cloudflare 공식 문서를 우선했으며, 비용·플랜은 수시로 바뀌므로 배포 전 공식 Pricing/Limit 페이지를 다시 확인해야 합니다.
 </callout>

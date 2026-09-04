@@ -1,10 +1,11 @@
 ---
 source: Notion Information
-notion_url: https://app.notion.com/p/39f1d84bf68e8140a5bffcae687dd483
+notion_url: https://www.notion.so/39f1d84bf68e8140a5bffcae687dd483
 notion_page_id: 39f1d84b-f68e-8140-a5bf-fcae687dd483
-synced_at_utc: 2026-08-20T04:18:03Z
-notion_content_sha256: 0936ee43102e1ed426ea7dcb797bd827b72d458c226f1802e6c8b43b073035dc
+synced_at_utc: 2026-09-04T15:12:20Z
+notion_content_sha256: 06a0869e75b12819ce506b371d560b40cce410cdaceb44accaa8f486f03928a2
 ---
+
 <callout icon="📡" color="blue_bg">
 	**수집 범위:** 최근 30일의 Reddit·Hacker News·GitHub·YouTube와 공식 제품·채용 페이지를 확인했다. X는 현재 설정상 제외했고, Polymarket에서는 유의미한 관련 시장을 찾지 못했다. 반응 수치는 수집 시점의 공개 지표다.
 </callout>
