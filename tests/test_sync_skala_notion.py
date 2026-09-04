@@ -21,6 +21,11 @@ class SyncSkalaNotionPureHelperTests(unittest.TestCase):
         self.assertTrue(is_scope_excluded("학습 내용 (수정중)", in_padlet=True))
         self.assertFalse(is_scope_excluded("실습 자료", in_padlet=True))
 
+    def test_scope_exclusion_rejects_non_instructional_root_announcements(self):
+        self.assertTrue(is_scope_excluded("종합 실습 .env(절대 동기화 금지)", in_padlet=False))
+        self.assertTrue(is_scope_excluded("[8/25] 취업 캠프", in_padlet=False))
+        self.assertTrue(is_scope_excluded("2026 금융 AI Challenge | 2026-07-13 ~ 2026-09-07 10:00 KST", in_padlet=False))
+
     def test_removes_only_lines_containing_temporary_signed_urls(self):
         source = "보존\n![img](https://s3.example/x?X-Amz-Signature=abc)\n계속\n[안정](https://example.com/a)\n"
         self.assertEqual(

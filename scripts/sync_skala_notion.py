@@ -24,6 +24,7 @@ ROOT_ID = "39d1d84b-f68e-80f3-89b7-e70a6c911bf9"
 ADMIN_WORDS = (
     "attendance", "출결", "출석", "모바일", "보안서약", "일정", "스케줄", "캠퍼스",
     "식사", "운영", "수당", "수료", "연락처", "certificate", "contact", "allowance",
+    ".env", "취업", "캠프", "공모전", "challenge", "hackathon", "해커톤", "경진대회", "창업", "입찰",
 )
 SIGNED_URL_RE = re.compile(r"(?:X-Amz-(?:Algorithm|Credential|Date|Expires|Security-Token|Signature)|[?&](?:signature|expires|token)=)", re.I)
 UNSAFE_COMPONENT_RE = re.compile(r'[\\/:*?"<>|]')
