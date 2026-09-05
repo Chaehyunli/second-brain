@@ -172,3 +172,7 @@ source_url: https://app.notion.com/p/39d1d84bf68e80f389b7e70a6c911bf9
 ## [9/4] 도메인 특강
 
 - [[notion/SKALA/9-4 도메인 특강/9-4 도메인 특강_핵심 정리]]
+
+## 공모전
+
+- [[notion/SKALA/공모전/원티드 AI Championship 2026 - 2026-08-24 ~ 2026-09-18 KST]]
